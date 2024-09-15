@@ -362,3 +362,9 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /Web/Database
+/Web/TTSystemDataManageForImplementationBeginner.aspx.exclude
+/Web/TTSystemDataManageForImplementationBeginner.aspx.cs.exclude
+/Web/TTSuperSystemModuleSet.aspx.exclude
+/Web/TTSuperSystemModuleSet.aspx.cs.exclude
+/Web/TTDatabaseUpgrade.aspx.exclude
+/Web/TTDatabaseUpgrade.aspx.cs.exclude
