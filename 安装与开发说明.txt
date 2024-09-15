@@ -1,0 +1,7 @@
+1、安装数据库软件PostGreSql（自己在网上下载），并用Database目录下的数据库恢复文件 TakeTopAppDBBackup.bak 恢复名为 taketopdecmpdb 的数据库！
+2、双击运行TakeTopServer目录下的TakeTopServer.exe文件，打开泰顶WEB服务器，再点击【启动WEB服务】按钮,打开平台登录页面！
+3、在登录页面上输入管理员帐号：ADMIN , 密码：12345678  或测试员帐号：C7094 ，密码：12345678@ 登录使用平台！ 
+
+4、源码用Visual Studio 2022版编译，有问题请联系泰顶客服，电话：021-51085119，EMail: 623077337@qq.com
+
+5、如果编译时组件引用的DLL出错，那么可以把出错的引用删除掉，并重新把Npgsql,NHibernate,newtown.json,System.Text.Json,ProjectMgt.DAL等组件从主程序Web/Bin目录下引用就可以了！
