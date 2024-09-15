@@ -15,6 +15,7 @@
             set { userCode = value; }
         }
 
+
         public virtual string Password
         {
             get { return password; }
