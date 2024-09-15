@@ -63,7 +63,7 @@
     </Reference>
     <Reference Include="ProjectMgt.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DAL\bin\Debug\ProjectMgt.Model.dll</HintPath>
+      <HintPath>..\Model\bin\Debug\ProjectMgt.Model.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
