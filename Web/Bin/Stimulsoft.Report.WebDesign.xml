@@ -1,0 +1,1257 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Stimulsoft.Report.WebDesign</name>
+    </assembly>
+    <members>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.CreateRequestParams">
+            <summary>
+            Create default designer RequestParams to save the report into cache
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.CreateViewer">
+            <summary>
+            Create the report viewer for Preview tab in the designer
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.GetRequestUrl(System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            Get the URL for designer requests
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.GetResourcesUrl">
+            <summary>
+            Get the URL to load the scripts, styles or images of the report designer.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.GetImageUrl(Stimulsoft.Report.Web.StiRequestParams,System.String)">
+            <summary>
+            Get the URL to load the images of the report designer.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Report.Web.StiWebDesigner.DesignerEvent">
+            <summary>
+            The event occurs for any action of the designer before it is processed.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Report.Web.StiWebDesigner.GetReport">
+            <summary>
+            The event occurs when the report template is requested after running the designer.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Report.Web.StiWebDesigner.OpenReport">
+            <summary>
+            The event occurs when the report template is opened using the file menu.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Report.Web.StiWebDesigner.CreateReport">
+            <summary>
+            The event occurs when creating a new report template using the file menu.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Report.Web.StiWebDesigner.SaveReport">
+            <summary>
+            The event occurs when saving the report template.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Report.Web.StiWebDesigner.SaveReportAs">
+            <summary>
+            The event occurs when saving as file the report template.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Report.Web.StiWebDesigner.PreviewReport">
+            <summary>
+            The event occurs before rendering the report for preview. Allowed to change the properties of the report, register the data.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Report.Web.StiWebDesigner.GetPreviewReport">
+            <summary>
+            The event occurs before displaying the rendered report in the preview.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Report.Web.StiWebDesigner.ExportReport">
+            <summary>
+            The event occurs before the exporting of the report from the preview tab.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Report.Web.StiWebDesigner.ExportReportResponse">
+            <summary>
+            The event occurs after the report is exported from the preview tab.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Report.Web.StiWebDesigner.Exit">
+            <summary>
+            Fires when the user pressed Exit in the file menu.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.GetRequestParams">
+            <summary>
+            Get the all request parameters of the report designer.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.GetActionReportObject">
+            <summary>
+            Get the current report template for the current action of the component.
+            Returns report template from the client for OpenReport action, new report template for CreateReport action, copy of the report template for PreviewReport action.
+            Otherwise returns report template from the cache.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.GetActionReportObject(Stimulsoft.Report.Web.StiRequestParams)">
+            <summary>
+            Get the current report template for the current action of the component.
+            Returns report template from the client for OpenReport action, new report template for CreateReport action, copy of the report template for PreviewReport action.
+            Otherwise returns report template from the cache. The specified request parameters will be used.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.GetReportObject">
+            <summary>
+            Get the current report template from the cache.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.GetReportObject(Stimulsoft.Report.Web.StiRequestParams)">
+            <summary>
+            Get the current report template from the cache. The specified request parameters will be used.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.GetExportSettings">
+            <summary>
+            Get the export settings from the dialog form of the report preview.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.GetExportSettings(Stimulsoft.Report.Web.StiRequestParams)">
+            <summary>
+            Get the export settings from the dialog form of the report preview. The specified request parameters will be used.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.IsPackedFile(System.IO.Stream)">
+            <summary>
+            Returns true if specified stream contains packed report.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.IsEncryptedFile(System.IO.Stream)">
+            <summary>
+            Returns true if specified stream contains encrypted report.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiWebDesigner.IsJsonFile(System.IO.Stream)">
+            <summary>
+            Returns true if specified stream contains packed report.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.Theme">
+            <summary>
+            Gets or sets the current visual theme which is used for drawing visual elements of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.CustomCss">
+            <summary>
+            Gets or sets a path to the custom css file for the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.Localization">
+            <summary>
+            Gets or sets a path to the localization file for the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.LocalizationDirectory">
+            <summary>
+            Gets or sets a path to the localization files. These localizations are displayed on the toolbar of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.DefaultUnit">
+            <summary>
+            Gets or sets a default value of the report unit in the designer.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Report.Web.StiWebDesigner.zoom">
+            <summary>
+            Gets or sets the report showing zoom. The default value is 100.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowAnimation">
+            <summary>
+            Gets or sets a value which indicates that animation of the user interface is enabled.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowTooltips">
+            <summary>
+            Gets or sets a value which indicates that show or hide tooltips.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowTooltipsHelp">
+            <summary>
+            Gets or sets a value which indicates that show or hide the help link in tooltips.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowDialogsHelp">
+            <summary>
+            Gets or sets a value which indicates that show or hide the help button in dialogs.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowOpenDialog">
+            <summary>
+            Gets or sets a value which allows to display the open dialog, or to open with the open event.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.InterfaceType">
+            <summary>
+            Gets or sets the interface type of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ChartRenderType">
+            <summary>
+            Gets or sets the type of the chart in the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.DatePickerFirstDayOfWeek">
+            <summary>
+            Gets or sets the first day of week in the date picker.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.DatePickerIncludeCurrentDayForRanges">
+            <summary>
+            "Gets or sets a value, which indicates that the current day will be included in the ranges of the date picker.".
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ParametersPanelDateFormat">
+            <summary>
+            Gets or sets a date format for datetime parameters in parameters panel. To use a server date format please set the StiDateFormatMode.FromServer or "FromServer" string value.
+            The default is the client browser date format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ParametersPanelSortDataItems">
+            <summary>
+            Gets or sets a value which indicates that variable items will be sorted.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowReportTree">
+            <summary>
+            Gets or sets a visibility of the report tree in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ReportDisplayMode">
+            <summary>
+            Gets or sets a method how will show a report in the preview mode.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.CloseDesignerWithoutAsking">
+            <summary>
+            Gets or sets a value which indicates that the designer will be closed without asking.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowSystemFonts">
+            <summary>
+            Gets or sets a visibility of the report tree in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.WizardTypeRunningAfterLoad">
+            <summary>
+            Gets or sets a value of the wizard type which should be run after designer starts.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.AllowWordWrapTextEditors">
+            <summary>
+            Gets or sets a value which indicates that allows word wrap in the text editors.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowNewPageButton">
+            <summary>
+            Gets or sets a visibility of the new page button in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowReportTitleBand">
+            <summary>
+            Gets or sets a visibility of the ReportTitleBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowReportSummaryBand">
+            <summary>
+            Gets or sets a visibility of the ReportSummaryBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPageHeaderBand">
+            <summary>
+            Gets or sets a visibility of the PageHeaderBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPageFooterBand">
+            <summary>
+            Gets or sets a visibility of the PageFooterBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowGroupHeaderBand">
+            <summary>
+            Gets or sets a visibility of the GroupHeaderBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowGroupFooterBand">
+            <summary>
+            Gets or sets a visibility of the GroupFooterBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowHeaderBand">
+            <summary>
+            Gets or sets a visibility of the HeaderBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFooterBand">
+            <summary>
+            Gets or sets a visibility of the FooterBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowColumnHeaderBand">
+            <summary>
+            Gets or sets a visibility of the ColumnHeaderBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowColumnFooterBand">
+            <summary>
+            Gets or sets a visibility of the ColumnFooterBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowDataBand">
+            <summary>
+            Gets or sets a visibility of the DataBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowHierarchicalBand">
+            <summary>
+            Gets or sets a visibility of the HierarchicalBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowChildBand">
+            <summary>
+            Gets or sets a visibility of the ChildBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowEmptyBand">
+            <summary>
+            Gets or sets a visibility of the EmptyBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowOverlayBand">
+            <summary>
+            Gets or sets a visibility of the OverlayBand item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowTableOfContents">
+            <summary>
+            Gets or sets a visibility of the TableOfContents item in the Bands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.UndoMaxLevel">
+            <summary>
+            Gets or sets a maximum level of undo actions with the report. A large number of actions consume more memory on the server side.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowSaveDialog">
+            <summary>
+            Gets or sets the value that displays or hides the report file name dialog at saving.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.AllowChangeWindowTitle">
+            <summary>
+            Allow the designer to change the window title.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.SaveReportMode">
+            <summary>
+            Gets or sets the save report mode - Hidden (AJAX mode), Visible (POST mode) or New Window.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.SaveReportAsMode">
+            <summary>
+            Gets or sets the save report mode - Hidden (AJAX mode), Visible (POST mode) or New Window.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.CheckReportBeforePreview">
+            <summary>
+            Gets or sets the value that allows running the report checker before preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowText">
+            <summary>
+            Gets or sets a visibility of the Text item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowTextInCells">
+            <summary>
+            Gets or sets a visibility of the TextInCells item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowRichText">
+            <summary>
+            Gets or sets a visibility of the RichText item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowImage">
+            <summary>
+            Gets or sets a visibility of the Image item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowBarCode">
+            <summary>
+            Gets or sets a visibility of the BarCode item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowShape">
+            <summary>
+            Gets or sets a visibility of the Shape item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowHorizontalLinePrimitive">
+            <summary>
+            Gets or sets a visibility of the Horizontal Line Primitive item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowVerticalLinePrimitive">
+            <summary>
+            Gets or sets a visibility of the Vertical Line Primitive item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowRectanglePrimitive">
+            <summary>
+            Gets or sets a visibility of the Rectangle Primitive item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowRoundedRectanglePrimitive">
+            <summary>
+            Gets or sets a visibility of the Rounded Rectangle Primitive item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPanel">
+            <summary>
+            Gets or sets a visibility of the Panel item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowClone">
+            <summary>
+            Gets or sets a visibility of the Clone item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowCheckBox">
+            <summary>
+            Gets or sets a visibility of the CheckBox item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowSubReport">
+            <summary>
+            Gets or sets a visibility of the SubReport item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowZipCode">
+            <summary>
+            Gets or sets a visibility of the ZipCode item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowChart">
+            <summary>
+            Gets or sets a visibility of the Chart item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowMap">
+            <summary>
+            Gets or sets a visibility of the Map item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowGauge">
+            <summary>
+            Gets or sets a visibility of the Gauge item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowCrossTab">
+            <summary>
+            Gets or sets a visibility of the CrossTab item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowTable">
+            <summary>
+            Gets or sets a visibility of the Table item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowSparkline">
+            <summary>
+            Gets or sets a visibility of the Sparkline item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowMathFormula">
+            <summary>
+            Gets or sets a visibility of the MathFormula item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowCrossGroupHeaderBand">
+            <summary>
+            Gets or sets a visibility of the CrossGroupHeaderBand item in the CrossBands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowCrossGroupFooterBand">
+            <summary>
+            Gets or sets a visibility of the CrossGroupFooterBand item in the CrossBands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowCrossHeaderBand">
+            <summary>
+            Gets or sets a visibility of the CrossHeaderBand item in the CrossBands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowCrossFooterBand">
+            <summary>
+            Gets or sets a visibility of the CrossFooterBand item in the CrossBands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowCrossDataBand">
+            <summary>
+            Gets or sets a visibility of the CrossDataBand item in the CrossBands menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowNewDashboardButton">
+            <summary>
+            Gets or sets a visibility of the new dashboard button in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowTableElement">
+            <summary>
+            Gets or sets a visibility of the TableElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowChartElement">
+            <summary>
+            Gets or sets a visibility of the ChartElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowGaugeElement">
+            <summary>
+            Gets or sets a visibility of the GaugeElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPivotTableElement">
+            <summary>
+            Gets or sets a visibility of the PivotTableElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowIndicatorElement">
+            <summary>
+            Gets or sets a visibility of the IndicatorElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowProgressElement">
+            <summary>
+            Gets or sets a visibility of the ProgressElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowCardsElement">
+            <summary>
+            Gets or sets a visibility of the ProgressElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowButtonElement">
+            <summary>
+            Gets or sets a visibility of the ButtonElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowRegionMapElement">
+            <summary>
+            Gets or sets a visibility of the RegionMapElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowOnlineMapElement">
+            <summary>
+            Gets or sets a visibility of the OnlineMapElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowImageElement">
+            <summary>
+            Gets or sets a visibility of the ImageElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowTextElement">
+            <summary>
+            Gets or sets a visibility of the TextElement item in the Components menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPanelElement">
+            <summary>
+            Gets or sets a visibility of the PanelElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowShapeElement">
+            <summary>
+            Gets or sets a visibility of the ShapeElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowListBoxElement">
+            <summary>
+            Gets or sets a visibility of the ListBoxElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowComboBoxElement">
+            <summary>
+            Gets or sets a visibility of the ComboBoxElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowTreeViewElement">
+            <summary>
+            Gets or sets a visibility of the TreeViewElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowTreeViewBoxElement">
+            <summary>
+            Gets or sets a visibility of the TreeViewBoxElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowDatePickerElement">
+            <summary>
+            Gets or sets a visibility of the DatePickerElement item in the Dashboard Elements menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.UseAliases">
+            <summary>
+            Gets or sets a value which indicates that using aliases in the dictionary.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowDictionary">
+            <summary>
+            Gets or sets a visibility of the dictionary in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.NewReportDictionary">
+            <summary>
+            Gets or sets a value which indicates what to do with the dictionary when creating a new report in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PermissionDataConnections">
+            <summary>
+            Gets or sets a value of permissions for connections in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PermissionDataSources">
+            <summary>
+            Gets or sets a value of permissions for datasources in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PermissionDataTransformations">
+            <summary>
+            Gets or sets a value of permissions for dataTransformations in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PermissionDataColumns">
+            <summary>
+            Gets or sets a value of permissions for columns in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PermissionDataRelations">
+            <summary>
+            Gets or sets a value of permissions for relations in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PermissionBusinessObjects">
+            <summary>
+            Gets or sets a value of permissions for business objects in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PermissionVariables">
+            <summary>
+            Gets or sets a value of permissions for variables in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PermissionResources">
+            <summary>
+            Gets or sets a value of permissions for resources in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PermissionSqlParameters">
+            <summary>
+            Gets or sets a value of permissions for sql parameters in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowEmailDialog">
+            <summary>
+            Gets or sets a value which allows to display the Email dialog, or send Email with the default settings.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowEmailExportDialog">
+            <summary>
+            Gets or sets a value which allows to display the export dialog for Email, or export report for Email with the default settings.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.DefaultEmailAddress">
+            <summary>
+            Gets or sets the default email address of the message created in the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.DefaultEmailSubject">
+            <summary>
+            Gets or sets the default subject of the message created in the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.DefaultEmailMessage">
+            <summary>
+            Gets or sets the default text of the message created in the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.DefaultExportSettings">
+            <summary>
+            A class which controls default settings of exports.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.StoreExportSettings">
+            <summary>
+            Gets or sets a value which allows store the export settings in the cookies.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportDialog">
+            <summary>
+            Gets or sets a value which allows to display the export dialog, or to export with the default settings.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToDocument">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the report document file.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToPdf">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the PDF format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToXps">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the XPS format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToPowerPoint">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the Power Point 2007-2010 format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToHtml">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the HTML format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToHtml5">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the HTML5 format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToMht">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the MHT (Web Archive) format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToText">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the TEXT format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToRtf">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the Rich Text format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToWord2007">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the Word 2007-2010 format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToOpenDocumentWriter">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the Open Document Text format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToExcel">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the Excel BIFF format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToExcelXml">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the Excel XML format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToExcel2007">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the Excel 2007-2010 format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToOpenDocumentCalc">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the Open Document Calc format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToCsv">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the CSV format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToDbf">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the DBF format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToXml">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the XML format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToDif">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the DIF format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToSylk">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the Sylk format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToImageBmp">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the BMP image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToImageGif">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the GIF image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToImageJpeg">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the JPEG image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToImagePcx">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the PCX image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToImagePng">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the PNG image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToImageTiff">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the TIFF image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToImageMetafile">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the Metafile image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToImageSvg">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the SVG image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowExportToImageSvgz">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the preview to the SVGZ image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ServerMode">
+            <summary>
+            Internal use only.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.CloudMode">
+            <summary>
+            Internal use only.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenu">
+            <summary>
+            Gets or sets a visibility of the file menu of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuNew">
+            <summary>
+            Gets or sets a visibility of the New item in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuOpen">
+            <summary>
+            Gets or sets a visibility of the Open item in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuSave">
+            <summary>
+            Gets or sets a visibility of the Save item in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuSaveAs">
+            <summary>
+            Gets or sets a visibility of the Save As item in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuClose">
+            <summary>
+            Gets or sets a visibility of the Close item in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuExit">
+            <summary>
+            Gets or sets a visibility of the Exit item in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuReportSetup">
+            <summary>
+            Gets or sets a visibility of the Report Setup item in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuOptions">
+            <summary>
+            Gets or sets a visibility of the Options item in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuInfo">
+            <summary>
+            Gets or sets a visibility of the Info item in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuAbout">
+            <summary>
+            Gets or sets a visibility of the About item in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuHelp">
+            <summary>
+            Gets or sets a visibility of the Help item in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuNewReport">
+            <summary>
+            Gets or sets a visibility of the new report button in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowFileMenuNewDashboard">
+            <summary>
+            Gets or sets a visibility of the new dashboard button in the file menu.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.FocusingX">
+            <summary>
+            Focusing on the X axis. Required if the lines are displayed double.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.FocusingY">
+            <summary>
+            Focusing on the Y axis. Required if the lines are displayed double.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewToolbar">
+            <summary>
+            Gets or sets a value which indicates that toolbar will be shown in the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PreviewToolbarBackgroundColor">
+            <summary>
+            Gets or sets a color of the preview toolbar background. The default value is the theme color.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PreviewToolbarBorderColor">
+            <summary>
+            Gets or sets a color of the preview toolbar border. The default value is the theme color.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PreviewToolbarFontColor">
+            <summary>
+            Gets or sets a color of the preview toolbar texts.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PreviewToolbarFontFamily">
+            <summary>
+            Gets or sets a value which indicates which font family will be used for drawing texts in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PreviewToolbarAlignment">
+            <summary>
+            Gets or sets the alignment of the preview toolbar.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewButtonCaptions">
+            <summary>
+            Gets or sets a value which allows displaying or hiding toolbar buttons captions in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewPrintButton">
+            <summary>
+            Gets or sets a visibility of the Print button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewOpenButton">
+            <summary>
+            Gets or sets a visibility of the Open button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewSaveButton">
+            <summary>
+            Gets or sets a visibility of the Save button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewSendEmailButton">
+            <summary>
+            Gets or sets a visibility of the Send Email button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewFindButton">
+            <summary>
+            Gets or sets a visibility of the Find button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewBookmarksButton">
+            <summary>
+            Gets or sets a visibility of the Bookmarks button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewParametersButton">
+            <summary>
+            Gets or sets a visibility of the Parameters button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewEditorButton">
+            <summary>
+            Gets or sets a visibility of the Editor button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewFirstPageButton">
+            <summary>
+            Gets or sets a visibility of the First Page button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewPreviousPageButton">
+            <summary>
+            Gets or sets a visibility of the Prev Page button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewCurrentPageControl">
+            <summary>
+            Gets or sets a visibility of the current page control in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewNextPageButton">
+            <summary>
+            Gets or sets a visibility of the Next Page button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewLastPageButton">
+            <summary>
+            Gets or sets a visibility of the Last Page button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewZoomButton">
+            <summary>
+            Gets or sets a visibility of the Zoom control in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewViewModeButton">
+            <summary>
+            Gets or sets a visibility of the View Mode button in the toolbar of the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PrintDestination">
+            <summary>
+            Gets or sets the default mode of the report print destination.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PreviewViewMode">
+            <summary>
+            Gets or sets the mode of showing a report in the preview - Single Page, Continuous or Multiple Pages.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPropertiesGrid">
+            <summary>
+            Gets or sets a visibility of the properties grid in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PropertiesGridWidth">
+            <summary>
+            Gets or sets a width of the properties grid in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PropertiesGridLabelWidth">
+            <summary>
+            Gets or sets a width of the property label in properties grid in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PropertiesGridPosition">
+            <summary>
+            Gets or sets a position of the properties grid.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPropertiesWhichUsedFromStyles">
+            <summary>
+            Gets or sets a visibility of the properties which used from styles in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.Report">
+            <summary>
+            Gets or sets a report object which to edit in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.CacheHelper">
+            <summary>
+            Gets or sets an instance of the StiCacheHelper class that will be used for report caching on the server side.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.RequestTimeout">
+            <summary>
+            Gets or sets time which indicates how many seconds the client side will wait for the response from the server side. The default value is 30 seconds.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.CacheTimeout">
+            <summary>
+            Gets or sets time which indicates how many minutes the report will be stored in the server cache or session. The default value is 10 minutes.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.CacheMode">
+            <summary>
+            Gets or sets the mode of the report caching.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.CacheItemPriority">
+            <summary>
+            Specifies the relative priority of report, stored in the system cache.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.AllowAutoUpdateCache">
+            <summary>
+            Allows the designer to update the cache automatically. The cache will be updated about once every three minutes if there are no actions in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.UseRelativeUrls">
+            <summary>
+            Gets or sets a value which indicates that the designer will use relative or absolute URLs.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PortNumber">
+            <summary>
+            Gets or sets a value which specifies the port number to use in the URL. A value of 0 defines automatic detection. A value of -1 removes the port number.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.PassQueryParametersForResources">
+            <summary>
+            Gets or sets a value which enables or disables the transfer of URL parameters when requesting the scripts and styles of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowServerErrorPage">
+            <summary>
+            Gets or sets a value which enables or disables the display of the detailed server error in the preview.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.UseCompression">
+            <summary>
+            Gets or sets a value which enables or disables the GZip compression of requests to the server. This allows to reduce the volume of Internet traffic, but slightly slows down the designer actions.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.UseCacheForResources">
+            <summary>
+            Gets or sets a value which enables caching for designer scripts and styles.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.AllowAutoUpdateCookies">
+            <summary>
+            Allows the designer to update the cookies automatically on every request to the server. By default, cookies are set when creating the designer, if they are not specified in the report.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowToolbar">
+            <summary>
+            Gets or sets a value which indicates that toolbar will be shown in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowSetupToolboxButton">
+            <summary>
+            Gets or sets a visibility of the setup toolbox button in the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowInsertButton">
+            <summary>
+            Gets or sets a visibility of the insert button in the toolbar of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowLayoutButton">
+            <summary>
+            Gets or sets a visibility of the layout button in the toolbar of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPageButton">
+            <summary>
+            Gets or sets a visibility of the page button in the toolbar of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowPreviewButton">
+            <summary>
+            Gets or sets a visibility of the preview button in the toolbar of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowSaveButton">
+            <summary>
+            Gets or sets a visibility of the save button in the toolbar of the designer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.Web.StiWebDesigner.ShowAboutButton">
+            <summary>
+            Gets or sets a visibility of the about button in the toolbar of the designer.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.HtmlLexicalAnalyzer.SkipWhiteSpace">
+            <summary>
+            skips whitespace in the input string
+            leaves the first non-whitespace character available in the NextCharacter property
+            this may be the end-of-file character, it performs no checking 
+            </summary>
+        </member>
+        <member name="T:Stimulsoft.Report.Web.JSON">
+             <summary>
+             This class encodes and decodes JSON strings.
+             http://www.json.org/
+            
+             JSON uses Arrays and Objects. These correspond here to the datatypes ArrayList and Hashtable.
+             All numbers are parsed to doubles.
+             </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.JSON.Decode(System.String)">
+            <summary>
+            Parses the string json into a value
+            </summary>
+            <param name="json">A JSON string.</param>
+            <returns>An ArrayList, a Hashtable, a double, a string, null, true, or false</returns>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.JSON.Decode(System.String,System.Boolean@)">
+            <summary>
+            Parses the string json into a value; and fills 'success' with the successfullness of the parse.
+            </summary>
+            <param name="json">A JSON string.</param>
+            <param name="success">Successful parse?</param>
+            <returns>An ArrayList, a Hashtable, a double, a string, null, true, or false</returns>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.JSON.Encode(System.Object)">
+            <summary>
+            Converts a Hashtable / ArrayList object into a JSON string
+            </summary>
+            <param name="json">A Hashtable / ArrayList</param>
+            <returns>A JSON encoded string, or null if object 'json' is not serializable</returns>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiDesignerResourcesHelper.GetBitmap(Stimulsoft.Report.Web.StiRequestParams,System.String)">
+            <summary>
+            Get Bitmap image for Visual Studio design mode
+            </summary>
+        </member>
+        <member name="T:Stimulsoft.Report.Web.StiGroup">
+            <summary>
+            This class describes groups of components.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Report.Web.StiGroup.Clone">
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>A new object that is a copy of this instance.</returns>
+        </member>
+        <member name="T:Stimulsoft.Report.Web.StiInsertionComponents">
+            <summary>
+            This class helps with insertion components to current report page.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:WebLibrary.LetterFolderCustomFileNameGenerator">
+            <summary>
+            A <see cref="T:NickLee.Common.Providers.ICustomFileNameGenerator">ICustomFileNameGenerator</see> that puts each file into a subfolder under the specified location
+            that is named for the first letter of the file.
+            </summary>
+            <remarks>
+            For example, given a file "Test Results.xls" the resulting location would be "\t\Test Results.xls".
+            </remarks>
+        </member>
+        <member name="M:WebLibrary.LetterFolderCustomFileNameGenerator.GenerateFileName(NickLee.Common.UploadedFile)">
+            <summary>
+            设置上传到服务器文件名称
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

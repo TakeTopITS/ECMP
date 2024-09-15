@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Stimulsoft.Map</name>
+    </assembly>
+    <members>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.Unknow">
+            <summary>
+            unknow response
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.G_GEO_SUCCESS">
+            <summary>
+            No errors occurred; the address was successfully parsed and its geocode has been returned.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.G_GEO_BAD_REQUEST">
+            <summary>
+            A directions request could not be successfully parsed.
+            For example, the request may have been rejected if it contained more than the maximum number of waypoints allowed.
+            </summary>  
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.G_GEO_SERVER_ERROR">
+            <summary>
+            A geocoding or directions request could not be successfully processed, yet the exact reason for the failure is not known.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.G_GEO_MISSING_QUERY">
+            <summary>
+            The HTTP q parameter was either missing or had no value.
+            For geocoding requests, this means that an empty address was specified as input. For directions requests, this means that no query was specified in the input.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.G_GEO_MISSING_ADDRESS">
+            <summary>
+            Synonym for G_GEO_MISSING_QUERY.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.G_GEO_UNKNOWN_ADDRESS">
+            <summary>
+             No corresponding geographic location could be found for the specified address.
+             This may be due to the fact that the address is relatively new, or it may be incorrect.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.G_GEO_UNAVAILABLE_ADDRESS">
+            <summary>
+            The geocode for the given address or the route for the given directions query cannot be returned due to legal or contractual reasons.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.G_GEO_UNKNOWN_DIRECTIONS">
+            <summary>
+            The GDirections object could not compute directions between the points mentioned in the query.
+            This is usually because there is no route available between the two points, or because we do not have data for routing in that region.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.G_GEO_BAD_KEY">
+            <summary>
+            The given key is either invalid or does not match the domain for which it was given.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.G_GEO_TOO_MANY_QUERIES">
+            <summary>
+            The given key has gone over the requests limit in the 24 hour period or has submitted too many requests in too short a period of time.
+            If you're sending multiple requests in parallel or in a tight loop, use a timer or pause in your code to make sure you don't send the requests too quickly.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoCoderStatusCode.ExceptionInCode">
+            <summary>
+            indicates that exception occured during execution
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoDirectionsStatusCode.OK">
+            <summary>
+            indicates the response contains a valid result.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoDirectionsStatusCode.NOT_FOUND">
+            <summary>
+            indicates at least one of the locations specified in the requests's origin, destination, or waypoints could not be geocoded.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoDirectionsStatusCode.ZERO_RESULTS">
+            <summary>
+            indicates no route could be found between the origin and destination.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoDirectionsStatusCode.MAX_WAYPOINTS_EXCEEDED">
+            <summary>
+             indicates that too many waypointss were provided in the request The maximum allowed waypoints is 8, plus the origin, and destination.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoDirectionsStatusCode.INVALID_REQUEST">
+            <summary>
+            indicates that the provided request was invalid.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoDirectionsStatusCode.OVER_QUERY_LIMIT">
+            <summary>
+            indicates the service has received too many requests from your application within the allowed time period.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoDirectionsStatusCode.REQUEST_DENIED">
+            <summary>
+            indicates that the service denied use of the directions service by your application.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoDirectionsStatusCode.UNKNOWN_ERROR">
+            <summary>
+            indicates a directions request could not be processed due to a server error. The request may succeed if you try again.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoDirectionsStatusCode.ExceptionInCode">
+            <summary>
+            indicates that exception occured during execution
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoMouseWheelZoomType.MousePositionAndCenter">
+            <summary>
+            zooms map to current mouse position and makes it map center
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoMouseWheelZoomType.MousePositionWithoutCenter">
+            <summary>
+            zooms to current mouse position, but doesn't make it map center,
+            google/bing style ;}
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Map.Gis.Core.StiGeoMouseWheelZoomType.ViewCenter">
+            <summary>
+            zooms map to current view center
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Map.Gis.Core.StiGisCore.Language">
+            <summary>
+            map language
+            </summary>
+        </member>
+    </members>
+</doc>

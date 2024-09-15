@@ -1,0 +1,2426 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Brettle.Web.NeatUpload</name>
+    </assembly>
+    <members>
+        <member name="T:Brettle.Web.NeatUpload.InvalidStorageConfigException">
+            <summary>
+            Indicates that a StorageConfig object is not valid.
+            </summary>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UploadException">
+            <summary>
+            An exception indicating that an upload has been rejected for some reason.
+            </summary>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadException.#ctor(System.Int32,System.String)">
+            <summary>
+            Constructs an <see cref="T:Brettle.Web.NeatUpload.UploadException" /> given an HTTP status code
+            and a message.
+            </summary>
+            <param name="httpStatusCode">
+            The HTTP status code to return to the browser, if the upload can't be
+            stopped.
+            </param>
+            <param name="message">
+            A description of the exception.
+            </param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an <see cref="T:Brettle.Web.NeatUpload.UploadException" /> when deserializing.
+            </summary>
+            <param name="info">
+            A <see cref="T:System.Runtime.Serialization.SerializationInfo" />
+            </param>
+            <param name="context">
+            A <see cref="T:System.Runtime.Serialization.StreamingContext" />
+            </param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serializes this object.
+            </summary>
+            <param name="info">
+            A <see cref="T:System.Runtime.Serialization.SerializationInfo" />
+            </param>
+            <param name="context">
+            A <see cref="T:System.Runtime.Serialization.StreamingContext" />
+            </param>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadException.HttpCode">
+            <summary>
+            The HTTP status code associated with this exception.
+            </summary>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.InvalidStorageConfigException.#ctor(System.String)">
+            <summary>
+            Creates an <see cref="T:Brettle.Web.NeatUpload.InvalidStorageConfigException" />, given a
+            text description of the problem.
+            </summary>
+            <param name="details">
+            A description of the problem.
+            </param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.InvalidStorageConfigException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an <see cref="T:Brettle.Web.NeatUpload.InvalidStorageConfigException" /> when deserializing.
+            </summary>
+            <param name="info">
+            A <see cref="T:System.Runtime.Serialization.SerializationInfo" />
+            </param>
+            <param name="context">
+            A <see cref="T:System.Runtime.Serialization.StreamingContext" />
+            </param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.InvalidStorageConfigException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serializes this object.
+            </summary>
+            <param name="info">
+            A <see cref="T:System.Runtime.Serialization.SerializationInfo" />
+            </param>
+            <param name="context">
+            A <see cref="T:System.Runtime.Serialization.StreamingContext" />
+            </param>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.InvalidStorageConfigException.Details">
+            <summary>
+            The description of the problem.
+            </summary>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.MultiRequestUploadModule">
+            <summary>
+            Provides an API (via its static members) that upload controls can use
+            to do multi-request uploads if the currently installed upload module
+            implements <see cref="T:Brettle.Web.NeatUpload.IMultiRequestUploadModule" />.
+            The members of this class mostly delegate to the corresponding members
+            of the <see cref="T:Brettle.Web.NeatUpload.IMultiRequestUploadModule" /> that is installed in the
+            &lt;httpModules&gt; section of the Web.config.
+            </summary>
+            <remarks>The module treats the following sequence of requests as a single
+            upload:
+            <list type="number">
+              <item>An initial POST request sent to the
+                <see cref="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.UploadPath" /> containing:
+                <list type="bullet">
+                  <item>a post-back ID in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.UploadModule.PostBackIDQueryParam" /></item>
+                  <item>a control UniqueID in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.ControlIDQueryParam" /></item>
+                  <item>"protected" cookies needed for authentication or session
+                    identification in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.ArmoredCookiesQueryParam" /></item>
+                  <item>a space-delimited list of file sizes in the form field named by
+                    <see cref="!:UploadModule.FileSizesFieldName" /></item>
+                  <item>(optionally) a form field with a name starting with
+                    <see cref="P:Brettle.Web.NeatUpload.UploadModule.ConfigFieldNamePrefix" /> followed by
+                    the same control UniqueID as above, containing "protected"
+                    module-specific configuration information.</item>
+                </list>
+              </item>
+              <item>A sequence of upload request (one for each file size in
+                the file sizes field of the initial request) to the
+                <see cref="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.UploadPath" /> containing:
+                <list type="bullet">
+                  <item>a post-back ID in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.UploadModule.PostBackIDQueryParam" /></item>
+                  <item>a control UniqueID in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.ControlIDQueryParam" /></item>
+                  <item>"protected" cookies needed for authentication or session
+                    identification in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.ArmoredCookiesQueryParam" /></item>
+                </list>
+              </item>
+              <item>A final form submission upload request to any path for which
+                <see cref="P:Brettle.Web.NeatUpload.UploadModule.IsEnabled" /> returns true.  This request
+                must contain the postback ID in one of the following locations:
+                <list type="bullet">
+                  <item>in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.UploadModule.PostBackIDQueryParam" /></item>
+                  <item>in the form field named by
+                    <see cref="P:Brettle.Web.NeatUpload.UploadModule.PostBackIDFieldName" /></item>
+                  <item>in a file field name prefixed by
+                    <see cref="P:Brettle.Web.NeatUpload.UploadModule.FileFieldNamePrefix" /></item>
+                </list>
+                While this request is being handled, the module will make all the files
+                associated with the post-back ID available via <see cref="P:Brettle.Web.NeatUpload.UploadModule.Files" />.
+              </item>
+            </list>
+            </remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UploadModule">
+            <summary>
+            Provides an API (via its static members) that upload controls can use
+            to access the currently installed upload module.
+            The members of this class mostly delegate to the corresponding members
+            of the <see cref="T:Brettle.Web.NeatUpload.IUploadModule" /> that is installed in the
+            &lt;httpModules&gt; section of the Web.config.
+            </summary>
+            <remarks>
+            When <see cref="P:Brettle.Web.NeatUpload.UploadModule.IsEnabled" /> returns true, an <see cref="T:Brettle.Web.NeatUpload.IUploadModule" />
+            is installed in the &lt;httpModules&gt; section of the Web.config and will
+            handle POST requests to the current request's URL
+            that have a Content-Type header of
+            "multipart/form-data" and contain a post-back ID in one
+            of the following locations:
+            <list type="bullet">
+              <item>If the post-back ID is in a query parameter named by
+                <see cref="P:Brettle.Web.NeatUpload.UploadModule.PostBackIDQueryParam" />, all files in the request will
+                be associated with the post-back ID.  The files can be retrieved
+                from the <see cref="P:Brettle.Web.NeatUpload.UploadModule.Files" /> collection using the names of the
+                file fields in the request.  These names are typically the
+                UniqueIDs of the controls that uploaded the files.</item>
+              <item>If the post-back ID is in the form field named by
+                <see cref="P:Brettle.Web.NeatUpload.UploadModule.PostBackIDFieldName" />, all files that occur after
+                form field will be associated with the post-back ID.
+                Those files can be retrieved
+                from the <see cref="P:Brettle.Web.NeatUpload.UploadModule.Files" /> collection using the names of the
+                file fields in the request.  These names are typically the
+                UniqueIDs of the controls that uploaded the files.</item>
+              <item>If the post-back ID is in a file field name prefixed by
+                <see cref="P:Brettle.Web.NeatUpload.UploadModule.FileFieldNamePrefix" />, that file will be associated
+                with the post-back ID.  That file can be retrieved
+                from the <see cref="P:Brettle.Web.NeatUpload.UploadModule.Files" /> collection using the portion of
+                the file field name after the first "-".  That portion of the name
+                typically corresponds to the UniqueID of the controls that uploaded
+                the files.</item>
+            </list>
+            For requests that specify a post-back ID, the module can also use "protected"
+            configuration information associated with a particular file if the
+            file field is preceded in the request by a
+            field with a name consisting of the value <see cref="P:Brettle.Web.NeatUpload.UploadModule.ConfigFieldNamePrefix" />
+            followed by the files key in <see cref="P:Brettle.Web.NeatUpload.UploadModule.Files" /> collection (typically the
+            uploading control's UniqueID).
+
+            <para>In addition, <see cref="M:Brettle.Web.NeatUpload.UploadModule.BindProgressState(System.String,System.String,Brettle.Web.NeatUpload.IUploadProgressState)" /> provides information
+            concerning the progress of the upload,
+            <see cref="M:Brettle.Web.NeatUpload.UploadModule.CancelPostBack(System.String)" /> tells the module it should ignore the
+            remainder of the upload, <see cref="M:Brettle.Web.NeatUpload.UploadModule.SetProcessingState(System.String,System.Object)" /> associates an
+            arbitrary object with an upload after it has been received but before the
+            end of the request, and <see cref="M:Brettle.Web.NeatUpload.UploadModule.ConvertToUploadedFile(System.String,System.Web.HttpPostedFile)" /> to convert an
+            <see cref="T:System.Web.HttpPostedFile" /> into an <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /></para>
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadModule.CreateUploadStorageConfig">
+            <summary>
+            Creates and returns a new <see cref="T:Brettle.Web.NeatUpload.UploadStorageConfig" /> (or
+            subclass) for use with the current request.
+            </summary>
+            <returns>a new <see cref="T:Brettle.Web.NeatUpload.UploadStorageConfig" /> or subclass.</returns>
+            <remarks>If the installed module does not explicitly support
+            creating <see cref="T:Brettle.Web.NeatUpload.UploadStorageConfig" /> objects, this method returns
+            the <see cref="T:Brettle.Web.NeatUpload.UploadStorageConfig" /> created by the currently selected
+            <see cref="T:Brettle.Web.NeatUpload.UploadStorageProvider" />.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadModule.SetProcessingState(System.String,System.Object)">
+            <summary>
+            Sets the processing state object associated with the current upload and
+            given control UniqueID.  The processing state object can be retrieved by passing an
+            <see cref="T:Brettle.Web.NeatUpload.IUploadProgressState" /> object to <see cref="M:Brettle.Web.NeatUpload.UploadModule.BindProgressState(System.String,System.String,Brettle.Web.NeatUpload.IUploadProgressState)" /> and
+            then accessing <see cref="P:Brettle.Web.NeatUpload.IUploadProgressState.ProcessingState" />.
+            </summary>
+            <param name="controlUniqueID">
+            The UniqueID of the control that the processing state is associated with.
+            </param>
+            <param name="state">
+            A <see cref="T:System.Object" /> that represents the processing state.  This must be
+            serializable.
+            </param>
+            <returns>true if the module supports setting processing state, otherwise false.</returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadModule.BindProgressState(System.String,System.String,Brettle.Web.NeatUpload.IUploadProgressState)">
+            <summary>
+            Fills in an <see cref="T:Brettle.Web.NeatUpload.IUploadProgressState" /> object with the progress state for
+            a given post-back ID and control UniqueID.
+            </summary>
+            <param name="postBackID">
+            The post-back ID for which the progress state should be retrieved.
+            </param>
+            <param name="controlUniqueID">
+            The UniqueID of the control for which the processing state should be retrieved,
+            or null to retrieve progress state without processing state.
+            </param>
+            <param name="progressState">
+            A <see cref="T:Brettle.Web.NeatUpload.IUploadProgressState" /> to be filled in with the progress state
+            for the given post-back ID and control UniqueID.
+            </param>
+            <remarks>The progress state is cached for the length of the current request to
+            ensure consistency across multiple calls during a single request and to reduce
+            the number of calls made
+            to the underlying <see cref="T:Brettle.Web.NeatUpload.IUploadModule" /> implementation since some
+            implementations might need to access the network to determine the
+            progress state.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadModule.CancelPostBack(System.String)">
+            <summary>
+            Cancels the upload specified by the given post-back ID.
+            </summary>
+            <param name="postBackID">
+            The post-back ID of the upload to cancel.
+            </param>
+            <remarks>The module should attempt to stop the upload if possible.  Calling
+            <see cref="M:Brettle.Web.NeatUpload.UploadModule.BindProgressState(System.String,System.String,Brettle.Web.NeatUpload.IUploadProgressState)" /> after calling this method must cause
+            <see cref="P:Brettle.Web.NeatUpload.IUploadProgressState.Status" /> to be <see cref="F:Brettle.Web.NeatUpload.UploadStatus.Cancelled" />.
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadModule.ConvertToUploadedFile(System.String,System.Web.HttpPostedFile)">
+            <summary>
+            Converts an <see cref="T:System.Web.HttpPostedFile" /> to an <see cref="T:Brettle.Web.NeatUpload.UploadedFile" />
+            that is associated with a particular control.
+            </summary>
+            <param name="controlUniqueID">
+            The UniqueID of the control with which the returned <see cref="T:Brettle.Web.NeatUpload.UploadedFile" />
+            should be associated.  If the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> is added to an
+            <see cref="T:Brettle.Web.NeatUpload.UploadedFileCollection" />, the UniqueID can be used to retrieve
+            it.
+            </param>
+            <param name="file">
+            The <see cref="T:System.Web.HttpPostedFile" /> to convert to an <see cref="T:Brettle.Web.NeatUpload.UploadedFile" />.
+            </param>
+            <returns>
+            The <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> that corresponds to the <see cref="T:System.Web.HttpPostedFile" />.
+            </returns>
+            <remarks>If an <see cref="T:Brettle.Web.NeatUpload.IUploadModule" /> is not installed or it does not support
+            conversion, this method will delegate to <see cref="M:Brettle.Web.NeatUpload.UploadStorage.ConvertToUploadedFile(System.String,System.Web.HttpPostedFile)" />
+            which will use the currently configured <see cref="T:Brettle.Web.NeatUpload.UploadStorageProvider" />
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadModule.AppendToLog(System.String)">
+            <summary>
+            Adds a message to the IIS log file.
+            </summary>
+            <param name="param">The message to add.</param>
+            <remarks>If the implementation does not suppport this method, it does nothing.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadModule.GetCacheBustedPath(System.String)">
+            <summary>
+            Returns an URL that will ensure the browser retrieves the most recent
+            version file at the specified path, by adding a '?guid=...' to the URL.
+            </summary>
+            <param name="path">the virtual path of the file.  If it starts with
+            '/', it is assumed to be app-relative.  If it doesn't, it is assumed
+            to be relative to the path of the current request.</param>
+            <returns>A site-relative URL that ensures that the browser will
+            retrieve the most recent version of the file.</returns>
+            <remarks>Based on code posted by Mike Lim in a feature request.
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadModule.BustCache(System.String)">
+            <summary>
+            Adds '?guid=value' to the URL with a value that ensures the browser
+            retrieves the most recent version of the file at the URL.
+            </summary>
+            <param name="url">the absolute URL of the file.</param>
+            <returns>an URL that ensures that the browser will
+            retrieve the most recent version of the file.</returns>
+            <remarks>Based on code posted by Mike Lim in a feature request.
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadModule.PostBackIDQueryParam">
+            <summary>
+            The name of the query parameter that can contain the post-back ID with
+            which files in the request should be associated.
+            </summary>
+            <value>
+            The name of the query parameter that can contain the post-back ID with
+            which files in the request should be associated.
+            </value>
+            <remarks>For example, if
+            PostBackIDQueryParam is "NeatUpload_PostBackID", then if a request is
+            received with a query string of "NeatUpload_PostBackID=123ABC", all files
+            in the request will be assocated with post-back ID "123ABC".  The post-back
+            ID must not contain the character "-".
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadModule.PostBackIDFieldName">
+            <summary>
+            The name of the form field that can contain the post-back ID with
+            which all subsequent files in the request should be associated.
+            </summary>
+            <value>
+            The name of the form field that can contain the post-back ID with
+            which all subsequent files in the request should be associated.
+            </value>
+            <remarks>For example, if
+            PostBackIDFieldName is "NeatUpload_PostBackID", then if a request contains
+            a form field named "NeatUpload_PostBackID" with a value of "123ABC", all
+            subsequent files
+            in the request will be assocated with post-back ID "123ABC".  The post-back
+            ID must not contain the character "-".
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadModule.FileFieldNamePrefix">
+            <summary>
+            The prefix for the names of file fields in requests.
+            </summary>
+            <value>
+            The prefix for the names of file fields in requests.
+            </value>
+            <remarks>If a file field has a name that starts with this prefix, the prefix
+            must be followed by the post-back ID, then a "-", then a control's UniqueID.
+            The file will then be associated with that post-back ID and control UniqueID.
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadModule.ConfigFieldNamePrefix">
+            <summary>
+            The prefix for the names of config fields in requests.
+            </summary>
+            <value>
+            The prefix for the names of config fields in requests.
+            </value>
+            <remarks>If a field has a name that starts with this prefix, the prefix must
+            be followed by a control's UniqueID.  The contents of the field must have
+            been returned by a previous call to <see cref="!:UploadStorageConfig.Protect" />.
+            The module will pass the
+            field contents to <see cref="!:UploadStorageConfig.Unprotect" /> of an object
+            returned by <see cref="M:Brettle.Web.NeatUpload.UploadModule.CreateUploadStorageConfig" /> and
+            will be used in an implementation dependent way when processing the file
+            fields for the same control UniqueID.
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadModule.IsEnabled">
+            <summary>
+            Whether a module is installed and will handle requests to the same URL
+            as the current request.
+            </summary>
+            <value>
+            Whether a module is installed and will handle requests to the same URL
+            as the current request.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadModule.Files">
+            <summary>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the post-back ID of the current request.
+            </summary>
+            <value>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the post-back ID of the current request.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadModule.PostBackID">
+            <summary>
+            The post-back ID associated with the current request, or null if there was none.
+            </summary>
+            <value>
+            The post-back ID associated with the current request, or null if there was none.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadModule.AppPath">
+            <summary>
+            The site-relative path of the application root, with no initial "/"
+            so that it is suitable for use as a prefix for application-relative
+            paths.
+            </summary>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.MultiRequestUploadModule.GetArmoredCookies">
+            <summary>
+            Gets a protected string to use as the value of the <see cref="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.ArmoredCookiesQueryParam" />
+            when making the requests in a multi-request upload.
+            </summary>
+            <returns>the protected string representing the cookies.</returns>
+            <remarks>If the installed module does not explicitly support armored
+            cookies, NeatUpoad will create a <see cref="T:System.Collections.Hashtable" />
+            containing the cookie names/values that ASP.NET uses for session ID and forms
+            auth, and will pass it to <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object)" />.
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.IsEnabled">
+            <summary>
+            Whether an <see cref="!:IMultRequestUploadModule" /> is installed and
+            will handle requests to the same URL as the current request.
+            </summary>
+            <value>
+            Whether an <see cref="!:IMultRequestUploadModule" /> is installed and
+            will handle requests to the same URL as the current request.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.FileSizesFieldName">
+            <summary>
+            The name of the field in the initial request that should contain the
+            space-delimited list of file sizes for the files that will be uploaded in the
+            coming requests.
+            </summary>
+            <value>
+            The name of the field in the initial request that should contain the
+            space-delimited list of file sizes for the files that will be uploaded in the
+            coming requests.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.UploadPath">
+            <summary>
+            The path (relative to the app root if starts with ~) to which all but the final request should
+            be sent.
+            </summary>
+            <value>
+            The path (relative to the app root if starts with ~) to which all but the final request should
+            be sent.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.ControlIDQueryParam">
+            <summary>
+            The name of the query parameter that must be present for all but the final
+            request, and which must contain the control UniqueID
+            that the requests are to be associated with.
+            </summary>
+            <value>
+            The name of the query parameter that must be present for all but the final
+            request, and which must contain the control UniqueID
+            that the requests are to be associated with.
+            </value>
+            <remarks>For example, if
+            ControlIDQueryParam is "NeatUpload_MultiRequestControlID", then if a request is
+            received with a query string of "NeatUpload_MultiRequestControlID=123ABC", all files
+            or other upload data in the request will be assocated with the control with
+            UniqueID "123ABC".  All requests except the final request must also
+            specify the post-back ID in a separate query param whose name is given by the value
+            of <see cref="!:PostBackIDQueryParam" />.  The final request must
+            contain the postback ID in one of the following locations:
+            <list type="bullet">
+              <item>in the query parameter named by
+                <see cref="!:PostBackIDQueryParam" /></item>
+              <item>in the form field named by
+                <see cref="!:PostBackIDFieldName" /></item>
+              <item>in a file field name prefixed by
+                <see cref="!:FileFieldNamePrefix" /></item>
+            </list>
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.ArmoredCookiesQueryParam">
+            <summary>
+            The name of the query parameter that can contain "protected" cookies that
+            the module should use if it needs to make HTTP requests while processing a
+            request.
+            </summary>
+            <value>
+            The name of the query parameter that can contain "protected" cookies that
+            the module should use if it needs to make HTTP requests while processing a
+            request.
+            </value>
+            <remarks>This is needed because the process making the request
+            might be different from the browser that displays the rest
+            of the web application.  For example, Flash always sends IE's cookies which means
+            that the correct cookies are not sent for Firefox users.  The value of the query
+            parameter must be the value returned by
+            <see cref="!:Protect" /> when it is passed a <see cref="T:System.Collections.Specialized.NameValueCollection" />
+            that maps the cookie names to cookie values.  For security reasons, the module
+            must only use the cookie when processing requests to the
+            <see cref="P:Brettle.Web.NeatUpload.MultiRequestUploadModule.UploadPath" />.</remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.IUploadProgressState">
+            <summary>
+            An object representing the progress of an upload.  This object can be passed to
+            <see cref="M:Brettle.Web.NeatUpload.UploadModule.BindProgressState(System.String,System.String,Brettle.Web.NeatUpload.IUploadProgressState)" /> to get the current progress of
+            the upload.
+            </summary>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.Status">
+            <summary>
+            The status of the upload as a member of the <see cref="T:Brettle.Web.NeatUpload.UploadStatus" />
+            enumeration.
+            </summary>
+            <value>
+            The status of the upload as a member of the <see cref="T:Brettle.Web.NeatUpload.UploadStatus" />
+            enumeration.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.FileBytesRead">
+            <summary>
+            The number of file bytes received for the upload.
+            </summary>
+            <value>
+            The number of file bytes received for the upload.
+            </value>
+            <remarks>Only bytes that are part of file fields that the module processes
+            are included in this count.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.BytesRead">
+            <summary>
+            The total number of bytes received for the upload so far.
+            </summary>
+            <value>
+            The total number of bytes received for the upload so far.
+            </value>
+            <remarks>This includes <see cref="P:Brettle.Web.NeatUpload.IUploadProgressState.FileBytesRead" /> as well as all other
+            bytes included the upload (e.g. other form fields or file fields that are
+            not processed by the module.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.BytesTotal">
+            <summary>
+            The total number of bytes expected for the uploaded.
+            </summary>
+            <value>
+            The total number of bytes expected for the uploaded.
+            </value>
+            <remarks>For non-multi-request uploads, this is determined by the Content-Length
+            header of the request.  For multi-request uploads, it is determined by the total
+            of the sizes in the file sizes field in the initial request.  It
+            may go up when the final regular form submission request is received, since
+            it's Content-Length header will then be added.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.FractionComplete">
+            <summary>
+            The fraction (between 0.0 and 1.0) of the upload that has been received.
+            </summary>
+            <value>
+            The fraction (between 0.0 and 1.0) of the upload that has been received.
+            </value>
+            <remarks>Computed as <see cref="P:Brettle.Web.NeatUpload.IUploadProgressState.BytesRead" />/<see cref="P:Brettle.Web.NeatUpload.IUploadProgressState.BytesTotal" /></remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.BytesPerSec">
+            <summary>
+            An estimate of the number of bytes received during the past second
+            while the upload is in progress.  When the upload is finished this is
+            an average over the entire upload.
+            </summary>
+            <value>
+            An estimate of the number of bytes received during the past second
+            while the upload is in progress.  When the upload is finished this is
+            an average over the entire upload.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.Rejection">
+            <summary>
+            If an <see cref="T:Brettle.Web.NeatUpload.UploadException" /> (or subclass) was thrown while
+            processing the upload, that exception.  Otherwise, null.
+            </summary>
+            <value>
+            If an <see cref="T:Brettle.Web.NeatUpload.UploadException" /> (or subclass) was thrown while
+            processing the upload, that exception.  Otherwise, null.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.Failure">
+            <summary>
+            If an exception that was not an <see cref="T:Brettle.Web.NeatUpload.UploadException" />
+            while processing the upload, that exception.  Otherwise, null.
+            </summary>
+            <value>
+            If an exception that was not an <see cref="T:Brettle.Web.NeatUpload.UploadException" />
+            while processing the upload, that exception.  Otherwise, null.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.TimeRemaining">
+            <summary>
+            An estimate of the time remaining until the upload is complete.
+            </summary>
+            <value>
+            An estimate of the time remaining until the upload is complete.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.TimeElapsed">
+            <summary>
+            The time since the upload started.
+            </summary>
+            <value>
+            The time since the upload started.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.CurrentFileName">
+            <summary>
+            The client-side filename (not including path) of the file currently
+            being received.
+            </summary>
+            <value>
+            The client-side filename (not including path) of the file currently
+            being received.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.Files">
+            <summary>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the upload.
+            </summary>
+            <value>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the upload.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadProgressState.ProcessingState">
+            <summary>
+            A serializable object representing the processing state for the upload request.
+            </summary>
+            <value>
+            A serializable object representing the processing state for the upload request.
+            </value>
+            <remarks>This provides a way to communicate from request processing the upload
+            to the request displaying progress which might be on different servers in
+            a web garden/farm.</remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.DetailsSpan">
+            <summary>
+            A span that is dynamically filled with upload progress/status information using data-binding expressions.</summary>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.DetailsControl">
+            <summary>
+            Abstract base class for controls which are dynamically filled with upload progress/status information using
+            data-binding expressions.</summary>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.DetailsControl.UseHtml4">
+            <summary>
+            Whether to display the control using HtmlTextWriter even on downlevel browsers.</summary>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.DetailsControl.WhenStatus">
+            <summary>
+            A space delimited list of the <see cref="T:Brettle.Web.NeatUpload.UploadStatus" /> values for which this control should be displayed.</summary>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UploadStateStoreProvider">
+            <summary>
+            Base class for classes that retrieve or creates <see cref="!:IUploadState" /> objects associated
+            with particular post-back IDs.
+            </summary>
+            <remarks>Subclasses
+            are instantiated by NeatUpload if they are added in the &lt;providers&gt; section of the &lt;neatUpload&gt;
+            section.  Application developers should not instantiate UploadStateStoreProviders directly.
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStoreProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Initialize this object using the name and attributes.
+            </summary>
+            <param name="name">
+            The name of this provider as specified by the name attribute of the &lt;add&gt; element.
+            Available via the <see cref="P:Brettle.Web.NeatUpload.UploadStateStoreProvider.Name" /> property after this method is called.
+            </param>
+            <param name="attrs">
+            A <see cref="T:System.Collections.Specialized.NameValueCollection" /> representing additional
+            attributes of the &lt;add&gt; element that can be used by subclasses.
+            </param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStoreProvider.Load(System.String)">
+            <summary>
+            Returns an <see cref="!:IUploadState" /> for a given post-back ID.
+            </summary>
+            <param name="postBackID">
+            A post-back ID identifying the <see cref="!:IUploadState" />.
+            </param>
+            <returns>
+            The <see cref="!:IUploadState" /> corresponding to
+            <paramref name="postBackID" />, or null if none exists.
+            </returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStoreProvider.MergeAndSave(Brettle.Web.NeatUpload.UploadState)">
+            <summary>
+            Merges a particular <see cref="T:Brettle.Web.NeatUpload.UploadState" /> with the stored <see cref="T:Brettle.Web.NeatUpload.UploadState" /> and store
+            the merged <see cref="T:Brettle.Web.NeatUpload.UploadState" />.
+            </summary>
+            <param name="uploadState">
+            The <see cref="T:Brettle.Web.NeatUpload.UploadState" /> to be merged.
+            </param>
+            <remarks>When this method returns, <paramref name="uploadState" /> and the stored <see cref="T:Brettle.Web.NeatUpload.UploadState" />
+            will be equivalent (though not necessarily identical) and either may have changed as a result
+            of the merge.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStoreProvider.GetCleanUpIfStaleCallback">
+            <summary>
+            Returns the <see cref="T:Brettle.Web.NeatUpload.UploadStateStoreProvider.CleanUpIfStaleCallback" /> that NeatUpload should call when a post-back ID
+            might be stale.
+            </summary>
+            <returns>
+            The <see cref="T:Brettle.Web.NeatUpload.UploadStateStoreProvider.CleanUpIfStaleCallback" />.
+            </returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStoreProvider.Delete(System.String)">
+            <summary>
+            Responsible for deleting the <see cref="T:Brettle.Web.NeatUpload.UploadState" /> for a post-back ID from storage.
+            </summary>
+            <param name="postBackID">
+            The post-back ID to be deleted.
+            </param>
+            <remarks>Subclasses should override this method to avoid leaking <see cref="T:Brettle.Web.NeatUpload.UploadState" />
+            objects.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStoreProvider.CleanUpIfStale(System.String)">
+            <summary>
+            Calls <see cref="M:Brettle.Web.NeatUpload.UploadStateStoreProvider.Delete(System.String)" /> if the <see cref="T:Brettle.Web.NeatUpload.UploadState" /> for the post-back ID is stale.
+            </summary>
+            <param name="postBackID">
+            The post-back ID of the <see cref="T:Brettle.Web.NeatUpload.UploadState" /> to delete if stale.
+            </param>
+            <remarks>The <see cref="T:Brettle.Web.NeatUpload.UploadState" /> is considered stale if it has not been updated in the
+            number of seconds indicated by the stateStaleAfterSeconds attribute of the &lt;neatUpload&gt;
+            element.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStoreProvider.Merge(Brettle.Web.NeatUpload.UploadState,Brettle.Web.NeatUpload.UploadState)">
+            <summary>
+            Merges two <see cref="T:Brettle.Web.NeatUpload.UploadState" /> objects.
+            </summary>
+            <param name="uploadState">
+            The "local" <see cref="T:Brettle.Web.NeatUpload.UploadState" /> object to merge, and the object that should contain the result
+            of the merge.
+            </param>
+            <param name="storedUploadState">
+            The stored <see cref="T:Brettle.Web.NeatUpload.UploadState" /> object to merge, which will be left unchanged.
+            </param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStoreProvider.IsStale(Brettle.Web.NeatUpload.UploadState)">
+            <summary>
+            Returns true if the specified <see cref="T:Brettle.Web.NeatUpload.UploadState" /> is considered stale.
+            </summary>
+            <param name="uploadState">
+            The <see cref="T:Brettle.Web.NeatUpload.UploadState" /> to check for staleness
+            </param>
+            <returns>
+            true if <paramref name="uploadState" /> is stale.
+            </returns>
+            <remarks>The <see cref="T:Brettle.Web.NeatUpload.UploadState" /> is considered stale if it has not been updated in the
+            number of seconds indicated by the stateStaleAfterSeconds attribute of the &lt;neatUpload&gt;
+            element or it has been forced stale.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadStateStoreProvider.Description">
+            <value>
+            A human readable description of this provider.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadStateStoreProvider.Name">
+            <value>
+            The name of this provider as specified by the name attribute of the &lt;add&gt; element.
+            </value>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UploadStateStoreProvider.CleanUpIfStaleCallback">
+            <summary>
+            A delegate that NeatUpload should call when it thinks an <see cref="T:Brettle.Web.NeatUpload.UploadState" /> might be stale.
+            </summary>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UploadStateStore">
+            <summary>
+            Retrieves or creates <see cref="!:IUploadState" /> objects associated
+            with particular post-back IDs.
+            </summary>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStore.OpenReadOnly(System.String)">
+            <summary>
+            Returns an <see cref="!:IUploadState" /> for a given post-back ID
+            </summary>
+            <param name="postBackID">
+            A post-back ID identifying the <see cref="!:IUploadState" />.
+            </param>
+            <returns>
+            The <see cref="!:IUploadState" /> corresponding to
+            <paramref name="postBackID" />
+            </returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStore.OpenReadWrite(System.String)">
+            <summary>
+            Returns an <see cref="T:Brettle.Web.NeatUpload.UploadState" /> for a given post-back ID.
+            or null if none exists.
+            </summary>
+            <param name="postBackID">
+            A post-back ID identifying the <see cref="T:Brettle.Web.NeatUpload.UploadState" />.
+            </param>
+            <returns>
+            The <see cref="!:IUploadState" /> corresponding to
+            <paramref name="postBackID" />, or null if none-exists.
+            </returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStore.OpenReadWriteOrCreate(System.String)">
+            <summary>
+            Returns an <see cref="!:IUploadState" /> for a given post-back ID.
+            or creates one if none exists.
+            </summary>
+            <param name="postBackID">
+            A post-back ID identifying the <see cref="!:IUploadState" />.
+            </param>
+            <returns>
+            The <see cref="!:IUploadState" /> corresponding to
+            <paramref name="postBackID" />
+            </returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadStateStore.Close(Brettle.Web.NeatUpload.UploadState)">
+            <summary>
+            Called to indicate that no additional calls will be made to members
+            of the uploadState object during this request.  If the implementation
+            is supposed to share the information in the object across servers, it
+            might need to take some action to ensure that final changes are
+            propagated to other servers.
+            </summary>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UploadedFile">
+            <summary>
+            The base class representing a file received by an <see cref="T:Brettle.Web.NeatUpload.IUploadModule" />.
+            The file might be stored on a local disk, in a database, on a remote
+            filesystem, or somewhere else.
+            </summary>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadedFile.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs an <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> associated with a particular
+            control UniqueID, having a given filename and content type.
+            </summary>
+            <param name="controlUniqueID">
+            The UniqueID of the control used to upload the file.
+            </param>
+            <param name="fileName">
+            The filename sent by the browser.
+            </param>
+            <param name="contentType">
+            The MIME content type sent by the browser.
+            </param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadedFile.StripPath(System.String)">
+            <summary>
+            Removes the Windows-style path from the given filename.
+            </summary>
+            <param name="fileName">
+            A filename, possibly including a Windows-style path.
+            </param>
+            <returns>
+            Just the filename.
+            </returns>
+            <remarks>Some browsers (notably IE) send the full-path when uploading a file.
+            Most do not.  We strip off the path for consistency.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadedFile.Dispose">
+            <summary>
+            Disposes of any temporary resources (e.g. temp files) used by this object.
+            </summary>
+            <remarks>If <see cref="M:Brettle.Web.NeatUpload.UploadedFile.MoveTo(System.String,Brettle.Web.NeatUpload.MoveToOptions)" /> was not called, then when this method
+            returns, no remnants of the file should remain.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadedFile.CreateStream">
+            <summary>
+            Creates a <see cref="T:System.IO.Stream" /> to which the <see cref="T:Brettle.Web.NeatUpload.IUploadModule" /> can
+            write the file as it is received.
+            </summary>
+            <returns>
+            A <see cref="T:System.IO.Stream" />.
+            </returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadedFile.MoveTo(System.String,Brettle.Web.NeatUpload.MoveToOptions)">
+            <summary>
+            Moves the file to a permanent location.
+            </summary>
+            <param name="path">
+            The location to which the file should be moved.
+            </param>
+            <param name="opts">
+            A <see cref="T:Brettle.Web.NeatUpload.MoveToOptions" /> object controlling details of the move,
+            </param>
+            <remarks>The <paramref name="path" /> could be a filesystem path or some
+            other identifier, depending on the storage medium.  The
+            <paramref name="opts" /> could just be <see cref="F:Brettle.Web.NeatUpload.MoveToOptions.Overwrite" />
+            or <see cref="F:Brettle.Web.NeatUpload.MoveToOptions.None" /> to control whether any existing file
+            at the same location should be replaced.  Or, it could be a module-specific
+            subclass of <see cref="T:Brettle.Web.NeatUpload.MoveToOptions" /> which provides additional
+            information.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadedFile.OpenRead">
+            <summary>
+            Gets a <see cref="T:System.IO.Stream" /> which can be used to access the file.
+            </summary>
+            <returns>
+            A <see cref="T:System.IO.Stream" />
+            </returns>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadedFile.TmpFile">
+            <summary>
+            If the file is stored on disk, the corresponding
+            <see cref="T:System.IO.FileInfo" /> object.
+            </summary>
+            <value>
+            If the file is stored on disk, the corresponding
+            <see cref="T:System.IO.FileInfo" /> object.
+            </value>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadedFile.FileName">
+            <summary>
+            The filename sent by the browser, without any path.
+            </summary>
+            <value>
+            The filename sent by the browser, without any path.
+            </value>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadedFile.ContentType">
+            <summary>
+            The MIME content type sent by the browser.
+            </summary>
+            <value>
+            The MIME content type sent by the browser.
+            </value>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadedFile.ControlUniqueID">
+            <summary>
+            The UniqueID of the control used to upload the file.
+            </summary>
+            <value>
+            The UniqueID of the control used to upload the file.
+            </value>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadedFile.SaveAs(System.String)">
+            <summary>
+            Equivalent to <code>MoveTo(path, MoveToOptions.Overwrite)</code>
+            </summary>
+            <param name="path">
+            The location to which the file should be saved.
+            </param>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadedFile.IsUploaded">
+            <summary>
+            Whether this object corresponds to an actual file with either a non-empty
+            filename or a non-zero length.
+            </summary>
+            <value>
+            Whether this object corresponds to an actual file with either a non-empty
+            filename or a non-zero length.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadedFile.TextLength">
+            <summary>
+            The length in bytes of the specified file.
+            </summary>
+            <value>
+            The length in bytes of the specified file.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadedFile.InputStream">
+            <summary>
+            A readable <see cref="T:System.IO.Stream" /> on the uploaded file. </summary>
+            <remarks>
+            A readable <see cref="T:System.IO.Stream" /> on the uploaded file.  Note that the <see cref="T:System.IO.Stream" /> is opened
+            when this property is first accessed and that stream becomes the permanent value of this property.
+            If you use this property and don't either Close() the stream or call <see cref="M:Brettle.Web.NeatUpload.UploadedFile.MoveTo(System.String,Brettle.Web.NeatUpload.MoveToOptions)" /> or
+            <see cref="M:Brettle.Web.NeatUpload.UploadedFile.SaveAs(System.String)" /> before the request ends you may get an exception when NeatUpload tries to delete
+            the underlying temporary storage at the end of the request.
+            </remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.DetailsDiv">
+            <summary>
+            A div that is dynamically filled with upload progress/status information using data-binding expressions.</summary>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.ProgressBar">
+            <summary>
+            Displays progress and status of an upload.</summary>
+            <remarks>
+            For the progress bar to be displayed, the <see cref="T:Brettle.Web.NeatUpload.UploadHttpModule" /> must be in use.
+            For the progress display to be started, the form being submitted must include an <see cref="T:Brettle.Web.NeatUpload.InputFile" />
+            control that is not empty.  Use the <see cref="P:Brettle.Web.NeatUpload.ProgressBar.Inline" /> property to control how the progress bar is
+            displayed.  If you use the <see cref="!:Triggers" /> property (or the <see cref="!:AddTrigger" /> method)
+            to specify which controls should cause files to be uploaded, then other controls will not start the progress
+            display (e.g. "Cancel" buttons).
+            </remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.ProgressBarBase">
+            <summary>
+            Base class for controls that display the progress and status of an upload.</summary>
+            <remarks>
+            For the progress bar to be displayed, the <see cref="T:Brettle.Web.NeatUpload.UploadHttpModule" /> must be in use.
+            For the progress display to be started, the form being submitted must include an <see cref="T:Brettle.Web.NeatUpload.InputFile" />
+            control that is not empty.  If you use the <see cref="P:Brettle.Web.NeatUpload.ProgressBarBase.Triggers" /> property (or the <see cref="M:Brettle.Web.NeatUpload.ProgressBarBase.AddTrigger(System.Web.UI.Control)" /> method)
+            to specify which controls should cause files to be uploaded, then other controls will not start the progress
+            display (e.g. "Cancel" buttons).
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ProgressBarBase.RegisterOnSubmitStatement(System.Object,System.EventArgs)">
+            <summary>
+            This method does nothing.  It is only provided to ensure API compatibility with earlier NeatUpload
+            versions.  In those earlier versions, this method registered an OnSubmit statement to
+            ensure that this ProgressBar will start when the page is submitted.</summary>
+            <param name="source">Ignored</param>
+            <param name="e">Ignored</param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ProgressBarBase.AddTrigger(System.Web.UI.Control)">
+            <summary>
+            Adds a control (typically a button) to a list trigger controls.</summary>
+            <param name="control">the control to add to the list</param>
+            <remarks>
+            See the <see cref="P:Brettle.Web.NeatUpload.ProgressBarBase.Triggers" /> property for information on what triggers are.  This method is
+            primarily for situations where the see cref="Triggers"/&gt; property can't be used because the ID of the
+            trigger control is not known until runtime (e.g. for
+            controls in Repeaters).  Controls added via this method are not maintained as part of this
+            control's <see cref="!:ViewState" />.  That means that if you use this method, you will need to call it
+            for each request, not just non-postback requests.  Also, you can use both this method and the
+            <see cref="P:Brettle.Web.NeatUpload.ProgressBarBase.Triggers" /> property for the same control.
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.ProgressBarBase.Triggers">
+            <summary>
+            Space-separated list of the IDs or ClientIDs of controls which should upload files and start the progress
+            display. </summary>
+            <remarks>
+            If no triggers are listed in <see cref="P:Brettle.Web.NeatUpload.ProgressBarBase.Triggers" /> or added via <see cref="M:Brettle.Web.NeatUpload.ProgressBarBase.AddTrigger(System.Web.UI.Control)" /> then whenever
+            the form is submitted with any files selected the progress display will start.  If you do specify
+            one or more triggers, then any form submissions initiated via any other controls that you didn't specify
+            as triggers will <i>not</i> include any files and will <i>not</i> start the progress display.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.ProgressBarBase.AutoStartCondition">
+            <summary>
+            JavaScript expression which is evaluated when the form is submitted to determine whether to start the
+            progress display.</summary>
+            <remarks>
+            Defaults to "IsFilesToUpload()" which will cause the progress display to only start when there
+            are files to be uploaded.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.ProgressBarBase.Url">
+            <summary>
+            URL of an aspx page that displays the upload progress.</summary>
+            <remarks>
+            The specified page should inherits from the <see cref="T:Brettle.Web.NeatUpload.Progress" /> code behind class.
+            You may use an absolute or relative URL that refers to a page in the same web application.  If the URL
+            starts with "~", the "~" will be replaced with the web application root as returned by
+            <see cref="P:System.Web.HttpRequest.ApplicationPath" />.  By default, "~/NeatUpload/Progress.aspx" will be used.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.ProgressBar.Inline">
+            <summary>
+            Whether to display the progress bar inline or as a pop-up.</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Brettle.Web.NeatUpload.MultiFile" -->
+        <member name="T:Brettle.Web.NeatUpload.FileControl">
+            <summary>
+            Base class for NeatUpload's file upload controls.
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.FileControl._files">
+            <summary>
+            The array of <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects corresponding to the files uploaded to this control. </summary>
+            <remarks>
+            Derived classes can use this to access the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects that were created by the
+            UploadStorageProvider.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.FileControl.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Called by ASP.NET so that controls can find and process their post back data</summary>
+            <returns>the true if a file was uploaded with this control</returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.FileControl.RaisePostDataChangedEvent">
+            <summary>
+            Called by ASP.NET if <see cref="M:Brettle.Web.NeatUpload.FileControl.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> returns true (i.e. if a file was uploaded to this
+            control).  Fires the <see cref="E:Brettle.Web.NeatUpload.FileControl.FileUploaded" /> event.</summary>
+        </member>
+        <member name="E:Brettle.Web.NeatUpload.FileControl.FileUploaded">
+            <summary>
+            Fired when a file is uploaded to this control.</summary>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.MultiFile.ValidationFileNames">
+            <summary>
+            Client-side names of the uploaded files for validation purposes, separated by semicolons.</summary>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.MultiFile.FileQueueControlID">
+            <summary>
+            The ClientID of the control where the file queue should be displayed.</summary>
+            <remarks>
+            Defaults to "" which will cause the file queue to be displayed in a DIV element that is
+            automatically inserted immediately before this MultiFile control.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.ProgressPage.Files">
+            <summary>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the upload.
+            </summary>
+            <value>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the upload.
+            </value>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.InputFile">
+            <summary>
+            File upload control that can be used with the <see cref="T:Brettle.Web.NeatUpload.UploadHttpModule" /> and <see cref="T:Brettle.Web.NeatUpload.ProgressBar" />.
+            </summary>
+            <remarks>
+            On post back, you can use <see cref="P:Brettle.Web.NeatUpload.InputFile.HasFile" /> to determine whether a file has been uploaded and use
+            <see cref="P:Brettle.Web.NeatUpload.InputFile.FileName" />, <see cref="P:Brettle.Web.NeatUpload.InputFile.ContentType" />, <see cref="P:Brettle.Web.NeatUpload.InputFile.TextLength" />, <see cref="P:Brettle.Web.NeatUpload.InputFile.FileContent" />
+            to access the file's name, MIME type, length, and contents.  If you want to save the file for use after
+            the current request, use the <see cref="M:Brettle.Web.NeatUpload.InputFile.MoveTo(System.String,Brettle.Web.NeatUpload.MoveToOptions)" /> method.
+            This control will function even if the <see cref="T:Brettle.Web.NeatUpload.UploadHttpModule" /> is not being used.  In that case,
+            its methods/properties act on the file in the standard ASP.NET <see cref="P:System.Web.HttpRequest.Files" /> collection.
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.InputFile.MoveTo(System.String,Brettle.Web.NeatUpload.MoveToOptions)">
+            <summary>
+            Moves an uploaded file to a permanent location.</summary>
+            <param name="path">the permanent location to move the uploaded file to.</param>
+            <param name="opts">options associated with moving the file (e.g.
+            <see cref="F:Brettle.Web.NeatUpload.MoveToOptions.Overwrite">MoveToOptions.Overwrite</see> or
+            <see cref="F:Brettle.Web.NeatUpload.MoveToOptions.None">MoveToOptions.None</see></param>
+            <remarks>
+            <para>
+            The default <see cref="T:Brettle.Web.NeatUpload.UploadStorageProvider" /> (a <see cref="T:Brettle.Web.NeatUpload.FilesystemUploadStorageProvider" />)
+            temporarily stores uploaded files on disk.  If you don't call MoveTo() in response to the postback, the temporary file will be
+            automatically deleted.</para>
+            <para>
+            The <paramref name="path" /> you pass to MoveTo() is the filesystem path where you want the uploaded file
+            to be permanently moved.  If you want any existing file at that path to be overwritten, pass
+            <see cref="F:Brettle.Web.NeatUpload.MoveToOptions.Overwrite">MoveToOptions.Overwrite</see> as the <paramref name="opts" />
+            parameter.  Otherwise, pass <see cref="F:Brettle.Web.NeatUpload.MoveToOptions.None">MoveToOptions.None</see>.
+            Only the last call to MoveTo() in response to a particular postback will determine the uploaded file's
+            permanent location.</para>
+            <para>
+            If you are using a non-default <see cref="T:Brettle.Web.NeatUpload.UploadStorageProvider" />, it might interpret
+            <paramref name="path" /> differently.  For example, it might use it as the primary key to identify a row
+            in a database table.  A non-default <see cref="T:Brettle.Web.NeatUpload.UploadStorageProvider" /> might also allow other options
+            by accepting a subclass of <see cref="T:Brettle.Web.NeatUpload.MoveToOptions" /> for the <paramref name="opts" /> parameter.</para>
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.InputFile.File">
+            <summary>
+            The <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> corresponding to the file uploaded to this control. </summary>
+            <remarks>
+            Derived classes can use this to access the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> object that was created by the
+            UploadStorageProvider.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.InputFile.HasFile">
+            <summary>
+            Whether a file was uploaded using this control. </summary>
+            <remarks>
+            HasFile is true if a file was uploaded during the last postback, otherwise false.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.InputFile.FileName">
+            <summary>
+            Client-side name of the uploaded file. </summary>
+            <remarks>
+            FileName is the name (not the full path) of the uploaded file on the user's machine if a file was
+            uploaded during the last postback, otherwise it is null.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.InputFile.ValidationFileName">
+            <summary>
+            Client-side name of the uploaded file for validation purposes. </summary>
+            <remarks>
+            ValidationFileName is the same as <see cref="P:Brettle.Web.NeatUpload.InputFile.FileName" /> if a file was uploaded during the last postback.
+            However, if no file was uploaded, ValidationFileName is String.Empty while FileName is null.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.InputFile.ContentType">
+            <summary>
+            Browser-specified MIME type of the uploaded file. </summary>
+            <remarks>
+            ContentType is browser-specified MIME type of the uploaded file if a file was
+            uploaded during the last postback, otherwise it is null.  Note that different browsers determine
+            the MIME type differently.  They might use the file's extension, the first few bytes of the file, or
+            something else entirely to determine the MIME type.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.InputFile.TextLength">
+            <summary>
+            Number of bytes in the uploaded file. </summary>
+            <remarks>
+            Number of bytes in the uploaded file if a file was uploaded during the last postback,
+            otherwise 0.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.InputFile.FileContent">
+            <summary>
+            A readable <see cref="T:System.IO.Stream" /> on the uploaded file. </summary>
+            <remarks>
+            A readable <see cref="T:System.IO.Stream" /> on the uploaded file if a file was uploaded during the last postback,
+            otherwise null.  Note that the <see cref="T:System.IO.Stream" /> is opened when this property is first accessed and
+            that stream becomes the permanent value of this property.  If you use this
+            property and don't either close the stream or call <see cref="M:Brettle.Web.NeatUpload.InputFile.MoveTo(System.String,Brettle.Web.NeatUpload.MoveToOptions)" /> before the request ends you
+            may get an exception when NeatUpload tries to delete the underlying temporary storage at the end of the
+            request.
+            </remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UnloadConfirmer">
+            <summary>
+            Asks for confirmation if the user tries to unload the page while an upload is in progress.
+            </summary>
+            <remarks>
+            If the user tries to follow a link in the same window/tab or re-submit the form, the current
+            page would unload and the upload would be interrupted.  This control displays a confirmation
+            dialog when that happens so that the user doesn't interrupt the upload accidentally.
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UnloadConfirmer.Text">
+            <summary>
+            The confirmation message to display if the user attempts to unload the page.
+            </summary>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UploadedFileCollection">
+            <summary>
+            A collection of <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects, indexed by the UniqueID of
+            the control that uploaded them.
+            </summary>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadedFileCollection.Get(System.String)">
+            <summary>
+            Get the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> in the collection that was uploaded from
+            the control with the specified UniqueID, or null if there is no such file.
+            </summary>
+            <param name="key">
+            The UniqueID of the control.
+            </param>
+            <returns>
+            The corresponding <see cref="T:Brettle.Web.NeatUpload.UploadedFile" />, or null if there is no such file.
+            </returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadedFileCollection.Get(System.Int32)">
+            <summary>
+            Gets the index'th <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> in the collection.
+            </summary>
+            <param name="index">
+            The index into the collection.
+            </param>
+            <returns>
+            The corresponding <see cref="T:Brettle.Web.NeatUpload.UploadedFile" />.
+            </returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadedFileCollection.GetEnumerator">
+            <summary>
+            Gets an <see cref="T:System.Collections.IEnumerator" /> that can be used to enumerate through
+            the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects in the collection.
+            </summary>
+            <returns>
+            The <see cref="T:System.Collections.IEnumerator" />.
+            </returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadedFileCollection.GetKey(System.Int32)">
+            <summary>
+            Gets the index'th control UniqueID in the collection.
+            </summary>
+            <param name="index">
+            The index into the collection.
+            </param>
+            <returns>
+            The UniqueID of the control the uploaded the corresponding file.
+            </returns>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadedFileCollection.System#Collections#ICollection#SyncRoot">
+            <summary>
+            An object that can be used to synchronize access to this collection.
+            </summary>
+            <value>
+            An object that can be used to synchronize access to this collection.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadedFileCollection.System#Collections#ICollection#IsSynchronized">
+            <summary>
+            Returns true.
+            </summary>
+            <value>
+            Returns true.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadedFileCollection.Item(System.String)">
+            <summary>
+            The <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> in the collection that was uploaded from
+            the control with the specified UniqueID, or null if there is no such file.
+            </summary>
+            <value>
+            The <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> in the collection that was uploaded from
+            the control with the specified UniqueID, or null if there is no such file.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadedFileCollection.Item(System.Int32)">
+            <summary>
+            The index'th <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> in the collection.
+            </summary>
+            <value>
+            The index'th <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> in the collection.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadedFileCollection.AllKeys">
+            <summary>
+            The UniqueIDs of all of the controls with files in this collection.
+            </summary>
+            <value>
+            The UniqueIDs of all of the controls with files in this collection.
+            </value>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.IUploadModule">
+            <summary>
+            An <see cref="T:System.Web.IHttpModule" /> that allows upload requests to be monitored
+            and provides access to the uploaded files.  When installed
+            in the &lt;httpModules&gt; section, it can be used with
+            the NeatUpload controls or other controls that use the static methods of
+            <see cref="T:Brettle.Web.NeatUpload.UploadModule" />.
+            </summary>
+            <remarks>
+            When <see cref="P:Brettle.Web.NeatUpload.IUploadModule.IsEnabled" /> returns true, the module will
+            handle POST requests to the current request's URL
+            that have a Content-Type header of
+            "multipart/form-data" and contain a post-back ID in one
+            of the following locations:
+            <list type="bullet">
+              <item>If the post-back ID is in a query parameter named by
+                <see cref="P:Brettle.Web.NeatUpload.IUploadModule.PostBackIDQueryParam" />, all files in the request will
+                be associated with the post-back ID.  The files can be retrieved
+                from the <see cref="P:Brettle.Web.NeatUpload.IUploadModule.Files" /> collection using the names of the
+                file fields in the request.  These names are typically the
+                UniqueIDs of the controls that uploaded the files.</item>
+              <item>If the post-back ID is in the form field named by
+                <see cref="P:Brettle.Web.NeatUpload.IUploadModule.PostBackIDFieldName" />, all files that occur after
+                form field will be associated with the post-back ID.
+                Those files can be retrieved
+                from the <see cref="P:Brettle.Web.NeatUpload.IUploadModule.Files" /> collection using the names of the
+                file fields in the request.  These names are typically the
+                UniqueIDs of the controls that uploaded the files.</item>
+              <item>If the post-back ID is in a file field name prefixed by
+                <see cref="P:Brettle.Web.NeatUpload.IUploadModule.FileFieldNamePrefix" />, that file will be associated
+                with the post-back ID.  That file can be retrieved
+                from the <see cref="P:Brettle.Web.NeatUpload.IUploadModule.Files" /> collection using the portion of
+                the file field name after the first "-".  That portion of the name
+                typically corresponds to the UniqueID of the controls that uploaded
+                the files.</item>
+            </list>
+            For requests that specify a post-back ID, the module can also use "protected"
+            configuration information associated with a particular file if the
+            file field is preceded in the request by a
+            field with a name consisting of the value <see cref="P:Brettle.Web.NeatUpload.IUploadModule.ConfigFieldNamePrefix" />
+            followed by the files key in <see cref="P:Brettle.Web.NeatUpload.IUploadModule.Files" /> collection (typically the
+            uploading control's UniqueID).
+
+            <para>In addition, <see cref="M:Brettle.Web.NeatUpload.IUploadModule.BindProgressState(System.String,System.String,Brettle.Web.NeatUpload.IUploadProgressState)" /> provides information
+            concerning the progress of the upload,
+            <see cref="M:Brettle.Web.NeatUpload.IUploadModule.CancelPostBack(System.String)" /> tells the module it should ignore the
+            remainder of the upload, <see cref="M:Brettle.Web.NeatUpload.IUploadModule.SetProcessingState(System.String,System.Object)" /> associates an
+            arbitrary object with an upload after it has been received but before the
+            end of the request, and <see cref="M:Brettle.Web.NeatUpload.IUploadModule.ConvertToUploadedFile(System.String,System.Web.HttpPostedFile)" /> to convert an
+            <see cref="T:System.Web.HttpPostedFile" /> into an <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /></para>
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.IUploadModule.CreateUploadStorageConfig">
+            <summary>
+            Creates and returns a new <see cref="T:Brettle.Web.NeatUpload.UploadStorageConfig" /> (or
+            subclass) for use with the current request.
+            </summary>
+            <returns>a new <see cref="T:Brettle.Web.NeatUpload.UploadStorageConfig" /> or subclass, or
+            null if the default implementation should be used.</returns>
+            <remarks>The default implmentation returns
+            the <see cref="T:Brettle.Web.NeatUpload.UploadStorageConfig" /> created by the currently selected
+            <see cref="T:Brettle.Web.NeatUpload.UploadStorageProvider" />.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.IUploadModule.SetProcessingState(System.String,System.Object)">
+            <summary>
+            Sets the processing state object associated with the current upload and
+            give control UniqueID.  The processing state object can be retrieved by passing an
+            <see cref="T:Brettle.Web.NeatUpload.IUploadProgressState" /> object to <see cref="M:Brettle.Web.NeatUpload.IUploadModule.BindProgressState(System.String,System.String,Brettle.Web.NeatUpload.IUploadProgressState)" /> and
+            then accessing <see cref="P:Brettle.Web.NeatUpload.IUploadProgressState.ProcessingState" />.
+            </summary>
+            <param name="controlUniqueID">
+            The UniqueID of the control that the processing state is associated with.
+            </param>
+            <param name="state">
+            A <see cref="T:System.Object" /> that represents the processing state.  This must be
+            serializable.
+            </param>
+            <returns>true if the module supports setting processing state, otherwise false.</returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.IUploadModule.BindProgressState(System.String,System.String,Brettle.Web.NeatUpload.IUploadProgressState)">
+            <summary>
+            Fills in an <see cref="T:Brettle.Web.NeatUpload.IUploadProgressState" /> object with the progress state for
+            a given post-back ID and control UniqueID.
+            </summary>
+            <param name="postBackID">
+            The post-back ID for which the progress state should be retrieved.
+            </param>
+            <param name="controlUniqueID">
+            The UniqueID of the control for which the processing state should be retrieved,
+            or null to retrieve progress state without processing state.
+            </param>
+            <param name="progressState">
+            A <see cref="T:Brettle.Web.NeatUpload.IUploadProgressState" /> to be filled in with the progress state
+            for the given post-back ID and control UniqueID.
+            </param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.IUploadModule.CancelPostBack(System.String)">
+            <summary>
+            Cancels the upload specified by the given post-back ID.
+            </summary>
+            <param name="postBackID">
+            The post-back ID of the upload to cancel.
+            </param>
+            <remarks>The module should attempt to stop the upload if possible.  Calling
+            <see cref="M:Brettle.Web.NeatUpload.IUploadModule.BindProgressState(System.String,System.String,Brettle.Web.NeatUpload.IUploadProgressState)" /> after calling this method must cause
+            <see cref="P:Brettle.Web.NeatUpload.IUploadProgressState.Status" /> to be <see cref="F:Brettle.Web.NeatUpload.UploadStatus.Cancelled" />.
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.IUploadModule.ConvertToUploadedFile(System.String,System.Web.HttpPostedFile)">
+            <summary>
+            Converts an <see cref="T:System.Web.HttpPostedFile" /> to an <see cref="T:Brettle.Web.NeatUpload.UploadedFile" />
+            that is associated with a particular control.
+            </summary>
+            <param name="controlUniqueID">
+            The UniqueID of the control with which the returned <see cref="T:Brettle.Web.NeatUpload.UploadedFile" />
+            should be associated.  If the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> is added to an
+            <see cref="T:Brettle.Web.NeatUpload.UploadedFileCollection" />, the UniqueID can be used to retrieve
+            it.
+            </param>
+            <param name="file">
+            The <see cref="T:System.Web.HttpPostedFile" /> to convert to an <see cref="T:Brettle.Web.NeatUpload.UploadedFile" />.
+            </param>
+            <returns>
+            The <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> that corresponds to the <see cref="T:System.Web.HttpPostedFile" />,
+            or null if the the module does not support such conversion.
+            </returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.IUploadModule.AppendToLog(System.String)">
+            <summary>
+            Adds a message to the IIS log file.
+            </summary>
+            <param name="param">The message to add.</param>
+            <remarks>If the implementation does not suppport this method, it does nothing.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadModule.PostBackIDQueryParam">
+            <summary>
+            The name of the query parameter that can contain the post-back ID with
+            which files in the request should be associated.
+            </summary>
+            <value>
+            The name of the query parameter that can contain the post-back ID with
+            which files in the request should be associated.
+            </value>
+            <remarks>For example, if
+            PostBackIDQueryParam is "NeatUpload_PostBackID", then if a request is
+            received with a query string of "NeatUpload_PostBackID=123ABC", all files
+            in the request will be assocated with post-back ID "123ABC".  The post-back
+            ID must not contain the character "-".
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadModule.PostBackIDFieldName">
+            <summary>
+            The name of the form field that can contain the post-back ID with
+            which all subsequent files in the request should be associated.
+            </summary>
+            <value>
+            The name of the form field that can contain the post-back ID with
+            which all subsequent files in the request should be associated.
+            </value>
+            <remarks>For example, if
+            PostBackIDFieldName is "NeatUpload_PostBackID", then if a request contains
+            a form field named "NeatUpload_PostBackID" with a value of "123ABC", all
+            subsequent files
+            in the request will be assocated with post-back ID "123ABC".  The post-back
+            ID must not contain the character "-".
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadModule.FileFieldNamePrefix">
+            <summary>
+            The prefix for the names of file fields in requests.
+            </summary>
+            <value>
+            The prefix for the names of file fields in requests.
+            </value>
+            <remarks>If a file field has a name that starts with this prefix, the prefix
+            must be followed by the post-back ID, then a "-", then a control's UniqueID.
+            The file will then be associated with that post-back ID and control UniqueID.
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadModule.ConfigFieldNamePrefix">
+            <summary>
+            The prefix for the names of config fields in requests.
+            </summary>
+            <value>
+            The prefix for the names of config fields in requests.
+            </value>
+            <remarks>If a field has a name that starts with this prefix, the prefix must
+            be followed by a control's UniqueID.  The contents of the field must have
+            been returned by a previous call to <see cref="!:UploadStorageConfig.Protect" />.
+            The module will pass the
+            field contents to <see cref="!:UploadStorageConfig.Unprotect" /> of an object
+            returned by <see cref="M:Brettle.Web.NeatUpload.UploadModule.CreateUploadStorageConfig" /> and
+            will be used in an implementation dependent way when processing the file
+            fields for the same control UniqueID.
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadModule.IsEnabled">
+            <summary>
+            Whether the module will handle requests to the same URL as the current
+            request.
+            </summary>
+            <value>
+            Whether the module will handle requests to the same URL as the current
+            request.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadModule.Files">
+            <summary>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the post-back ID of the current request.
+            </summary>
+            <value>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the post-back ID of the current request.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IUploadModule.PostBackID">
+            <summary>
+            The post-back ID associated with the current request, or null if there was none.
+            </summary>
+            <value>
+            The post-back ID associated with the current request, or null if there was none.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.Internal.UI.UploadProgressState.Brettle#Web#NeatUpload#IUploadProgressState#Files">
+            <summary>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the upload.
+            </summary>
+            <value>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the upload.
+            </value>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UploadTooLargeException">
+            <summary>
+            Indicates that the upload was too large.
+            </summary>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadTooLargeException.#ctor(System.Int64,System.Int64)">
+            <summary>
+            Creates an <see cref="T:Brettle.Web.NeatUpload.UploadTooLargeException" />, given the maximum allowed
+            request length, and the length of the request which was too large.
+            </summary>
+            <param name="maxRequestLength">
+            The maximum allowed request length
+            </param>
+            <param name="requestLength">
+            The length of the request which was too large.
+            </param>
+            <remarks>The HTTP status code for this exception will be 413, and the message
+            will be retrieved from the "UploadTooLargeMessageFormat" resource in
+            NeatUpload.Strings.resx.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadTooLargeException.#ctor(System.Int64)">
+            <summary>
+            Creates an <see cref="T:Brettle.Web.NeatUpload.UploadTooLargeException" />, given the maximum allowed
+            request length.
+            </summary>
+            <param name="maxRequestLength">
+            The maximum allowed request length
+            </param>
+            <remarks>The HTTP status code for this exception will be 413, and the message
+            will be retrieved from the "UploadTooLargeMessageFormat" resource in
+            NeatUpload.Strings.resx.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadTooLargeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an <see cref="T:Brettle.Web.NeatUpload.UploadTooLargeException" /> when deserializing.
+            </summary>
+            <param name="info">
+            A <see cref="T:System.Runtime.Serialization.SerializationInfo" />
+            </param>
+            <param name="context">
+            A <see cref="T:System.Runtime.Serialization.StreamingContext" />
+            </param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadTooLargeException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serializes this object.
+            </summary>
+            <param name="info">
+            A <see cref="T:System.Runtime.Serialization.SerializationInfo" />
+            </param>
+            <param name="context">
+            A <see cref="T:System.Runtime.Serialization.StreamingContext" />
+            </param>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadTooLargeException.MaxRequestLength">
+            <summary>
+            The maximum allowed request length.
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadTooLargeException.RequestLength">
+            <summary>
+            The length of the request that was too large.
+            </summary>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.MoveToOptions">
+            <summary>
+            Options controlling how an uploaded file is moved to a permanent location.
+            This class only specifies whether a file already at the location can be
+            overwritten, but subclasses could specify additional options.
+            </summary>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.MoveToOptions.#ctor(System.Boolean)">
+            <summary>
+            Constructs a <see cref="T:Brettle.Web.NeatUpload.MoveToOptions" /> given whether the file can
+            replace any file already at the destination location.
+            </summary>
+            <param name="canOverwrite">
+            true to indicate that any file at the destination location can be
+            overwritten.
+            </param>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.MoveToOptions.None">
+            <summary>
+            A <see cref="T:Brettle.Web.NeatUpload.MoveToOptions" /> that indicates that the any file at the
+            destination location must not be overwritten.
+            </summary>
+            <value>
+            A <see cref="T:Brettle.Web.NeatUpload.MoveToOptions" /> that indicates that the any file at the
+            destination location must not be overwritten.
+            </value>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.MoveToOptions.Overwrite">
+            <summary>
+            A <see cref="T:Brettle.Web.NeatUpload.MoveToOptions" /> that indicates that the any file at the
+            destination location can be overwritten.
+            </summary>
+            <value>
+            A <see cref="T:Brettle.Web.NeatUpload.MoveToOptions" /> that indicates that the any file at the
+            destination location can be overwritten.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.MoveToOptions.CanOverwrite">
+            <summary>
+            true iff any file at the destination location can be overwritten.
+            </summary>
+            <value>
+            true iff any file at the destination location can be overwritten.
+            </value>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.ObjectProtector">
+            <summary>
+            Converts serializable objects to and from secure strings so they
+            can be passed through untrusted code.
+            </summary>
+            <remarks>
+            <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object)" /> serializes, encrypts, signs, and base64-encodes
+            an object tree to produce a secure string.
+            <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String)" /> base64-decodes
+            the string, verifies the signature, decrypts the ciphertext and deserializes
+            the object tree.  All objects in the object tree must have the
+            <see cref="T:System.SerializableAttribute" />.
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String)">
+            <summary>
+            Converts a secure string back to the object tree it represents.
+            </summary>
+            <param name="secureString">a <see cref="T:System.String" /> returned by an earlier
+            call to <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object)" /></param>
+            <returns>the object that was passed to <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object)" /></returns>
+            <exception>throws an <see cref="T:System.Exception" /> if the signature is
+            not valid.</exception>
+            <remarks>The encryption key and algorithms specified in the encryptionKey,
+            encryption, and validation attributes of the &lt;neatUpload&gt; element are used
+            to decrypt the ciphertext.  They must have
+            the same values as they did when <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object)" /> was called or
+            an exception will occur.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String,System.Byte[],System.Byte[])">
+            <summary>
+            Converts a secure string back to the object tree it represents.
+            </summary>
+            <param name="secureString">a <see cref="T:System.String" /> returned by an earlier
+            call to <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object)" /></param>
+            <param name="encryptionKey">the key to use to decrypt the ciphertext</param>
+            <param name="validationKey">ignored</param>
+            <returns>the object that was passed to <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object)" /></returns>
+            <exception>throws an <see cref="T:System.Exception" /> if the signature is
+            not valid.</exception>
+            <remarks>The encryption key must have
+            the same value as it did when <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object,System.Byte[],System.Byte[])" /> was called or
+            an exception will occur.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String,System.Byte[],System.Byte[],System.String,System.String)">
+            <summary>
+            Converts a secure string back to the object tree it represents.
+            </summary>
+            <param name="secureString">a <see cref="T:System.String" /> returned by an earlier
+            call to <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object)" /></param>
+            <param name="encryptionKey">the key to use to decrypt the ciphertext</param>
+            <param name="validationKey">ignored</param>
+            <param name="encryptionAlgorithm">the algorithm to use to decrypt the ciphertext, null means use the default</param>
+            <param name="validationAlgorithm">the algorithm to use to verify the signature, null means use the default</param>
+            <returns>the object that was passed to <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object)" /></returns>
+            <exception>throws an <see cref="T:System.Exception" /> if the signature is
+            not valid.</exception>
+            <remarks>The encryption key and algorithms must have
+            the same values as they did when <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object,System.Byte[],System.Byte[])" /> was called or
+            an exception will occur.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object)">
+            <summary>
+            Converts an object tree to a secure string.
+            </summary>
+            <param name="objectToSerialize">the object at the root of the object tree
+            to protect.</param>
+            <returns>a secure string that can be passed to <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String)" /> to
+            retrieve the original object.</returns>
+            <remarks>The encryption key and algorithms specified in the encryptionKey,
+            encryption, and validation attributes of the &lt;neatUpload&gt; element are used
+            to encrypt the serialized object and sign it, respectively.  They must have
+            the same values when <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String)" /> is called or
+            an exception will occur.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object,System.Byte[],System.Byte[])">
+            <summary>
+            Converts an object tree to a secure string.
+            </summary>
+            <param name="objectToSerialize">the object at the root of the object tree
+            to protect.</param>
+            <param name="encryptionKey">the key to use to encrypt the object</param>
+            <param name="validationKey">ignored</param>
+            <returns>a secure string that can be passed to <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String)" /> to
+            retrieve the original object.</returns>
+            <remarks>The encryption key is used
+            to encrypt the serialized object and sign it, respectively.  It must have
+            the same values when <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String,System.Byte[],System.Byte[])" /> is called or
+            an exception will occur.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object,System.Byte[],System.Byte[],System.String,System.String)">
+            <summary>
+            Converts an object tree to a secure string.
+            </summary>
+            <param name="objectToSerialize">the object at the root of the object tree
+            to protect.</param>
+            <param name="encryptionKey">the key to use to encrypt the object</param>
+            <param name="validationKey">ignored</param>
+            <param name="encryptionAlgorithm">the name of the encryption algorithm to use, null means use default</param>
+            <param name="validationAlgorithm">the name of the signing algorithm to use, null means use default</param>
+            <returns>a secure string that can be passed to <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String)" /> to
+            retrieve the original object.</returns>
+            <remarks>The encryption key and algorithms are used
+            to encrypt the serialized object.  They must have
+            the same values when <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String,System.Byte[],System.Byte[])" /> is called or
+            an exception will occur.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String,System.Byte[],System.Byte[],Brettle.Web.NeatUpload.ObjectProtector.Deserializer,Brettle.Web.NeatUpload.ObjectProtector.SignatureChecker)">
+            <summary>
+            Converts a secure string back to the object tree it represents, using
+            a custom <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.Deserializer" /> and <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.SignatureChecker" />.
+            </summary>
+            <param name="secureString">the secure string to be converted back to an
+            object tree.</param>
+            <param name="encryptionKey">the key to use to decrypt the ciphertext</param>
+            <param name="validationKey">the key to use to verify the signature</param>
+            <param name="deserializer">a <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.Deserializer" /> delegate from the
+            root object of the object tree that can recreate the object tree from a
+            <see cref="T:System.IO.Stream" /> of serialized bytes.</param>
+            <param name="sigChecker">a <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.SignatureChecker" /> delegate that
+            compares an actual signature to the expected signature, throwin an exception
+            if they don't match.</param>
+            <remarks>The encryption and validation keys must have
+            the same values as they did when <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(Brettle.Web.NeatUpload.ObjectProtector.Serializer,System.Byte[],System.Byte[])" /> was called or
+            an exception will occur.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String,System.Byte[],System.Byte[],System.String,System.String,Brettle.Web.NeatUpload.ObjectProtector.Deserializer,Brettle.Web.NeatUpload.ObjectProtector.SignatureChecker)">
+            <summary>
+            Converts a secure string back to the object tree it represents, using
+            a custom <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.Deserializer" /> and <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.SignatureChecker" />.
+            </summary>
+            <param name="secureString">the secure string to be converted back to an
+            object tree.</param>
+            <param name="encryptionKey">the key to use to decrypt the ciphertext</param>
+            <param name="validationKey">ignored</param>
+            <param name="encryptionAlgorithm">the name of the encryption algorithm to use, null means use default</param>
+            <param name="validationAlgorithm">the name of the signing algorithm to use, null means use default</param>
+            <param name="deserializer">a <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.Deserializer" /> delegate from the
+            root object of the object tree that can recreate the object tree from a
+            <see cref="T:System.IO.Stream" /> of serialized bytes.</param>
+            <param name="sigChecker">a <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.SignatureChecker" /> delegate that
+            compares an actual signature to the expected signature, throwin an exception
+            if they don't match.</param>
+            <remarks>The encryption key and algorithms must have
+            the same values as they did when <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(Brettle.Web.NeatUpload.ObjectProtector.Serializer,System.Byte[],System.Byte[])" /> was called or
+            an exception will occur.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(Brettle.Web.NeatUpload.ObjectProtector.Serializer,System.Byte[],System.Byte[])">
+            <summary>
+            Converts am object tree to a secure string, using
+            a custom <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.Serializer" />.
+            </summary>
+            <param name="serializer">a <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.Serializer" /> delegate from the
+            root object of the object tree that can serialize the object tree into a
+            <see cref="T:System.IO.Stream" /> of serialized bytes.</param>
+            <param name="encryptionKey">the key to use to encrypt the object</param>
+            <param name="validationKey">ignored</param>
+            <remarks>The encryption key  must have
+            the same value when <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String,System.Byte[],System.Byte[],Brettle.Web.NeatUpload.ObjectProtector.Deserializer,Brettle.Web.NeatUpload.ObjectProtector.SignatureChecker)" /> is called or
+            an exception will occur.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(Brettle.Web.NeatUpload.ObjectProtector.Serializer,System.Byte[],System.Byte[],System.String,System.String)">
+            <summary>
+            Converts am object tree to a secure string, using
+            a custom <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.Serializer" />.
+            </summary>
+            <param name="serializer">a <see cref="T:Brettle.Web.NeatUpload.ObjectProtector.Serializer" /> delegate from the
+            root object of the object tree that can serialize the object tree into a
+            <see cref="T:System.IO.Stream" /> of serialized bytes.</param>
+            <param name="encryptionKey">the key to use to encrypt the object</param>
+            <param name="validationKey">ignored</param>
+            <param name="encryptionAlgorithm">the name of the encryption algorithm to use, null means use default</param>
+            <param name="validationAlgorithm">the name of the hash algorithm to use, null means use default</param>
+            <remarks>The encryption key and algorithms must have
+            the same values when <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Unprotect(System.String,System.Byte[],System.Byte[],Brettle.Web.NeatUpload.ObjectProtector.Deserializer,Brettle.Web.NeatUpload.ObjectProtector.SignatureChecker)" /> is called or
+            an exception will occur.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.ObjectProtector.AssertSignaturesAreEqual(System.Byte[],System.Byte[])">
+            <summary>
+            Compares an actual signature to an expected signature, throwing an exception if they
+            don't match.
+            </summary>
+            <param name="actualHash">the actual signature</param>
+            <param name="expectedHash">the expected signature</param>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.ObjectProtector.SignatureChecker">
+            <summary>
+            A method that verifies that two signatures are the same and throws an
+            exception if they aren't.
+            </summary>
+            <param name="actualHash">the actual signature</param>
+            <param name="expectedHash">the expected signature</param>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.ObjectProtector.Deserializer">
+            <summary>
+            A method of an object that reconstructs the object from a <see cref="T:System.IO.Stream" />
+            of serialized bytes.
+            </summary>
+            <param name="s">the <see cref="T:System.IO.Stream" /> of serialized bytes.</param>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.ObjectProtector.Serializer">
+            <summary>
+            A method of an object that serializes the object into a <see cref="T:System.IO.Stream" />
+            of serialized bytes.
+            </summary>
+            <param name="s">the <see cref="T:System.IO.Stream" /> to which the serialized bytes
+            will be written.</param>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UploadState">
+            <summary>
+            The state of an upload, including references to the
+            <see cref="P:Brettle.Web.NeatUpload.UploadState.Status" />, <see cref="T:Brettle.Web.NeatUpload.UploadedFile" />s, <see cref="P:Brettle.Web.NeatUpload.UploadState.BytesRead" />, etc.
+            </summary>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadState.#ctor">
+            <summary>
+            Not for public use.  This is only public to allow deserialization.
+            UploadState objects are created by NeatUpload.
+            </summary>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadState.CopyFrom(System.Object)">
+            <summary>
+            Copies the upload state stored in the <paramref name="source" />
+            <see cref="T:Brettle.Web.NeatUpload.UploadState" /> object into this object.
+            </summary>
+            <param name="source">the <see cref="T:Brettle.Web.NeatUpload.UploadState" /> object to copy
+            the state from.</param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadState.Files_Changed(System.Object,System.EventArgs)">
+            <summary>
+            The event handler that should be registered to be called whenever an
+            <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> is added or removed from the <see cref="P:Brettle.Web.NeatUpload.UploadState.Files" />
+            collection.
+            </summary>
+            <param name="sender">ignored</param>
+            <param name="args">ignored</param>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.PostBackID">
+            <value>
+            The post-back ID of the upload.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.Status">
+            <value>
+            The status of the upload.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.CurrentFileName">
+            <value>
+            The name of the file currently being uploaded.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.MultiRequestObject">
+            <value>
+            An object that is shared while processing multi-request uploads.
+            </value>
+            <remarks>This is used by the <see cref="T:Brettle.Web.NeatUpload.UploadModule" /> to maintain
+            the state of a multi-request upload across requests.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.BytesPerSec">
+            <summary>
+            An estimate of the number of bytes received during the past second
+            while the upload is in progress.  When the upload is finished this is
+            an average over the entire upload.
+            </summary>
+            <value>
+            An estimate of the number of bytes received during the past second
+            while the upload is in progress.  When the upload is finished this is
+            an average over the entire upload.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.ProcessingStateDict">
+            <summary>
+            Processing state objects associated with the upload, indexed by
+            control UniqueID.
+            </summary>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.Files">
+            <summary>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the upload.
+            </summary>
+            <value>
+            A collection of the <see cref="T:Brettle.Web.NeatUpload.UploadedFile" /> objects associated with the
+            the upload.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.BytesRead">
+            <summary>
+            The total number of bytes received for the upload so far.
+            </summary>
+            <value>
+            The total number of bytes received for the upload so far.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.FileBytesRead">
+            <summary>
+            The number of file bytes received for the upload.
+            </summary>
+            <value>
+            The number of file bytes received for the upload.
+            </value>
+            <remarks>Only bytes that are part of file fields that the module processes
+            are included in this count.</remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.BytesTotal">
+            <summary>
+            The total number of bytes expected for the uploaded.
+            </summary>
+            <value>
+            The total number of bytes expected for the uploaded.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.TimeElapsed">
+            <summary>
+            The time since the upload started.
+            </summary>
+            <value>
+            The time since the upload started.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.Rejection">
+            <summary>
+            If an <see cref="T:Brettle.Web.NeatUpload.UploadException" /> (or subclass) was thrown while
+            processing the upload, that exception.  Otherwise, null.
+            </summary>
+            <value>
+            If an <see cref="T:Brettle.Web.NeatUpload.UploadException" /> (or subclass) was thrown while
+            processing the upload, that exception.  Otherwise, null.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.UploadState.Failure">
+            <summary>
+            If an exception that was not an <see cref="T:Brettle.Web.NeatUpload.UploadException" />
+            while processing the upload, that exception.  Otherwise, null.
+            </summary>
+            <value>
+            If an exception that was not an <see cref="T:Brettle.Web.NeatUpload.UploadException" />
+            while processing the upload, that exception.  Otherwise, null.
+            </value>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.SessionBasedUploadStateStoreProviderBase">
+            <summary>
+            Base class for <see cref="!:UploadStateProvider" />s that store upload state in the session.
+            </summary>
+            <remarks>Subclasses are responsible
+            for ensuring that the current HttpContext has a Session object before calling the methods of this
+            base class.  See <see cref="T:Brettle.Web.NeatUpload.SessionBasedUploadStateStoreProvider" /> for an example.
+            Subclasses are instantiated by NeatUpload if it is added in the &lt;providers&gt; section of the &lt;neatUpload&gt;
+            section.  Application developers should not instantiate it directly.
+            </remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UploadHttpModule">
+            <summary>
+            An <see cref="T:Brettle.Web.NeatUpload.IUploadModule" /> and <see cref="T:Brettle.Web.NeatUpload.IMultiRequestUploadModule" /> that uses child requests
+            to extract uploaded files and maintain upload state across a web garden/farm.</summary>
+            <remarks>
+            To use this module, add it to the <see href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpgenref/html/gngrfhttpmodulessection.asp">
+            httpModules section</see> of your Web.config like this:
+            <example>
+            <code escaped="true">
+            <configuration>
+              <system.web>
+                <httpModules>
+            	  <add name="UploadHttpModule" type="Brettle.Web.NeatUpload.UploadHttpModule, Brettle.Web.NeatUpload" />
+                </httpModules>
+              </system.web>
+            </configuration>
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.IMultiRequestUploadModule">
+            <summary>
+            An <see cref="T:Brettle.Web.NeatUpload.IUploadModule" /> that treats a sequence of
+            special requests as a single combined upload.
+            </summary>
+            <remarks>The module treats the following sequence of requests as a single
+            upload:
+            <list type="number">
+              <item>An initial POST request sent to the
+                <see cref="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.UploadPath" /> containing:
+                <list type="bullet">
+                  <item>a post-back ID in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.IUploadModule.PostBackIDQueryParam" /></item>
+                  <item>a control UniqueID in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.ControlIDQueryParam" /></item>
+                  <item>"protected" cookies needed for authentication or session
+                    identification in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.ArmoredCookiesQueryParam" /></item>
+                  <item>a space-delimited list of file sizes in the form field named by
+                    <see cref="!:IUploadModule.FileSizesFieldName" /></item>
+                  <item>(optionally) a form field with a name starting with
+                    <see cref="P:Brettle.Web.NeatUpload.IUploadModule.ConfigFieldNamePrefix" /> followed by
+                    the same control UniqueID as above, containing "protected"
+                    module-specific configuration information.</item>
+                </list>
+              </item>
+              <item>A sequence of upload request (one for each file size in
+                the file sizes field of the initial request) to the
+                <see cref="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.UploadPath" /> containing:
+                <list type="bullet">
+                  <item>a post-back ID in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.IUploadModule.PostBackIDQueryParam" /></item>
+                  <item>a control UniqueID in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.ControlIDQueryParam" /></item>
+                  <item>"protected" cookies needed for authentication or session
+                    identification in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.ArmoredCookiesQueryParam" /></item>
+                </list>
+              </item>
+              <item>A final form submission upload request to any path for which
+                <see cref="P:Brettle.Web.NeatUpload.IUploadModule.IsEnabled" /> returns true.  This request
+                must contain the postback ID in one of the following locations:
+                <list type="bullet">
+                  <item>in the query parameter named by
+                    <see cref="P:Brettle.Web.NeatUpload.IUploadModule.PostBackIDQueryParam" /></item>
+                  <item>in the form field named by
+                    <see cref="P:Brettle.Web.NeatUpload.IUploadModule.PostBackIDFieldName" /></item>
+                  <item>in a file field name prefixed by
+                    <see cref="P:Brettle.Web.NeatUpload.IUploadModule.FileFieldNamePrefix" /></item>
+                </list>
+                While this request is being handled, the module will make all the files
+                associated with the post-back ID available via <see cref="P:Brettle.Web.NeatUpload.IUploadModule.Files" />.
+              </item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.IMultiRequestUploadModule.GetArmoredCookies">
+            <summary>
+            Gets a protected string to use as the value of the <see cref="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.ArmoredCookiesQueryParam" />
+            when making the requests in a multi-request upload.
+            </summary>
+            <returns>the protected string representing the cookies, or null
+            to indicate that default implementation should be used.</returns>
+            <remarks>The default implementation will create an  <see cref="T:System.Collections.Hashtable" />
+            containing the cookie names/values that ASP.NET uses for session ID and forms
+            auth, and will pass it to <see cref="M:Brettle.Web.NeatUpload.ObjectProtector.Protect(System.Object)" />.
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.FileSizesFieldName">
+            <summary>
+            The name of the field in the initial request that should contain the
+            space-delimited list of file sizes for the files that will be uploaded in the
+            coming requests.
+            </summary>
+            <value>
+            The name of the field in the initial request that should contain the
+            space-delimited list of file sizes for the files that will be uploaded in the
+            coming requests.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.UploadPath">
+            <summary>
+            The path (relative to the app root) to which all but the final request should
+            be sent.
+            </summary>
+            <value>
+            The path (relative to the app root) to which all but the final request should
+            be sent.
+            </value>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.ControlIDQueryParam">
+            <summary>
+            The name of the query parameter that must be present for all but the final
+            request, and which must contain the control UniqueID
+            that the requests are to be associated with.
+            </summary>
+            <value>
+            The name of the query parameter that must be present for all but the final
+            request, and which must contain the control UniqueID
+            that the requests are to be associated with.
+            </value>
+            <remarks>For example, if
+            ControlIDQueryParam is "NeatUpload_MultiRequestControlID", then if a request is
+            received with a query string of "NeatUpload_MultiRequestControlID=123ABC", all files
+            or other upload data in the request will be assocated with the control with
+            UniqueID "123ABC".  All requests except the final request must also
+            specify the post-back ID in a separate query param whose name is given by the value
+            of <see cref="!:PostBackIDQueryParam" />.  The final request must
+            contain the postback ID in one of the following locations:
+            <list type="bullet">
+              <item>in the query parameter named by
+                <see cref="!:PostBackIDQueryParam" /></item>
+              <item>in the form field named by
+                <see cref="!:PostBackIDFieldName" /></item>
+              <item>in a file field name prefixed by
+                <see cref="!:FileFieldNamePrefix" /></item>
+            </list>
+            </remarks>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.ArmoredCookiesQueryParam">
+            <summary>
+            The name of the query parameter that can contain "protected" cookies that
+            the module should use if it needs to make HTTP requests while processing a
+            request.
+            </summary>
+            <value>
+            The name of the query parameter that can contain "protected" cookies that
+            the module should use if it needs to make HTTP requests while processing a
+            request.
+            </value>
+            <remarks>This is needed because the process making the request
+            might be different from the browser that displays the rest
+            of the web application.  For example, Flash always sends IE's cookies which means
+            that the correct cookies are not sent for Firefox users.  The value of the query
+            parameter must be the value returned by
+            <see cref="M:Brettle.Web.NeatUpload.IMultiRequestUploadModule.GetArmoredCookies" />.  For security reasons, the module
+            must only use the cookies when processing requests to the
+            <see cref="P:Brettle.Web.NeatUpload.IMultiRequestUploadModule.UploadPath" />.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.UploadHttpModule.WaitForUploadToComplete">
+            <summary>
+            Waits for the current upload request to finish.</summary>
+            <remarks>
+            <para>
+            If the UploadHttpModule is being used for the current request, this method will not return until the
+            module has received and processed the entire request.  If the UploadHttpModule is not being used for
+            the current request, this method will return immediately.  Note: the UploadHttpModule is only used if
+            it has been added in the httpModules section of the Web.config, the neatUpload section's
+            useHttpModule attribute is "true" for the page being requested (which is the default), and the
+            request has a content type of multipart/form-data.</para>
+            </remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.SessionBasedUploadStateStoreProvider">
+            <summary>
+            Stores and retrieves <see cref="!:IUploadState" /> objects in the user's session.
+            </summary>
+            <remarks>If the application is configured to share session state across a web garden/farm,
+            this provider will ensure that upload state will be shared in the same way.  This class
+            is instantiated by NeatUpload if it is added in the &lt;providers&gt; section of the &lt;neatUpload&gt;
+            section.  Application developers should not instantiate it directly.
+            </remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.NonfilePortionTooLargeException">
+            <summary>
+            Indicates that the non-file portion of a request was too large.
+            </summary>
+            <remarks>To allow large uploads, ASP.NET needs to allow large requests.  The upload
+            module only streams files in the request that are associated with a post-back ID.
+            It does not stream other files or other portions of the request (collectively the
+            non-file portion of the request).  If the non-file portion of the request is too
+            large, the upload module can throw this exception as a way of rejecting the request.
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.NonfilePortionTooLargeException.#ctor(System.Int64,System.Int64)">
+            <summary>
+            Creates an <see cref="T:Brettle.Web.NeatUpload.NonfilePortionTooLargeException" />, given the maximum allowed
+            length of the non-file portion of the request, and the actual length of the non-file
+            portion of the request.
+            </summary>
+            <param name="maxNormalRequestLength">
+            The maximum allowed length of the non-file portion of the request.
+            </param>
+            <param name="normalRequestLength">
+            The length of the non-file portion of the request.
+            </param>
+            <remarks>The HTTP status code for this exception will be 413, and the message
+            will be retrieved from the "NonfilePortionTooLargeMessageFormat" resource in
+            NeatUpload.Strings.resx.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.NonfilePortionTooLargeException.#ctor(System.Int64)">
+            <summary>
+            Creates an <see cref="T:Brettle.Web.NeatUpload.NonfilePortionTooLargeException" />, given the maximum allowed
+            length of the non-file portion of the request.
+            </summary>
+            <param name="maxNormalRequestLength">
+            The maximum allowed length of the non-file portion of the request.
+            </param>
+            <remarks>The HTTP status code for this exception will be 413, and the message
+            will be retrieved from the "NonfilePortionTooLargeMessageFormat" resource in
+            NeatUpload.Strings.resx.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.NonfilePortionTooLargeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an <see cref="T:Brettle.Web.NeatUpload.NonfilePortionTooLargeException" /> when deserializing.
+            </summary>
+            <param name="info">
+            A <see cref="T:System.Runtime.Serialization.SerializationInfo" />
+            </param>
+            <param name="context">
+            A <see cref="T:System.Runtime.Serialization.StreamingContext" />
+            </param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.NonfilePortionTooLargeException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serializes this object.
+            </summary>
+            <param name="info">
+            A <see cref="T:System.Runtime.Serialization.SerializationInfo" />
+            </param>
+            <param name="context">
+            A <see cref="T:System.Runtime.Serialization.StreamingContext" />
+            </param>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.NonfilePortionTooLargeException.MaxNormalRequestLength">
+            <summary>
+            The maximum allowed length of the non-file portion of the request.
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.NonfilePortionTooLargeException.NormalRequestLength">
+            <summary>
+            The length of the non-file portion of the request.
+            </summary>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.InProcUploadStateStoreProvider">
+            <summary>
+            Stores and retrieves <see cref="!:IUploadState" /> objects in the
+            <see cref="!:ApplicationState" /> so they are not shared across processes
+            </summary>
+            <remarks>The <see cref="!:IUploadState" /> objects are stored in the
+            <see cref="!:ApplicationState" /> so they are not shared across processes.
+            As a result, this class will not work with web gardens/farms.    This class
+            is instantiated by NeatUpload if it is added in the &lt;providers&gt; section of the &lt;neatUpload&gt;
+            section.  Application developers should not instantiate it directly.
+            </remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.InProcUploadStateStoreProvider.Load(System.String)">
+            <summary>
+            Returns an <see cref="!:IUploadState" /> for a given post-back ID.
+            If one does not exist yet, a new one is created and returned.
+            </summary>
+            <param name="postBackID">
+            A post-back ID identifying the <see cref="!:IUploadState" />.
+            </param>
+            <returns>
+            The <see cref="!:IUploadState" /> corresponding to
+            <paramref name="postBackID" />
+            </returns>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.UploadStatus">
+            <summary>
+            The status of an upload.
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadStatus.Unknown">
+            <summary>
+            Either the upload is unknown (e.g. an invalid post-back ID) or
+            hasn't started to be received yet.
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadStatus.NormalInProgress">
+            <summary>
+            The upload is still being received and the request had a Content-Length
+            header.
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadStatus.ChunkedInProgress">
+            <summary>
+            The upload is still being received and the request did not have a Content-Length
+            header and has a Transfer-Encoding of "chunked".
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadStatus.ProcessingInProgress">
+            <summary>
+            The entire upload has been received but the request is still being
+            processed (e.g. the upload page code-behind is still executing).
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadStatus.ProcessingCompleted">
+            <summary>
+            <see cref="M:Brettle.Web.NeatUpload.UploadModule.SetProcessingState(System.String,System.Object)" /> was called for this upload and
+            the request has completed.
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadStatus.Completed">
+            <summary>
+            <see cref="M:Brettle.Web.NeatUpload.UploadModule.SetProcessingState(System.String,System.Object)" /> was not called for this upload
+            and the request has completed.
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadStatus.Rejected">
+            <summary>
+            An <see cref="T:Brettle.Web.NeatUpload.UploadException" /> (or subclass) was thrown while receiving or
+            processing the upload.
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadStatus.Failed">
+            <summary>
+            An exception that is not an <see cref="T:Brettle.Web.NeatUpload.UploadException" /> was thrown while
+            receiving or processing the upload.
+            </summary>
+        </member>
+        <member name="F:Brettle.Web.NeatUpload.UploadStatus.Cancelled">
+            <summary>
+            The upload was cancelled by calling <see cref="M:Brettle.Web.NeatUpload.UploadModule.CancelPostBack(System.String)" />
+            </summary>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.HiddenPostBackID">
+            <summary>
+            Hidden form field which tells the <see cref="T:Brettle.Web.NeatUpload.UploadHttpModule" /> to stream all files in the form
+            to storage and allows that <see cref="T:Brettle.Web.NeatUpload.ProgressBar" /> control to track progress.
+            </summary>
+            <remarks>
+            You only need to use this control if you are using something other than NeatUpload's controls to
+            generate your file upload fields.  For example, if you are using client-side script to dynamically
+            add &lt;input type="file"%gt; elements, you would need to use this control.  If you use this control, you
+            need to place it before the &lt;input type="file"%gt; elements, preferably immediately after the form
+            element.
+            </remarks>
+        </member>
+        <member name="T:Brettle.Web.NeatUpload.AdaptiveUploadStateStoreProvider">
+            <summary>
+            Acts like <see cref="T:Brettle.Web.NeatUpload.InProcUploadStateStoreProvider" /> if a the session state mode is Off or
+            InProc.  Otherwise, acts like <see cref="T:Brettle.Web.NeatUpload.SessionBasedUploadStateStoreProvider" />.
+            </summary>
+            <remarks>This class
+            is instantiated by NeatUpload if it is added in the &lt;providers&gt; section of the &lt;neatUpload&gt;
+            section.  Application developers should not instantiate it directly.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.AdaptiveUploadStateStoreProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Initialize this object using the name and attributes.  The name and attributes are
+            passed to the <see cref="T:Brettle.Web.NeatUpload.SessionBasedUploadStateStoreProvider" /> that this provider uses
+            if the session state mode is something other than Off or InProc.
+            </summary>
+            <param name="name">
+            A <see cref="T:System.String" /> to be passed to the <see cref="M:Brettle.Web.NeatUpload.SessionBasedUploadStateStoreProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+            </param>
+            <param name="attrs">
+            A <see cref="T:System.Collections.Specialized.NameValueCollection" /> to be passed to the <see cref="M:Brettle.Web.NeatUpload.SessionBasedUploadStateStoreProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+            </param>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.AdaptiveUploadStateStoreProvider.Load(System.String)">
+            <summary>
+            Returns an <see cref="!:IUploadState" /> for a given post-back ID.
+            </summary>
+            <param name="postBackID">
+            A post-back ID identifying the <see cref="!:IUploadState" />.
+            </param>
+            <returns>
+            The <see cref="!:IUploadState" /> corresponding to
+            <paramref name="postBackID" />, or null if none exists.
+            </returns>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.AdaptiveUploadStateStoreProvider.MergeAndSave(Brettle.Web.NeatUpload.UploadState)">
+            <summary>
+            Merges a particular <see cref="T:Brettle.Web.NeatUpload.UploadState" /> with the stored <see cref="T:Brettle.Web.NeatUpload.UploadState" /> and store
+            the merged <see cref="T:Brettle.Web.NeatUpload.UploadState" />.
+            </summary>
+            <param name="uploadState">
+            The <see cref="T:Brettle.Web.NeatUpload.UploadState" /> to be merged.
+            </param>
+            <remarks>When this method returns, <paramref name="uploadState" /> and the stored <see cref="T:Brettle.Web.NeatUpload.UploadState" />
+            will be equivalent (though not necessarily identical) and either may have changed as a result
+            of the merge.</remarks>
+        </member>
+        <member name="M:Brettle.Web.NeatUpload.AdaptiveUploadStateStoreProvider.GetCleanUpIfStaleCallback">
+            <summary>
+            Returns the <see cref="!:CleanUpIfStaleCallback" /> that NeatUpload should call when a post-back ID
+            might be stale.
+            </summary>
+            <returns>
+            The <see cref="!:CleanUpIfStaleCallback" />.
+            </returns>
+        </member>
+        <member name="P:Brettle.Web.NeatUpload.AdaptiveUploadStateStoreProvider.Description">
+            <value>
+            A human readable description of this provider.
+            </value>
+        </member>
+    </members>
+</doc>

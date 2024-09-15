@@ -1,0 +1,1207 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NickLee.Web.UI.VB
+</name>
+</assembly>
+<members>
+<member name="T:NickLee.Web.UI.VB.CaptchaImage.FontWarpFactor">
+	<summary>
+ Amount of random font warping to apply to rendered text
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.CaptchaImage.Image">
+	<summary>
+ returns the rendered Captcha image based on the current property values
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.CaptchaImage.Font">
+	<summary>
+ Font family to use when drawing the Captcha text
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.CaptchaImage.FontWarp">
+	<summary>
+ Amount of random warping to apply to the Captcha text.
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.CaptchaImage.TextChars">
+	<summary>
+ A string of valid characters to use in the Captcha text.
+ A random character will be selected from this string for each character.
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.CaptchaImage.TextLength">
+	<summary>
+ Number of characters to use in the Captcha text.
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.CaptchaImage.Text">
+	<summary>
+ Returns the randomly generated Captcha text.
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.CaptchaImage.Width">
+	<summary>
+ Width of Captcha image to generate, in pixels
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.CaptchaImage.Height">
+	<summary>
+ Height of Captcha image to generate, in pixels
+ </summary>
+</member><member name="M:NickLee.Web.UI.VB.CaptchaImage.GenerateImage">
+	<summary>
+ Forces a new Captcha image to be generated using current property values
+ </summary>
+</member><member name="M:NickLee.Web.UI.VB.CaptchaImage.RandomFontFamily">
+	<summary>
+ returns random font family name
+ .. that's not on our font blacklist (illegible for CAPTCHA)
+ </summary>
+</member><member name="M:NickLee.Web.UI.VB.CaptchaImage.GenerateRandomText">
+	<summary>
+ generate human friendly random text
+ eg, try to avoid numbers and characters that look alike
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.ScheduleGeneral.arrTitleValues">
+ -----------------------------------------------------------------------------
+ <summary>
+ list with values to be shown in title header
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleGeneral.SeparateDateHeader">
+ -----------------------------------------------------------------------------
+ <summary>
+ When true, a separate header will be added for the date.
+ This requires DataRangeStartField and DataRangeEndField to be of type DateTime.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleGeneral.TitleDataFormatString">
+ -----------------------------------------------------------------------------
+ <summary>
+ The format used for the title if the TitleTemplate is missing, e.g. {0:ddd d}
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleGeneral.RangeDataFormatString">
+ -----------------------------------------------------------------------------
+ <summary>
+ The format used for the ranges if the RangeHeaderTemplate is missing, e.g. {0:hh:mm}
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleGeneral.DateHeaderDataFormatString">
+ -----------------------------------------------------------------------------
+ <summary>
+ The format used for the date header if SeparateDateHeader=True and the DateHeaderTemplate is missing, e.g. {0:dd/MM}
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleGeneral.AutoSortTitles">
+ -----------------------------------------------------------------------------
+ <summary>
+ When true, titles will automatically be sorted alphabetically.
+ When false, you may provide your own sorting order for the titles, but make sure
+ that the items with the same titles are grouped together, and that for each title,
+ the items are sorted on DataRangeStartField first and on DataRangeEndField next.
+ (for example: if you want to sort on a field called "SortOrder", the
+ DataRangeStartField is "StartTime", and the DataRangeEndField is "EndTime",
+ use the sorting expression "ORDER BY SortOrder ASC, StartTime ASC, EndTime ASC")
+ The default value for AutoSortTitles is true.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleGeneral.FillRangeValueArray(System.Data.DataView@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ create the list with all range header values (Start or End)
+ </summary>
+	<param name="dv"></param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleGeneral.FillTitleValueArray(System.Data.DataView@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ create the list with all titles
+ </summary>
+	<param name="dv"></param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleGeneral.AddDateHeaderData">
+ -----------------------------------------------------------------------------
+ <summary>
+ Add date headers to the table when SeparateDateHeader=True
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleGeneral.CalculateTitleIndex(System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ calculate the TitleIndex in the table, given the objTitleValue
+ </summary>
+	<param name="objTitleValue"></param>
+	<returns></returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleGeneral.CalculateRangeCellIndex(System.Object,System.Object,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Calculate the range cell index in the table, given the objRangeValue and the objTitleValue
+ The values refer to the real cell index in the table, taking into account whether cells are
+ spanning over value marks (in horizontal mode)
+ In vertical layout, the result is the real row index in the table
+ In horizontal layout, the result is the real cell index in the row (before any merging
+ of cells due to value spanning)
+ </summary>
+	<param name="objRangeValue">The range value from the data source</param>
+	<param name="objTitleValue">The title value from the data source</param>
+	<param name="isEndValue">False if we're calculating the range value index for the start of the item, True if it's the end</param>
+	<returns>The range cell index</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleGeneral.FormatDataValue(System.Object,NickLee.Web.UI.VB.ScheduleItemType)">
+ -----------------------------------------------------------------------------
+ <summary>
+ when there's no template, try to present the data in a reasonable format
+ </summary>
+	<param name="value">Value of the item</param>
+	<param name="type">Type of the item</param>
+	<returns>A formatted string</returns>
+ -----------------------------------------------------------------------------
+</member><member name="T:NickLee.Web.UI.VB.ScheduleGeneral">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.ScheduleGeneral
+ -----------------------------------------------------------------------------
+ <summary>
+ The ScheduleGeneral web control is designed to represent a schedule in a general format.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleDesigner.DataMember">
+ -----------------------------------------------------------------------------
+ <summary>
+ Get and set DataMember property from control
+ </summary>
+	<returns>String</returns>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleDesigner.DesignTimeHtmlRequiresLoadComplete">
+ -----------------------------------------------------------------------------
+ <summary>
+ Gets a value indicating whether the designer must have completed loading before
+ the design-time HTML can be used.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleDesigner.OnPropertyBuilder(System.Object,System.EventArgs)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Shows a Property Builder dialog box
+ This method is overridden in ScheduleCalendarDesigner and ScheduleGeneralDesigner
+ to show the appropriate dialog box
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleDesigner.GetDesignTimeHtml">
+ -----------------------------------------------------------------------------
+ <summary>
+ Gets the HTML that is used to represent the control at design time..
+ </summary>
+	<returns>A string with the HTML</returns>
+ -----------------------------------------------------------------------------
+</member><member name="T:NickLee.Web.UI.VB.ScheduleDesigner">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.ScheduleDesigner
+ -----------------------------------------------------------------------------
+ <summary>
+ ScheduleDesigner is a virtual class that adds design-time support
+ Base class for ScheduleCalendarDesigner and ScheduleGeneralDesiger
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="T:NickLee.Web.UI.VB.ClickableTableCellEventArgs">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.ClickableTableCellEventArgs
+
+ -----------------------------------------------------------------------------
+ <summary>
+ The ClickableTableCellEventArgs class is used when the user clicks on an empty slot
+ </summary>
+</member><member name="T:NickLee.Web.UI.VB.ScheduleItem">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.ScheduleItem
+
+ -----------------------------------------------------------------------------
+ <summary>
+ The ScheduleItem class represents an item in the Schedule control.
+ It can either be an item in the schedule itself, or a header item.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.CaptchaControl.CaptchaText">
+	<summary>
+ randomly generated captcha text is stored in the session
+ using the control ID as a unique identifier
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.CaptchaControl.GeneratedAt">
+	<summary>
+ date and time of Captcha generation is stored in the Session
+ using the control ID as a unique tag
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.CaptchaControl.LocalGuid">
+	<summary>
+ guid used to identify the unique captcha image is stored in the page ViewState
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.CaptchaControl.IsDesignMode">
+	<summary>
+ are we in design mode?
+ </summary>
+</member><member name="M:NickLee.Web.UI.VB.CaptchaControl.ValidateCaptcha(System.String)">
+	<summary>
+ Returns true if user input valid CAPTCHA text, and raises UserValidationEvent
+ </summary>
+</member><member name="M:NickLee.Web.UI.VB.CaptchaControl.HtmlColor(System.Drawing.Color)">
+	<summary>
+ returns HTML-ized color strings
+ </summary>
+</member><member name="M:NickLee.Web.UI.VB.CaptchaControl.CssStyle">
+	<summary>
+ returns css "style=" tag for this control
+ based on standard control visual properties
+ </summary>
+</member><member name="M:NickLee.Web.UI.VB.CaptchaControl.Render(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ render raw control HTML to the page
+ </summary>
+</member><member name="M:NickLee.Web.UI.VB.CaptchaControl.GenerateNewCaptcha">
+	<summary>
+ generate a new captcha and store it in the ASP.NET Cache by unique GUID
+ </summary>
+</member><member name="T:NickLee.Web.UI.VB.CalendarPropertyBuilder">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.CalendarPropertyBuilder
+ -----------------------------------------------------------------------------
+ <summary>
+ CalendarPropertyBuilder provides an easy interface to set all the properties
+ for the ScheduleCalendar control.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.ShowEmptyDataTemplate">
+ -----------------------------------------------------------------------------
+ <summary>
+ Whether to show the EmptyDataTemplate or not when no data is found
+ </summary>
+	<remarks>
+ Overrides default value (True)
+ </remarks>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.StartTimeField">
+ -----------------------------------------------------------------------------
+ <summary>
+ The database field containing the start time of the events. This field should also contain the date when TimeFieldsContainDate=true
+ </summary>
+	<remarks>
+ StartTimeField replaces DataRangeStartField for ScheduleCalendar
+ </remarks>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.EndTimeField">
+ -----------------------------------------------------------------------------
+ <summary>
+ The database field containing the end time of the events. This field should also contain the date when TimeFieldsContainDate=true
+ </summary>
+	<remarks>
+ EndTimeField replaces DataRangeEndField for ScheduleCalendar
+ </remarks>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.DateField">
+ -----------------------------------------------------------------------------
+ <summary>
+ The database field providing the dates. Ignored when TimeFieldsContainDate=true. When TimeFieldsContainDate=false, this field should be of type Date
+ </summary>
+	<remarks>
+ DateField replaces TitleField for ScheduleCalendar
+ </remarks>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.StartDate">
+ -----------------------------------------------------------------------------
+ <summary>
+ The first date to display.
+ The calendar will start on this date, if not overridden by the
+ StartDay and NumberOfDays settings.
+ The default value is the date at the time of display.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.StartDay">
+ -----------------------------------------------------------------------------
+ <summary>
+ The first day of the week to display.
+ The calendar will start on this day of the week.
+ This value is used only when NumberOfDays equals 7.
+ The default is Monday.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.NumberOfDays">
+ -----------------------------------------------------------------------------
+ <summary>
+ The number of days to display.
+ This number may be repeated multiple times in Vertical layout when the NumberOfRepetitions
+ property is greater than 1.
+ De default value is 7 (weekly calendar).
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.NumberOfRepetitions">
+ -----------------------------------------------------------------------------
+ <summary>
+ The number of repetitions to show at a time. Only used in Vertical layout.
+ Especially useful if you want to show several weeks in the calendar, one
+ below the other.
+ This property replaces the Weeks property starting from version 1.6.1.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.Weeks">
+ -----------------------------------------------------------------------------
+ <summary>
+ Obsolete since version 1.6.1. Use the NumberOfRepetitions property instead.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.DateFormatString">
+ -----------------------------------------------------------------------------
+ <summary>
+ The format used for the date if the DateTemplate is missing, e.g. {0:ddd d}
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.TimeFormatString">
+ -----------------------------------------------------------------------------
+ <summary>
+ The format used for the time if the TimeTemplate is missing, e.g. {0:hh:mm}
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.TimeFieldsContainDate">
+ -----------------------------------------------------------------------------
+ <summary>
+ Indicates whether the time fields (StartTimeField and EndTimeField) contain the date as well. Whe true, this allows midnight spanning for calendar events. When false, the DateField contains the date.
+ </summary>
+	<remarks>
+ TimeFieldsContainDate replaces UseTitleFieldAsDate for ScheduleCalendar
+ </remarks>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.TimeStyle">
+ -----------------------------------------------------------------------------
+ <summary>
+ The style applied to time header items.
+ </summary>
+	<remarks>
+ TimeStyle replaces RangeHeaderStyle for ScheduleCalendar
+ </remarks>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.ScheduleCalendar.DateStyle">
+ -----------------------------------------------------------------------------
+ <summary>
+ The style applied to date header items.
+ </summary>
+	<remarks>
+ DateStyle replaces TitleStyle for ScheduleCalendar
+ </remarks>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleCalendar.FillRangeValueArray(System.Data.DataView@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ create the list with all times (Start or End)
+ </summary>
+	<param name="dv"></param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleCalendar.PreprocessData(System.Data.DataView@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ When TimeFieldsContainDate=True, items could span over midnight, even several days.
+ Split them.
+ </summary>
+	<param name="dv"></param>
+	<remarks>Used to be called "SplitItemsThatSpanMidnight"</remarks>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleCalendar.CalculateTitleIndex(System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ calculate the TitleIndex in the table, given the objTitleValue
+ </summary>
+	<param name="objTitleValue"></param>
+	<returns></returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleCalendar.CalculateRangeCellIndex(System.Object,System.Object,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Calculate the range cell index in the table, given the objRangeValue and the objTitleValue
+ The values refer to the real cell index in the table, taking into account whether cells are
+ spanning over value marks (in horizontal mode)
+ In vertical layout, the result is the real row index in the table
+ In horizontal layout, the result is the real cell index in the row (before any merging
+ of cells due to value spanning)
+ </summary>
+	<param name="objRangeValue">The range value from the data source</param>
+	<param name="objTitleValue">The title value from the data source</param>
+	<param name="isEndValue">False if we're calculating the range value index for the start of the item, True if it's the end</param>
+	<returns>The range cell index</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleCalendar.FormatDataValue(System.Object,NickLee.Web.UI.VB.ScheduleItemType)">
+ -----------------------------------------------------------------------------
+ <summary>
+ when there's no template, try to present the data in a reasonable format
+ </summary>
+	<param name="value">Value of the item</param>
+	<param name="type">Type of the item</param>
+	<returns>A formatted string</returns>
+ -----------------------------------------------------------------------------
+</member><member name="T:NickLee.Web.UI.VB.ScheduleCalendar">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.ScheduleCalendar
+ -----------------------------------------------------------------------------
+ <summary>
+ The ScheduleCalendar web control is designed to represent a schedule in a calendar format.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleGeneralDesigner.GetDummyDataTable(System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Provides a dummy DataTable object, allowing the ScheduleGeneral control to
+ show some sample data in the designer.
+ </summary>
+	<param name="minimumRows"></param>
+	<returns>A dummy DataTable object</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleGeneralDesigner.OnPropertyBuilder(System.Object,System.EventArgs)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Shows a Property Builder dialog box
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+ -----------------------------------------------------------------------------
+</member><member name="T:NickLee.Web.UI.VB.ScheduleGeneralDesigner">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.ScheduleGeneralDesigner
+ -----------------------------------------------------------------------------
+ <summary>
+ ScheduleGeneralDesigner adds design-time support for the ScheduleGeneral control
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="T:NickLee.Web.UI.VB.GeneralPropertyBuilder">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.GeneralPropertyBuilder
+ -----------------------------------------------------------------------------
+ <summary>
+ GeneralPropertyBuilder provides an easy interface to set all the properties
+ for the GeneralCalendar control.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="T:NickLee.Web.UI.VB.ScheduleItemEventArgs">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.ScheduleItemEventArgs
+
+ -----------------------------------------------------------------------------
+ <summary>
+ The ScheduleItemEventArgs class can be used with the OnItemCreated and
+ OnItemDataBound events of the Schedule controls
+ </summary>
+</member><member name="T:NickLee.Web.UI.VB.ClickableTableCell">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.ClickableTableCell
+
+ -----------------------------------------------------------------------------
+ <summary>
+ The ClickableTableCell class is used for causing postback when the user
+ clicks on empty slots
+ </summary>
+</member><member name="T:NickLee.Web.UI.VB.ScheduleItemCollection">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.ScheduleItemCollection
+
+ -----------------------------------------------------------------------------
+ <summary>
+ The ScheduleItemCollection class represents a collection of ScheduleItem objects.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="T:NickLee.Web.UI.VB.ScheduleCommandEventArgs">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.ScheduleItemEventArgs
+
+ -----------------------------------------------------------------------------
+ <summary>
+ The ScheduleItemEventArgs class can be used with the OnItemCommand event of the Schedule controls
+ </summary>
+</member><member name="F:NickLee.Web.UI.VB.ScheduleItemType.Item">
+ -----------------------------------------------------------------------------
+ <summary>
+ Standard item in a schedule
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="F:NickLee.Web.UI.VB.ScheduleItemType.AlternatingItem">
+ -----------------------------------------------------------------------------
+ <summary>
+ Alternating standard item in a schedule
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="F:NickLee.Web.UI.VB.ScheduleItemType.RangeHeader">
+ -----------------------------------------------------------------------------
+ <summary>
+ Item in the range header column or row. In the derived ScheduleCalendar,
+ this is an item in the time header.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="F:NickLee.Web.UI.VB.ScheduleItemType.TitleHeader">
+ -----------------------------------------------------------------------------
+ <summary>
+ Item in the title header column or row. In the derived ScheduleCalendar,
+ this is an item in the date header.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="F:NickLee.Web.UI.VB.ScheduleItemType.DateHeader">
+ -----------------------------------------------------------------------------
+ <summary>
+ Item in the optional date header column or row.
+ Only used in the derived ScheduleGeneral control.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="F:NickLee.Web.UI.VB.LayoutEnum.Horizontal">
+ -----------------------------------------------------------------------------
+ <summary>
+ In Horizontal layout, the range values (times in ScheduleCalendar) are shown horizontally
+ in the first row, and the titles (dates in ScheduleCalendar) are shown vertically in the first column.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="F:NickLee.Web.UI.VB.LayoutEnum.Vertical">
+ -----------------------------------------------------------------------------
+ <summary>
+ In Vertical layout, the range values (times in ScheduleCalendar) are shown vertically
+ in the first column, and the titles (dates in ScheduleCalendar) are shown horizontally in the first row.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.arrRangeValues">
+ -----------------------------------------------------------------------------
+ <summary>
+ list with values to be shown in row header
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.Items">
+ -----------------------------------------------------------------------------
+ <summary>
+ Items is a collection object that contains the ScheduleItem objects
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.ShowEmptyDataTemplate">
+ -----------------------------------------------------------------------------
+ <summary>
+ Whether to show the EmptyDataTemplate or not when no data is found
+ </summary>
+	<remarks>
+ Overridden in ScheduleCalendar when FullTimeScale=True
+ </remarks>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.IncludeEndValue">
+ -----------------------------------------------------------------------------
+ <summary>
+ If IncludeEndValue is true, the event is shown including the end row or column
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.ShowValueMarks">
+ -----------------------------------------------------------------------------
+ <summary>
+ If ShowValueMarks is true, value marks will be shown in the range header column or row.
+ Applied only when IncludeEndValue is false.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.DataSource">
+ -----------------------------------------------------------------------------
+ <summary>
+ The data source that is used to show items in the schedule
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.DataMember">
+ -----------------------------------------------------------------------------
+ <summary>
+ The table or view used for binding when a DataSet is used as a data source.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.DataRangeStartField">
+ -----------------------------------------------------------------------------
+ <summary>
+ The database field containing the start of the items.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.DataRangeEndField">
+ -----------------------------------------------------------------------------
+ <summary>
+ The database field containing the end of the items.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.TitleField">
+ -----------------------------------------------------------------------------
+ <summary>
+ The database field providing the titles.
+ In Calendar mode this field should be of type Date when TimeFieldsContainDate=false.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.ItemStyleField">
+ -----------------------------------------------------------------------------
+ <summary>
+ An optional database field providing the item styles (in the form of a css class name).
+ If not provided, then the ItemStyle property will be used for all items.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.FullTimeScale">
+ -----------------------------------------------------------------------------
+ <summary>
+ Boolean value indicating if a full time scale should be shown.
+ If true, show a full time scale.
+ If false, show only the occurring values in the data source.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.TimeScaleInterval">
+ -----------------------------------------------------------------------------
+ <summary>
+ The number of minutes between each mark on the time scale. Only used when FullTimeScale is true.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.StartOfTimeScale">
+ -----------------------------------------------------------------------------
+ <summary>
+ The start of the time scale. Only used when FullTimeScale is true.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.EndOfTimeScale">
+ -----------------------------------------------------------------------------
+ <summary>
+ The end of the time scale. Only used when FullTimeScale is true.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.CellPadding">
+ -----------------------------------------------------------------------------
+ <summary>
+ The cell padding of the rendered table.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.CellSpacing">
+ -----------------------------------------------------------------------------
+ <summary>
+ The cell spacing of the rendered table.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.GridLines">
+ -----------------------------------------------------------------------------
+ <summary>
+ The grid lines to be shown in the rendered table.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.HorizontalAlign">
+ -----------------------------------------------------------------------------
+ <summary>
+ The horizontal alignment of text in the table.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.ItemStyle">
+ -----------------------------------------------------------------------------
+ <summary>
+ The style applied to schedule items.
+ </summary>
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.AlternatingItemStyle">
+ -----------------------------------------------------------------------------
+ <summary>
+ The style applied to alternating schedule items.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.RangeHeaderStyle">
+ -----------------------------------------------------------------------------
+ <summary>
+ The style applied to range header items.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.TitleStyle">
+ -----------------------------------------------------------------------------
+ <summary>
+ The style applied to title items.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.BackgroundStyle">
+ -----------------------------------------------------------------------------
+ <summary>
+ The style applied to the background cells.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.ItemTemplate">
+ -----------------------------------------------------------------------------
+ <summary>
+ Main template providing content for each regular item in the body of the schedule.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.BaseSchedule.EmptyDataTemplate">
+ -----------------------------------------------------------------------------
+ <summary>
+ Optional template providing content to be shown when the data source is empty.
+ This template is not used by the ScheduleCalendar control when FullTimeScale=True.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="E:NickLee.Web.UI.VB.BaseSchedule.ItemCommand">
+ -----------------------------------------------------------------------------
+ <summary>
+ Raised when a CommandEvent occurs within an item.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+ -----------------------------------------------------------------------------
+</member><member name="E:NickLee.Web.UI.VB.BaseSchedule.ItemCreated">
+ -----------------------------------------------------------------------------
+ <summary>
+ Raised when an item is created and is ready for customization.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+ -----------------------------------------------------------------------------
+</member><member name="E:NickLee.Web.UI.VB.BaseSchedule.ItemDataBound">
+ -----------------------------------------------------------------------------
+ <summary>
+ Raised when an item is data-bound.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+ -----------------------------------------------------------------------------
+</member><member name="E:NickLee.Web.UI.VB.BaseSchedule.EmptySlotClick">
+ -----------------------------------------------------------------------------
+ <summary>
+ Occurs when the user clicks on an empty slot.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.CheckVersion">
+ -----------------------------------------------------------------------------
+ <summary>
+ Checks if the application is running on the proper version of ASP.NET.
+ If not, an exception is thrown.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.DataBind">
+ -----------------------------------------------------------------------------
+ <summary>
+ Overrides Control.Databind.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.OnDataBinding(System.EventArgs)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Overrides Control.OnDatabinding.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.CheckConfiguration">
+ -----------------------------------------------------------------------------
+ <summary>
+ Check if all properties are set to make the control work
+ Override this function in derived versions.
+ </summary>
+	<returns></returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.FillRangeValueArray(System.Data.DataView@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Create the list with all range header values (Start or End)
+ </summary>
+	<param name="dv"></param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.RemoveDoubles(System.Collections.ArrayList@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Remove any doubles from the ArrayList and
+ </summary>
+	<param name="arr">The ArrayList object</param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.PreprocessData(System.Data.DataView@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Pre-process the data in the dataview
+ Currently only used in ScheduleCalendar to split the items that span midnight
+ </summary>
+	<param name="dv">The DataView object containing the data</param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.FillTitleValueArray(System.Data.DataView@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Create the list with all the title values
+ </summary>
+	<param name="dvView">The DataView object containing the data</param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.GetRepetitionCount">
+ -----------------------------------------------------------------------------
+ <summary>
+ Get the number of times the control should repeat the schedule
+ (every time with new headers)
+ </summary>
+	<returns>An integer value indicating the repetition count</returns>
+	<remarks>
+ Overridden in ScheduleCalendar to return NumberOfRepetitions (usually number of weeks)
+ </remarks>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.CreateEmptyTable">
+ -----------------------------------------------------------------------------
+ <summary>
+ Create a Table control with the right number of rows and columns.
+ The actual content is added later.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.AddDateHeaderData">
+ -----------------------------------------------------------------------------
+ <summary>
+ Add date headers to the table when SeparateDateHeader=True
+ Overridden only in ScheduleGeneral to add date header data
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.AddRangeHeaderData">
+ -----------------------------------------------------------------------------
+ <summary>
+ Iterate the arrRangeValues array, creating a new header item for each data item
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.AddData(System.Data.DataView)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Add the actual items from the data source to the body of the table
+ </summary>
+	<param name="dvView">The data view that contains the data items</param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.AddRangeValueMarks">
+ -----------------------------------------------------------------------------
+ <summary>
+ Add range value marks to indicate the range values
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.CalculateRangeCellIndex(System.Object,System.Object,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Calculate the range cell index in the table, given the objRangeValue and the objTitleValue
+ The values refer to the real cell index in the table, taking into account whether cells are
+ spanning over value marks (in horizontal mode)
+ In vertical layout, the result is the real row index in the table
+ In horizontal layout, the result is the real cell index in the row (before any merging
+ of cells due to value spanning)
+ </summary>
+	<param name="objRangeValue">The range value from the data source</param>
+	<param name="objTitleValue">The title value from the data source</param>
+	<param name="isEndValue">False if we're calculating the range value index for the
+ start of the item, True if it's the end</param>
+	<returns>The range cell index</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.CalculateTitleIndex(System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Calculate the TitleIndex in the table, given the objTitleValue
+ </summary>
+	<param name="objTitleValue">The title value from the data source</param>
+	<returns>The title index</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.MergeCells(System.Int32,System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Merge cells starting at startCellIndex
+ </summary>
+	<param name="startCellIndex">Index of the first cell to merge.</param>
+	<param name="titleIndex">Row or column containing the adjacent cells.</param>
+	<param name="Span">Number of columns or rows that the newly merged cell should span.</param>
+	<returns>The newly merged cell if successful. Nothing when merging fails.</returns>
+	<remarks>
+ In horizontal layout, merging may start at 0
+ </remarks>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.RemoveCells(System.Int32,System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Removes all the cells from startValueIndex to endValueIndex, except the first cell
+ </summary>
+	<param name="startCellIndex">Index of the first cell to remove.</param>
+	<param name="endCellIndex">Index of the last cell to remove.</param>
+	<param name="titleIndex">Row or column containing the adjacent cells.</param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.RemoveCell(System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Removes the cell at cellValueIndex
+ </summary>
+	<param name="cellValueIndex">Cell value index of the cell to be removed.</param>
+	<param name="titleIndex">Title index of the cell to be removed.</param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.GetSplitSpan(System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ in vertical layout, get the column span. In horizontal layout, get the row span
+ </summary>
+	<param name="valueIndex">Value index of the cell</param>
+	<param name="titleIndex">Title index of the cell</param>
+	<returns>Integer value indicating the span width</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.IsRangeAlreadySpanning(System.Int32,System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Check if the cells at titleIndex are already spanning over multiple rows or columns
+ for the given range. The span must be the same over that range.
+ </summary>
+	<param name="titleIndex">Title index of the range</param>
+	<param name="firstCellIndex"></param>
+	<param name="lastCellIndex"></param>
+	<returns>True or false</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.SplitTitle(System.Int32,System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Split a column or row in 2 in order to allow the display of overlapping items.
+ </summary>
+	<param name="titleIndex">Title index of the cells to be split</param>
+	<param name="firstCellIndexToSplit">Index of the first cell in the range to split</param>
+	<param name="lastCellIndexToSplit">Index of the last cell in the range to split</param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.GetDataView">
+ -----------------------------------------------------------------------------
+ <summary>
+ Get the DataView from the DataSource and DataMember properties
+ </summary>
+	<returns></returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.InstantiateItem(NickLee.Web.UI.VB.ScheduleItem,System.Web.UI.WebControls.TableCell)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Instantiate item using the corresponding template (if any)
+ </summary>
+	<param name="item">ScheduleItem to instantiate</param>
+	<param name="cell">corresponding table cell</param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.FormatDataValue(System.Object,NickLee.Web.UI.VB.ScheduleItemType)">
+ -----------------------------------------------------------------------------
+ <summary>
+ when there's no template, try to present the data in a reasonable format
+ </summary>
+	<param name="value">Value of the item</param>
+	<param name="type">Type of the item</param>
+	<returns>A formatted string</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.CreateItem(System.Int32,System.Int32,NickLee.Web.UI.VB.ScheduleItemType,System.Boolean,System.Object,System.Int32)">
+	<summary>
+ Create the item
+ </summary>
+	<param name="cellValueIndex">Cell value index of the item</param>
+	<param name="titleIndex">Title index of the item</param>
+	<param name="itemType">Type of the item</param>
+	<param name="dataBind">Whether databinding should be performed</param>
+	<param name="dataItem">Data item of the item</param>
+	<param name="dataSetIndex">Index of the item in the dataset</param>
+	<returns>The newly created ScheduleItem</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.GetValueSpan(System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ In vertical layout, get the row span. In horizontal layout, get the column span
+ </summary>
+	<param name="cellValueIndex">Cell value index of the item</param>
+	<param name="titleIndex">Title index of the item</param>
+	<returns>The integer value of the span</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.SetValueSpan(System.Int32,System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ in vertical layout, set the row span. In horizontal layout, set the column span
+ </summary>
+	<param name="cellValueIndex">Cell value index of the item</param>
+	<param name="titleIndex">Title index of the item</param>
+	<param name="span">The new span value</param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.GetCell(System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Get the cell at the given indexes.
+ </summary>
+	<param name="cellValueIndex">Cell value index of the item</param>
+	<param name="titleIndex">Title index of the item</param>
+	<returns>The TableCell object of the corresponding cell</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.RenderEmptyDataTemplate">
+ -----------------------------------------------------------------------------
+ <summary>
+ Show the EmptyDataTemplate when the data source is empty
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.OnBubbleEvent(System.Object,System.EventArgs)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Handle events raised by children by overriding OnBubbleEvent.
+ </summary>
+	<param name="source">the source of the event</param>
+	<param name="e">event data</param>
+	<returns>true if the event has been handled</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.RaisePostBackEvent(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ RaisePostBackEvent is called when the user clicks on an empty slot
+ (see clickabletablecell.vb)
+ </summary>
+	<param name="eventArgument">String with the event argument.
+ Contains something like "3-7", where 3 is the row and 7 the column </param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.CalculateRangeValueIndex(System.Int32,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Calculate the range value index given the cell index
+ </summary>
+	<param name="row">Row of the cell</param>
+	<param name="column">Column of the cell</param>
+	<returns>Integer containing the range value index</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.CalculateRowsPerRepetition">
+ -----------------------------------------------------------------------------
+ <summary>
+ Calculate the number of rows per repetition
+ </summary>
+	<returns>Integer containing the number of rows</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.SaveControlTree">
+ -----------------------------------------------------------------------------
+ <summary>
+ Save information for use in round trips (enough to re-create the control tree).
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.LoadControlTree">
+ -----------------------------------------------------------------------------
+ <summary>
+ Recreate the control tree from viewstate
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.LoadViewState(System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Customized state management to handle saving state of contained objects.
+ </summary>
+	<param name="savedState"></param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.SaveViewState">
+ -----------------------------------------------------------------------------
+ <summary>
+ Customize state management to handle saving state of contained objects such as styles.
+ </summary>
+	<returns></returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.BaseSchedule.TrackViewState">
+ -----------------------------------------------------------------------------
+ <summary>
+ Customize state management to handle saving state of contained objects such as styles.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="T:NickLee.Web.UI.VB.BaseSchedule">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.BaseSchedule
+ -----------------------------------------------------------------------------
+ <summary>
+ BaseSchedule is the base class for the ScheduleGeneral and ScheduleCalendar controls
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.SimpleTemplatedControlDesigner.CanRenderWithTemplateEmpty(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Override this if you want to be able to render the control when not all the templates have been defined.
+ </summary>
+	<param name="templateName"></param>
+	<returns></returns>
+ -----------------------------------------------------------------------------
+</member><member name="P:NickLee.Web.UI.VB.SimpleTemplatedControlDesigner.TemplatesAreEmpty">
+ -----------------------------------------------------------------------------
+ <summary>
+ Create a read-only property that determines whether the control
+ is using templates at design time.
+ </summary>
+	<returns>True if Templates are empty</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.SimpleTemplatedControlDesigner.GetCachedTemplateEditingVerbs">
+ -----------------------------------------------------------------------------
+ <summary>
+ Override the GetCachedTemplateEditingVerbs method to check whether the verbs have been changed.
+ If they have, a new collection of verbs is created for use with this designer.
+ </summary>
+	<returns></returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.SimpleTemplatedControlDesigner.CreateTemplateEditingFrame(System.Web.UI.Design.TemplateEditingVerb)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Override the CreateTemplateEditingFrame method to provide a frame in which to manipulate
+ templates at design time.
+ </summary>
+	<param name="verb"></param>
+	<returns></returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.SimpleTemplatedControlDesigner.GetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.Boolean@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Override the GetTemplateContent method to return the content contained in the template.
+ </summary>
+	<param name="editingFrame"></param>
+	<param name="templateName"></param>
+	<param name="allowEditing"></param>
+	<returns>String</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.SimpleTemplatedControlDesigner.SetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Override the SetTemplateContent method to set the content contained in the template.
+ </summary>
+	<param name="editingFrame"></param>
+	<param name="templateName"></param>
+	<param name="templateContent"></param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.SimpleTemplatedControlDesigner.DisposeTemplateEditingVerbs">
+ -----------------------------------------------------------------------------
+ <summary>
+ Create a method that releases resources used by the
+ designer verbs associated with design-time templates.
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.SimpleTemplatedControlDesigner.Dispose(System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Override the Dispose method to release resources associated with this designer.
+ </summary>
+	<param name="disposing"></param>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.SimpleTemplatedControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Override the OnComponentChanged method to change
+ the control's DataSource or styles in the designer.
+ </summary>
+	<param name="sender"></param>
+	<param name="ce"></param>
+ -----------------------------------------------------------------------------
+</member><member name="T:NickLee.Web.UI.VB.SimpleTemplatedControlDesigner">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.SimpleTemplatedControlDesigner
+ -----------------------------------------------------------------------------
+ <summary>
+ SimpleTemplatedControlDesigner adds design-time support (courtesy of Andy Smith)
+ Only used for ASP.NET version 1.x
+ </summary>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleCalendarDesigner.GetDummyDataTable(System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Provides a dummy DataTable object, allowing the ScheduleCalendar control to
+ show some sample data in the designer.
+ </summary>
+	<param name="minimumRows"></param>
+	<returns>A dummy DataTable object</returns>
+ -----------------------------------------------------------------------------
+</member><member name="M:NickLee.Web.UI.VB.ScheduleCalendarDesigner.OnPropertyBuilder(System.Object,System.EventArgs)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Shows a Property Builder dialog box
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+ -----------------------------------------------------------------------------
+</member><member name="T:NickLee.Web.UI.VB.ScheduleCalendarDesigner">
+ -----------------------------------------------------------------------------
+ Project	 : schedule
+ Class	 : rw.ScheduleCalendarDesigner
+ -----------------------------------------------------------------------------
+ <summary>
+ ScheduleCalendarDesigner adds design-time support for the ScheduleCalendar control
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+</members>
+</doc>
