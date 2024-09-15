@@ -4,4 +4,4 @@
 
 4、源码用Visual Studio 2022版编译，有问题请联系泰顶客服，电话：021-51085119，EMail: 62307737@qq.com
 
-5、如果编译时组件Model,DAL,BLL引用的DLL出错，那么可以把出错的引用删除掉，并重新把Npgsql,NHibernate,newtown.json,System.Text.Json组件从主程序引用就可以了！
+5、如果编译时组件引用的DLL出错，那么可以把出错的引用删除掉，并重新把Npgsql,NHibernate,newtown.json,System.Text.Json,ProjectMgt.DAL等组件从主程序Web/Bin目录下引用就可以了！
