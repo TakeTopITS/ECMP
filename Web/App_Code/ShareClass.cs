@@ -66,7 +66,6 @@ public static class ShareClass
 
     public static string SystemLatestLoginUser = "";
     public static string SystemDBer = "";
-
     public static DateTime systemStartupTime = DateTime.Now;
 
     #region 用户登录机制

@@ -18,7 +18,8 @@ public class HttpHelper
         if (url.ToLower().IndexOf("https", System.StringComparison.Ordinal) > -1)
         {
             ServicePointManager.ServerCertificateValidationCallback =
-                           new RemoteCertificateValidationCallback((sender, certificate, chain, errors) => { return true; });
+                   new RemoteCertificateValidationCallback((sender, certificate, chain, errors) => { return true; });
+
         }
 
         try
