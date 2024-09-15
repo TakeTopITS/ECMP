@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.Tender_HYYQ, ProjectMgt.Model" table="T_Tender_HYYQ">
+
+		<id name="id" column="id" type="int">
+
+			<generator class="identity" />
+		</id>
+
+		<property name ="TenderCode" type ="String" />
+		<property name ="ProjectName" type ="String" />
+		<property name ="CompactCode" type ="String" />
+		<property name ="BiddingAgent" type ="String" />
+		<property name ="BiddingAgentPhone" type ="String" />
+		<property name ="UserCode" type ="String" />
+		<property name ="UserCodePhone" type ="String" />
+		<property name ="SalesCode" type ="String" />
+		<property name ="SalesCodePhone" type ="String" />
+		<property name ="TenderBuyTime" type ="String" />
+		<property name ="TenderBuyDay" type ="int" />
+		<property name ="IsTender" type ="int" />
+
+		<property name ="Margin" type ="Decimal" />
+		<property name ="MarginTime" type ="String" />
+		<property name ="MarginDay" type ="int" />
+		<property name ="IsMargin" type ="int" />
+
+		<property name ="ReceiveMargin" type ="Decimal" />
+		<property name ="ReceiveMarginTime" type ="String" />
+		<property name ="ReceiveMarginDay" type ="int" />
+		<property name ="IsReceiveMargin" type ="int" />
+
+		<property name ="BidOpeningDate" type ="String" />
+		<property name ="BidOpeningDay" type ="int" />
+		<property name ="IsBidOpening" type ="int" />
+
+		<property name ="WinningFeeDate" type ="String" />
+		<property name ="WinningFeeDay" type ="int" />
+		<property name ="IsWinningFee" type ="int" />
+		<property name ="TenderContent" type ="String" />
+		<property name ="Remarks" type ="String" />
+		<property name ="Progress" type ="String" />
+		<property name ="CreatorCode" type ="String" />
+		<property name ="CreatorName" type ="String" />
+
+		<property name ="WorkCost" type ="Decimal" ></property>
+		<property name ="AgencyCost" type ="Decimal"></property>
+		<property name ="TenderStatus" type ="String"></property>
+
+		
+		<property name ="PMCode" type ="String" />
+		<property name ="PMName" type ="String" />
+		<property name ="TechnicalDirectorCode" type ="String" />
+		<property name ="TechnicalDirectorName" type ="String" />
+
+		<property name ="PrincipalCode" type ="String" />
+		<property name ="PrincipalName" type ="String" />
+		<property name ="InternalAndExternal" type ="String" />
+
+		<property name ="BiddingPrice" type ="Decimal" ></property>
+		<property name ="ControlPrice" type ="Decimal"></property>
+		
+		
+		
+		
+	</class>
+</hibernate-mapping>

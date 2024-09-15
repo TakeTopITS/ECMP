@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.Mails, ProjectMgt.Model" table="T_Mail">
+
+    <id name="MailID" column="MailID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Title" type ="String" />
+    <property name ="Body" type ="String" />
+    <property name ="FromAddress" type="String" />
+    <property name ="ToAddress" type ="String" />
+    <property name ="CCAddress" type="String" />
+    <property name ="HTMLFormat" type="int" />
+    <property name ="SenderDate" type="DateTime" />
+    <property name ="Contain" type="int" />
+    <property name ="AttachmentFlag" type ="int" />
+    <property name ="ReaderFlag" type ="int" />
+    <property name ="FolderID" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

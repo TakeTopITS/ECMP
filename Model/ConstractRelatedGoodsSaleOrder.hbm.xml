@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractRelatedGoodsSaleOrder, ProjectMgt.Model" table="T_ConstractRelatedGoodsSaleOrder">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="SOID" type ="int" />
+
+    <property name ="ConstractCode" type ="String" />
+  </class>
+</hibernate-mapping>

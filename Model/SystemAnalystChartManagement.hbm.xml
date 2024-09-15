@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.SystemAnalystChartManagement, ProjectMgt.Model" table="T_SystemAnalystChartManagement">
+
+    <id name="ID" column="ID" type="int">
+      <generator class="identity" />
+    </id>
+
+    <property name ="ChartType" type ="String" />
+
+    <property name ="ChartName" type ="String" />
+
+    <property name ="SqlCode" type ="String" />
+
+    <property name ="LinkURL" type ="String" />
+
+    <property name ="Status" type ="String" />
+  </class>
+</hibernate-mapping>

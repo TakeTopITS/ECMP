@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ProjectMgt.Model.BMBidTemplateFile, ProjectMgt.Model" table="T_BMBidTemplateFile">
+    <id name ="ID" column="ID" type ="int">
+      <generator class="identity" />
+    </id>
+    <property name="BidPlanID" column="BidPlanID" type="int">
+    </property>
+    <property name="BidPlanName" column="BidPlanName" type="String">
+    </property>
+    <property name="FileName" column="FileName" type="String">
+    </property>
+    <property name="FilePath" column="FilePath" type="String">
+    </property>
+    <property name="EnterCode" column="EnterCode" type="String">
+    </property>
+    <property name="SupplierType" column="SupplierType" type="String">
+    </property>
+  </class>
+</hibernate-mapping>

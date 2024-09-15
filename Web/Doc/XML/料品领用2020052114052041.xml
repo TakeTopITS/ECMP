@@ -1,0 +1,107 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_BusinessFormDataTable>
+    <ID>4</ID>
+    <COOID>6</COOID>
+    <PDID>3</PDID>
+    <PDName>test20151102</PDName>
+    <CustomerModelNumber>55555555555</CustomerModelNumber>
+    <GoodsCode>SN0001              </GoodsCode>
+    <GoodsName>普通硅酸盐水泥</GoodsName>
+    <Type>主料                </Type>
+    <Spec>Ф7.5    44.18    0.347</Spec>
+    <ModelNumber>强度标准例32.5</ModelNumber>
+    <BarCode />
+    <Number>10.000</Number>
+    <BoxNumber>10.000</BoxNumber>
+    <Unit>公斤      </Unit>
+    <CheckOutNumber>0.000</CheckOutNumber>
+    <Price>10.000</Price>
+    <Amount>100.000</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <FinishStatus>YES       </FinishStatus>
+    <DeliveryAddress>TEST</DeliveryAddress>
+    <CheckOutTime>2017-04-13T00:00:00+08:00</CheckOutTime>
+    <Comment />
+    <SourceType>Other               </SourceType>
+    <SourceID>0</SourceID>
+  </T_BusinessFormDataTable>
+  <T_BusinessFormDataTable>
+    <ID>5</ID>
+    <COOID>6</COOID>
+    <PDID>3</PDID>
+    <PDName>test20151102</PDName>
+    <CustomerModelNumber />
+    <GoodsCode>SN0001              </GoodsCode>
+    <GoodsName>普通硅酸盐水泥</GoodsName>
+    <Type>主料                </Type>
+    <Spec>Ф7.5    44.18    0.347</Spec>
+    <ModelNumber>强度标准例32.5</ModelNumber>
+    <BarCode />
+    <Number>10.000</Number>
+    <BoxNumber>10.000</BoxNumber>
+    <Unit>公斤      </Unit>
+    <CheckOutNumber>0.000</CheckOutNumber>
+    <Price>10.000</Price>
+    <Amount>100.000</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <FinishStatus>YES       </FinishStatus>
+    <DeliveryAddress>TEST</DeliveryAddress>
+    <CheckOutTime>2017-04-13T00:00:00+08:00</CheckOutTime>
+    <Comment />
+    <SourceType>Other               </SourceType>
+    <SourceID>0</SourceID>
+  </T_BusinessFormDataTable>
+  <T_BusinessFormDataTable>
+    <ID>6</ID>
+    <COOID>6</COOID>
+    <PDID>0</PDID>
+    <PDName>--Select--</PDName>
+    <CustomerModelNumber />
+    <GoodsCode>dd0009              </GoodsCode>
+    <GoodsName>笔记本</GoodsName>
+    <Type>办公类              </Type>
+    <Spec>12</Spec>
+    <ModelNumber>9870</ModelNumber>
+    <BarCode />
+    <Number>10.000</Number>
+    <BoxNumber>10.000</BoxNumber>
+    <Unit>支        </Unit>
+    <CheckOutNumber>0.000</CheckOutNumber>
+    <Price>20.000</Price>
+    <Amount>200.000</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <FinishStatus>YES       </FinishStatus>
+    <DeliveryAddress>TEST</DeliveryAddress>
+    <CheckOutTime>2017-04-13T00:00:00+08:00</CheckOutTime>
+    <Comment />
+    <SourceType>GoodsSORecord       </SourceType>
+    <SourceID>12</SourceID>
+  </T_BusinessFormDataTable>
+  <T_BusinessFormDataTable>
+    <ID>7</ID>
+    <COOID>6</COOID>
+    <PDID>0</PDID>
+    <PDName>--Select--</PDName>
+    <CustomerModelNumber />
+    <GoodsCode xml:space="preserve">                    </GoodsCode>
+    <GoodsName />
+    <Type xml:space="preserve">                    </Type>
+    <Spec />
+    <ModelNumber />
+    <BarCode />
+    <Number>0.000</Number>
+    <BoxNumber>0.000</BoxNumber>
+    <Unit>台        </Unit>
+    <CheckOutNumber>0.000</CheckOutNumber>
+    <Price>0.000</Price>
+    <Amount>0.000</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <FinishStatus>YES       </FinishStatus>
+    <DeliveryAddress />
+    <CheckOutTime>2017-04-15T00:00:00+08:00</CheckOutTime>
+    <Comment />
+    <SourceType>Other               </SourceType>
+    <SourceID>0</SourceID>
+  </T_BusinessFormDataTable>
+</NewDataSet>

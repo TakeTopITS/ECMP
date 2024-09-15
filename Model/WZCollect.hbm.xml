@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZCollect, ProjectMgt.Model" table="T_WZCollect">
+
+    <id name="CollectCode" column="CollectCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="CompactDetailID" type ="int" />
+    <property name ="ProjectCode" type ="String" />
+    <property name ="PlanDetailID" type ="int" />
+    <property name ="ObjectCode" type ="String" />
+    <property name ="StoreRoom" type ="String" />
+    <property name ="TicketTime" type ="DateTime" />
+    <property name ="CollectMethod" type ="String" />
+    <property name ="CollectNumber" type ="Decimal" />
+    <property name ="ActualNumber" type ="Decimal" />
+    <property name ="ActualPrice" type ="Decimal" />
+    <property name ="ActualMoney" type ="Decimal" />
+    <property name ="Ratio" type ="Decimal" />
+    <property name ="RatioMoney" type ="Decimal" />
+    <property name ="Freight" type ="Decimal" />
+    <property name ="OtherObject" type ="Decimal" />
+    <property name ="ConvertNumber" type ="Decimal" />
+    <property name ="SupplierCode" type ="String" />
+    <property name ="TicketNumber" type ="String" />
+    <property name ="CheckCode" type ="String" />
+    <property name ="Checker" type ="String" />
+    <property name ="CheckTime" type ="String" />
+    <property name ="Safekeeper" type ="String" />
+    <property name ="CollectTime" type ="String" />
+    <property name ="Contacter" type ="String" />
+    <property name ="RequestCode" type ="String" />
+    <property name ="FinanceApprove" type ="String" />
+    <property name ="PayProcess" type ="String" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="CompactCode" type ="String" />
+  </class>
+</hibernate-mapping>

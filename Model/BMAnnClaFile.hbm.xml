@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMAnnClaFile, ProjectMgt.Model" table="T_BMAnnClaFile">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="Type" column="Type" type="String">
+		</property>
+		<property name="BidPlanID" column="BidPlanID" type="int">
+		</property>
+		<property name="BidPlanName" column="BidPlanName" type="String">
+		</property>
+		<property name="SupplierCode" column="SupplierCode" type="String">
+		</property>
+		<property name="SendContent" column="SendContent" type="String">
+		</property>
+		<property name="ReplyContent" column="ReplyContent" type="String">
+		</property>
+		<property name="EnterPer" column="EnterPer" type="String">
+		</property>
+		<property name="SentDate" column="SentDate" type="DateTime">
+		</property>
+		<property name="ReplyDate" column="ReplyDate" type="DateTime">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

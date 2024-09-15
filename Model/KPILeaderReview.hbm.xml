@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.KPILeaderReview, ProjectMgt.Model" table="T_KPILeaderReview">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="UserKPIID" type ="int" />
+
+    <property name ="LeaderCode" type ="String" />
+
+    <property name ="LeaderName" type ="String" />
+
+    <property name ="Comment"  type ="String" />
+
+    <property name ="Point"    type ="Decimal" />
+
+    <property name ="ReviewTime"  type ="DateTime" />
+  </class>
+</hibernate-mapping>

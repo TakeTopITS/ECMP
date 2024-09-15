@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDProject, ProjectMgt.Model" table="T_GDProject">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProjectCode" type ="String" />
+    <property name ="ProjectName" type ="String" />
+    <property name ="ProjectAddress" type ="String" />
+    <property name ="CreateDate" type ="DateTime" />
+    <property name ="Remark" type ="String" />
+  <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

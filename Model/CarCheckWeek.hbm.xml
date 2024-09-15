@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.CarCheckWeek, ProjectMgt.Model" table="T_CarCheckWeek">
+
+    <id name="WeekCode" column="WeekCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="WeekName" type ="String" />
+    <property name ="Remark" type="String" />
+    <property name ="CreateTime" type="DateTime" />
+    <property name ="CustomerCode" type="String" />
+    <property name ="CustomerName" type ="String" />
+    <property name ="Ext1" type="String" />
+    <property name ="Ext2" type ="String" />
+    <property name ="Ext3" type="String" />
+    <property name ="Ext4" type="String" />
+    <property name ="Ext5" type="String" />
+  </class>
+</hibernate-mapping>

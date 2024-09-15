@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.LTCandidateInformation, ProjectMgt.Model" table="T_LTCandidateInformation">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="UserName" type ="String" />
+    <property name ="Gender" type ="String" />
+    <property name ="Age" type ="int" />
+
+    <property name ="Company" type ="String" />
+    <property name ="Department" type ="String" />
+
+    <property name ="CurrentDuty"  type ="String" />
+    <property name ="MobilePhone" type ="String" />
+    <property name ="Brief" type ="StringClob" />
+
+    <property name ="PhotoURL" type ="String" />
+
+    <property name ="BelongDepartCode" type ="String" />
+    <property name ="BelongDepartName" type ="String" />
+
+    <property name ="CreatorCode" type ="String" />
+    <property name ="CreateTime" type ="DateTime" />
+    <property name ="Status" type ="String" />
+  </class>
+</hibernate-mapping>

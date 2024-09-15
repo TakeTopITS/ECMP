@@ -1,0 +1,1389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF877E98-DC25-46DB-9D31-C2FBE82FDF42}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectMgt.Model</RootNamespace>
+    <AssemblyName>ProjectMgt.Model</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IntermediateOutputPath>C:\Users\zhongjun\AppData\Local\Temp\vsC7B5.tmp\Debug\</IntermediateOutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IntermediateOutputPath>C:\Users\zhongjun\AppData\Local\Temp\vsC7B5.tmp\Release\</IntermediateOutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.3.7\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.6.0.0-preview2\lib\netstandard2.0\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.5.0.1\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.5.0.0\lib\net461\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountFinancialSet.cs" />
+    <Compile Include="AccountGeneralLedger.cs" />
+    <Compile Include="AccountingIntervalSet.cs" />
+    <Compile Include="ActorGroup.cs" />
+    <Compile Include="ActorGroupDetail.cs" />
+    <Compile Include="ActorGroupType.cs" />
+    <Compile Include="Admin.cs" />
+    <Compile Include="AllProStatusGroup.cs" />
+    <Compile Include="ApplicationHardware_YYUP.cs" />
+    <Compile Include="ApplicationSystem_YYUP.cs" />
+    <Compile Include="Approve.cs" />
+    <Compile Include="AssetAdjustRecord.cs" />
+    <Compile Include="AssetApplication.cs" />
+    <Compile Include="AssetApplicationDetail.cs" />
+    <Compile Include="AssetApplicationReport.cs" />
+    <Compile Include="AssetCheckInOrder.cs" />
+    <Compile Include="AssetCheckInOrderDetail.cs" />
+    <Compile Include="AssetPurchaseOrder.cs" />
+    <Compile Include="AssetReturnDetail.cs" />
+    <Compile Include="AssetReturnOrder.cs" />
+    <Compile Include="AssetShipmentDetail.cs" />
+    <Compile Include="AssetShipmentOrder.cs" />
+    <Compile Include="AssetShipmentReport.cs" />
+    <Compile Include="Attachments.cs" />
+    <Compile Include="AttendanceRule.cs" />
+    <Compile Include="Bank.cs" />
+    <Compile Include="BDBaseData.cs" />
+    <Compile Include="BDBaseDataRecord.cs" />
+    <Compile Include="BMAnnClaFile.cs" />
+    <Compile Include="BMAnnInvitation.cs" />
+    <Compile Include="BMAnnInvitRelatedProject.cs" />
+    <Compile Include="BMAssessBidRecord.cs" />
+    <Compile Include="BMAssessBidReport.cs" />
+    <Compile Include="BMBidAddendum.cs" />
+    <Compile Include="BMBidFile.cs" />
+    <Compile Include="BMBidNoticeContent.cs" />
+    <Compile Include="BMBidPlan.cs" />
+    <Compile Include="BMBidTemplateFile.cs" />
+    <Compile Include="BMContractDiscuss.cs" />
+    <Compile Include="BMContractPreparation.cs" />
+    <Compile Include="BMOpenBidRecord.cs" />
+    <Compile Include="BMPerformanceEvaluation.cs" />
+    <Compile Include="BMPurchaseApplication.cs" />
+    <Compile Include="BMSupBidByExp.cs" />
+    <Compile Include="BMSupplierAnaly.cs" />
+    <Compile Include="BMSupplierBid.cs" />
+    <Compile Include="BMSupplierBidRecord.cs" />
+    <Compile Include="BMSupplierBidRecordFile.cs" />
+    <Compile Include="BMSupplierCertification.cs" />
+    <Compile Include="BMSupplierInfo.cs" />
+    <Compile Include="BMSupplierInfoHistory.cs" />
+    <Compile Include="BMSupplierLink.cs" />
+    <Compile Include="BMSupplierReply.cs" />
+    <Compile Include="BookBorrowRecord.cs" />
+    <Compile Include="BookCertificate.cs" />
+    <Compile Include="BookClassification.cs" />
+    <Compile Include="BookInformation.cs" />
+    <Compile Include="BookPublishers.cs" />
+    <Compile Include="BookReaderType.cs" />
+    <Compile Include="BusinessFormReAndPay.cs" />
+    <Compile Include="CameraInfo.cs" />
+    <Compile Include="CameraList.cs" />
+    <Compile Include="CameraLog.cs" />
+    <Compile Include="CarApplyForm.cs" />
+    <Compile Include="CarAssignForm.cs" />
+    <Compile Include="CarCheckWeek.cs" />
+    <Compile Include="CarInformation.cs" />
+    <Compile Include="CarOilTypeRecord.cs" />
+    <Compile Include="CarType.cs" />
+    <Compile Include="ChangeType.cs" />
+    <Compile Include="Collaboration.cs" />
+    <Compile Include="CollaborationLog.cs" />
+    <Compile Include="CollaborationLogWithCustomerQuestionCandidate.cs" />
+    <Compile Include="CollaborationMember.cs" />
+    <Compile Include="Constract.cs" />
+    <Compile Include="ConstractBigType.cs" />
+    <Compile Include="ConstractChangeRecord.cs" />
+    <Compile Include="ConstractGoodsDeliveryPlan.cs" />
+    <Compile Include="ConstractGoodsDeliveryRecord.cs" />
+    <Compile Include="ConstractGoodsReceiptPlan.cs" />
+    <Compile Include="ConstractGoodsReceiptRecord.cs" />
+    <Compile Include="ConstractPayable.cs" />
+    <Compile Include="ConstractPayableRecord.cs" />
+    <Compile Include="ConstractPayableVisa.cs" />
+    <Compile Include="ConstractPayableVisaDetail.cs" />
+    <Compile Include="ConstractReceivables.cs" />
+    <Compile Include="ConstractReceivablesRecord.cs" />
+    <Compile Include="ConstractRelatedConstract.cs" />
+    <Compile Include="ConstractRelatedEntryOrder.cs" />
+    <Compile Include="ConstractRelatedEntryOrderForInner.cs" />
+    <Compile Include="ConstractRelatedGoods.cs" />
+    <Compile Include="ConstractRelatedGoodsPurchaseOrder.cs" />
+    <Compile Include="ConstractRelatedInvoice.cs" />
+    <Compile Include="ConstractRelatedProject.cs" />
+    <Compile Include="ConstractRelatedGoodsSaleOrder.cs" />
+    <Compile Include="ConstractRelatedUser.cs" />
+    <Compile Include="ConstractSales.cs" />
+    <Compile Include="ConstractType.cs" />
+    <Compile Include="ConstractRelatedAssetPurchaseOrder.cs" />
+    <Compile Include="CurrencyType.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerContactRecord.cs" />
+    <Compile Include="CustomerOperationRecord.cs" />
+    <Compile Include="CustomerQuestion.cs" />
+    <Compile Include="CustomerQuestionCustomerStage.cs" />
+    <Compile Include="CustomerQuestionHandleRecord.cs" />
+    <Compile Include="CustomerQuestionRelatedCandidate.cs" />
+    <Compile Include="CustomerQuestionStage.cs" />
+    <Compile Include="CustomerQuestionType.cs" />
+    <Compile Include="CustomerRelatedGoodsInfor.cs" />
+    <Compile Include="CustomerRelatedQuestion.cs" />
+    <Compile Include="CustomerRelatedUser.cs" />
+    <Compile Include="CustomModule.cs" />
+    <Compile Include="DailyWorkUnitBonus.cs" />
+    <Compile Include="DataBaseHardware_YYUP.cs" />
+    <Compile Include="DataBaseSystem_YYUP.cs" />
+    <Compile Include="DataBaseUpgrate.cs" />
+    <Compile Include="DataBase_YYUP.cs" />
+    <Compile Include="DayHourNum.cs" />
+    <Compile Include="DefectAssignRecord.cs" />
+    <Compile Include="Defectment.cs" />
+    <Compile Include="DefectStatus.cs" />
+    <Compile Include="DefectType.cs" />
+    <Compile Include="DepartAssetRelatedUser.cs" />
+    <Compile Include="DepartmentUser.cs" />
+    <Compile Include="DepartNewsNoticeRelatedUser.cs" />
+    <Compile Include="DepartPosition.cs" />
+    <Compile Include="DepartRelatedModule.cs" />
+    <Compile Include="DepartRelatedProductLine.cs" />
+    <Compile Include="DepartRelatedProjectLeader.cs" />
+    <Compile Include="DepartRelatedSuperUser.cs" />
+    <Compile Include="DepartRelatedWZCheckUser.cs" />
+    <Compile Include="DepartRelatedWZDelegateUser.cs" />
+    <Compile Include="DepartRelatedWZFeeUser.cs" />
+    <Compile Include="DepartRelatedWZUser.cs" />
+    <Compile Include="DepartSuperUserRelatedProductLine.cs" />
+    <Compile Include="DepartUserInforRelatedUser.cs" />
+    <Compile Include="DeviceNotificationInfo.cs" />
+    <Compile Include="DocRelatedDepartment.cs" />
+    <Compile Include="DocRelatedUser.cs" />
+    <Compile Include="DocTypeFilter.cs" />
+    <Compile Include="DocumentForProjectPlanTemplate.cs" />
+    <Compile Include="DWCustomImport.cs" />
+    <Compile Include="DWCustomValue.cs" />
+    <Compile Include="DWLineTransport.cs" />
+    <Compile Include="DWMakeCost.cs" />
+    <Compile Include="DWMatch.cs" />
+    <Compile Include="DWMatchType.cs" />
+    <Compile Include="DWProduct.cs" />
+    <Compile Include="DWProductType.cs" />
+    <Compile Include="DWProMatch.cs" />
+    <Compile Include="DWQualityCost.cs" />
+    <Compile Include="EducationExperience.cs" />
+    <Compile Include="ExpenseApplyWL.cs" />
+    <Compile Include="ExpenseClaim.cs" />
+    <Compile Include="ExpenseClaimDetail.cs" />
+    <Compile Include="FamilyMember.cs" />
+    <Compile Include="Asset.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FunInforDialBox.cs" />
+    <Compile Include="GDApplication.cs" />
+    <Compile Include="GDArea.cs" />
+    <Compile Include="GDFri.cs" />
+    <Compile Include="GDHotHandler.cs" />
+    <Compile Include="GDIsomFri.cs" />
+    <Compile Include="GDIsomJoint.cs" />
+    <Compile Include="GDJointRevision.cs" />
+    <Compile Include="GDLineWeld.cs" />
+    <Compile Include="GDNotDestroy.cs" />
+    <Compile Include="GDOrderCode.cs" />
+    <Compile Include="GDPipingClass.cs" />
+    <Compile Include="GDPressure.cs" />
+    <Compile Include="GDPressureObject.cs" />
+    <Compile Include="GDPressureTest.cs" />
+    <Compile Include="GDProject.cs" />
+    <Compile Include="GDRTDelegate.cs" />
+    <Compile Include="GDRTNotQualified.cs" />
+    <Compile Include="GDRTResult.cs" />
+    <Compile Include="GDRTSample.cs" />
+    <Compile Include="GDStandardSize.cs" />
+    <Compile Include="GDSystem.cs" />
+    <Compile Include="GDTestMedium.cs" />
+    <Compile Include="GDThickness.cs" />
+    <Compile Include="GDWelders.cs" />
+    <Compile Include="GDWelderWPSNo.cs" />
+    <Compile Include="GDWeldType.cs" />
+    <Compile Include="GDWPSCode.cs" />
+    <Compile Include="Goods.cs" />
+    <Compile Include="GoodsAdjustRecord.cs" />
+    <Compile Include="GoodsApplication.cs" />
+    <Compile Include="GoodsApplicationDetail.cs" />
+    <Compile Include="GoodsBorrowOrder.cs" />
+    <Compile Include="GoodsBorrowOrderDetail.cs" />
+    <Compile Include="GoodsCheckInOrder.cs" />
+    <Compile Include="GoodsCheckInOrderDetail.cs" />
+    <Compile Include="GoodsCheckOutNoticeOrder.cs" />
+    <Compile Include="GoodsCheckOutNoticeOrderDetail.cs" />
+    <Compile Include="GoodsDeliveryOrder.cs" />
+    <Compile Include="GoodsDeliveryOrderDetail.cs" />
+    <Compile Include="GoodsMTRecord.cs" />
+    <Compile Include="GoodsProductionOrder.cs" />
+    <Compile Include="GoodsProductionOrderDetail.cs" />
+    <Compile Include="GoodsPurchaseOrder.cs" />
+    <Compile Include="GoodsPurRecord.cs" />
+    <Compile Include="GoodsReturnDetail.cs" />
+    <Compile Include="GoodsReturnOrder.cs" />
+    <Compile Include="GoodsSaleOrder.cs" />
+    <Compile Include="GoodsSaleQuotationOrder.cs" />
+    <Compile Include="GoodsSaleQuotationOrderDetail.cs" />
+    <Compile Include="GoodsSaleRecord.cs" />
+    <Compile Include="GoodsScrape.cs" />
+    <Compile Include="GoodsShipmentDetail.cs" />
+    <Compile Include="GoodsShipmentOrder.cs" />
+    <Compile Include="GoodsShipmentReport.cs" />
+    <Compile Include="GoodsSupplyOrder.cs" />
+    <Compile Include="GoodsSupplyOrderDetail.cs" />
+    <Compile Include="GoodsType.cs" />
+    <Compile Include="GoodsUserRecord.cs" />
+    <Compile Include="HeadLine.cs" />
+    <Compile Include="AssetMTRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssetScrape.cs" />
+    <Compile Include="HSEAccidentDescription.cs" />
+    <Compile Include="HSEAccidentInvestigation.cs" />
+    <Compile Include="HSEDiseasePrevention.cs" />
+    <Compile Include="HSEEmergencyCompile.cs" />
+    <Compile Include="HSEEmergencyRehearse.cs" />
+    <Compile Include="HSEEnvirFactorSurDetail.cs" />
+    <Compile Include="HSEEnvirFactorSurvey.cs" />
+    <Compile Include="HSEEnvironmentalFactors.cs" />
+    <Compile Include="HSEEnvironmentalObjectives.cs" />
+    <Compile Include="HSEHealthCheck.cs" />
+    <Compile Include="HSEHealthyCheckup.cs" />
+    <Compile Include="HSEMeeting.cs" />
+    <Compile Include="HSEPenaltyNotice.cs" />
+    <Compile Include="HSEPerEquipRecord.cs" />
+    <Compile Include="HSEProductionSummary.cs" />
+    <Compile Include="HSEQualificationRecord.cs" />
+    <Compile Include="HSERectification.cs" />
+    <Compile Include="HSERectificationNotice.cs" />
+    <Compile Include="HSESafeInspectionRecord.cs" />
+    <Compile Include="HSESafeManagementPlan.cs" />
+    <Compile Include="HSETraining.cs" />
+    <Compile Include="HSETrainingPlan.cs" />
+    <Compile Include="IndustryType.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemBom.cs" />
+    <Compile Include="ItemBOMPart.cs" />
+    <Compile Include="ItemBomVersion.cs" />
+    <Compile Include="ItemMainPlan.cs" />
+    <Compile Include="ItemMainPlanDetail.cs" />
+    <Compile Include="KPIHRReview.cs" />
+    <Compile Include="KPILeaderReview.cs" />
+    <Compile Include="KPILibrary.cs" />
+    <Compile Include="KPITemplateForDepartPosition.cs" />
+    <Compile Include="KPIThirdPartReview.cs" />
+    <Compile Include="KPIType.cs" />
+    <Compile Include="LeaveApplyForm.cs" />
+    <Compile Include="LeaveType.cs" />
+    <Compile Include="LicenseVerification.cs" />
+    <Compile Include="LTCandidateInformation.cs" />
+    <Compile Include="MailBoxAuthority.cs" />
+    <Compile Include="MeetingAssign.cs" />
+    <Compile Include="MemberAgency.cs" />
+    <Compile Include="MemberAgencyWFType.cs" />
+    <Compile Include="Network_YYUP.cs" />
+    <Compile Include="NewsRelatedUser.cs" />
+    <Compile Include="OfficialDocument.cs" />
+    <Compile Include="OilType.cs" />
+    <Compile Include="OvertimeApplyForm.cs" />
+    <Compile Include="PartTimeJob.cs" />
+    <Compile Include="Plan.cs" />
+    <Compile Include="PlanLeaderReview.cs" />
+    <Compile Include="PlanRelatedLeader.cs" />
+    <Compile Include="PlanTarget.cs" />
+    <Compile Include="PlanTools_YYUP.cs" />
+    <Compile Include="PlanType.cs" />
+    <Compile Include="PlanWorkLog.cs" />
+    <Compile Include="ProDocGraphControl.cs" />
+    <Compile Include="ProductLineVersion_YYUP.cs" />
+    <Compile Include="ProductModuleType_YYUP.cs" />
+    <Compile Include="ProductModule_YYUP.cs" />
+    <Compile Include="ProductProcess.cs" />
+    <Compile Include="ProGraphRegistration.cs" />
+    <Compile Include="ProIssueRegistration.cs" />
+    <Compile Include="ProjectBudget.cs" />
+    <Compile Include="ProjectCostManage.cs" />
+    <Compile Include="ProjectCustomer.cs" />
+    <Compile Include="ProjectDailyWork.cs" />
+    <Compile Include="ProjectDataBase_YYUP.cs" />
+    <Compile Include="ProjectDataLink.cs" />
+    <Compile Include="ProjectItemBomVersion.cs" />
+    <Compile Include="ProjectLogo_YYUP.cs" />
+    <Compile Include="ProjectMaterialPaymentApplicant.cs" />
+    <Compile Include="ProjectMaterialPaymentApplicantDetail.cs" />
+    <Compile Include="ProjectMemberClass.cs" />
+    <Compile Include="ProjectMemberGrade.cs" />
+    <Compile Include="ProjectMemberSchedule.cs" />
+    <Compile Include="ProjectMemberScheduleBase.cs" />
+    <Compile Include="ProjectMemberStudent.cs" />
+    <Compile Include="ProjectMemberStudentAttendance.cs" />
+    <Compile Include="ProjectMemberStudentCare.cs" />
+    <Compile Include="ProjectMemberStudentCost.cs" />
+    <Compile Include="ProjectModuleRelated_YYUP.cs" />
+    <Compile Include="ProjectOfferStandard_YYUP.cs" />
+    <Compile Include="ProjectOutsourcInformat_YYUP.cs" />
+    <Compile Include="ProjectPlanVersion.cs" />
+    <Compile Include="ProjectPlan_YYUP.cs" />
+    <Compile Include="ProjectPrimavera.cs" />
+    <Compile Include="ProjectPrimaveraBudget.cs" />
+    <Compile Include="ProjectPrimaveraTask.cs" />
+    <Compile Include="ProjectProductLine_YYUP.cs" />
+    <Compile Include="ProjectProduct_YYUP.cs" />
+    <Compile Include="ProjectProgressStatus_YYUP.cs" />
+    <Compile Include="ProjectRelatedDefectView.cs" />
+    <Compile Include="ProjectRelatedItem.cs" />
+    <Compile Include="ProjectRelatedItemBom.cs" />
+    <Compile Include="ProjectRelatedReqView.cs" />
+    <Compile Include="ContactInfor.cs" />
+    <Compile Include="DailyWork.cs" />
+    <Compile Include="Department.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="DocType.cs" />
+    <Compile Include="Folders.cs" />
+    <Compile Include="AssetPurRecord.cs" />
+    <Compile Include="AssetType.cs" />
+    <Compile Include="AssetUserRecord.cs" />
+    <Compile Include="LogonLog.cs" />
+    <Compile Include="Mails.cs" />
+    <Compile Include="Meeting.cs" />
+    <Compile Include="MeetingAttendant.cs" />
+    <Compile Include="MeetingRoom.cs" />
+    <Compile Include="MeetingType.cs" />
+    <Compile Include="MemberLevel.cs" />
+    <Compile Include="MTType.cs" />
+    <Compile Include="PlanMember.cs" />
+    <Compile Include="PlanStatus.cs" />
+    <Compile Include="ProExpense.cs" />
+    <Compile Include="ProFeedback.cs" />
+    <Compile Include="ProjectMember.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="ProjectIncomeAndExpense.cs" />
+    <Compile Include="ProjectSalesProperty_YYUP.cs" />
+    <Compile Include="ProjectStatus.cs" />
+    <Compile Include="ProjectRisk.cs" />
+    <Compile Include="ProjectStatusValue.cs" />
+    <Compile Include="ProjectSubordinateIndustry_YYUP.cs" />
+    <Compile Include="ProjectType.cs" />
+    <Compile Include="ProjectVendor.cs" />
+    <Compile Include="ProjectWZDetail.cs" />
+    <Compile Include="Project_YYUP.cs" />
+    <Compile Include="ProModuleLevel.cs" />
+    <Compile Include="ProReceiptRegistration.cs" />
+    <Compile Include="ProSendFigureRegistration.cs" />
+    <Compile Include="ProStatusChange.cs" />
+    <Compile Include="ProStatusGroup.cs" />
+    <Compile Include="ProLeaderReview.cs" />
+    <Compile Include="ProModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProRealCharge.cs" />
+    <Compile Include="ProRelatedUser.cs" />
+    <Compile Include="ProjectTask.cs" />
+    <Compile Include="PublicNotice.cs" />
+    <Compile Include="QMEngineerReview.cs" />
+    <Compile Include="QMEngineerWarranty.cs" />
+    <Compile Include="QMMatEquInspection.cs" />
+    <Compile Include="QMOverAllEvaluation.cs" />
+    <Compile Include="QMPurchasingContract.cs" />
+    <Compile Include="QMQualityDefectNotice.cs" />
+    <Compile Include="QMQualityDefectProcess.cs" />
+    <Compile Include="QMQualityInspection.cs" />
+    <Compile Include="QMQualityInspectionSheet.cs" />
+    <Compile Include="QMQualityRectification.cs" />
+    <Compile Include="QMQualityRectificationNotice.cs" />
+    <Compile Include="QMQualityTechnicalDisclosure.cs" />
+    <Compile Include="QMRewardPunishment.cs" />
+    <Compile Include="QMSatisfactionSurvey.cs" />
+    <Compile Include="RCJProjectAdjustPrice.cs" />
+    <Compile Include="RCJProjectAdjustPriceList.cs" />
+    <Compile Include="RCJProjectAdjustPriceLog.cs" />
+    <Compile Include="RCJProjectCostFeeIDs.cs" />
+    <Compile Include="RCJProjectCostFees.cs" />
+    <Compile Include="RCJProjectCostFeeSubIDs.cs" />
+    <Compile Include="RCJProjectCostPerformanceBenchmar.cs" />
+    <Compile Include="RCJProjectCostPerformanceList.cs" />
+    <Compile Include="RCJProjectCostPreformanceType.cs" />
+    <Compile Include="RCJProjectFundStartPlan.cs" />
+    <Compile Include="RCJProjectFundStartPlanApprove.cs" />
+    <Compile Include="RCJProjectMonthCostFee.cs" />
+    <Compile Include="RCJProjectSetup.cs" />
+    <Compile Include="RCJProjectSummaryPerformance.cs" />
+    <Compile Include="RCJProjectTargetCostFee.cs" />
+    <Compile Include="RCJProjectWorkConfirm.cs" />
+    <Compile Include="RCJProjectWorkConfirmLog.cs" />
+    <Compile Include="RCJProjectWorkDetails.cs" />
+    <Compile Include="RCJProjectWorkDetailsLog.cs" />
+    <Compile Include="RCJProjectWorkMoney.cs" />
+    <Compile Include="RCJProjectWorkMoneyLog.cs" />
+    <Compile Include="ReceivePayWay.cs" />
+    <Compile Include="RegisterUser.cs" />
+    <Compile Include="RelatedActorGroup.cs" />
+    <Compile Include="RelatedDefect.cs" />
+    <Compile Include="RelatedReq.cs" />
+    <Compile Include="RelatedUser.cs" />
+    <Compile Include="RelatedWorkFlowTemplate.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="ReportRelatedUser.cs" />
+    <Compile Include="ReportTemplate.cs" />
+    <Compile Include="ReportType.cs" />
+    <Compile Include="ReqAssignRecord.cs" />
+    <Compile Include="ReqStatus.cs" />
+    <Compile Include="ReqType.cs" />
+    <Compile Include="Requirement.cs" />
+    <Compile Include="RTXConfig.cs" />
+    <Compile Include="Schedule.cs" />
+    <Compile Include="ScheduleEventLeaderReview.cs" />
+    <Compile Include="SiteModuleContent.cs" />
+    <Compile Include="SMSCode.cs" />
+    <Compile Include="SMSInterface.cs" />
+    <Compile Include="SMSNetSegment.cs" />
+    <Compile Include="SMSRelatedUser.cs" />
+    <Compile Include="SmsSend.cs" />
+    <Compile Include="SMSSendDIY.cs" />
+    <Compile Include="SoftDownload.cs" />
+    <Compile Include="StatusRelatedWF.cs" />
+    <Compile Include="SupplierAssetPaymentApplicant.cs" />
+    <Compile Include="SupplierAssetPaymentApplicantDetail.cs" />
+    <Compile Include="SystemActiveUser.cs" />
+    <Compile Include="SystemAnalystChartManagement.cs" />
+    <Compile Include="SystemMDIStyle.cs" />
+    <Compile Include="TableNameMapping.cs" />
+    <Compile Include="TableTemplateMapping.cs" />
+    <Compile Include="TaskAssignRecord.cs" />
+    <Compile Include="TaskOperation.cs" />
+    <Compile Include="TaskRecordType.cs" />
+    <Compile Include="TaskStatus.cs" />
+    <Compile Include="TaskTestCase.cs" />
+    <Compile Include="TaskTestRecord.cs" />
+    <Compile Include="TaskType.cs" />
+    <Compile Include="TenderInvoice_HYYQ.cs" />
+    <Compile Include="TenderRelatedUser.cs" />
+    <Compile Include="Tender_HYYQ.cs" />
+    <Compile Include="TestStatus.cs" />
+    <Compile Include="TransferProject.cs" />
+    <Compile Include="MailProfile.cs" />
+    <Compile Include="JNUnit.cs" />
+    <Compile Include="TREmployeeTraining.cs" />
+    <Compile Include="TRHolderWelder.cs" />
+    <Compile Include="TriggerTableToFrom.cs" />
+    <Compile Include="TRPostCertificate.cs" />
+    <Compile Include="TRSpecialEquipment.cs" />
+    <Compile Include="TRSpecialOperations.cs" />
+    <Compile Include="TRTrainingRecordEmp.cs" />
+    <Compile Include="U8KeyApply_YYUP.cs" />
+    <Compile Include="U8Problem_YYUP.cs" />
+    <Compile Include="U9Problem_YYUP.cs" />
+    <Compile Include="UserAttendanceRecord.cs" />
+    <Compile Include="UserAttendanceRule.cs" />
+    <Compile Include="UserDepartmentString.cs" />
+    <Compile Include="UserDuty.cs" />
+    <Compile Include="UserKPICheck.cs" />
+    <Compile Include="UserKPICheckDetail.cs" />
+    <Compile Include="UserNotInDepartModule.cs" />
+    <Compile Include="UserTransactionRecord.cs" />
+    <Compile Include="Vendor.cs" />
+    <Compile Include="VendorRelatedGoodsInfor.cs" />
+    <Compile Include="VendorRelatedUser.cs" />
+    <Compile Include="VisitRegistration_Student.cs" />
+    <Compile Include="WareHouse.cs" />
+    <Compile Include="WebService.cs" />
+    <Compile Include="WebSite.cs" />
+    <Compile Include="WeiXinStand.cs" />
+    <Compile Include="WFStepRelatedWF.cs" />
+    <Compile Include="WFTemplateRelatedJSCode.cs" />
+    <Compile Include="WFTemplateStepRelatedJSCode.cs" />
+    <Compile Include="WFTemplateStepRelatedWebService.cs" />
+    <Compile Include="WFTStepRelatedTem.cs" />
+    <Compile Include="WLStatus.cs" />
+    <Compile Include="WLTStepCondition.cs" />
+    <Compile Include="WLTStepConditionExpression.cs" />
+    <Compile Include="WLType.cs" />
+    <Compile Include="WorkExperience.cs" />
+    <Compile Include="WorkFlow.cs" />
+    <Compile Include="WorkFlowBackup.cs" />
+    <Compile Include="WorkFlowPage.cs" />
+    <Compile Include="WorkFlowRelatedModule.cs" />
+    <Compile Include="WorkFlowStep.cs" />
+    <Compile Include="WorkFlowStepDetail.cs" />
+    <Compile Include="WorkFlowTemplate.cs" />
+    <Compile Include="WorkFlowTStepOperator.cs" />
+    <Compile Include="WorkFlowTStep.cs" />
+    <Compile Include="WorkPlan.cs" />
+    <Compile Include="WorkType.cs" />
+    <Compile Include="WPQMAllData.cs" />
+    <Compile Include="WPQMContactList.cs" />
+    <Compile Include="WPQMCover.cs" />
+    <Compile Include="WPQMHeatTreatProCard.cs" />
+    <Compile Include="WPQMHeatTreatReport.cs" />
+    <Compile Include="WPQMMechanicalProOrder.cs" />
+    <Compile Include="WPQMPhysicalChemical.cs" />
+    <Compile Include="WPQMPQR1.cs" />
+    <Compile Include="WPQMPQR2.cs" />
+    <Compile Include="WPQMPQR3.cs" />
+    <Compile Include="WPQMPWPS1.cs" />
+    <Compile Include="WPQMPWPS2.cs" />
+    <Compile Include="WPQMQuaAssessNotice.cs" />
+    <Compile Include="WPQMRTTable.cs" />
+    <Compile Include="WPQMSampleMechProOrder.cs" />
+    <Compile Include="WPQMStockList.cs" />
+    <Compile Include="WPQMWeldAddProReport.cs" />
+    <Compile Include="WPQMWeldingRecord.cs" />
+    <Compile Include="WPQMWeldProcedureSpe.cs" />
+    <Compile Include="WPQMWeldProQua.cs" />
+    <Compile Include="WPQMWeldTaskList.cs" />
+    <Compile Include="WPQMWorkReviewCommit.cs" />
+    <Compile Include="WZAdvance.cs" />
+    <Compile Include="WZAdvanceDetail.cs" />
+    <Compile Include="WZCard.cs" />
+    <Compile Include="WZCardImport.cs" />
+    <Compile Include="WZCollect.cs" />
+    <Compile Include="WZCompact.cs" />
+    <Compile Include="WZCompactCheck.cs" />
+    <Compile Include="WZCompactDetail.cs" />
+    <Compile Include="WZDivide.cs" />
+    <Compile Include="WZExpert.cs" />
+    <Compile Include="WZExpertDatabase.cs" />
+    <Compile Include="WZGetUnit.cs" />
+    <Compile Include="WZMaterialDL.cs" />
+    <Compile Include="WZMaterialXL.cs" />
+    <Compile Include="WZMaterialZL.cs" />
+    <Compile Include="WZNeedObject.cs" />
+    <Compile Include="WZObject.cs" />
+    <Compile Include="WZObjectRefer.cs" />
+    <Compile Include="WZObjectReplace.cs" />
+    <Compile Include="WZPay.cs" />
+    <Compile Include="WZPayApprove.cs" />
+    <Compile Include="WZPayDetail.cs" />
+    <Compile Include="WZPickingPlan.cs" />
+    <Compile Include="WZPickingPlanDetail.cs" />
+    <Compile Include="WZProject.cs" />
+    <Compile Include="WZProjectAttribute.cs" />
+    <Compile Include="WZProjectNature.cs" />
+    <Compile Include="WZPurchase.cs" />
+    <Compile Include="WZPurchaseDecision.cs" />
+    <Compile Include="WZPurchaseDetail.cs" />
+    <Compile Include="WZPurchaseDocument.cs" />
+    <Compile Include="WZPurchaseExpert.cs" />
+    <Compile Include="WZPurchaseFile.cs" />
+    <Compile Include="WZPurchaseOfferRecord.cs" />
+    <Compile Include="WZPurchaseSupplier.cs" />
+    <Compile Include="WZReduce.cs" />
+    <Compile Include="WZRequest.cs" />
+    <Compile Include="WZSend.cs" />
+    <Compile Include="WZSpan.cs" />
+    <Compile Include="WZStock.cs" />
+    <Compile Include="WZStore.cs" />
+    <Compile Include="WZSupplier.cs" />
+    <Compile Include="WZSupplierApply.cs" />
+    <Compile Include="WZSupplierApplyComment.cs" />
+    <Compile Include="WZSupplierApplyDetail.cs" />
+    <Compile Include="WZSupplierInfo.cs" />
+    <Compile Include="WZSupplierRegister.cs" />
+    <Compile Include="WZSupplierTemplateFile.cs" />
+    <Compile Include="WZTurn.cs" />
+    <Compile Include="WZTurnDetail.cs" />
+    <Compile Include="WZWeary.cs" />
+    <Compile Include="XmlNameSpace.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProjectMember.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Project.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DailyWork.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProjectStatus.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OvertimeApplyForm.hbm.xml" />
+    <EmbeddedResource Include="UserDepartmentString.hbm.xml" />
+    <EmbeddedResource Include="ProModuleLevel.hbm.xml" />
+    <EmbeddedResource Include="WorkFlowBackup.hbm.xml" />
+    <EmbeddedResource Include="WorkFlowRelatedModule.hbm.xml" />
+    <EmbeddedResource Include="ProjectRelatedDefectView.hbm.xml" />
+    <EmbeddedResource Include="RelatedDefect.hbm.xml" />
+    <EmbeddedResource Include="SupplierAssetPaymentApplicant.hbm.xml" />
+    <EmbeddedResource Include="SupplierAssetPaymentApplicantDetail.hbm.xml" />
+    <EmbeddedResource Include="ProjectMaterialPaymentApplicantDetail.hbm.xml" />
+    <EmbeddedResource Include="ProjectMaterialPaymentApplicant.hbm.xml" />
+    <EmbeddedResource Include="VendorRelatedGoodsInfor.hbm.xml" />
+    <EmbeddedResource Include="OfficialDocument.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectWorkConfirm.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectWorkConfirmLog.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectWorkDetailsLog.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectAdjustPriceLog.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectWorkMoney.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectWorkMoneyLog.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectAdjustPriceList.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectCostPerformanceList.hbm.xml" />
+    <EmbeddedResource Include="SiteModuleContent.hbm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RCJProjectCostPreformanceType.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectFundStartPlanApprove.hbm.xml" />
+    <EmbeddedResource Include="SystemAnalystChartManagement.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectFundStartPlan.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectSetup.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectAdjustPrice.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectCostFeeIDs.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectCostFees.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectCostFeeSubIDs.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectCostPerformanceBenchmar.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectMonthCostFee.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectSummaryPerformance.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectTargetCostFee.hbm.xml" />
+    <EmbeddedResource Include="RCJProjectWorkDetails.hbm.xml" />
+    <EmbeddedResource Include="WZSupplierInfo.hbm.xml" />
+    <EmbeddedResource Include="UserDuty.hbm.xml" />
+    <EmbeddedResource Include="TenderRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="U9Problem_YYUP.hbm.xml" />
+    <EmbeddedResource Include="U8KeyApply_YYUP.hbm.xml" />
+    <EmbeddedResource Include="U8Problem_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProductLineVersion_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProductModuleType_YYUP.hbm.xml" />
+    <EmbeddedResource Include="PlanTools_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProjectModuleRelated_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ApplicationHardware_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ApplicationSystem_YYUP.hbm.xml" />
+    <EmbeddedResource Include="DataBaseHardware_YYUP.hbm.xml" />
+    <EmbeddedResource Include="DataBaseSystem_YYUP.hbm.xml" />
+    <EmbeddedResource Include="DataBase_YYUP.hbm.xml" />
+    <EmbeddedResource Include="Network_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProjectPlan_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProductModule_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProjectDataBase_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProjectLogo_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProjectOfferStandard_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProjectOutsourcInformat_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProjectProductLine_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProjectProduct_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProjectProgressStatus_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProjectSalesProperty_YYUP.hbm.xml" />
+    <EmbeddedResource Include="ProjectSubordinateIndustry_YYUP.hbm.xml" />
+    <EmbeddedResource Include="Project_YYUP.hbm.xml" />
+    <EmbeddedResource Include="WZCompactCheck.hbm.xml" />
+    <EmbeddedResource Include="WZPurchaseDecision.hbm.xml" />
+    <EmbeddedResource Include="WZPurchaseOfferRecord.hbm.xml" />
+    <EmbeddedResource Include="WZSupplierRegister.hbm.xml" />
+    <EmbeddedResource Include="ProjectMemberStudentAttendance.hbm.xml" />
+    <EmbeddedResource Include="ProjectMemberStudentCare.hbm.xml" />
+    <EmbeddedResource Include="VisitRegistration_Student.hbm.xml" />
+    <EmbeddedResource Include="ProjectMemberStudent.hbm.xml" />
+    <EmbeddedResource Include="ProjectMemberStudentCost.hbm.xml" />
+    <EmbeddedResource Include="ProjectMemberClass.hbm.xml" />
+    <EmbeddedResource Include="ProjectMemberGrade.hbm.xml" />
+    <EmbeddedResource Include="ReceivePayWay.hbm.xml" />
+    <EmbeddedResource Include="ScheduleEventLeaderReview.hbm.xml" />
+    <EmbeddedResource Include="TenderInvoice_HYYQ.hbm.xml" />
+    <EmbeddedResource Include="Tender_HYYQ.hbm.xml" />
+    <EmbeddedResource Include="WZObjectReplace.hbm.xml" />
+    <EmbeddedResource Include="ProjectWZDetail.hbm.xml" />
+    <EmbeddedResource Include="WeiXinStand.hbm.xml" />
+    <EmbeddedResource Include="WZProjectAttribute.hbm.xml" />
+    <EmbeddedResource Include="WZProjectNature.hbm.xml" />
+    <EmbeddedResource Include="WZSupplierTemplateFile.hbm.xml" />
+    <EmbeddedResource Include="ProjectMemberSchedule.hbm.xml" />
+    <EmbeddedResource Include="ProjectMemberScheduleBase.hbm.xml" />
+    <EmbeddedResource Include="WPQMContactList.hbm.xml" />
+    <EmbeddedResource Include="WPQMCover.hbm.xml" />
+    <EmbeddedResource Include="WPQMHeatTreatProCard.hbm.xml" />
+    <EmbeddedResource Include="WPQMHeatTreatReport.hbm.xml" />
+    <EmbeddedResource Include="WPQMMechanicalProOrder.hbm.xml" />
+    <EmbeddedResource Include="WPQMPhysicalChemical.hbm.xml" />
+    <EmbeddedResource Include="WPQMPQR1.hbm.xml" />
+    <EmbeddedResource Include="WPQMPQR2.hbm.xml" />
+    <EmbeddedResource Include="WPQMPQR3.hbm.xml" />
+    <EmbeddedResource Include="WPQMPWPS1.hbm.xml" />
+    <EmbeddedResource Include="WPQMPWPS2.hbm.xml" />
+    <EmbeddedResource Include="WPQMQuaAssessNotice.hbm.xml" />
+    <EmbeddedResource Include="WPQMRTTable.hbm.xml" />
+    <EmbeddedResource Include="WPQMSampleMechProOrder.hbm.xml" />
+    <EmbeddedResource Include="WPQMStockList.hbm.xml" />
+    <EmbeddedResource Include="WPQMWeldAddProReport.hbm.xml" />
+    <EmbeddedResource Include="WPQMWeldingRecord.hbm.xml" />
+    <EmbeddedResource Include="WPQMWeldProcedureSpe.hbm.xml" />
+    <EmbeddedResource Include="WPQMWeldTaskList.hbm.xml" />
+    <EmbeddedResource Include="WPQMWorkReviewCommit.hbm.xml" />
+    <EmbeddedResource Include="WPQMAllData.hbm.xml" />
+    <EmbeddedResource Include="WPQMWeldProQua.hbm.xml" />
+    <EmbeddedResource Include="ProjectCostManage.hbm.xml" />
+    <EmbeddedResource Include="WZExpertDatabase.hbm.xml" />
+    <EmbeddedResource Include="TRTrainingRecordEmp.hbm.xml" />
+    <EmbeddedResource Include="TREmployeeTraining.hbm.xml" />
+    <EmbeddedResource Include="TRHolderWelder.hbm.xml" />
+    <EmbeddedResource Include="TRPostCertificate.hbm.xml" />
+    <EmbeddedResource Include="TRSpecialEquipment.hbm.xml" />
+    <EmbeddedResource Include="TRSpecialOperations.hbm.xml" />
+    <EmbeddedResource Include="ProDocGraphControl.hbm.xml" />
+    <EmbeddedResource Include="SystemMDIStyle.hbm.xml" />
+    <EmbeddedResource Include="ProReceiptRegistration.hbm.xml" />
+    <EmbeddedResource Include="ProSendFigureRegistration.hbm.xml" />
+    <EmbeddedResource Include="ProGraphRegistration.hbm.xml" />
+    <EmbeddedResource Include="ProIssueRegistration.hbm.xml" />
+    <EmbeddedResource Include="QMEngineerReview.hbm.xml" />
+    <EmbeddedResource Include="QMEngineerWarranty.hbm.xml" />
+    <EmbeddedResource Include="QMMatEquInspection.hbm.xml" />
+    <EmbeddedResource Include="QMOverAllEvaluation.hbm.xml" />
+    <EmbeddedResource Include="QMPurchasingContract.hbm.xml" />
+    <EmbeddedResource Include="QMQualityDefectNotice.hbm.xml" />
+    <EmbeddedResource Include="QMQualityDefectProcess.hbm.xml" />
+    <EmbeddedResource Include="QMQualityInspection.hbm.xml" />
+    <EmbeddedResource Include="QMQualityInspectionSheet.hbm.xml" />
+    <EmbeddedResource Include="QMQualityRectification.hbm.xml" />
+    <EmbeddedResource Include="QMQualityRectificationNotice.hbm.xml" />
+    <EmbeddedResource Include="QMQualityTechnicalDisclosure.hbm.xml" />
+    <EmbeddedResource Include="QMRewardPunishment.hbm.xml" />
+    <EmbeddedResource Include="QMSatisfactionSurvey.hbm.xml" />
+    <EmbeddedResource Include="ProjectPrimavera.hbm.xml" />
+    <EmbeddedResource Include="ProjectPrimaveraBudget.hbm.xml" />
+    <EmbeddedResource Include="ProjectPrimaveraTask.hbm.xml" />
+    <EmbeddedResource Include="ProjectDataLink.hbm.xml" />
+    <EmbeddedResource Include="WZAdvance.hbm.xml" />
+    <EmbeddedResource Include="WZAdvanceDetail.hbm.xml" />
+    <EmbeddedResource Include="WZCard.hbm.xml" />
+    <EmbeddedResource Include="WZCardImport.hbm.xml" />
+    <EmbeddedResource Include="WZCollect.hbm.xml" />
+    <EmbeddedResource Include="WZCompact.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WZCompactDetail.hbm.xml" />
+    <EmbeddedResource Include="WZDivide.hbm.xml" />
+    <EmbeddedResource Include="WZExpert.hbm.xml" />
+    <EmbeddedResource Include="WZGetUnit.hbm.xml" />
+    <EmbeddedResource Include="WZMaterialDL.hbm.xml" />
+    <EmbeddedResource Include="WZMaterialXL.hbm.xml" />
+    <EmbeddedResource Include="WZMaterialZL.hbm.xml" />
+    <EmbeddedResource Include="WZNeedObject.hbm.xml" />
+    <EmbeddedResource Include="WZObject.hbm.xml" />
+    <EmbeddedResource Include="WZObjectRefer.hbm.xml" />
+    <EmbeddedResource Include="WZPay.hbm.xml" />
+    <EmbeddedResource Include="WZPayApprove.hbm.xml" />
+    <EmbeddedResource Include="WZPayDetail.hbm.xml" />
+    <EmbeddedResource Include="WZPickingPlan.hbm.xml" />
+    <EmbeddedResource Include="WZPickingPlanDetail.hbm.xml" />
+    <EmbeddedResource Include="WZProject.hbm.xml" />
+    <EmbeddedResource Include="WZPurchase.hbm.xml" />
+    <EmbeddedResource Include="WZPurchaseDetail.hbm.xml" />
+    <EmbeddedResource Include="WZPurchaseDocument.hbm.xml" />
+    <EmbeddedResource Include="WZPurchaseExpert.hbm.xml" />
+    <EmbeddedResource Include="WZPurchaseFile.hbm.xml" />
+    <EmbeddedResource Include="WZPurchaseSupplier.hbm.xml" />
+    <EmbeddedResource Include="WZReduce.hbm.xml" />
+    <EmbeddedResource Include="WZRequest.hbm.xml" />
+    <EmbeddedResource Include="WZSend.hbm.xml" />
+    <EmbeddedResource Include="WZSpan.hbm.xml" />
+    <EmbeddedResource Include="WZStock.hbm.xml" />
+    <EmbeddedResource Include="WZStore.hbm.xml" />
+    <EmbeddedResource Include="WZSupplier.hbm.xml" />
+    <EmbeddedResource Include="WZSupplierApply.hbm.xml" />
+    <EmbeddedResource Include="WZSupplierApplyComment.hbm.xml" />
+    <EmbeddedResource Include="WZSupplierApplyDetail.hbm.xml" />
+    <EmbeddedResource Include="WZTurn.hbm.xml" />
+    <EmbeddedResource Include="WZTurnDetail.hbm.xml" />
+    <EmbeddedResource Include="WZWeary.hbm.xml" />
+    <EmbeddedResource Include="WorkType.hbm.xml" />
+    <EmbeddedResource Include="OilType.hbm.xml" />
+    <EmbeddedResource Include="TriggerTableToFrom.hbm.xml" />
+    <EmbeddedResource Include="TableNameMapping.hbm.xml" />
+    <EmbeddedResource Include="TableTemplateMapping.hbm.xml" />
+    <EmbeddedResource Include="WFTemplateStepRelatedJSCode.hbm.xml" />
+    <EmbeddedResource Include="WFTemplateStepRelatedWebService.hbm.xml" />
+    <EmbeddedResource Include="WebService.hbm.xml" />
+    <EmbeddedResource Include="WFTemplateRelatedJSCode.hbm.xml" />
+    <EmbeddedResource Include="ProjectBudget.hbm.xml" />
+    <EmbeddedResource Include="RTXConfig.hbm.xml" />
+    <EmbeddedResource Include="UserKPICheckDetail.hbm.xml" />
+    <EmbeddedResource Include="UserKPICheck.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WFStepRelatedWF.hbm.xml" />
+    <EmbeddedResource Include="WFTStepRelatedTem.hbm.xml" />
+    <EmbeddedResource Include="ReportRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="Report.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate.hbm.xml" />
+    <EmbeddedResource Include="ReportType.hbm.xml" />
+    <EmbeddedResource Include="PublicNotice.hbm.xml" />
+    <EmbeddedResource Include="WebSite.hbm.xml" />
+    <EmbeddedResource Include="PlanLeaderReview.hbm.xml" />
+    <EmbeddedResource Include="PlanRelatedLeader.hbm.xml" />
+    <EmbeddedResource Include="PlanWorkLog.hbm.xml" />
+    <EmbeddedResource Include="PlanType.hbm.xml" />
+    <EmbeddedResource Include="PlanTarget.hbm.xml" />
+    <EmbeddedResource Include="Plan.hbm.xml" />
+    <EmbeddedResource Include="VendorRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="PartTimeJob.hbm.xml" />
+    <EmbeddedResource Include="SMSRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="SMSSendDIY.hbm.xml" />
+    <EmbeddedResource Include="WorkFlowPage.hbm.xml" />
+    <EmbeddedResource Include="SystemActiveUser.hbm.xml" />
+    <EmbeddedResource Include="UserTransactionRecord.hbm.xml" />
+    <EmbeddedResource Include="SMSCode.hbm.xml" />
+    <EmbeddedResource Include="SMSNetSegment.hbm.xml" />
+    <EmbeddedResource Include="SMSInterface.hbm.xml" />
+    <EmbeddedResource Include="ProductProcess.hbm.xml" />
+    <EmbeddedResource Include="ProjectRelatedItemBom.hbm.xml" />
+    <EmbeddedResource Include="ProjectItemBomVersion.hbm.xml" />
+    <EmbeddedResource Include="ProjectRelatedItem.hbm.xml" />
+    <EmbeddedResource Include="UserAttendanceRecord.hbm.xml" />
+    <EmbeddedResource Include="UserAttendanceRule.hbm.xml" />
+    <EmbeddedResource Include="WLTStepConditionExpression.hbm.xml" />
+    <EmbeddedResource Include="UserNotInDepartModule.hbm.xml" />
+    <EmbeddedResource Include="WorkExperience.hbm.xml" />
+    <EmbeddedResource Include="RelatedWorkFlowTemplate.hbm.xml" />
+    <EmbeddedResource Include="RelatedActorGroup.hbm.xml" />
+    <EmbeddedResource Include="StatusRelatedWF.hbm.xml" />
+    <EmbeddedResource Include="ProjectPlanVersion.hbm.xml" />
+    <EmbeddedResource Include="Approve.hbm.xml" />
+    <EmbeddedResource Include="ActorGroup.hbm.xml" />
+    <EmbeddedResource Include="ActorGroupDetail.hbm.xml" />
+    <EmbeddedResource Include="Attachments.hbm.xml" />
+    <EmbeddedResource Include="Admin.hbm.xml" />
+    <EmbeddedResource Include="AllProStautsGroup.hbm.xml" />
+    <EmbeddedResource Include="ActorGroupType.hbm.xml" />
+    <EmbeddedResource Include="Account.hbm.xml" />
+    <EmbeddedResource Include="AssetApplication.hbm.xml" />
+    <EmbeddedResource Include="AssetApplicationDetail.hbm.xml" />
+    <EmbeddedResource Include="AssetApplicationReport.hbm.xml" />
+    <EmbeddedResource Include="AttendanceRule.hbm.xml" />
+    <EmbeddedResource Include="AssetShipmentOrder.hbm.xml" />
+    <EmbeddedResource Include="AssetShipmentDetail.hbm.xml" />
+    <EmbeddedResource Include="AssetShipmentReport.hbm.xml" />
+    <EmbeddedResource Include="AssetCheckInOrder.hbm.xml" />
+    <EmbeddedResource Include="AssetAdjustRecord.hbm.xml" />
+    <EmbeddedResource Include="AssetCheckInOrderDetail.hbm.xml" />
+    <EmbeddedResource Include="BDBaseData.hbm.xml" />
+    <EmbeddedResource Include="BDBaseDataRecord.hbm.xml" />
+    <EmbeddedResource Include="AssetReturnOrder.hbm.xml" />
+    <EmbeddedResource Include="AssetReturnDetail.hbm.xml" />
+    <EmbeddedResource Include="AssetPurchaseOrder.hbm.xml" />
+    <EmbeddedResource Include="AccountFinancialSet.hbm.xml" />
+    <EmbeddedResource Include="AccountGeneralLedger.hbm.xml" />
+    <EmbeddedResource Include="AccountingIntervalSet.hbm.xml" />
+    <EmbeddedResource Include="Bank.hbm.xml" />
+    <Content Include="bin\Debug\ProjectMgt.Model.dll" />
+    <Content Include="bin\Debug\ProjectMgt.Model.pdb" />
+    <EmbeddedResource Include="Department.hbm.xml" />
+    <EmbeddedResource Include="Document.hbm.xml" />
+    <EmbeddedResource Include="DocType.hbm.xml" />
+    <EmbeddedResource Include="Asset.hbm.xml" />
+    <EmbeddedResource Include="AssetUserRecord.hbm.xml" />
+    <EmbeddedResource Include="AssetPurRecord.hbm.xml" />
+    <EmbeddedResource Include="AssetMTRecord.hbm.xml" />
+    <EmbeddedResource Include="AssetType.hbm.xml" />
+    <EmbeddedResource Include="MeetingRoom.hbm.xml" />
+    <EmbeddedResource Include="Meeting.hbm.xml" />
+    <EmbeddedResource Include="MeetingAttendant.hbm.xml" />
+    <EmbeddedResource Include="Mails.hbm.xml" />
+    <EmbeddedResource Include="Folders.hbm.xml" />
+    <EmbeddedResource Include="MeetingType.hbm.xml" />
+    <EmbeddedResource Include="ChangeType.hbm.xml" />
+    <EmbeddedResource Include="MTType.hbm.xml" />
+    <EmbeddedResource Include="LogonLog.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactInfor.hbm.xml" />
+    <EmbeddedResource Include="AssetScrape.hbm.xml" />
+    <EmbeddedResource Include="ExpenseApplyWL.hbm.xml" />
+    <EmbeddedResource Include="LicenseVerification.hbm.xml" />
+    <EmbeddedResource Include="HeadLine.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocTypeFilter.hbm.xml" />
+    <EmbeddedResource Include="ExpenseClaim.hbm.xml" />
+    <EmbeddedResource Include="ExpenseClaimDetail.hbm.xml" />
+    <EmbeddedResource Include="Customer.hbm.xml" />
+    <EmbeddedResource Include="Collaboration.hbm.xml" />
+    <EmbeddedResource Include="CollaborationMember.hbm.xml" />
+    <EmbeddedResource Include="CollaborationLog.hbm.xml" />
+    <EmbeddedResource Include="ConstractType.hbm.xml" />
+    <EmbeddedResource Include="Constract.hbm.xml" />
+    <EmbeddedResource Include="ConstractReceivables.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConstractPayable.hbm.xml" />
+    <EmbeddedResource Include="ConstractRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="ConstractRelatedProject.hbm.xml" />
+    <EmbeddedResource Include="DepatmentUser.hbm.xml" />
+    <EmbeddedResource Include="CustomerQuestion.hbm.xml" />
+    <EmbeddedResource Include="CustomerContactRecord.hbm.xml" />
+    <EmbeddedResource Include="CustomerQuestionHandleRecord.hbm.xml" />
+    <EmbeddedResource Include="EducationExperience.hbm.xml" />
+    <EmbeddedResource Include="FamilyMember.hbm.xml" />
+    <EmbeddedResource Include="DepartRelatedModule.hbm.xml" />
+    <EmbeddedResource Include="MemberAgency.hbm.xml" />
+    <EmbeddedResource Include="MemberAgencyWFType.hbm.xml" />
+    <EmbeddedResource Include="DailyWorkUnitBonus.hbm.xml" />
+    <EmbeddedResource Include="MailBoxAuthority.hbm.xml" />
+    <EmbeddedResource Include="Item.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemBom.hbm.xml" />
+    <EmbeddedResource Include="ItemBomVersion.hbm.xml" />
+    <EmbeddedResource Include="IndustryType.hbm.xml" />
+    <EmbeddedResource Include="ConstractSales.hbm.xml" />
+    <EmbeddedResource Include="CarInformation.hbm.xml" />
+    <EmbeddedResource Include="CarApplyForm.hbm.xml" />
+    <EmbeddedResource Include="CarAssignForm.hbm.xml" />
+    <EmbeddedResource Include="CarType.hbm.xml" />
+    <EmbeddedResource Include="CustomerRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="DepartAssetRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="DepartNewsNoticeRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="DepartUserInforRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="NewsRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="DepartPosition.hbm.xml" />
+    <EmbeddedResource Include="KPIType.hbm.xml" />
+    <EmbeddedResource Include="KPILibrary.hbm.xml" />
+    <EmbeddedResource Include="KPITemplateForDepartPosition.hbm.xml" />
+    <EmbeddedResource Include="DocRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="KPILeaderReview.hbm.xml" />
+    <EmbeddedResource Include="KPIThirdPartReview.hbm.xml" />
+    <EmbeddedResource Include="KPIHRReview.hbm.xml" />
+    <EmbeddedResource Include="DepartRelatedSuperUser.hbm.xml" />
+    <EmbeddedResource Include="DocRelatedDepartment.hbm.xml" />
+    <EmbeddedResource Include="CustomerQuestionType.hbm.xml" />
+    <EmbeddedResource Include="CustomerRelatedQuestion.hbm.xml" />
+    <EmbeddedResource Include="CameraList.hbm.xml" />
+    <EmbeddedResource Include="CameraLog.hbm.xml" />
+    <EmbeddedResource Include="CameraInfo.hbm.xml" />
+    <EmbeddedResource Include="CustomModule.hbm.xml" />
+    <EmbeddedResource Include="CarCheckWeek.hbm.xml" />
+    <EmbeddedResource Include="CarOilTypeRecord.hbm.xml" />
+    <EmbeddedResource Include="MeetingAssign.hbm.xml" />
+    <EmbeddedResource Include="BookBorrowRecord.hbm.xml" />
+    <EmbeddedResource Include="BookCertificate.hbm.xml" />
+    <EmbeddedResource Include="BookClassification.hbm.xml" />
+    <EmbeddedResource Include="BookInformation.hbm.xml" />
+    <EmbeddedResource Include="BookPublishers.hbm.xml" />
+    <EmbeddedResource Include="BookReaderType.hbm.xml" />
+    <EmbeddedResource Include="DWCustomImport.hbm.xml" />
+    <EmbeddedResource Include="DWCustomValue.hbm.xml" />
+    <EmbeddedResource Include="DWLineTransport.hbm.xml" />
+    <EmbeddedResource Include="DWMakeCost.hbm.xml" />
+    <EmbeddedResource Include="DWMatch.hbm.xml" />
+    <EmbeddedResource Include="DWProduct.hbm.xml" />
+    <EmbeddedResource Include="DWProductType.hbm.xml" />
+    <EmbeddedResource Include="DWProMatch.hbm.xml" />
+    <EmbeddedResource Include="DWQualityCost.hbm.xml" />
+    <EmbeddedResource Include="BMAnnClaFile.hbm.xml" />
+    <EmbeddedResource Include="BMAnnInvitation.hbm.xml" />
+    <EmbeddedResource Include="BMAssessBidRecord.hbm.xml" />
+    <EmbeddedResource Include="BMAssessBidReport.hbm.xml" />
+    <EmbeddedResource Include="BMBidAddendum.hbm.xml" />
+    <EmbeddedResource Include="BMBidFile.hbm.xml" />
+    <EmbeddedResource Include="BMBidNoticeContent.hbm.xml" />
+    <EmbeddedResource Include="BMBidPlan.hbm.xml" />
+    <EmbeddedResource Include="BMContractDiscuss.hbm.xml" />
+    <EmbeddedResource Include="BMContractPreparation.hbm.xml" />
+    <EmbeddedResource Include="BMOpenBidRecord.hbm.xml" />
+    <EmbeddedResource Include="BMPurchaseApplication.hbm.xml" />
+    <EmbeddedResource Include="BMSupplierBid.hbm.xml" />
+    <EmbeddedResource Include="BMSupplierBidRecord.hbm.xml" />
+    <EmbeddedResource Include="BMSupplierCertification.hbm.xml" />
+    <EmbeddedResource Include="BMSupplierInfo.hbm.xml" />
+    <EmbeddedResource Include="BMSupplierLink.hbm.xml" />
+    <EmbeddedResource Include="BMSupplierReply.hbm.xml" />
+    <EmbeddedResource Include="DepartRelatedProjectLeader.hbm.xml" />
+    <EmbeddedResource Include="HSEAccidentDescription.hbm.xml" />
+    <EmbeddedResource Include="HSEAccidentInvestigation.hbm.xml" />
+    <EmbeddedResource Include="HSEDiseasePrevention.hbm.xml" />
+    <EmbeddedResource Include="HSEEmergencyCompile.hbm.xml" />
+    <EmbeddedResource Include="HSEEmergencyRehearse.hbm.xml" />
+    <EmbeddedResource Include="HSEEnvirFactorSurDetail.hbm.xml" />
+    <EmbeddedResource Include="HSEEnvirFactorSurvey.hbm.xml" />
+    <EmbeddedResource Include="HSEEnvironmentalFactors.hbm.xml" />
+    <EmbeddedResource Include="HSEEnvironmentalObjectives.hbm.xml" />
+    <EmbeddedResource Include="HSEHealthCheck.hbm.xml" />
+    <EmbeddedResource Include="HSEHealthyCheckup.hbm.xml" />
+    <EmbeddedResource Include="HSEMeeting.hbm.xml" />
+    <EmbeddedResource Include="HSEPenaltyNotice.hbm.xml" />
+    <EmbeddedResource Include="HSEPerEquipRecord.hbm.xml" />
+    <EmbeddedResource Include="HSEProductionSummary.hbm.xml" />
+    <EmbeddedResource Include="HSEQualificationRecord.hbm.xml" />
+    <EmbeddedResource Include="HSERectification.hbm.xml" />
+    <EmbeddedResource Include="HSERectificationNotice.hbm.xml" />
+    <EmbeddedResource Include="HSESafeInspectionRecord.hbm.xml" />
+    <EmbeddedResource Include="HSESafeManagementPlan.hbm.xml" />
+    <EmbeddedResource Include="HSETraining.hbm.xml" />
+    <EmbeddedResource Include="HSETrainingPlan.hbm.xml" />
+    <EmbeddedResource Include="CurrencyType.hbm.xml" />
+    <EmbeddedResource Include="FunInforDialBox.hbm.xml" />
+    <EmbeddedResource Include="ConstractReceivablesRecord.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConstractPayableRecord.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMSupBidByExp.hbm.xml" />
+    <EmbeddedResource Include="BMSupplierAnaly.hbm.xml" />
+    <EmbeddedResource Include="DWMatchType.hbm.xml" />
+    <EmbeddedResource Include="BMPerformanceEvaluation.hbm.xml" />
+    <EmbeddedResource Include="Goods.hbm.xml" />
+    <EmbeddedResource Include="GoodsAdjustRecord.hbm.xml" />
+    <EmbeddedResource Include="GoodsApplication.hbm.xml" />
+    <EmbeddedResource Include="GoodsApplicationDetail.hbm.xml" />
+    <EmbeddedResource Include="GoodsCheckInOrder.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsCheckInOrderDetail.hbm.xml" />
+    <EmbeddedResource Include="GoodsMTRecord.hbm.xml" />
+    <EmbeddedResource Include="GoodsPurRecord.hbm.xml" />
+    <EmbeddedResource Include="GoodsScrape.hbm.xml" />
+    <EmbeddedResource Include="GoodsShipmentDetail.hbm.xml" />
+    <EmbeddedResource Include="GoodsShipmentOrder.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsShipmentReport.hbm.xml" />
+    <EmbeddedResource Include="GoodsType.hbm.xml" />
+    <EmbeddedResource Include="GoodsUserRecord.hbm.xml" />
+    <EmbeddedResource Include="GoodsSaleOrder.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsSaleRecord.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsPurchaseOrder.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConstractRelatedGoodsSaleOrder.hbm.xml" />
+    <EmbeddedResource Include="GoodsReturnDetail.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsReturnOrder.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConstractRelatedGoodsPurchaseOrder.hbm.xml" />
+    <EmbeddedResource Include="ConstractRelatedAssetPurchaseOrder.hbm.xml" />
+    <EmbeddedResource Include="GoodsSaleQuotationOrder.hbm.xml" />
+    <EmbeddedResource Include="GoodsSaleQuotationOrderDetail.hbm.xml" />
+    <EmbeddedResource Include="GoodsDeliveryOrder.hbm.xml" />
+    <EmbeddedResource Include="GoodsDeliveryOrderDetail.hbm.xml" />
+    <EmbeddedResource Include="ConstractBigType.hbm.xml" />
+    <EmbeddedResource Include="BusinessFormReAndPay.hbm.xml" />
+    <EmbeddedResource Include="GDFri.hbm.xml" />
+    <EmbeddedResource Include="GDIsomJoint.hbm.xml" />
+    <EmbeddedResource Include="GDLineWeld.hbm.xml" />
+    <EmbeddedResource Include="GDNotDestroy.hbm.xml" />
+    <EmbeddedResource Include="GDSystem.hbm.xml" />
+    <EmbeddedResource Include="GDWelders.hbm.xml" />
+    <EmbeddedResource Include="GDApplication.hbm.xml" />
+    <EmbeddedResource Include="GDArea.hbm.xml" />
+    <EmbeddedResource Include="GDHotHandler.hbm.xml" />
+    <EmbeddedResource Include="GDIsomFri.hbm.xml" />
+    <EmbeddedResource Include="GDJointRevision.hbm.xml" />
+    <EmbeddedResource Include="GDOrderCode.hbm.xml" />
+    <EmbeddedResource Include="GDPipingClass.hbm.xml" />
+    <EmbeddedResource Include="GDPressure.hbm.xml" />
+    <EmbeddedResource Include="GDPressureObject.hbm.xml" />
+    <EmbeddedResource Include="GDPressureTest.hbm.xml" />
+    <EmbeddedResource Include="GDProject.hbm.xml" />
+    <EmbeddedResource Include="GDRTDelegate.hbm.xml" />
+    <EmbeddedResource Include="GDRTNotQualified.hbm.xml" />
+    <EmbeddedResource Include="GDRTResult.hbm.xml" />
+    <EmbeddedResource Include="GDRTSample.hbm.xml" />
+    <EmbeddedResource Include="GDStandardSize.hbm.xml" />
+    <EmbeddedResource Include="GDTestMedium.hbm.xml" />
+    <EmbeddedResource Include="GDThickness.hbm.xml" />
+    <EmbeddedResource Include="GDWelderWPSNo.hbm.xml" />
+    <EmbeddedResource Include="GDWeldType.hbm.xml" />
+    <EmbeddedResource Include="GDWPSCode.hbm.xml" />
+    <EmbeddedResource Include="LeaveApplyForm.hbm.xml" />
+    <EmbeddedResource Include="LeaveType.hbm.xml" />
+    <EmbeddedResource Include="DayHourNum.hbm.xml" />
+    <EmbeddedResource Include="DataBaseUpgrate.hbm.xml" />
+    <EmbeddedResource Include="BMAnnInvitRelatedProject.hbm.xml" />
+    <EmbeddedResource Include="CustomerOperationRecord.hbm.xml" />
+    <EmbeddedResource Include="BMSupplierInfoHistory.hbm.xml" />
+    <EmbeddedResource Include="ConstractRelatedGoods.hbm.xml" />
+    <EmbeddedResource Include="ConstractGoodsDeliveryPlan.hbm.xml" />
+    <EmbeddedResource Include="ConstractGoodsDeliveryRecord.hbm.xml" />
+    <EmbeddedResource Include="ConstractGoodsReceiptPlan.hbm.xml" />
+    <EmbeddedResource Include="ConstractGoodsReciptRecord.hbm.xml" />
+    <EmbeddedResource Include="GoodsBorrowOrder.bhm.xml" />
+    <EmbeddedResource Include="GoodsBorrowOrder.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsBorrowOrderDetail.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConstractRelatedConstract.hbm.xml" />
+    <EmbeddedResource Include="DeviceNotificationInfo.hbm.xml" />
+    <EmbeddedResource Include="DepartRelatedWZCheckUser.hbm.xml" />
+    <EmbeddedResource Include="DepartRelatedWZDelegateUser.hbm.xml" />
+    <EmbeddedResource Include="DepartRelatedWZFeeUser.hbm.xml" />
+    <EmbeddedResource Include="DepartRelatedWZUser.hbm.xml" />
+    <EmbeddedResource Include="ConstractRelatedEntryOrder.hbm.xml" />
+    <EmbeddedResource Include="ConstractRelatedInvoice.hbm.xml" />
+    <EmbeddedResource Include="DepartRelatedProductLine.hbm.xml" />
+    <EmbeddedResource Include="DepartSuperUserRelatedProductLine.hbm.xml" />
+    <EmbeddedResource Include="ConstractRelatedEntryOrderForInner.hbm.xml" />
+    <EmbeddedResource Include="GoodsProductionOrder.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsProductionOrderDetail.hbm.xml" />
+    <EmbeddedResource Include="GoodsSupplyOrder.hbm.xml" />
+    <EmbeddedResource Include="GoodsSupplyOrderDetail.hbm.xml" />
+    <EmbeddedResource Include="ItemMainPlan.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemMainPlanDetail.hbm.xml" />
+    <EmbeddedResource Include="LTCandidateInformation.hbm.xml" />
+    <EmbeddedResource Include="CustomerQuestionRelatedCandidate.hbm.xml" />
+    <EmbeddedResource Include="CollaborationLogWithCustomerQuestionCandidate.hbm.xml" />
+    <EmbeddedResource Include="GoodsCheckOutNoticeOrder.hbm.xml" />
+    <EmbeddedResource Include="GoodsCheckOutNoticeOrderDetail.hbm.xml" />
+    <EmbeddedResource Include="ConstractChangeRecord.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerQuestionStage.hbm.xml" />
+    <EmbeddedResource Include="CustomerQuestionCustomerStage.hbm.xml" />
+    <EmbeddedResource Include="CustomerRelatedGoodsInfor.hbm.xml" />
+    <EmbeddedResource Include="BMBidTemplateFile.hbm.xml" />
+    <EmbeddedResource Include="BMSupplierBidRecordFile.hbm.xml" />
+    <EmbeddedResource Include="ItemBOMPart.hbm.xml" />
+    <EmbeddedResource Include="DefectAssignRecord.hbm.xml" />
+    <EmbeddedResource Include="Defectment.hbm.xml" />
+    <EmbeddedResource Include="DefectStatus.hbm.xml" />
+    <EmbeddedResource Include="DefectType.hbm.xml" />
+    <EmbeddedResource Include="ConstractPayableVisa.hbm.xml" />
+    <EmbeddedResource Include="ConstractPayableVisaDetail.hbm.xml" />
+    <EmbeddedResource Include="DocumentForProjectPlanTemplate.hbm.xml" />
+    <Content Include="obj\Debug\ProjectMgt.Model.DailyWork.hbm.xml" />
+    <Content Include="obj\Debug\ProjectMgt.Model.dll" />
+    <Content Include="obj\Debug\ProjectMgt.Model.pdb" />
+    <Content Include="obj\Debug\ProjectMgt.Model.ProjectMember.hbm.xml" />
+    <Content Include="obj\Debug\ProjectMgt.Model.ProjectPlan.hbm.xml" />
+    <Content Include="obj\Debug\ProjectMgt.Model.ProjectStatus.hbm.xml" />
+    <Content Include="obj\Model.csproj.FileList.txt" />
+    <EmbeddedResource Include="WareHouse.hbm.xml" />
+    <EmbeddedResource Include="ProjectCustomer.hbm.xml" />
+    <EmbeddedResource Include="ProjectVendor.hbm.xml" />
+    <EmbeddedResource Include="ProjectType.hbm.xml" />
+    <EmbeddedResource Include="Vendor.hbm.xml" />
+    <EmbeddedResource Include="ProjectIncomeAndExpense.hbm.xml" />
+    <EmbeddedResource Include="ReqAssignRecord.hbm.xml" />
+    <EmbeddedResource Include="ProjectDailyWork.hbm.xml" />
+    <EmbeddedResource Include="TaskRecordType.hbm.xml" />
+    <EmbeddedResource Include="TaskType.hbm.xml" />
+    <EmbeddedResource Include="XmlNameSpace.hbm.xml" />
+    <EmbeddedResource Include="TaskTestRecord.hbm.xml" />
+    <EmbeddedResource Include="TestStatus.hbm.xml" />
+    <EmbeddedResource Include="TaskTestCase.hbm.xml" />
+    <EmbeddedResource Include="WorkFlowTStepOperator.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlowStep.hbm.xml" />
+    <EmbeddedResource Include="JNUnit.hbm.xml" />
+    <EmbeddedResource Include="WLType.hbm.xml" />
+    <EmbeddedResource Include="WorkFlowStepDetail.hbm.xml" />
+    <EmbeddedResource Include="WorkFlow.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WLStatus.hbm.xml" />
+    <EmbeddedResource Include="WLTStepCondition.hbm.xml" />
+    <EmbeddedResource Include="WorkFlowTemplate.hbm.xml" />
+    <EmbeddedResource Include="WorkFlowTStep.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftDownload.hbm.xml" />
+    <EmbeddedResource Include="RegisterUser.hbm.xml" />
+    <EmbeddedResource Include="Schedule.hbm.xml" />
+    <EmbeddedResource Include="ProjectRelatedReqView.hbm.xml" />
+    <EmbeddedResource Include="ProExpense.hbm.xml" />
+    <EmbeddedResource Include="MailProfile.hbm.xml" />
+    <EmbeddedResource Include="TransferProject.hbm.xml" />
+    <EmbeddedResource Include="ProStatusChange.hbm.xml" />
+    <EmbeddedResource Include="PlanMember.hbm.xml" />
+    <EmbeddedResource Include="PlanStatus.hbm.xml" />
+    <EmbeddedResource Include="TaskOperation.hbm.xml" />
+    <EmbeddedResource Include="ReqStatus.hbm.xml" />
+    <EmbeddedResource Include="TaskStatus.hbm.xml" />
+    <EmbeddedResource Include="TaskAssignRecord.hbm.xml" />
+    <EmbeddedResource Include="ProjectTask.hbm.xml" />
+    <EmbeddedResource Include="ProjectRisk.hbm.xml" />
+    <EmbeddedResource Include="ProStatusGroup.hbm.xml" />
+    <EmbeddedResource Include="SmsSend.hbm.xml" />
+    <EmbeddedResource Include="ProRealCharge.hbm.xml" />
+    <EmbeddedResource Include="ProRelatedUser.hbm.xml" />
+    <EmbeddedResource Include="ProModule.hbm.xml" />
+    <EmbeddedResource Include="ProLeaderReview.hbm.xml" />
+    <EmbeddedResource Include="ProFeedback.hbm.xml" />
+    <EmbeddedResource Include="ReqType.hbm.xml" />
+    <EmbeddedResource Include="RelatedReq.hbm.xml" />
+    <EmbeddedResource Include="RelatedUser.hbm.xml" />
+    <EmbeddedResource Include="Requirement.hbm.xml" />
+    <EmbeddedResource Include="MemberLevel.hbm.xml" />
+    <EmbeddedResource Include="WorkPlan.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\Refactor\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Reactor_Output="" Reactor_Configuration="" Reactor_Project="" Reactor_Commands="" Reactor_Enabled="0" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

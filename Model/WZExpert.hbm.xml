@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ProjectMgt.Model.WZExpert, ProjectMgt.Model" table="T_WZExpert">
+	  <id name="ID" column="ID" type="int">
+		  <generator class="identity" />
+	  </id>
+	  <property name ="ExpertCode" type ="String" />
+	  <property name ="Name" type ="String" />
+	  <property name ="WorkUnit" type ="String" />
+	  <property name ="Job" type ="String" />
+	  <property name ="JobTitle" type ="String" />
+	  <property name ="Phone" type ="String" />
+	  <property name ="ExpertType" type ="String" />
+    <property name ="ExpertType2" type ="String" />
+	  <property name ="WorkingPoint" type ="int" />
+	  <property name ="CreateTime" type ="DateTime" />
+	  <property name ="CreateCode" type ="String" />
+	  <property name ="Type" type ="String" />
+	  <property name ="EngagedCategory" type ="String" />
+	  <property name ="LaborExpertise" type ="String" />
+	  <property name ="ProcurementCategory" type ="String" />
+	  <property name ="NotLaborExpertise" type ="String" />
+	  <property name ="ActionOutstanding" type ="String" />
+	  <property name ="GoodPerformance" type ="String" />
+	  <property name ="SuccessfulCasePro" type ="String" />
+	  <property name ="LiteratureWorks" type ="String" />
+	  <property name ="PatentInvention" type ="String" />
+	  <property name ="ScientificAchieve" type ="String" />
+	  <property name ="ManagementInnovation" type ="String" />
+	  <property name ="BadTrackRecord" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.DepartRelatedModule, ProjectMgt.Model" table="T_DepartRelatedModule">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ModuleName" type ="String" />
+
+    <property name ="ModuleType" type ="String" />
+
+    <property name ="DepartCode" type ="String" />
+
+    <property name ="Visible" type="String" />
+  </class>
+</hibernate-mapping>

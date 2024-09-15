@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMAssessBidRecord, ProjectMgt.Model" table="T_BMAssessBidRecord">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="OpenBidRecordID" column="OpenBidRecordID" type="int">
+		</property>
+		<property name="OpenBidRecordName" column="OpenBidRecordName" type="String">
+		</property>
+		<property name="BudgetPrice" column="BudgetPrice" type="Decimal">
+		</property>
+		<property name="ReservePrice" column="ReservePrice" type="Decimal">
+		</property>
+		<property name="AssessBidder" column="AssessBidder" type="String">
+		</property>
+		<property name="BidWay" column="BidWay" type="String">
+		</property>
+		<property name="AssessBidFactors" column="AssessBidFactors" type="String">
+		</property>
+		<property name="AssessBidContent" column="AssessBidContent" type="String">
+		</property>
+		<property name="AssessBidDate" column="AssessBidDate" type="DateTime">
+		</property>
+	</class>
+</hibernate-mapping>

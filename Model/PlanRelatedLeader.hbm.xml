@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.PlanRelatedLeader, ProjectMgt.Model" table="T_Plan_RelatedLeader">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PlanID" type ="int" />
+
+    <property name ="LeaderCode" type="String" />
+
+    <property name ="LeaderName" type ="String" />
+
+    <property name ="JoinTime" type ="DateTime" />
+
+    <property name ="Actor" type ="String" />
+
+    <property name ="Status" type ="String" />
+  </class>
+</hibernate-mapping>

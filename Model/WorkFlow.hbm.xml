@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WorkFlow, ProjectMgt.Model" table="T_WorkFlow">
+
+    <id name="WLID" column="WLID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="WLName" type ="String" />
+    <property name ="WLType" type ="String" />
+    <property name ="XMLFile" type ="String" />
+    <property name ="XSNFile" type ="String" />
+    <property name ="TemName" type ="String" />
+    <property name ="CreateTime" type ="DateTime" />
+    <property name ="CreatorCode" type ="String" />
+    <property name ="CreatorName" type ="String" />
+    <property name ="Description" type ="String" />
+    <property name ="RelatedType" type ="String" />
+    <property name ="RelatedID" type ="int" />
+    <property name ="RelatedCode" type="String" />
+    <property name ="ReceiveSMS" type ="String" />
+    <property name ="ReceiveEMail" type ="String" />
+    <property name ="DIYNextStep"  type ="String" />
+    <property name ="FieldList" type ="String" />
+    <property name ="EditFieldList" type ="String" />
+    <property name ="CanNotNullFieldList" type ="String" />
+    <property name ="Status" type ="String" />
+    <property name ="IsPlanMainWorkflow" type="String" />
+
+    <property name ="ManHour" type="Decimal" />
+    <property name ="Expense" type ="Decimal" />
+
+    <property name ="BusinessType" type ="String" />
+    <property name ="BusinessCode" type ="String" />
+  
+  </class>
+</hibernate-mapping>

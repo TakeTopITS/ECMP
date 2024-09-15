@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.DWProMatch, ProjectMgt.Model" table="T_DWProMatch">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProductID" type ="int" />
+    <property name ="MatchID" type ="int" />
+    <property name ="ProductPrice" type ="Decimal" />
+  </class>
+</hibernate-mapping>

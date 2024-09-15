@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.TableTemplateMapping, ProjectMgt.Model" table="T_TableTemplateMapping">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="TableName" type ="String" />
+    <property name ="TableXMLNodeName" type ="String" />
+    <property name ="WFTemplateName" type ="String" />
+    <property name ="XSNFile" type ="String" />
+    <property name ="WFTemplateXMLNodeName" type ="String" />
+    <property name ="IdentifyString" type ="String" />
+  </class>
+</hibernate-mapping>

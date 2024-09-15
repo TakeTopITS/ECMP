@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMSupplierAnaly, ProjectMgt.Model" table="T_BMSupplierAnaly">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="SupplierCode" column="SupplierCode" type="String">
+		</property>
+		<property name="Point" column="Point" type="Decimal">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="CreateTime" column="CreateTime" type="DateTime">
+		</property>
+		<property name="CreaterCode" column="CreaterCode" type="String">
+		</property>
+		<property name="CreaterName" column="CreaterName" type="String">
+		</property>
+		<property name="EvaluateProject" column="EvaluateProject" type="String">
+		</property>
+		<property name="StartTime" column="StartTime" type="DateTime">
+		</property>
+		<property name="EndTime" column="EndTime" type="DateTime">
+		</property>
+		<property name="BasePoint" column="BasePoint" type="Decimal">
+		</property>
+	</class>
+</hibernate-mapping>

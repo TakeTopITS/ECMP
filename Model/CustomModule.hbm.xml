@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.CustomModule, ProjectMgt.Model" table="T_CustomModule">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="CustomModuleName" type ="String" />
+    <property name ="CustomType" type ="String" />
+    <property name ="Type" type ="String" />
+    <property name ="TemName" type ="String" />
+    <property name ="IdentifyString" type ="String" />
+  </class>
+</hibernate-mapping>

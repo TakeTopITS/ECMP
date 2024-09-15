@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZSupplierApply, ProjectMgt.Model" table="T_WZSupplierApply">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PurchaseCode" type ="String" />
+    <property name ="SupplierCode" type ="String" />
+    <property name ="SupplierName" type ="String" />
+    <property name ="ApplyMoney" type ="Decimal" />
+    <property name ="ApplyDocument" type ="String" />
+    <property name ="ApplyTime" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.RCJProjectAdjustPrice, ProjectMgt.Model" table="T_RCJProjectAdjustPrice">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="native" />
+    </id>
+
+    <property name ="ItemNo" type ="String" />
+    <property name ="AdjustItem" type ="String" />
+    <property name ="PriceBeforeAdjust" type ="double" />
+    <property name ="PriceAfterAdjust" type ="double" />
+    <property name ="AdjustByWho" type ="String" />
+    <property name ="AdjustTime" type ="String" />
+  </class>
+</hibernate-mapping>

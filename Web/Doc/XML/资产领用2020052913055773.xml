@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_BusinessFormDataTable>
+    <ID>2</ID>
+    <AAID>3</AAID>
+    <AssetCode xml:space="preserve">                    </AssetCode>
+    <AssetName>办公电脑</AssetName>
+    <Spec>CPU 2.8HZ</Spec>
+    <Number>1.00</Number>
+    <Unit>台        </Unit>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <ModelNumber />
+    <Manufacturer />
+    <IP xml:space="preserve">                    </IP>
+  </T_BusinessFormDataTable>
+</NewDataSet>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDWelderWPSNo, ProjectMgt.Model" table="T_GDWelderWPSNo">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Welder_no" type ="String" />
+    <property name ="WPSNo" type ="String" />
+    <property name ="Remarks" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

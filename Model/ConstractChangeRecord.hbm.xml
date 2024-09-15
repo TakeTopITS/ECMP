@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractChangeRecord, ProjectMgt.Model" table="T_ConstractChangeRecord">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ChangeType" type ="String" />
+    <property name ="ConstractCode" type ="String" />
+    <property name ="ChangeContent" type ="StringClob" />
+    <property name ="AfterChangeAmount" type ="Decimal" />
+    <property name ="ChangeTime" type ="DateTime" />
+    <property name ="OperatorCode" type ="String" />
+    <property name ="OperatorName" type ="String" />
+  </class>
+</hibernate-mapping>

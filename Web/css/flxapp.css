@@ -1,0 +1,41 @@
+
+.napbac{ background: #EFF2F7;}.napf{margin: 0;}.napbac td{padding: 0;}form{margin: 0;}
+        .napbox {width: 95%;margin: 0 auto; margin-top: 15px;}.napbox td{padding: 0;}.napbox .itemStyle{background: none;}.napbox .itemBorder{border-style: none;}
+        .napbox h3,.napbox h4,.napbox h5,.napbox h6{ margin: 0;}
+    .napbox h3,.napbox h4,.napbox h5,.napbox h6,.nprig label{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Liberation Sans", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, SimSun, "WenQuanYi Zen Hei Sharp", sans-serif;
+    padding-right: 8px;}
+        .npb {box-shadow: 0px 0px 8px rgb(0 0 0 / 15%);opacity: 1;background: #fff;border-radius: 8px;margin-top: 10px;}
+        .npb h3{ text-align:center; padding-top: 8px; padding-bottom: 8px; font-size: 16px;}
+        .npb.npbs {display: flex;}
+        .npbs img {width: 50px;height: 50px;border-radius:7px;}
+        .nplef {width: 100px;display: flex;flex-wrap: wrap;justify-content: center;align-items: center;}
+        .nprig {width: 100%;position: relative;}
+        .nprig h4 {padding: 6px 0;}.nprig a {color: #000;font-size: 16px;}
+        .nprig h5 {margin: 0;background: linear-gradient(90deg, #7DC8FB 0%, #369CFA 100%);display: inline-block;padding-left: 25px;padding-right: 15px;height: 18px; line-height: 18px; color: #fff;border-radius: 30px;padding-left: 20px;position: relative;}
+        .nprig sub {width: 14px;height: 14px;background: linear-gradient(90deg, #369CFA 0%, #7DC8FB 100%);border-radius: 50%;border: 2px solid #fff;display: block;position: absolute;left: 0;top: 0;}
+        .nprig h6 {margin: 0;color: #999;font-weight: 400;padding: 6px 0;}
+        .nprig label {position: absolute;right: 15px;bottom: 10px;border: 1px solid #057BF9;padding: 0px 15px;border-radius: 30px;color: #057BF9;font-size: 14px;}
+
+        .nprig.wfinfo {position: relative; display: flex; padding: 0 15px; width: auto; padding-bottom: 8px;}
+        .nprig.wfinfo h4 {padding: 6px 0; margin: 0; width: 255px;}.nprig.wfinfo a {color: #000;font-size: 16px;}
+        .nprig.wfinfo h5 {margin: 0; background: #fff;padding-left: 0;height: auto;color: #666;width: auto; padding-right: 0;}
+            .nprig.wfinfo h5 input{margin: 10px 7px 0 -6px;}
+        .nprig.wfinfo sub.yesno {width: 65px;height: 18px;background: linear-gradient(90deg, #369CFA 0%, #7DC8FB 100%);
+            border-radius: 7px;border: none;display: block;position: static;color: #fff;font-size: 12px;line-height: 18px;text-align: center;}
+        .nprig.wfinfo h6 {margin: 0;color: #999;font-weight: 400;padding: 0;}
+        .nprig.wfinfo label {position: absolute;right: 15px;bottom: 10px;border: 1px solid #057BF9;padding: 0px 15px;border-radius: 30px;color: #057BF9;font-size: 14px;}
+
+        .npbx {box-shadow: 0px 0px 8px rgb(0 0 0 / 15%);opacity: 1;background: #f7f7f8;border-radius: 8px;padding-bottom: 15px;}
+        .npbx h3{text-align:center; padding-top: 8px; padding-bottom: 8px; font-size: 16px;}
+
+        .npbxs {box-shadow: 0px 0px 8px rgb(0 0 0 / 15%);opacity: 1;background: #fff;border-radius: 8px;padding: 10px;margin: 18px 10px;}
+        .npbxs input{border: none;line-height: 22px;}.mline input{background: #f5f5f5;}
+        .mline{display: flex;flex-wrap: wrap;justify-content: flex-start;align-items: center;height: 50px;border-bottom: 1px solid #f1f1f1;}
+    .npbtn{display: flex;justify-content: center;padding: 10px;}
+    
+    .npbtn input{background: linear-gradient(90deg, #D53E54 0%, #057BF9 100%);border-radius: 30px;margin: 0 10px;}
+    .manyspan {display: flex;flex-wrap: wrap-reverse;align-items: center;justify-content: flex-start;}
+    .manyspan span {display: flex;align-items: center;}
+    .manyspan a,.manyspan span,.manyspan input{margin: 5px 0;padding: 0 10px;}
+    input#TB_Message {background: #f7f7f7;}
+    .nmar{ margin: 10px 0; }

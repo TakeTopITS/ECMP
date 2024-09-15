@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_GoodsApplication>
+    <DetailAAID>20</DetailAAID>
+    <OtherAAID>20</OtherAAID>
+    <AAID>20</AAID>
+    <GAAName>TEST</GAAName>
+    <Type>PRODUCTION          </Type>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094</ApplicantName>
+    <ApplyTime>2017-05-24T00:00:00+08:00</ApplyTime>
+    <FinishTime>2017-05-24T00:00:00+08:00</FinishTime>
+    <ApplyReason>TEST</ApplyReason>
+    <Status>审批中    </Status>
+    <RelatedType>Other     </RelatedType>
+    <RelatedID>0</RelatedID>
+    <Amount>0.000</Amount>
+    <CurrencyType />
+  </T_GoodsApplication>
+</NewDataSet>

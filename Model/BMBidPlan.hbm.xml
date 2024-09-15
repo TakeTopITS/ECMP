@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMBidPlan, ProjectMgt.Model" table="T_BMBidPlan">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+
+		<property name ="EnginerringSupplier" column="EnginerringSupplier" type="String" />
+		<property name ="InternationSupplier" column="InternationSupplier" type="String" />
+		<property name ="RetailSupplier" column="RetailSupplier" type="String" />
+		<property name ="StoreSupplier" column="StoreSupplier" type="String" />
+
+		<property name="PurchaseAppID" column="PurchaseAppID" type="int">
+		</property>
+		<property name="PurchaseAppName" column="PurchaseAppName" type="String">
+		</property>
+		<property name="BidType" column="BidType" type="String">
+		</property>
+		<property name="BidWay" column="BidWay" type="String">
+		</property>
+		<property name="EnterPer" column="EnterPer" type="String">
+		</property>
+		<property name="EnterDate" column="EnterDate" type="DateTime">
+		</property>
+		<property name="BidStartDate" column="BidStartDate" type="DateTime">
+		</property>
+		<property name="BidEndDate" column="BidEndDate" type="DateTime">
+		</property>
+		<property name="BidAddress" column="BidAddress" type="String">
+		</property>
+		<property name="EnterDepart" column="EnterDepart" type="String">
+		</property>
+		<property name="BidRemark" column="BidRemark" type="String">
+		</property>
+		<property name="UserCodeList" column="UserCodeList" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+		<property name="PurchaseAppCode" column="PurchaseAppCode" type="String">
+		</property>
+		<property name="AddUserCodeList" column="AddUserCodeList" type="String">
+		</property>
+		<property name ="BidLimitedPrice" type="Decimal" ></property>
+
+	</class>
+</hibernate-mapping>

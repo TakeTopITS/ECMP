@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMHeatTreatReport, ProjectMgt.Model" table="T_WPQMHeatTreatReport">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="HeatTreatTime" type ="DateTime" />
+		<property name ="BoilingTemp" type ="String" />
+		<property name ="HeatingSpeed" type ="String" />
+		<property name ="CoolingSpeed" type ="String" />
+		<property name ="CoolingMethod" type ="String" />
+		<property name ="Remark" type ="String" />
+		<property name ="TimeCurvePath" type ="String" />
+		<property name ="HeatTreatReporter" type ="String" />
+		<property name ="HeatTreatRepOperation" type ="String" />
+		<property name ="HeatTreatReportReviewer" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

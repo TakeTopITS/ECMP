@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.WorkPlan, ProjectMgt.Model" table="T_ImplePlan">
+
+		<id name="ID" column="ID" type="int">
+
+			<generator class="identity" />
+		</id>
+
+		<property name ="ProjectID" type ="int" />
+
+		<property name ="WorkID" type ="int" />
+
+		<property name ="VerID" type ="int" />
+
+		<property name ="Name"  type ="String" />
+
+		<property name ="MakeDate" type ="DateTime" />
+
+		<property name ="Start_Date" type ="DateTime" />
+
+		<property name ="End_Date" type ="DateTime" />
+
+		<property name ="Resource" type ="String" />
+
+		<property name ="Budget" type ="Decimal" />
+
+		<property name ="WorkHour" type ="Decimal" />
+
+		<property name ="Status" type="String" />
+
+		<property name ="PriorID" type ="int" />
+
+		<property name ="Type" type ="String" />
+
+		<property name ="Percent_Done" type ="int" />
+
+		<property name ="DefaultSchedule" type ="Decimal" />
+
+		<property name ="DefaultCost" type ="Decimal" />
+
+		<property name ="LockStatus" type ="String" />
+
+		<property name ="SortNumber" column ="index" type ="int" />
+
+		<property name ="UpdateManCode" type ="String" />
+
+		<property name ="CreatorCode" type ="String" />
+
+		<property name ="UpdateTime" type ="DateTime" />
+
+		<property name ="FromProjectID" type ="int" />
+
+		<property name ="FromProjectPlanVerID" type ="int" />
+
+		<property name ="Parent_ID" type ="int" />
+
+		<property name ="PID" type ="int" />
+
+		<!--不能添加任何东西-->
+
+
+	</class>
+</hibernate-mapping>

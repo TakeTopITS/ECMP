@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.QMRewardPunishment, ProjectMgt.Model" table="T_QMRewardPunishment">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="PenUnit" column="PenUnit" type="String">
+		</property>
+		<property name="RewardsPunishment" column="RewardsPunishment" type="String">
+		</property>
+		<property name="QualityInspectionCode" column="QualityInspectionCode" type="String">
+		</property>
+		<property name="QualityInspectionName" column="QualityInspectionName" type="String">
+		</property>
+		<property name="CreateTime" column="CreateTime" type="DateTime">
+		</property>
+		<property name="CreatePer" column="CreatePer" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZMaterialXL, ProjectMgt.Model" table="T_WZMaterialXL">
+
+    <id name="XLCode" column="XLCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="DLCode" type ="String" />
+    <property name ="ZLCode" type ="String" />
+    <property name ="XLName" type ="String" />
+    <property name ="XLDesc" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="CreateProgress" type ="String" />
+    <property name ="Creater" type ="String" />
+    <property name ="CreateTitle" type ="int" />
+  </class>
+</hibernate-mapping>

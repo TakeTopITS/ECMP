@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.DailyWork, ProjectMgt.Model" table="T_DailyWork">
+
+    <id name="WorkID" column="WorkID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Type" type ="String" />
+
+    <property name ="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+
+    <property name ="WorkDate"  type ="DateTime" />
+
+    <property name ="RecordTime" type ="DateTime" />
+
+    <property name ="ProjectID" type ="int" />
+
+    <property name ="ProjectName" type ="String" />
+
+    <property name ="DailySummary" type ="String" />
+
+    <property name ="Achievement" type ="String" />
+
+    <property name ="Address" type ="String" />
+
+    <property name ="FinishPercent" type ="Decimal" />
+
+    <property name ="Charge" type ="Decimal" />
+
+    <property name ="ConfirmCharge" type ="Decimal" />
+
+    <property name ="ManHour" type ="Decimal" />
+
+    <property name ="ConfirmManHour" type ="Decimal" />
+
+    <property name ="Salary" type ="Decimal" />
+
+    <property name ="Bonus"  type ="Decimal" />
+
+    <property name ="ConfirmBonus" type ="Decimal" />
+
+    <property name ="Authority" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSETraining, ProjectMgt.Model" table="T_HSETraining">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="ProjectId" column="ProjectId" type="int">
+		</property>
+		<property name="ProjectName" column="ProjectName" type="String">
+		</property>
+		<property name="Hoster" column="Hoster" type="String">
+		</property>
+		<property name="Speaker" column="Speaker" type="String">
+		</property>
+		<property name="TrainingStart" column="TrainingStart" type="DateTime">
+		</property>
+		<property name="TrainingEnd" column="TrainingEnd" type="DateTime">
+		</property>
+		<property name="TrainingSite" column="TrainingSite" type="String">
+		</property>
+		<property name="TrainingContent" column="TrainingContent" type="String">
+		</property>
+		<property name="TrainingType" column="TrainingType" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

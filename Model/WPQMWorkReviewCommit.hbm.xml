@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMWorkReviewCommit, ProjectMgt.Model" table="T_WPQMWorkReviewCommit">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="EvaluationPurposes" type ="String" />
+		<property name ="SpecificationThickness" type ="String" />
+		<property name ="SpecificationDiameter" type ="String" />
+		<property name ="SpecificationPad" type ="String" />
+		<property name ="DetailWeldSizePath" type ="String" />
+		<property name ="Value_1" type ="String" />
+		<property name ="Value_2" type ="String" />
+		<property name ="Value_3" type ="String" />
+		<property name ="Value_4" type ="String" />
+		<property name ="Value_5" type ="String" />
+		<property name ="Value_6" type ="String" />
+		<property name ="Value_7" type ="String" />
+		<property name ="SpecificationOther" type ="String" />
+		<property name ="RTInsProportion" type ="String" />
+		<property name ="RTQualifiedLevel" type ="String" />
+		<property name ="RTEvaluationCriteria" type ="String" />
+		<property name ="MTInsProportion" type ="String" />
+		<property name ="MTQualifiedLevel" type ="String" />
+		<property name ="MTEvaluationCriteria" type ="String" />
+		<property name ="PTInsProportion" type ="String" />
+		<property name ="PTQualifiedLevel" type ="String" />
+		<property name ="PTEvaluationCriteria" type ="String" />
+		<property name ="UTInsProportion" type ="String" />
+		<property name ="UTQualifiedLevel" type ="String" />
+		<property name ="UTEvaluationCriteria" type ="String" />
+		<property name ="SpecificationOtherReq" type ="String" />
+		<property name ="MechanicalPerReqRm" type ="String" />
+		<property name ="MechanicalPerReqRel" type ="String" />
+		<property name ="MechanicalPerBend" type ="String" />
+		<property name ="MechanicalPerBack" type ="String" />
+		<property name ="MechanicalPerScol" type ="String" />
+		<property name ="ShockTemperature" type ="String" />
+		<property name ="ImpactWeldZone" type ="String" />
+		<property name ="ImpactHeatZone" type ="String" />
+		<property name ="ImpactMetalArea" type ="String" />
+		<property name ="HardnessHRB" type ="String" />
+		<property name ="HardnessHRC" type ="String" />
+		<property name ="HardnessHV" type ="String" />
+		<property name ="Fracture" type ="String" />
+		<property name ="Flattening" type ="String" />
+		<property name ="HamBreak" type ="String" />
+		<property name ="ChemicalComp_C" type ="String" />
+		<property name ="ChemicalComp_Mn" type ="String" />
+		<property name ="ChemicalComp_Si" type ="String" />
+		<property name ="ChemicalComp_S" type ="String" />
+		<property name ="ChemicalComp_P" type ="String" />
+		<property name ="ChemicalComp_Cr" type ="String" />
+		<property name ="ChemicalComp_Ni" type ="String" />
+		<property name ="ChemicalComp_Mo" type ="String" />
+		<property name ="ChemicalComp_V" type ="String" />
+		<property name ="ChemicalComp_Ti" type ="String" />
+		<property name ="ChemicalComp_Nb" type ="String" />
+		<property name ="IntergranularCorrTest" type ="String" />
+		<property name ="Metallographic" type ="String" />
+		<property name ="AfterWeldingClass" type ="String" />
+		<property name ="AfterWeldingTem" type ="String" />
+		<property name ="AfterWeldingPreTime" type ="String" />
+		<property name ="CoolingMethod" type ="String" />
+		<property name ="Remark" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

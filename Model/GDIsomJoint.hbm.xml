@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDIsomJoint, ProjectMgt.Model" table="T_GDIsomJoint">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="JointNo" type ="String" />
+    <property name ="Rev" type ="String" />
+    <property name ="Size" type ="String" />
+    <property name ="Mold" type ="String" />
+    <property name ="SF" type ="String" />
+    <property name ="MediumCode" type ="String" />
+    <property name ="Pipefittings" type ="String" />
+    <property name ="InstallationTime" type ="String" />
+    <property name ="RanderWelder1" type ="String" />
+    <property name ="RanderWelderName1" type ="String" />
+    <property name ="RanderWelder2" type ="String" />
+    <property name ="RanderWelderName2" type ="String" />
+    <property name ="RanderTime" type ="String" />
+    <property name ="CoveringWelder1" type ="String" />
+    <property name ="CoveringWelderName1" type ="String" />
+    <property name ="CoveringWelder2" type ="String" />
+    <property name ="CoveringWelderName2" type ="String" />
+    <property name ="CoveringTime" type ="String" />
+    <property name ="WPSNo" type ="String" />
+    <property name ="PressurePackNo" type ="String" />
+    <property name ="FRI1" type ="String" />
+    <property name ="FRI2" type ="String" />
+    <property name ="FRI3" type ="String" />
+    <property name ="FRI4" type ="String" />
+    <property name ="FitUpTime" type ="String" />
+    <property name ="FitUp" type ="String" />
+    <property name ="VisualTime" type ="String" />
+    <property name ="Visual" type ="String" />
+    <property name ="RTTime" type ="String" />
+    <property name ="RT" type ="String" />
+    <property name ="PTTime" type ="String" />
+    <property name ="PT" type ="String" />
+    <property name ="PWHTTime" type ="String" />
+    <property name ="PWHT" type ="String" />
+    <property name ="PMITime" type ="String" />
+    <property name ="PMI" type ="String" />
+    <property name ="MTTime" type ="String" />
+    <property name ="MT" type ="String" />
+    <property name ="HistorySheet" type ="String" />
+    <property name ="PressTest" type ="String" />
+    <property name ="RTLotDetailsRT1" type ="String" />
+    <property name ="RTLotDetailsRT2" type ="String" />
+    <property name ="RTLotDetailsRT3" type ="String" />
+    <property name ="RTLotDetailsRT4" type ="String" />
+    <property name ="Isom_no" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

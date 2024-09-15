@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ProjectMemberStudentCost, ProjectMgt.Model" table="T_ProjectMemberStudentCost">
+
+    <id name="id" column="id" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="StudentCode" type ="String" />
+    <property name ="StudentName" type ="String" />
+
+    <property name ="CostProject" type ="String" />
+    <property name ="CostDemial" type ="Decimal" />
+    <property name ="CollectTime" type ="DateTime" />
+
+    <property name ="WangFeePerSemester" type ="Decimal" />
+    <property name ="Meals" type ="Decimal" />
+    <property name ="ActivityCost" type ="Decimal" />
+    <property name ="CustodyAfterClass" type ="Decimal" />
+    <property name ="ReplaceCosts" type ="Decimal" />
+
+    <property name ="CreatUserCode" type ="String" />
+    <property name ="Status" type ="String" />
+  </class>
+</hibernate-mapping>

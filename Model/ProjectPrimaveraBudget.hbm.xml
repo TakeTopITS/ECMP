@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.ProjectPrimaveraBudget, ProjectMgt.Model" table="T_ProjectPrimaveraBudget">
+
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+
+		<property name ="ProjBudgID" type ="int" />
+		<property name ="ProjectID" type ="int" />
+
+		<property name ="BudgetAmount" type ="Decimal" />
+
+		<property name ="RealAmount" type ="Decimal" />
+
+		<property name ="TotalAmount" type ="Decimal" />
+
+		<property name ="ProjGuid" type ="String" />
+
+		<property name ="P6ID" type ="int" />
+		<property name ="TaskID" type ="int" />
+	</class>
+</hibernate-mapping>

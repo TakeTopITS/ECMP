@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.RCJProjectCostPerformanceList, ProjectMgt.Model" table="T_RCJProjectCostPerformanceList">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="native" />
+    </id>
+
+    <property name ="ProjectID" type ="int" />
+    <property name ="ItemNo" type ="int" />
+    <property name ="ItemName" type ="String" />
+    <property name ="ItemType" type ="int" />
+    <property name ="ItemContent" type ="String" />
+    <property name ="SubItem" type ="String" />
+    <property name ="ItemUnit" type ="String" />
+    <property name ="ItemPriceDevice" type ="double" />
+    <property name ="ItemPriceMainMaterial" type ="double" />
+    <property name ="ItemPricePurchaseFee" type ="double" />
+    <property name ="ItemPriceWage" type ="double" />
+    <property name ="ItemPriceMaterial" type ="double" />
+    <property name ="ItemPriceMachine" type ="double" />
+    <property name ="AdjustID" type ="int" />
+    <property name ="ItemPriceDeviceBudget" type ="double" />
+    <property name ="ItemPriceMainMaterialBudget" type ="double" />
+    <property name ="ItemPricePurchaseFeeBudget" type ="double" />
+    <property name ="ItemPriceWageBudget" type ="double" />
+    <property name ="ItemPriceMaterialBudget" type ="double" />
+    <property name ="ItemPriceMachineBudget" type ="double" />
+    <property name ="ItemComprehensiveFeeBudget" type ="double" />
+    <property name ="ItemTaxesBudget" type ="double" />
+    <property name ="ItemPriceChanged" type ="int" />
+    <property name ="ProjectSupplierID" type ="string" />
+    <property name ="BeginTime" type ="string" />
+    <property name ="EndTime" type ="string" />
+    <property name ="IfSplit" type ="int" />
+  </class>
+</hibernate-mapping>

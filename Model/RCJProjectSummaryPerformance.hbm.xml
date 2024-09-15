@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.RCJProjectSummaryPerformance, ProjectMgt.Model" table="T_RCJProjectSummaryPerformance">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="native" />
+    </id>
+
+    <property name ="ProjectID" type ="int" />
+    <property name ="ProjectYear" type ="String" />
+    <property name ="ProjectMonth" type ="String" />
+    <property name ="ProjectSTCV" type ="double" />
+    <property name ="ProjectBCWS" type ="double" />
+    <property name ="ProjectBCWP" type ="double" />
+    <property name ="ProjectBCRWP" type ="double" />
+    <property name ="ProjectPBCWP" type ="double" />
+    <property name ="ProjectEAV" type ="double" />
+    <property name ="ProjectRV" type ="double" />
+    <property name ="ProjectACWP" type ="double" />
+    <property name ="ProjectAI" type ="double" />
+    <property name ="ProjectBVI" type ="double" />
+    <property name ="ProjectRVI" type ="double" />
+    <property name ="ProjectPL" type ="double" />
+    <property name ="ProjectTotalSpending" type ="double" />
+    <property name ="ProjectTotalIncome" type ="double" />
+    <property name ="ProjectIncomeDifference" type ="double" />
+    <property name ="ProjectContractReceived" type ="double" />
+    <property name ="ProjectCPB" type ="double" />
+    <property name ="ThisMonthFinished" type ="double" />
+    <property name ="TotalMonthFinished" type ="double" />
+  </class>
+</hibernate-mapping>

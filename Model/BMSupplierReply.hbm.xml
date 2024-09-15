@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMSupplierReply, ProjectMgt.Model" table="T_BMSupplierReply">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="SupplierId" column="SupplierId" type="int">
+		</property>
+		<property name="AnnClaFileID" column="AnnClaFileID" type="int">
+		</property>
+		<property name="SendContent" column="SendContent" type="String">
+		</property>
+		<property name="ReplyDate" column="ReplyDate" type="DateTime">
+		</property>
+	</class>
+</hibernate-mapping>

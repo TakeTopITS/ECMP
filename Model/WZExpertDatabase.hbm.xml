@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZExpertDatabase, ProjectMgt.Model" table="T_WZExpertDatabase">
+
+    <id name="ExpertCode" column="ExpertCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="ExpertNumber" type ="String" />
+    <property name ="Name" type ="String" />
+    <property name ="UserCode" type ="String" />
+    <property name ="Job" type ="String" />
+    <property name ="JobTitle" type ="String" />
+    <property name ="Phone" type ="String" />
+    <property name ="ExpertType" type ="String" />
+    <property name ="ExpertTypeChina" type ="String" />
+    <property name ="WorkingPoint" type ="int" />
+    <property name ="CreateTime" type ="DateTime" />
+    <property name ="CreateCode" type ="String" />
+  </class>
+</hibernate-mapping>

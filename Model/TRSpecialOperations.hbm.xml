@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.TRSpecialOperations, ProjectMgt.Model" table="T_TRSpecialOperations">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="UserCode" column="UserCode" type="String">
+		</property>
+		<property name="SpeOpeType" column="SpeOpeType" type="String">
+		</property>
+		<property name="SpeOpeProject" column="SpeOpeProject" type="String">
+		</property>
+		<property name="SpeOpeStartTime" column="SpeOpeStartTime" type="DateTime">
+		</property>
+		<property name="SpeOpeReviewTime" column="SpeOpeReviewTime" type="DateTime">
+		</property>
+		<property name="SpeOpeNumber" column="SpeOpeNumber" type="String">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+		<property name="EnterTime" column="EnterTime" type="DateTime">
+		</property>
+	</class>
+</hibernate-mapping>

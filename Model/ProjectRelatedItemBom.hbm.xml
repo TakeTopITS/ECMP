@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.ProjectRelatedItemBom, ProjectMgt.Model" table="T_ProjectRelatedItemBom">
+
+		<id name="ID" column="ID" type="int">
+
+			<generator class="identity" />
+		</id>
+
+		<property name ="ProjectID" type ="int" />
+
+		<property name ="ParentGuid" type ="String" />
+
+		<property name ="ChildGuid" type ="String" />
+
+		<property name ="ItemCode" type ="String" />
+
+		<property name ="ItemName" type ="String" />
+
+		<property name ="ItemType" type ="String" />
+
+		<property name ="ModelNumber" type ="String" />
+
+		<property name ="Specification" type="String" />
+
+		<property name ="Number" type ="Decimal" />
+
+		<property name ="ReservedNumber" type ="Decimal" />
+
+		<property name ="Unit" type ="String" />
+
+		<property name ="VerID" type ="int" />
+
+		<property name ="AleadyPurchased" type ="Decimal" />
+
+		<property name ="AleadyCheckIn" type="Decimal" />
+
+		<property name ="AleadyPick" type="Decimal" />
+
+		<property name ="AleadyProduction" type="Decimal" />
+
+		<property name ="AleadyCheckOut" type="Decimal" />
+
+		<property name ="AleadySale" type="Decimal" />
+
+		<property name ="PULeadTime" type ="Decimal" />
+
+		<property name ="MFLeadTime" type ="Decimal" />
+
+		<property name ="PurchasePrice" type ="Decimal" />
+
+		<property name ="SalePrice" type ="Decimal" />
+
+		<property name ="HRCost" type ="Decimal" />
+
+		<property name ="MTCost" type ="Decimal" />
+
+		<property name ="MFCost" type ="Decimal" />
+
+		<property name ="DefaultProcess" type ="String" />
+
+		<property name ="Comment" type ="String" />
+
+		<property name ="PhotoURL" type ="String" />
+
+		<property name ="SortNumber" type ="int" />
+
+		<property name ="Brand" type="String" />
+
+	</class>
+</hibernate-mapping>

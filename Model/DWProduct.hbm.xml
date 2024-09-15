@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.DWProduct, ProjectMgt.Model" table="T_DWProduct">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProductName" type ="String" />
+    <property name ="TypeID" type ="int" />
+    <property name ="ProductCode" type ="String" />
+  </class>
+</hibernate-mapping>

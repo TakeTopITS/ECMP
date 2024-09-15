@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMQuaAssessNotice, ProjectMgt.Model" table="T_WPQMQuaAssessNotice">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="NoteSender" type ="String" />
+		<property name ="NoteReviewer" type ="String" />
+		<property name ="NoteRecipient" type ="String" />
+		<property name ="NoteSentTime" type ="DateTime" />
+		<property name ="Conclusion" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

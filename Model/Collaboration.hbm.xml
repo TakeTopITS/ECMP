@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.Collaboration, ProjectMgt.Model" table="T_Collaboration">
+
+    <id name="CoID" column="CoID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="CollaborationName" type ="String" />
+
+    <property name ="CreatorCode" type ="String" />
+
+    <property name ="CreatorName" type ="String" />
+
+    <property name ="CreateTime"  type ="DateTime" />
+
+    <property name ="Comment" type ="String" />
+
+    <property name ="RelatedType" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+
+    <property name ="Status" type="String" />
+
+    <property name ="IdentifyString" type="String" />
+
+    <property name ="RelatedCode" type="String" />
+  </class>
+</hibernate-mapping>

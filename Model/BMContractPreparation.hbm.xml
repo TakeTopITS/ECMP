@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMContractPreparation, ProjectMgt.Model" table="T_BMContractPreparation">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="PartyA" column="PartyA" type="String">
+		</property>
+		<property name="PartyAName" column="PartyAName" type="String">
+		</property>
+		<property name="PartyB" column="PartyB" type="String">
+		</property>
+		<property name="PartyBName" column="PartyBName" type="String">
+		</property>
+		<property name="SignDate" column="SignDate" type="DateTime">
+		</property>
+		<property name="EffectiveDate" column="EffectiveDate" type="DateTime">
+		</property>
+		<property name="ContractDiscussID" column="ContractDiscussID" type="int">
+		</property>
+		<property name="ContractDiscussName" column="ContractDiscussName" type="String">
+		</property>
+
+		<property name ="RelatedConstractCode" type="String"></property>
+		<property name ="RelatedConstractName" type="String"></property>
+	</class>
+</hibernate-mapping>

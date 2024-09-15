@@ -1,0 +1,893 @@
+﻿@charset "utf-8";
+/*author:用友集团信息技术部*/
+
+/*面包屑（含）以上内容*/
+@media screen and (max-device-width: 970px) {
+    #header {
+        font-size: 2em;
+    }
+
+    #nav {
+        width: 860px;
+        height: 40px;
+        overflow-y: hidden;
+    }
+
+    #header #nav {
+        top: 70px;
+        margin-left: 20px;
+    }
+
+        #header #nav #navlist li {
+            margin: 1px 10px;
+        }
+
+    #header .jiantou {
+        left: 900px;
+        display: block;
+    }
+
+    #navlist {
+        width: 1700px;
+    }
+
+    .warp #headerbg {
+        background: url(../images/headerbg-xiao.jpg) repeat-x top;
+    }
+
+    #header #scrollDiv {
+        height: 48px;
+        display: none;
+    }
+    /*	#header #scrollDiv ul li{
+		font-size:0.8em;
+	}*/
+    #header #logo .pc {
+        display: none;
+        /*		height:51px;
+		width:179px;*/
+    }
+
+    #header #logo {
+        top: -18px;
+        left: 100px;
+    }
+
+    #header #nav #navlist a:link, #navlist a:visited {
+        font-size: 1.5em;
+    }
+
+    #header #lianjie1 {
+        left: 460px;
+        top: 5px;
+    }
+
+        #header #lianjie1 a {
+            margin-right: 10px;
+        }
+
+    #header #lianjie2 {
+        top: 5px;
+        left: 650px;
+    }
+
+        #header #lianjie1 #Label4, #header #lianjie1 #Label1, #header #lianjie1 #Label5, #header #lianjie2 #Label2 {
+            font-size: 1.2em;
+        }
+}
+
+#headerbg {
+    height: 120px;
+    background: url(../images/headerbg.jpg) repeat-x top;
+    position: relative;
+    z-index: 10;
+}
+
+#headerbg2 {
+    height: 87px;
+    background: url(/images/headerbg22.jpg) no-repeat center top;
+}
+
+#header {
+    position: relative;
+    margin: 0 auto;
+    width: 970px;
+}
+
+#logo {
+    position: absolute;
+    top: 35px;
+    left: -60px;
+    background: url(../images/SiteLogo.png) no-repeat;
+    width: 210px;
+    height: 84px;
+}
+
+    #logo img {
+        width: 210px;
+        /*height:82px;*/
+    }
+
+.jiantou {
+    float: right;
+    clear: both;
+    top: 65px;
+    left: 970px;
+    position: absolute;
+    font-weight: bold;
+    display: none;
+}
+
+#search {
+    position: absolute;
+    top: 40px;
+    left: 540px;
+    width: 146px;
+    height: 20px;
+    background: url(../images/searchbg.jpg) no-repeat 0 0;
+}
+
+#headLine {
+    position: absolute;
+    top: 40px;
+    left: 540px;
+    width: 146px;
+    height: 20px;
+}
+
+.txtsearch {
+    margin: 0 0 0 10px;
+    padding: 0;
+    width: 110px;
+    height: 20px;
+    line-height: 20px;
+    border: none;
+    background: none;
+}
+
+.btnsearch {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+}
+
+#lianjie {
+    position: absolute;
+    top: 40px;
+    left: 265px;
+    font: 12px/18px "微软雅黑", "黑体";
+    color: #969696;
+}
+
+a.a1:link, a.a1:visited {
+    font: 12px/18px "微软雅黑", "黑体";
+    color: #969696;
+}
+
+a.a2:link, a.a2:visited {
+    padding-right: 15px;
+    font: 12px/18px "微软雅黑", "黑体";
+    color: #969696;
+    background: url(/images/iconsanjiao.jpg) no-repeat right center;
+}
+
+#lianjie1 {
+    position: absolute;
+    top: 7px;
+    left: 380px;
+}
+
+#lianjie2 {
+    position: absolute;
+    /* top: 5px;*/
+    left: 700px;
+}
+
+#xinxihua {
+    position: absolute;
+    top: 11px;
+    right: 13px;
+}
+
+#banner {
+    margin: 0px auto 0;
+    height: 312px;
+    background: url(../images/banner1.jpg) no-repeat center top;
+}
+
+#logo2 {
+    position: absolute;
+    top: 10px;
+    left: 885px;
+}
+
+
+
+
+/*引用*/
+#yp_sy_nav {
+    position: absolute;
+    top: 50px;
+    left: 488px;
+    width: 250px;
+    display: none;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+    #yp_sy_nav ul li {
+        background-color: #fff;
+        float: left;
+        width: 65px;
+        background: #f5f5f5;
+        border-bottom: solid 1px #e7e3e3;
+        font-size: 12px;
+        font-family: "宋体";
+    }
+
+    #yp_sy_nav ul a {
+        background-color: #fff;
+        cursor: pointer;
+        display: block;
+        width: 60px;
+        _width: 60px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+        #yp_sy_nav ul a:link {
+            background-color: #fff;
+            cursor: pointer;
+            color: #848484;
+            text-decoration: none;
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        #yp_sy_nav ul a:visited {
+            background-color: #fff;
+            cursor: pointer;
+            color: #848484;
+            text-decoration: none;
+        }
+
+        #yp_sy_nav ul a:hover {
+            background-color: #fff;
+            cursor: pointer;
+            color: #848484;
+            text-decoration: none;
+            font-weight: normal;
+            background: #fff;
+        }
+
+    #yp_sy_nav ul p {
+        background-color: #fff;
+        width: 240px;
+        text-align: left;
+        float: left;
+        padding-left: 3px;
+        height: auto;
+        margin: 0 auto;
+        color: #848484;
+        text-decoration: none;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+        #yp_sy_nav ul p span {
+            float: left;
+            padding: 0 3px;
+            color: #848484;
+            text-decoration: none;
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        #yp_sy_nav ul p a {
+            background-color: #fff;
+            cursor: pointer;
+            color: #848484;
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+            font-size: 12px;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        #yp_sy_nav ul p b {
+            background-color: #fff;
+            color: #848484;
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+
+/*引用s*/
+.all_companyjtcy {
+    z-index: 9999;
+    font-size: 14px;
+    font-weight: bold;
+    color: #d70000;
+    display: block;
+    font-family: "宋体";
+    float: left;
+    margin-left: - 230px;
+    position: relative;
+    height: 2px;
+    cursor: hand;
+    cursor: pointer;
+    left: 716px;
+    top: 33px;
+}
+
+.all_companyhy {
+    z-index: 9999;
+    font-size: 14px;
+    font-weight: bold;
+    color: #d70000;
+    font-family: "宋体";
+    position: absolute;
+    height: 2px;
+    cursor: hand;
+    cursor: pointer;
+    left: 600px;
+    top: 45px;
+}
+
+.khu_telephone {
+    padding-left: 150px;
+    float: left;
+}
+
+.all_companyhy_drop_box {
+    z-index: 10000;
+    background: #ebebeb;
+    position: absolute;
+    padding: 5px;
+    top: 4px;
+    left: 0px;
+}
+
+.clear {
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
+
+.all_companyhy_drop_box_in {
+    background: #FFFFFF;
+    padding: 5px;
+}
+
+.all_companyhy_earo {
+    width: 300px;
+}
+
+.all_companyhy_earo_bpox {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+.all_companyhy_earo h1.close {
+    font-size: 12px;
+    height: 22px;
+    color: #303030;
+    border: solid #cecece 1px;
+    line-height: 22px;
+    padding-left: 10px;
+    background: url (http://www.yonyou.com/images/index/company_dot1.jpg) 310px center no-repeat;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.all_companyhy_earo h1.open {
+    font-size: 12px;
+    height: 22px;
+    color: #FFFFFF;
+    border: solid #cecece 1px;
+    line-height: 22px;
+    padding-left: 10px;
+    background: url (http://www.yonyou.com/images/index/company_dot1.jpg) 310px center no-repeat #d60000;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.all_companyhy_earo_bpox h2 {
+    font-weight: lighter;
+    padding-top: 7px;
+    border-bottom: dotted #cccccc 1px;
+}
+
+    .all_companyhy_earo_bpox h2.none {
+        border: none;
+    }
+
+.all_companyhy_earo_bpox a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #6c6c6c;
+    width: auto;
+    padding-left: 10px;
+    display: block;
+    display: inline;
+    line-height: 22px;
+    background: url(http://www.yonyou.com/images/index/company_dot1.jpg) left no-repeat;
+    float: left;
+    margin-bottom: 0px;
+    padding-right: 8px;
+}
+
+    .all_companyhy_earo_bpox a.fir_area_name {
+        background: url(http://www.yonyou.com/images/index/company_dot1.jpg) 5px center no-repeat;
+        color: #d60000;
+        height: 22px;
+        width: 45px;
+        display: inline;
+        float: left;
+        line-height: 23px;
+        padding-left: 15px;
+        font-weight: bold;
+    }
+
+.area_name_right {
+    float: left;
+    width: 212px;
+}
+
+
+/*引用s*/
+.all_company {
+    font-size: 14px;
+    font-weight: bold;
+    color: #d70000;
+    font-family: "宋体";
+    height: 2px;
+    cursor: hand;
+    cursor: pointer;
+    left: 700px;
+    top: 55px;
+}
+
+.khu_telephone {
+    padding-left: 150px;
+    float: left;
+}
+
+.all_company_drop_box {
+    background: #ebebeb;
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
+
+.all_company_drop_box_in {
+    background: #FFFFFF;
+    padding: 5px;
+}
+
+.all_company_earo {
+    width: 300px;
+}
+
+.all_company_earo_bpox {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+.all_company_earo h1.close {
+    font-size: 12px;
+    height: 22px;
+    color: #303030;
+    border: solid #cecece 1px;
+    line-height: 22px;
+    padding-left: 10px;
+    background: url (http://www.yonyou.com/images/index/company_dot1.jpg) 310px center no-repeat;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.all_company_earo h1.open {
+    font-size: 12px;
+    height: 22px;
+    color: #FFFFFF;
+    border: solid #cecece 1px;
+    line-height: 22px;
+    padding-left: 10px;
+    background: url (http://www.yonyou.com/images/index/company_dot1.jpg) 310px center no-repeat #d60000;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.all_company_earo_bpox h2 {
+    font-weight: lighter;
+    padding-top: 7px;
+    border-bottom: dotted #cccccc 1px;
+}
+
+    .all_company_earo_bpox h2.none {
+        border: none;
+    }
+
+.all_company_earo_bpox a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #6c6c6c;
+    width: auto;
+    padding-left: 10px;
+    display: block;
+    display: inline;
+    line-height: 22px;
+    background: url(http://www.yonyou.com/images/index/company_dot1.jpg) left no-repeat;
+    float: left;
+    margin-bottom: 0px;
+    padding-right: 8px;
+}
+
+    .all_company_earo_bpox a.fir_area_name {
+        background: url(http://www.yonyou.com/images/index/company_dot1.jpg) 5px center no-repeat;
+        color: #d60000;
+        height: 22px;
+        width: 45px;
+        display: inline;
+        float: left;
+        line-height: 23px;
+        padding-left: 15px;
+        font-weight: bold;
+    }
+
+.area_name_right {
+    float: left;
+    width: 212px;
+}
+
+/*导航*/
+#nav {
+    position: absolute;
+    top: 57px;
+    margin-left: 150px;
+    /*   left: 140px;*/
+}
+
+#navlist li {
+    float: left;
+    display: inline;
+    margin: 1px 5px;
+}
+
+    #navlist li a:hover {
+        color: #5084ff;
+    }
+
+#navlist a:link, #navlist a:visited {
+    display: block;
+    /*    padding: 0 20px;*/
+    font: 16px/33px "微软雅黑", "黑体";
+    color: #000;
+}
+
+#navlist a.current:link, #nav a.current:visited {
+    color: #fff;
+    /*	height:57px;*/
+    background: #017afb;
+    padding: 3px;
+}
+
+#nav2 {
+    position: absolute;
+    top: 33px;
+    left: 80px;
+    width: 720px;
+    height: 215px;
+    background: url(../images/bgjiejuefangan2.png) no-repeat 0 0;
+}
+
+#Label4, #Label1, #Label5 {
+    font-size: 14px;
+}
+
+
+.navcon {
+    display: none;
+}
+
+    .navcon dt {
+        padding-bottom: 10px;
+        font: 14px/18px "微软雅黑", "黑体";
+        color: #e60012;
+    }
+
+    .navcon li {
+        margin: 0;
+        list-style-position: outside;
+        padding-left: 10px;
+        background: url(../images/iconlist.gif) no-repeat left center;
+    }
+
+        .navcon li a:link, .navcon li a:visited {
+            font: 12px/24px "微软雅黑", "黑体" !important;
+            color: #696969;
+        }
+
+#navdl1 {
+    float: left;
+    display: inline;
+    margin: 19px 0 0 43px;
+}
+
+#navul1 {
+    float: left;
+    display: inline;
+    width: 90px;
+}
+
+#navul2 {
+    float: left;
+    display: inline;
+    width: 87px;
+}
+
+#navul3 {
+    float: left;
+    display: inline;
+    width: 135px;
+}
+
+#navdl2 {
+    float: left;
+    display: inline;
+    margin: 19px 0 0 12px;
+}
+
+#navul4 {
+    float: left;
+    display: inline;
+    width: 100px;
+}
+
+#navul5 {
+    float: left;
+    display: inline;
+    width: 120px;
+}
+
+#navul6 {
+    float: left;
+    display: inline;
+    width: 129px;
+}
+
+#navdl3 {
+    float: left;
+    display: inline;
+    margin: 19px 0 0 14px;
+}
+
+#navul7 {
+    float: left;
+    display: inline;
+    width: 70px;
+}
+
+#nav3 {
+    position: absolute;
+    top: 33px;
+    left: 175px;
+    padding: 18px 0 0 40px;
+    width: 230px;
+    height: 152px;
+    background: url(../images/bgfuwu.png) no-repeat 0 0;
+}
+
+#navul8 {
+    float: left;
+    display: inline;
+    width: 110px;
+}
+
+#navul9 {
+    float: left;
+    display: inline;
+    width: 87px;
+}
+
+#nav5 {
+    position: absolute;
+    top: 33px;
+    left: 340px;
+    padding: 18px 0 0 40px;
+    width: 230px;
+    height: 182px;
+    background: url(../images/bghuoban.png) no-repeat 0 0;
+}
+
+#nav6 {
+    position: absolute;
+    top: 33px;
+    left: 600px;
+    padding: 18px 0 0 40px;
+    width: 230px;
+    height: 158px;
+    background: url(../images/bgdongtai.png) no-repeat 0 0;
+}
+
+#nav66 {
+    position: absolute;
+    top: 33px;
+    left: 520px;
+    padding: 18px 0 0 40px;
+    width: 230px;
+    height: 158px;
+    background: url(../images/bgdongtai.png) no-repeat 0 0;
+}
+
+#navul111 {
+    float: left;
+    display: inline;
+    width: 110px;
+}
+
+#navul166 {
+    float: left;
+    display: inline;
+    width: 120px;
+}
+
+
+#nav666 {
+    position: absolute;
+    top: 33px;
+    left: 260px;
+    padding: 18px 0 0 40px;
+    width: 230px;
+    height: 158px;
+    background: url(../images/bghuoban.png) no-repeat 0 0;
+}
+
+#navul1111 {
+    float: left;
+    display: inline;
+    width: 110px;
+}
+
+#navul1666 {
+    float: left;
+    display: inline;
+    width: 120px;
+}
+
+
+
+#nav7 {
+    position: absolute;
+    top: 33px;
+    left: 690px;
+    padding: 18px 0 0 40px;
+    width: 230px;
+    height: 158px;
+    background: url(../images/bgtouzi.png) no-repeat 0 0;
+}
+
+#nav8 {
+    position: absolute;
+    top: 33px;
+    left: 790px;
+    padding: 18px 0 0 40px;
+    width: 230px;
+    height: 158px;
+    background: url(../images/bgguanyu.png) no-repeat 0 0;
+}
+
+#navul13 {
+    float: left;
+    display: inline;
+    width: 120px;
+}
+
+#navul14 {
+    float: left;
+    display: inline;
+    width: 87px;
+}
+
+#nav9 {
+    position: absolute;
+    top: 33px;
+    left: 865px;
+    padding: 18px 0 0 40px;
+    width: 318px;
+    height: 182px;
+    background: url(../images/bglianxi.png) no-repeat 0 0;
+}
+
+#navul10 {
+    float: left;
+    display: inline;
+    width: 120px;
+}
+
+#navul15 {
+    float: left;
+    display: inline;
+    width: 100px;
+}
+
+#navul11 {
+    float: left;
+    display: inline;
+    width: 120px;
+}
+
+#navul16 {
+    float: left;
+    display: inline;
+    width: 100px;
+}
+
+#navul18 {
+    float: left;
+    display: inline;
+    width: 150px;
+}
+
+#navul17 {
+    float: left;
+    display: inline;
+    width: 100px;
+}
+
+
+
+/*面包屑导航*/
+#breadcrumb {
+    margin: 0 auto 0;
+    padding-left: 19px;
+    width: 949px;
+    border: 1px solid #d1d1d1;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    background: url (/images/bgbreadcrumb.jpg) repeat-x 0 0;
+}
+
+    #breadcrumb a:link, #breadcrumb a:visited {
+        display: inline-block;
+        padding: 0 10px 0 17px;
+        font: 12px/28px "宋体";
+        color: #e60012;
+        background: url(/images/bgbreadcrumb2.jpg) no- repeat left center;
+    }
+
+    #breadcrumb img {
+        display: inline;
+    }
+
+    #breadcrumb a.current:link, #breadcrumb a.current:visited {
+        color: #414041;
+    }
+
+    #breadcrumb a.home:link, a.home:visited {
+        padding-left: 0;
+        background: none;
+    }

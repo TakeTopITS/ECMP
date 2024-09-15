@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ExpenseClaim>
+    <DetailECID>20</DetailECID>
+    <ECID>20</ECID>
+    <ExpenseName>项目485 市政协提案资料整理项目 费用报销申请</ExpenseName>
+    <Purpose />
+    <Amount>1050.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <ApplyTime>2020-11-27T10:37:16+08:00</ApplyTime>
+    <Status>审批中    </Status>
+    <RelatedType>项目                </RelatedType>
+    <RelatedID>485</RelatedID>
+  </T_ExpenseClaim>
+</NewDataSet>

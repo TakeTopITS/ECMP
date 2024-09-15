@@ -1,0 +1,145 @@
+﻿
+
+a:visited {
+    background: url(ImagesSkin/MouseVisited.gif);
+}
+
+a:hover, button:hover, input[type="submit"]:hover {
+    BACKGROUND-REPEAT: no-repeat;
+    BACKGROUND-POSITION: center bottom;
+    COLOR: #003366;
+    TEXT-DECORATION: none;
+    PADDING-TOP: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+a:active, button:active, input[type="submit"]:active {
+    background: url(ImagesSkin/MouseActive.gif);
+}
+/*-------------------------原ImagesSkin---------------*/
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+
+body {
+    margin: 0px;
+    background-image: #fff;
+    background-repeat: repeat-y;
+    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+img {
+    border: none;
+}
+
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+    a:link {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        font-family: "microsoft yahei";
+    }
+
+    a:hover {
+        background-repeat: no-repeat;
+        text-decoration: none;
+    }
+
+    a:active {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:visited {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+.menuall {
+    text-align: right;
+    width: 149;
+}
+
+    .menuall div {
+        margin: 0px 0 5px 0px;
+        text-align: left;
+    }
+
+.zi {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 25px;
+}
+
+
+.title12 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.title14 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #003366;
+}
+
+
+/*--------------------------------短按钮---------------------------*/
+.inpuIM {
+    background-image: url(ImagesSkin/IMBackground.jpg);
+    margin: 0px;
+    height: 24px;
+    width: 74px;
+    text-align: left;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    font-size: 12px;
+    color: #29728D;
+}
+
+/*--------------------------------短按钮---------------------------*/
+.personSpace {
+    background: url(ImagesSkin/PersonSpace.png) no-repeat;
+    margin: 0px;
+    height: 20px;
+    width: 30px;
+    text-align: center;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    /*font-size: 12px;*/
+    /*color: #29728D;*/
+}
+/*--------------------------------20131127---------------------------*/
+
+div.leftSet {
+    background: url(ImagesSkin/leftSetbg.gif) no-repeat;
+    height: 72px;
+    line-height: 72px;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_GoodsProductionOrder>
+    <DetailPDID>17</DetailPDID>
+    <PDID>17</PDID>
+    <PDName>PD2020070017</PDName>
+    <CreatorCode>C7094               </CreatorCode>
+    <CreatorName>员工C7094           </CreatorName>
+    <ProductionDate>2020-07-18T00:00:00+08:00</ProductionDate>
+    <RelatedType>Other     </RelatedType>
+    <RelatedID>0</RelatedID>
+    <Status>审批中    </Status>
+    <FinishedDate>2020-07-18T00:00:00+08:00</FinishedDate>
+    <ProductionType>SelfMade            </ProductionType>
+    <SOID>0</SOID>
+    <RouteName />
+    <CurrencyType>人民币</CurrencyType>
+    <Amount>100000.000</Amount>
+    <BelongDepartCode>10108               </BelongDepartCode>
+    <BelongDepartName>总裁办</BelongDepartName>
+  </T_GoodsProductionOrder>
+</NewDataSet>

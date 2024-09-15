@@ -1,0 +1,197 @@
+﻿.scheduler_white_event_inner  
+{
+	margin-right: 1px;
+	padding: 4px;
+	font-size: 12px;
+	
+	color: #666;
+	background: #fff;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#eee);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ffffff),
+		to(#eee));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ffffff", endColorStr="#eeeeee");
+	border: 1px solid #999;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow:
+		0px 2px 3px rgba(000,000,000,0.3),
+		inset 0px 0px 2px rgba(255,255,255,0.8);
+	-webkit-box-shadow:
+		0px 2px 3px rgba(000,000,000,0.3),
+		inset 0px 0px 2px rgba(255,255,255,0.8);
+	box-shadow:
+		0px 2px 3px rgba(000,000,000,0.3),
+		inset 0px 0px 2px rgba(255,255,255,0.8);
+}
+
+.scheduler_white_event_hover .scheduler_white_event_inner 
+{
+}
+
+.scheduler_white_event .scheduler_white_action:hover
+{
+	opacity: 1;
+	filter: none;
+}
+
+.scheduler_white_red .scheduler_white_event_inner 
+{
+	border: 1px solid #c00004;
+	background: #ab0000;
+	background: -moz-linear-gradient(
+		top,
+		#ff2819 0%,
+		#ab0000);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ff2819),
+		to(#ab0000));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ff2819", endColorStr="#ab0000");
+}
+
+.scheduler_white_main 
+{
+	border: 1px solid #999;
+}
+
+.scheduler_white_timeheader 
+{
+	cursor: default;
+	color: #666;
+}
+
+.scheduler_white_message
+{
+	padding: 10px; 
+	opacity: 0.6;
+	color: #ffffff;
+	background: #ffa216;
+	background: -moz-linear-gradient(
+		top,
+		#ffa216 0%,
+		#ff8400);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ffa216),
+		to(#ff8400));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ffa216", endColorStr="#ff8400");
+}
+
+.scheduler_white_timeheadergroup,
+.scheduler_white_timeheadercol
+{
+	color: #666;
+	background: #eee;
+	background: -moz-linear-gradient(
+		top,
+		#eee 0%,
+		#ddd);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#eee),
+		to(#ddd));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#eeeeee", endColorStr="#dddddd");
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.scheduler_white_rowheader,
+.scheduler_white_corner
+{
+	color: #666;
+	background: #eee;
+	background: -moz-linear-gradient(
+		left,
+		#eee 0%,
+		#ddd);
+	background: -webkit-gradient(
+		linear, left top, right top, 
+		from(#eee),
+		to(#ddd));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#eeeeee", endColorStr="#dddddd", GradientType=1);
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.scheduler_white_timeheadergroup_inner
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	text-align: center;
+	border-right: 1px solid #999;
+	text-align: center;
+}
+
+.scheduler_white_timeheadercol_inner
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	text-align: center;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+}
+
+.scheduler_white_cellcolumn 
+{
+	background: #fff;
+}
+
+.scheduler_white_tree_image_no_children {
+	background-image: url('scheduler_white/tree_nochildren.png');
+}
+.scheduler_white_tree_image_expand {
+	background-image: url('scheduler_white/tree_expand.png');
+}
+.scheduler_white_tree_image_collapse {
+	background-image: url('scheduler_white/tree_collapse.png');
+}
+
+.scheduler_white_divider 
+{
+	background-color: #999;
+}
+
+.scheduler_white_divider_horizontal
+{
+	background-color: #999;
+}
+
+.scheduler_white_matrix_vertical_line 
+{
+	background-color: #eee;
+}
+
+.scheduler_white_matrix_horizontal_line 
+{
+	background-color: #eee;
+}
+
+.scheduler_white_resourcedivider 
+{
+	background-color: #999;
+}
+
+.scheduler_white_shadow_inner 
+{
+	background-color: #666666;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	height: 100%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}

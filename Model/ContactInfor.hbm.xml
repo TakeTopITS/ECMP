@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ContactInfor, ProjectMgt.Model" table="T_ContactInfor">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="FirstName" type ="String" />
+    <property name ="LastName" type ="String" />
+    <property name ="Gender" type ="String" />
+    <property name ="Age" type ="int" />
+    <property name ="OfficePhone" type ="String" />
+    <property name ="HomePhone" type ="String" />
+    <property name ="MobilePhone" type="String" />
+    <property name ="Email1" type ="String" />
+    <property name ="Email2" type ="String" />
+    <property name ="WebSite" type ="String" />
+    <property name ="Msn" type ="String" />
+    <property name ="Ysn" type ="String" />
+    <property name ="QQ" type ="String" />
+    <property name ="Company" type ="String" />
+    <property name ="Department" type ="String" />
+    <property name ="Duty" type ="String" />
+    <property name ="CompanyAddress" type ="String" />
+    <property name ="Country" type ="String" />
+    <property name ="State" type ="String" />
+    <property name ="City" type ="String" />
+    <property name ="HomeAddress" type ="String" />
+    <property name ="PostCode" type ="String" />
+    <property name ="UserCode" type ="String" />
+    <property name ="Type" type ="String" />
+    <property name ="RelatedType" type ="String" />
+    <property name ="RelatedID" type ="String" />
+  </class>
+</hibernate-mapping>

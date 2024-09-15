@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GoodsDeliveryOrder, ProjectMgt.Model" table="T_GoodsDeliveryOrder">
+
+    <id name="DOID" column="DOID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="DOName" type ="String" />
+
+    <property name ="DeliveryTime" type ="DateTime" />
+
+    <property name ="ArrivalTime" type ="DateTime" />
+
+    <property name ="InvoiceHead" type ="String" />
+
+    <property name ="ReceiverName" type ="String" />
+
+    <property name ="PurchaseName" type ="String" />
+
+    <property name ="PurchasePhone" type ="String" />
+
+    <property name ="CarTeam" type ="String" />
+
+    <property name ="Driver" type ="String" />
+
+    <property name ="CarCode" type ="String" />
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="CurrencyType" type ="String" />
+
+    <property name ="OperatorCode" type ="String" />
+
+    <property name ="OperatorName" type ="String" />
+
+    <property name ="RelatedType" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+
+    <property name ="Comment" type ="String" />
+
+    <property name ="Status" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZCompact, ProjectMgt.Model" table="T_WZCompact">
+
+    <id name="CompactCode" column="CompactCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="ProjectCode" type ="String" />
+    <property name ="NeedCode" type ="String" />
+    <property name ="SupplierCode" type ="String" />
+    <property name ="CompactName" type ="String" />
+    <property name ="CompactText" type ="String" />
+    <property name ="CompactTextURL" type ="String" />
+    <property name ="RowNumber" type ="int" />
+    <property name ="CompactMoney" type ="Decimal" />
+    <property name ="CollectMoney" type ="Decimal" />
+    <property name ="RequestMoney" type ="Decimal" />
+    <property name ="NotRequestMoney" type ="Decimal" />
+    <property name ="MarkTime" type ="DateTime" />
+    <property name ="SingTime" type ="String" />
+    <property name ="PurchaseEngineer" type ="String" />
+    <property name ="ControlMoney" type ="String" />
+    <property name ="VerifyTime" type ="String" />
+    <property name ="JuridicalPerson" type ="String" />
+    <property name ="ApproveTime" type ="String" />
+    <property name ="DelegateAgent" type ="String" />
+    <property name ="EffectTime" type ="String" />
+    <property name ="Compacter" type ="String" />
+    <property name ="ReceiveTime" type ="String" />
+    <property name ="StoreRoom" type ="String" />
+    <property name ="Safekeep" type ="String" />
+    <property name ="Checker" type ="String" />
+    <property name ="CheckIsMark" type ="int" />
+    <property name ="CancelTime" type ="String" />
+    <property name ="BeforePayMoney" type ="Decimal" />
+    <property name ="BeforePayBalance" type ="Decimal" />
+    <property name ="PayIsMark" type ="int" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="RelatedConstractCode" type="String" />
+  </class>
+</hibernate-mapping>

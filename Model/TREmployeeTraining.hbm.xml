@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.TREmployeeTraining, ProjectMgt.Model" table="T_TREmployeeTraining">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="UserCode" column="UserCode" type="String">
+		</property>
+		<property name="ProfessionalSkillLevel" column="ProfessionalSkillLevel" type="String">
+		</property>
+		<property name="ProfessionSkillNumber" column="ProfessionSkillNumber" type="String">
+		</property>
+		<property name="ValidityType" column="ValidityType" type="String">
+		</property>
+		<property name="ReleaseTime" column="ReleaseTime" type="DateTime">
+		</property>
+		<property name="AnnValidTime" column="AnnValidTime" type="String">
+		</property>
+		<property name="AnnCertificateNo" column="AnnCertificateNo" type="String">
+		</property>
+		<property name="EnglishRiew" column="EnglishRiew" type="String">
+		</property>
+		<property name="TrainingInfo" column="TrainingInfo" type="String">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+		<property name="EnterTime" column="EnterTime" type="DateTime">
+		</property>
+	</class>
+</hibernate-mapping>

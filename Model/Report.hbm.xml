@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.Report, ProjectMgt.Model" table="T_Report">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ReportType" type ="String" />
+    <property name ="ReportName" type ="String" />
+    <property name ="ReportComment" type ="String" />
+    <property name ="TemName" type ="String" />
+    <property name ="ReportURL" type ="String" />
+    <property name ="CreatorCode" type ="String" />
+    <property name ="CreatorName" type ="String" />
+    <property name ="CreateTime" type ="DateTime" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZRequest, ProjectMgt.Model" table="T_WZRequest">
+
+    <id name="RequestCode" column="RequestCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="CompactCode" type ="String" />
+    <property name ="ProjectCode" type ="String" />
+    <property name ="SupplierCode" type ="String" />
+    <property name ="UseWay" type ="String" />
+    <property name ="ActualMoney" type ="Decimal" />
+    <property name ="RatioMoney" type ="Decimal" />
+    <property name ="Freight" type ="Decimal" />
+    <property name ="OtherObject" type ="Decimal" />
+    <property name ="BorrowMoney" type ="Decimal" />
+    <property name ="RowNumber" type ="int" />
+    <property name ="Borrower" type ="String" />
+    <property name ="RequestTime" type ="DateTime" />
+    <property name ="Approver" type ="String" />
+    <property name ="CancelTime" type ="String" />
+    <property name ="BeforePayMoney" type ="Decimal" />
+    <property name ="PayMoney" type ="Decimal" />
+    <property name ="Arrearage" type ="Decimal" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsPay" type ="int" />
+    <property name ="IsMark" type ="int" />
+    <property name ="IsFinisth" type ="int" />
+  </class>
+</hibernate-mapping>

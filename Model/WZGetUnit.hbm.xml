@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZGetUnit, ProjectMgt.Model" table="T_WZGetUnit">
+
+    <id name="UnitCode" column="UnitCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="UnitName" type ="String" />
+    <property name ="Leader" type ="String" />
+    <property name ="DelegateAgent" type ="String" />
+    <property name ="FeeManage" type ="String" />
+    <property name ="MaterialPerson" type ="String" />
+    <property name ="IsMark" type ="int" />
+  </class>
+</hibernate-mapping>

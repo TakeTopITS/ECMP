@@ -1,0 +1,173 @@
+body
+{
+	/*background-image: url(Images/login_bj.jpg); */
+	color: WindowText;
+	line-height: 20px;
+	padding: 0;
+	font-size: 13px;
+	font-family: 宋体,Verdana,Tahoma,Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-repeat: no-repeat;
+	margin-top: 2px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+}
+/*--------------------------------后来加的---------------------------*/
+.topright {
+	background-image: url(ImagesSkin/top_right.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	text-align: right;
+	padding-right: 8px;
+	height: 88px;
+	padding-top: 0px;
+	margin: 0px;
+}
+#bg {
+	font-size: 12px;
+	background-image: url(ImagesSkin/top_bj.jpg);
+	margin: 0px;
+	padding: 0px;
+}
+ .tdBottom
+ {
+     border-top:solid 0px #6d92ad ;
+   border-bottom:solid 1px #6d92ad ;
+   border-left:solid 1px #6d92ad ;
+   border-right:solid 1px #6d92ad ;
+     }
+  .tdFullBorder
+ {
+   border-top:solid 1px #6d92ad ;
+   border-bottom:solid 1px #6d92ad ;
+   border-left:solid 1px #6d92ad ;
+   border-right:solid 1px #6d92ad ;
+ }
+ 
+ .ButtonCss
+{
+    background: White;
+    font-family: 宋体,Verdana,Tahoma;
+    cursor: hand;
+    height: 21px;
+    text-align: center;
+    height: 21px;
+    border: 1px solid #6C92AD;
+    background-image:url('ImagesSkin/btnBG.gif');
+}
+/*--------------------------------------------------------------------*/
+
+#DivWhole
+{
+    z-index: 103;
+    width: 980px;
+    top: 2px;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#DivLeft
+{
+    width: 170px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+#DivRight
+{
+    position: absolute;
+    left: 175px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*------------------------------TABLE模式--------------------------------*/
+
+/*DataList表头样式*/
+#DataListHeadTable
+{
+    border-collapse: collapse;
+}
+
+
+#DataListHeadTable td, th
+{
+    border: 1px Solid #FAFAFA;
+    vertical-align: top;
+}
+
+/*DataList明细表样式*/
+#DataListDetailTable
+{
+    border-collapse: collapse;
+}
+
+#DataListDetailTable td, th
+{
+    border: 1px Solid #FAFAFA;
+    vertical-align: top;
+}
+
+/*完整边框表*/
+.FullBorderTable
+{
+    border-collapse: collapse;
+}
+
+
+.FullBorderTable td, th
+{
+    border: 1px Solid #FAFAFA;
+    vertical-align: top;
+}
+
+/*无边框表*/
+.NoBorderTable
+{
+    border-collapse: collapse;
+}
+
+
+.NoBorderTable td, th
+{
+    border: 0px Solid #FAFAFA;
+    vertical-align: top;
+}
+
+.heading
+{
+    font-size: xx-small;
+    font-family: Tahoma;
+    color: Black;
+    font-weight: bold;
+    border-bottom: 1px solid #394f66;
+    border-right: 1px solid #394f66;
+    border-top: 1px solid #394f66;
+    border-left: 1px solid #394f66;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=  '#7FCCFF' , EndColorStr= '#007FCC' );
+}
+.normal
+{
+    font-size: xx-small;
+    font-family: Tahoma;
+    text-align: center;
+    background-color: #CCFFCC filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=  '#ddeeff' , EndColorStr= '#aaccee' );
+}
+.normal2
+{
+    font-size: xx-small;
+    font-family: Tahoma;
+    text-align: center;
+    background-color: #CCFFCC;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=  '#ffffff' , EndColorStr= '#ddeeff' );
+}
+.empty
+{
+    font-size: xx-small;
+    background-color: #CCFFCC;
+}
+

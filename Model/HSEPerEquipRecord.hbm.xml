@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSEPerEquipRecord, ProjectMgt.Model" table="T_HSEPerEquipRecord">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="CompanyFor" column="CompanyFor" type="String">
+		</property>
+		<property name="Address" column="Address" type="String">
+		</property>
+		<property name="EinNo" column="EinNo" type="String">
+		</property>
+		<property name="ValidityStart" column="ValidityStart" type="DateTime">
+		</property>
+		<property name="ValidityEnd" column="ValidityEnd" type="DateTime">
+		</property>
+		<property name="LinkTel" column="LinkTel" type="String">
+		</property>
+		<property name="Email" column="Email" type="String">
+		</property>
+		<property name="ZipCode" column="ZipCode" type="String">
+		</property>
+		<property name="SuppServScope" column="SuppServScope" type="String">
+		</property>
+		<property name="BankName" column="BankName" type="String">
+		</property>
+		<property name="AuditStatus" column="AuditStatus" type="String">
+		</property>
+		<property name="Fax" column="Fax" type="String">
+		</property>
+		<property name="WebAddress" column="WebAddress" type="String">
+		</property>
+		<property name="Qualifications" column="Qualifications" type="String">
+		</property>
+		<property name="Type" column="Type" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

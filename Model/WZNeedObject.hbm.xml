@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZNeedObject, ProjectMgt.Model" table="T_WZNeedObject">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="NeedCode" type ="String" />
+    <property name ="Vendee" type ="String" />
+
+    <property name ="PersonDelegate" type ="String" />
+    <property name ="OpeningBank" type ="String" />
+    <property name ="AccountNumber" type ="String" />
+    <property name ="RateNumber" type ="String" />
+    <property name ="UnitAddress" type ="String" />
+    <property name ="ZipCode" type ="String" />
+    <property name ="AccountPhone" type ="String" />
+    <property name ="InternetUrl" type ="String" />
+    <property name ="PurchaseEngineer" type ="String" />
+    <property name ="Fax" type ="String" />
+    <property name ="ContactPhone" type ="String" />
+    <property name ="Mobile" type ="String" />
+    <property name ="Email" type ="String" />
+    <property name ="QQ" type ="String" />
+    <property name ="IsMark" type ="int" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GoodsShipmentReport, ProjectMgt.Model" table="V_GoodsShipmentReport">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ShipmentNO" type ="int" />
+
+    <property name ="ShipmentType" type ="String" />
+
+    <property name ="ShipTime" type ="DateTime" />
+
+    <property name ="OperatorCode" type ="String" />
+
+    <property name ="OperatorName" type ="String" />
+
+    <property name ="Applicant" type ="String" />
+
+    <property name ="ApplicationReason" type ="String" />
+
+    <property name ="RelatedType" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+
+    <property name ="RelatedCode" type ="String" />
+
+    <property name ="GoodsCode" type ="String" />
+
+    <property name ="GoodsName" type ="String" />
+
+    <property name ="SN" type ="String" />
+
+    <property name ="ModelNumber" type ="String" />
+
+    <property name ="Spec" type ="String" />
+
+    <property name ="Number" type ="Decimal" />
+
+    <property name ="UnitName" type ="String" />
+
+    <property name ="Manufacturer" type ="String" />
+
+    <property name ="FromPosition" type="String" />
+
+    <property name ="FromGoodsID" type ="int" />
+
+    <property name ="ToPosition" type ="String" />
+
+    <property name ="WarrantyPeriod" type ="int" />
+
+    <property name ="WarrantyEndTime" type ="DateTime" />
+
+    <property name ="Comment" type ="String" />
+
+    <property name ="SourceType" type ="String" />
+
+    <property name ="SourceID" type ="int" />
+
+    <property name ="CustomerCode" type ="String" />
+
+    <property name ="CustomerName" type ="String" />
+
+    <property name ="GoodsSN" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.Admin, ProjectMgt.Model" table="T_Admin">
+
+    <id name="UserCode" column="UserCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="Password" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSEEnvironmentalObjectives, ProjectMgt.Model" table="T_HSEEnvironmentalObjectives">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="ProjectId" column="ProjectId" type="int">
+		</property>
+		<property name="ProjectName" column="ProjectName" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="EnterPer" column="EnterPer" type="String">
+		</property>
+		<property name="SetDate" column="SetDate" type="DateTime">
+		</property>
+		<property name="Version" column="Version" type="String">
+		</property>
+		<property name="VersionDate" column="VersionDate" type="DateTime">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="Reviewer" column="Reviewer" type="String">
+		</property>
+		<property name="ReviewDate" column="ReviewDate" type="DateTime">
+		</property>
+		<property name="ReviewResult" column="ReviewResult" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

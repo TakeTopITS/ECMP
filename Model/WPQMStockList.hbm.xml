@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMStockList, ProjectMgt.Model" table="T_WPQMStockList">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="StockClient" type ="String" />
+		<property name ="StockUnit" type ="String" />
+		<property name ="SpecimenSpecification" type ="String" />
+		<property name ="SpecimenNumber" type ="String" />
+		<property name ="SpecimenPreparationNote" type ="String" />
+		<property name ="WeldMaterialQuantity" type ="String" />
+		<property name ="StockEntrustDate" type ="DateTime" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

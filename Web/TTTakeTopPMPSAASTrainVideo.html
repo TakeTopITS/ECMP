@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/allAHandler.js"></script>
+    <script type="text/javascript" src="js/layer/layer/layer.js"></script>
+    <script type="text/javascript" src="js/popwindow.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(function () {
+
+            document.getElementById('DIV_TakeTopXMBVideo').style.display = 'block';
+            $('#movie').get(0).play();
+
+        });
+
+    </script>
+</head>
+<body>
+  
+    <div id="DIV_TakeTopXMBVideo" name="DIV_TakeTopXMBVideo">
+        <div style="text-align: center;">
+            <video id="movie" controls="controls" src="Logo/website/video/TakTopXMBOperationVideo.mp4" style="width:99%;height:640px;">您的浏览器不支持 video 标签。</video>
+        </div>
+    </div>
+    <br />
+    <br />
+    <!--<div style="text-align:center;">
+      
+        电话：021-51085119
+        QQ:  <a href="tencent://message/?uin=3166455252&amp;Site=&amp;Menu=yes">3166455252</a>
+        邮箱：service@taketopits.com
+    </div>-->
+</body>
+<script type="text/javascript" language="javascript">var cssDirectory = '<%=Session["CssDirectory"] %>'; var oLink = document.getElementById('mainCss'); oLink.href = 'css/' + cssDirectory + '/' + 'bluelightmain.css';</script></html>

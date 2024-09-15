@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZPickingPlanDetail, ProjectMgt.Model" table="T_WZPickingPlanDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PlanCode" type ="String" />
+    <property name ="ObjectCode" type ="String" />
+    <property name ="PlanNumber" type ="Decimal" />
+    <property name ="ConvertNumber" type ="Decimal" />
+    <property name ="PlanCost" type ="Decimal" />
+    <property name ="Remark" type ="String" />
+    <property name ="ReceivedNumber" type ="Decimal" />
+    <property name ="ShortNumber" type ="Decimal" />
+    <property name ="ShortConver" type ="Decimal" />
+    <property name ="PurchaseCode" type ="String" />
+    <property name ="ContractCode" type ="String" />
+    <property name ="TurnCode" type ="String" />
+    <property name ="StoreSign" type ="String" />
+    <property name ="Progress" type ="String" />
+    <property name ="OldCode" type ="String" />
+    <property name ="IsMark" type ="int" />
+  </class>
+</hibernate-mapping>

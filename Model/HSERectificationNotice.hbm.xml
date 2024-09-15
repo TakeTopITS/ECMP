@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSERectificationNotice, ProjectMgt.Model" table="T_HSERectificationNotice">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="SafeInspectId" column="SafeInspectId" type="String">
+		</property>
+		<property name="SafeInspectName" column="SafeInspectName" type="String">
+		</property>
+		<property name="DepartCode" column="DepartCode" type="String">
+		</property>
+		<property name="InspectionDate" column="InspectionDate" type="DateTime">
+		</property>
+		<property name="QESEngineerCode" column="QESEngineerCode" type="String">
+		</property>
+		<property name="SignDate1" column="SignDate1" type="DateTime">
+		</property>
+		<property name="ReqRecDate" column="ReqRecDate" type="DateTime">
+		</property>
+		<property name="ProjectManager" column="ProjectManager" type="String">
+		</property>
+		<property name="SignDate2" column="SignDate2" type="DateTime">
+		</property>
+		<property name="Inspectors" column="Inspectors" type="String">
+		</property>
+		<property name="RectificationOpinions" column="RectificationOpinions" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

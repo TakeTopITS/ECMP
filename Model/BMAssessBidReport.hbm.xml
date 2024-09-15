@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMAssessBidReport, ProjectMgt.Model" table="T_BMAssessBidReport">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="AssessBidRecordID" column="AssessBidRecordID" type="int">
+		</property>
+		<property name="AssessBidRecordName" column="AssessBidRecordName" type="String">
+		</property>
+		<property name="AssessSpeaker" column="AssessSpeaker" type="String">
+		</property>
+		<property name="AssessReportDate" column="AssessReportDate" type="DateTime">
+		</property>
+		<property name="AssessReportContent" column="AssessReportContent" type="String">
+		</property>
+		<property name="Reviewer" column="Reviewer" type="String">
+		</property>
+		<property name="ReviewResult" column="ReviewResult" type="String">
+		</property>
+		<property name="ReviewDate" column="ReviewDate" type="DateTime">
+		</property>
+	</class>
+</hibernate-mapping>

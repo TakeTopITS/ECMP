@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.Constract, ProjectMgt.Model" table="T_Constract">
+
+		<id name="ConstractID" column="ConstractID" type="int">
+
+			<generator class="identity" />
+		</id>
+
+		<property name ="ConstractCode" type ="String" />
+		<property name ="ConstractName" type ="String" />
+		<property name ="ConstractClass" type ="String" />
+		<property name ="Type" type ="String" />
+
+		<property name ="SignDate" type ="DateTime" />
+		<property name ="Amount" type ="Decimal" />
+		<property name ="Currency" type ="String" />
+		<property name ="ReAndPayType" type ="String" />
+		<property name ="DepartCode" type ="String" />
+		<property name ="DepartName" type ="String" />
+		<property name ="StartDate" type ="DateTime" />
+		<property name ="EndDate"  type ="DateTime" />
+		<property name ="Status" type ="String" />
+		<property name ="MainContent" type ="StringClob" />
+		<property name ="ConstractMainDocURL" type="String"/>
+		<property name ="Exception" type ="String" />
+		<property name ="PartA" type ="String" />
+		<property name ="PartAOperator" type ="String" />
+		<property name ="PartB" type ="String" />
+		<property name ="PartBOperator" type ="String" />
+		<property name ="RecordTime" type ="DateTime" />
+		<property name ="RecorderCode" type ="String" />
+		<property name ="RecorderName" type ="String" />
+
+		<property name ="RelatedCustomerCode" type ="String" />
+		<property name ="RelatedVendorCode" type ="String" />
+		<property name ="ParentCode" type ="String" />
+
+		<property name ="ArchiveTime" type ="String" />
+
+		<property name ="ProvisionalAmount" type ="Decimal" />
+		<property name ="SafeCivilizedFee" type ="Decimal" />
+		<property name ="PartAConnectWay" type ="String" />
+		<property name ="PartBConnectWay" type ="String" />
+
+	</class>
+</hibernate-mapping>

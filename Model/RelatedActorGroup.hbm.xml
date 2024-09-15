@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.RelatedActorGroup, ProjectMgt.Model" table="T_RelatedActorGroup">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="RelatedType" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+
+    <property name ="ActorGroupName" type ="String" />
+  </class>
+</hibernate-mapping>

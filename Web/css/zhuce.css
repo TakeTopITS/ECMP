@@ -1,0 +1,84 @@
+@charset "utf-8";
+#Label48, #Label2 {
+	font-size: 25px;
+	color: #3fb0f3;
+}
+.logo_zhuce {
+	width: 300px;
+	height: 80px;
+	vertical-align: middle;
+	margin-bottom:10px;
+}
+#form1 {
+	width: 100%;
+	height: 100%;
+	background:url(ImagesSkin/buildings1.png) center bottom no-repeat;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+#AboveDiv {
+	margin-top: 70px;
+}
+.formItemBgStyle {
+	color: #ACA5A5;
+	padding-right:5px;
+ /*   border-bottom-style:none!important;*/
+	border-bottom-color:!important;
+}
+button:hover, input[type="submit"]:hover {
+	background:#3499f3 !important;
+}
+#BT_GetCheckCode{
+	background:#f2ad51 !important;
+	border-radius:5px;
+	margin-left:13px;
+	margin-top:12px;
+}
+span#Label1{
+	margin-left:13px;
+}
+td#zuihou{
+	border-bottom-style:none;
+}
+img{
+	vertical-align:middle;
+	margin-right:5px;
+}
+input#TB_UserCode,input#TB_UserName,input#TB_Password,input#TB_EMail{
+	border:none;
+	border-bottom:2px #c3cdd5 solid;
+	line-height:2em;
+}
+select#ddlLangSwitcher{
+	width:90%;
+/*	margin-left:10px;*/
+}
+input#BT_Add{
+/*	width:90%;*/
+	color: #29728D;
+    background:#cbe5fe;
+	border-radius:5px;
+	margin-top:10px;
+	margin-left:-70px;
+}
+input#BT_UpdatePWD{
+	/*width:90%;*/
+	color: #29728D;
+    background:#cbe5fe;
+	border-radius:5px;
+	margin-top:10px;
+	margin-left:-70px;
+	}
+	input#TB_CheckCode{
+		margin-left:12px;
+		margin-top:7px;
+	}
+@media screen and (max-device-width: 970px) {
+#form1 {
+	/*background:url(ImagesSkin/buildings.png) center bottom no-repeat;*/
+}
+#AboveDiv {
+	margin-top: 30px;
+}
+}

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.ProGraphRegistration, ProjectMgt.Model" table="T_ProGraphRegistration">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="ProjectID" column="ProjectID" type="int">
+		</property>
+		<property name="FileNo" column="FileNo" type="String">
+		</property>
+		<property name="FileName" column="FileName" type="String">
+		</property>
+		<property name="FigureDate" column="FigureDate" type="DateTime">
+		</property>
+		<property name="FileNum" column="FileNum" type="int">
+		</property>
+		<property name="TableNum" column="TableNum" type="int">
+		</property>
+		<property name="FigureNum" column="FigureNum" type="int">
+		</property>
+		<property name="FilePath" column="FilePath" type="String">
+		</property>
+		<property name="Creator" column="Creator" type="String">
+		</property>
+		<property name="ArchiveIdentification" column="ArchiveIdentification" type="int">
+		</property>
+		<property name="DocType" column="DocType" type="String">
+		</property>
+		<property name="GraphNo" column="GraphNo" type="String">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

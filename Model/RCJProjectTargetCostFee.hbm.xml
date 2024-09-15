@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.RCJProjectTargetCostFee, ProjectMgt.Model" table="T_RCJProjectTargetCostFee">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="native" />
+    </id>
+
+    <property name ="ProjectID" type ="int" />
+    <property name ="CostFeeID" type ="int" />
+    <property name ="CostFeeSubID" type ="int" />
+    <property name ="CostType" type ="int" />
+    <property name ="OriginalCost" type ="double" />
+    <property name ="ActualCost" type ="double" />
+    <property name ="TargetCost" type ="double" />
+    <property name ="InputUser" type ="String" />
+    <property name ="LastTime" type ="String" />
+    <property name ="Memo" type="String" />
+  </class>
+</hibernate-mapping>

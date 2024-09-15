@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.CustomerQuestionStage, ProjectMgt.Model" table="T_CustomerQuestionStage">
+
+    <id name="Stage" column="Stage" type="String">
+
+      <generator class="assigned" />
+    </id>
+    <property name ="Possibility" type="int" />
+  </class>
+</hibernate-mapping>

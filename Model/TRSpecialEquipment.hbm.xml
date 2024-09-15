@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.TRSpecialEquipment, ProjectMgt.Model" table="T_TRSpecialEquipment">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="UserCode" column="UserCode" type="String">
+		</property>
+		<property name="SpeEquType" column="SpeEquType" type="String">
+		</property>
+		<property name="SpeEquProject" column="SpeEquProject" type="String">
+		</property>
+		<property name="SpeEquStartTime" column="SpeEquStartTime" type="DateTime">
+		</property>
+		<property name="SpeEquReviewTime" column="SpeEquReviewTime" type="DateTime">
+		</property>
+		<property name="SpeEquNumber" column="SpeEquNumber" type="String">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+		<property name="EnterTime" column="EnterTime" type="DateTime">
+		</property>
+	</class>
+</hibernate-mapping>

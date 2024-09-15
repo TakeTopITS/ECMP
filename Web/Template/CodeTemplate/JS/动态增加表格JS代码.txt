@@ -1,0 +1,187 @@
+jQuery.noConflict();
+function TakeTopInfoPath_OnClick(event, _this, control) {
+    var objTTID = _this.attributes["id"].value;
+
+    
+    if (objTTID.indexOf("xuhao") != -1) {
+
+        OnClickShow(objTTID);
+
+    }
+
+    if (objTTID.indexOf("field8") != -1) {
+        OnClickShow(objTTID);
+    }
+    else if (objTTID.indexOf("field9") != -1) {
+        OnClickShow(objTTID);
+    }
+    else if (objTTID.indexOf("field10") != -1) {
+        OnClickShow(objTTID);
+    }
+}
+function OnClickShow(objID) {
+    var divShow = "";
+    divShow = "<div style=\"top:0; left:0;\"><table class=\"formBgStyle\" border=\"1\" width=\"100%\"><tr>"
+
+    divShow += "<td class=\"formItemBgStyle\">物料代码</td><td class=\"formItemBgStyle\"><input type=\"text\" id=\"txtCode\" /></td>";
+
+    divShow += "<td class=\"formItemBgStyle\">物料名称</td><td class=\"formItemBgStyle\"><input type=\"text\" id=\"txtMaterial\" /></td>";
+
+    divShow += "<td class=\"formItemBgStyle\">型号</td><td class=\"formItemBgStyle\"><input type=\"text\" id=\"txtType\" /></td></tr>";
+
+    divShow += "<tr><td class=\"formItemBgStyle\">封装/规格</td><td class=\"formItemBgStyle\"><input type=\"text\" id=\"txtRule\" /></td>";
+    divShow += "<td class=\"formItemBgStyle\" colspan=\"4\"><input type=\"button\" value=\"查询\" onclick=\"QueryMaterial('" + objID + "');\" class=\"inpu\" /><input type=\"button\" value=\"关闭\" onclick=\"removeDivContent();\" class=\"inpu\" /></td></tr>";
+
+    divShow += "</table></div>";
+
+    var htmlMaterial = "<table border=\"1\" width=\"100%\" id=\"tableData\" class=\"formBgStyle\">";
+    htmlMaterial += "<tr><td class=\"formItemBgStyle\" width=\"10%\">选择</td><td class=\"formItemBgStyle\" width=\"10%\">物料代码</td><td class=\"formItemBgStyle\" width=\"11%\">物料名称</td><td class=\"formItemBgStyle\" width=\"15%\">型号</td><td class=\"formItemBgStyle\" width=\"20%\">封装/规格</td><td class=\"formItemBgStyle\" width=\"7%\">单位</td><td class=\"formItemBgStyle\" width=\"15%\">厂家/等级</td><td class=\"formItemBgStyle\" width=\"7%\">库存量</td></tr>";
+    var sqlMaterial = "select AssetCode,AssetName,ModelNumber,Spec,UnitName,Manufacturer,SUM(Number) as CheckInNumber from T_Asset where 1=2";
+    sqlMaterial += " group by AssetName,ModelNumber,Spec,UnitName,Manufacturer";
+    jQuery.ajax({
+        type: "POST",
+        dataType: "json",
+        url: "Handler/GetCommon.ashx",
+        data: "sql=" + escape(sqlMaterial),
+        success: function (json) {
+            jQuery.each(json, function (i) {
+                var trs = "<tr>";
+                trs += "<td align=\"center\" class=\"formItemBgStyle\"><input type=\"button\" value=\"选择\" onclick=\"OnClickSelect('" + objID + "','" + json[i].AssetCode + "','" + json[i].AssetName + "','" + json[i].ModelNumber + "','" + json[i].Spec + "','" + json[i].UnitName + "','" + json[i].Manufacturer + "'," + json[i].CheckInNumber + ")\" class=\"inpu\" /></td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].AssetCode + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].AssetName + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].ModelNumber + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].Spec + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].UnitName + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].Manufacturer + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].CheckInNumber + "</td>";
+                trs += "</tr>";
+                htmlMaterial += trs;
+            });
+            htmlMaterial += "</table>";
+            showdiv(100, 100, divShow + htmlMaterial, "MaterialID", objID);
+        },
+        error: function () {
+            //alert("加载失败");
+        }
+    });
+}
+function QueryMaterial(objID) {
+    var txtCode = jQuery.trim(jQuery("#txtCode").val());
+    var txtMaterial = jQuery.trim(jQuery("#txtMaterial").val());
+    var txtType = jQuery.trim(jQuery("#txtType").val());
+    var txtRule = jQuery.trim(jQuery("#txtRule").val());
+    var sqlMaterial = "select AssetCode,AssetName,ModelNumber,Spec,UnitName,Manufacturer,SUM(Number) as CheckInNumber from T_Asset where 1=1 ";
+    if (txtCode != null && txtCode != "") {
+        sqlMaterial += " and AssetCode like '%" + txtCode + "%'";
+    }
+    if (txtMaterial != null && txtMaterial != "") {
+        sqlMaterial += " and AssetName like '%" + txtMaterial + "%'";
+    }
+    if (txtType != null && txtType != "") {
+        sqlMaterial += " and ModelNumber like '%" + txtType + "%'";
+    }
+    if (txtRule != null && txtRule != "") {
+        sqlMaterial += " and Spec like '%" + txtRule + "%'";
+    }
+    sqlMaterial += " group by AssetCode,AssetName,ModelNumber,Spec,UnitName,Manufacturer";
+
+    //alert(sqlMaterial);
+
+    jQuery("#tableData tr:gt(0)").remove();
+    jQuery.ajax({
+        type: "POST",
+        dataType: "json",
+        url: "Handler/GetCommon.ashx",
+        data: "sql=" + escape(sqlMaterial),
+        success: function (json) {
+            var tbody = "";
+            jQuery.each(json, function (i) {
+                var trs = "<tr>";
+                trs += "<td align=\"center\" class=\"formItemBgStyle\"><input type=\"button\" value=\"选择\" onclick=\"OnClickSelect('" + objID + "','" + json[i].AssetCode + "','" + json[i].AssetName + "','" + json[i].ModelNumber + "','" + json[i].Spec + "','" + json[i].UnitName + "','" + json[i].Manufacturer + "'," + json[i].CheckInNumber + ")\" class=\"inpu\" /></td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].AssetCode + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].AssetName + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].ModelNumber + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].Spec + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].UnitName + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].Manufacturer + "</td>";
+                trs += "<td class=\"formItemBgStyle\">" + json[i].CheckInNumber + "</td>";
+                trs += "</tr>";
+                tbody += trs;
+            });
+            jQuery("#tableData").append(tbody);
+        },
+        error: function () {
+            var tbody = "<tr><td colspan=\"8\" class=\"formItemBgStyle\">暂无数据！</td></tr>";
+            jQuery("#tableData").append(tbody);
+        }
+    });
+}
+
+function OnClickSelect(objTID, AssetCode, AssetName, Type, Spec, UnitName, Manufacturer, CheckInNumber) {
+    try {
+        jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[0].value = AssetCode;
+        TakeTopInfoPath_OnControlChange(event, document.getElementById(jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[0].id));
+        jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[1].value = AssetName;
+        TakeTopInfoPath_OnControlChange(event, document.getElementById(jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[1].id));
+        jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[2].value = Type;
+        TakeTopInfoPath_OnControlChange(event, document.getElementById(jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[2].id));
+        jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[3].value = Spec;
+        TakeTopInfoPath_OnControlChange(event, document.getElementById(jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[3].id));
+        jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[4].value = UnitName;
+        TakeTopInfoPath_OnControlChange(event, document.getElementById(jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[4].id));
+        jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[9].value = Manufacturer;
+        TakeTopInfoPath_OnControlChange(event, document.getElementById(jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[9].id));
+        jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[10].value = CheckInNumber;
+        TakeTopInfoPath_OnControlChange(event, document.getElementById(jQuery(document.getElementById(objTID).parentElement.parentElement).find("textarea")[10].id));
+
+        removeDivContent();
+    } catch (e) {
+        alert(e.stack);
+    }
+}
+
+function showdiv(l, t, content, id, objTID) {
+    if (document.getElementById("MaterialID") != null) {
+        document.body.removeChild(document.getElementById("MaterialID"));
+    }
+
+    var divContent = document.createElement("div");
+    divContent.id = id;
+    divContent.style.zIndex = "666666";
+    divContent.style.position = "absolute";
+    divContent.style.overflowX = "auto";
+    divContent.style.overflowY = "auto";
+    // 设置div的绝对坐标
+    var pos = findPos(document.getElementById(objTID));
+    divContent.style.left = pos.x + "px";
+    divContent.style.top = (pos.y + document.getElementById(objTID).offsetHeight) + "px";
+    divContent.style.width = "1000px";
+    divContent.style.Height = "500px";
+    divContent.style.border = "1px solid";
+    divContent.style.overflow = "auto";
+    divContent.style.backgroundColor = "#F7F4EC";
+    divContent.innerHTML = content;
+    document.body.appendChild(divContent);
+
+    divContent.focus();
+}
+function removeDivContent() {
+    document.body.removeChild(document.getElementById("MaterialID"));
+}
+function findPos(obj) {
+    var curleft = obj.offsetLeft;
+    var curtop = obj.offsetTop;
+    while (obj = obj.offsetParent) {
+        curleft += obj.offsetLeft
+        curtop += obj.offsetTop
+    }
+    return { x: curleft, y: curtop };
+}
+
+//调用一般处理程序，保存表单数据到后台数据库
+function saveWFFormDataToDatabase()
+{
+
+
+    return;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_GoodsPurchaseOrder>
+    <DetailPOID>2200</DetailPOID>
+    <POID>2200</POID>
+    <GPOName>PO2021062200</GPOName>
+    <PurManCode>C7094               </PurManCode>
+    <PurManName>员工C7094           </PurManName>
+    <PurTime>2021-06-15T00:00:00+08:00</PurTime>
+    <ArrivalTime>2021-06-15T00:00:00+08:00</ArrivalTime>
+    <Amount>2000.000</Amount>
+    <Comment />
+    <Status>审批中    </Status>
+    <OperatorCode>C7094               </OperatorCode>
+    <OperatorName>员工C7094</OperatorName>
+    <RelatedType>Project             </RelatedType>
+    <RelatedID>1539</RelatedID>
+    <CurrencyType>人民币</CurrencyType>
+    <Supplier>广州蓝云建筑有限公司</Supplier>
+    <SupplierPhone>020-233400     </SupplierPhone>
+    <SupplierFax>020-233401     </SupplierFax>
+    <SupplierContacts>020-233401</SupplierContacts>
+    <ClearingForm />
+    <SOID>0</SOID>
+    <PackWareHouse />
+    <CarCode />
+    <Driver />
+  </T_GoodsPurchaseOrder>
+</NewDataSet>

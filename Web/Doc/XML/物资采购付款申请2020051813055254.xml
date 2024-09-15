@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ProjectMaterialPaymentApplicant>
+    <DetailAOID>4</DetailAOID>
+    <AOID>4</AOID>
+    <AOName>1</AOName>
+    <ProjectName>卫浴设备销售与安装工程</ProjectName>
+    <PartA>泰顶科技</PartA>
+    <PartAContactInformation>老赵        ,34567435</PartAContactInformation>
+    <PaymentMethod>转帐</PaymentMethod>
+    <Attachment>收款收据,                                                                                                                                                                                               </Attachment>
+    <ContractPayCondition>TEST</ContractPayCondition>
+    <CurrentTotalPaymentAmount>0.00</CurrentTotalPaymentAmount>
+    <CurrencyType>人民币</CurrencyType>
+    <AleadyTotalInvoice>1.00</AleadyTotalInvoice>
+    <ShouldTotalInvoice>1.00</ShouldTotalInvoice>
+    <ProjectID>153</ProjectID>
+    <BankName>TEST</BankName>
+    <BankCode>TEST</BankCode>
+    <UserCode>C7094</UserCode>
+    <UserName>员工C7094</UserName>
+    <CreateTime>2017-10-11T00:00:00+08:00</CreateTime>
+    <Status>审批中</Status>
+  </T_ProjectMaterialPaymentApplicant>
+</NewDataSet>

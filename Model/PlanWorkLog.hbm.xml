@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.PlanWorkLog, ProjectMgt.Model" table="T_Plan_WorkLog">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PlanID" type ="int" />
+
+    <property name ="LogDetail" type="String" />
+
+    <property name ="Progress" type ="int" />
+
+    <property name ="WorkTime" type ="DateTime" />
+
+    <property name ="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+  </class>
+</hibernate-mapping>

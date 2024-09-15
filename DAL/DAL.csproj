@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A609853-286E-4182-B68E-ADBD9FE2C230}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectMgt.DAL</RootNamespace>
+    <AssemblyName>ProjectMgt.DAL</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IntermediateOutputPath>C:\Users\zhongjun\AppData\Local\Temp\vsC862.tmp\Debug\</IntermediateOutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IntermediateOutputPath>C:\Users\zhongjun\AppData\Local\Temp\vsC862.tmp\Release\</IntermediateOutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.3.7\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.6.0.0-preview2\lib\netstandard2.0\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectMgt.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Model\bin\Debug\ProjectMgt.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.5.0.1\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.5.0.0\lib\net461\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountDAL.cs" />
+    <Compile Include="AccountFinancialSetDAL.cs" />
+    <Compile Include="AccountGeneralLedgerDAL.cs" />
+    <Compile Include="AccountingIntervalSetDAL.cs" />
+    <Compile Include="ActorGroupDAL.cs" />
+    <Compile Include="ActorGroupDetailDAL.cs" />
+    <Compile Include="ActorGroupTypeDAL.cs" />
+    <Compile Include="AdminDAL.cs" />
+    <Compile Include="AllProStatusGroupDAL.cs" />
+    <Compile Include="ApplicationHardware_YYUPDAL.cs" />
+    <Compile Include="ApplicationSystem_YYUPDAL.cs" />
+    <Compile Include="ApproveDAL.cs" />
+    <Compile Include="AssetAdjustRecordDAL.cs" />
+    <Compile Include="AssetApplicationDAL.cs" />
+    <Compile Include="AssetApplicationDetailDAL.cs" />
+    <Compile Include="AssetApplicationReportDAL.cs" />
+    <Compile Include="AssetCheckInOrderDAL.cs" />
+    <Compile Include="AssetCheckInOrderDetailDAL.cs" />
+    <Compile Include="AssetPurchaseOrderDAL.cs" />
+    <Compile Include="AssetReturnDetailDAL.cs" />
+    <Compile Include="AssetReturnOrderDAL.cs" />
+    <Compile Include="AssetShipmentDetailDAL.cs" />
+    <Compile Include="AssetShipmentOrderDAL.cs" />
+    <Compile Include="AssetShipmentReportDAL.cs" />
+    <Compile Include="AttachmentsDAL.cs" />
+    <Compile Include="AttendanceRuleDAL.cs" />
+    <Compile Include="BankDAL.cs" />
+    <Compile Include="BDBaseDataDAL.cs" />
+    <Compile Include="BDBaseDataRecordDAL.cs" />
+    <Compile Include="BMAnnClaFileDAL.cs" />
+    <Compile Include="BMAnnInvitationDAL.cs" />
+    <Compile Include="BMAnnInvitRelatedProjectDAL.cs" />
+    <Compile Include="BMAssessBidRecordDAL.cs" />
+    <Compile Include="BMAssessBidReportDAL.cs" />
+    <Compile Include="BMBidAddendumDAL.cs" />
+    <Compile Include="BMBidFileDAL.cs" />
+    <Compile Include="BMBidNoticeContentDAL.cs" />
+    <Compile Include="BMBidPlanDAL.cs" />
+    <Compile Include="BMBidTemplateFileDAL.cs" />
+    <Compile Include="BMContractDiscussDAL.cs" />
+    <Compile Include="BMContractPreparationDAL.cs" />
+    <Compile Include="BMOpenBidRecordDAL.cs" />
+    <Compile Include="BMPerformanceEvaluationDAL.cs" />
+    <Compile Include="BMPurchaseApplicationDAL.cs" />
+    <Compile Include="BMSupBidByExpDAL.cs" />
+    <Compile Include="BMSupplierAnalyDAL.cs" />
+    <Compile Include="BMSupplierBidDAL.cs" />
+    <Compile Include="BMSupplierBidRecordDAL.cs" />
+    <Compile Include="BMSupplierBidRecordFileDAL.cs" />
+    <Compile Include="BMSupplierCertificationDAL.cs" />
+    <Compile Include="BMSupplierInfoDAL.cs" />
+    <Compile Include="BMSupplierInfoHistoryDAL.cs" />
+    <Compile Include="BMSupplierLinkDAL.cs" />
+    <Compile Include="BMSupplierReplyDAL.cs" />
+    <Compile Include="BookBorrowRecordDAL.cs" />
+    <Compile Include="BookCertificateDAL.cs" />
+    <Compile Include="BookClassificationDAL.cs" />
+    <Compile Include="BookInformationDAL.cs" />
+    <Compile Include="BookPublishersDAL.cs" />
+    <Compile Include="BookReaderTypeDAL.cs" />
+    <Compile Include="BusinessFormReAndPayDAL.cs" />
+    <Compile Include="CameraInfoDAL.cs" />
+    <Compile Include="CameraListDAL.cs" />
+    <Compile Include="CameraLogDAL.cs" />
+    <Compile Include="CarApplyFormDAL.cs" />
+    <Compile Include="CarAssignFormDAL.cs" />
+    <Compile Include="CarCheckWeekDAL.cs" />
+    <Compile Include="CarInformationDAL.cs" />
+    <Compile Include="CarOilTypeRecordDAL.cs" />
+    <Compile Include="CarTypeDAL.cs" />
+    <Compile Include="ChangeTypeDAL.cs" />
+    <Compile Include="CollaborationDAL.cs" />
+    <Compile Include="CollaborationLogDAL.cs" />
+    <Compile Include="CollaborationLogWithCustomerQuestionCandidateDAL.cs" />
+    <Compile Include="CollaborationMemberDAL.cs" />
+    <Compile Include="ConstractBigTypeDAL.cs" />
+    <Compile Include="ConstractChangeRecordDAL.cs" />
+    <Compile Include="ConstractDAL.cs" />
+    <Compile Include="ConstractGoodsDeliveryPlanDAL.cs" />
+    <Compile Include="ConstractGoodsDeliveryRecordDAL.cs" />
+    <Compile Include="ConstractGoodsReceiptPlanDAL.cs" />
+    <Compile Include="ConstractGoodsReceiptRecordDAL.cs" />
+    <Compile Include="ConstractPayableDAL.cs" />
+    <Compile Include="ConstractPayableRecordDAL.cs" />
+    <Compile Include="ConstractPayableVisaDAL.cs" />
+    <Compile Include="ConstractPayableVisaDetailDAL.cs" />
+    <Compile Include="ConstractReceivablesDAL.cs" />
+    <Compile Include="ConstractReceivablesRecordDAL.cs" />
+    <Compile Include="ConstractRelatedAssetPurchaseOrderDAL.cs" />
+    <Compile Include="ConstractRelatedConstractDAL.cs" />
+    <Compile Include="ConstractRelatedEntryOrderDAL.cs" />
+    <Compile Include="ConstractRelatedEntryOrderForInnerDAL.cs" />
+    <Compile Include="ConstractRelatedGoodsDAL.cs" />
+    <Compile Include="ConstractRelatedGoodsPurchaseOrderDAL.cs" />
+    <Compile Include="ConstractRelatedInvoiceDAL.cs" />
+    <Compile Include="ConstractRelatedProjectDAL.cs" />
+    <Compile Include="ConstractRelatedGoodsSaleOrderDAL.cs" />
+    <Compile Include="ConstractRelatedUserDAL.cs" />
+    <Compile Include="ConstractSalesDAL.cs" />
+    <Compile Include="ConstractTypeDAL.cs" />
+    <Compile Include="ContactInforDAL.cs" />
+    <Compile Include="CurrencyTypeDAL.cs" />
+    <Compile Include="CustomerContactRecordDAL.cs" />
+    <Compile Include="CustomerDAL.cs" />
+    <Compile Include="CustomerOperationRecordDAL.cs" />
+    <Compile Include="CustomerQuestionCustomerStageDAL.cs" />
+    <Compile Include="CustomerQuestionDAL.cs" />
+    <Compile Include="CustomerQuestionHandleRecordDAL.cs" />
+    <Compile Include="CustomerQuestionRelatedCandidateDAL.cs" />
+    <Compile Include="CustomerQuestionStageDAL.cs" />
+    <Compile Include="CustomerQuestionTypeDAL.cs" />
+    <Compile Include="CustomerRelatedGoodsInforDAL.cs" />
+    <Compile Include="CustomerRelatedQuestionDAL.cs" />
+    <Compile Include="CustomerRelatedUserDAL.cs" />
+    <Compile Include="CustomModuleDAL.cs" />
+    <Compile Include="DailyWorkDAL.cs" />
+    <Compile Include="DailyWorkUnitBonusDAL.cs" />
+    <Compile Include="DataBaseHardware_YYUPDAL.cs" />
+    <Compile Include="DataBaseSystem_YYUPDAL.cs" />
+    <Compile Include="DataBaseUpgrateDAL.cs" />
+    <Compile Include="DataBase_YYUPDAL.cs" />
+    <Compile Include="DayHourNumDAL.cs" />
+    <Compile Include="DefectAssignRecordDAL.cs" />
+    <Compile Include="DefectmentDAL.cs" />
+    <Compile Include="DefectStatusDAL.cs" />
+    <Compile Include="DefectTypeDAL.cs" />
+    <Compile Include="DepartAssetRelatedUserDAL.cs" />
+    <Compile Include="DepartmentDAL.cs" />
+    <Compile Include="DepartmentUserDAL.cs" />
+    <Compile Include="DepartNewsNoticeRelatedUserDAL.cs" />
+    <Compile Include="DepartPositionDAL.cs" />
+    <Compile Include="DepartRelatedModuleDAL.cs" />
+    <Compile Include="DepartRelatedProductLineDAL.cs" />
+    <Compile Include="DepartRelatedProjectLeaderDAL.cs" />
+    <Compile Include="DepartRelatedSuperUserDAL.cs" />
+    <Compile Include="DepartRelatedWZCheckUserDAL.cs" />
+    <Compile Include="DepartRelatedWZDelegateUserDAL.cs" />
+    <Compile Include="DepartRelatedWZFeeUserDAL.cs" />
+    <Compile Include="DepartSuperUserRelatedProductLineDAL.cs" />
+    <Compile Include="DepartUserInforRelateduserDAL.cs" />
+    <Compile Include="DeviceNotificationInfoDAL.cs" />
+    <Compile Include="DocRelatedDepartmentDAL.cs" />
+    <Compile Include="DocRelatedUserDAL.cs" />
+    <Compile Include="DocTypeFilterDAL.cs" />
+    <Compile Include="DocumentForProjectPlanTemplateDAL.cs" />
+    <Compile Include="DocumentDAL.cs" />
+    <Compile Include="DocTypeDAL.cs" />
+    <Compile Include="DWCustomImportDAL.cs" />
+    <Compile Include="DWCustomValueDAL.cs" />
+    <Compile Include="DWLineTransportDAL.cs" />
+    <Compile Include="DWMakeCostDAL.cs" />
+    <Compile Include="DWMatchDAL.cs" />
+    <Compile Include="DWMatchTypeDAL.cs" />
+    <Compile Include="DWProductDAL.cs" />
+    <Compile Include="DWProductTypeDAL.cs" />
+    <Compile Include="DWProMatchDAL.cs" />
+    <Compile Include="DWQualityCostDAL.cs" />
+    <Compile Include="EducationExperienceDAL.cs" />
+    <Compile Include="EntityControl.cs" />
+    <Compile Include="ExpenseApplyWLDAL.cs" />
+    <Compile Include="ExpenseClaimDAL.cs" />
+    <Compile Include="ExpenseClaimDetailDAL.cs" />
+    <Compile Include="FamilyMemberDAL.cs" />
+    <Compile Include="FoldersDAL.cs" />
+    <Compile Include="AssetDAL.cs" />
+    <Compile Include="FunInforDialBoxDAL.cs" />
+    <Compile Include="GDApplicationDAL.cs" />
+    <Compile Include="GDAreaDAL.cs" />
+    <Compile Include="GDFriDAL.cs" />
+    <Compile Include="GDHotHandlerDAL.cs" />
+    <Compile Include="GDIsomFriDAL.cs" />
+    <Compile Include="GDIsomJointDAL.cs" />
+    <Compile Include="GDJointRevisionDAL.cs" />
+    <Compile Include="GDLineWeldDAL.cs" />
+    <Compile Include="GDNotDestroyDAL.cs" />
+    <Compile Include="GDOrderCodeDAL.cs" />
+    <Compile Include="GDPipingClassDAL.cs" />
+    <Compile Include="GDPressureDAL.cs" />
+    <Compile Include="GDPressureObjectDAL.cs" />
+    <Compile Include="GDPressureTestDAL.cs" />
+    <Compile Include="GDProjectDAL.cs" />
+    <Compile Include="GDRTDelegateDAL.cs" />
+    <Compile Include="GDRTNotQualifiedDAL.cs" />
+    <Compile Include="GDRTResultDAL.cs" />
+    <Compile Include="GDRTSampleDAL.cs" />
+    <Compile Include="GDStandardSizeDAL.cs" />
+    <Compile Include="GDSystemDAL.cs" />
+    <Compile Include="GDTestMediumDAL.cs" />
+    <Compile Include="GDThicknessDAL.cs" />
+    <Compile Include="GDWeldersDAL.cs" />
+    <Compile Include="GDWelderWPSNoDAL.cs" />
+    <Compile Include="GDWeldTypeDAL.cs" />
+    <Compile Include="GDWPSCodeDAL.cs" />
+    <Compile Include="GoodsAdjustRecordDAL.cs" />
+    <Compile Include="GoodsApplicationDAL.cs" />
+    <Compile Include="GoodsApplicationDetailDAL.cs" />
+    <Compile Include="GoodsBorrowOrderDAL.cs" />
+    <Compile Include="GoodsBorrowOrderDetailDAL.cs" />
+    <Compile Include="GoodsCheckInOrderDAL.cs" />
+    <Compile Include="GoodsCheckInOrderDetailDAL.cs" />
+    <Compile Include="GoodsCheckOutNoticeOrderDAL.cs" />
+    <Compile Include="GoodsCheckOutNoticeOrderDetailDAL.cs" />
+    <Compile Include="GoodsDAL.cs" />
+    <Compile Include="GoodsDeliveryOrderDAL.cs" />
+    <Compile Include="GoodsDeliveryOrderDetailDAL.cs" />
+    <Compile Include="GoodsMTRecordDAL.cs" />
+    <Compile Include="GoodsProductionOrderDAL.cs" />
+    <Compile Include="GoodsProductionOrderDetailDAL.cs" />
+    <Compile Include="GoodsPurchaseOrderDAL.cs" />
+    <Compile Include="GoodsPurRecordDAL.cs" />
+    <Compile Include="GoodsReturnDetailDAL.cs" />
+    <Compile Include="GoodsReturnOrderDAL.cs" />
+    <Compile Include="GoodsSaleOrderDAL.cs" />
+    <Compile Include="GoodsSaleQuotationOrderDAL.cs" />
+    <Compile Include="GoodsSaleQuotationOrderDetailDAL.cs" />
+    <Compile Include="GoodsSaleRecordDAL.cs" />
+    <Compile Include="GoodsScrapeDAL.cs" />
+    <Compile Include="GoodsShipmentDetailDAL.cs" />
+    <Compile Include="GoodsShipmentOrderDAL.cs" />
+    <Compile Include="GoodsShipmentReportDAL.cs" />
+    <Compile Include="GoodsSupplyOrderDAL.cs" />
+    <Compile Include="GoodsSupplyOrderDetailDAL.cs" />
+    <Compile Include="GoodsTypeDAL.cs" />
+    <Compile Include="GoodsUserRecordDAL.cs" />
+    <Compile Include="HeadLineDAL.cs" />
+    <Compile Include="AssetMTRecordDAL.cs" />
+    <Compile Include="AssetPurRecordDAL.cs" />
+    <Compile Include="AssetScrapeDAL.cs" />
+    <Compile Include="AssetTypeDAL.cs" />
+    <Compile Include="AssetUserRecordDAL.cs" />
+    <Compile Include="HSEAccidentDescriptionDAL.cs" />
+    <Compile Include="HSEAccidentInvestigationDAL.cs" />
+    <Compile Include="HSEDiseasePreventionDAL.cs" />
+    <Compile Include="HSEEmergencyCompileDAL.cs" />
+    <Compile Include="HSEEmergencyRehearseDAL.cs" />
+    <Compile Include="HSEEnvirFactorSurDetailDAL.cs" />
+    <Compile Include="HSEEnvirFactorSurveyDAL.cs" />
+    <Compile Include="HSEEnvironmentalFactorsDAL.cs" />
+    <Compile Include="HSEEnvironmentalObjectivesDAL.cs" />
+    <Compile Include="HSEHealthCheckDAL.cs" />
+    <Compile Include="HSEHealthyCheckupDAL.cs" />
+    <Compile Include="HSEMeetingDAL.cs" />
+    <Compile Include="HSEPenaltyNoticeDAL.cs" />
+    <Compile Include="HSEPerEquipRecordDAL.cs" />
+    <Compile Include="HSEProductionSummaryDAL.cs" />
+    <Compile Include="HSEQualificationRecordDAL.cs" />
+    <Compile Include="HSERectificationDAL.cs" />
+    <Compile Include="HSERectificationNoticeDAL.cs" />
+    <Compile Include="HSESafeInspectionRecordDAL.cs" />
+    <Compile Include="HSESafeManagementPlanDAL.cs" />
+    <Compile Include="HSETrainingDAL.cs" />
+    <Compile Include="HSETrainingPlanDAL.cs" />
+    <Compile Include="IndustryTypeDAL.cs" />
+    <Compile Include="ItemBomDAL.cs" />
+    <Compile Include="ItemBOMPartDAL.cs" />
+    <Compile Include="ItemBomVersionDAL.cs" />
+    <Compile Include="ItemDAL.cs" />
+    <Compile Include="ItemMainPlanDAL.cs" />
+    <Compile Include="ItemMainPlanDetailDAL.cs" />
+    <Compile Include="KPIHRReviewDAL.cs" />
+    <Compile Include="KPILeaderReviewDAL.cs" />
+    <Compile Include="KPILibraryDAL.cs" />
+    <Compile Include="KPITemplateForDepartPositionDAL.cs" />
+    <Compile Include="KPIThirdPartReviewDAL.cs" />
+    <Compile Include="KPITypeDAL.cs" />
+    <Compile Include="LeaveApplyFormDAL.cs" />
+    <Compile Include="LeaveTypeDAL.cs" />
+    <Compile Include="LicenseVerificationDAL.cs" />
+    <Compile Include="LogonLogDAL.cs" />
+    <Compile Include="LTCandidateInformationDAL.cs" />
+    <Compile Include="MailBoxAuthorityDAL.cs" />
+    <Compile Include="MailsDAL.cs" />
+    <Compile Include="MeetingAssignDAL.cs" />
+    <Compile Include="MeetingAttendantDAL.cs" />
+    <Compile Include="MeetingDAL.cs" />
+    <Compile Include="MeetingRoomDAL.cs" />
+    <Compile Include="MeetingTypeDAL.cs" />
+    <Compile Include="MemberAgencyDAL.cs" />
+    <Compile Include="MemberAgencyWFTypeDAL.cs" />
+    <Compile Include="MemberLevelDAL.cs" />
+    <Compile Include="MTTypeDAL.cs" />
+    <Compile Include="Network_YYUPDAL.cs" />
+    <Compile Include="NewsRelatedUserDAL.cs" />
+    <Compile Include="OfficialDocumentDAL.cs" />
+    <Compile Include="OilTypeDAL.cs" />
+    <Compile Include="OvertimeApplyFormDAL.cs" />
+    <Compile Include="PartTimeJobDAL.cs" />
+    <Compile Include="PlanDAL.cs" />
+    <Compile Include="PlanLeaderReviewDAL.cs" />
+    <Compile Include="PlanMemberDAL.cs" />
+    <Compile Include="PlanRelatedLeaderDAL.cs" />
+    <Compile Include="PlanStatusDAL.cs" />
+    <Compile Include="PlanTargetDAL.cs" />
+    <Compile Include="PlanTools_YYUPDAL.cs" />
+    <Compile Include="PlanTypeDAL.cs" />
+    <Compile Include="PlanWorkLogDAL.cs" />
+    <Compile Include="ProDocGraphControlDAL.cs" />
+    <Compile Include="ProductLineVersion_YYUPDAL.cs" />
+    <Compile Include="ProductModuleType_YYUPDAL.cs" />
+    <Compile Include="ProductModule_YYUPDAL.cs" />
+    <Compile Include="ProductProcessDAL.cs" />
+    <Compile Include="ProExpenseDAL.cs" />
+    <Compile Include="ProFeedbackDAL.cs" />
+    <Compile Include="ProGraphRegistrationDAL.cs" />
+    <Compile Include="ProIssueRegistrationDAL.cs" />
+    <Compile Include="ProjectBudgetDAL.cs" />
+    <Compile Include="ProjectCostManageDAL.cs" />
+    <Compile Include="ProjectCustomerDAL.cs" />
+    <Compile Include="ProjectDailyWorkDAL.cs" />
+    <Compile Include="ProjectDataBase_YYUPDAL.cs" />
+    <Compile Include="ProjectDataLinkDAL.cs" />
+    <Compile Include="ProjectIncomeAndExpenseDAL.cs" />
+    <Compile Include="ProjectItemBomVersionDAL.cs" />
+    <Compile Include="ProjectLogo_YYUPDAL.cs" />
+    <Compile Include="ProjectMaterialPaymentApplicantDAL.cs" />
+    <Compile Include="ProjectMaterialPaymentApplicantDetailDAL.cs" />
+    <Compile Include="ProjectMemberClassDAL.cs" />
+    <Compile Include="ProjectMemberDAL.cs" />
+    <Compile Include="ProjectMemberGradeDAL.cs" />
+    <Compile Include="ProjectMemberScheduleBaseDAL.cs" />
+    <Compile Include="ProjectMemberScheduleDAL.cs" />
+    <Compile Include="ProjectMemberStudentAttendanceDAL.cs" />
+    <Compile Include="ProjectMemberStudentCareDAL.cs" />
+    <Compile Include="ProjectMemberStudentCostDAL.cs" />
+    <Compile Include="ProjectMemberStudentDAL.cs" />
+    <Compile Include="ProjectOfferStandard_YYUPDAL.cs" />
+    <Compile Include="ProjectOutsourcInformat_YYUPDAL.cs" />
+    <Compile Include="ProjectPlanDAL.cs" />
+    <Compile Include="ProjectPlanVersionDAL.cs" />
+    <Compile Include="ProjectPlan_YYUPDAL.cs" />
+    <Compile Include="ProjectPrimaveraBudgetDAL.cs" />
+    <Compile Include="ProjectPrimaveraDAL.cs" />
+    <Compile Include="ProjectPrimaveraTaskDAL.cs" />
+    <Compile Include="ProjectProductLine_YYUPDAL.cs" />
+    <Compile Include="ProjectProduct_YYUPDAL.cs" />
+    <Compile Include="ProjectProgressStatus_YYUPDAL.cs" />
+    <Compile Include="ProjectRealtedItemDAL.cs" />
+    <Compile Include="ProjectRelatedDefectViewDAL.cs" />
+    <Compile Include="ProjectRelatedItemBomDAL.cs" />
+    <Compile Include="ProjectRelatedReqViewDAL.cs" />
+    <Compile Include="ProjectSalesProperty_YYUPDAL.cs" />
+    <Compile Include="ProjectStatusDAL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectSubordinateIndustry_YYUPDAL.cs" />
+    <Compile Include="ProjectTypeDAL.cs" />
+    <Compile Include="ProjectVendorDAL.cs" />
+    <Compile Include="ProjectWZDetailDAL.cs" />
+    <Compile Include="Project_YYUPDAL.cs" />
+    <Compile Include="ProLeaderViewDAL.cs" />
+    <Compile Include="ProModuleDAL.cs" />
+    <Compile Include="ProModuleLevelDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProRealChargeDAL.cs" />
+    <Compile Include="ProReceiptRegistrationDAL.cs" />
+    <Compile Include="ProRelatedUserDAL.cs" />
+    <Compile Include="ProjectRiskDAL.cs" />
+    <Compile Include="ProSatusChangeDAL.cs" />
+    <Compile Include="ProSendFigureRegistrationDAL.cs" />
+    <Compile Include="ProStatusGroupDAL.cs" />
+    <Compile Include="ProjectTaskDAL.cs" />
+    <Compile Include="PublicNoticeDAL.cs" />
+    <Compile Include="QMEngineerReviewDAL.cs" />
+    <Compile Include="QMEngineerWarrantyDAL.cs" />
+    <Compile Include="QMMatEquInspectionDAL.cs" />
+    <Compile Include="QMOverAllEvaluationDAL.cs" />
+    <Compile Include="QMPurchasingContractDAL.cs" />
+    <Compile Include="QMQualityDefectNoticeDAL.cs" />
+    <Compile Include="QMQualityDefectProcessDAL.cs" />
+    <Compile Include="QMQualityInspectionDAL.cs" />
+    <Compile Include="QMQualityInspectionSheetDAL.cs" />
+    <Compile Include="QMQualityRectificationDAL.cs" />
+    <Compile Include="QMQualityRectificationNoticeDAL.cs" />
+    <Compile Include="QMQualityTechnicalDisclosureDAL.cs" />
+    <Compile Include="QMRewardPunishmentDAL.cs" />
+    <Compile Include="QMSatisfactionSurveyDAL.cs" />
+    <Compile Include="RCJProjectAdjustPriceDAL.cs" />
+    <Compile Include="RCJProjectAdjustPriceListDAL.cs" />
+    <Compile Include="RCJProjectAdjustPriceLogDAL.cs" />
+    <Compile Include="RCJProjectCostFeeIDsDAL.cs" />
+    <Compile Include="RCJProjectCostFeesDAL.cs" />
+    <Compile Include="RCJProjectCostFeeSubIDsDAL.cs" />
+    <Compile Include="RCJProjectCostPerformanceBenchmarDAL.cs" />
+    <Compile Include="RCJProjectCostPerformanceListDAL.cs" />
+    <Compile Include="RCJProjectCostPreformanceTypeDAL.cs" />
+    <Compile Include="RCJProjectFundStartPlanApproveDAL.cs" />
+    <Compile Include="RCJProjectFundStartPlanDAL.cs" />
+    <Compile Include="RCJProjectMonthCostFeeDAL.cs" />
+    <Compile Include="RCJProjectSetupDAL.cs" />
+    <Compile Include="RCJProjectSummaryPerformanceDAL.cs" />
+    <Compile Include="RCJProjectTargetCostFeeDAL.cs" />
+    <Compile Include="RCJProjectWorkConfirmDAL.cs" />
+    <Compile Include="RCJProjectWorkConfirmLogDAL.cs" />
+    <Compile Include="RCJProjectWorkDetailsDAL.cs" />
+    <Compile Include="RCJProjectWorkDetailsLogDAL.cs" />
+    <Compile Include="RCJProjectWorkMoneyDAL.cs" />
+    <Compile Include="RCJProjectWorkMoneyLogDAL.cs" />
+    <Compile Include="ReceivePayWayDAL.cs" />
+    <Compile Include="RegisterUserDAL.cs" />
+    <Compile Include="RelatedActorGroupDAL.cs" />
+    <Compile Include="RelatedDefectDAL.cs" />
+    <Compile Include="RelatedReqDAL.cs" />
+    <Compile Include="RelatedUserDAL.cs" />
+    <Compile Include="RelatedWorkFlowTemplateDAL.cs" />
+    <Compile Include="ReportDAL.cs" />
+    <Compile Include="ReportRelatedUserDAL.cs" />
+    <Compile Include="ReportTemplateDAL.cs" />
+    <Compile Include="ReportTypeDAL.cs" />
+    <Compile Include="ReqAssignRecordDAL.cs" />
+    <Compile Include="ReqStatusDAL.cs" />
+    <Compile Include="ReqTypeDAL.cs" />
+    <Compile Include="RequirementDAL.cs" />
+    <Compile Include="RTXConfigDAL.cs" />
+    <Compile Include="ScheduleDAL.cs" />
+    <Compile Include="ScheduleEventLeaderReviewDAL.cs" />
+    <Compile Include="SessionFactory.cs" />
+    <Compile Include="SiteModuleContentDAL.cs" />
+    <Compile Include="SMSCodeDAL.cs" />
+    <Compile Include="SMSInterfaceDAL.cs" />
+    <Compile Include="SMSNetSegmentDAL.cs" />
+    <Compile Include="SMSRelatedUserDAL.cs" />
+    <Compile Include="SmsSendDAL.cs" />
+    <Compile Include="SMSSendDIYDAL.cs" />
+    <Compile Include="SoftDownloadDAL.cs" />
+    <Compile Include="StatusRelatedWFDAL.cs" />
+    <Compile Include="SupplierAssetPaymentApplicantDAL.cs" />
+    <Compile Include="SupplierAssetPaymentApplicantDetailDAL.cs" />
+    <Compile Include="SystemActiveUserDAL.cs" />
+    <Compile Include="SystemAnalystChartManagementDAL.cs" />
+    <Compile Include="SystemMDIStyleDAL.cs" />
+    <Compile Include="TableNameMappingDAL.cs" />
+    <Compile Include="TableTemplateMappingDAL.cs" />
+    <Compile Include="TaskAssignRecordDAL.cs" />
+    <Compile Include="TaskOperationDAL.cs" />
+    <Compile Include="TaskRecordTypeDAL.cs" />
+    <Compile Include="TaskStatusDAL.cs" />
+    <Compile Include="TaskTestCaseDAL.cs" />
+    <Compile Include="TaskTestRecordDAL.cs" />
+    <Compile Include="TaskTypeDAL.cs" />
+    <Compile Include="TenderInvoice_HYYQDAL.cs" />
+    <Compile Include="TenderRelatedUserDAL.cs" />
+    <Compile Include="Tender_HYYQDAL.cs" />
+    <Compile Include="TestStatusDAL.cs" />
+    <Compile Include="TransferProjectDAL.cs" />
+    <Compile Include="MailProfileDAL.cs" />
+    <Compile Include="JNUnitDAL.cs" />
+    <Compile Include="TREmployeeTrainingDAL.cs" />
+    <Compile Include="TRHolderWelderDAL.cs" />
+    <Compile Include="TriggerTableToFromDAL.cs" />
+    <Compile Include="TRPostCertificateDAL.cs" />
+    <Compile Include="TRSpecialEquipmentDAL.cs" />
+    <Compile Include="TRSpecialOperationsDAL.cs" />
+    <Compile Include="TRTrainingRecordEmpDAL.cs" />
+    <Compile Include="U8KeyApply_YYUPDAL.cs" />
+    <Compile Include="U8Problem_YYUPDAL.cs" />
+    <Compile Include="U9Problem_YYUPDAL.cs" />
+    <Compile Include="UserAttendanceRecordDAL.cs" />
+    <Compile Include="UserAttendanceRuleDAL.cs" />
+    <Compile Include="UserDepartmentStringDAL.cs" />
+    <Compile Include="UserDutyDAL.cs" />
+    <Compile Include="UserKPICheckDAL.cs" />
+    <Compile Include="UserKPICheckDetailDAL.cs" />
+    <Compile Include="UserNotInDepartModuleDAL.cs" />
+    <Compile Include="UserTransactionRecordDAL.cs" />
+    <Compile Include="VendorDAL.cs" />
+    <Compile Include="VendorRelatedGoodsInforDAL.cs" />
+    <Compile Include="VendorRelatedUserDAL.cs" />
+    <Compile Include="VisitRegistration_StudentDAL.cs" />
+    <Compile Include="WareHouseDAL.cs" />
+    <Compile Include="WebServiceDAL.cs" />
+    <Compile Include="WebSiteDAL.cs" />
+    <Compile Include="WeiXinStandDAL.cs" />
+    <Compile Include="wfStepRelatedWFDAL.cs" />
+    <Compile Include="WFTemplateRelatedJSCodeDAL.cs" />
+    <Compile Include="WFTemplateStepRelatedJSCodeDAL.cs" />
+    <Compile Include="WFTemplateStepRelatedWebServiceDAL.cs" />
+    <Compile Include="WFTStepRelatedTemDAL.cs" />
+    <Compile Include="WLStatusDAL.cs" />
+    <Compile Include="WLTStepConditionDAL.cs" />
+    <Compile Include="WLTStepConditionExpressionDAL.cs" />
+    <Compile Include="WLTypeDAL.cs" />
+    <Compile Include="WorkExperienceDAL.cs" />
+    <Compile Include="WorkFlowBackupDAL.cs" />
+    <Compile Include="WorkFlowDAL.cs" />
+    <Compile Include="WorkFlowPageDAL.cs" />
+    <Compile Include="WorkFlowRelatedModuleDAL.cs" />
+    <Compile Include="WorkFlowStepDAL.cs" />
+    <Compile Include="WorkFlowStepDetailDAL.cs" />
+    <Compile Include="WorkFlowTemplateDAL.cs" />
+    <Compile Include="WorkFlowTStepDAL.cs" />
+    <Compile Include="WorkFlowTStepOperatorDAL.cs" />
+    <Compile Include="WorkPlanDAL.cs" />
+    <Compile Include="WorkTypeDAL.cs" />
+    <Compile Include="WPQMAllDataDAL.cs" />
+    <Compile Include="WPQMContactListDAL.cs" />
+    <Compile Include="WPQMCoverDAL.cs" />
+    <Compile Include="WPQMHeatTreatProCardDAL.cs" />
+    <Compile Include="WPQMHeatTreatReportDAL.cs" />
+    <Compile Include="WPQMMechanicalProOrderDAL.cs" />
+    <Compile Include="WPQMPhysicalChemicalDAL.cs" />
+    <Compile Include="WPQMPQR1DAL.cs" />
+    <Compile Include="WPQMPQR2DAL.cs" />
+    <Compile Include="WPQMPQR3DAL.cs" />
+    <Compile Include="WPQMPWPS1DAL.cs" />
+    <Compile Include="WPQMPWPS2DAL.cs" />
+    <Compile Include="WPQMQuaAssessNoticeDAL.cs" />
+    <Compile Include="WPQMRTTableDAL.cs" />
+    <Compile Include="WPQMSampleMechProOrderDAL.cs" />
+    <Compile Include="WPQMStockListDAL.cs" />
+    <Compile Include="WPQMWeldAddProReportDAL.cs" />
+    <Compile Include="WPQMWeldingRecordDAL.cs" />
+    <Compile Include="WPQMWeldProcedureSpeDAL.cs" />
+    <Compile Include="WPQMWeldProQuaDAL.cs" />
+    <Compile Include="WPQMWeldTaskListDAL.cs" />
+    <Compile Include="WPQMWorkReviewCommitDAL.cs" />
+    <Compile Include="WZAdvanceDAL.cs" />
+    <Compile Include="WZAdvanceDetailDAL.cs" />
+    <Compile Include="WZCardDAL.cs" />
+    <Compile Include="WZCardImportDAL.cs" />
+    <Compile Include="WZCollectDAL.cs" />
+    <Compile Include="WZCompactCheckDAL.cs" />
+    <Compile Include="WZCompactDAL.cs" />
+    <Compile Include="WZCompactDetailDAL.cs" />
+    <Compile Include="WZDivideDAL.cs" />
+    <Compile Include="WZExpertDAL.cs" />
+    <Compile Include="WZExpertDatabaseDAL.cs" />
+    <Compile Include="WZGetUnitDAL.cs" />
+    <Compile Include="WZMaterialDLDAL.cs" />
+    <Compile Include="WZMaterialXLDAL.cs" />
+    <Compile Include="WZMaterialZLDAL.cs" />
+    <Compile Include="WZNeedObjectDAL.cs" />
+    <Compile Include="WZObjectDAL.cs" />
+    <Compile Include="WZObjectReferDAL.cs" />
+    <Compile Include="WZObjectReplaceDAL.cs" />
+    <Compile Include="WZPayApproveDAL.cs" />
+    <Compile Include="WZPayDAL.cs" />
+    <Compile Include="WZPayDetailDAL.cs" />
+    <Compile Include="WZPickingPlanDAL.cs" />
+    <Compile Include="WZPickingPlanDetailDAL.cs" />
+    <Compile Include="WZProjectAttributeDAL.cs" />
+    <Compile Include="WZProjectDAL.cs" />
+    <Compile Include="WZProjectNatureDAL.cs" />
+    <Compile Include="WZPurchaseDAL.cs" />
+    <Compile Include="WZPurchaseDecisionDAL.cs" />
+    <Compile Include="WZPurchaseDetailDAL.cs" />
+    <Compile Include="WZPurchaseDocumentDAL.cs" />
+    <Compile Include="WZPurchaseExpertDAL.cs" />
+    <Compile Include="WZPurchaseFileDAL.cs" />
+    <Compile Include="WZPurchaseOfferRecordDAL.cs" />
+    <Compile Include="WZPurchaseSupplierDAL.cs" />
+    <Compile Include="WZReduceDAL.cs" />
+    <Compile Include="WZRequestDAL.cs" />
+    <Compile Include="WZSendDAL.cs" />
+    <Compile Include="WZSpanDAL.cs" />
+    <Compile Include="WZStockDAL.cs" />
+    <Compile Include="WZStoreDAL.cs" />
+    <Compile Include="WZSupplierApplyCommentDAL.cs" />
+    <Compile Include="WZSupplierApplyDAL.cs" />
+    <Compile Include="WZSupplierApplyDetailDAL.cs" />
+    <Compile Include="WZSupplierDAL.cs" />
+    <Compile Include="WZSupplierInfoDAL.cs" />
+    <Compile Include="WZSupplierRegisterDAL.cs" />
+    <Compile Include="WZSupplierTemplateFileDAL.cs" />
+    <Compile Include="WZTurnDAL.cs" />
+    <Compile Include="WZTurnDetailDAL.cs" />
+    <Compile Include="WZWearyDAL.cs" />
+    <Compile Include="XmlNameSpaceDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.AssetMTRecord, ProjectMgt.Model" table="T_AssetMTRecord">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="AssetID" type ="int" />
+
+    <property name ="AssetCode" type ="String" />
+
+    <property name ="AssetName" type ="String" />
+
+    <property name ="MTManCode" type ="String" />
+
+    <property name ="MTManName" type ="String" />
+
+    <property name ="Type" type ="String" />
+
+    <property name ="Description" type="String" />
+
+    <property name ="MTTime" type ="DateTime" />
+
+    <property name ="Cost" type ="Decimal" />
+  </class>
+</hibernate-mapping>

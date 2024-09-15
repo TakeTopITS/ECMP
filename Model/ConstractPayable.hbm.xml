@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractPayable, ProjectMgt.Model" table="T_ConstractPayable">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ConstractCode" type ="String" />
+    <property name ="BillCode" type ="String" />
+    <property name ="Account" type ="String" />
+    <property name ="PayableAccount" type ="Decimal" />
+    <property name ="PayableTime" type ="DateTime" />
+    <property name ="OutOfPocketAccount" type ="Decimal" />
+    <property name ="OutOfPocketTime" type ="DateTime" />
+    <property name ="InvoiceAccount" type ="Decimal" />
+    <property name ="Receiver" type ="String" />
+    <property name ="CurrencyType" type ="String" />
+    <property name ="UNPayAmount" type ="Decimal" />
+    <property name ="OperatorCode" type ="String" />
+    <property name ="OperatorName" type ="String" />
+    <property name ="OperateTime" type ="DateTime" />
+    <property name ="PreDays" type ="int" />
+    <property name ="Status" type ="String" />
+    <property name ="Comment" type ="String" />
+
+    <property name ="RelatedType" type ="String" />
+    <property name ="RelatedID" type ="int" />
+    <property name ="RelatedRecordID" type ="int" />
+    <property name ="RelatedProjectID" type ="int" />
+    <property name ="RelatedPlanID" type = "int" />
+
+    <property name ="ExchangeRate" type ="Decimal" />
+	  <property name ="AccountCode" type ="String" />
+    <property name ="IsSecrecy" type ="String" />
+
+    <property name ="PayOtherAccount" type ="Decimal" />
+    <property name ="OtherAccount"  type ="Decimal" />
+
+    <property name ="RelatedPJBudgetID" type ="int" />
+    <property name ="RelatedPJBudgetAccountCode" type ="String" />
+    <property name ="RelatedPJBudgetAccount" type ="String" />
+  </class>
+</hibernate-mapping>

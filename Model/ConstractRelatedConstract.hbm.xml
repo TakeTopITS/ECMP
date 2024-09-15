@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractRelatedConstract, ProjectMgt.Model" table="T_ConstractRelatedConstract">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ConstractCode" type ="String" />
+
+    <property name ="RelatedConstractCode" type ="String" />
+  </class>
+</hibernate-mapping>

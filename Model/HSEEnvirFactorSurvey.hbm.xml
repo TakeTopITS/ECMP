@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSEEnvirFactorSurvey, ProjectMgt.Model" table="T_HSEEnvirFactorSurvey">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="ProjectId" column="ProjectId" type="int">
+		</property>
+		<property name="ProjectName" column="ProjectName" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="Leader" column="Leader" type="String">
+		</property>
+		<property name="UnitCode" column="UnitCode" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+		<property name="EnterDate" column="EnterDate" type="DateTime">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="DistributedObject" column="DistributedObject" type="String">
+		</property>
+		<property name="EvaluationOpinions" column="EvaluationOpinions" type="String">
+		</property>
+		<property name="EvaluationDate" column="EvaluationDate" type="DateTime">
+		</property>
+		<property name="AssociatedProcess" column="AssociatedProcess" type="String">
+		</property>
+		<property name="AttachName" column="AttachName" type="String">
+		</property>
+		<property name="AttachPath" column="AttachPath" type="String">
+		</property>
+		<property name="EvaluationPer" column="EvaluationPer" type="String">
+		</property>
+		<property name="EnterCodeValue" column="EnterCodeValue" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

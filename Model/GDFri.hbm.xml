@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDFri, ProjectMgt.Model" table="T_GDFri">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Area" type ="String" />
+    <property name ="CodeName" type ="String" />
+    <property name ="FRICode" type ="String" />
+    <property name ="Edition" type ="String" />
+    <property name ="PublicTime" type ="String" />
+    <property name ="Description" type ="String" />
+    <property name ="Remarks" type ="String" />
+    <property name ="ProjectCode" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

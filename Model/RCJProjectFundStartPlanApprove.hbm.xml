@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.RCJProjectFundStartPlanApprove, ProjectMgt.Model" table="T_RCJProjectFundStartPlanApprove">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="native" />
+    </id>
+
+    <property name ="ProjectID" type ="int" />
+    <property name ="FundPlanID" type ="int" />
+    <property name ="Approverer" type ="string" />
+    <property name ="ActualAmount" type ="double" />
+    <property name ="IfAgreed" type ="int" />
+    <property name ="ApproveTime" type ="String" />
+    <property name ="Memo" type ="String" />
+  </class>
+</hibernate-mapping>

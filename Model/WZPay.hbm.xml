@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZPay, ProjectMgt.Model" table="T_WZPay">
+
+    <id name="PayID" column="PayID" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="ProjectCode" type ="String" />
+    <property name ="PayName" type ="String" />
+    <property name ="PayTotal" type ="Decimal" />
+    <property name ="RowNumber" type ="int" />
+    <property name ="PayTime" type ="DateTime" />
+    <property name ="Marker" type ="String" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsMark" type ="int" />
+  </class>
+</hibernate-mapping>

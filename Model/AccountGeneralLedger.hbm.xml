@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.AccountGeneralLedger, ProjectMgt.Model" table="T_AccountGeneralLedger">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="ReceivablesRecordID" type ="int" />
+		<property name ="PayableRecordID" type ="int" />
+		<property name ="FinancialCode" type ="String" />
+		<property name ="IntervalCode" type ="String" />
+		<property name ="AccountCode" type ="String" />
+		<property name ="AccountName" type ="String" />
+		<property name ="TotalMoney" type ="Decimal" />
+		<property name ="Creater" type ="String" />
+		<property name ="CreateTime" type="DateTime" />
+	</class>
+</hibernate-mapping>

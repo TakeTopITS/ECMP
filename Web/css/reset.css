@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body{ margin:0; padding:0;}html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}img,body,html{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;}q:before,q:after{content:'';}
+a{text-decoration:none;font-family:Simsun;}
+a:focus{ outline:none;-moz-outline:none;}
+html{overflow:scroll;overflow-x:hidden;overflow-y:auto;}
+body{font-size:12px; background:#fff;}
+table{ border-collapse:collapse; border-spacing:0;width:100%;border:0;}
+a,a:hover{ text-decoration:none;}a {outline: none;}a:active {star:expression(this.onFocus=this.blur());}:focus{ outline:0;}
+.clear{ clear:both; height:0px; line-height:0px; font-size:0px; overflow:hidden}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{zoom:1;}
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner{
+	border:none;padding:0;
+}

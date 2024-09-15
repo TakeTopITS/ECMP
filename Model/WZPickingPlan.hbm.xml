@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZPickingPlan, ProjectMgt.Model" table="T_WZPickingPlan">
+
+    <id name="PlanCode" column="PlanCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="SinceNumber" type ="String" />
+    <property name ="PlanName" type ="String" />
+    <property name ="ProjectCode" type ="String" />
+    <property name ="ProjectName" type ="String" />
+    <property name ="StoreRoom" type ="String" />
+    <property name ="PickingUnit" type ="String" />
+    <property name ="UnitCode" type ="String" />
+    <property name ="SupplyMethod" type ="String" />
+    <property name ="DetailCount" type ="int" />
+    <property name ="PlanCost" type ="Decimal" />
+    <property name ="PlanMarker" type ="String" />
+    <property name ="MarkerTime" type ="DateTime" />
+    <property name ="CommitTime" type ="String" />
+    <property name ="FeeManage" type ="String" />
+    <property name ="ApproveTime" type ="String" />
+    <property name ="PurchaseEngineer" type ="String" />
+    <property name ="SignTime" type ="String" />
+    <property name ="ReturnReason" type ="String" />
+    <property name ="CancelTime" type ="String" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsMark" type ="int" />
+  </class>
+</hibernate-mapping>

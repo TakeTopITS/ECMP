@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.RCJProjectCostPerformanceBenchmar, ProjectMgt.Model" table="T_RCJProjectCostPerformanceBenchmar">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="native" />
+    </id>
+
+    <property name ="ProjectID" type ="int" />
+    <property name ="ItemNo" type ="int" />
+    <property name ="ItemType" type ="int" />
+    <property name ="ItemPriceDeviceAdjust" type ="double" />
+    <property name ="ItemPriceMainMaterialAdjust" type ="double" />
+    <property name ="ItemPriceWageAdjust" type ="double" />
+    <property name ="ItemPriceMaterialAdjust" type ="double" />
+    <property name ="ItemPriceMachineAdjust" type ="double" />
+    <property name ="ItemPriceDeviceActual" type ="double" />
+    <property name ="ItemPriceMainMaterialActual" type ="double" />
+    <property name ="ItemPricePurchaseFeeActual" type ="double" />
+    <property name ="ItemPriceWageActual" type ="double" />
+    <property name ="ItemComprehensiveFeeActual" type ="double" />
+    <property name ="ItemTaxesActual" type ="double" />
+    <property name ="ItemPriceTotalActual" type ="double" />
+    <property name ="ProjectPlanCompleteBalance" type ="double" />
+    <property name ="ProjectBCRWP" type ="double" />
+    <property name ="ProjectAI" type ="double" />
+    <property name ="ProjectEAV" formula="[ProjectBCRWP]-[ItemPriceTotalActual]" type ="double" />
+    <property name ="ProjectBV" type ="String" />
+    <property name ="ProjectPBCWP" type ="double" />
+    <property name ="ProjectRV" formula="[ProjectPBCWP]-[ProjectBCRWP]" type ="double" />
+    <property name ="ProjectRVI" type ="double" />
+  </class>
+</hibernate-mapping>

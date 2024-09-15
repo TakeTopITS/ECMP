@@ -1,0 +1,71 @@
+﻿using ProjectMgt.BLL;
+using ProjectMgt.Model;
+
+using System;
+using System.Collections;
+using System.Data;
+using System.Drawing;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class TTWorkflowProgressView : System.Web.UI.Page
+{
+    private string strUserCode;
+
+    private string strWLID, strIdentifyString, strTempName;
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        strUserCode = Session["UserCode"].ToString();
+
+        try
+        {
+            strWLID = Request.QueryString["WLID"];
+            strTempName = GetWorkflowTemplateName(strWLID);
+        }
+        catch
+        {
+            strWLID = "0";
+            strTempName = Request.QueryString["TemName"];
+        }
+
+        if (Page.IsPostBack == false)
+        {
+            try
+            {
+                string strDesignType = ShareClass.GetWLTemplateDesignType(strTempName);
+                if (strDesignType == "SL")
+                {
+                    Response.Redirect("TTWFChartViewSL.aspx?WLID=" + strWLID + "&IdentifyString=" + ShareClass.GetWLTemplateIdentifyString(strTempName));
+                }
+                if (strDesignType == "JS")
+                {
+                    Response.Redirect("TTWFChartViewJS.aspx?WLID=" + strWLID + "&IdentifyString=" + ShareClass.GetWLTemplateIdentifyString(strTempName));
+                }
+            }
+            catch (Exception err)
+            {
+                Response.Write("Error page: " + Request.Url.ToString() + "\n" + err.Message.ToString() + "\n" + err.StackTrace);
+
+                LogClass.WriteLogFile("Error page: " + Request.Url.ToString() + "\n" + err.Message.ToString() + "\n" + err.StackTrace);
+            }
+        }
+    }
+
+    protected string GetWorkflowTemplateName(string strWFID)
+    {
+        string strHQL;
+        DataSet ds;
+
+        strHQL = "Select TemName From T_WorkFlow Where WLID = " + strWFID;
+        ds = ShareClass.GetDataSetFromSql(strHQL, "T_WorkFlow");
+        if (ds.Tables[0].Rows.Count == 0)
+        {
+            strHQL = "Select TemName From T_WorkFlowBackup Where WLID = " + strWFID;
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_WorkFlowBackup");
+        }
+
+        return ds.Tables[0].Rows[0][0].ToString().Trim();
+    }
+}

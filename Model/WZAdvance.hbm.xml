@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZAdvance, ProjectMgt.Model" table="T_WZAdvance">
+
+    <id name="AdvanceCode" column="AdvanceCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="ProjectCode" type ="String" />
+    <property name ="AdvanceName" type ="String" />
+    <property name ="AdvanceMoney" type ="Decimal" />
+    <property name ="AdvanceTime" type ="DateTime" />
+    <property name ="Marker" type ="String" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsMark" type ="int" />
+  </class>
+</hibernate-mapping>

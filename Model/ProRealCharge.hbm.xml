@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ProRealCharge, ProjectMgt.Model" table="V_ProRealCharge">
+
+    <id name="ProjectID" column="ProjectID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="RealCharge" type ="Decimal" />
+  </class>
+</hibernate-mapping>

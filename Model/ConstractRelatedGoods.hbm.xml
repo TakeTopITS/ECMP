@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractRelatedGoods, ProjectMgt.Model" table="T_ConstractRelatedGoods">
+
+    <id name="ID" column="ID" type="int">
+      <generator class="identity" />
+    </id>
+
+    <property name ="ConstractCode" type ="String" />
+
+    <property name ="Type" type ="String" />
+
+    <property name ="GoodsCode" type ="String" />
+
+    <property name ="GoodsName" type ="String" />
+
+    <property name ="ModelNumber" type ="String" />
+
+    <property name ="Spec" type="String" />
+
+    <property name ="Number" type ="Decimal" />
+
+    <property name ="Unit" type ="String" />
+
+    <property name ="Price" type ="Decimal" />
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="SaleTime" type="DateTime" />
+
+    <property name ="DeleveryTime" type ="DateTime" />
+
+    <property name ="SaleOrderNumber" type ="Decimal" />
+
+    <property name ="PurchaseOrderNumber" type ="Decimal" />
+
+    <property name ="Brand" type="String" />
+
+    <property name ="FirstDirectory" type ="String" />
+    <property name ="SecondDirectory" type ="String" />
+    <property name ="ThirdDirectory" type ="String" />
+    <property name ="FourthDirectory" type ="String" />
+
+    <property name="Comment" type="String" />
+
+
+  </class>
+</hibernate-mapping>

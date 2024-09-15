@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GoodsDeliveryOrderDetail, ProjectMgt.Model" table="T_GoodsDeliveryOrderDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="DOID" type ="int" />
+
+    <property name ="GoodsCode" type ="String" />
+
+    <property name ="GoodsName" type ="String" />
+
+    <property name ="SN" type ="String" />
+
+    <property name ="Number" type ="Decimal" />
+
+    <property name ="RealReceiveNumber" type ="Decimal" />
+
+    <property name ="Unit" type ="String" />
+
+    <property name ="Type" type ="String" />
+
+    <property name ="ModelNumber" type ="String" />
+
+    <property name ="Spec" type="String" />
+
+    <property name ="Price" type ="Decimal" />
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="CurrencyType" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+
+    <property name ="SourceType" type ="String" />
+
+    <property name ="SourceID" type ="int" />
+
+    <property name ="Brand" type="String" />
+
+  </class>
+</hibernate-mapping>

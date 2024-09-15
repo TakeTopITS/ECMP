@@ -1,0 +1,246 @@
+﻿.scheduler_green_event_inner  
+{
+	margin-right: 1px;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 4px;
+	
+	color: #ffffff;
+	background: #09b2ef;
+	background: -moz-linear-gradient(
+		top,
+		#09b2ef 0%,
+		#09b2ef);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#09b2ef),
+		to(#09b2ef));  
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#09b2ef", endColorStr="#09b2ef");
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #7cb316;
+	-moz-box-shadow:
+		0px 2px 3px rgba(000,000,000,0.3),
+		inset 0px 0px 2px rgba(255,255,255,0.8);
+	-webkit-box-shadow:
+		0px 2px 3px rgba(000,000,000,0.3),
+		inset 0px 0px 2px rgba(255,255,255,0.8);
+	box-shadow:
+		0px 2px 3px rgba(000,000,000,0.3),
+		inset 0px 0px 2px rgba(255,255,255,0.8);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+}
+
+.scheduler_green_event .scheduler_green_action:hover
+{
+	opacity: 1;
+	filter: none;
+}
+
+.scheduler_green_event_hover .scheduler_green_event_inner 
+{
+	background: #09b2ef;
+	background: -moz-linear-gradient(
+		top,
+		#09b2ef 0%,
+		#09b2ef);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#09b2ef),
+		to(#09b2ef));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#09b2ef", endColorStr="#09b2ef");
+}
+
+.scheduler_green_red .scheduler_green_event_inner 
+{
+	border: 1px solid #c00004;
+	background: #ab0000;
+	background: -moz-linear-gradient(
+		top,
+		#ff2819 0%,
+		#ab0000);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ff2819),
+		to(#ab0000));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ff2819", endColorStr="#ab0000");
+}
+
+.scheduler_green_main 
+{
+	border: 1px solid #999;
+}
+
+.scheduler_green_timeheader 
+{
+	cursor: default;
+	color: #666;
+}
+
+.scheduler_green_message 
+{
+	padding: 10px;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	
+	color: #ffffff;
+	background: #000;
+	background: -moz-linear-gradient(
+		top,
+		#999 0%,
+		#666);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#999),
+		to(#666));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#999999", endColorStr="#666666");
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.scheduler_green_timeheadergroup_inner
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	text-align: center;
+	
+	border-right: 1px solid #999;
+
+	color: #ffffff;
+	background: #666;
+	background: -moz-linear-gradient(
+		top,
+		#777 0%,
+		#666);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#777),
+		to(#666));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#777777", endColorStr="#666666");
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.scheduler_green_timeheadercol_inner
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	text-align: center;
+	border-right: 1px solid #999;
+	border-top: 1px solid #999;
+
+	color: #ffffff;
+	background: #666;
+	background: -moz-linear-gradient(
+		top,
+		#777 0%,
+		#666);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#777),
+		to(#666));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#777777", endColorStr="#666666");
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.scheduler_green_rowheader 
+{
+	color: #ffffff;
+	background: #666;
+	background: -moz-linear-gradient(
+		left,
+		#777 0%,
+		#666);
+	background: -webkit-gradient(
+		linear, left top, right top, 
+		from(#777),
+		to(#666));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#777777", endColorStr="#666666",GradientType=1);
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.scheduler_green_corner
+{
+	color: #ffffff;
+	background: #666;
+	background: -moz-linear-gradient(
+		left,
+		#777 0%,
+		#666);
+	background: -webkit-gradient(
+		linear, left top, right top, 
+		from(#777),
+		to(#666));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#777777", endColorStr="#666666",GradientType=1);
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+
+}
+
+.scheduler_green_resourceheader td
+{
+	border-bottom: 1px solid black;
+	padding: 0px;
+}
+
+.scheduler_green_tree_image_no_children {
+	background-image: url('scheduler_green/tree_nochildren.png');
+}
+.scheduler_green_tree_image_expand {
+	background-image: url('scheduler_green/tree_expand.png');
+}
+.scheduler_green_tree_image_collapse {
+	background-image: url('scheduler_green/tree_collapse.png');
+}
+
+.scheduler_green_divider 
+{
+	background-color: #ccc;
+}
+
+.scheduler_green_divider_horizontal
+{
+	background-color: #ccc;
+}
+
+.scheduler_green_matrix_vertical_line 
+{
+	background-color: #eee;
+}
+
+.scheduler_green_matrix_horizontal_line 
+{
+	background-color: #eee;
+}
+
+.scheduler_green_resourcedivider 
+{
+	background-color: #ccc;
+}
+
+.scheduler_green_shadow_inner 
+{
+	background-color: #666666;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	height: 100%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}

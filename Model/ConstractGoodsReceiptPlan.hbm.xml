@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractGoodsReceiptPlan, ProjectMgt.Model" table="T_ConstractGoodsReceiptPlan">
+
+    <id name="ID" column="ID" type="int">
+      <generator class="identity" />
+    </id>
+
+    <property name ="ConstractCode" type ="String" />
+
+    <property name ="GoodsCode" type ="String" />
+
+    <property name ="GoodsName" type ="String" />
+
+    <property name ="Type" type ="String" />
+
+    <property name ="ModelNumber" type ="String" />
+
+    <property name ="Spec" type="String" />
+
+    <property name ="Number" type ="Decimal" />
+
+    <property name ="Unit" type ="String" />
+
+    <property name ="Price" type ="Decimal" />
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="ReceiptTime" type ="DateTime" />
+
+    <property name ="ReceiptAddress" type ="String" />
+
+    <property name ="ReceiptedNumber" type ="Decimal" />
+
+    <property name ="UNReceiptedNumber" type ="Decimal" />
+
+    <property name ="PreDay" type ="int" />
+
+    <property name ="Status" type ="String" />
+
+    <property name ="Brand" type ="String" />
+
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.U9Problem_YYUP, ProjectMgt.Model" table="T_U9Problem_YYUP">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProblemCode" type ="String" />
+
+    <property name ="DepartCode" type ="String" />
+    <property name ="DepartName" type ="String" />
+    <property name ="ProjectMainID" type ="int" />
+    <property name ="ProjectMainName" type ="String" />
+    <property name ="IsCheck" type ="String" />
+    <property name ="CustomName" type ="String" />
+    <property name ="CustomStatus" type ="String" />
+    <property name ="SampleCustom" type ="String" />
+    <property name ="CompanyNature" type ="String" />
+    <property name ="Regional" type ="String" />
+    <property name ="ChildCompany" type ="String" />
+    <property name ="MainDegree" type ="String" />
+    <property name ="PlanStartTime" type ="DateTime" />
+    <property name ="PlanEndTime" type ="DateTime" />
+    <property name ="ProductID" type ="String" />
+    <property name ="Product" type ="String" />
+    <property name ="SubordinateIndustry" type ="String" />
+    <property name ="ProjectMangerCode" type ="String" />
+    <property name ="ProjectMangerName" type ="String" />
+    <property name ="Phone" type ="String" />
+
+    <property name ="Email" type ="String" />
+    <property name ="StrStatus" type ="String" />
+    <property name ="CreateTime" type ="DateTime" />
+    <property name ="ProblemGuid" type ="String" />
+    <property name ="UserCode" type ="String" />
+    <property name ="UserName" type ="String" />
+    <property name ="ReturnValue" type ="String" />
+    <property name ="CustomerServiceCode" type ="String" />
+    <property name ="CustomerServicePass" type ="String" />
+    <property name ="ProblemTitle" type ="String" />
+    <property name ="EmergencyDegreeID" type ="String" />
+    <property name ="EmergencyDegree" type ="String" />
+    <property name ="ProblemAttributeID" type ="String" />
+    <property name ="ProblemAttribute" type ="String" />
+    <property name ="ProductLineID" type ="String" />
+    <property name ="ProductLine" type ="String" />
+    <property name ="ProblemModuleID" type ="String" />
+    <property name ="ProblemModule" type ="String" />
+    <property name ="ProductVersionID" type ="String" />
+    <property name ="ProductVersion" type ="String" />
+    <property name ="DatabaseTypeID" type ="String" />
+    <property name ="DatabaseType" type ="String" />
+    <property name ="ContactCode" type ="String" />
+    <property name ="ContactName" type ="String" />
+    <property name ="ContactPhone" type ="String" />
+    <property name ="ContactEmail" type ="String" />
+
+    <property name ="ProblemDesc" type ="String" />
+  <property name ="ProblemFileName" type ="String" />
+    <property name ="ProblemFileUrl" type ="String" />
+    <property name ="ApproveMark" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.ProDocGraphControl, ProjectMgt.Model" table="T_ProDocGraphControl">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="ParentName" column="ParentName" type="String">
+		</property>
+		<property name="ClassificationName" column="ClassificationName" type="String">
+		</property>
+		<property name="SortNo" column="SortNo" type="int">
+		</property>
+	</class>
+</hibernate-mapping>

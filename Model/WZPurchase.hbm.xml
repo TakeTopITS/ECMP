@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZPurchase, ProjectMgt.Model" table="T_WZPurchase">
+
+    <id name="PurchaseCode" column="PurchaseCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="PurchaseName" type ="String" />
+    <property name ="ProjectCode" type ="String" />
+
+    <property name ="MarkTime" type ="DateTime" />
+
+    <property name ="PurchaseEngineer" type ="String" />
+    <property name ="PurchaseManager" type ="String" />
+
+    <property name ="Decision" type ="String" />
+
+    <property name ="TenderCompetent" type ="String" />
+
+    <property name ="UpLeader" type ="String" />
+
+    <property name ="PurchaseMethod" type ="String" />
+
+    <property name ="PurchaseDocument" type ="String" />
+    <property name ="PurchaseDocumentURL" type ="String" />
+
+    <property name ="AssessmentDocument" type ="String" />
+    <property name ="AssessmentDocumentURL" type ="String" />
+
+    <property name ="RowNumber" type ="int" />
+    <property name ="PlanMoney" type ="Decimal" />
+    <property name ="TotalMoney" type ="Decimal" />
+
+    <property name ="DisciplinarySupervision" type ="String" />
+    <property name ="ControlMoney" type ="String" />
+
+    <property name ="PurchaseStartTime" type ="String" />
+    <property name ="PurchaseEndTime" type ="String" />
+
+    <property name ="DecisionTime" type ="String" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsMark" type ="int" />
+
+    <property name ="SupplierCode1" type ="String" />
+    <property name ="SupplierCode2" type ="String" />
+    <property name ="SupplierCode3" type ="String" />
+    <property name ="SupplierCode4" type ="String" />
+    <property name ="SupplierCode5" type ="String" />
+    <property name ="SupplierCode6" type ="String" />
+    <property name ="ExpertCode1" type ="String" />
+    <property name ="ExpertCode2" type ="String" />
+    <property name ="ExpertCode3" type ="String" />
+    <property name ="ExpertCode4" type ="String" />
+    <property name ="ExpertCode5" type ="String" />
+    <property name ="ExpertCode6" type ="String" />
+    <property name ="TenderDocument1" type ="String" />
+    <property name ="TenderDocumentURL1" type ="String" />
+    <property name ="TenderDocument2" type ="String" />
+    <property name ="TenderDocumentURL2" type ="String" />
+    <property name ="TenderDocument3" type ="String" />
+    <property name ="TenderDocumentURL3" type ="String" />
+    <property name ="TenderDocument4" type ="String" />
+    <property name ="TenderDocumentURL4" type ="String" />
+    <property name ="TenderDocument5" type ="String" />
+    <property name ="TenderDocumentURL5" type ="String" />
+    <property name ="TenderDocument6" type ="String" />
+    <property name ="TenderDocumentURL6" type ="String" />
+  </class>
+</hibernate-mapping>

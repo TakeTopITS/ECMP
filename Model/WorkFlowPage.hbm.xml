@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WorkFlowPage, ProjectMgt.Model" table="T_WorkFlowPage">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="WFType" type ="String" />
+
+    <property name ="WFName" type ="String" />
+
+    <property name ="HomeName" type="String" />
+
+    <property name ="LangCode" type ="String" />
+
+    <property name ="PageName" type="String" />
+
+    <property name ="SortNumber" type ="int" />
+  </class>
+</hibernate-mapping>

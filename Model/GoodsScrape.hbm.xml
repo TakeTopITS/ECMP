@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GoodsScrape, ProjectMgt.Model" table="T_GoodsScrape">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="GoodsID" type ="int" />
+    <property name ="GoodsCode" type ="String" />
+    <property name ="GoodsName" type ="String" />
+    <property name ="Type" type ="String" />
+    <property name ="OldUserCode" type ="String" />
+    <property name ="OldUserName" type ="String" />
+    <property name ="ScrapeNumber" type ="Decimal" />
+    <property name ="ScrapeReason" type ="String" />
+    <property name ="ScrapeTime"  type ="DateTime" />
+    <property name ="OperatorCode" type ="String" />
+    <property name ="OperatorName" type ="String" />
+    <property name ="AfterScrapeUse" type ="String" />
+    <property name ="GetAmount" type ="Decimal" />
+  </class>
+</hibernate-mapping>

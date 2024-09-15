@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GoodsReturnDetail, ProjectMgt.Model" table="T_GoodsReturnDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ROID" type ="int" />
+
+    <property name ="GoodsCode" type ="String" />
+
+    <property name ="GoodsName" type ="String" />
+
+    <property name ="SN" type ="String" />
+
+    <property name ="Type" type ="String" />
+
+    <property name ="ModelNumber" type ="String" />
+
+    <property name ="Spec" type ="String" />
+
+    <property name ="Number" type ="Decimal" />
+
+    <property name ="UnitName" type ="String" />
+
+    <property name ="Price" type ="Decimal" />
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="WarrantyPeriod" type ="int" />
+
+    <property name ="RelatedID" type ="int" />
+
+    <property name ="SourceType" type ="String" />
+
+    <property name ="SourceID" type ="int" />
+
+    <property name ="ReturnReason" type ="String" />
+
+    <property name ="Brand" type="String" />
+
+  </class>
+</hibernate-mapping>

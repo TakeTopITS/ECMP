@@ -1,0 +1,311 @@
+﻿<meta charset="utf-8" />
+<meta name="keywords" content="泰鼎,拓鼎,泰顶,云服务,SAAS,云平台,项目进度,进度管理,项目管理,项目管理软件,项目管理系统,项目管理平台,项目型ERP,工程项目,项目制造,研发项目" />
+<meta name="description" content="泰鼎、拓鼎、泰顶、云服务、SAAS、云平台、项目协作、进度管理、项目进度、项目管理、项目软件、项目系统、ERP、CRM、OA、协同平台、云办公、拓鼎最新产品、技术、解决方案价值及成功案例" />
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>泰顶项目宝---在线项目协作和进度管理平台</title>
+    <link href="website/css/neat.css" rel="stylesheet" type="text/css" />
+    <link href="website/css/xmb.css" rel="stylesheet" type="text/css" />
+    <link href="website/css/xmbUI.css" rel="stylesheet" type="text/css" />
+
+    <script src="website/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="website/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="../js/layer/layer/layer.js"></script>
+    <script type="text/javascript" src="../js/popwindow.js"></script>
+
+    <style>
+        a {
+            color: white;
+        }
+    </style>
+
+    <script>
+        //设备检测
+        function detectmob() {
+            if (navigator.userAgent.match(/Android/i)
+                || navigator.userAgent.match(/webOS/i)
+                || navigator.userAgent.match(/iPhone/i)
+                || navigator.userAgent.match(/iPad/i)
+                || navigator.userAgent.match(/iPod/i)
+                || navigator.userAgent.match(/BlackBerry/i)
+                || navigator.userAgent.match(/Windows Phone/i)
+            ) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function redirectToTarget() {
+
+            if (detectmob()) {
+
+                window.location.href = "../DefaultAPP.aspx";
+            }
+            else {
+
+                popShow('popLoginWindow', 'true');
+            }
+        }
+
+        function displayDivByPCMobile() {
+
+            if (detectmob()) {
+
+                document.getElementById('div_PCOperationVideo').style.display = 'none';
+                document.getElementById('div_PCFunctionVideo').style.display = 'none';
+                document.getElementById('div_MobileFunctionVideo').style.display = 'block';
+
+            }
+            else {
+
+                document.getElementById('div_MobileFunctionVideo').style.display = 'none';
+                document.getElementById('div_PCOperationVideo').style.display = 'none';
+                document.getElementById('div_PCFunctionVideo').style.display = 'none';
+
+            }
+        }
+
+        function displayXMBVideo() {
+            if (document.getElementById('DIV_TakeTopXMBVideo').style.display == 'none') {
+
+                document.getElementById('DIV_TakeTopXMBVideo').style.display = 'block';
+                $('#movie').get(0).play();
+            }
+            else {
+                $('#movie').get(0).pause();
+                document.getElementById('DIV_TakeTopXMBVideo').style.display = 'none';
+            }
+        }
+
+    </script>
+</head>
+<body onload="displayDivByPCMobile()">
+
+    <!--<div id="TMBG" style="width: 100%;height: 100%;overflow: hidden;background: white;z-index: 99;background-size: 100% 100%; display: none;"></div>-->
+    <!--header-->
+    <div id="header" style="overflow:hidden;">
+        <div class="header_inner fix">
+            <div class="logo" style="padding-left:100px"><img src="SiteLogoPC.png"></div>
+            <div id="mima" class="mima" style="padding-right:20px"><a href="https://www.taketopits.com" target="_blank">集团</a></div>
+            <div id="mima" class="mima"><a href="tel:02151085119" class="call">021-51085119</a></div>
+        
+            <div id="mima" class="mima1" style="padding-right:10px"><a href="https://www.taketopits.com" target="_blank">集团</a></div>
+            <div id="mima" class="mima1"><a href="tel:02151085119" class="call">021-51085119</a></div>
+          
+            <div class="denglu"><a onclick="redirectToTarget()">登录</a></div>
+        </div>
+    </div>
+    <!--header结束-->
+
+    <script type="text/javascript">
+        //banner轮播图
+        $(document).ready(function () {
+            $('.flexslider').flexslider({
+                directionNav: true,
+                pauseOnAction: false,
+                pauseOnHover: true,
+                slideshowSpeed: 4000
+            });
+        });
+
+    </script>
+
+    <!--banner-->
+    <div class="banner">
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background:url(website/images/img2.jpg) 50% 0 no-repeat;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix">泰顶项目宝</h2>
+                        <h4 class="fix">适用于中小团队</h4>
+                        <h4 class="fix">可无缝升级到企业版和集团版！</h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+                <li style="background:url(website/images/img1.jpg) 50% 0 no-repeat;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix tuandui">行业不限</h2>
+                        <h4 class="fix h4">团队、协作、高效</h4>
+                        <h4 class="fix h4">易用好用的项目管理软件！</h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+                <li style="background:url(website/images/img3.jpg) 50% 0 no-repeat;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix">随时随地</h2>
+                        <h4 class="fix h4">移动中管理项目</h4>
+                        <h4 class="fix h4">配微信端APP，移动办公更方便！</h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+                <li style="background:url(website/images/img5.jpg) 50% 0 no-repeat; position:relative;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix ms">极致易用</h2>
+                        <h4 class="fix ms">以计划为中心，任务为协同</h4>
+                        <h4 class="fix ms">任务进度自动更新计划和项目进度！</h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+                <li style="background: url(website/images/img7.jpg) 50% 0 no-repeat; position: relative;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix ms" style="color:grey;">
+                            用户众多
+                        </h2>
+                        <h4 class="fix">
+                            高效率，超稳定
+                        </h4>
+                        <h4 class="fix">
+                            久经考验 成熟易用
+                        </h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--banner结束-->
+    <div id="DIV_TakeTopXMBVideo" name="DIV_TakeTopXMBVideo" style="display:none;">
+        <div>
+            <div style="text-align: center;">
+                <video id="movie" controls="controls" height="640" src="website/video/TakeTopXMBLocalVideo.mp4" width="95%">您的浏览器不支持 video 标签，建议下载浏览器 <a href='https://www.taketopits.com/download/tools/chromesetup.exe'><span style="color:green;"> Chrome</span></a> 安装使用！</video>
+            </div>
+        </div>
+    </div>
+    <!--注册-->
+    <div id="zhuce">
+        <div class="zhuce_inner fix">
+            <div class="zhuce_txt">
+                <h3>项目管理进入新时代</h3>
+                <p>一键安装，简单易用，10分钟学会</p>
+            </div>
+
+            <div id="div_MobileFunctionVideo" class="mima" style="text-align:center;width:100%;display:none;">
+                <a href="#DIV_TakeTopXMBVideo" onclick="javascript:displayXMBVideo();">
+                    视频讲解
+                </a>
+            </div>
+
+            <!--<div id="zhuce_btn" class="zhuce_btn"><a onclick="popShow('popDetailWindow','true')">免费注册</a></div>-->
+            <a id="div_PCFunctionVideo" href="#DIV_TakeTopXMBVideo" onclick="javascript:displayXMBVideo();" style="display:none;">
+                <div  class="weixin">
+                    <p style="color:white;">
+                        功能介绍视频
+                    </p>
+                </div>
+            </a>
+
+            <!--<div id="zhuce_btn" class="zhuce_btn1"><a href="../TTUserRegisteredSAAS.aspx">免费注册</a></div>-->
+            <div id="div_PCOperationVideo" class="shouce" style="display:none;">
+                <div class="chengyuan"><a href="website/video/TakeTopXMBOperationVideo.mp4" target="_blank">操作教学视频</a></div>
+            </div>
+        </div>
+    </div>
+    <!--注册结束-->
+    <!--项目模块-->
+
+    <div class="fix neirong">
+        <div class="xiangmubao">
+            <!--<div class="buzhou" style="color:white;">精选模块，极致易用</div>-->
+            <div style="width:100%;text-align:center;">
+                <img src="website/images/XMB.JPG" width="640" height="344" />
+            </div>
+        </div>
+    </div>
+
+
+    <!--项目步骤-->
+
+    <div id="lianxi" style="height:120px; vertical-align:middle;">
+        <div class="buzhou" style="color:white;padding-top:40px;">提高项目协作和进度管理效率，只需以下 4 步：</div>
+    </div>
+
+    <div class="fix neirong">
+        <div class="xiangmubao">
+
+            <div class="jieshao">
+                <ul class="buzhou">
+                    <li class="no1"><img src="website/images/NO1.png" /><p>01成员注册</p></li>
+                    <li class="no2"><img src="website/images/NO2.png" /><p>02创建项目</p></li>
+                    <li class="no3"><img src="website/images/NO3.png" /><p>03组建团队</p></li>
+                    <li class="no4"><img src="website/images/NO4.png" /><p>04任务分派</p></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!--项目步骤结束-->
+    <!--结尾-->
+    <div class="footer">
+        <div class="footer1">赶快行动，用【项目宝】把你的项目管起来！</div>
+        <div style="width:100%;text-align:center;color:white;">
+
+            <a class="footer2" href="tencent://message/?uin=3166455252&amp;Site=&amp;Menu=yes">联系顾问(QQ)</a>
+
+        </div>
+    </div>
+    <!--结尾结束-->
+    <!--联系我们-->
+    <div id="lianxi">
+        <div class="lianxi_inner">
+            <div class="lianxi_left">
+                <h4>联系我们</h4>
+                <p>地址：上海市浦东新区陆家嘴桃林路18号环球广场A座</p>
+                <p>电话：<a href="tel:02151085119" class="call">021-51085119</a></p>
+                <p>网站：<a href="https://www.taketopits.com?TargetProduct=XMB" target="_top">www.taketopits.com</a></p>
+                <p>邮箱：service@taketopits.com</p>
+            </div>
+        </div>
+    </div>
+    <!--联系我们结束-->
+
+    <div class="layui-layer layui-layer-iframe" id="popLoginWindow" name="fixedDiv"
+         style="z-index: 9999; width: 330px; height: 450px; position: absolute; overflow: hidden; display: none; border-radius:10px; ">
+        <div class="layui-layer-title" style="background:#e7e7e8;" id="popwindow_title">
+            <asp:Label ID="Label27" runat="server" Text="&lt;div&gt;&lt;img src=ImagesSkin/Update.png border=0 width=30px height=30px alt='BusinessForm' /&gt;&lt;/div&gt;"></asp:Label>
+        </div>
+        <div id="popwindow_content" class="layui-layer-content" style="overflow:hidden; padding :0px 5px 0px 5px;">
+
+            <iframe src="../DefaultSAAS.aspx" style="width:100%;height :480px; border :none;"></iframe>
+
+        </div>
+
+        <span class="layui-layer-setwin"><a onclick="return popCloseNoPromt();" class="layui-layer-ico layui-layer-close layui-layer-close1 notTab" href="javascript:;"></a></span>
+    </div>
+
+    <div class="layui-layer layui-layer-iframe" id="popwindow" name="fixedDiv"
+         style="z-index: 9999; width: 530px; height: 630px; position: absolute; overflow: hidden; display: none; border-radius:10px; ">
+        <div class="layui-layer-title" style="background:#e7e7e8;" id="popwindow_title">
+            <asp:Label ID="Label27" runat="server" Text="&lt;div&gt;&lt;img src=ImagesSkin/Update.png border=0 width=30px height=30px alt='BusinessForm' /&gt;&lt;/div&gt;"></asp:Label>
+        </div>
+        <div id="popwindow_content" class="layui-layer-content" style="overflow: auto; padding :0px 5px 0px 5px;">
+
+            <iframe src="../TTUserPWDFindSAAS.aspx" style="width:520px;height :540px; border :none;"></iframe>
+
+        </div>
+
+        <span class="layui-layer-setwin"><a onclick="return popCloseNoPromt();" class="layui-layer-ico layui-layer-close layui-layer-close1 notTab" href="javascript:;"></a></span>
+    </div>
+
+    <div class="layui-layer layui-layer-iframe" id="popDetailWindow" name="fixedDiv"
+         style="z-index: 9999; width: 530px; height: 630px; position: absolute; overflow: hidden; display: none; border-radius:10px;">
+        <div class="layui-layer-title" style="background:#e7e7e8;" id="popwindow_title">
+            <asp:Label ID="Label27" runat="server" Text="&lt;div&gt;&lt;img src=ImagesSkin/Update.png border=0 width=30px height=30px alt='BusinessForm' /&gt;&lt;/div&gt;"></asp:Label>
+        </div>
+        <div id="popwindow_content" class="layui-layer-content" style="overflow: auto; padding :0px 5px 0px 5px;">
+
+            <iframe src="../TTUserRegisteredSAAS.aspx" style="width:520px;height :540px; border :none;"></iframe>
+
+        </div>
+
+        <span class="layui-layer-setwin"><a onclick="return popCloseNoPromt();" class="layui-layer-ico layui-layer-close layui-layer-close1 notTab" href="javascript:;"></a></span>
+    </div>
+
+    <div class="layui-layer-shade" id="popwindow_shade" style="z-index: 9998; background-color: #000; opacity: 0.3; filter: alpha(opacity=30); display: none;"></div>
+
+</body>
+</html>

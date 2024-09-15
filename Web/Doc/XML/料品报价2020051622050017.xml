@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_GoodsSaleQuotationOrder>
+    <DetailQOID>20</DetailQOID>
+    <QOID>20</QOID>
+    <QOName>SQ2018090020</QOName>
+    <SalesCode>C7094               </SalesCode>
+    <SalesName>员工C7094           </SalesName>
+    <QuotationTime>2018-09-28T00:00:00+08:00</QuotationTime>
+    <ValidityPeriod>2018-09-28T00:00:00+08:00</ValidityPeriod>
+    <Amount>11038500.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <CustomerCode>fdgdfg              </CustomerCode>
+    <CustomerName>阿里巴巴                                                    </CustomerName>
+    <OperatorCode>C7094               </OperatorCode>
+    <OperatorName>员工C7094</OperatorName>
+    <Comment />
+    <RelatedType>Other     </RelatedType>
+    <RelatedID>0</RelatedID>
+    <Status>审批中    </Status>
+  </T_GoodsSaleQuotationOrder>
+</NewDataSet>

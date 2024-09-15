@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMRTTable, ProjectMgt.Model" table="T_WPQMRTTable">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="NondestructTestCategory" type ="String" />
+		<property name ="InspectionProportion" type ="String" />
+		<property name ="QualifiedLevel" type ="String" />
+		<property name ="RTEvaluationCriteria" type ="String" />
+		<property name ="NumberSpecimens" type ="String" />
+		<property name ="RTCommissionedDate" type ="DateTime" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

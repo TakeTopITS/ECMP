@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.TRPostCertificate, ProjectMgt.Model" table="T_TRPostCertificate">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="UserCode" column="UserCode" type="String">
+		</property>
+		<property name="Unit" column="Unit" type="String">
+		</property>
+		<property name="Job" column="Job" type="String">
+		</property>
+		<property name="CertificateNo" column="CertificateNo" type="String">
+		</property>
+		<property name="CertificateOffice" column="CertificateOffice" type="String">
+		</property>
+		<property name="CertificateTime" column="CertificateTime" type="DateTime">
+		</property>
+		<property name="CertificateReviewTime" column="CertificateReviewTime" type="DateTime">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+		<property name="EnterTime" column="EnterTime" type="DateTime">
+		</property>
+	</class>
+</hibernate-mapping>

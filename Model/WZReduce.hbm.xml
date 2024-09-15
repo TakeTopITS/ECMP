@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZReduce, ProjectMgt.Model" table="T_WZReduce">
+
+    <id name="ReduceCode" column="ReduceCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="StoreRoom" type ="String" />
+    <property name ="PlanTime" type ="DateTime" />
+    <property name ="PlanMoney" type ="Decimal" />
+    <property name ="ExcuteTime" type ="String" />
+    <property name ="DetailNumber" type ="int" />
+    <property name ="StoreTotalMoney" type ="Decimal" />
+    <property name ="StoreDownMoney" type ="Decimal" />
+    <property name ="CleanMoney" type ="Decimal" />
+    <property name ="TotalNumber" type ="int" />
+    <property name ="TotalStore" type ="Decimal" />
+    <property name ="TotalRatio" type ="Decimal" />
+    <property name ="TotalDownMoney" type ="Decimal" />
+    <property name ="TotalCleanMoney" type ="Decimal" />
+    <property name ="Remark" type ="String" />
+    <property name ="Process" type ="String" />
+    <property name ="MainLeader" type ="String" />
+    <property name ="Marker" type ="String" />
+  </class>
+</hibernate-mapping>

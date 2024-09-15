@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ItemBomPart, ProjectMgt.Model" table="T_ItemBomPart">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ItemCode" type ="String" />
+
+    <property name ="ParentItemCode" type ="String" />
+
+    <property name ="ChildItemCode" type ="String" />
+
+    <property name ="ChildItemName" type ="String" />
+
+    <property name ="ChildItemType" type ="String" />
+
+    <property name ="ChildItemSpecification" type ="String" />
+
+    <property name ="ChildItemModelNumber" type ="String" />
+
+    <property name ="ChildItemPhotoURL" type ="String" />
+
+    <property name ="Number" type ="Decimal" />
+
+    <property name ="ReservedNumber" type ="Decimal" />
+
+    <property name ="Unit" type ="String" />
+
+    <property name ="ChildItemVerID" type ="int" />
+
+    <property name ="VerID" type ="int" />
+
+    <property name ="LossRate" type ="Decimal" />
+
+    <property name ="SortNumber" type ="int" />
+
+    <property name ="PULeadTime" type ="Decimal" />
+
+    <property name ="MFLeadTime" type ="Decimal" />
+
+    <property name ="HRCost" type ="Decimal" />
+
+    <property name ="MTCost" type ="Decimal" />
+
+    <property name ="MFCost" type ="Decimal" />
+
+    <property name ="DefaultProcess" type ="String" />
+
+    <property name ="ChildItemBrand" type="String" />
+
+  </class>
+</hibernate-mapping>

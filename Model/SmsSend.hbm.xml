@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.SmsSend, ProjectMgt.Model" table="sms_send">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Mobile" type ="String" />
+    <property name ="Msg" type ="String" />
+    <property name ="State" type ="int" />
+    <property name ="SendYorn" type ="int" />
+    <property name ="SendTime" type ="DateTime" />
+    <property name ="UserRTXCode" type ="String" />
+    <property name ="RTXState" type ="int" />
+  </class>
+</hibernate-mapping>

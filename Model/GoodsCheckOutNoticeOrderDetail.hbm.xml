@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GoodsCheckOutNoticeOrderDetail, ProjectMgt.Model" table="T_GoodsCheckOutNoticeOrderDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="COOID" type ="int" />
+
+    <property name ="GoodsCode" type ="String" />
+
+    <property name ="GoodsName" type="String" />
+
+    <property name ="Type" type ="String" />
+
+    <property name ="ModelNumber" type ="String" />
+
+    <property name ="CustomerModelNumber" type ="String" />
+
+    <property name ="Spec" type ="String" />
+
+    <property name ="Brand" type ="String" />
+
+    <property name ="BarCode" type ="String" />
+
+    <property name ="Number" type="Decimal" />
+
+    <property name ="BoxNumber" type ="Decimal" />
+
+    <property name ="Price" type ="Decimal" />
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="CurrencyType" type ="String" />
+
+    <property name ="CheckOutNumber" type ="Decimal" />
+
+    <property name ="Unit" type="String" />
+
+    <property name ="FinishStatus" type ="String" />
+
+    <property name ="DeliveryAddress" type ="String" />
+
+    <property name ="CheckOutTime" type ="DateTime" />
+
+    <property name ="Comment" type ="String" />
+
+    <property name ="PDID" type ="int" />
+
+    <property name ="PDName" type ="String" />
+
+    <property name ="SourceType" type ="String" />
+
+    <property name ="SourceID" type ="int" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZPayDetail, ProjectMgt.Model" table="T_WZPayDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PayID" type ="String" />
+    <property name ="RequestCode" type ="String" />
+    <property name ="CancelTime" type ="DateTime" />
+    <property name ="CompactCode" type ="String" />
+    <property name ="SupplierCode" type ="String" />
+    <property name ="Supplier" type ="String" />
+    <property name ="PlanMoney" type ="Decimal" />
+    <property name ="Borrower" type ="String" />
+    <property name ="UseWay" type ="String" />
+    <property name ="PayProcess" type ="String" />
+  </class>
+</hibernate-mapping>

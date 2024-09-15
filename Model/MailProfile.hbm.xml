@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.MailProfile, ProjectMgt.Model" table="T_MailProfile">
+
+    <id name="WebMailID" column="WebMailID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+
+    <property name ="AliasName" type ="String" />
+
+    <property name ="Email" type ="String" />
+
+    <property name ="Password" type ="String" />
+
+    <property name ="SmtpServerIP"  column="MailServerIP"  type ="String" />
+
+    <property name ="SmtpServerPort" column="MailServerPort"  type ="int" />
+
+    <property name ="Pop3ServerIP" type ="String" />
+
+    <property name ="Pop3ServerPort" type ="int" />
+
+    <property name ="EnablePOP3SSL" type ="String" />
+
+    <property name ="EnableSMTPSSL" type="String" />
+  </class>
+</hibernate-mapping>

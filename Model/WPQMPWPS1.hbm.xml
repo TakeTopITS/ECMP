@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMPWPS1, ProjectMgt.Model" table="T_WPQMPWPS1">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="EntityName" type ="String" />
+		<property name ="PWPS1DateTime" type ="DateTime" />
+		<property name ="MechanizationDegree" type ="String" />
+		<property name ="WeldedJointOther" type ="String" />
+		<property name ="WeldedJointDiagram" type ="String" />
+		<property name ="PWPSCategory" type ="String" />
+		<property name ="PWPSAndCategory" type ="String" />
+		<property name ="PWPSStandardNo" type ="String" />
+		<property name ="PWPSAndStandardNo" type ="String" />
+		<property name ="ButtWeldMateThicknessRange" type ="String" />
+		<property name ="FilletWeldMateThicknessRange" type ="String" />
+		<property name ="ButtWeldOtherInfo" type ="String" />
+		<property name ="FilletWeld" type ="String" />
+		<property name ="PWPSMetalOther" type ="String" />
+		<property name ="ElectStandard" type ="String" />
+		<property name ="WireStandard" type ="String" />
+		<property name ="FluxStandard" type ="String" />
+		<property name ="ElectInspection" type ="String" />
+		<property name ="WireInspection" type ="String" />
+		<property name ="FluxInspection" type ="String" />
+		<property name ="ButtWeldMetaThickRange" type ="String" />
+		<property name ="FilletWeldMetaThickRange" type ="String" />
+		<property name ="C" type ="String" />
+		<property name ="Mn" type ="String" />
+		<property name ="Si" type ="String" />
+		<property name ="S" type ="String" />
+		<property name ="P" type ="String" />
+		<property name ="Cr" type ="String" />
+		<property name ="Ni" type ="String" />
+		<property name ="Mo" type ="String" />
+		<property name ="Cu" type ="String" />
+		<property name ="Ti" type ="String" />
+		<property name ="Nb" type ="String" />
+		<property name ="PWPSDescr" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

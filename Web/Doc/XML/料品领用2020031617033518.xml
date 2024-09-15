@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_GoodsApplication>
+    <AAID>28</AAID>
+    <GAAName>AO2018090028</GAAName>
+    <Type>SALE                </Type>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094</ApplicantName>
+    <ApplyTime>2015-10-29T00:00:00+08:00</ApplyTime>
+    <FinishTime>2015-10-29T00:00:00+08:00</FinishTime>
+    <ApplyReason>TEST</ApplyReason>
+    <Status>审批中    </Status>
+    <RelatedType>Other     </RelatedType>
+    <RelatedID>0</RelatedID>
+    <Amount>1000.000</Amount>
+    <CurrencyType>人民币</CurrencyType>
+  </T_GoodsApplication>
+</NewDataSet>

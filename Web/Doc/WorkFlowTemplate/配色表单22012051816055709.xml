@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="1.0.0.2" productVersion="12.0.0" PIVersion="1.0.0.0" href="file:///C:\Users\Administrator\Desktop\新建文件夹\配色申请单1.xsn" name="urn:schemas-microsoft-com:office:infopath:-bcgE1:-myXSD-2012-05-14T03-26-45" ?><?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:myFields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2012-05-14T03:26:45" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="zh-cn">
+	<my:编号></my:编号>
+	<my:产品名称></my:产品名称>
+	<my:用户名称></my:用户名称>
+	<my:产品型号></my:产品型号>
+	<my:交货日期></my:交货日期>
+	<my:group1>
+		<my:group2>
+			<my:field1></my:field1>
+			<my:field2></my:field2>
+			<my:field3></my:field3>
+		</my:group2>
+		
+		
+		
+		
+		
+	</my:group1>
+	<my:小样进度反馈></my:小样进度反馈>
+	<my:field4></my:field4>
+	<my:field5></my:field5>
+	<my:group3>
+		<my:group4>
+			<my:field6></my:field6>
+			<my:field7></my:field7>
+			<my:field8></my:field8>
+		</my:group4>
+	</my:group3>
+	<my:group5>
+		<my:group6>
+			<my:field9></my:field9>
+			<my:field10></my:field10>
+			<my:field11></my:field11>
+		</my:group6>
+	</my:group5>
+	<my:group7>
+		<my:group8>
+			<my:field12></my:field12>
+			<my:field13></my:field13>
+			<my:field14></my:field14>
+		</my:group8>
+	</my:group7>
+	<my:group9>
+		<my:group10>
+			<my:field15></my:field15>
+			<my:field16></my:field16>
+			<my:field17></my:field17>
+		</my:group10>
+	</my:group9>
+</my:myFields>

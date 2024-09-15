@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <TAKETOPDBConnect Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>TAKETOPDBConnect</Alias>
+        <ConnectionStringEncrypted>1Gr3z8ddS1lFX/lY5XioY9HEs8tIQjF9YhPt7fF0KSfJKLcLYl3TzfZoVQj7SayjxRZTiUNRmQFqfOR84T3hbttam+nIS/NZ4335zPvY9i7VcNkow1uj3cdceQjh</ConnectionStringEncrypted>
+        <Name>TAKETOPDBConnect</Name>
+      </TAKETOPDBConnect>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <DataSource1 Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>DataSource1</Alias>
+        <Columns isList="true" count="4">
+          <value>ProjectID,System.Int32</value>
+          <value>ProjectName,System.String</value>
+          <value>PMName,System.String</value>
+          <value>ProjectAmount,System.Decimal</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>ae430a549a89485f9ce991a3893105bd</Key>
+        <Name>DataSource1</Name>
+        <NameInSource>TAKETOPDBConnect</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>Select ProjectID,ProjectName,PMName,ProjectAmount From T_Project Order By ProjectID ASC</SqlCommand>
+      </DataSource1>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>a21cad876a2244f393ebff1d123ffc53</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <页眉1 Ref="5" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,1.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <文本1 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.8,0.4,7.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,16,Bold</Font>
+              <Guid>2c524f0e270e48d18a5b21b6e24d5498</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Project Amount Chart List</Text>
+              <TextBrush>Black</TextBrush>
+            </文本1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>页眉1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </页眉1>
+        <页脚1 Ref="7" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,26.9,19,0.8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>页脚1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </页脚1>
+        <页眉2 Ref="8" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2.8,19,0.8</ClientRectangle>
+          <Components isList="true" count="4">
+            <文本2 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.4,0.2,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>ceec7d9738df414ebb61230064c01ec0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本2</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ProjectID</Text>
+              <TextBrush>Black</TextBrush>
+            </文本2>
+            <文本4 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.2,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>9845c53860c84905ba04fb51a56619c8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本4</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ProjectName</Text>
+              <TextBrush>Black</TextBrush>
+            </文本4>
+            <文本6 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.6,0.2,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>b05591041a574e34a00380c97d175815</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本6</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>PMName</Text>
+              <TextBrush>Black</TextBrush>
+            </文本6>
+            <文本8 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.8,0.2,2.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>1aa8ab79d3e8408abd823f6f37324373</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本8</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>ProjectAmount</Text>
+              <TextBrush>Black</TextBrush>
+            </文本8>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>页眉2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </页眉2>
+        <数据区1 Ref="13" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,4.4,19,0.8</ClientRectangle>
+          <Components isList="true" count="4">
+            <文本3 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.4,0.2,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>a5d1676fcebd427997bb9730f42d9a81</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本3</Name>
+              <Page isRef="4" />
+              <Parent isRef="13" />
+              <Text>{DataSource1.ProjectID}</Text>
+              <TextBrush>Black</TextBrush>
+            </文本3>
+            <文本5 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.2,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>4f22869f0b7b414da8ef3be52a5d97a2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本5</Name>
+              <Page isRef="4" />
+              <Parent isRef="13" />
+              <Text>{DataSource1.ProjectName}</Text>
+              <TextBrush>Black</TextBrush>
+            </文本5>
+            <文本7 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.6,0.2,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>2fdf862d04db4401b486c23f65a7dee0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本7</Name>
+              <Page isRef="4" />
+              <Parent isRef="13" />
+              <Text>{DataSource1.PMName}</Text>
+              <TextBrush>Black</TextBrush>
+            </文本7>
+            <文本9 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.8,0.2,2.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>ce30687f2a664847adc7586d5bca9c6a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本9</Name>
+              <Page isRef="4" />
+              <Parent isRef="13" />
+              <Text>{DataSource1.ProjectAmount}</Text>
+              <TextBrush>Black</TextBrush>
+            </文本9>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>DataSource1</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>数据区1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </数据区1>
+        <页脚2 Ref="18" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6,19,1.2</ClientRectangle>
+          <Components isList="true" count="2">
+            <文本10 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.4,0.2,1.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold| Italic</Font>
+              <Guid>23e40ed021b143c1b532f05a9ffbd8c6</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本10</Name>
+              <Page isRef="4" />
+              <Parent isRef="18" />
+              <Text>Sum:</Text>
+              <TextBrush>Black</TextBrush>
+            </文本10>
+            <文本11 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.8,0.2,3.72,0.71</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold| Italic</Font>
+              <Guid>6023114ba5fe45e9b374cdc68b76cf9c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本11</Name>
+              <Page isRef="4" />
+              <Parent isRef="18" />
+              <Text>{Sum(DataSource1.ProjectAmount)}</Text>
+              <TextBrush>Black</TextBrush>
+            </文本11>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>页脚2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </页脚2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>be867f1ccdf9418fbae9f4017affec63</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>2/20/2012 10:50:54 AM</ReportChanged>
+  <ReportCreated>2/20/2012 10:50:54 AM</ReportCreated>
+  <ReportGuid>ed556cc8418b4d19b44bef62b682a36a</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2020.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

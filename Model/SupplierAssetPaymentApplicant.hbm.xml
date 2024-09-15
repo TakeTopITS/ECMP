@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.SupplierAssetPaymentApplicant, ProjectMgt.Model" table="T_SupplierAssetPaymentApplicant">
+
+    <id name="AOID" column="AOID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="AOName" type ="String" />
+
+    <property name ="ProjectID" type="int" />
+
+    <property name ="ProjectName" type="String" />
+
+    <property name ="PartA" type ="String" />
+
+    <property name ="PartAContactInformation" type ="String" />
+
+    <property name ="PaymentMethod" type ="String" />
+
+    <property name ="Attachment" type ="String" />
+
+    <property name ="ContractPayCondition" type="String" />
+
+    <property name ="CurrentTotalPaymentAmount" type="Decimal" />
+
+    <property name ="AleadyTotalInvoice" type="Decimal" />
+
+    <property name ="ShouldTotalInvoice" type="Decimal" />
+
+    <property name ="CurrencyType" type="String" />
+
+    <property name ="CompanyName" type="String" />
+
+    <property name ="BankName" type="String" />
+
+    <property name ="BankCode" type="String" />
+
+    <property name ="ReceiptVoucher" type ="String" />
+
+    <property name ="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+
+    <property name ="CreateTime" type ="DateTime" />
+
+    <property name ="Status" type="String" />
+  </class>
+</hibernate-mapping>

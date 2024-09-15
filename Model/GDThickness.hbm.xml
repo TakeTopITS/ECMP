@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDThickness, ProjectMgt.Model" table="T_GDThickness">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="LineLevel" type ="String" />
+    <property name ="Size" type ="String" />
+    <property name ="Rules" type ="String" />
+    <property name ="Thickness" type ="Decimal" />
+    <property name ="HotHandler" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

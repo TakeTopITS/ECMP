@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMSupplierBidRecord, ProjectMgt.Model" table="T_BMSupplierBidRecord">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="SupplierBidID" column="SupplierBidID" type="int">
+		</property>
+		<property name="AnnInvitationID" column="AnnInvitationID" type="int">
+		</property>
+		<property name="SupplierCode" column="SupplierCode" type="int">
+		</property>
+		<property name="BiddingContent" column="BiddingContent" type="String">
+		</property>
+		<property name="OperationType" column="OperationType" type="String">
+		</property>
+		<property name="OperationDate" column="OperationDate" type="DateTime">
+		</property>
+	</class>
+</hibernate-mapping>

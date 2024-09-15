@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZSupplier, ProjectMgt.Model" table="T_WZSupplier">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="SupplierCode" type ="String" />
+    <property name ="SupplierNumber" type ="String" />
+    <property name ="SupplierName" type ="String" />
+    <property name ="OpeningBank" type ="String" />
+    <property name ="AccountNumber" type ="String" />
+    <property name ="RateNumber" type ="String" />
+    <property name ="UnitAddress" type ="String" />
+    <property name ="ZipCode" type ="String" />
+    <property name ="UnitPhone" type ="String" />
+    <property name ="PersonDelegate" type ="String" />
+    <property name ="DelegateAgent" type ="String" />
+    <property name ="ContactPhone" type ="String" />
+    <property name ="Mobile" type ="String" />
+    <property name ="QQ" type ="String" />
+    <property name ="Email" type ="String" />
+    <property name ="MainSupplier" type ="String" />
+    <property name ="InDocumentURL" type ="String" />
+    <property name ="InDocument" type ="String" />
+    <property name ="InTime" type ="DateTime" />
+    <property name ="PushUnit" type ="String" />
+    <property name ="Grade" type ="String" />
+    <property name ="Auditor" type ="String" />
+    <property name ="ApproveTime" type ="String" />
+    <property name ="ReviewDate" type ="String" />
+    <property name ="ReviewDocument" type ="String" />
+    <property name ="ReviewDocumentURL" type ="String" />
+
+    <property name ="ReviewResult" type ="String" />
+    <property name ="QualityEngineer" type ="String" />
+    <property name ="Progress" type ="String" />
+
+    <property name ="IsMark" type ="int" />
+
+    <property name ="PushPerson" type ="String" />
+
+    <property name ="ApprovalDocument" type ="String" />
+    <property name ="ApprovalDocumentURL" type ="String" />
+    <property name ="CompetentMaterials" type ="String" />
+
+    <property name ="CompetentMaterialsDocument" type ="String" />
+    <property name ="CompetentMaterialsDocumentURL" type ="String" />
+
+    <property name ="ContractWhose" type ="String" />
+
+    <property name ="ContractWhoseDocument" type ="String" />
+    <property name ="ContractWhoseDocumentURL" type ="String" />
+
+    <property name ="CompetentLeadership" type ="String" />
+
+    <property name ="CompetentLeadershipDocument" type ="String" />
+    <property name ="CompetentLeadershipDocumentURL" type ="String" />
+  </class>
+</hibernate-mapping>

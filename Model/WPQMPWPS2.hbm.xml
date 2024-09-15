@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMPWPS2, ProjectMgt.Model" table="T_WPQMPWPS2">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="FilletWeldPosition" type ="String" />
+		<property name ="VerticalWeldingDirection" type ="String" />
+		<property name ="CurrentType" type ="String" />
+		<property name ="Polarity" type ="String" />
+		<property name ="WeldCurrentRange" type ="String" />
+		<property name ="ArcVoltage" type ="String" />
+		<property name ="WeldingSpeed" type ="String" />
+		<property name ="BeadWeldingLayer" type ="String" />
+		<property name ="CurrentTypeChara" type ="String" />
+		<property name ="WeldingCurrent" type ="String" />
+		<property name ="LineEnergy" type ="String" />
+		<property name ="SwingType" type ="String" />
+		<property name ="OscillationParameters" type ="String" />
+		<property name ="PassWeldingType" type ="String" />
+		<property name ="WireWeldingType" type ="String" />
+		<property name ="ConductiveMouthWork" type ="String" />
+		<property name ="Hammer" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

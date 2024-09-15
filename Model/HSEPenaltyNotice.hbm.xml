@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSEPenaltyNotice, ProjectMgt.Model" table="T_HSEPenaltyNotice">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="RectificationCode" column="RectificationCode" type="String">
+		</property>
+		<property name="RectificationName" column="RectificationName" type="String">
+		</property>
+		<property name="PenaltyDepartCode" column="PenaltyDepartCode" type="String">
+		</property>
+		<property name="PenaltyMoney" column="PenaltyMoney" type="Decimal">
+		</property>
+		<property name="Currency" column="Currency" type="String">
+		</property>
+		<property name="PenaltyRemark" column="PenaltyRemark" type="String">
+		</property>
+		<property name="Measures" column="Measures" type="String">
+		</property>
+		<property name="AuditOpinion" column="AuditOpinion" type="String">
+		</property>
+		<property name="AuditDepartCode" column="AuditDepartCode" type="String">
+		</property>
+		<property name="Auditor" column="Auditor" type="String">
+		</property>
+		<property name="PenaltyDate" column="PenaltyDate" type="DateTime">
+		</property>
+		<property name="AuditDate" column="AuditDate" type="DateTime">
+		</property>
+		<property name="VerificationResults" column="VerificationResults" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

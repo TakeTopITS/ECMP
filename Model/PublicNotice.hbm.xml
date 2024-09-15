@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.PublicNotice, ProjectMgt.Model" table="T_PublicNotice">
+
+    <id name="DocID" column="DocID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="DocType" type ="String" />
+
+    <property name ="DocName" type ="String" />
+
+    <property name ="Description" type ="String" />
+
+    <property name ="Address"  type ="String" />
+
+    <property name ="Author" type ="String" />
+
+    <property name ="UploadManCode" type ="String" />
+
+    <property name ="UploadManName" type="String" />
+
+    <property name ="UploadTime" type ="DateTime" />
+
+    <property name ="RelatedDepartCode" type ="String" />
+
+    <property name ="RelatedDepartName" type ="String" />
+
+    <property name ="Status" type ="String" />
+
+    <property name ="Scope" type="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.LogonLog, ProjectMgt.Model" table="T_LogonLog">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+
+    <property name ="UserIP" type ="String" />
+
+    <property name ="UserHostName" type="String" />
+
+    <property name ="Position" type ="String" />
+
+    <property name ="LoginTime" type ="DateTime" />
+
+    <property name ="LastestTime" type ="DateTime" />
+
+    <property name ="DeviceType" type ="String" />
+  </class>
+</hibernate-mapping>

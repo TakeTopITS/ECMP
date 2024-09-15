@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ProjectMemberStudentCare, ProjectMgt.Model" table="T_ProjectMemberStudentCare">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="StudentCode" type ="String" />
+    <property name ="StudentName" type ="String" />
+    <property name ="CheckTime" type ="DateTime" />
+    <property name ="CheckContent" type ="String" />
+    <property name ="ActualAge" type ="String" />
+    <property name ="WeightKG" type ="String" />
+    <property name ="WeightEvaluation" type ="String" />
+    <property name ="HeightCM" type ="String" />
+    <property name ="HeightEvaluation" type ="String" />
+    <property name ="Eyesight" type ="String" />
+
+    <property name ="Ear" type ="String" />
+    <property name ="Nose" type ="String" />
+    <property name ="PharynxFlat" type ="String" />
+    <property name ="Heart" type ="String" />
+    <property name ="Lung" type ="String" />
+    <property name ="LiverSpleen" type ="String" />
+    <property name ="Genitals" type ="String" />
+    <property name ="HearingScreening" type ="String" />
+    <property name ="RefractiveScreening" type ="String" />
+    <property name ="Hemoglobin" type ="String" />
+    <property name ="TurnEnzyme" type ="String" />
+    <property name ="HepatitisAntigen" type ="String" />
+    <property name ="OtherRemark" type ="String" />
+    <property name ="PhysicianGuidance" type ="String" />
+    <property name ="PhysicianSignature" type ="String" />
+  </class>
+</hibernate-mapping>

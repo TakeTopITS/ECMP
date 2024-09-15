@@ -1,0 +1,1017 @@
+@media screen and (max-device-width: 970px) {
+    .banner {
+        min-width: 100%;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .zhuce_btn a {
+        width: 350px;
+        height: 120px;
+        font-size: 4.5em;
+        line-height: 120px;
+        margin: 0 auto;
+    }
+
+    #header {
+        height: 130px;
+    }
+
+    .denglu a {
+        font-size: 3em;
+        line-height: 130px;
+    }
+
+    .mima a {
+        font-size: 3em;
+        line-height: 130px;
+    }
+
+    .weixin p {
+        width: 155px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 3em;
+        color: #fff;
+    }
+
+    #zhuce {
+        height: 550px;
+    }
+
+    .zhuce_txt {
+        float: none;
+        padding-bottom: 20px;
+    }
+
+    .zhuce_btn {
+        margin-top: 70px;
+        margin: auto;
+    }
+
+    .zhuce_txt h3 {
+        font-size: 5em;
+        text-align: center;
+    }
+
+    .zhuce_txt p {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .tu1-1 {
+        float: none;
+        width: auto;
+    }
+
+    .zhuce_inner {
+        width: 100%
+    }
+
+    #ercengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    #erceng {
+        display: none;
+    }
+
+    .erceng_word {
+        width: auto;
+    }
+
+        .erceng_word p {
+            font-size: 3em;
+            line-height: 1.5em;
+        }
+
+        .erceng_word a {
+            font-size: 1em;
+        }
+
+    .tuone {
+        float: none;
+        width: auto;
+    }
+
+    #oneapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    #one {
+        display: none;
+    }
+
+    .one_word {
+        width: auto;
+        margin-top: -100px;
+    }
+
+        .one_word p {
+            font-size: 3em;
+            line-height: 1.5em;
+        }
+
+        .one_word a {
+            font-size: 1em;
+        }
+
+    #sanceng {
+        display: none;
+    }
+
+    #sancengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .sancengapp_word {
+        width: auto;
+        margin-top: 50px;
+    }
+
+    .tu1-1-1 {
+        width: auto;
+    }
+
+    .sancengapp_word p {
+        font-size: 3em;
+        color: #8693a7;
+        line-height: 1.5em;
+    }
+
+    #two {
+        display: none;
+    }
+
+    #twoapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .twoapp_word {
+        width: auto;
+        margin-top: 50px;
+    }
+
+    .tutwo {
+        width: auto;
+    }
+
+    .twoapp_word p {
+        font-size: 3em;
+        color: #8693a7;
+        line-height: 1.5em;
+    }
+
+    .tutree {
+        float: none;
+        width: auto;
+    }
+
+    #treeapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    #tree {
+        display: none;
+    }
+
+    .treeapp_word {
+        width: auto;
+    }
+
+        .treeapp_word p {
+            font-size: 3em;
+            line-height: 1.5em;
+            color: #8693a7;
+        }
+
+    .tree_word a {
+        font-size: 1em;
+    }
+
+    #four {
+        display: none;
+    }
+
+    #fourapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tufour {
+        width: auto;
+    }
+
+    .fourapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #five {
+        display: none;
+    }
+
+    #fiveapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tufive {
+        float: none;
+        width: auto;
+    }
+
+    .fiveapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #six {
+        display: none;
+    }
+
+    #sixapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tusix {
+        width: auto;
+    }
+
+    .sixapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #seven {
+        display: none;
+    }
+
+    #sevenapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tuseven {
+        float: none;
+        width: auto;
+    }
+
+    .sevenapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+
+    #sicengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    #siceng {
+        display: none;
+    }
+
+    .tu2-1 {
+        float: none;
+        width: auto;
+    }
+
+    .sicengapp_word {
+        width: auto;
+        padding-top: 50px;
+        font-size: 3em;
+        color: #8693a7;
+        line-height: 1.5em;
+    }
+
+    #wuceng {
+        display: none;
+    }
+
+    #wucengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .wucengapp_word {
+        margin-top: 50px;
+        color: #8693a7;
+        font-size: 3em;
+        width: auto;
+        line-height: 1.5em;
+    }
+
+    .tu3-1 {
+        width: auto;
+    }
+
+    #liuceng {
+        display: none;
+    }
+
+    #liucengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu4-1 {
+        float: none;
+        width: auto;
+    }
+
+    .liucengapp_word {
+        padding-top: 50px;
+        font-size: 3em;
+        color: #8693a7;
+        width: auto;
+        line-height: 1.5em;
+    }
+
+    #qiceng {
+        display: none;
+    }
+
+    #qicengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .qicengapp_word {
+        width: auto;
+        padding-top: 50px;
+        font-size: 3em;
+        color: #8693a7;
+        line-height: 1.5em;
+    }
+
+    .tu5-1 {
+        width: auto;
+    }
+
+    #baceng {
+        display: none;
+    }
+
+    #bacengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu6-1 {
+        float: none;
+        width: auto;
+    }
+
+    .bacengapp_word {
+        font-size: 3em;
+        width: auto;
+        padding-top: 50px;
+        color: #8693a7;
+        line-height: 1.5em;
+    }
+
+    #jiuceng {
+        display: none;
+    }
+
+    #jiucengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu6-2 {
+        width: auto;
+    }
+
+    .jiucengapp_word {
+        font-size: 3em;
+        color: #8693a7;
+        width: auto;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #shiceng {
+        display: none;
+    }
+
+    #shicengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu7-1 {
+        float: none;
+        width: auto;
+    }
+
+    .shicengapp_word {
+        font-size: 3em;
+        color: #8693a7;
+        width: auto;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #shiyiceng {
+        display: none;
+    }
+
+    #shiyicengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .shiyicengapp_word {
+        font-size: 3em;
+        color: #8693a7;
+        width: auto;
+        padding-top: 50px;
+    }
+
+    .tu7-2 {
+        width: auto;
+    }
+
+    #shierceng {
+        display: none;
+    }
+
+    #shiercengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu8-1 {
+        float: none;
+        width: auto;
+    }
+
+    .shiercengapp_word {
+        width: auto;
+        font-size: 3em;
+        color: #8693a7;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #shisanceng {
+        display: none;
+    }
+
+    #shisancengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu9-1 {
+        width: auto;
+    }
+
+    .shisancengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #shisiceng {
+        display: none;
+    }
+
+    #shisicengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu10-1 {
+        float: none;
+        width: auto;
+    }
+
+    .shisicengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #shiwuceng {
+        display: none;
+    }
+
+    #shiwucengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu11-1 {
+        width: auto;
+    }
+
+    .shiwucengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #shiliuceng {
+        display: none;
+    }
+
+    #shiliucengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu12-1 {
+        float: none;
+        width: auto;
+    }
+
+    .shiliucengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #shiqiceng {
+        display: none;
+    }
+
+    #shiqicengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu13-1 {
+        width: auto;
+    }
+
+    .shiqicengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #shibaceng {
+        display: none;
+    }
+
+    #shibacengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu14-1 {
+        float: none;
+        width: auto;
+    }
+
+    .shibacengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #shijiuceng {
+        display: none;
+    }
+
+    #shijiucengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu15-1 {
+        width: auto;
+    }
+
+    .shijiucengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #ershiceng {
+        display: none;
+    }
+
+    #ershicengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu16-1 {
+        float: none;
+        width: auto;
+    }
+
+    .ershicengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #ershiyiceng {
+        display: none;
+    }
+
+    #ershiyicengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu16-2 {
+        width: auto;
+    }
+
+    .ershiyicengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #ershierceng {
+        display: none;
+    }
+
+    #ershiercengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu16-3 {
+        width: auto;
+        float: none;
+    }
+
+    .ershiercengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #ershisanceng {
+        display: none;
+    }
+
+    #ershisancengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu17-1 {
+        width: auto;
+    }
+
+    .ershisancengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    #ershisiceng {
+        display: none;
+    }
+
+    #ershisicengapp {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .tu18-1 {
+        float: none;
+        width: auto;
+    }
+
+    .ershisicengapp_word {
+        width: auto;
+        color: #8693a7;
+        font-size: 3em;
+        padding-top: 50px;
+        line-height: 1.5em;
+    }
+
+    .banner_inner {
+        width: 98%;
+    }
+
+    .ercengapp_inner {
+        width: 98%;
+    }
+
+    .sancengapp_inner {
+        width: 98%;
+    }
+
+    .sicengapp_inner {
+        width: 98%;
+    }
+
+    .wucengapp_inner {
+        width: 98%;
+    }
+
+    .liucengapp_inner {
+        width: 98%;
+    }
+
+    .qicengapp_inner {
+        width: 98%;
+    }
+
+    .bacengapp_inner {
+        width: 98%;
+    }
+
+    .jiucengapp_inner {
+        width: 98%;
+    }
+
+    .shicengapp_inner {
+        width: 98%;
+    }
+
+    .shiyicengapp_inner {
+        width: 98%
+    }
+
+    .shiercengapp_inner {
+        width: 98%
+    }
+
+    .shisancengapp_inner {
+        width: 98%
+    }
+
+    .shisicengapp_inner {
+        width: 98%
+    }
+
+    .shiwucengapp_inner {
+        width: 98%
+    }
+
+    .shiliucengapp_inner {
+        width: 98%
+    }
+
+    .shiqicengapp_inner {
+        width: 98%
+    }
+
+    .shibacengapp_inner {
+        width: 98%
+    }
+
+    .shijiucengapp_inner {
+        width: 98%
+    }
+
+    .ershicengapp_inner {
+        width: 98%
+    }
+
+    .ershiyicengapp_inner {
+        width: 98%
+    }
+
+    .ershiercengapp_inner {
+        width: 98%
+    }
+
+    .ershisancengapp_inner {
+        width: 98%
+    }
+
+    .ershisicengapp_inner {
+        width: 98%
+    }
+
+    .oneapp_inner {
+        width: 98%;
+    }
+
+    .twoapp_inner {
+        width: 98%;
+    }
+
+    .treeapp_inner {
+        width: 98%;
+    }
+
+    .fourapp_inner {
+        width: 98%;
+    }
+
+    .fiveapp_inner {
+        width: 98%;
+    }
+
+    .sixapp_inner {
+        width: 98%;
+    }
+
+    .sevenapp_inner {
+        width: 98%;
+    }
+
+    .header_inner {
+        width: 100%
+    }
+
+    .lianxi_inner {
+        width: 100%
+    }
+
+    .banner_inner h4 {
+        margin-top: 30px;
+        font-size: 2.5em;
+    }
+
+    .lianxi_left h4 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .lianxi_left p {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+
+    .lianxi_left {
+        width: auto;
+        float: none;
+        text-align: center;
+    }
+
+    #lianxi {
+        height: 320px;
+    }
+
+    .lianxi_right {
+        float: none;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+        .lianxi_right ul li p {
+            font-size: 2em;
+        }
+
+    .lianxi_left p a {
+        font-size: 1em;
+    }
+
+    .gongzonghao {
+        top: 220px;
+        left: -45px;
+    }
+
+    .logo img {
+        margin-top: 30px;
+    }
+
+    .jingli a, .chengyuan a {
+        font-size: 2.5em;
+        width: 240px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .shouce {
+        float: none;
+        display: inline-block;
+        margin-left: 25%;
+    }
+
+    .diyi {
+        font-size: 3em;
+    }
+
+    .mima1 {
+        display: block;
+        float: right;
+    }
+
+        .mima1 a {
+            font-size: 3em;
+            line-height: 130px;
+            margin-left: 20px;
+            color: #FDFBFB;
+        }
+
+    .mima {
+        display: none;
+    }
+
+    .zhuce_btn1 {
+        display: block;
+        margin-top: 70px;
+        margin: auto;
+        width: 350px;
+        height: 120px;
+        background: #d15d5d;
+        text-align: center;
+    }
+
+        .zhuce_btn1 a {
+            font-size: 4.5em;
+            line-height: 120px;
+            margin: 0 auto;
+            color: #FDFBFB;
+        }
+
+    .zhuce_btn {
+        display: none;
+    }
+
+    .weixin {
+        top: 100px;
+        left: 350px;
+        display: none;
+        color: white;
+    }
+
+    .zhuce1 {
+        display: none;
+    }
+
+    .buzhou {
+        font-size: 2em;
+    }
+
+    .jieshao {
+        /* width:72%; */
+    }
+
+        .jieshao li {
+            margin-top: 40px;
+        }
+
+    .footer2 ul {
+        margin-left: 240px;
+        margin-top: 10px;
+    }
+
+    .footer2 li {
+        font-size: 2em;
+        width: 220px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .footer1 {
+        font-size: 2em;
+    }
+
+    .ui {
+        display: block;
+    }
+
+    .pc {
+        display: none;
+    }
+}

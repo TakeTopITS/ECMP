@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ScheduleEventLeaderReview, ProjectMgt.Model" table="T_ScheduleEvent_LeaderReview">
+
+    <id name="ReviewID" column="ReviewID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ScheduleID" type ="int" />
+
+    <property name ="LeaderCode" type="String" />
+
+    <property name ="LeaderName" type ="String" />
+
+    <property name ="ReviewTime" type ="DateTime" />
+
+    <property name ="Review" type ="String" />
+
+    <property name ="Scoring" type ="Decimal" />
+  </class>
+</hibernate-mapping>

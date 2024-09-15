@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.AttendanceRule, ProjectMgt.Model" table="T_AttendanceRule">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="MCheckInStart" type ="String" />
+
+    <property name ="MCheckInEnd" type="String" />
+
+    <property name ="MCheckOutStart" type="String" />
+
+    <property name ="MCheckOutEnd" type="String" />
+
+    <property name ="ACheckInStart" type ="String" />
+
+    <property name ="ACheckInEnd" type="String" />
+
+    <property name ="ACheckOutStart" type="String" />
+
+    <property name ="ACheckOutEnd" type="String" />
+
+    <property name ="NCheckInStart" type ="String" />
+
+    <property name ="NCheckInEnd" type="String" />
+
+    <property name ="NCheckOutStart" type="String" />
+
+    <property name ="NCheckOutEnd" type="String" />
+
+    <property name ="OCheckInStart" type ="String" />
+
+    <property name ="OCheckInEnd" type="String" />
+
+    <property name ="OCheckOutStart" type="String" />
+
+    <property name ="OCheckOutEnd" type="String" />
+
+    <property name ="MCheckInIsMust" type ="String" />
+    <property name ="MCheckOutIsMust" type ="String" />
+
+    <property name ="ACheckInIsMust" type ="String" />
+    <property name ="ACheckOutIsMust" type ="String" />
+
+    <property name ="NCheckInIsMust" type ="String" />
+    <property name ="NCheckOutIsMust" type ="String" />
+
+    <property name ="OCheckInIsMust" type ="String" />
+    <property name ="OCheckOutIsMust" type ="String" />
+
+    <property name ="LargestDistance" type ="Decimal" />
+
+    <property name ="OfficeLongitude" type ="String" />
+    <property name ="OfficeLatitude" type ="String" />
+    <property name ="Address" type ="String" />
+    
+  </class>
+</hibernate-mapping>

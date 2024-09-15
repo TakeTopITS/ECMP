@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.Plan, ProjectMgt.Model" table="T_Plan">
+
+    <id name="PlanID" column="PlanID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PlanType" type ="String" />
+    <property name ="PlanName" type ="String" />
+    <property name ="PlanDetail" type ="String" />
+    <property name ="StartTime" type ="DateTime" />
+    <property name ="EndTime" type ="DateTime" />
+    <property name ="Progress" type ="int" />
+    <property name ="ScoringBySelf" type ="Decimal" />
+    <property name ="ScoringByLeader" type ="Decimal" />
+
+    <property name ="ParentID" type ="int" />
+    <property name ="BackupPlanID" type ="int" />
+
+    <property name ="UserCode" type ="String" />
+    <property name ="UserName" type ="String" />
+
+    <property name ="SubmitTime" type ="String" />
+
+    <property name ="CreatorCode" type ="String" />
+    <property name ="CreatorName" type ="String" />
+
+    <property name ="Status" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+    <property name ="RelatedType" type ="String" />
+    <property name ="RelatedCode" type="String" />
+  </class>
+</hibernate-mapping>

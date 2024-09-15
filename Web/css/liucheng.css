@@ -1,0 +1,39 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+	color: inherit;
+}
+#main{
+	width: 100%;
+}
+.main_inner{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.main_middle {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.main_inner img{
+	padding:20px;
+}
+.title{
+	text-align:center;
+}
+.main_inner .title{
+	padding:10px;
+}
+.title a{
+	color:#587e9d;
+	font-size:18px;
+}
+table{
+	margin:0 auto;
+}

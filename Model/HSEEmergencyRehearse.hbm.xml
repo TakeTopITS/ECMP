@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSEEmergencyRehearse, ProjectMgt.Model" table="T_HSEEmergencyRehearse">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="EmergencyCompileCode" column="EmergencyCompileCode" type="String">
+		</property>
+		<property name="EmergencyCompileName" column="EmergencyCompileName" type="String">
+		</property>
+		<property name="RehearseDate" column="RehearseDate" type="DateTime">
+		</property>
+		<property name="RehearseAddr" column="RehearseAddr" type="String">
+		</property>
+		<property name="Header" column="Header" type="String">
+		</property>
+		<property name="RehearseQuestion" column="RehearseQuestion" type="String">
+		</property>
+		<property name="RehearseFeedBack" column="RehearseFeedBack" type="String">
+		</property>
+		<property name="Participants" column="Participants" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

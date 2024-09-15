@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ReportTemplate, ProjectMgt.Model" table="T_ReportTemplate">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ReportType" type ="String" />
+    <property name ="TemName" type ="String" />
+    <property name ="TemComment" type ="String" />
+    <property name ="TemDefinition" type ="String" />
+    <property name ="CreatorCode" type ="String" />
+    <property name ="CreatorName" type ="String" />
+    <property name ="CreateTime" type ="DateTime" />
+    <property name ="BelongDepartCode" type= "String"/>
+    <property name ="BelongDepartName" type ="String" />
+  </class>
+</hibernate-mapping>

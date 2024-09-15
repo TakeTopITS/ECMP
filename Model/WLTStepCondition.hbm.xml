@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WLTStepCondition, ProjectMgt.Model" table="T_WLTStepCondition">
+
+    <id name="ConID" column="ConID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="StepID" type ="int" />
+
+    <property name ="ConDetail"  type ="String" />
+
+    <property name ="NextSortNumber" type="int" />
+
+    <property name ="GUID" type ="String" />
+
+    <property name ="TemName" type ="String" />
+  </class>
+</hibernate-mapping>

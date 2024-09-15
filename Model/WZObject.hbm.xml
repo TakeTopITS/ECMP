@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZObject, ProjectMgt.Model" table="T_WZObject">
+
+    <id name="ObjectCode" column="ObjectCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="DLCode" type ="String" />
+    <property name ="ZLCode" type ="String" />
+    <property name ="XLCode" type ="String" />
+    <property name ="Creater" type ="String" />
+    <property name ="ObjectName" type ="String" />
+    <property name ="Model" type ="String" />
+    <property name ="Grade" type ="String" />
+    <property name ="Criterion" type ="String" />
+    <property name ="Unit" type ="int" />
+    <property name ="ConvertUnit" type ="int" />
+    <property name ="ConvertRatio" type ="Decimal" />
+    <property name ="ReferDesc" type ="String" />
+    <property name ="ReferStandard" type ="String" />
+    <property name ="Market" type ="Decimal" />
+    <property name ="CollectTime" type ="DateTime" />
+    <property name ="IsMark" type ="int" />
+  </class>
+</hibernate-mapping>

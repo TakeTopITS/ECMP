@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.TaskTestRecord, ProjectMgt.Model" table="T_TaskTestRecord">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="TaskID" type ="int" />
+    <property name ="TestCaseID" type ="int" />
+    <property name ="Command" type ="String" />
+    <property name ="TestTime" type ="DateTime" />
+    <property name ="TesterCode" type ="String" />
+    <property name ="TesterName" type ="String" />
+    <property name ="Status" type ="String" />
+  </class>
+</hibernate-mapping>

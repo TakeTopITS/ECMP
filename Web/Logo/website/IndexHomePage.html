@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<link href="css/jquery.fullPage.css" rel="stylesheet" />-->
+    <!--<link  href="css/neat.css"rel="stylesheet" type="text/css" />-->
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/xiangyingshi.css" rel="stylesheet" type="text/css" />
+    <link href="css/shouye.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+
+    <script src="js/allAHandler.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        //取得链接传入参数的值
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+
+            if (r != null)
+                return unescape(r[2]);
+            return null;
+        }
+
+        $(document).ready(function () {
+            $('.flexslider').flexslider({
+                directionNav: true,
+                pauseOnAction: false,
+                pauseOnHover: true,
+                slideshowSpeed: 4000
+            });
+        });
+
+
+        function OnMouseDownEventForWholePage(obj) {
+
+            jQuery(obj).parents().find("a").removeClass("current");
+            jQuery(obj).parents().find("span").removeClass("TextColor");
+            jQuery(obj).parent().parent().parent().find("span").addClass("TextColor");
+        }
+
+
+        function adClick(site1, site2) {
+            window.open(site1, "SiteRightContainerFrame");
+            window.open(site2, "leftFrame");
+            window.open("../../TakeTopSiteTop.aspx", "SiteTopFrame");
+        }
+
+
+        function displayCompanyBriefVideo() {
+            if (document.getElementById('DIV_CompanyBriefVideo').style.display == 'none') {
+
+                document.getElementById('DIV_CompanyBriefVideo').style.display = 'block';
+                $('#movie').get(0).play();
+            }
+            else {
+                $('#movie').get(0).pause();
+                document.getElementById('DIV_CompanyBriefVideo').style.display = 'none';
+            }
+        }
+
+    </script>
+</head>
+<body style="background-color:white;">
+    <!--banner-->
+    <div class="banner">
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background: url(images/img0.jpg) 50% 0 no-repeat;">
+                    <div class="banner_inner fix">
+                        &nbsp;
+                    </div>
+                </li>
+                <li style="background: url(images/img2.jpg) 50% 0 no-repeat;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix">
+                            全面且易用
+                        </h2>
+                        <h4 class="fix">
+                            模块俱全，按需选配
+                        </h4>
+                        <h4 class="fix">
+                            积木式架构，可繁可简！
+                        </h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+                <li style="background: url(images/img1.jpg) 50% 0 no-repeat;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix tuandui">
+                            不限行业
+                        </h2>
+                        <h4 class="fix h4">
+                            团队、协作、高效
+                        </h4>
+                        <h4 class="fix h4">
+                            适用于各种不同规模企业的管理平台！
+                        </h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+                <li style="background: url(images/img3.jpg) 50% 0 no-repeat;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix">
+                            随时随地
+                        </h2>
+                        <h4 class="fix h4">
+                            移动中管理企业
+                        </h4>
+                        <h4 class="fix h4">
+                            配微信端APP，移动办公更方便！
+                        </h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+                <li style="background: url(images/img5.jpg) 50% 0 no-repeat; position: relative;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix ms">
+                            计划自定
+                        </h2>
+                        <h4 class="fix ms">
+                            协作式的项目计划
+                        </h4>
+                        <h4 class="fix ms">
+                            功能和体验完胜MS PROJECT！
+                        </h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+                <li style="background: url(images/img4.jpg) 50% 0 no-repeat; position: relative;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix">
+                            流程自定
+                        </h2>
+                        <h4 class="fix ms">
+                            可视化拖曳式设计
+                        </h4>
+                        <h4 class="fix ms">
+                            自定义企业一切业务流程！
+                        </h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+                <li style="background: url(images/img6.jpg) 50% 0 no-repeat; position: relative;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix ms">
+                            界面自定
+                        </h2>
+                        <h4 class="fix ms">
+                            可直接把EXCEL,WORD表单转化为网页界面！
+                        </h4>
+                        <h4 class="fix ms">
+                            利用现有单据，快速实施
+                        </h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+                <li style="background: url(images/img7.jpg) 50% 0 no-repeat; position: relative;">
+                    <div class="banner_inner fix">
+                        <h2 class="fix ms">
+                            用户众多
+                        </h2>
+                        <h4 class="fix">
+                            高效率，超稳定
+                        </h4>
+                        <h4 class="fix">
+                            久经考验 成熟易用
+                        </h4>
+                        <!--<a href="">了解更多</a>-->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--banner结束-->
+    <div id="dowebok">
+        <div id="DIV_CompanyBriefVideo" name="DIV_CompanyBriefVideo" style="display:none;" class="section beijing15">
+            <div class="section15_inner">
+                <div style="text-align: center;">
+                    <video id="movie" controls="controls" height="95%" src="video/TakeTopCPVideo.mp4" width="95%">您的浏览器不支持 video 标签，建议下载浏览器 <a href='https://www.taketopits.com/download/tools/chromesetup.exe'><span style="color:green;"> Chrome</span></a> 安装使用！</video>
+                </div>
+            </div>
+        </div>
+        <div class="section beijing1">
+            <div class="section1_inner">
+                <div class="txt1">
+                    <h3>
+                        <span style="color: #ff0000;">易用且全面的项目管理软件</span>
+                        <br />
+                        <span style="color:indianred; font-size :14px;">
+                            <a href="#DIV_CompanyBriefVideo" onclick="displayCompanyBriefVideo()">【公司简介（视频）】</a>
+                        </span>
+                    </h3>
+                </div>
+
+                <div class="p1_3">
+                    <a href="https://www.taketopits.com?TargetProduct=PMP" target="_parent" id="a_xmb">项目管理平台</a><br />
+                    &nbsp;
+                    <p>
+                        <span style="text-indent: 45px; background-color: initial;">&nbsp; &nbsp; &nbsp;工程项目管理、系统集成项目管理、研发项目管理、政务项目管理、软件实施项目管理、项目综合管理六大项目管理软件，配APP，集成微信，模块自选，可繁可简，完全开源，适合中大团队和企业级用户</span>
+                    </p>
+                </div>
+
+                <div class="p1_3">
+                    <a href="https://www.taketopits.com?TargetProduct=XMB" target="_parent" id="a_xmb">项目宝</a><br />
+                    &nbsp;
+                    <p>
+                        项目宝适用于小微企业和中小团队的项目管理软件，注册即用，方便快捷，<br />也可以免费下载安装在你自备服务器上
+                    </p>
+                </div>
+
+                <div class="p1_3">
+                    <a href="https://www.taketopits.com?TargetProduct=ERP" target="_parent" id="a_xmb">项目型ERP</a><br />
+                    &nbsp;
+                    <p>
+                        项目型ERP平台具有强大的的项目管控、MRP计算、生产管理、供应链管理、合同管理、财务管理和工作流引擎，<br />覆盖项目型制造企业管理的所有需求
+
+
+                    </p>
+                </div>
+
+                <div class="p1_2">
+                    <br />
+                    <br />
+                    <a href="../../TakeTopSiteContainer.aspx?ModuleName=线下购买&amp;HomeModuleName=线下购买">购买</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp; <a href="../../TakeTopSiteContainer.aspx?ModuleName=在线租用&amp;HomeModuleName=在线租用">
+                        租用
+                    </a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="../../TakeTopSiteContainer.aspx?ModuleName=在线试用&amp;HomeModuleName=在线试用">
+                        试用
+                    </a><br />
+                    <br />
+                    &nbsp;
+                    <p>
+                        &nbsp; 购买，一次性付费，时间不限，软件安装在用户自备服务器；租用，按人按月付费，软件安装在安全可靠的阿里云服务器
+                    </p>
+                </div>
+
+                <!--<div class="txt1">
+                    <h3>
+                        <br />
+                        <br />
+                        领先的项目管理咨询服务
+                    </h3>
+                </div>
+                <div class="p1_3">
+                    <p>
+                        <span style="text-indent: 45px; background-color: initial;">&nbsp; 旗下拓鼎咨询是国内最早提供项目管理、研发管理、产品管理的咨询、培训和认证服务机构</span>
+                    </p>
+                </div>-->
+
+                <br />
+                <br />
+            </div>
+        </div>
+        <!--<div class="section beijing1">
+            <div class="section7_inner">
+                <div class="txt7">
+                    <h3>
+                        架构灵活，中小企业、大集团全覆盖
+                    </h3>
+                </div>
+                <div class="img7">
+                    &nbsp;
+                </div>
+            </div>
+        </div>-->
+        <!--<div class="section beijing8">
+            <div class="section8_inner">
+                <div class="txt8">
+                    <h3>
+                        纯网页架构，客户端软件零安装
+                    </h3>
+                </div>
+                <div class="img8">
+                    &nbsp;
+                </div>
+            </div>
+            <br />
+            <br />
+        </div>-->
+        <div class="section beijing5">
+            <div class="section5_inner">
+                <div class="txt5">
+                    <h3>
+                        典型案例<br />
+                        <br />
+                        <img alt="" src="Images/DianXingAnLi.png" style="width: 840px; height: 600px;" />
+                    </h3>
+                </div>
+                <div class="p5_1">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="section beijing11">
+            <div class="section11_inner">
+                <div class="txt11">
+                    <h3>
+
+                        界面图形化 清晰而直观
+                    </h3>
+                </div>
+                <div class="img11">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section beijing9">
+            <div class="section9_inner">
+                <div class="txt9">
+                    <h3>
+                        配APP，移动办公更方便
+                    </h3>
+                </div>
+                <div class="app">
+                    &nbsp;
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="section beijing10">
+            <div class="section10_inner">
+                <div class="txt10">
+                    <h3>
+                        微信 短信 邮件 腾讯通全面集成 沟通无界限
+                    </h3>
+                </div>
+                <div class="img10">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+
+        <div class="section beijing12">
+            <div class="section12_inner">
+                <div class="txt12">
+                    <h3>
+                        内置大数据分析工具，洞察一切问题
+                    </h3>
+                </div>
+                <div class="img12">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+        <!--<div class="section beijing4">
+            <div class="txt4">
+                <h3>
+                    灵活易用，功能强大，模块俱全
+                </h3>
+            </div>
+            <div class="p4_1">
+                <p>
+                    一个后台，一套架构，无需接口，灵活易用，功能强大，模块俱全，按需选配，具有中、英、法、意、西、俄、日、韩、繁十多种语言版本！纯网页（B/S）架构，配APP，集成微信企业号/公众号，一键安装，灵活易用，
+                    维护方便！<br style="line-height: 70px;" />
+                    <span style="line-height: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="line-height: 40px;
+                        color: rgb(255, 0, 0);">&nbsp;工程项目管理平台、研发项目管理平台、项目型ERP平台、系统集成项目管理平台、软件实施项目管理平台、政府项目管理平台</span><span style="line-height: 40px;">处于业界绝对领先地位</span>
+                </p>
+            </div>
+        </div>-->
+        <!--<div class="section beijing5">
+            <div class="section5_inner">
+                <div class="txt5">
+                    <h3>
+                        北上广三地布局，服务更快捷<br />
+                        <br />
+                        <img alt="" src="Images/ZhuZiJiaGou.png" style="width: 910px; height: 510px;" />
+                    </h3>
+                </div>
+                <div class="p5_1">
+                    &nbsp;
+                </div>
+            </div>
+        </div>-->
+        <!--<div class="section beijing2">
+            <div class="section2_inner">
+                <div class="txt2">
+                    <h3>
+                        67大模块，700多子模块，按需自由选取
+                    </h3>
+                    <div class="img2">
+                        &nbsp;
+                    </div>
+                    <br />
+                    <img alt="" src="Images/ModuleSelect.png" style="width: 400px; height: 600px;" />
+                </div>
+            </div>
+        </div>-->
+        <!--<div class="section beijing56">
+            <div class="section5_inner">
+                <div class="txt5">
+                    <h3>
+                        多达十三个行业的解决方案，成熟且稳定
+                    </h3>
+                </div>
+                <div class="p5_1">
+                    <p>
+                        研究所，工厂制造业，系统集成|实施，工程设计与施工，广告传媒，管理咨询，软件开发，投资行业，律师事务所，会计事务所，教育行业，国家行政机关等十三大行业，能根据企业需求变化不断扩展和延伸！<br />
+                        &nbsp;
+                    </p>
+                </div>
+            </div>
+        </div>-->
+        <!--<div class="section beijing13">
+            <div class="section13_inner">
+                <div class="txt13">
+                    <h3>
+                        无缝集成视频会议系统，随时随地召开会议
+                    </h3>
+                </div>
+                <div class="img13">
+                    &nbsp;
+                </div>
+            </div>
+        </div>-->
+        <!--<div class="section beijing14">
+            <div class="section14_inner">
+                <div class="txt14">
+                    <h3>
+                        内置开发平台，基于JAVASCRIPT语言，功能无限扩展
+                    </h3>
+                </div>
+                <div class="img14">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="section beijing15">
+            <div class="section15_inner">
+                <div class="txt15">
+                    <h3>
+                        参数化接口，便捷集成第三方系统
+                    </h3>
+                </div>
+                <div class="img15">
+                    &nbsp;
+                </div>
+            </div>
+        </div>-->
+    </div>
+
+    <p>
+        &nbsp;
+    </p>
+    <div class="warp">
+        <div class="footer">
+            <p>
+                <span>
+                    <a onmousedown="OnMouseDownEventForWholePage(this)" href="javascript:adClick('../../TakeTopSiteContainer.aspx?ModuleName=意见反馈&HomeModuleName=意见反馈', '../../TakeTopSiteLeft.aspx?ModuleName=意见反馈&HomeModuleName=意见反馈')">
+                        意见反馈
+                    </a>
+                </span>|<span>
+                    <a onmousedown="OnMouseDownEventForWholePage(this)" href="javascript:adClick('../../TakeTopSiteContainer.aspx?ModuleName=法律声明&HomeModuleName=法律声明', '../../TakeTopSiteLeft.aspx?ModuleName=法律声明&HomeModuleName=法律声明')">
+                        法律声明
+                    </a>
+                </span>|<span>
+                    <a onmousedown="OnMouseDownEventForWholePage(this)" href="javascript:adClick('../../TakeTopSiteContainer.aspx?ModuleName=关于我们&HomeModuleName=关于我们', '../../TakeTopSiteLeft.aspx?ModuleName=关于我们&HomeModuleName=关于我们')">
+                        关于我们
+                    </a>
+                </span>
+            </p>
+            <p>
+                CopyRight：拓鼎信息(TakeTop ITS)© 2006-2026 TakeTop ITS. <a href="http://www.miitbeian.gov.cn"
+                                                                       target="_blank">沪ICP备18022438号-1</a>taketopits.com
+            </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+	<title>TakeTopInfoPath Service</title>
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache"> 
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache"> 
+	<META HTTP-EQUIV="Expires" CONTENT="0"> 
+	<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=UTF-8">
+	<style>td{font-size:11px;font-family:verdana;}input{font-size:11px;font-family:verdana;}</style>
+	<base target="_self">
+	</head>
+	<body style='background-color:BUTTONFACE;padding: 0; margin: 0;' onload="doLoad()">
+		<script>
+		function doLoad(){
+			var parent = window.dialogArguments[ 0 ];
+			var action = "";
+			if( parent.TakeTopInfoPath_ResourceRelativePath ){
+				action = parent.TakeTopInfoPath_ResourceRelativePath + parent.document.getElementById( "xdoc_param_action" ).value;
+			}else{
+				action = "../" + parent.document.getElementById( "xdoc_param_action" ).value;
+			}
+			
+			document.forms[ "Uploadform" ].action = action;
+			
+			var inlinePicture = window.dialogArguments[ 1 ];
+			var src = inlinePicture.getAttribute( "src" );
+			if( src != null && src.length > 0 && src.substring( src.length - 1 ) != "/" ){
+				document.getElementById( "UploadTag" ).innerHTML = "Please select a picture to upload and replace the current picture:";
+			}else{
+				document.getElementById( "UploadTag" ).innerHTML = "Please select a picture to upload:";
+				document.getElementById( "DeleteCheck" ).disabled = true;
+			}
+			
+		
+			document.getElementById( "formId" ).value = window.dialogArguments[ 2 ];
+			
+		}
+		function doDeleteCheck( source ){
+			if( source.checked ){
+				document.getElementById( "UploadFile" ).disabled = true;
+				document.getElementById( "UploadTag" ).style.color = "gray";
+				document.getElementById( "DeleteTag" ).style.color = "";
+			}else{
+				document.getElementById( "UploadFile" ).disabled = false;
+				document.getElementById( "UploadTag" ).style.color = "";
+				document.getElementById( "DeleteTag" ).style.color = "gray";
+			}
+		}
+		function doOK(){
+			if( document.getElementById( "DeleteCheck" ).checked ){
+				var parent = window.dialogArguments[ 0 ];
+				var link = window.dialogArguments[ 1 ];
+				link.src = "";
+				var file = parent.document.getElementById( 'xdoc' + link.id );
+				if( file != null )
+				{
+					file.value = "";
+				}
+				var fileLink = parent.document.getElementById( link.id + '_link' );
+				if( fileLink != null )
+				{
+					fileLink.value = "";
+				}
+				window.close();
+			}else{
+				document.forms[ "Uploadform" ].submit();
+			}
+		}
+		</script>
+		<table align=center height=100%>
+			<form action='' name='Uploadform' method='post' enctype='multipart/form-data'>
+				<input type='hidden' name='xdoc_param_command' value='Update_File' ID="Hidden1">
+				<input type='hidden' name='xdoc_param_uploadfile_type' value='xImage' ID="Hidden2">
+				<input type='hidden' name='xdoc_param_form_id' value='' ID="formId">
+				<tr>
+					<td><div id='UploadTag' style="display:inline">Please select a picture to upload:</div>
+					</td>
+				</tr>
+				<tr>
+					<td><input type='file' name='UploadFile' id='UploadFile' style='width:456px'></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="operation" ID="DeleteCheck" onclick="doDeleteCheck(this);"><div id='DeleteTag' style='color:gray;display:inline;'>I 
+							want to Delete the Current Picture.</div>
+					</td>
+				<tr>
+					<td align="right"><input type='button' value='    OK    ' onclick='doOK();'>&nbsp;&nbsp;<input type='button' value=' Cancel ' onclick='window.close();' ID="Button1" NAME="Button1"></td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZCard, ProjectMgt.Model" table="T_WZCard">
+
+    <id name="CardCode" column="CardCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="CardName" type ="String" />
+    <property name ="CardTime" type ="DateTime" />
+    <property name ="RowNumber" type ="int" />
+    <property name ="DetailMoney" type ="Decimal" />
+    <property name ="CardMoney" type ="Decimal" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="CardMarker" type ="String" />
+  </class>
+</hibernate-mapping>

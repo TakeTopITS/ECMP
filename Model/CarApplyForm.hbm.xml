@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.CarApplyForm, ProjectMgt.Model" table="T_CarApplyForm">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="DepartCode" type ="String" />
+    <property name ="DepartName" type ="String" />
+    <property name ="ApplicantCode" type ="String" />
+    <property name ="ApplicantName" type ="String" />
+    <property name ="Attendant" type ="String" />
+    <property name ="BoardingSite" type ="String" />
+    <property name ="Destination" type ="String" />
+    <property name ="ApplyReason" type ="String" />
+    <property name ="CarType" type ="String" />
+    <property name ="DepartTime" type ="DateTime" />
+    <property name ="BackTime" type ="DateTime" />
+    <property name ="Status" type ="String" />
+    <property name ="MakeUserCode" type ="String" />
+  </class>
+</hibernate-mapping>

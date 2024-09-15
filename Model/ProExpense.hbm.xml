@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ProExpense, ProjectMgt.Model" table="T_ProExpense">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProjectID" type ="int" />
+    <property name ="TaskID" type ="int" />
+    <property name ="RecordID" type ="int" />
+    <property name ="ConstractPayID" type ="int" />
+    <property name ="QuestionID" type ="int" />
+    <property name ="PlanID" type ="int" />
+    <property name ="WorkflowID" type ="int" />
+    <property name ="GoodsPOPayID" type ="int" />
+    <property name ="BMPUPayID" type ="int" />
+
+    <property name ="AccountCode" type ="String" />
+    <property name ="Account" type ="String" />
+    <property name ="Description" type ="String" />
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="ConfirmAmount" type="Decimal" />
+    <property name ="CurrencyType" type ="String" />
+    <property name ="FinancialStaffCode" type ="String" />
+    <property name ="FinancialStaffName" type ="String" />
+    <property name ="EffectDate" type ="DateTime" />
+    <property name ="UserCode" type ="String" />
+    <property name ="UserName" type ="String" />
+    <property name ="RegisterDate" type ="DateTime" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.UserAttendanceRecord, ProjectMgt.Model" table="T_UserAttendanceRecord">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+
+    <property name ="AttendanceDate" type ="DateTime" />
+
+    <property name ="MCheckIn" type ="DateTime" />
+
+    <property name ="MCheckOut" type="DateTime" />
+
+    <property name ="ACheckIn" type ="DateTime" />
+
+    <property name ="ACheckOut" type="DateTime" />
+
+    <property name ="NCheckIn" type ="DateTime" />
+
+    <property name ="NCheckOut" type="DateTime" />
+
+    <property name ="OCheckIn" type ="DateTime" />
+
+    <property name ="OCheckOut" type="DateTime" />
+
+    <property name ="LateMinute" type="int" />
+
+    <property name ="EarlyMinute" type="int" />
+
+    <property name ="MCheckInDistance" type="Decimal" />
+    <property name ="MCheckOutDistance" type ="Decimal" />
+
+    <property name ="ACheckInDistance" type="Decimal" />
+    <property name ="ACheckOutDistance" type ="Decimal" />
+
+    <property name ="NCheckInDistance" type="Decimal" />
+    <property name ="NCheckOutDistance" type ="Decimal" />
+
+    <property name ="OCheckInDistance" type="Decimal" />
+    <property name ="OCheckOutDistance" type ="Decimal" />
+
+    <property name ="LeaderCode" type="String" />
+    <property name ="LeaderName" type ="String" />
+    <property name ="OfficeLongitude" type ="String" />
+    <property name ="OfficeLatitude" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.TRHolderWelder, ProjectMgt.Model" table="T_TRHolderWelder">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="UserCode" column="UserCode" type="String">
+		</property>
+		<property name="CertificateNo" column="CertificateNo" type="String">
+		</property>
+		<property name="WelderSeal" column="WelderSeal" type="String">
+		</property>
+		<property name="HolderProject" column="HolderProject" type="String">
+		</property>
+		<property name="ValidTime" column="ValidTime" type="String">
+		</property>
+		<property name="Unit" column="Unit" type="String">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+		<property name="EnterTime" column="EnterTime" type="DateTime">
+		</property>
+		<property name="AttachPath" column="AttachPath" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

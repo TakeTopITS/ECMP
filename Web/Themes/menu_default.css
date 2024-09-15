@@ -1,0 +1,85 @@
+﻿/* context menu full */
+
+.menu_default_main
+{
+	font-family: Tahoma, Arial, Sans-Serif;
+	font-size: 8pt;
+	border: 1px solid #dddddd;
+	background-color: white;	
+	padding: 0px;
+	cursor: default;
+	background-image: url('menu_default/bg3white.png');
+	background-repeat: repeat-y;
+	border-radius: 5px;
+	border: 1px solid #7cb316;
+	-moz-box-shadow:
+		0px 2px 3px rgba(000,000,000,0.3),
+		inset 0px 0px 2px rgba(255,255,255,0.8);
+	-webkit-box-shadow:
+		0px 2px 3px rgba(000,000,000,0.3),
+		inset 0px 0px 2px rgba(255,255,255,0.8);
+	box-shadow:
+		0px 2px 3px rgba(000,000,000,0.3),
+		inset 0px 0px 2px rgba(255,255,255,0.8);
+}
+
+/* title */
+.menu_default_title
+{
+	background-color: #f2f2f2;
+	border-bottom: 1px solid gray;
+	padding: 4px 4px 4px 37px;
+}
+
+.menu_default_main a {
+	padding: 2px 2px 2px 35px;
+	color: black;
+	text-decoration: none;
+	cursor: default;
+}
+
+.menu_default_main a img 
+{
+	margin-left: 6px;
+	margin-top: 2px;
+}
+
+.menu_default_main a span 
+{
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	width: 150px; 
+	overflow:hidden;
+	padding-left: 2px;
+	padding-right: 20px;
+}
+
+.menu_default_main a:hover {
+	color: #fff;
+	background: #bde933;
+	background: -moz-linear-gradient(
+		top,
+		#bde933 0%,
+		#b7ea00);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#bde933),
+		to(#b7ea00));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#bde933", endColorStr="#b7ea00");
+}
+/*
+.menu_default_main a:hover span {
+	background-image: url('menu_default/right.png');
+	background-repeat: no-repeat;	
+	background-position: 100%;
+}
+*/
+
+.menu_default_main div div  /* separator */
+{
+	border-top: 1px solid #dddddd;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 28px;
+}

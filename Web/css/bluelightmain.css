@@ -1,0 +1,1411 @@
+/*html { overflow-x: hidden; overflow-y: auto; }*/
+
+
+body {
+    font-size: 12px;
+    margin: 0px;
+    background-color: white;
+    /*background-repeat: no-repeat;
+	background-position: left top;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	margin-left: 2px;
+	margin-top:2px;*/
+}
+
+/*导航*/
+.nav {
+    /*  min-width: 1180px;
+    width: expression (document.body.clientWidth <= 1180? "1180px" : "auto" ));*/
+    width: 100%;
+    text-align: left;
+    background-color: #0e553b; /*皮肤*/
+    height: 43px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    /*font-family: 'Arial Unicode MS';*/
+    font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Liberation Sans", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, SimSun, "WenQuanYi Zen Hei Sharp", sans-serif';
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.page_topbj {
+    background-color: #77b584; /*2*/
+    cursor: move;
+    color: black;
+    border-radius: 12px 0px 0px 0px;
+    margin: 1px 1px 1px 1px;
+}
+
+    .page_topbj a {
+        color: black; /*2*/
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+        .page_topbj a:hover {
+            color: black; /*2*/
+            /*            text-decoration: underline;*/
+        }
+
+.main_topbj {
+    background-color: #0e553b; /*皮肤*/
+    color: white;
+}
+
+    .page_topbj a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+        .page_topbj a:hover {
+            color: #018efb;
+            /*            text-decoration: underline;*/
+        }
+
+
+td {
+    vertical-align: top;
+    line-height: 23px;
+}
+
+    td a {
+        color: #2a2e34;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+        td a:hover {
+            color: #018efb;
+            /*            text-decoration: underline;*/
+        }
+
+#OperationViewn0Nodes > table > tbody > tr:hover {
+    text-decoration: none;
+    color: #256ACD;
+    text-decoration: none !important;
+    background: rgba(37, 106, 205, 0.5);
+}
+
+#OperationViewn0Nodes > div > table:hover {
+    text-decoration: none;
+    color: #256ACD;
+    text-decoration: none !important;
+    background: rgba(37, 106, 205, 0.5);
+    display: block;
+}
+
+#OperationViewn0Nodes td a:hover {
+    color: #256ACD;
+    text-decoration: none !important;
+    display: block;
+}
+
+
+button:hover, input[type="submit"]:hover {
+    background: #D52A41;
+    color: #fff;
+    border-radius: 3px;
+}
+
+button:active, input[type="submit"]:active {
+    background: #D52A41;
+    color: #fff;
+    border-radius: 3px;
+}
+
+button:visited, input[type="submit"]:visited {
+    background: #D52A41;
+    color: #fff;
+    border-radius: 3px;
+}
+
+
+
+
+/*--------------------------------自适应宽度---------------------------*/
+#AboveDiv {
+    min-width: 1160px;
+    width: expression (document.body.clientWidth <= 1160? "1160px": "auto"));
+}
+/*--------------------------------页面总边框---------------------------*/
+.bian {
+    border: 0px solid #8AB2E5;
+}
+
+.bianTable {
+    border: 1px solid #D8D8D8;
+}
+
+.bianNoBottom {
+    border-left: 1px solid #8AB2E5;
+    border-right: 1px solid #8AB2E5;
+    border-top: 1px solid #8AB2E5;
+    border-bottom: 0px solid #8AB2E5;
+}
+
+
+/*--------------------------------td边框及间距---------------------------*/
+.tdMain {
+    padding: 5px 5px 0px 5px;
+    border-right: solid 1px #D8D8D8;
+    vertical-align: top;
+}
+
+.titlezi {
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    color: white; /*2*/
+    line-height: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.titleziAPP {
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    color: black; /*2*/
+    line-height: 30px;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 2px;
+}
+
+
+.ajax__tab_tab {
+    line-height: 15px;
+}
+
+
+.line {
+    color: #999999;
+}
+
+.lb_bj {
+    background-image: url(ImagesSkin/lb_line_bj.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    text-indent: 22px;
+    text-align: left;
+    height: 24px;
+}
+
+.lb_bj2 {
+    background-image: url(ImagesSkin/lb_line_bj.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
+    height: 24px;
+}
+
+.dibian {
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #cccccc;
+    text-align: left;
+    font-size: 14px;
+}
+
+.dibian2 {
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #cccccc;
+    text-align: center;
+}
+
+.lb_bjright {
+    background-image: url(ImagesSkin/lb_line_bj.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: center;
+}
+
+
+/*-----------------------------短按钮----------------------------*/
+.inpu {
+    border-style: none;
+    background-image: url('ImagesSkin/butbj.jpg');
+    width: 71px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "microsoft yahei";
+    margin: -2px 0;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 2px;
+    color: #ffffff;
+    background: #19A14F; /*皮肤*/
+}
+
+    .inpu:disabled {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+    }
+
+    .inpu[disabled] {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+        height: 25px;
+    }
+
+    .inpu:disabled:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+    .inpu[disabled]:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+
+/*-----------------------------TAB按钮----------------------------*/
+.inpuTab {
+    border-style: none;
+    width: 71px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "microsoft yahei";
+    margin: -2px 0;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 2px;
+    color: #ffffff;
+    background: #19A14F; /*皮肤*/
+}
+
+    .inpuTab:disabled {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+    }
+
+    .inpuTab[disabled] {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+        height: 25px;
+    }
+
+    .inpuTab:disabled:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+    .inpuTab[disabled]:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+/*------------------------------长按钮---------------------------*/
+.inpuLong {
+    background-image: url(ImagesSkin/butbjlong.jpg);
+    height: 25px;
+    width: 110px;
+    text-align: center;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    font-size: 12px;
+    font-family: "microsoft yahei";
+    margin: -2px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #19A14F; /*皮肤*/
+}
+
+    .inpuLong:disabled {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+    }
+
+    .inpuLong[disabled] {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+        height: 25px;
+    }
+
+    .inpuLong:disabled:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+    .inpuLong[disabled]:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+
+/*-----------------------------------超长按钮--------------------------------*/
+.inpuLongest {
+    background-image: url(ImagesSkin/butbjLongest.jpg);
+    height: 25px;
+    width: 260px;
+    text-align: center;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    font-size: 12px;
+    margin: 2px 0;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #19A14F; /*皮肤*/
+}
+
+    .inpuLongest:disabled {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+    }
+
+    .inpuLongest[disabled] {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+        height: 25px;
+    }
+
+    .inpuLongest:disabled:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+    .inpuLongest[disabled]:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+.inpuYello {
+    border-style: none;
+    background: #f37c00;
+    width: 71px;
+    height: 25px;
+    /*padding-bottom: 7px;*/
+    margin: -2px 0;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 2px;
+    color: #FDFCFC;
+    cursor: pointer;
+}
+
+    .inpuYello:disabled {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+    }
+
+    .inpuYello[disabled] {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+        height: 25px;
+    }
+
+    .inpuYello:disabled:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+    .inpuYello[disabled]:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+/*------------------------------Repeat用按钮---------------------------*/
+.inpuRepeat {
+    border-style: none;
+    background-image: url('ImagesSkin/butbj.jpg');
+    width: 71px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "microsoft yahei";
+    margin: 1px 0;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 2px;
+    color: #ffffff;
+    background: #19A14F; /*皮肤*/
+}
+
+    .inpuRepeat:disabled {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+    }
+
+    .inpuRepeat[disabled] {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+        height: 25px;
+    }
+
+    .inpuRepeat:disabled:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+    .inpuRepeat[disabled]:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+.inpuLongRepeat {
+    background-image: url(ImagesSkin/butbjlong.jpg);
+    height: 25px;
+    width: 110px;
+    text-align: center;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    font-size: 12px;
+    font-family: "microsoft yahei";
+    margin: 1px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    background: #19A14F; /*皮肤*/
+}
+
+    .inpuLongRepeat:disabled {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+    }
+
+    .inpuLongRepeat[disabled] {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+        cursor: default;
+        height: 25px;
+    }
+
+    .inpuLongRepeat:disabled:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+    .inpuLongRepeat[disabled]:hover {
+        background: url('ImagesSkin/butbj.jpg');
+        color: #cccccc;
+    }
+
+
+/*----------------------------更新按钮-------------------------------*/
+.inpuUpdate {
+    border-style: none;
+    background-image: url('ImagesSkin/Update.png');
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    margin: -2px 0;
+    font-size: 12px;
+    color: #000000;
+}
+
+/*----------------------------保存按钮-------------------------------*/
+.inpuSave {
+    border-style: none;
+    background-image: url('Images/Save.gif');
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    margin: -2px 0;
+    font-size: 12px;
+    color: #000000;
+}
+
+/*----------------------------激活按钮-------------------------------*/
+.inpuActive {
+    border-style: none;
+    background-image: url('ImagesSkin/Active.jpg');
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    margin: -2px 0;
+    font-size: 12px;
+    /*color: #000000;*/
+}
+
+/*----------------------------关闭按钮-------------------------------*/
+.inpuClose {
+    border-style: none;
+    background-image: url('ImagesSkin/Close.jpg');
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    margin: -2px 0;
+    font-size: 12px;
+    /*color: #000000;*/
+}
+
+/*----------------------------查询按钮-------------------------------*/
+.inpuQuery {
+    border-style: none;
+    background-image: url('ImagesSkin/Query.gif');
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    margin: -2px 0;
+    font-size: 12px;
+    /*color: #000000;*/
+}
+
+/*----------------------------扫码按钮-------------------------------*/
+.inpuQrCode {
+    border-style: none;
+    background-image: url('ImagesSkin/QrCode.gif');
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    margin: -2px 0;
+    font-size: 12px;
+    /*color: #000000;*/
+}
+
+/*----------------------------删除按钮-------------------------------*/
+.inpuDelete {
+    border-style: none;
+    background-image: url('ImagesSkin/Delete.png');
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    margin: -2px 0;
+    font-size: 12px;
+    /*color: red;*/
+}
+
+
+/*---------------------------------前步按钮------------------------------------*/
+.inpuPiror {
+    background: url(ImagesSkin/up.gif) no-repeat;
+    margin: -2px 0;
+    height: 25px;
+    width: 14px;
+    text-align: center;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    /*font-size: 12px;*/
+    /*color: #29728D;*/
+}
+
+
+/*---------------------------------下步按钮----------------------------*/
+.inpuNext {
+    background: url(ImagesSkin/down.gif) no-repeat;
+    margin: -2px 0;
+    height: 25px;
+    width: 14px;
+    text-align: center;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    /*font-size: 12px;*/
+    /*color: #29728D;*/
+}
+
+/*--------------DropDownList样式----------------*/
+select {
+    height: 25px;
+    background-color: white;
+    color: black;
+}
+
+
+/*---------------------------------gridview边框---------------------------------*/
+.itemBorder {
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #cccccc;
+    border-top: none;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.itemBorderBlack {
+    border-width: 1px;
+    border-style: dotted;
+    border-color: black;
+    border-top: none;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+.shuru {
+    border: 1px solid #BCC6C9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+    width: 99%;
+}
+
+.headStyle {
+    background-image: url(ImagesSkin/main_n_bj.jpg);
+    padding: 5px;
+    margin: 1px;
+}
+
+.itemStyle {
+    /*    background-color: #fff;*/
+    height: 23px;
+}
+
+    .itemStyle:hover {
+        background: #E9E7E7;
+        height: 23px;
+    }
+
+
+.bian_in {
+    border-collapse: collapse;
+    border-left: 1px solid #D6DAE2;
+    border-top: 1px solid #D6DAE2;
+}
+
+    .bian_in td {
+        border-right: 1px solid #D6DAE2;
+        border-bottom: 1px solid #D6DAE2;
+    }
+
+/*-----TreeView样式-----*/
+.rootNode {
+    font-size: 14px;
+    color: #000000;
+}
+
+.treeNode {
+    color: #070707;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+.leafNode {
+    padding: 2px;
+    color: #5B5A5A;
+}
+
+.selectNode {
+    font-weight: bold;
+    color: red;
+}
+
+/*--------------------------------提交表单样式---------------------------*/
+.formBgStyle {
+    background-color: #D8D8D8;
+    /*background-color:#ffffff;
+	border-collapse:collapse;
+	padding:0px 0px 0px 0px;*/
+}
+
+.formItemBgStyle { /*border-bottom:dotted  1px #C6CFD4;
+        height: 19px;
+        line-height: 18px;*/
+    background-color: #fff;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #cccccc;
+}
+
+/*-----------------------------编辑图片按钮------------------------------*/
+.imgEdit {
+    background-image: url(ImagesSkin/icon_edit.gif);
+}
+
+.imgDel {
+    / background:url(ImagesSkin/icon_del.gif);
+}
+/*----------------------------------datalist单元格样式------------------------------*/
+.tdLeft {
+    padding: 5px 5px 5px 5px;
+    border-top: dotted 1px #D8D8D8;
+    border-bottom: dotted 0px #D8D8D8;
+    border-left: dotted 1px #D8D8D8;
+    border-right: dotted 1px #D8D8D8;
+}
+
+.tdRight {
+    padding 5px 5px 5px 5px;
+    border-top: dotted 1px #D8D8D8;
+    border-bottom: dotted 0px #D8D8D8;
+    border-left: dotted 1px #D8D8D8;
+    border-right: dotted 1px #D8D8D8;
+}
+
+.tdLeft3 {
+    border-top: dotted 0px #D8D8D8;
+    border-bottom: dotted 1px #D8D8D8;
+    border-left: dotted 0px #D8D8D8;
+    border-right: dotted 1px #D8D8D8;
+}
+
+.tdRight3 {
+    border-top: dotted 0px #D8D8D8;
+    border-bottom: dotted 1px #D8D8D8;
+    border-left: dotted 0px #D8D8D8;
+    border-right: dotted 0px #D8D8D8;
+}
+
+.tdTopLine {
+    border-top: dotted 1px #D8D8D8;
+    border-bottom: dotted 0px #D8D8D8;
+    border-left: dotted 0px #D8D8D8;
+    border-right: dotted 0px #D8D8D8;
+}
+
+
+.noBorder {
+    border-width: 0px;
+}
+
+.btnJudge {
+    background-repeat: no-repeat;
+    background-image: url(ImagesSkin/judge.png);
+}
+
+.tabBorder {
+    border-bottom: solid 1px green;
+    border-left: solid 1px green;
+    border-right: solid 1px green;
+    border-top: solid 1px green;
+}
+
+.tableBorder {
+    border-bottom: solid 1px #8AB2E5;
+    border-left: solid 1px #8AB2E5;
+    border-right: solid 1px #8AB2E5;
+    border-top: solid 1px #8AB2E5;
+}
+
+/*----------------------------------页码样式---------------------------------*/
+.notTab TD A:hover {
+    WIDTH: 20px;
+    COLOR: black;
+}
+
+.notTab TD A:active {
+    WIDTH: 20px;
+    COLOR: black;
+}
+
+.notTab TD A:link {
+    WIDTH: 20px;
+    COLOR: black;
+}
+
+.notTab TD A:visited {
+    WIDTH: 20px;
+    COLOR: black;
+}
+
+.notTab TD SPAN {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15px;
+    WIDTH: 20px;
+    COLOR: blue;
+}
+
+/*--------------------------------日历控件--------------------------*/
+
+.calendar {
+    BORDER-RIGHT: #000 2px solid;
+    BORDER-TOP: #fff 2px solid;
+    DISPLAY: none;
+    FONT-SIZE: 11px;
+    BACKGROUND: #c8d0d4;
+    BORDER-LEFT: #fff 2px solid;
+    CURSOR: default;
+    COLOR: #000;
+    BORDER-BOTTOM: #000 2px solid;
+    FONT-FAMILY: tahoma,verdana,sans-serif;
+    POSITION: relative;
+}
+
+    .calendar TABLE {
+        BORDER-RIGHT: #fff 1px solid;
+        BORDER-TOP: #000 1px solid;
+        FONT-SIZE: 11px;
+        BACKGROUND: #c8d0d4;
+        BORDER-LEFT: #000 1px solid;
+        CURSOR: default;
+        COLOR: #000;
+        BORDER-BOTTOM: #fff 1px solid;
+        FONT-FAMILY: tahoma,verdana,sans-serif;
+    }
+
+    .calendar .button {
+        BORDER-RIGHT: #000 1px solid;
+        PADDING-RIGHT: 1px;
+        BORDER-TOP: #fff 1px solid;
+        PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px;
+        BORDER-LEFT: #fff 1px solid;
+        PADDING-TOP: 1px;
+        BORDER-BOTTOM: #000 1px solid;
+        TEXT-ALIGN: center;
+    }
+
+    .calendar THEAD .title {
+        BORDER-RIGHT: #000 1px solid;
+        PADDING-RIGHT: 1px;
+        BORDER-TOP: #000 1px solid;
+        PADDING-LEFT: 1px;
+        FONT-WEIGHT: bold;
+        BACKGROUND: #788084;
+        PADDING-BOTTOM: 1px;
+        BORDER-LEFT: #000 1px solid;
+        COLOR: #fff;
+        PADDING-TOP: 1px;
+        BORDER-BOTTOM: #000 1px solid;
+        TEXT-ALIGN: center;
+    }
+
+    .calendar THEAD .headrow {
+    }
+
+    .calendar THEAD .daynames {
+    }
+
+    .calendar THEAD .name {
+        PADDING-RIGHT: 2px;
+        PADDING-LEFT: 2px;
+        BACKGROUND: #e8f0f4;
+        PADDING-BOTTOM: 2px;
+        PADDING-TOP: 2px;
+        BORDER-BOTTOM: #000 1px solid;
+        TEXT-ALIGN: center;
+    }
+
+    .calendar THEAD .weekend {
+        COLOR: #f00;
+    }
+
+    .calendar THEAD .hilite {
+        BORDER-RIGHT: #000 2px solid;
+        PADDING-RIGHT: 0px;
+        BORDER-TOP: #fff 2px solid;
+        PADDING-LEFT: 0px;
+        PADDING-BOTTOM: 0px;
+        BORDER-LEFT: #fff 2px solid;
+        PADDING-TOP: 0px;
+        BORDER-BOTTOM: #000 2px solid;
+        BACKGROUND-COLOR: #d8e0e4;
+    }
+
+    .calendar THEAD .active {
+        BORDER-RIGHT: #fff 1px solid;
+        PADDING-RIGHT: 0px;
+        BORDER-TOP: #000 1px solid;
+        PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 0px;
+        BORDER-LEFT: #000 1px solid;
+        PADDING-TOP: 2px;
+        BORDER-BOTTOM: #fff 1px solid;
+        BACKGROUND-COLOR: #b8c0c4;
+    }
+
+    .calendar TBODY .day {
+        PADDING-RIGHT: 4px;
+        PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px;
+        WIDTH: 2em;
+        PADDING-TOP: 2px;
+        TEXT-ALIGN: right;
+    }
+
+    .calendar TBODY .othermonth {
+        FONT-SIZE: 80%;
+        COLOR: #aaa;
+    }
+
+    .calendar TBODY .oweekend {
+        COLOR: #faa;
+    }
+
+    .calendar TABLE .wn {
+        BORDER-RIGHT: #000 1px solid;
+        PADDING-RIGHT: 3px;
+        PADDING-LEFT: 2px;
+        BACKGROUND: #e8f4f0;
+        PADDING-BOTTOM: 2px;
+        PADDING-TOP: 2px;
+    }
+
+    .calendar TBODY .rowhilite TD {
+        BACKGROUND: #d8e4e0;
+    }
+
+        .calendar TBODY .rowhilite TD.wn {
+            BACKGROUND: #c8d4d0;
+        }
+
+    .calendar TBODY TD.hilite {
+        BORDER-RIGHT: #000 1px solid;
+        PADDING-RIGHT: 3px;
+        BORDER-TOP: #fff 1px solid;
+        PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px;
+        BORDER-LEFT: #fff 1px solid;
+        PADDING-TOP: 1px;
+        BORDER-BOTTOM: #000 1px solid;
+    }
+
+    .calendar TBODY TD.active {
+        BORDER-RIGHT: #fff 1px solid;
+        PADDING-RIGHT: 2px;
+        BORDER-TOP: #000 1px solid;
+        PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 0px;
+        BORDER-LEFT: #000 1px solid;
+        PADDING-TOP: 2px;
+        BORDER-BOTTOM: #fff 1px solid;
+    }
+
+    .calendar TBODY TD.selected {
+        BORDER-RIGHT: #fff 1px solid;
+        PADDING-RIGHT: 2px;
+        BORDER-TOP: #000 1px solid;
+        PADDING-LEFT: 2px;
+        FONT-WEIGHT: bold;
+        BACKGROUND: #d8e0e4;
+        PADDING-BOTTOM: 0px;
+        BORDER-LEFT: #000 1px solid;
+        PADDING-TOP: 2px;
+        BORDER-BOTTOM: #fff 1px solid;
+    }
+
+    .calendar TBODY TD.weekend {
+        COLOR: #f00;
+    }
+
+    .calendar TBODY TD.today {
+        FONT-WEIGHT: bold;
+        COLOR: #00f;
+    }
+
+    .calendar TBODY .disabled {
+        COLOR: #999;
+    }
+
+    .calendar TBODY .emptycell {
+        VISIBILITY: hidden;
+    }
+
+    .calendar TBODY .emptyrow {
+        DISPLAY: none;
+    }
+
+    .calendar TFOOT .footrow {
+    }
+
+    .calendar TFOOT .ttip {
+        BORDER-RIGHT: #000 1px solid;
+        PADDING-RIGHT: 1px;
+        BORDER-TOP: #000 1px solid;
+        PADDING-LEFT: 1px;
+        BACKGROUND: #788084;
+        PADDING-BOTTOM: 1px;
+        BORDER-LEFT: #000 1px solid;
+        COLOR: #fff;
+        PADDING-TOP: 1px;
+        BORDER-BOTTOM: #000 1px solid;
+        TEXT-ALIGN: center;
+    }
+
+    .calendar TFOOT .hilite {
+        BORDER-RIGHT: #000 1px solid;
+        PADDING-RIGHT: 1px;
+        BORDER-TOP: #fff 1px solid;
+        PADDING-LEFT: 1px;
+        BACKGROUND: #d8e0e4;
+        PADDING-BOTTOM: 1px;
+        BORDER-LEFT: #fff 1px solid;
+        PADDING-TOP: 1px;
+        BORDER-BOTTOM: #000 1px solid;
+    }
+
+    .calendar TFOOT .active {
+        BORDER-RIGHT: #fff 1px solid;
+        PADDING-RIGHT: 0px;
+        BORDER-TOP: #000 1px solid;
+        PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 0px;
+        BORDER-LEFT: #000 1px solid;
+        PADDING-TOP: 2px;
+        BORDER-BOTTOM: #fff 1px solid;
+    }
+
+    .calendar .combo {
+        BORDER-RIGHT: #000 1px solid;
+        PADDING-RIGHT: 1px;
+        BORDER-TOP: #fff 1px solid;
+        DISPLAY: none;
+        PADDING-LEFT: 1px;
+        FONT-SIZE: 90%;
+        Z-INDEX: 100;
+        BACKGROUND: #d8e0e4;
+        LEFT: 0px;
+        PADDING-BOTTOM: 1px;
+        BORDER-LEFT: #fff 1px solid;
+        WIDTH: 4em;
+        CURSOR: default;
+        PADDING-TOP: 1px;
+        BORDER-BOTTOM: #000 1px solid;
+        POSITION: absolute;
+        TOP: 0px;
+    }
+
+        .calendar .combo .label {
+            PADDING-RIGHT: 1px;
+            PADDING-LEFT: 1px;
+            PADDING-BOTTOM: 1px;
+            PADDING-TOP: 1px;
+            TEXT-ALIGN: center;
+        }
+
+        .calendar .combo .label-IEfix {
+            PADDING-RIGHT: 1px;
+            PADDING-LEFT: 1px;
+            PADDING-BOTTOM: 1px;
+            PADDING-TOP: 1px;
+            TEXT-ALIGN: center;
+        }
+
+        .calendar .combo .label-IEfix {
+            WIDTH: 4em;
+        }
+
+        .calendar .combo .active {
+            BORDER-RIGHT: #fff 1px solid;
+            PADDING-RIGHT: 0px;
+            BORDER-TOP: #000 1px solid;
+            PADDING-LEFT: 0px;
+            BACKGROUND: #c8d0d4;
+            PADDING-BOTTOM: 0px;
+            BORDER-LEFT: #000 1px solid;
+            PADDING-TOP: 0px;
+            BORDER-BOTTOM: #fff 1px solid;
+        }
+
+        .calendar .combo .hilite {
+            BACKGROUND: #048;
+            COLOR: #aef;
+        }
+
+    .calendar TD.time {
+        PADDING-RIGHT: 0px;
+        BORDER-TOP: #000 1px solid;
+        PADDING-LEFT: 0px;
+        PADDING-BOTTOM: 1px;
+        PADDING-TOP: 1px;
+        BACKGROUND-COLOR: #e8f0f4;
+        TEXT-ALIGN: center;
+    }
+
+        .calendar TD.time .hour {
+            BORDER-RIGHT: #889 1px solid;
+            PADDING-RIGHT: 3px;
+            BORDER-TOP: #889 1px solid;
+            PADDING-LEFT: 4px;
+            FONT-WEIGHT: bold;
+            PADDING-BOTTOM: 0px;
+            BORDER-LEFT: #889 1px solid;
+            PADDING-TOP: 0px;
+            BORDER-BOTTOM: #889 1px solid;
+            BACKGROUND-COLOR: #fff;
+        }
+
+        .calendar TD.time .minute {
+            BORDER-RIGHT: #889 1px solid;
+            PADDING-RIGHT: 3px;
+            BORDER-TOP: #889 1px solid;
+            PADDING-LEFT: 4px;
+            FONT-WEIGHT: bold;
+            PADDING-BOTTOM: 0px;
+            BORDER-LEFT: #889 1px solid;
+            PADDING-TOP: 0px;
+            BORDER-BOTTOM: #889 1px solid;
+            BACKGROUND-COLOR: #fff;
+        }
+
+        .calendar TD.time .ampm {
+            BORDER-RIGHT: #889 1px solid;
+            PADDING-RIGHT: 3px;
+            BORDER-TOP: #889 1px solid;
+            PADDING-LEFT: 4px;
+            FONT-WEIGHT: bold;
+            PADDING-BOTTOM: 0px;
+            BORDER-LEFT: #889 1px solid;
+            PADDING-TOP: 0px;
+            BORDER-BOTTOM: #889 1px solid;
+            BACKGROUND-COLOR: #fff;
+        }
+
+        .calendar TD.time .ampm {
+            TEXT-ALIGN: center;
+        }
+
+        .calendar TD.time .colon {
+            PADDING-RIGHT: 2px;
+            PADDING-LEFT: 3px;
+            FONT-WEIGHT: bold;
+            PADDING-BOTTOM: 0px;
+            PADDING-TOP: 0px;
+        }
+
+        .calendar TD.time SPAN.hilite {
+            BORDER-LEFT-COLOR: #000;
+            BORDER-BOTTOM-COLOR: #000;
+            COLOR: #fff;
+            BORDER-TOP-COLOR: #000;
+            BACKGROUND-COLOR: #667;
+            BORDER-RIGHT-COLOR: #000;
+        }
+
+        .calendar TD.time SPAN.active {
+            BORDER-LEFT-COLOR: #f00;
+            BORDER-BOTTOM-COLOR: #f00;
+            COLOR: #0f0;
+            BORDER-TOP-COLOR: #f00;
+            BACKGROUND-COLOR: #000;
+            BORDER-RIGHT-COLOR: #f00;
+        }
+
+/*  modal popup */
+.modalBackground {
+    background-color: Gray;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+.modalPopup {
+    background-color: #EFF3FB;
+    border-width: 10px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+}
+
+.reny li {
+    float: left;
+    text-indent: 32px;
+    line-height: 23px;
+    height: 23px;
+    width: 113px;
+}
+
+    .reny li a {
+        padding-left: 22px;
+        background-image: url(ImagesSkin/user.jpg);
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+
+.renyList li {
+    float: left;
+    text-indent: 32px;
+    line-height: 30px;
+    height: 30px;
+    width: 160px;
+}
+
+    .renyList li a {
+        /*padding-left: 22px;*/
+        /*background-image: url(ImagesSkin/user.jpg);*/
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+
+
+.mob li {
+    float: left;
+    text-indent: 32px;
+    line-height: 23px;
+    height: 23px;
+    width: 113px;
+}
+
+    .mob li a {
+        padding-left: 22px;
+        background-image: url(ImagesSkin/mob.jpg);
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+
+
+
+html {
+    overflow-x: auto;
+    overflow-y: auto;
+}
+/* CSS样式 */
+.ajax_tab_menu .ajax__tab_header /*整体按钮底样式*/ {
+    font-family: 宋体;
+    height: 28px;
+    font-size: 12px;
+    background: url("ImagesSkin/Tab_Option_bg.gif") repeat-x bottom;
+}
+
+.ajax_tab_menu .ajax__tab_body /*资料区*/ {
+    font-family: 宋体;
+    font-size: 12px;
+    border-top: 0;
+    border-top: 1px solid #D6DAE2;
+}
+
+.ajax_tab_menu .ajax__tab_tab /*预设样式*/ {
+    background: url(ImagesSkin/Tab_Option_bg_OFF.gif) repeat-x;
+    width: 78px;
+    height: 29px;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 4px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.ajax_tab_menu .ajax__tab_hover .ajax__tab_tab /*鼠标经过样式*/ {
+    background: #fff url(ImagesSkin/Tab_Option_bg_hover.gif) repeat-x;
+    width: 78px;
+    height: 28px;
+    color: #333;
+    line-height: 29px;
+    text-align: center;
+}
+
+.ajax_tab_menu .ajax__tab_active .ajax__tab_tab /*当前使用中样式*/ {
+    background: url(ImagesSkin/Tab_Option_bg_ON.gif) repeat-x;
+    width: 78px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #333;
+}
+
+.dibian {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+#BT_NewPosition, #BT_UpdatePosition, #BT_DeletePosition {
+    width: 58px;
+}
+
+#BT_NewDuty, #BT_UpdateDuty, #BT_DeleteDuty {
+    width: 55px;
+}
+
+#btn_OilTypeAdd, #btn_OilTypeDelete {
+    width: 51px;
+}
+
+#BT_AddCustomerQuestionType, #BT_DeleteCustomerQuestionType {
+    width: 51px;
+}
+
+#BT_AddBank, #BT_DeleteBank {
+    width: 51px;
+}
+
+#BT_AddReceivePayWay, #BT_DeleteReceivePayWay {
+    width: 55px;
+}
+
+#BT_ChangeTypeNew, #BT_ChangeTypeDelete {
+    width: 61px;
+}
+
+#BT_AddGoodsType, #BT_DeleteGoodsType {
+    width: 50px;
+}
+
+#BT_OperationNew, #BT_OperationDelete {
+    width: 55px;
+}
+
+#BT_TaskRecordNew, #BT_TaskRecordDelete {
+    width: 51px;
+}
+
+#BT_AddKPIType, #BT_DeleteKPIType0 {
+    width: 61px;
+}
+
+.green {
+    /* border: 1px solid #c8f36e;*/
+
+    position: absolute;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.yellow {
+    /*  border: 1px solid #f1f17d;*/
+
+    overflow: hidden;
+    vertical-align: top;
+    padding-top: -50px;
+}
+
+.MYgreen {
+    width: 100px;
+    height: 20px;
+    border: 1px solid #c8f36e;
+    position: absolute;
+    overflow-x: auto;
+    /*margin-top: 3px;*/
+}
+
+.itemBorder span {
+    /*display: initial !important;*/
+    margin-top: 4px;
+    height: 17px;
+}
+
+.samllgreen {
+    width: 34px;
+    height: 15px;
+    border: 1px solid #9bcc34;
+    position: absolute;
+    overflow-x: auto;
+}

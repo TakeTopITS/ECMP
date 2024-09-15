@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WorkFlowStepDetail, ProjectMgt.Model" table="T_WorkFlowStepDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="StepID" type ="int" />
+
+    <property name ="WLID" type ="int" />
+
+    <property name ="OperatorCode" type ="String" />
+
+    <property name ="OperatorName"  type ="String" />
+
+    <property name ="Operation" type ="String" />
+
+    <property name ="OperatorCommand" type ="String" />
+
+    <property name ="CheckingTime" type ="DateTime" />
+
+    <property name ="Status" type ="String" />
+
+    <property name ="WorkDetail" type ="String" />
+
+    <property name ="Actor" type ="String" />
+
+    <property name ="FinishedTime" type ="int" />
+
+    <property name ="Requisite" type ="String" />
+
+    <property name ="FieldList" type ="String" />
+
+    <property name ="AllowFullEdit" type ="String" />
+
+    <property name ="EditFieldList" type ="String" />
+
+    <property name ="CanNotNullFieldList" type ="String" />
+
+    <property name ="SignPictureField" type ="String" />
+
+    <property name ="IsOperator" type ="String" />
+
+    <property name ="ManHour" type="Decimal" />
+
+    <property name ="Expense" type ="Decimal" />
+  </class>
+</hibernate-mapping>

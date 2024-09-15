@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="1.0.0.2" productVersion="12.0.0" PIVersion="1.0.0.0" href="file:///C:\Users\LiuTianTian\Desktop\工资表.xsn" name="urn:schemas-microsoft-com:office:infopath:U4X:-myXSD-2011-03-25T09-16-32" ?><?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:myFields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2011-03-25T09:16:32" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="zh-cn">
+	<my:salary_framework></my:salary_framework>
+	<my:group1>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		<my:group2>
+			<my:number></my:number>
+			<my:salary></my:salary>
+			<my:travel_allowance></my:travel_allowance>
+			<my:rice_allowance></my:rice_allowance>
+			<my:tel_allowance></my:tel_allowance>
+			<my:risk_money></my:risk_money>
+			<my:royalties></my:royalties>
+			<my:reward></my:reward>
+			<my:attendance_allowance></my:attendance_allowance>
+			<my:overtime></my:overtime>
+			<my:withholding_income_tax></my:withholding_income_tax>
+			<my:account></my:account>
+			<my:reality_money></my:reality_money>
+			<my:field14></my:field14>
+			<my:mark></my:mark>
+			<my:date xsi:nil="true"></my:date>
+		</my:group2>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</my:group1>
+	<my:date_one xsi:nil="true"></my:date_one>
+</my:myFields>

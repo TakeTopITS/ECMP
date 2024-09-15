@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZSupplierApplyComment, ProjectMgt.Model" table="T_WZSupplierApplyComment">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PurchaseCode" type ="String" />
+    <property name ="ExpertCode" type ="String" />
+    <property name ="SupplierCode1" type ="String" />
+    <property name ="SupplierCode2" type ="String" />
+    <property name ="SupplierCode3" type ="String" />
+    <property name ="SignName" type ="String" />
+    <property name ="Suggest" type ="String" />
+    <property name ="SignTime" type ="DateTime" />
+  </class>
+</hibernate-mapping>

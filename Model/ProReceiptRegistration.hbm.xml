@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.ProReceiptRegistration, ProjectMgt.Model" table="T_ProReceiptRegistration">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="ProjectID" column="ProjectID" type="int">
+		</property>
+		<property name="DocumentNo" column="DocumentNo" type="String">
+		</property>
+		<property name="FileName" column="FileName" type="String">
+		</property>
+		<property name="Creator" column="Creator" type="String">
+		</property>
+		<property name="CreateDate" column="CreateDate" type="DateTime">
+		</property>
+		<property name="FilePath" column="FilePath" type="String">
+		</property>
+		<property name="DispatchDepartment" column="DispatchDepartment" type="String">
+		</property>
+		<property name="FileWay" column="FileWay" type="String">
+		</property>
+		<property name="DestroyPeople" column="DestroyPeople" type="String">
+		</property>
+		<property name="DestructionDate" column="DestructionDate" type="DateTime">
+		</property>
+		<property name="ArchiveIdentification" column="ArchiveIdentification" type="int">
+		</property>
+		<property name="DocType" column="DocType" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

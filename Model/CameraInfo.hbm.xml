@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.CameraInfo, ProjectMgt.Model" table="T_CameraInfo">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="CameraType" type ="int" />
+    <property name ="ForeignID" type ="String" />
+    <property name ="CameraName" type ="String" />
+    <property name ="ServerIP" type ="String" />
+    <property name ="CameraUserName" type ="String" />
+    <property name ="CameraPass" type ="String" />
+    <property name ="CreatorCode" type ="String" />
+    <property name ="CreatorName" type ="String" />
+    <property name ="CreateTime" type ="DateTime" />
+    <property name ="Description" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ProRelatedUser, ProjectMgt.Model" table="V_ProRelatedUser">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProjectID" type="int" />
+
+    <property name ="ProjectName" type ="String" />
+
+    <property name ="ProjectType" type="String" />
+
+    <property name ="BeginDate" type ="DateTime" />
+
+    <property name ="EndDate" type ="DateTime" />
+
+    <property name ="ParentID" type ="int" />
+
+    <property name ="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+
+    <property name ="Actor" type ="String" />
+
+    <property name ="JoinDate" type ="DateTime" />
+
+    <property name ="PMCode" type="String" />
+
+    <property name ="PMName" type="String" />
+
+    <property name ="MakeManCode" type ="String" />
+
+    <property name ="MakeManName" type ="String" />
+
+    <property name ="Budget" type="Decimal" />
+
+    <property name ="ManHour" type="Decimal" />
+
+    <property name ="ManNumber" type ="Decimal" />
+
+    <property name ="FinishPercent" type="int" />
+
+    <property name ="MyStatus" type ="String" />
+
+    <property name ="ProStatus" type ="String" />
+
+    <property name ="UnitHourSalary" type ="Decimal" />
+  </class>
+</hibernate-mapping>

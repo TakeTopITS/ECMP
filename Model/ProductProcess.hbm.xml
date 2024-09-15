@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ProductProcess, ProjectMgt.Model" table="T_ProductProcess">
+
+    <id name="ProcessName" column="ProcessName" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="SortNumber" type="int" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.Account, ProjectMgt.Model" table="T_Account">
+    <id name="ID" column="ID" type="int">
+		<generator class="sequence">
+			<param name="sequence">t_account_id_seq</param>
+		</generator>
+    </id>
+    <property name ="ParentID" type ="int" />
+    <property name ="AccountName" type ="String" />
+    <property name ="SortNumber" type ="int" />
+    <property name ="AccountType" type ="String" />
+    <property name ="TypeArea" type ="String" />
+	  <property name ="AccountCode" type ="String" />
+  </class>
+</hibernate-mapping>

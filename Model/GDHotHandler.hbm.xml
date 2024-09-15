@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDHotHandler, ProjectMgt.Model" table="T_GDHotHandler">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProjectCode" type ="String" />
+    <property name ="Isom_no" type ="String" />
+    <property name ="Joint" type ="String" />
+    <property name ="THK" type ="String" />
+    <property name ="Fluid" type ="String" />
+    <property name ="Size" type ="String" />
+    <property name ="HotType" type ="String" />
+    <property name ="HotRoot" type ="String" />
+    <property name ="Cover" type ="String" />
+    <property name ="CoverDate" type ="String" />
+    <property name ="PWHTReport" type ="String" />
+    <property name ="PWHTDate" type ="String" />
+    <property name ="Grd" type ="String" />
+    <property name ="RT" type ="String" />
+    <property name ="ReportNo" type ="String" />
+    <property name ="ReportDate" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

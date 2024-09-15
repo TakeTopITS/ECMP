@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractPayableVisaDetail, ProjectMgt.Model" table="T_ConstractPayableVisaDetail">
+    <id name="ID" column="ID" type="int">
+      <generator class="identity" />
+    </id>
+    <property name ="VisaID" type ="int" />
+    <property name ="VisaDetailName" type ="String" />
+    <property name ="UnitName" type ="String" />
+    <property name ="VisaNumber" type="Decimal" />
+    <property name ="VisaPrice" type="Decimal" />
+    <property name ="VisaAmount" type="Decimal" />
+    <property name ="Comment" type ="String" />
+  </class>
+</hibernate-mapping>

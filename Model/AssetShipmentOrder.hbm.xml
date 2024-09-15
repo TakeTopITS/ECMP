@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.AssetShipmentOrder, ProjectMgt.Model" table="T_AssetShipmentOrder">
+
+    <id name="ShipmentNO" column="ShipmentNO" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ShipTime" type ="DateTime" />
+
+    <property name ="WareHouse" type ="String" />
+
+    <property name ="OperatorCode" type ="String" />
+
+    <property name ="OperatorName" type ="String" />
+
+    <property name ="Applicant" type ="String" />
+
+    <property name ="ApplicationReason" type ="String" />
+
+    <property name ="RelatedType" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+
+    <property name ="SourceType" type ="String" />
+
+    <property name ="SourceID" type ="int" />
+  </class>
+</hibernate-mapping>

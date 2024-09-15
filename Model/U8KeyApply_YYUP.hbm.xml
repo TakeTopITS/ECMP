@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.U8KeyApply_YYUP, ProjectMgt.Model" table="T_U8KeyApply_YYUP">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+    <property name ="DepartCode" type ="String" />
+    <property name ="DepartName" type ="String" />
+    <property name ="Sex" type ="String" />
+    <property name ="Phone" type ="String" />
+    <property name ="Email" type ="String" />
+    <property name ="U8VersionID" type ="String" />
+    <property name ="U8Version" type ="String" />
+    <property name ="ApplyReason" type ="String" />
+    <property name ="ApplyTime" type ="DateTime" />
+    <property name ="ApproveStatus" type ="String" />
+    <property name ="DepartApproveTime" type ="String" />
+    <property name ="DepartApproverCode" type ="String" />
+    <property name ="DepartApproverName" type ="String" />
+    <property name ="GroupApproverCode" type ="String" />
+    <property name ="GroupApproverName" type ="String" />
+    <property name ="GroupApproveTime" type ="String" />
+    <property name ="AssignedAccount" type ="String" />
+    <property name ="AssingedPassword" type ="String" />
+    <property name ="EmailStatus" type ="String" />
+  </class>
+</hibernate-mapping>

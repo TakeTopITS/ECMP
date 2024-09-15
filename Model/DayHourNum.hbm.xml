@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ProjectMgt.Model.DayHourNum, ProjectMgt.Model" table="T_DayHourNum">
+    <id name="ID" column="ID" type="int">
+      <generator class="identity" />
+    </id>
+    <property name ="HourNum" type ="Decimal" />
+    <property name ="StartTime" type ="String" />
+    <property name ="EndTime" type ="String" />
+	  <property name ="RestStartTime" type ="String" />
+	  <property name ="RestEndTime" type ="String" />
+  </class>
+</hibernate-mapping>

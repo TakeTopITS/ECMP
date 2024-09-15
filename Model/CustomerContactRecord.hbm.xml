@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.CustomerContactRecord, ProjectMgt.Model" table="T_CustomerContactRecord">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Type" type ="String" />
+    <property name ="Comment" type ="String" />
+    <property name ="ContactPerson" type ="String" />
+    <property name ="OfficePhone" type ="String" />
+    <property name ="MobilePhone" type="String" />
+    <property name ="Email1" type ="String" />
+    <property name ="Msn" type ="String" />
+    <property name ="Ysn" type ="String" />
+    <property name ="QQ" type ="String" />
+    <property name ="Company" type ="String" />
+    <property name ="Department" type ="String" />
+    <property name ="Duty" type ="String" />
+    <property name ="CompanyAddress" type ="String" />
+    <property name ="Country" type ="String" />
+    <property name ="State" type ="String" />
+    <property name ="City" type ="String" />
+    <property name ="UserCode" type ="String" />
+    <property name ="Status" type ="String" />
+    <property name ="NextContactTime" type ="DateTime" />
+  </class>
+</hibernate-mapping>

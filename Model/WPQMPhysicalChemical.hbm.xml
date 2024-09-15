@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMPhysicalChemical, ProjectMgt.Model" table="T_WPQMPhysicalChemical">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="PhysicalCheTensileSample" type ="String" />
+		<property name ="ColdBendSpecimen" type ="String" />
+		<property name ="DValue" type ="String" />
+		<property name ="Value_1" type ="String" />
+		<property name ="LateralBending" type ="String" />
+		<property name ="NormalTemShock" type ="Decimal" />
+		<property name ="NormalTemWeldZoneShock" type ="Decimal" />
+		<property name ="NormalTemHeatZoneShock" type ="Decimal" />
+		<property name ="NormalTemMetaAreaShock" type ="Decimal" />
+		<property name ="LowTemperature" type ="String" />
+		<property name ="LowTempImpact" type ="Decimal" />
+		<property name ="LowTempWeldImpact" type ="Decimal" />
+		<property name ="LowTempWarmImpact" type ="Decimal" />
+		<property name ="LowTempMetaImpact" type ="Decimal" />
+		<property name ="InterCorrosionSpecimen" type ="String" />
+		<property name ="IntCorrSpeStandard" type ="String" />
+		<property name ="MacroMetalloSpecimen" type ="String" />
+		<property name ="MacMetSpeStandard" type ="String" />
+		<property name ="GrooveSample" type ="String" />
+		<property name ="GrooveSampleStandard" type ="String" />
+		<property name ="FilletMeasure" type ="String" />
+		<property name ="FilletMeasureStandard" type ="String" />
+		<property name ="ContentReq" type ="String" />
+		<property name ="ContentStandard" type ="String" />
+		<property name ="Remark" type ="String" />
+		<property name ="ClientTime" type ="DateTime" />
+		<property name ="ChemicalClient" type ="String" />
+		<property name ="ChemicalReviewer" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

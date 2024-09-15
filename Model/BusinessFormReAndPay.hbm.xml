@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.BusinessFormReAndPay, ProjectMgt.Model" table="T_BusinessFormReAndPay">
+
+    <id name="FormCode" column="FormCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="FormName" type ="String" />
+    <property name ="ReceiveOrPay" type="String" />
+    <property name ="RelatedAccountCode" type ="String" />
+    <property name ="RelatedAccount" type ="String" />
+  </class>
+</hibernate-mapping>

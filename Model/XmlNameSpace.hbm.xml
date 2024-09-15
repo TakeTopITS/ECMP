@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.XmlNameSpace, ProjectMgt.Model" table="T_XmlNameSpace">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="WLTemName" type ="String" />
+
+    <property name ="XmlNameSpaceName" type ="String" />
+
+    <property name ="XmlNameSpaceValue" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDRTDelegate, ProjectMgt.Model" table="T_GDRTDelegate">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProjectCode" type ="String" />
+    <property name ="Isom_no" type ="String" />
+    <property name ="LotCount" type ="String" />
+
+    <property name ="Cover" type ="String" />
+    <property name ="JtNo" type ="String" />
+    <property name ="Size" type ="String" />
+    <property name ="Fluid" type ="String" />
+    <property name ="LotNo" type ="String" />
+    <property name ="SampleNo" type ="String" />
+    <property name ="Res" type ="String" />
+    <property name ="LockStatus" type ="String" />
+    <property name ="InstrnDate" type ="String" />
+    <property name ="InstrnNo" type ="String" />
+    <property name ="RTRecord" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

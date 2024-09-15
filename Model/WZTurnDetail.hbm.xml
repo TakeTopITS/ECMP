@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZTurnDetail, ProjectMgt.Model" table="T_WZTurnDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="TurnCode" type ="String" />
+    <property name ="ProjectCode" type ="String" />
+    <property name ="PickingUnit" type ="String" />
+    <property name ="StoreRoom" type ="String" />
+    <property name ="PickingCode" type ="String" />
+    <property name ="PickingMethod" type ="String" />
+    <property name ="NoCode" type ="String" />
+    <property name ="PlanCode" type ="String" />
+    <property name ="ObjectCode" type ="String" />
+    <property name ="TicketNumber" type ="Decimal" />
+    <property name ="ActualNumber" type ="Decimal" />
+    <property name ="TicketPrice" type ="Decimal" />
+    <property name ="TicketMoney" type ="Decimal" />
+    <property name ="TicketTime" type ="DateTime" />
+    <property name ="PickingTime" type ="DateTime" />
+    <property name ="MaterialPerson" type ="String" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="CardCode" type ="String" />
+    <property name ="PlanPrice" type ="Decimal" />
+    <property name ="PlanMoney" type ="Decimal" />
+    <property name ="CardPerson" type ="String" />
+    <property name ="CardIsMark" type ="int" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+.main{
+	width:1200px;
+	margin:0 auto;
+}
+.main img{
+	width:200px;
+	height:60px;
+	float:left;
+	margin-left:50px;
+	margin-top:50px;
+}

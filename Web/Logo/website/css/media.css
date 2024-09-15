@@ -1,0 +1,191 @@
+@charset "utf-8";
+@media screen and (max-device-width: 970px){
+	.main{
+		width:970px;
+	}
+	.main>p{
+		font-size:1em;
+		line-height:50px;
+/*		width:970px;*/
+		margin-left:3px;
+	}
+	.main p a{
+		font-size:1em;
+	}
+	
+	.links a{
+		font-size:1em;
+	}
+	.fw_cpzx a{
+		font-size:1em;
+	}
+	.main .title{
+		font-size:38px;
+	}
+	.main .pic img{
+		/*width:900px;
+		height:600px;*/
+	/*	margin-left:-30px;*/
+	}
+	.main .picme img{
+		width:900px;
+		height:600px;
+	}
+	.main .logo img{
+		width:400px;
+		height:140px;
+	}
+	.main .yongyou img{
+		width:380px;
+		height:48px;
+	}
+	.main .chengdu img{
+		width:411px;
+		height:92px;
+	}
+	.main .shiyou img{
+		width:900px;
+		height:400px;
+	}
+	.main .pic{
+		width:900px;
+	}
+	.clearfix .pic{
+		text-align:center;
+	}
+	.fw_jjfa clearfix{
+	font-size:24px;
+	}
+	.fw_jjfa{
+		font-size:24px;
+	}
+    h3{
+		font-size:24px;
+	}
+	.fw_cpzx{
+		font-size:24px;
+	}
+	.qudaohezuo .news-title img{
+	width:12px;
+	height:12px;
+	}
+	.qudaohezuo .beijingse img{
+		width:960px;
+		height:1380px;
+	}
+	.wenzi p{
+		font-size:2.5em;
+	}
+	p{
+		line-height:1.5em;
+	}
+	p.yingshen{
+		display:none;
+	}
+	.main .pic2 img{
+		width:100%;
+	}
+	.main p img{
+		width:95%;
+	}
+}
+p img{
+	width:60%;
+}
+.workshipin{
+	width:2.5%;
+}
+.yingshen img{
+	width:0px;
+}
+.picCTConstractManagement img{
+	width:100%;
+}
+.piczhengfuxiangmu4 img{
+	width:20%;
+}
+.picimageszhengfuxiangmu5 img{
+	width:70%;
+}
+.piczhengfuxiangmu6 img{
+	width:70%;
+}
+.piczhengfuxiangmu12 img{
+	width:80%;
+}
+.app img{
+	width:300px;
+	height:600px;
+}
+.picme img{
+	width:640px;
+	height:430px;
+}
+
+.title{
+	font-size:14px;
+	color:#d63d52;
+
+}
+.pic{
+/*	width:1390px;*/
+    width:100%;
+}
+h3{
+	font-size:14px;
+	color:#d63d52;
+}
+.main{
+	/*width:100%;*/
+	text-indent:0.5em;
+	margin-left:1px;
+	font-size:16px;
+}
+.qudaohezuo{
+	width:100%;
+	height:100%;
+	position:relative;
+	font-size:16px;
+/*	background:url(../images/qudaohezuo.jpg) no-repeat;*/
+}
+.beijingse img{
+	height:600px;
+	width:100%;
+}
+.news-title img{
+	width:12px;
+	height:12px;
+}
+.wenzi{
+/*	position:absolute;*/
+	top:0px;
+	left:0px;
+}
+.qiye{
+	text-indent:2em;
+}
+.yongyou img{
+/*	width:280px;
+	height:38px;*/
+	width:30%;
+}
+.zhaopian img{
+/*	width:860px;
+	height:484px;*/
+}
+.chengdu img{
+/*	width:311px;
+	height:82px;*/
+	width:30%;
+}
+.chupan img{
+	width:680px;
+	height:898px;
+}
+.links{
+	font-size: 16px;
+}
+.glzx img{
+	width:480px;
+	height:98px;
+}

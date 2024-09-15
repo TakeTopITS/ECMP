@@ -1,0 +1,66 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_Project>
+    <ProjectID>507</ProjectID>
+    <UserCode>C7094               </UserCode>
+    <UserName>员工C7094           </UserName>
+    <ProjectName>OPT SCIQ3视觉控制器项目                                                                                                                                                                                 </ProjectName>
+    <ProjectDetail>按合同要求执行
+&lt;table border="1" cellpadding="1" cellspacing="1" style="width: 500px;"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</ProjectDetail>
+    <AcceptStandard>按合同标准验收！</AcceptStandard>
+    <BeginDate>2021-05-27T00:00:00+08:00</BeginDate>
+    <EndDate>2021-07-27T00:00:00+08:00</EndDate>
+    <PMCode>C7094               </PMCode>
+    <PMName>员工C7094           </PMName>
+    <MakeDate>2021-06-04T15:58:32+08:00</MakeDate>
+    <Status>活动      </Status>
+    <ParentID>1</ParentID>
+    <Budget>65000.00</Budget>
+    <FinishPercent>0</FinishPercent>
+    <ManHour>80.00</ManHour>
+    <ManNumber>2.00</ManNumber>
+    <ProjectType>借出项目            </ProjectType>
+    <ProjectAmount>100000.00</ProjectAmount>
+    <CustomerPMName>张成</CustomerPMName>
+    <StatusValue>进行中    </StatusValue>
+    <ProjectClass>常规项目  </ProjectClass>
+    <ProjectCode>PJ20210528507</ProjectCode>
+    <CurrencyType>人民币</CurrencyType>
+    <Priority>COMMON    </Priority>
+    <DianYadengJi />
+    <JiaKong />
+    <DianLan />
+    <WuTan />
+    <DanJia1>0.00</DanJia1>
+    <DanJia2>0.00</DanJia2>
+    <ProjectAddress />
+    <CustomerName />
+    <YeWuLaiYuan />
+    <CustomerProjectCode />
+    <PingPai />
+    <JianTu />
+    <ProductName />
+    <SecondProjectName />
+    <ConfirmedBySupper>YES</ConfirmedBySupper>
+    <BelongDepartCode>102                 </BelongDepartCode>
+    <BelongDepartName>OPT科技股份有限公司</BelongDepartName>
+  </T_Project>
+</NewDataSet>

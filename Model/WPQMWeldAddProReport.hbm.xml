@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMWeldAddProReport, ProjectMgt.Model" table="T_WPQMWeldAddProReport">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="VerticalWeldingDirection" type ="String" />
+		<property name ="SpanWidth" type ="String" />
+		<property name ="FilletWeldThick" type ="String" />
+		<property name ="WeldingCurrent" type ="String" />
+		<property name ="MetalLiner" type ="String" />
+		<property name ="MetalLinerShapeSize" type ="String" />
+		<property name ="ConnectingWay" type ="String" />
+		<property name ="CleaningMethod" type ="String" />
+		<property name ="AfterHot" type ="String" />
+		<property name ="AppInspectionResult" type ="String" />
+		<property name ="AppInsRepNumber" type ="String" />
+		<property name ="PenInsRepNumber" type ="String" />
+		<property name ="PenInsJointNumber" type ="String" />
+		<property name ="MetaInsRepNumber" type ="String" />
+		<property name ="MetaFaceNumber_CIF" type ="String" />
+		<property name ="MetaFaceNumber_FWT" type ="String" />
+		<property name ="MetaFaceNumber_PEN" type ="String" />
+		<property name ="Conclusion" type ="String" />
+		<property name ="EvaluationResult" type ="String" />
+		<property name ="WelderName" type ="String" />
+		<property name ="WelderCode" type ="String" />
+		<property name ="WeldingDate" type ="DateTime" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

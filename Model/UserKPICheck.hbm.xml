@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.UserKPICheck, ProjectMgt.Model" table="T_UserKPICheck">
+
+    <id name="KPICheckID" column="KPICheckID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="KPICheckName" type ="String" />
+
+    <property name ="StartTime" type ="DateTime" />
+
+    <property name ="EndTime" type ="DateTime" />
+
+    <property name ="TotalSelfPoint" type ="Decimal" />
+
+    <property name ="TotalLeaderPoint" type ="Decimal" />
+
+    <property name ="TotalThirdPartPoint" type ="Decimal" />
+
+    <property name ="TotalSqlPoint" type ="Decimal" />
+
+    <property name ="TotalHRPoint" type ="Decimal" />
+
+    <property name ="TotalPoint" type ="Decimal" />
+
+    <property name="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+
+    <property name="CreatorCode" type ="String" />
+
+    <property name ="CreatorName" type ="String" />
+
+    <property name ="Status" type ="String" />
+  </class>
+</hibernate-mapping>

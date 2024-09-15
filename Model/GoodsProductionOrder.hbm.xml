@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GoodsProductionOrder, ProjectMgt.Model" table="T_GoodsProductionOrder">
+
+    <id name="PDID" column="PDID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PDName"  type ="String" />
+
+    <property name ="RouteName" type ="String" />
+
+    <property name ="ProductionType" type ="String" />
+
+    <property name ="ProductionDate" type ="DateTime" />
+
+    <property name ="FinishedDate" type ="DateTime" />
+
+    <property name ="CreatorCode" type ="String" />
+
+    <property name ="CreatorName" type ="String" />
+
+    <property name ="CurrencyType" type ="String" />
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="RelatedType" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+
+    <property name ="Status" type ="String" />
+
+    <property name ="BelongDepartCode" type ="String" />
+
+    <property name ="BelongDepartName" type ="String" />
+
+    <property name ="BusinessType" type ="String" />
+
+    <property name ="BusinessCode" type ="String" />
+
+  </class>
+</hibernate-mapping>

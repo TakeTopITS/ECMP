@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.DWLineTransport, ProjectMgt.Model" table="T_DWLineTransport">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="CustomName" type ="String" />
+    <property name ="Amount" type ="Decimal" />
+    <property name ="Cost" type ="Decimal" />
+    <property name ="YearMonth" type ="String" />
+  </class>
+</hibernate-mapping>

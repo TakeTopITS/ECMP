@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.TenderInvoice_HYYQ, ProjectMgt.Model" table="T_TenderInvoice_HYYQ">
+
+    <id name="id" column="id" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="TenderID" type ="int" />
+    <property name ="InvoiceNumber" type ="String" />
+    <property name ="InvoiceMoney" type ="Decimal" />
+    <property name ="Remarks" type ="String" />
+    <property name ="InvoiceDate" type ="String" />
+  </class>
+</hibernate-mapping>

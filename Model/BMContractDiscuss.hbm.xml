@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMContractDiscuss, ProjectMgt.Model" table="T_BMContractDiscuss">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="DiscussFileName" column="DiscussFileName" type="String">
+		</property>
+		<property name="DiscussFilePath" column="DiscussFilePath" type="String">
+		</property>
+		<property name="PointSummary" column="PointSummary" type="String">
+		</property>
+		<property name="EnterPer" column="EnterPer" type="String">
+		</property>
+		<property name="EnterDate" column="EnterDate" type="DateTime">
+		</property>
+		<property name="ReviewDate" column="ReviewDate" type="DateTime">
+		</property>
+		<property name="EnterUnit" column="EnterUnit" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="SupplierCode" column="SupplierCode" type="String">
+		</property>
+		<property name="SupplierName" column="SupplierName" type="String">
+		</property>
+		<property name="ContractPrice" column="ContractPrice" type="Decimal">
+		</property>
+		<property name="Reviewer" column="Reviewer" type="String">
+		</property>
+		<property name="ReviewResult" column="ReviewResult" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+		<property name="ConstractID" column="ConstractID" type="int">
+		</property>
+	</class>
+</hibernate-mapping>

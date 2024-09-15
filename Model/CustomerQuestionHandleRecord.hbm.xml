@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.CustomerQuestionHandleRecord, ProjectMgt.Model" table="T_CustomerQuestionHandleRecord">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="QuestionID" type="int" />
+
+    <property name ="HandleDetail" type ="String" />
+
+    <property name ="HandleStatus" type ="String" />
+
+    <property name ="HandleWay" type="String" />
+
+    <property name ="HandleTime" type="DateTime" />
+
+    <property name ="UsedTime" type="Decimal" />
+
+    <property name ="TimeUnit" type="String" />
+
+    <property name ="CustomerComment" type="String" />
+
+    <property name ="CustomerAcceptor" type="String" />
+
+    <property name ="AcceptorContactWay" type="String" />
+
+    <property name ="PreDays" type ="int" />
+
+    <property name ="NextServiceTime" type ="DateTime" />
+
+    <property name ="OperatorCode" type ="String" />
+
+    <property name ="OperatorName" type="String" />
+
+	  <property name ="UpDoorDate" type ="DateTime" />
+	  <property name ="SumApplyTime" type ="DateTime" />
+	  <property name ="NewTime" type ="DateTime" />
+	  <property name ="CollectionTime" type ="DateTime" />
+	  <property name ="RebatesTime" type ="DateTime" />
+	  <property name ="ToBank" type="String" />
+	  <property name ="DealSituation" type="String" />
+	  <property name ="NewNum" type="String" />
+	  <property name ="Signing" type="String" />
+	  <property name ="Lending" type="String" />
+	  <property name ="CollectionPer" type="String" />
+	  <property name ="Rebates" type="String" />
+  </class>
+</hibernate-mapping>

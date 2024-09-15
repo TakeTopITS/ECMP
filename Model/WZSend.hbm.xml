@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZSend, ProjectMgt.Model" table="T_WZSend">
+
+    <id name="SendCode" column="SendCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="PlanDetaiID" type ="int" />
+    <property name ="ProjectCode" type ="String" />
+    <property name ="TicketTime" type ="DateTime" />
+    <property name ="SendMethod" type ="String" />
+    <property name ="StoreRoom" type ="String" />
+    <property name ="ObjectCode" type ="String" />
+    <property name ="PlanNumber" type ="Decimal" />
+    <property name ="ActualNumber" type ="Decimal" />
+    <property name ="PlanPrice" type ="Decimal" />
+    <property name ="PlanMoney" type ="Decimal" />
+    <property name ="SalePrice" type ="Decimal" />
+    <property name ="SaleMoney" type ="Decimal" />
+    <property name ="ManageRate" type ="Decimal" />
+    <property name ="ManageMoney" type ="Decimal" />
+    <property name ="TotalMoney" type ="Decimal" />
+    <property name ="DownMoney" type ="Decimal" />
+    <property name ="CleanMoney" type ="Decimal" />
+
+    <property name ="ReduceCode" type ="String" />
+    <property name ="WearyCode" type ="String" />
+
+    <property name ="GoodsCode" type ="String" />
+    <property name ="CheckCode" type ="String" />
+    <property name ="CheckTime" type ="String" />
+    <property name ="Checker" type ="String" />
+    <property name ="SendTime" type ="String" />
+    <property name ="Safekeeper" type ="String" />
+    <property name ="PurchaseEngineer" type ="String" />
+    <property name ="UnitCode" type ="String" />
+    <property name ="PickingUnit" type ="String" />
+    <property name ="UpLeader" type ="String" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="CarCode" type ="String" />
+    <property name ="Comment" type ="String" />
+  </class>
+</hibernate-mapping>

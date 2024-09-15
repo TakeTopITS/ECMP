@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.UserKPICheckDetail, ProjectMgt.Model" table="T_UserKPICheckDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="KPICheckID" type ="int" />
+
+    <property name ="SortNumber" type ="int" />
+
+    <property name ="KPIType" type ="String" />
+
+    <property name ="KPI" type ="String" />
+
+    <property name ="Definition" type ="String" />
+
+    <property name ="KPIFunction" type ="String" />
+
+    <property name ="Formula" type ="String" />
+
+    <property name ="SqlCode" type ="String" />
+
+    <property name ="UnitSqlPoint" type ="Decimal" />
+
+    <property name ="Source" type ="String" />
+
+    <property name ="Weight" type ="Decimal" />
+
+    <property name ="Target" type ="String" />
+
+    <property name ="SelfPoint" type ="Decimal" />
+
+    <property name ="LeaderPoint" type ="Decimal" />
+
+    <property name ="ThirdPartPoint" type ="Decimal" />
+
+    <property name ="SqlPoint" type ="Decimal" />
+
+    <property name ="HRPoint" type ="Decimal" />
+
+    <property name ="Point" type ="Decimal" />
+
+    <property name ="SelfComment" type ="String" />
+
+    <property name ="LeaderComment" type ="String" />
+
+    <property name ="HRComment" type ="String" />
+
+    <property name ="ThirdPartComment" type ="String" />
+
+    <property name ="TotalComment" type ="String" />
+
+    <property name ="OperatorCode" type ="String" />
+
+    <property name ="OperatorName" type ="String" />
+  </class>
+</hibernate-mapping>

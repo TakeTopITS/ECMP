@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZStore, ProjectMgt.Model" table="T_WZStore">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="StockCode" type ="String" />
+    <property name ="ObjectCode" type ="String" />
+    <property name ="CheckCode" type ="String" />
+    <property name ="YearTime" type ="DateTime" />
+    <property name ="YearNumber" type ="Decimal" />
+    <property name ="YearPrice" type ="Decimal" />
+    <property name ="YearMoney" type ="Decimal" />
+    <property name ="InNumber" type ="Decimal" />
+    <property name ="InMoney" type ="Decimal" />
+    <property name ="EndInTime" type ="DateTime" />
+    <property name ="OutNumber" type ="Decimal" />
+    <property name ="OutPrice" type ="Decimal" />
+    <property name ="EndOutTime" type ="DateTime" />
+    <property name ="StoreNumber" type ="Decimal" />
+    <property name ="StorePrice" type ="Decimal" />
+    <property name ="StoreMoney" type ="Decimal" />
+    <property name ="GoodsCode" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="DownRatio" type ="Decimal" />
+    <property name ="DownMoney" type ="Decimal" />
+    <property name ="CleanMoney" type ="Decimal" />
+    <property name ="DownCode" type ="String" />
+    <property name ="DownDesc" type ="int" />
+    <property name ="WearyCode" type ="String" />
+    <property name ="WearyDesc" type ="int" />
+  </class>
+</hibernate-mapping>

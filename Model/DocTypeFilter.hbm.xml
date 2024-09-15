@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.DocTypeFilter, ProjectMgt.Model" table="V_DocumentTypeFilter">
+
+    <id name="DocType" column="DocType" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="DocTypeID" type ="int" />
+    <property name ="RelatedType" type ="String" />
+    <property name ="RelatedID" type ="int" />
+  </class>
+</hibernate-mapping>

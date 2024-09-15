@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GoodsCheckOutNoticeOrder, ProjectMgt.Model" table="T_GoodsCheckOutNoticeOrder">
+
+    <id name="COOID" column="COOID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="COOName"  type="String" />
+
+    <property name ="Type" type ="String" />
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="CurrencyType" type ="String" />
+
+    <property name ="ApplicantCode" type ="String" />
+
+    <property name ="ApplicantName" type ="String" />
+
+    <property name ="ApplyTime" type ="DateTime" />
+
+    <property name ="FinishTime" type="DateTime" />
+
+    <property name ="ApplyReason" type="String" />
+
+    <property name ="Status" type ="String" />
+
+    <property name ="RelatedType" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMPQR3, ProjectMgt.Model" table="T_WPQMPQR3">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="MetallographicRoot" type ="String" />
+		<property name ="MetallographicWeld" type ="String" />
+		<property name ="MetallographicZone" type ="String" />
+		<property name ="InsSecIPoor" type ="String" />
+		<property name ="InsSecIIPoor" type ="String" />
+		<property name ="InsSecIIIPoor" type ="String" />
+		<property name ="InsSecIVPoor" type ="String" />
+		<property name ="InsSecVPoor" type ="String" />
+		<property name ="RTInsResult" type ="String" />
+		<property name ="RTRepNumber" type ="String" />
+		<property name ="MTInsResult" type ="String" />
+		<property name ="MTRepNumber" type ="String" />
+		<property name ="UTInsResult" type ="String" />
+		<property name ="UTRepNumber" type ="String" />
+		<property name ="PTInsResult" type ="String" />
+		<property name ="PTRepNumber" type ="String" />
+		<property name ="CheComTestRepNumber" type ="String" />
+		<property name ="CheComp_C" type ="String" />
+		<property name ="CheComp_Si" type ="String" />
+		<property name ="CheComp_Mn" type ="String" />
+		<property name ="CheComp_P" type ="String" />
+		<property name ="CheComp_S" type ="String" />
+		<property name ="CheComp_Cr" type ="String" />
+		<property name ="CheComp_Ni" type ="String" />
+		<property name ="CheComp_Mo" type ="String" />
+		<property name ="CheComp_Cu" type ="String" />
+		<property name ="CheComp_Ti" type ="String" />
+		<property name ="CheComp_Nb" type ="String" />
+		<property name ="SurfaceDistance" type ="String" />
+		<property name ="AdditionalIns" type ="String" />
+		<property name ="Conclusion" type ="String" />
+		<property name ="EvaluationResult" type ="String" />
+		<property name ="WeldName" type ="String" />
+		<property name ="WeldCode" type ="String" />
+		<property name ="UpDateTime" type ="DateTime" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

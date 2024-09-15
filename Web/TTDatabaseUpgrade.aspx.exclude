@@ -1,0 +1,223 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="TTDatabaseUpgrade.aspx.cs" Inherits="TTDatabaseUpgrade" %>
+
+<%@ Register Assembly="NickLee.Web.UI" Namespace="NickLee.Web.UI" TagPrefix="NickLee" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>数据库升级</title>
+    <link id="mainCss" href="css/bluelightmain.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #AboveDiv {
+            min-width: 1200px;
+            width: expression (document.body.clientWidth <= 1200? "1200px" : "auto" ));
+        }
+    </style>
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="js/allAHandler.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        $(function () {
+            if (top.location != self.location) { } else { CloseWebPage(); }
+        });
+
+        function displayWaitingIcon() {
+
+            alert("kkdk");
+
+            if (document.getElementById('IMG_Waiting').style.display === 'none') {
+
+                document.getElementById('IMG_Waiting').style.display = 'block';
+            }
+            else {
+                document.getElementById('IMG_Waiting').style.display = 'none';
+            }
+
+
+    </script>
+</head>
+<body>
+    <center>
+        <form id="form1" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True" EnableScriptLocalization="True">
+            </asp:ScriptManager>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <div id="AboveDiv" align="left">
+                        <table id="AboveTable" cellpadding="0" width="100%" cellspacing="0" class="bian" style="text-align: left">
+                            <tr>
+                                <td height="31" class="page_topbj" align="left">
+                                    <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td width="350" align="left">
+                                                <table width="345" border="0" align="left" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="29">
+                                                            <%--<img src="Logo/main_top_l.jpg" alt="" width="29" height="31" />--%>
+                                                        </td>
+                                                        <td align="center" background="ImagesSkin/main_top_bj.jpg" class="titlezi">
+                                                            <asp:Label ID="Label1" runat="server" Text="<%$ Resources:lang,ShuJuKuShengJiWeiHu%>"></asp:Label>
+                                                        </td>
+                                                        <td width="5">
+                                                            <%--<img src="ImagesSkin/main_top_r.jpg" width="5" height="31" alt="" />--%>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            语言资源文件差异：
+                                                        </td>
+                                                        <td>
+                                                            <asp:Label ID="Label14" runat="server" Text="<%$ Resources:lang,YuYan%>"></asp:Label>： </td>
+                                                        <td>
+                                                            <asp:DropDownList ID="ddlLangSwitcher" runat="server" AutoPostBack="true" DataTextField="Language" DataValueField="LangCode">
+                                                            </asp:DropDownList>
+                                                        </td>
+                                                        <td>
+                                                            <asp:Button ID="BT_CompareByHomeLanguage" runat="server" CssClass="inpuLong" Text="<%$ Resources:lang,YiBenYuDuiBi%>" OnClick="BT_CompareByHomeLanguage_Click" OnClientClick="javascript:document.getElementById('IMG_Waiting').style.display = 'block';" />
+                                                            <img id="IMG_Waiting" src="Images/Processing.gif" alt="Loading,please wait..." style="text-align: center; display: none;" />
+                                                        </td>
+                                                        <td>
+                                                            <asp:Button ID="BT_GetLanguageResource" runat="server" CssClass="inpuLong" OnClick="BT_GetLanguageResource_Click" Text="<%$ Resources:lang,QDXTTSYYZY%>" />
+                                                        </td>
+                                                        <td>
+                                                            <asp:Button ID="BT_ReplaceLanguageResource" runat="server" CssClass="inpuLong" Text="<%$ Resources:lang,DuYiYanDuiBi%>" OnClick="BT_ReplaceLanguageResource_Click" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table width="100%" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="center" style="padding: 5px 5px 0px 5px; border-right: solid 1px #D8D8D8; width: 90%;">
+                                                <table width="100%" cellpadding="3" cellspacing="0" class="formBgStyle">
+                                                    <tr>
+                                                        <td class="formItemBgStyle" style="text-align: right">
+                                                            <asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MiYue%>"></asp:Label>：</td>
+                                                        <td class="formItemBgStyle" style="text-align: left">
+                                                            <asp:TextBox ID="TB_Password" runat="server" Width="300px"></asp:TextBox>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="formItemBgStyle" style="text-align: right">
+                                                            <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,BianHao%>"></asp:Label>：</td>
+                                                        <td class="formItemBgStyle" style="text-align: left">
+                                                            <asp:TextBox ID="TB_ID" runat="server" Width="80px"></asp:TextBox>
+                                                            <span class="auto-style3">
+                                                                <asp:Label ID="Label4" runat="server" Text="<%$ Resources:lang,DaYu%>"></asp:Label></span><asp:Label ID="lbl_ID" runat="server" CssClass="auto-style3"></asp:Label>
+                                                            <span class="auto-style3">
+                                                                <asp:Label ID="Label5" runat="server" Text="<%$ Resources:lang,DeZhengShu%>"></asp:Label></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="formItemBgStyle" style="text-align: right">
+                                                            <asp:Label ID="Label6" runat="server" Text="<%$ Resources:lang,NeiRongSQL%>"></asp:Label>：</td>
+                                                        <td class="formItemBgStyle" style="text-align: left">
+                                                            <asp:TextBox ID="TB_NewUpdateSQL" runat="server" CssClass="shuru" Width="99%" Height="300px" TextMode="MultiLine"></asp:TextBox>
+                                                            <br />
+                                                            <asp:Label ID="Label7" runat="server" Text="<%$ Resources:lang,ZDYLSQLYJZTLRZXLSQLYJKYPLLRYDGYDGOGJCBYCGBQZF%>"></asp:Label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="formItemBgStyle" style="text-align: right; vertical-align: middle;">&nbsp;</td>
+                                                        <td class="formItemBgStyle" style="text-align: left; vertical-align: middle;">
+                                                            <asp:Button ID="BT_Add" runat="server" OnClick="BT_Add_Click" CssClass="inpu" Text="<%$ Resources:lang,ShengJi%>" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" class="formItemBgStyle" align="left">
+                                                            <table width="99%" border="0" cellpadding="0" cellspacing="0" background="ImagesSkin/main_n_bj.jpg">
+                                                                <tr>
+                                                                    <td width="7">
+                                                                        <img src="ImagesSkin/main_n_l.jpg" width="7" height="26" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                            <tr>
+                                                                                <td width="5%" align="center">
+                                                                                    <strong>
+                                                                                        <asp:Label ID="Label8" runat="server" Text="<%$ Resources:lang,BianHao%>"></asp:Label></strong>
+                                                                                </td>
+                                                                                <td width="80%" align="center">
+                                                                                    <strong>
+                                                                                        <asp:Label ID="Label9" runat="server" Text="<%$ Resources:lang,NeiRongSQL%>"></asp:Label></strong>
+                                                                                </td>
+
+                                                                                <td width="5%" align="center">
+                                                                                    <strong>
+                                                                                        <asp:Label ID="Label10" runat="server" Text="<%$ Resources:lang,ZhuangTai%>"></asp:Label></strong>
+                                                                                </td>
+
+                                                                                <td width="10%" align="center">
+                                                                                    <strong>
+                                                                                        <asp:Label ID="Label11" runat="server" Text="<%$ Resources:lang,GengXinShiJian%>"></asp:Label></strong>
+                                                                                </td>
+
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td width="6" align="right">
+                                                                        <img src="ImagesSkin/main_n_r.jpg" width="6" alt="" height="26" />
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="false"
+                                                                PageSize="10" ShowHeader="false" Height="1px" OnPageIndexChanged="DataGrid1_PageIndexChanged"
+                                                                Width="99%" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False"
+                                                                Font-Underline="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+                                                                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                                                                <EditItemStyle BackColor="#2461BF" />
+                                                                <SelectedItemStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                                                                <PagerStyle HorizontalAlign="Center" Mode="NumericPages" NextPageText="" PrevPageText="" CssClass="notTab" />
+
+                                                                <ItemStyle CssClass="itemStyle" />
+                                                                <Columns>
+                                                                    <asp:BoundColumn DataField="ID" HeaderText="编号">
+                                                                        <ItemStyle CssClass="itemBorder" HorizontalAlign="Center" Width="5%" />
+                                                                    </asp:BoundColumn>
+                                                                    <asp:BoundColumn DataField="SQLText" HeaderText="SqlText">
+                                                                        <ItemStyle CssClass="itemBorder" HorizontalAlign="Left" Width="80%" />
+                                                                    </asp:BoundColumn>
+                                                                    <asp:BoundColumn DataField="IsSucess" HeaderText="状态">
+                                                                        <ItemStyle CssClass="itemBorder" HorizontalAlign="Center" Width="5%" />
+                                                                    </asp:BoundColumn>
+                                                                    <asp:BoundColumn DataField="UpdateTime" HeaderText="更新时间">
+                                                                        <ItemStyle CssClass="itemBorder" HorizontalAlign="Center" Width="10%" />
+                                                                    </asp:BoundColumn>
+                                                                </Columns>
+                                                            </asp:DataGrid></td>
+                                                    </tr>
+
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </ContentTemplate>
+                <Triggers>
+                    <asp:PostBackTrigger ControlID="BT_CompareByHomeLanguage" />
+                </Triggers>
+            </asp:UpdatePanel>
+            <div style="position: absolute; left: 50%; top: 50%;">
+                <asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1">
+                    <ProgressTemplate>
+                        <img src="Images/Processing.gif" alt="Loading,please wait..." />
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
+            </div>
+        </form>
+    </center>
+</body>
+<script type="text/javascript" language="javascript">var cssDirectory = '<%=Session["CssDirectory"] %>'; var oLink = document.getElementById('mainCss'); oLink.href = 'css/' + cssDirectory + '/' + 'bluelightmain.css';</script>
+</html>

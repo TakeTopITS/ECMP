@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMContactList, ProjectMgt.Model" table="T_WPQMContactList">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="ContactClient" type ="String" />
+		<property name ="CommissionedDate" type ="DateTime" />
+		<property name ="GroupForm" type ="String" />
+		<property name ="VisualInspection" type ="String" />
+		<property name ="MechanicalPerReq" type ="String" />
+		<property name ="MechanizationDegree" type ="String" />
+		<property name ="ExecutionStandard" type ="String" />
+		<property name ="OtherPerReq" type ="String" />
+		<property name ="ContactNote" type ="String" />
+		<property name ="ContactPersonTel" type ="String" />
+		<property name ="TaskSendUnit" type ="String" />
+		<property name ="TaskReceiveUnit" type ="String" />
+		<property name ="SendPerson" type ="String" />
+		<property name ="ReceivePerson" type ="String" />
+		<property name ="ContactDate" type ="DateTime" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

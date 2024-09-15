@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.CarOilTypeRecord, ProjectMgt.Model" table="T_CarOilTypeRecord">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="CarNo" column="CarNo" type="String">
+		</property>
+		<property name="OilTypeId" column="OilTypeId" type="int">
+		</property>
+		<property name="OilName" column="OilName" type="String">
+		</property>
+		<property name="Type" column="Type" type="String">
+		</property>
+		<property name="DepartCode" column="DepartCode" type="String">
+		</property>
+		<property name="OilNum" column="OilNum" type="Decimal">
+		</property>
+		<property name="OilPrice" column="OilPrice" type="Decimal">
+		</property>
+		<property name="OilMoney" column="OilMoney" type="Decimal">
+		</property>
+		<property name="CreateTime" column="CreateTime" type="DateTime">
+		</property>
+	</class>
+</hibernate-mapping>

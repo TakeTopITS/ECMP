@@ -1,0 +1,51 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	color:inherit;
+}
+.main{
+	margin:0 auto;
+	width:1100px;
+	margin-top:40px;
+}
+.ditu img{
+	width:800px;
+	height:500px;
+	position:absolute;
+	z-index:-10;
+	top:-15px;
+	left:300px;
+}
+.main h4{
+	font-weight:lighter;
+	font-size:14px;
+}
+.main h3{
+	font-family:"微软雅黑";
+	font-size:16px;
+}
+.xian{
+	margin-top:15px;
+}
+.message{
+	font-size:12px;
+	color:#888;
+	line-height:25px;
+	margin-top:15px;
+	text-align:left;
+}
+.links{
+	width:90px;
+	height:20px;
+	padding:5px;
+	background:#e84c3d;
+	color:#fff;
+	text-align:center;
+	border-radius:8px;
+	margin-top:15px;
+}
+.links a:hover{
+	color:#FFFFFF;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ExpenseClaim>
+    <DetailECID>32</DetailECID>
+    <ECID>32</ECID>
+    <ExpenseName>项目506 合同: JZGC8002 钢筋工程 项目 费用报销申请</ExpenseName>
+    <Purpose />
+    <Amount>24000.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <ApplyTime>2021-06-11T14:13:55+08:00</ApplyTime>
+    <Status>审批中    </Status>
+    <RelatedType>项目                </RelatedType>
+    <RelatedID>506</RelatedID>
+  </T_ExpenseClaim>
+</NewDataSet>

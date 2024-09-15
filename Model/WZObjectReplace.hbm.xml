@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZObjectReplace, ProjectMgt.Model" table="T_WZObjectReplace">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="OldObjectCode" type ="String" />
+    <property name ="NewObjectCode" type ="String" />
+  </class>
+</hibernate-mapping>

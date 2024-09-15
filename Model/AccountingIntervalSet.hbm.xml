@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.AccountingIntervalSet, ProjectMgt.Model" table="T_AccountingIntervalSet">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="FinancialCode" type ="String" />
+		<property name ="IntervalName" type ="String" />
+		<property name ="Status" type ="String" />
+		<property name ="StartTime" type="DateTime" />
+		<property name ="EndTime" type="DateTime" />
+		<property name ="CreaterCode" type ="String" />
+		<property name ="IntervalCode" type ="String" />
+	</class>
+</hibernate-mapping>

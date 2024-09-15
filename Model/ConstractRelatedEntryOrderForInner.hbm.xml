@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractRelatedEntryOrderForInner, ProjectMgt.Model" table="T_ConstractRelatedEntryOrderForInner">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="EntryTax" type ="Decimal" />
+
+    <property name ="Currency" type ="String" />
+
+    <property name ="ExchangeRate" type ="Decimal" />
+
+    <property name ="AddedValueTax" type ="Decimal" />
+
+    <property name ="ConstractCode" type ="String" />
+  </class>
+</hibernate-mapping>

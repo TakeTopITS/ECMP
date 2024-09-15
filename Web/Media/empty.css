@@ -1,0 +1,13 @@
+﻿p, body, td 
+{
+    font-family: Tahoma, Arial, Sans-Serif;
+    font-size: 10pt;
+    /* line-height: 1.4em;   Simulate default value change for testing purposes */
+}
+body 
+{
+	padding: 0px;
+	margin: 0px;
+	/*background-color: #e0e0e0;*/
+	background-color: #ffffff;
+}

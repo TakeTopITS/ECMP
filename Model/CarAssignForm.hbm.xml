@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.CarAssignForm, ProjectMgt.Model" table="T_CarAssignForm">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ApplyFormID" type ="int" />
+    <property name ="CarCode" type ="String" />
+
+    <property name ="DepartCode" type ="String" />
+    <property name ="DepartName" type ="String" />
+    <property name ="ApplicantCode" type ="String" />
+    <property name ="ApplicantName" type ="String" />
+    <property name ="Attendant" type ="String" />
+
+    <property name ="DriverCode" type ="String" />
+    <property name ="DriverName" type ="String" />
+
+    <property name ="GuardCode" type ="String" />
+    <property name ="GuardName" type ="String" />
+
+    <property name ="BoardingSite" type ="String" />
+    <property name ="Destination" type ="String" />
+    <property name ="Mileage" type ="Decimal" />
+
+    <property name ="DepartTime" type ="DateTime" />
+    <property name ="BackTime" type ="DateTime" />
+
+    <property name ="RealDepartTime" type ="DateTime" />
+    <property name ="RealBackTime" type ="DateTime" />
+
+    <property name ="RoadToll" type ="Decimal" />
+    <property name ="ParkingCharge" type ="Decimal" />
+
+    <property name ="OilVolume" type ="Decimal" />
+    <property name ="OilCharge" type ="Decimal" />
+
+    <property name ="CurrentMileage" type ="Decimal" />
+
+    <property name ="Comment" type ="String" />
+    <property name ="Status" type ="String" />
+    <property name ="MakeUserCode" type ="String" />
+  </class>
+</hibernate-mapping>

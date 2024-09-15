@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.MeetingRoom, ProjectMgt.Model" table="T_MeetingRoom">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="RoomName" type="String" />
+    <property name ="RoomPosition" type="String" />
+    <property name ="AccommodateCount" type="int" />
+    <property name ="Note" type="String" />
+    <property name ="BelongDepartCode" type ="String" />
+    <property name ="BelongDepartName" type ="String" />
+  </class>
+</hibernate-mapping>

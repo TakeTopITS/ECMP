@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.PlanMember, ProjectMgt.Model" table="T_PlanMember">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PlanID" type="int" />
+
+    <property name ="UserCode" type="String" />
+
+    <property name ="UserName" type ="String" />
+
+    <property name ="MainWork" type ="String" />
+
+    <property name ="StartWorkDate" type="DateTime" />
+
+    <property name ="EndWorkDate" type ="DateTime" />
+
+    <property name ="Budget" type ="Decimal" />
+
+    <property name ="JoinDate" type ="DateTime" />
+
+    <property name ="IsLeader" type ="String" />
+  </class>
+</hibernate-mapping>

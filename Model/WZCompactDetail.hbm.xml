@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZCompactDetail, ProjectMgt.Model" table="T_WZCompactDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="CompactCode" type ="String" />
+    <property name ="PlanDetailID" type ="int" />
+    <property name ="ObjectCode" type ="String" />
+    <property name ="StandardCode" type ="String" />
+    <property name ="Factory" type ="String" />
+    <property name ="Remark" type ="String" />
+    <property name ="CompactNumber" type ="Decimal" />
+    <property name ="CompactPrice" type ="Decimal" />
+    <property name ="CompactMoney" type ="Decimal" />
+    <property name ="CheckCode" type ="String" />
+    <property name ="CollectNumber" type ="Decimal" />
+    <property name ="CollectMoney" type ="Decimal" />
+    <property name ="IsMark" type ="int" />
+    <property name ="IsPrint" type ="int" />
+    <property name ="PurchaseDetailID" type ="int" />
+
+    <property name ="ObjectName" type ="String" />
+    <property name ="Model" type ="String" />
+    <property name ="Grade" type ="String" />
+    <property name ="Criterion" type ="String" />
+    <property name ="Unit" type ="int" />
+    <property name ="IsCheck" type ="int" />
+  </class>
+</hibernate-mapping>

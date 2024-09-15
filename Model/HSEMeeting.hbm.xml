@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSEMeeting, ProjectMgt.Model" table="T_HSEMeeting">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="ProjectId" column="ProjectId" type="int">
+		</property>
+		<property name="ProjectName" column="ProjectName" type="String">
+		</property>
+		<property name="MeetingPlace" column="MeetingPlace" type="String">
+		</property>
+		<property name="MeetingDate" column="MeetingDate" type="DateTime">
+		</property>
+		<property name="Hoster" column="Hoster" type="String">
+		</property>
+		<property name="DepartCode" column="DepartCode" type="String">
+		</property>
+		<property name="DepartName" column="DepartName" type="String">
+		</property>
+		<property name="StartTime" column="StartTime" type="DateTime">
+		</property>
+		<property name="EndTime" column="EndTime" type="DateTime">
+		</property>
+		<property name="SummaryType" column="SummaryType" type="String">
+		</property>
+		<property name="SummaryContent" column="SummaryContent" type="String">
+		</property>
+		<property name="Participants" column="Participants" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

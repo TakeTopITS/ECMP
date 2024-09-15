@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.QMPurchasingContract, ProjectMgt.Model" table="T_QMPurchasingContract">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="CompanyCode" column="CompanyCode" type="String">
+		</property>
+		<property name="CompanyName" column="CompanyName" type="String">
+		</property>
+		<property name="TransportUnit" column="TransportUnit" type="String">
+		</property>
+		<property name="ReceivingUnit" column="ReceivingUnit" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="IsOverAll" column="IsOverAll" type="String">
+		</property>
+		<property name="IsTechnicalDisclosure" column="IsTechnicalDisclosure" type="String">
+		</property>
+		<property name="QualityRepStatus" column="QualityRepStatus" type="String">
+		</property>
+		<property name="QualityInsStatus" column="QualityInsStatus" type="String">
+		</property>
+		<property name="QualityPenNotStatus" column="QualityPenNotStatus" type="String">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="CreateDate" column="CreateDate" type="DateTime">
+		</property>
+		<property name="CreatePer" column="CreatePer" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+
+		<property name ="RelatedConstractCode" type="String" />
+		<property name ="RelatedConstractName" type="String" />
+		
+	</class>
+</hibernate-mapping>

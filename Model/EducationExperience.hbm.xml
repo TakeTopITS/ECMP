@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.EducationExperience, ProjectMgt.Model" table="T_EducationExperience">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="UserCode" type ="String" />
+    <property name ="StartTime" type ="DateTime" />
+    <property name ="EndTime" type ="DateTime" />
+    <property name ="School" type ="String" />
+    <property name ="Major" type ="String" />
+    <property name ="Certificate" type ="String" />
+  </class>
+</hibernate-mapping>

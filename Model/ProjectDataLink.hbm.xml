@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.ProjectDataLink, ProjectMgt.Model" table="T_ProjectDataLink">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Host" column="Host" type="String">
+		</property>
+		<property name="DataBaseName" column="DataBaseName" type="String">
+		</property>
+		<property name="LoginNo" column="LoginNo" type="String">
+		</property>
+		<property name="PassWord" column="PassWord" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

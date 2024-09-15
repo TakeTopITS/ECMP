@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractReceivablesRecord, ProjectMgt.Model" table="T_ConstractReceivablesRecord">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ReceivablesID" type ="int" />
+
+    <property name ="ConstractCode" type ="String" />
+
+    <property name ="ReAndPayType" type ="String" />
+    <property name ="Currency" type ="String" />
+    <property name ="ExchangeRate" type ="Decimal" />
+    <property name ="Bank" type ="String" />
+
+    <property name ="ReceiverAccount" type ="Decimal" />
+    <property name ="ReceiverTime" type ="DateTime" />
+
+    <property name ="InvoiceAccount" type ="Decimal" />
+    <property name ="Payer" type ="String" />
+    <property name ="OperatorCode" type ="String" />
+    <property name ="OperatorName" type ="String" />
+    <property name ="OperateTime" type ="DateTime" />
+    <property name ="Comment" type ="String" />
+
+    <property name ="RelatedProjectID" type ="int" />
+  </class>
+</hibernate-mapping>

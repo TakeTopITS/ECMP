@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.FunInforDialBox, ProjectMgt.Model" table="T_FunInforDialBox">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="InforName" column="InforName" type="String">
+		</property>
+		<property name="SQLCode" column="SQLCode" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="CreateTime" column="CreateTime" type="DateTime">
+		</property>
+		<property name="BoxType" column="BoxType" type="String">
+		</property>
+    <property name ="UserType" type ="String" />
+    <property name ="IsForceInfor" type ="String" />
+		<property name="LinkAddress" column="LinkAddress" type="String">
+		</property>
+    <property name="MobileLinkAddress" column="MobileLinkAddress" type="String">
+    </property>
+		<property name="IsSendMsg" column="IsSendMsg" type="String">
+		</property>
+		<property name="IsSendEmail" column="IsSendEmail" type="String">
+		</property>
+    <property name ="SortNumber" type ="int" />
+
+    <property name ="HomeName" type ="String" />
+    <property name ="LangCode" type ="String" />
+	</class>
+</hibernate-mapping>

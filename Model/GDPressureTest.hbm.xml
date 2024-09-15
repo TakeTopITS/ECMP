@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDPressureTest, ProjectMgt.Model" table="T_GDPressureTest">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="TestLoopNo" type ="String" />
+    <property name ="PressTestRec" type ="String" />
+    <property name ="PressDate" type ="String" />
+    <property name ="ReinstRec" type ="String" />
+    <property name ="ReinstDate" type ="String" />
+    <property name ="FlushingBlock" type ="String" />
+    <property name ="FlushingRec" type ="String" />
+    <property name ="FlushingDate" type ="String" />
+    <property name ="LeakTestRec" type ="String" />
+    <property name ="LeakDate" type ="String" />
+    <property name ="Remarks" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

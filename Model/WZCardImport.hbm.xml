@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZCardImport, ProjectMgt.Model" table="T_WZCardImport">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="NoCode" type ="String" />
+    <property name ="ObjectName" type ="String" />
+    <property name ="OutNumber" type ="Decimal" />
+    <property name ="OutPrice" type ="Decimal" />
+    <property name ="OutMoney" type ="Decimal" />
+    <property name ="PlanMoney" type ="Decimal" />
+    <property name ="ImportStatus" type ="String" />
+    <property name ="CardCode" type ="String" />
+    <property name ="PickingCode" type ="String" />
+    <property name ="MaterialPerson" type ="String" />
+    <property name ="TurnCode" type ="String" />
+  </class>
+</hibernate-mapping>

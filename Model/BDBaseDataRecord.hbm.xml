@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BDBaseDataRecord, ProjectMgt.Model" table="T_BDBaseDataRecord">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="BDBaseDataID" type ="int" />
+		<property name ="DepartCode" type ="String" />
+		<property name ="DepartName" type ="String" />
+    <property name ="AccountCode" type ="String" />
+		<property name ="AccountName" type ="String" />
+		<property name ="YearNum" type ="int" />
+		<property name ="MonthNum" type ="int" />
+		<property name ="MoneyNum" type ="Decimal" />
+		<property name ="EnterCode" type ="String" />
+		<property name ="Type" type ="String" />
+		<property name ="OperationType" type ="String" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GoodsReturnOrder, ProjectMgt.Model" table="T_GoodsReturnOrder">
+
+    <id name="ROID" column="ROID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Type" type ="String" />
+
+    <property name ="ReturnName" type ="String" />
+
+    <property name ="ReturnTime" type ="DateTime" />
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="CurrencyType" type ="String" />
+
+    <property name ="CustomerCode" type ="String" />
+
+    <property name ="CustomerName" type ="String" />
+
+    <property name ="OperatorCode" type ="String" />
+
+    <property name ="OperatorName" type ="String" />
+
+    <property name ="Applicant" type ="String" />
+
+    <property name ="Status" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.HeadLine, ProjectMgt.Model" table="T_HeadLIne">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Type" type ="String" />
+
+    <property name ="Title" type ="String" />
+
+    <property name ="Content" type ="StringClob" />
+	  
+	<property name ="ContentDocUrl" type ="String" />
+
+    <property name ="PublisherCode" type ="String" />
+
+    <property name ="PublisherName" type ="String" />
+
+    <property name ="PublishTime"  type ="DateTime" />
+
+    <property name ="RelatedDepartCode" type ="String" />
+
+    <property name ="RelatedDepartName" type ="String" />
+
+    <property name ="Status" type ="String" />
+
+    <property name ="IsHead" type ="String" />
+
+    <property name ="LangCode" type ="String" />
+
+    <property name ="NewsType" type="String" />
+    
+  </class>
+</hibernate-mapping>

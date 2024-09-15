@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_BusinessFormDataTable>
+    <DetailVisaID>9</DetailVisaID>
+    <ID>9</ID>
+    <ProjectID>479</ProjectID>
+    <ConstractPayableID>0</ConstractPayableID>
+    <VisaName>TESTTEST</VisaName>
+    <VisaSignMan>TEST</VisaSignMan>
+    <VisaAmount>2220.00</VisaAmount>
+    <Comment>TEST</Comment>
+    <Status>审批中    </Status>
+    <VisaSignTime>2020-05-29T00:00:00+08:00</VisaSignTime>
+    <CurrencyType>人民币              </CurrencyType>
+    <OperatorCode>C7094               </OperatorCode>
+    <RelatedImpact>士大夫士大夫士大夫</RelatedImpact>
+    <RelatedResult>啊发士大夫</RelatedResult>
+  </T_BusinessFormDataTable>
+</NewDataSet>

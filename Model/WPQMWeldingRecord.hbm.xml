@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMWeldingRecord, ProjectMgt.Model" table="T_WPQMWeldingRecord">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="MaterialNo" type ="String" />
+		<property name ="MaterialSpecification" type ="String" />
+		<property name ="CategoryGroups" type ="String" />
+		<property name ="WireTypeBrandSpe" type ="String" />
+		<property name ="ElecTypeBrandSpe" type ="String" />
+		<property name ="FluxTypeBrandSpe" type ="String" />
+		<property name ="WeldMaterialCategory" type ="String" />
+		<property name ="WeldingPosition" type ="String" />
+		<property name ="WeldingDirection" type ="String" />
+		<property name ="PreheatingTemperature" type ="String" />
+		<property name ="LayerTemperature" type ="String" />
+		<property name ="HeatingMode" type ="String" />
+		<property name ="TempMeasureMethod" type ="String" />
+		<property name ="WarmUpTime" type ="String" />
+		<property name ="WeldingCurrent" type ="String" />
+		<property name ="WeldingVoltage" type ="String" />
+		<property name ="WeldingSpeed" type ="String" />
+		<property name ="LineEnergy" type ="String" />
+		<property name ="AfterHotTemp" type ="String" />
+		<property name ="AfterHotTime" type ="String" />
+		<property name ="EnvironmentTemperature" type ="String" />
+		<property name ="RelativeHumidity" type ="String" />
+		<property name ="CleanBefWelding" type ="String" />
+		<property name ="LayerClean" type ="String" />
+		<property name ="TunElecType" type ="String" />
+		<property name ="NozzleDiameter" type ="String" />
+		<property name ="TunElecDiameter" type ="String" />
+		<property name ="BackClearRootMethod" type ="String" />
+		<property name ="WireSpeed" type ="String" />
+		<property name ="ProtectiveGas" type ="String" />
+		<property name ="ProGasMixRatio" type ="String" />
+		<property name ="ShieldingGasFlowRate" type ="String" />
+		<property name ="TailProtectiveGas" type ="String" />
+		<property name ="TailProtectiveGasMixRatio" type ="String" />
+		<property name ="TailGasFlowRate" type ="String" />
+		<property name ="BackProtectiveGas" type ="String" />
+		<property name ="BackProtectiveGasMixRatio" type ="String" />
+		<property name ="BackGasFlowRate" type ="String" />
+		<property name ="CurrentType" type ="String" />
+		<property name ="ConductiveMouthArtifacts" type ="String" />
+		<property name ="GrooveDiagramPath" type ="String" />
+		<property name ="WeldingFormDiagram" type ="String" />
+		<property name ="WeldingMethod" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

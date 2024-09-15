@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMWeldTaskList, ProjectMgt.Model" table="T_WPQMWeldTaskList">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="UpTime" type ="DateTime" />
+		<property name ="GrooveForm" type ="String" />
+		<property name ="BackClearRootMethod" type ="String" />
+		<property name ="WeldTechnicalMeasures" type ="String" />
+		<property name ="WeldTaskCommissionTime" type ="DateTime" />
+		<property name ="TaskPrincipal" type ="String" />
+		<property name ="ReviewerTask" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

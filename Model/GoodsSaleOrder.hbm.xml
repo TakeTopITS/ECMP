@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.GoodsSaleOrder, ProjectMgt.Model" table="T_GoodsSaleOrder">
+
+		<id name="SOID" column="SOID" type="int">
+
+			<generator class="identity" />
+		</id>
+
+		<property name ="SOName" type ="String" />
+
+		<property name ="CustomerCode" type ="String" />
+
+		<property name ="CustomerName" type ="String" />
+
+		<property name ="SalesCode" type="String" />
+
+		<property name ="SalesName" type ="String" />
+
+		<property name ="SaleTime" type ="DateTime" />
+
+		<property name ="ArrivalTime" type ="DateTime" />
+
+		<property name ="Amount" type ="Decimal" />
+
+		<property name ="CurrencyType" type ="String" />
+
+		<property name ="SaleType" type ="String" />
+
+		<property name ="InvoiceType" type ="String" />
+
+		<property name ="ReceiverAddress" type ="String" />
+
+		<property name ="ContactPerson" type ="String" />
+
+		<property name ="ContactPhoneNumber" type ="String" />
+
+		<property name ="Comment" type ="String" />
+
+		<property name ="OperatorCode" type ="String" />
+
+		<property name ="OperatorName" type ="String" />
+
+		<property name ="Status" type ="String" />
+
+		<property name ="RelatedType" type ="String" />
+
+		<property name ="RelatedID" type ="int" />
+	</class>
+</hibernate-mapping>

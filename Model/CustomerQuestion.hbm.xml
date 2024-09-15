@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.CustomerQuestion, ProjectMgt.Model" table="T_CustomerQuestion">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Company" type ="String" />
+
+    <property name ="ContactPerson" type ="String" />
+
+    <property name ="PhoneNumber" type ="String" />
+
+    <property name ="EMail"  type ="String" />
+
+    <property name ="Address" type ="String" />
+
+    <property name ="PostCode" type ="String" />
+
+    <property name ="Type" type ="String" />
+
+    <property name ="IsImportant" type ="String" />
+
+    <property name ="Question" type ="String" />
+
+    <property name ="SummitTime" type ="DateTime" />
+
+    <property name ="AnswerTime" type ="DateTime" />
+
+    <property name ="RecorderCode" type ="String" />
+
+    <property name ="Status" type="String" />
+
+    <property name ="OperatorCode" type ="String" />
+
+    <property name ="OperatorName" type ="String" />
+
+    <property name ="OperatorStatus" type ="String" />
+
+    <property name ="UserIP" type ="String" />
+
+    <property name ="UserPosition" type ="String" />
+
+    <property name ="CustomerArea" type ="String" />
+
+    <property name ="FromWebSite" type ="String" />
+
+    <property name ="BusinessName" type ="String" />
+    <property name ="ExpectedTime" type="DateTime" />
+    <property name ="CustomerName" type ="String" />
+    <property name ="CustomerManager" type ="String" />
+    <property name ="ExpectedEarnings" type ="Decimal" />
+    <property name ="Possibility" type ="int" />
+    <property name ="BusinessSource" type ="String" />
+    <property name ="SucessKeyReason" type ="String" />
+    <property name ="FailedKeyReason" type ="String" />
+    <property name ="AgencyName" type ="String" />
+    <property name ="Stage" type="String" />
+    <property name ="CustomerStage" type="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E8439C0-06C0-4AFD-971F-ADC64A3A911B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectMgt.BLL</RootNamespace>
+    <AssemblyName>ProjectMgt.BLL</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IntermediateOutputPath>C:\Users\zhongjun\AppData\Local\Temp\vsC882.tmp\Debug\</IntermediateOutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IntermediateOutputPath>C:\Users\zhongjun\AppData\Local\Temp\vsC882.tmp\Release\</IntermediateOutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ProjectMgt.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DAL\bin\Debug\ProjectMgt.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectMgt.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DAL\bin\Debug\ProjectMgt.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountBLL.cs" />
+    <Compile Include="AccountFinancialSetBLL.cs" />
+    <Compile Include="AccountGeneralLedgerBLL.cs" />
+    <Compile Include="AccountingIntervalSetBLL.cs" />
+    <Compile Include="ActorGroupBLL.cs" />
+    <Compile Include="ActorGroupDtailBLL.cs" />
+    <Compile Include="ActorGroupTypeBLL.cs" />
+    <Compile Include="AdminBLL.cs" />
+    <Compile Include="AllProStatusGroupBLL.cs" />
+    <Compile Include="ApplicationHardware_YYUPBLL.cs" />
+    <Compile Include="ApplicationSystem_YYUPBLL.cs" />
+    <Compile Include="ApproveBLL.cs" />
+    <Compile Include="AssetAdjustRecordBLL.cs" />
+    <Compile Include="AssetApplicationBLL.cs" />
+    <Compile Include="AssetApplicationDetailBLL.cs" />
+    <Compile Include="AssetApplicationReportBLL.cs" />
+    <Compile Include="AssetCheckInOrderBLL.cs" />
+    <Compile Include="AssetCheckInOrderDetailBLL.cs" />
+    <Compile Include="AssetPurchaseOrderBLL.cs" />
+    <Compile Include="AssetReturnDetailBLL.cs" />
+    <Compile Include="AssetReturnOrderBLL.cs" />
+    <Compile Include="AssetShipmentDetailBLL.cs" />
+    <Compile Include="AssetShipmentOrderBLL.cs" />
+    <Compile Include="AssetShipmentReportBLL.cs" />
+    <Compile Include="AttachmentsBLL.cs" />
+    <Compile Include="AttendanceRuleBLL.cs" />
+    <Compile Include="BankBLL.cs" />
+    <Compile Include="BDBaseDataBLL.cs" />
+    <Compile Include="BDBaseDataRecordBLL.cs" />
+    <Compile Include="BMAnnClaFileBLL.cs" />
+    <Compile Include="BMAnnInvitationBLL.cs" />
+    <Compile Include="BMAnnInvitRelatedProjectBLL.cs" />
+    <Compile Include="BMAssessBidRecordBLL.cs" />
+    <Compile Include="BMAssessBidReportBLL.cs" />
+    <Compile Include="BMBidAddendumBLL.cs" />
+    <Compile Include="BMBidFileBLL.cs" />
+    <Compile Include="BMBidNoticeContentBLL.cs" />
+    <Compile Include="BMBidPlanBLL.cs" />
+    <Compile Include="BMBidTemplateFileBLL.cs" />
+    <Compile Include="BMContractDiscussBLL.cs" />
+    <Compile Include="BMContractPreparationBLL.cs" />
+    <Compile Include="BMOpenBidRecordBLL.cs" />
+    <Compile Include="BMPerformanceEvaluationBLL.cs" />
+    <Compile Include="BMPurchaseApplicationBLL.cs" />
+    <Compile Include="BMSupBidByExpBLL.cs" />
+    <Compile Include="BMSupplierAnalyBLL.cs" />
+    <Compile Include="BMSupplierBidBLL.cs" />
+    <Compile Include="BMSupplierBidRecordBLL.cs" />
+    <Compile Include="BMSupplierBidRecordFileBLL.cs" />
+    <Compile Include="BMSupplierCertificationBLL.cs" />
+    <Compile Include="BMSupplierInfoBLL.cs" />
+    <Compile Include="BMSupplierInfoHistoryBLL.cs" />
+    <Compile Include="BMSupplierLinkBLL.cs" />
+    <Compile Include="BMSupplierReplyBLL.cs" />
+    <Compile Include="BookBorrowRecordBLL.cs" />
+    <Compile Include="BookCertificateBLL.cs" />
+    <Compile Include="BookClassificationBLL.cs" />
+    <Compile Include="BookInformationBLL.cs" />
+    <Compile Include="BookPublishersBLL.cs" />
+    <Compile Include="BookReaderTypeBLL.cs" />
+    <Compile Include="BusinessFormReAndPayBLL.cs" />
+    <Compile Include="CameraInfoBLL.cs" />
+    <Compile Include="CameraListBLL.cs" />
+    <Compile Include="CameraLogBLL.cs" />
+    <Compile Include="CarApplyFormBLL.cs" />
+    <Compile Include="CarAssignFormBLL.cs" />
+    <Compile Include="CarCheckWeekBLL.cs" />
+    <Compile Include="CarInformationBLL.cs" />
+    <Compile Include="CarOilTypeRecordBLL.cs" />
+    <Compile Include="CarTypeBLL.cs" />
+    <Compile Include="ChangeTypeBLL.cs" />
+    <Compile Include="CollaborationBLL.cs" />
+    <Compile Include="CollaborationLogBLL.cs" />
+    <Compile Include="CollaborationLogWithCustomerQuestionCandidateBLL.cs" />
+    <Compile Include="CollaborationMemberBLL.cs" />
+    <Compile Include="ConstractBigTypeBLL.cs" />
+    <Compile Include="ConstractBLL.cs" />
+    <Compile Include="ConstractChangeRecordBLL.cs" />
+    <Compile Include="ConstractGoodsDeliveryPlanBLL.cs" />
+    <Compile Include="ConstractGoodsDeliveryRecordBLL.cs" />
+    <Compile Include="ConstractGoodsReceiptPlanBLL.cs" />
+    <Compile Include="ConstractGoodsReceiptRecordBLL.cs" />
+    <Compile Include="ConstractPayableBLL.cs" />
+    <Compile Include="ConstractPayableRecordBLL.cs" />
+    <Compile Include="ConstractPayableVisaBLL.cs" />
+    <Compile Include="ConstractPayableVisaDetailBLL.cs" />
+    <Compile Include="ConstractReceivablesBLL.cs" />
+    <Compile Include="ConstractReceivablesRecordBLL.cs" />
+    <Compile Include="ConstractRelatedAssetPurchaseOrderBLL.cs" />
+    <Compile Include="ConstractRelatedConstractBLL.cs" />
+    <Compile Include="ConstractRelatedEntryOrderBLL.cs" />
+    <Compile Include="ConstractRelatedEntryOrderForInnerBLL.cs" />
+    <Compile Include="ConstractRelatedGoodsBLL.cs" />
+    <Compile Include="ConstractRelatedGoodsPurchaseOrderBLL.cs" />
+    <Compile Include="ConstractRelatedInvoiceBLL.cs" />
+    <Compile Include="ConstractRelatedProjectBLL.cs" />
+    <Compile Include="ConstractRelatedGoodsSaleOrderBLL.cs" />
+    <Compile Include="ConstractRelatedUserBLL.cs" />
+    <Compile Include="ConstractSales.cs" />
+    <Compile Include="ConstractTypeBLL.cs" />
+    <Compile Include="ContactInforBLL.cs" />
+    <Compile Include="CurrencyTypeBLL.cs" />
+    <Compile Include="CustomerBLL.cs" />
+    <Compile Include="CustomerContactRecordBLL.cs" />
+    <Compile Include="CustomerOperationRecordBLL.cs" />
+    <Compile Include="CustomerQuestionBLL.cs" />
+    <Compile Include="CustomerQuestionCustomerStageBLL.cs" />
+    <Compile Include="CustomerQuestionHandleRecordBLL.cs" />
+    <Compile Include="CustomerQuestionRelatedCandidateBLL.cs" />
+    <Compile Include="CustomerQuestionStageBLL.cs" />
+    <Compile Include="CustomerQuestionTypeBLL.cs" />
+    <Compile Include="CustomerRelatedGoodsInforBLL.cs" />
+    <Compile Include="CustomerRelatedQuestionBLL.cs" />
+    <Compile Include="CustomerRelatedUserBLL.cs" />
+    <Compile Include="CustomModuleBLL.cs" />
+    <Compile Include="DailyWorkBLL.cs" />
+    <Compile Include="DailyWorkUnitBonusBLL.cs" />
+    <Compile Include="DataBaseHardware_YYUPBLL.cs" />
+    <Compile Include="DataBaseSystem_YYUPBLL.cs" />
+    <Compile Include="DataBaseUpgrateBLL.cs" />
+    <Compile Include="DataBase_YYUPBLL.cs" />
+    <Compile Include="DayHourNumBLL.cs" />
+    <Compile Include="DefectAssignRecordBLL.cs" />
+    <Compile Include="DefectBLL.cs" />
+    <Compile Include="DefectStatusBLL.cs" />
+    <Compile Include="DefectTypeBLL.cs" />
+    <Compile Include="DepartAssetRelatedUserBLL.cs" />
+    <Compile Include="DepartmentBLL.cs" />
+    <Compile Include="DepartmentUserBLL.cs" />
+    <Compile Include="DepartNewsNoticeRelatedUserBLL.cs" />
+    <Compile Include="DepartPositionBLL.cs" />
+    <Compile Include="DepartRelatedModuleBLL.cs" />
+    <Compile Include="DepartRelatedProductLineBLL.cs" />
+    <Compile Include="DepartRelatedProjectLeaderBLL.cs" />
+    <Compile Include="DepartRelatedSuperUserBLL.cs" />
+    <Compile Include="DepartRelatedWZCheckUserBLL.cs" />
+    <Compile Include="DepartRelatedWZDelegateUserBLL.cs" />
+    <Compile Include="DepartRelatedWZFeeUserBLL.cs" />
+    <Compile Include="DepartSuperUserRelatedProductLineBLL.cs" />
+    <Compile Include="DepartUserInforRelatedUserBLL.cs" />
+    <Compile Include="DeviceNotificationInfoBLL.cs" />
+    <Compile Include="DocRelatedDepartmentBLL.cs" />
+    <Compile Include="DocRelatedUserBLL.cs" />
+    <Compile Include="DocTypeFilterBLL.cs" />
+    <Compile Include="DocumentForProjectPlanTemplateBLL.cs" />
+    <Compile Include="DocumentBLL.cs" />
+    <Compile Include="DocTypeBLL.cs" />
+    <Compile Include="DWCustomImportBLL.cs" />
+    <Compile Include="DWCustomValueBLL.cs" />
+    <Compile Include="DWLineTransportBLL.cs" />
+    <Compile Include="DWMakeCostBLL.cs" />
+    <Compile Include="DWMatchBLL.cs" />
+    <Compile Include="DWMatchTypeBLL.cs" />
+    <Compile Include="DWProductBLL.cs" />
+    <Compile Include="DWProductTypeBLL.cs" />
+    <Compile Include="DWProMatchBLL.cs" />
+    <Compile Include="DWQualityCostBLL.cs" />
+    <Compile Include="EducationExperienceBLL.cs" />
+    <Compile Include="ExpenseApplyWLBLL.cs" />
+    <Compile Include="ExpenseClaimBLL.cs" />
+    <Compile Include="ExpenseClaimDetailBLL.cs" />
+    <Compile Include="FamilyMemberBLL.cs" />
+    <Compile Include="FoldersBLL.cs" />
+    <Compile Include="AssetBLL.cs" />
+    <Compile Include="FunInforDialBoxBLL.cs" />
+    <Compile Include="GDApplicationBLL.cs" />
+    <Compile Include="GDAreaBLL.cs" />
+    <Compile Include="GDFriBLL.cs" />
+    <Compile Include="GDHotHandlerBLL.cs" />
+    <Compile Include="GDIsomFriBLL.cs" />
+    <Compile Include="GDIsomJointBLL.cs" />
+    <Compile Include="GDJointRevisionBLL.cs" />
+    <Compile Include="GDLineWeldBLL.cs" />
+    <Compile Include="GDNotDestroyBLL.cs" />
+    <Compile Include="GDOrderCodeBLL.cs" />
+    <Compile Include="GDPipingClassBLL.cs" />
+    <Compile Include="GDPressureBLL.cs" />
+    <Compile Include="GDPressureObjectBLL.cs" />
+    <Compile Include="GDPressureTestBLL.cs" />
+    <Compile Include="GDProjectBLL.cs" />
+    <Compile Include="GDRTDelegateBLL.cs" />
+    <Compile Include="GDRTNotQualifiedBLL.cs" />
+    <Compile Include="GDRTResultBLL.cs" />
+    <Compile Include="GDRTSampleBLL.cs" />
+    <Compile Include="GDStandardSizeBLL.cs" />
+    <Compile Include="GDSystemBLL.cs" />
+    <Compile Include="GDTestMediumBLL.cs" />
+    <Compile Include="GDThicknessBLL.cs" />
+    <Compile Include="GDWeldersBLL.cs" />
+    <Compile Include="GDWelderWPSNoBLL.cs" />
+    <Compile Include="GDWeldTypeBLL.cs" />
+    <Compile Include="GDWPSCodeBLL.cs" />
+    <Compile Include="GoodsAdjustRecordBLL.cs" />
+    <Compile Include="GoodsApplicationBLL.cs" />
+    <Compile Include="GoodsApplicationDetailBLL.cs" />
+    <Compile Include="GoodsBLL.cs" />
+    <Compile Include="GoodsBorrowOrderBLL.cs" />
+    <Compile Include="GoodsBorrowOrderDetailBLL.cs" />
+    <Compile Include="GoodsCheckInOrderBLL.cs" />
+    <Compile Include="GoodsCheckInOrderDetailBLL.cs" />
+    <Compile Include="GoodsCheckOutNoticeOrderBLL.cs" />
+    <Compile Include="GoodsCheckOutNoticeOrderDetailBLL.cs" />
+    <Compile Include="GoodsDeliveryOrderBLL.cs" />
+    <Compile Include="GoodsDeliveryOrderDetailBLL.cs" />
+    <Compile Include="GoodsMTRecordBLL.cs" />
+    <Compile Include="GoodsProductionOrderBLL.cs" />
+    <Compile Include="GoodsProductionOrderDetailBLL.cs" />
+    <Compile Include="GoodsPurchaseOrderBLL.cs" />
+    <Compile Include="GoodsPurRecordBLL.cs" />
+    <Compile Include="GoodsReturnDetailBLL.cs" />
+    <Compile Include="GoodsReturnOrderBLL.cs" />
+    <Compile Include="GoodsSaleOrderBLL.cs" />
+    <Compile Include="GoodsSaleQuotationOrderBLL.cs" />
+    <Compile Include="GoodsSaleQuotationOrderDetailBLL.cs" />
+    <Compile Include="GoodsSaleRecordBLL.cs" />
+    <Compile Include="GoodsScrapBLL.cs" />
+    <Compile Include="GoodsShipmentDetailBLL.cs" />
+    <Compile Include="GoodsShipmentOrderBLL.cs" />
+    <Compile Include="GoodsShipmentReportBLL.cs" />
+    <Compile Include="GoodsSupplyOrderBLL.cs" />
+    <Compile Include="GoodsSupplyOrderDetailBLL.cs" />
+    <Compile Include="GoodsTypeBLL.cs" />
+    <Compile Include="GoodsUserRecordBLL.cs" />
+    <Compile Include="HeadLineBLL.cs" />
+    <Compile Include="AssetMTRecordBLL.cs" />
+    <Compile Include="AssetPurRecordBLL.cs" />
+    <Compile Include="AssetScrapBLL.cs" />
+    <Compile Include="AssetTypeBLL.cs" />
+    <Compile Include="AssetUserRecordBLL.cs" />
+    <Compile Include="HSEAccidentDescriptionBLL.cs" />
+    <Compile Include="HSEAccidentInvestigationBLL.cs" />
+    <Compile Include="HSEDiseasePreventionBLL.cs" />
+    <Compile Include="HSEEmergencyCompileBLL.cs" />
+    <Compile Include="HSEEmergencyRehearseBLL.cs" />
+    <Compile Include="HSEEnvirFactorSurDetailBLL.cs" />
+    <Compile Include="HSEEnvirFactorSurveyBLL.cs" />
+    <Compile Include="HSEEnvironmentalFactorsBLL.cs" />
+    <Compile Include="HSEEnvironmentalObjectivesBLL.cs" />
+    <Compile Include="HSEHealthCheckBLL.cs" />
+    <Compile Include="HSEHealthyCheckupBLL.cs" />
+    <Compile Include="HSEMeetingBLL.cs" />
+    <Compile Include="HSEPenaltyNoticeBLL.cs" />
+    <Compile Include="HSEPerEquipRecordBLL.cs" />
+    <Compile Include="HSEProductionSummaryBLL.cs" />
+    <Compile Include="HSEQualificationRecordBLL.cs" />
+    <Compile Include="HSERectificationBLL.cs" />
+    <Compile Include="HSERectificationNoticeBLL.cs" />
+    <Compile Include="HSESafeInspectionRecordBLL.cs" />
+    <Compile Include="HSESafeManagementPlanBLL.cs" />
+    <Compile Include="HSETrainingBLL.cs" />
+    <Compile Include="HSETrainingPlanBLL.cs" />
+    <Compile Include="IndustryTypeBLL.cs" />
+    <Compile Include="ItemBLL.cs" />
+    <Compile Include="ItemBomBLL.cs" />
+    <Compile Include="ItemBomPartBLL.cs" />
+    <Compile Include="ItemBomVersionBLL.cs" />
+    <Compile Include="ItemMainPlanBLL.cs" />
+    <Compile Include="ItemMainPlanDetailBLL.cs" />
+    <Compile Include="KPIHRReviewBLL.cs" />
+    <Compile Include="KPILeaderReviewBLL.cs" />
+    <Compile Include="KPILibraryBLL.cs" />
+    <Compile Include="KPITemplateForDepartPositionBLL.cs" />
+    <Compile Include="KPIThirdPartReviewBLL.cs" />
+    <Compile Include="KPITypeBLL.cs" />
+    <Compile Include="LeaveApplyFormBLL.cs" />
+    <Compile Include="LeaveTypeBLL.cs" />
+    <Compile Include="LicenseVerificationBLL.cs" />
+    <Compile Include="LogonLogBLL.cs" />
+    <Compile Include="LTCandidateInformationBLL.cs" />
+    <Compile Include="MailBoxAuthorityBLL.cs" />
+    <Compile Include="MailsBLL.cs" />
+    <Compile Include="MeetingAssignBLL.cs" />
+    <Compile Include="MeetingAttendantBLL.cs" />
+    <Compile Include="MeetingBLL.cs" />
+    <Compile Include="MeetingRoomBLL.cs" />
+    <Compile Include="MeetingTypeBLL.cs" />
+    <Compile Include="MemberAgencyBLL.cs" />
+    <Compile Include="MemberAgencyWFTypeBLL.cs" />
+    <Compile Include="MemberLevelBLL.cs" />
+    <Compile Include="MTTypeBLL.cs" />
+    <Compile Include="Network_YYUPBLL.cs" />
+    <Compile Include="NewsRelatedUserBLL.cs" />
+    <Compile Include="OfficialDocumentBLL.cs" />
+    <Compile Include="OilTypeBLL.cs" />
+    <Compile Include="OvertimeApplyFormBLL.cs" />
+    <Compile Include="PartTimeJobBLL.cs" />
+    <Compile Include="PlanBLL.cs" />
+    <Compile Include="PlanLeaderReviewBLL.cs" />
+    <Compile Include="PlanMemberBLL.cs" />
+    <Compile Include="PlanRelatedLeaderBLL.cs" />
+    <Compile Include="PlanStatusBLL.cs" />
+    <Compile Include="PlanTargetBLL.cs" />
+    <Compile Include="PlanTools_YYUPBLL.cs" />
+    <Compile Include="PlanTypeBLL.cs" />
+    <Compile Include="PlanWorkLogBLL.cs" />
+    <Compile Include="ProDocGraphControlBLL.cs" />
+    <Compile Include="ProductLineVersion_YYUPBLL.cs" />
+    <Compile Include="ProductModuleType_YYUPBLL.cs" />
+    <Compile Include="ProductModule_YYUPBLL.cs" />
+    <Compile Include="ProductProcessBLL.cs" />
+    <Compile Include="ProExpenseBLL.cs" />
+    <Compile Include="ProFeedbackBLL.cs" />
+    <Compile Include="ProGraphRegistrationBLL.cs" />
+    <Compile Include="ProIssueRegistrationBLL.cs" />
+    <Compile Include="ProjectBudgetBLL.cs" />
+    <Compile Include="ProjectCostManageBLL.cs" />
+    <Compile Include="ProjectCustomerBLL.cs" />
+    <Compile Include="ProjectDailyWorkBLL.cs" />
+    <Compile Include="ProjectDataBase_YYUPBLL.cs" />
+    <Compile Include="ProjectDataLinkBLL.cs" />
+    <Compile Include="ProjectIncomeAndExpenseBLL.cs" />
+    <Compile Include="ProjectItemBomVersionBLL.cs" />
+    <Compile Include="ProjectLogo_YYUPBLL.cs" />
+    <Compile Include="ProjectMaterialPaymentApplicantBLL.cs" />
+    <Compile Include="ProjectMaterialPaymentApplicantDetailBLL.cs" />
+    <Compile Include="ProjectMemberBLL.cs" />
+    <Compile Include="ProjectBLL.cs" />
+    <Compile Include="ProjectMemberClassBLL.cs" />
+    <Compile Include="ProjectMemberGradeBLL.cs" />
+    <Compile Include="ProjectMemberScheduleBaseBLL.cs" />
+    <Compile Include="ProjectMemberScheduleBLL.cs" />
+    <Compile Include="ProjectMemberStudentAttendanceBLL.cs" />
+    <Compile Include="ProjectMemberStudentBLL.cs" />
+    <Compile Include="ProjectMemberStudentCareBLL.cs" />
+    <Compile Include="ProjectMemberStudentCostBLL.cs" />
+    <Compile Include="ProjectOfferStandard_YYUPBLL.cs" />
+    <Compile Include="ProjectOutsourcInformat_YYUPBLL.cs" />
+    <Compile Include="ProjectPlanVersionBLL.cs" />
+    <Compile Include="ProjectPlan_YYUPBLL.cs" />
+    <Compile Include="ProjectPrimaveraBLL.cs" />
+    <Compile Include="ProjectPrimaveraBudgetBLL.cs" />
+    <Compile Include="ProjectPrimaveraTaskBLL.cs" />
+    <Compile Include="ProjectProductLine_YYUPBLL.cs" />
+    <Compile Include="ProjectProduct_YYUPBLL.cs" />
+    <Compile Include="ProjectProgressStatus_YYUPBLL.cs" />
+    <Compile Include="ProjectRelatedDefectViewBLL.cs" />
+    <Compile Include="ProjectRelatedItemBLL.cs" />
+    <Compile Include="ProjectRelatedItemBomBLL.cs" />
+    <Compile Include="ProjectRelatedReqViewBLL.cs" />
+    <Compile Include="ProjectSalesProperty_YYUPBLL.cs" />
+    <Compile Include="ProjectStatusBLL.cs" />
+    <Compile Include="ProjectSubordinateIndustry_YYUPBLL.cs" />
+    <Compile Include="ProjectTypeBLL.cs" />
+    <Compile Include="ProjectVendorBLL.cs" />
+    <Compile Include="ProjectWZDetailBLL.cs" />
+    <Compile Include="Project_YYUPBLL.cs" />
+    <Compile Include="ProLeaderReviewBLL.cs" />
+    <Compile Include="ProModuleBLL.cs" />
+    <Compile Include="ProModuleLevelBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProRealChargeBLL.cs" />
+    <Compile Include="ProReceiptRegistrationBLL.cs" />
+    <Compile Include="ProRelatedUserBLL.cs" />
+    <Compile Include="ProjectRiskBLL.cs" />
+    <Compile Include="ProSendFigureRegistrationBLL.cs" />
+    <Compile Include="ProStatusChangeBLL.cs" />
+    <Compile Include="ProStatusGroupBLL.cs" />
+    <Compile Include="ProjectTaskBLL.cs" />
+    <Compile Include="PublicNoticeBLL.cs" />
+    <Compile Include="QMEngineerReviewBLL.cs" />
+    <Compile Include="QMEngineerWarrantyBLL.cs" />
+    <Compile Include="QMMatEquInspectionBLL.cs" />
+    <Compile Include="QMOverAllEvaluationBLL.cs" />
+    <Compile Include="QMPurchasingContractBLL.cs" />
+    <Compile Include="QMQualityDefectNoticeBLL.cs" />
+    <Compile Include="QMQualityDefectProcessBLL.cs" />
+    <Compile Include="QMQualityInspectionBLL.cs" />
+    <Compile Include="QMQualityInspectionSheetBLL.cs" />
+    <Compile Include="QMQualityRectificationBLL.cs" />
+    <Compile Include="QMQualityRectificationNoticeBLL.cs" />
+    <Compile Include="QMQualityTechnicalDisclosureBLL.cs" />
+    <Compile Include="QMRewardPunishmentBLL.cs" />
+    <Compile Include="QMSatisfactionSurveyBLL.cs" />
+    <Compile Include="RCJProjectAdjustPriceBLL.cs" />
+    <Compile Include="RCJProjectAdjustPriceListBLL.cs" />
+    <Compile Include="RCJProjectAdjustPriceLogBLL.cs" />
+    <Compile Include="RCJProjectCostFeeIDsBLL.cs" />
+    <Compile Include="RCJProjectCostFeesBLL.cs" />
+    <Compile Include="RCJProjectCostFeeSubIDsBLL.cs" />
+    <Compile Include="RCJProjectCostPerformanceBenchmarBLL.cs" />
+    <Compile Include="RCJProjectCostPerformanceListBLL.cs" />
+    <Compile Include="RCJProjectCostPreformanceTypeBLL.cs" />
+    <Compile Include="RCJProjectFundStartPlanApproveBLL.cs" />
+    <Compile Include="RCJProjectFundStartPlanBLL.cs" />
+    <Compile Include="RCJProjectMonthCostFeeBLL.cs" />
+    <Compile Include="RCJProjectSetupBLL.cs" />
+    <Compile Include="RCJProjectSummaryPerformanceBLL.cs" />
+    <Compile Include="RCJProjectTargetCostFeeBLL.cs" />
+    <Compile Include="RCJProjectWorkConfirmBLL.cs" />
+    <Compile Include="RCJProjectWorkConfirmLogBLL.cs" />
+    <Compile Include="RCJProjectWorkDetailsBLL.cs" />
+    <Compile Include="RCJProjectWorkDetailsLogBLL.cs" />
+    <Compile Include="RCJProjectWorkMoneyBLL.cs" />
+    <Compile Include="RCJProjectWorkMoneyLogBLL.cs" />
+    <Compile Include="ReceivePayWayBLL.cs" />
+    <Compile Include="RegisterUserBLL.cs" />
+    <Compile Include="RelatedActorGroupBLL.cs" />
+    <Compile Include="RelatedDefectBLL.cs" />
+    <Compile Include="RelatedReqBLL.cs" />
+    <Compile Include="RelatedUserBLL.cs" />
+    <Compile Include="RelatedWorkFlowTemplateBLL.cs" />
+    <Compile Include="ReportBLL.cs" />
+    <Compile Include="ReportRelatedUserBLL.cs" />
+    <Compile Include="ReportTemplateBLL.cs" />
+    <Compile Include="ReportTypeBLL.cs" />
+    <Compile Include="ReqAssignRecordBLL.cs" />
+    <Compile Include="ReqStatusBLL.cs" />
+    <Compile Include="ReqTypeBLL.cs" />
+    <Compile Include="RequirementBLL.cs" />
+    <Compile Include="RTXConfigBLL.cs" />
+    <Compile Include="ScheduleBLL.cs" />
+    <Compile Include="ScheduleEventLeaderReviewBLL.cs" />
+    <Compile Include="SiteModuleContentBLL.cs" />
+    <Compile Include="SMSCodeBLL.cs" />
+    <Compile Include="SMSInterfaceBLL.cs" />
+    <Compile Include="SMSNetSegmentBLL.cs" />
+    <Compile Include="SMSRelatedUserBLL.cs" />
+    <Compile Include="SmsSendBLL.cs" />
+    <Compile Include="SMSSendDIYBLL.cs" />
+    <Compile Include="SoftDownloadBLL.cs" />
+    <Compile Include="StatusRelatedWFBLL.cs" />
+    <Compile Include="SupplierAssetPaymentApplicantBLL.cs" />
+    <Compile Include="SupplierAssetPaymentApplicantDetailBLL.cs" />
+    <Compile Include="SystemActiveUserBLL.cs" />
+    <Compile Include="SystemAnalystChartManagementBLL.cs" />
+    <Compile Include="SystemMDIStyleBLL.cs" />
+    <Compile Include="TableNameMappingBLL.cs" />
+    <Compile Include="TableTemplateMappingBLL.cs" />
+    <Compile Include="TaskAssignRecordBLL.cs" />
+    <Compile Include="TaskOperationBLL.cs" />
+    <Compile Include="TaskRecordTypeBLL.cs" />
+    <Compile Include="TaskStatusBLL.cs" />
+    <Compile Include="TaskTestCaseBLL.cs" />
+    <Compile Include="TaskTestRecordBLL.cs" />
+    <Compile Include="TaskTypeBLL.cs" />
+    <Compile Include="TenderInvoice_HYYQBLL.cs" />
+    <Compile Include="TenderRelatedUserBLL.cs" />
+    <Compile Include="Tender_HYYQBLL.cs" />
+    <Compile Include="TestStatusBLL.cs" />
+    <Compile Include="TransferProjectBLL.cs" />
+    <Compile Include="MailProfileBLL.cs" />
+    <Compile Include="JNUnitBLL.cs" />
+    <Compile Include="TREmployeeTrainingBLL.cs" />
+    <Compile Include="TRHolderWelderBLL.cs" />
+    <Compile Include="TriggerTableToFromBLL.cs" />
+    <Compile Include="TRPostCertificateBLL.cs" />
+    <Compile Include="TRSpecialEquipmentBLL.cs" />
+    <Compile Include="TRSpecialOperationsBLL.cs" />
+    <Compile Include="TRTrainingRecordEmpBLL.cs" />
+    <Compile Include="U8KeyApply_YYUPBLL.cs" />
+    <Compile Include="U8Problem_YYUPBLL.cs" />
+    <Compile Include="U9Problem_YYUPBLL.cs" />
+    <Compile Include="UserAttendanceRecordBLL.cs" />
+    <Compile Include="UserAttendanceRuleBLL.cs" />
+    <Compile Include="UserDepartmentStringBLL.cs" />
+    <Compile Include="UserDutyBLL.cs" />
+    <Compile Include="UserKPICheckBLL.cs" />
+    <Compile Include="UserKPICheckDetailBLL.cs" />
+    <Compile Include="UserNotInDepartModuleBLL.cs" />
+    <Compile Include="UserTransactionRecordBLL.cs" />
+    <Compile Include="VendorBLL.cs" />
+    <Compile Include="VendorRelatedGoodsInforBLL.cs" />
+    <Compile Include="VendorRelatedUserBLL.cs" />
+    <Compile Include="VisitRegistration_StudentBLL.cs" />
+    <Compile Include="WareHouseBLL.cs" />
+    <Compile Include="WebServiceBLL.cs" />
+    <Compile Include="WebSiteBLL.cs" />
+    <Compile Include="WeiXinStandBLL.cs" />
+    <Compile Include="WFStepRelatedWFBLL.cs" />
+    <Compile Include="WFTemplateRelatedJSCodeBLL.cs" />
+    <Compile Include="WFTemplateStepRelatedJSCodeBLL.cs" />
+    <Compile Include="WFTemplateStepRelatedWebServiceBLL.cs" />
+    <Compile Include="WFTStepRelatedTemBLL.cs" />
+    <Compile Include="WLStatusBLL.cs" />
+    <Compile Include="WLTStepConditionBLL.cs" />
+    <Compile Include="WLTStepConditionExpressionBLL.cs" />
+    <Compile Include="WLTypeBLL.cs" />
+    <Compile Include="WorkExperienceBLL.cs" />
+    <Compile Include="WorkFlowBackupDLL.cs" />
+    <Compile Include="WorkFlowBLL.cs" />
+    <Compile Include="WorkFlowPageBLL.cs" />
+    <Compile Include="WorkFlowRelatedModuleBLL.cs" />
+    <Compile Include="WorkFlowStepBLL.cs" />
+    <Compile Include="WorkFlowStepDetailBLL.cs" />
+    <Compile Include="WorkFlowTemplateBLL.cs" />
+    <Compile Include="WorkFlowTStepBLL.cs" />
+    <Compile Include="WorkFlowTStepOpeatorBLL.cs" />
+    <Compile Include="WorkPlanBLL.cs" />
+    <Compile Include="WorkTypeBLL.cs" />
+    <Compile Include="WPQMAllDataBLL.cs" />
+    <Compile Include="WPQMContactListBLL.cs" />
+    <Compile Include="WPQMCoverBLL.cs" />
+    <Compile Include="WPQMHeatTreatProCardBLL.cs" />
+    <Compile Include="WPQMHeatTreatReportBLL.cs" />
+    <Compile Include="WPQMMechanicalProOrderBLL.cs" />
+    <Compile Include="WPQMPhysicalChemicalBLL.cs" />
+    <Compile Include="WPQMPQR1BLL.cs" />
+    <Compile Include="WPQMPQR2BLL.cs" />
+    <Compile Include="WPQMPQR3BLL.cs" />
+    <Compile Include="WPQMPWPS1BLL.cs" />
+    <Compile Include="WPQMPWPS2BLL.cs" />
+    <Compile Include="WPQMQuaAssessNoticeBLL.cs" />
+    <Compile Include="WPQMRTTableBLL.cs" />
+    <Compile Include="WPQMSampleMechProOrderBLL.cs" />
+    <Compile Include="WPQMStockListBLL.cs" />
+    <Compile Include="WPQMWeldAddProReportBLL.cs" />
+    <Compile Include="WPQMWeldingRecordBLL.cs" />
+    <Compile Include="WPQMWeldProcedureSpeBLL.cs" />
+    <Compile Include="WPQMWeldProQuaBLL.cs" />
+    <Compile Include="WPQMWeldTaskListBLL.cs" />
+    <Compile Include="WPQMWorkReviewCommitBLL.cs" />
+    <Compile Include="WZAdvanceBLL.cs" />
+    <Compile Include="WZAdvanceDetailBLL.cs" />
+    <Compile Include="WZCardBLL.cs" />
+    <Compile Include="WZCardImportBLL.cs" />
+    <Compile Include="WZCollectBLL.cs" />
+    <Compile Include="WZCompactBLL.cs" />
+    <Compile Include="WZCompactCheckBLL.cs" />
+    <Compile Include="WZCompactDetailBLL.cs" />
+    <Compile Include="WZDivideBLL.cs" />
+    <Compile Include="WZExpertBLL.cs" />
+    <Compile Include="WZExpertDatabaseBLL.cs" />
+    <Compile Include="WZGetUnitBLL.cs" />
+    <Compile Include="WZMaterialDLBLL.cs" />
+    <Compile Include="WZMaterialXLBLL.cs" />
+    <Compile Include="WZMaterialZLBLL.cs" />
+    <Compile Include="WZNeedObjectBLL.cs" />
+    <Compile Include="WZObjectBLL.cs" />
+    <Compile Include="WZObjectReferBLL.cs" />
+    <Compile Include="WZObjectReplaceBLL.cs" />
+    <Compile Include="WZPayApproveBLL.cs" />
+    <Compile Include="WZPayBLL.cs" />
+    <Compile Include="WZPayDetailBLL.cs" />
+    <Compile Include="WZPickingPlanBLL.cs" />
+    <Compile Include="WZPickingPlanDetailBLL.cs" />
+    <Compile Include="WZProjectAttributeBLL.cs" />
+    <Compile Include="WZProjectBLL.cs" />
+    <Compile Include="WZProjectNatureBLL.cs" />
+    <Compile Include="WZPurchaseBLL.cs" />
+    <Compile Include="WZPurchaseDecisionBLL.cs" />
+    <Compile Include="WZPurchaseDetailBLL.cs" />
+    <Compile Include="WZPurchaseDocumentBLL.cs" />
+    <Compile Include="WZPurchaseExpertBLL.cs" />
+    <Compile Include="WZPurchaseFileBLL.cs" />
+    <Compile Include="WZPurchaseOfferRecordBLL.cs" />
+    <Compile Include="WZPurchaseSupplierBLL.cs" />
+    <Compile Include="WZReduceBLL.cs" />
+    <Compile Include="WZRequestBLL.cs" />
+    <Compile Include="WZSendBLL.cs" />
+    <Compile Include="WZSpanBLL.cs" />
+    <Compile Include="WZStockBLL.cs" />
+    <Compile Include="WZStoreBLL.cs" />
+    <Compile Include="WZSupplierApplyBLL.cs" />
+    <Compile Include="WZSupplierApplyCommentBLL.cs" />
+    <Compile Include="WZSupplierApplyDetailBLL.cs" />
+    <Compile Include="WZSupplierBLL.cs" />
+    <Compile Include="WZSupplierInfoBLL.cs" />
+    <Compile Include="WZSupplierRegisterBLL.cs" />
+    <Compile Include="WZSupplierTemplateFileBLL.cs" />
+    <Compile Include="WZTurnBLL.cs" />
+    <Compile Include="WZTurnDetailBLL.cs" />
+    <Compile Include="WZWearyBLL.cs" />
+    <Compile Include="XmlNameSpaceBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

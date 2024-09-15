@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDStandardSize, ProjectMgt.Model" table="T_GDStandardSize">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Size" type ="String" />
+    <property name ="DB" type ="Decimal" />
+    <property name ="NPS" type ="int" />
+    <property name ="ODGB" type ="Decimal" />
+    <property name ="ODANSI" type ="Decimal" />
+    <property name ="BQMainCode" type ="String" />
+    <property name ="BQSubCode" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

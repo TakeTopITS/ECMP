@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMWeldProQua, ProjectMgt.Model" table="T_WPQMWeldProQua">
+		<id name="Code" column="Code" type="String">
+			<generator class="assigned" />
+		</id>
+		<property name ="ApplicableCategories" type ="String" />
+		<property name ="MaterialNo" type ="String" />
+		<property name ="MaterialSpecification" type ="String" />
+		<property name ="WeldmentThickness" type ="String" />
+		<property name ="BaseClass" type ="String" />
+		<property name ="GroupForm" type ="String" />
+		<property name ="WeldingMethod" type ="String" />
+		<property name ="WeldingPosition" type ="String" />
+		<property name ="PreheatingTemperature" type ="String" />
+		<property name ="LayerTemperature" type ="String" />
+		<property name ="AfterHot" type ="String" />
+		<property name ="AfterWeldingClass" type ="String" />
+		<property name ="AfterWeldingTem" type ="String" />
+		<property name ="AfterWeldingPreTime" type ="String" />
+		<property name ="WireTypeBrandSpe" type ="String" />
+		<property name ="ElecTypeBrandSpe" type ="String" />
+		<property name ="FluxTypeBrandSpe" type ="String" />
+		<property name ="WeldMaterialCategory" type ="String" />
+		<property name ="WeldingCurrent" type ="String" />
+		<property name ="WeldingVoltage" type ="String" />
+		<property name ="WeldingSpeed" type ="String" />
+		<property name ="LineEnergy" type ="String" />
+		<property name ="ProtectiveGas" type ="String" />
+		<property name ="ProGasMixRatio" type ="String" />
+		<property name ="ShieldingGasFlowRate" type ="String" />
+		<property name ="EvaluationProject" type ="String" />
+		<property name ="MechanicalPerReq" type ="String" />
+		<property name ="OtherPerReq" type ="String" />
+		<property name ="GrooveForm" type ="String" />
+		<property name ="NondestructiveTestReq" type ="String" />
+		<property name ="AfterHotTime" type ="String" />
+		<property name ="SwingType" type ="String" />
+		<property name ="OscillationParameters" type ="String" />
+		<property name ="CoolingMethod" type ="String" />
+		<property name ="HeatingMode" type ="String" />
+		<property name ="WarmUpTime" type ="String" />
+		<property name ="TempMeasureMethod" type ="String" />
+		<property name ="TailProtectiveGas" type ="String" />
+		<property name ="TailProtectiveGasMixRatio" type ="String" />
+		<property name ="TailGasFlowRate" type ="String" />
+		<property name ="BackProtectiveGas" type ="String" />
+		<property name ="BackProtectiveGasMixRatio" type ="String" />
+		<property name ="BackGasFlowRate" type ="String" />
+		<property name ="NozzleDiameter" type ="String" />
+		<property name ="TunElecType" type ="String" />
+		<property name ="TunElecDiameter" type ="String" />
+		<property name ="WireSpeed" type ="String" />
+		<property name ="WeldingArcType" type ="String" />
+		<property name ="BackClearRootMethod" type ="String" />
+		<property name ="CleanBefWelding" type ="String" />
+		<property name ="LayerClean" type ="String" />
+		<property name ="HeatTreatmentMethod" type ="String" />
+		<property name ="NumberSpecimens" type ="String" />
+		<property name ="HeatTreFurnModel" type ="String" />
+		<property name ="BoilingTemp" type ="String" />
+		<property name ="HeatingSpeed" type ="String" />
+		<property name ="CoolingSpeed" type ="String" />
+		<property name ="PadMaterialSpec" type ="String" />
+		<property name ="Value_1" type ="String" />
+		<property name ="Value_2" type ="String" />
+		<property name ="Value_3" type ="String" />
+		<property name ="Value_4" type ="String" />
+		<property name ="Value_5" type ="String" />
+		<property name ="Value_6" type ="String" />
+		<property name ="Value_7" type ="String" />
+		<property name ="CategoryGroups" type ="String" />
+		<property name ="WeldingDirection" type ="String" />
+		<property name ="MechanizationDegree" type ="String" />
+		<property name ="WeldedJointDiagram" type ="String" />
+		<property name ="PWPSStandardNo" type ="String" />
+		<property name ="SpecificationThickness" type ="String" />
+		<property name ="SpecificationDiameter" type ="String" />
+		<property name ="WeldingMaterialStandard" type ="String" />
+		<property name ="CurrentType" type ="String" />
+		<property name ="Polarity" type ="String" />
+		<property name ="PassWeldingType" type ="String" />
+		<property name ="WireWeldingType" type ="String" />
+		<property name ="FilletWeldPosition" type ="String" />
+		<property name ="VerticalWeldingDirection" type ="String" />
+		<property name ="EntityName" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

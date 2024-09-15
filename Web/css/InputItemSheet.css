@@ -1,0 +1,17 @@
+﻿.tableitem
+{
+    width:500px; 
+    border:0; 
+    text-align:left; 
+}
+.titleIditem {
+    text-align:right;
+    width:150px;
+}
+.inputitem {
+    width: 380px;
+}
+
+.calendaritem {
+    width: 350px;
+}

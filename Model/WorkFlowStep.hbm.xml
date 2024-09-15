@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WorkFlowStep, ProjectMgt.Model" table="T_WorkFlowStep">
+
+    <id name="StepID" column="StepID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="WLID" type ="int" />
+
+    <property name ="SortNumber" type ="int" />
+
+    <property name ="StepName" type="String" />
+
+    <property name ="LimitedOperator" type ="int" />
+
+    <property name ="LimitedTime" type ="int" />
+
+    <property name ="DepartRelated" type ="String" />
+
+    <property name ="ActiveTime" type ="DateTime" />
+
+    <property name ="Status" type ="String" />
+  </class>
+</hibernate-mapping>

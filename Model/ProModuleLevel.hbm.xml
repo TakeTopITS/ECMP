@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ProModuleLevel, ProjectMgt.Model" table="T_ProModuleLevel">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    
+    </id>
+
+    <property name ="ModuleName" type ="String"/>
+
+    <property name ="ParentModule" type ="String" />
+
+    <property name ="PageName" type ="String" />
+
+    <property name ="ModuleType" type ="String" />
+
+    <property name ="UserType" type ="String" />
+
+    <property name ="Visible" type ="String" />
+
+    <property name ="LangCode" type ="String" />
+
+    <property name ="IsDeleted" type ="String" />
+
+    <property name ="HomeModuleName" type ="String" />
+
+    <property name ="IconURL" type ="String" />
+    
+    <property name ="ModuleDefinition" type ="StringClob" />
+    
+    <property name ="SortNumber" type ="int" />
+
+  </class>
+</hibernate-mapping>

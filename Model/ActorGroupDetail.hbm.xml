@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ActorGroupDetail, ProjectMgt.Model" table="T_ActorGroupDetail">
+
+    <id name="GroupID" column="GroupID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="GroupName" type ="String" />
+
+    <property name ="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+
+    <property name ="DepartCode" type ="String" />
+
+    <property name ="DepartName" type="String" />
+
+    <property name ="Actor" type ="String" />
+
+    <property name ="WorkDetail" type ="String" />
+  </class>
+</hibernate-mapping>

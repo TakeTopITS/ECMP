@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMPQR1, ProjectMgt.Model" table="T_WPQMPQR1">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="WeldJointOther" type ="String" />
+		<property name ="MetalOther" type ="String" />
+		<property name ="WeldMetalThick" type ="String" />
+		<property name ="FillerMetalOther" type ="String" />
+		<property name ="WeldingCurrent" type ="String" />
+		<property name ="ArcVoltage" type ="String" />
+		<property name ="ElecCharaOther" type ="String" />
+		<property name ="WeldingSpeed" type ="String" />
+		<property name ="SecurityMeasureOther" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

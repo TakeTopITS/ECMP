@@ -1,0 +1,158 @@
+﻿.scheduler_blue_event_inner  
+{
+	margin-right: 1px;
+	padding: 4px;
+	
+	font-size: 12px;
+	color: #ffffff;
+	background: #09b2ef;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #079beb;
+	-moz-box-shadow:
+		0px 0px 5px rgba(000,000,000,0.5),
+		inset 0px 1px 0px rgba(072,211,246,1);
+	-webkit-box-shadow:
+		0px 0px 5px rgba(000,000,000,0.5),
+		inset 0px 1px 0px rgba(072,211,246,1);
+	box-shadow:
+		0px 0px 5px rgba(000,000,000,0.5),
+		inset 0px 1px 0px rgba(072,211,246,1);
+	text-shadow:
+		0px -1px 0px rgba(007,155,235,1),
+		0px 0px 0px rgba(000,000,000,0);
+}
+
+.scheduler_blue_event_hover .scheduler_blue_event_inner 
+{
+	background: #5BC8EF;
+}
+
+.scheduler_blue_event .scheduler_blue_action:hover
+{
+	opacity: 1;
+	filter: none;
+}
+
+.scheduler_blue_red .scheduler_blue_event_inner 
+{
+	border: 1px solid #c00004;
+	background: #ab0000;
+	background: -moz-linear-gradient(
+		top,
+		#ff2819 0%,
+		#ab0000);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ff2819),
+		to(#ab0000));
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ff2819", endColorStr="#ab0000");
+}
+
+.scheduler_blue_main 
+{
+	border: 1px solid #999;
+}
+
+.scheduler_blue_timeheader 
+{
+	cursor: default;
+	color: #666;
+}
+
+.scheduler_blue_message
+{
+	padding: 10px; 
+	color: #fff;
+	background: #045776;
+	border-radius: 10px;
+	display: inline-block;
+	margin-left: 5px;
+	margin-top: 5px;
+	opacity: 0.6;
+}
+
+.scheduler_blue_timeheadergroup,
+.scheduler_blue_timeheadercol,
+.scheduler_blue_rowheader,
+.scheduler_blue_corner
+{
+	color: #045776;
+	background: #fff;
+}
+
+.scheduler_blue_timeheadergroup_inner
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	text-align: center;
+	border-right: 1px solid #ddd;
+	text-align: center;
+}
+
+.scheduler_blue_timeheadercol_inner
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.scheduler_blue_cellcolumn 
+{
+	background: #fff;
+}
+
+.scheduler_blue_tree_image_no_children {
+	background-image: url('scheduler_blue/tree_nochildren.png');
+}
+.scheduler_blue_tree_image_expand {
+	background-image: url('scheduler_blue/tree_expand.png');
+}
+.scheduler_blue_tree_image_collapse {
+	background-image: url('scheduler_blue/tree_collapse.png');
+}
+
+.scheduler_blue_divider 
+{
+	background-color: #ccc;
+}
+
+.scheduler_blue_divider_horizontal
+{
+	background-color: #ccc;
+}
+
+.scheduler_blue_matrix_vertical_line 
+{
+	background-color: #eee;
+}
+
+.scheduler_blue_matrix_horizontal_line 
+{
+	background-color: #eee;
+}
+
+.scheduler_blue_resourcedivider 
+{
+	background-color: #ccc;
+}
+
+.scheduler_blue_shadow_inner 
+{
+	background-color: #666666;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	height: 100%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}

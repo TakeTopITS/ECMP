@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.U8Problem_YYUP, ProjectMgt.Model" table="T_U8Problem_YYUP">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProblemCode" type ="String" />
+    <property name ="ProjectMainID" type ="int" />
+
+  <property name ="ProjectMainName" type ="String" />
+  <property name ="ProjectChildName" type ="String" />
+  <property name ="ProjectChildID" type ="int" />
+    <property name ="ProductLineID" type ="String" />
+  <property name ="ProductLine" type ="String" />
+  <property name ="SoftwareSerialNumber" type ="String" />
+  <property name ="BranchCompany" type ="String" />
+    <property name ="ProductVersionID" type ="String" />
+  <property name ="ProductVersion" type ="String" />
+    <property name ="FieldID" type ="String" />
+  <property name ="Field" type ="String" />
+  <property name ="ProblemModuleID" type ="String" />
+  <property name ="ProblemModule" type ="String" />
+  <property name ="DatabaseTypeID" type ="String" />
+    <property name ="DatabaseType" type ="String" />
+  <property name ="EmergencyDegreeID" type ="String" />
+    <property name ="EmergencyDegree" type ="String" />
+  <property name ="ProblemAttributeID" type ="String" />
+    <property name ="ProblemAttribute" type ="String" />
+  <property name ="ProblemTag" type ="String" />
+  <property name ="HopeSolveTime" type ="String" />
+  <property name ="ProblemTitle" type ="String" />
+  <property name ="ProblemDesc" type ="String" />
+  <property name ="ProblemFileName" type ="String" />
+  <property name ="ProblemFileUrl" type ="String" />
+    <property name ="UserCode" type ="String" />
+      <property name ="UserName" type ="String" />
+  <property name ="Phone" type ="String" />
+  <property name ="Email" type ="String" />
+  <property name ="StrStatus" type ="String" />
+  <property name ="CreateTime" type ="DateTime" />
+  <property name ="SecondManagerApproval" type ="String" />
+
+  <property name ="ApproveTime" type ="String" />
+  <property name ="SupportSatisfaction" type ="String" />
+
+    <property name ="ProblemGuid" type ="String" />
+    <property name ="ReturnValue" type ="String" />
+
+  <property name ="CustomerServiceCode" type ="String" />
+  <property name ="CustomerServicePass" type ="String" />
+  </class>
+</hibernate-mapping>

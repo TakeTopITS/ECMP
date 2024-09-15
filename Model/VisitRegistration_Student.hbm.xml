@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.VisitRegistration_Student, ProjectMgt.Model" table="T_VisitRegistration_Student">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="VisitStartTime" type ="DateTime" />
+
+    <property name ="VisitName" type ="String" />
+    <property name ="VisitSex" type ="String" />
+    <property name ="VisitCardType" type ="String" />
+    <property name ="VisitCardName" type ="String" />
+    <property name ="VisitCardUrl" type ="String" />
+    <property name ="VisitReason" type ="String" />
+    <property name ="Receiver" type ="String" />
+    <property name ="ReceiverName" type ="String" />
+    <property name ="VisitEndTime" type ="String" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

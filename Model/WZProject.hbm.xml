@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZProject, ProjectMgt.Model" table="T_WZProject">
+
+    <id name="ProjectCode" column="ProjectCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="ProjectName" type ="String" />
+    <property name ="ProjectManager" type ="String" />
+    <property name ="StartTime" type ="DateTime" />
+    <property name ="EndTime" type ="DateTime" />
+    <property name ="PowerPurchase" type ="String" />
+    <!--<property name ="PickingUnit" type ="String" />
+    <property name ="UnitCode" type ="String" />-->
+
+    <!--<property name ="FeeManage" type ="String" />-->
+    <property name ="ForCost" type ="Decimal" />
+    <property name ="SelfCost" type ="Decimal" />
+    <property name ="BuildUnit" type ="String" />
+    <property name ="SupervisorUnit" type ="String" />
+    <property name ="ProjectDesc" type ="String" />
+    <property name ="MarkTime" type ="DateTime" />
+    <property name ="Marker" type ="String" />
+    <property name ="StoreRoom" type ="String" />
+
+    <property name ="DelegateAgent" type ="String" />
+
+    <property name ="PurchaseManager" type ="String" />
+    <property name ="PurchaseEngineer" type ="String" />
+    <property name ="Contracter" type ="String" />
+    <property name ="Checker" type ="String" />
+    <property name ="Safekeep" type ="String" />
+    <property name ="SupplementEditor" type ="String" />
+    <property name ="TheBudget" type ="Decimal" />
+    <property name ="ContractMoney" type ="Decimal" />
+    <property name ="AcceptMoney" type ="Decimal" />
+    <property name ="ProjectTax" type ="Decimal" />
+    <property name ="TheFreight" type ="Decimal" />
+    <property name ="SendMoney" type ="Decimal" />
+    <property name ="FinishingRate" type ="Decimal" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="RelatedCode" type ="String" />
+    <property name ="IsStatus" type ="String" />
+    <property name ="Leader" type ="String" />
+    <property name ="FeeManage" type ="String" />
+    <property name ="UnitType" type ="String" />
+
+    <property name ="ShenJianLu" type ="Decimal" />
+    <property name ="ShenJianE" type ="Decimal" />
+    <property name ="TaxRate" type ="Decimal" />
+    <property name ="TaxAmount" type ="Decimal" />
+    <property name ="BaoGuanZongE" type ="Decimal" />
+
+    <property name ="ProjectAttribute" type ="String" />
+    <property name ="ProjectNature" type ="String" />
+    <property name ="RelatedProjectID" type ="int" />
+
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.AssetApplicationReport, ProjectMgt.Model" table="V_AssetApplicationReport">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="AAID" type ="int" />
+
+    <property name ="AssetCode" type ="String" />
+
+    <property name ="AssetName" type="String" />
+
+    <property name ="ModelNumber" type ="String" />
+
+    <property name ="Spec" type ="String" />
+
+    <property name ="Number" type="Decimal" />
+
+    <property name ="Unit" type="String" />
+
+    <property name ="IP" type ="String" />
+
+    <property name ="Type" type ="String" />
+
+    <property name ="AAName" type="String" />
+
+    <property name ="ApplicantCode" type ="String" />
+
+    <property name ="ApplicantName" type ="String" />
+
+    <property name ="ApplyTime" type ="DateTime" />
+
+    <property name ="FinishTime" type="DateTime" />
+
+    <property name ="ApplyReason" type="String" />
+
+    <property name ="Status" type ="String" />
+
+    <property name ="RelatedType" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+  </class>
+</hibernate-mapping>

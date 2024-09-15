@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZAdvanceDetail, ProjectMgt.Model" table="T_WZAdvanceDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="AdvanceCode" type ="String" />
+    <property name ="ContractCode" type ="String" />
+    <property name ="ContractName" type ="String" />
+    <property name ="ContractMoney" type ="Decimal" />
+    <property name ="EffectTime" type ="DateTime" />
+    <property name ="SupplierCode" type ="String" />
+    <property name ="SupplierName" type ="String" />
+    <property name ="PayMoney" type ="Decimal" />
+    <property name ="UseWay" type ="String" />
+    <property name ="PayProgress" type ="String" />
+  </class>
+</hibernate-mapping>

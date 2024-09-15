@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ExpenseClaimDetail, ProjectMgt.Model" table="T_ExpenseClaimDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ECID" type ="int" />
+    <property name ="RelatedType" type ="String" />
+    <property name ="RelatedID" type ="int" />
+    <property name ="RelatedExpenseID" type="int" />
+    <property name ="AccountCode" type ="String" />
+    <property name ="Account" type ="String" />
+    <property name ="Description" type ="String" />
+    <property name ="Amount" type ="Decimal" />
+    <property name ="UserCode" type ="String" />
+    <property name ="UserName" type ="String" />
+    <property name ="RegisterDate" type ="DateTime" />
+  </class>
+</hibernate-mapping>

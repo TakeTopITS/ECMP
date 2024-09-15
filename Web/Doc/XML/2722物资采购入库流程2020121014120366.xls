@@ -1,0 +1,1480 @@
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-MimeOLE: Produced by TakeTopInfoPath Service.
+
+<html><head><title>Form</title><meta http-equiv=3DContent-Type =
+content=3D"text/html; charset=3Dutf-8"><meta name=3DGenerator =
+content=3D"Microsoft SafeHTML"></head><body><div id=3D"xdoc" =
+class=3D"xdoc" xmlns:xsi=3D"http://www.w3.org/2001/XMLSchema-instance" =
+xmlns:xhtml=3D"http://www.w3.org/1999/xhtml" =
+xmlns:my=3D"http://schemas.microsoft.com/office/infopath/2003/myXSD/201=
+3-04-24T03:32:51" =
+xmlns:xd=3D"http://schemas.microsoft.com/office/infopath/2003" =
+xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" =
+xmlns:xdExtension=3D"http://schemas.microsoft.com/office/infopath/2003/=
+xslt/extension" =
+xmlns:xdXDocument=3D"http://schemas.microsoft.com/office/infopath/2003/=
+xslt/xDocument" =
+xmlns:xdSolution=3D"http://schemas.microsoft.com/office/infopath/2003/x=
+slt/solution" =
+xmlns:xdFormatting=3D"http://schemas.microsoft.com/office/infopath/2003=
+/xslt/formatting" =
+xmlns:xdImage=3D"http://schemas.microsoft.com/office/infopath/2003/xslt=
+/xImage" =
+xmlns:xdUtil=3D"http://schemas.microsoft.com/office/infopath/2003/xslt/=
+Util" =
+xmlns:xdMath=3D"http://schemas.microsoft.com/office/infopath/2003/xslt/=
+Math" =
+xmlns:xdDate=3D"http://schemas.microsoft.com/office/infopath/2003/xslt/=
+Date" xmlns:sig=3D"http://www.w3.org/2000/09/xmldsig#" =
+xmlns:xdSignatureProperties=3D"http://schemas.microsoft.com/office/info=
+path/2003/SignatureProperties" =
+xmlns:ipApp=3D"http://schemas.microsoft.com/office/infopath/2006/XPathE=
+xtension/ipApp" =
+xmlns:xdEnvironment=3D"http://schemas.microsoft.com/office/infopath/200=
+6/xslt/environment" =
+xmlns:xdUser=3D"http://schemas.microsoft.com/office/infopath/2006/xslt/=
+User"><div id=3D"xdoc_style" style=3D"display:none;"><meta =
+content=3D"text/html" http-equiv=3D"Content-Type"></meta><style =
+controlStyle=3D"controlStyle">@media screen 			{ 			.xdoc =
+{margin-left:21px;background-position:21px 0px;} 			} 		.xdoc =
+{color:windowtext;background-color:window;layout-grid:none;} =
+		.xdListItem =
+{display:inline-block;width:100%;vertical-align:text-top;;border:0px;} =
+		.xdListBox,.xdComboBox{margin:1px;} 		.xdInlinePicture{margin:1px; =
+BEHAVIOR: url(#default#urn::xdPicture) } =
+		.xdLinkedPicture{margin:1px; BEHAVIOR: url(#default#urn::xdPicture) =
+url(#default#urn::controls/Binder) } 		.xdSection{border:1pt solid =
+#FFFFFF;margin:6px 0px 6px 0px;padding:1px 1px 1px 5px;} =
+		.xdRepeatingSection{border:1pt solid #FFFFFF;margin:6px 0px 6px =
+0px;padding:1px 1px 1px 5px;} =
+		.xdMultiSelectList{margin:1px;display:inline-block; border:1pt solid =
+#dcdcdc; padding:1px 1px 1px 5px; text-indent:0; color:windowtext; =
+background-color:window; overflow:auto; behavior: =
+url(#default#DataBindingUI) url(#default#urn::controls/Binder) =
+url(#default#MultiSelectHelper) url(#default#ScrollableRegion);} =
+		.xdMultiSelectListItem{display:block;white-space:nowrap}		.xdMultiSel=
+ectFillIn{display:inline-block;white-space:nowrap;text-overflow:ellipsis;=
+;padding:1px;margin:1px;border: 1pt solid =
+#dcdcdc;overflow:hidden;text-align:left;}		.xdBehavior_Formatting =
+{BEHAVIOR: url(#default#urn::controls/Binder) =
+url(#default#Formatting);} 	 .xdBehavior_FormattingNoBUI{BEHAVIOR: =
+url(#default#CalPopup) url(#default#urn::controls/Binder) =
+url(#default#Formatting);} 	.xdExpressionBox{margin: =
+1px;padding:1px;word-wrap: break-word;text-overflow: =
+ellipsis;overflow-x:hidden;}.xdBehavior_GhostedText,.xdBehavior_Ghosted=
+TextNoBUI{BEHAVIOR: url(#default#urn::controls/Binder) =
+url(#default#TextField) =
+url(#default#GhostedText);}	.xdBehavior_GTFormatting{BEHAVIOR: =
+url(#default#urn::controls/Binder) url(#default#Formatting) =
+url(#default#GhostedText);}	.xdBehavior_GTFormattingNoBUI{BEHAVIOR: =
+url(#default#CalPopup) url(#default#urn::controls/Binder) =
+url(#default#Formatting) =
+url(#default#GhostedText);}	.xdBehavior_Boolean{BEHAVIOR: =
+url(#default#urn::controls/Binder) =
+url(#default#BooleanHelper);}	.xdBehavior_Select{BEHAVIOR: =
+url(#default#urn::controls/Binder) =
+url(#default#SelectHelper);}	.xdBehavior_ComboBox{BEHAVIOR: =
+url(#default#ComboBox)} 	.xdBehavior_ComboBoxTextField{BEHAVIOR: =
+url(#default#ComboBoxTextField);} 	.xdRepeatingTable{BORDER-TOP-STYLE: =
+none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; =
+BORDER-BOTTOM-STYLE: none; BORDER-COLLAPSE: collapse; WORD-WRAP: =
+break-word;}.xdScrollableRegion{BEHAVIOR: =
+url(#default#ScrollableRegion);} =
+		.xdLayoutRegion{display:inline-block;} 		.xdMaster{BEHAVIOR: =
+url(#default#MasterHelper);} 		.xdActiveX{margin:1px; BEHAVIOR: =
+url(#default#ActiveX);} =
+		.xdFileAttachment{display:inline-block;margin:1px;BEHAVIOR:url(#defau=
+lt#urn::xdFileAttachment);} 		.xdPageBreak{display: none;}.xdoc =
+{margin-right:21px;} =
+		.xdTextBoxRTL{display:inline-block;white-space:nowrap;text-overflow:e=
+llipsis;;padding:1px;margin:1px;border: 1pt solid =
+#dcdcdc;color:windowtext;background-color:window;overflow:hidden;text-a=
+lign:right;word-wrap:normal;} =
+		.xdRichTextBoxRTL{display:inline-block;;padding:1px;margin:1px;border=
+: 1pt solid =
+#dcdcdc;color:windowtext;background-color:window;overflow-x:hidden;word=
+-wrap:break-word;text-overflow:ellipsis;text-align:right;font-weight:norm=
+al;font-style:normal;text-decoration:none;vertical-align:baseline;} =
+		.xdDTTextRTL{height:100%;width:100%;margin-left:22px;overflow:hidden;=
+padding:0px;white-space:nowrap;} =
+		.xdDTButtonRTL{margin-right:-21px;height:18px;width:20px;behavior: =
+url(#default#DTPicker);} =
+		.xdMultiSelectFillinRTL{display:inline-block;white-space:nowrap;text-=
+overflow:ellipsis;;padding:1px;margin:1px;border: 1pt solid =
+#dcdcdc;overflow:hidden;text-align:right;}.xdTextBox{display:inline-blo=
+ck;white-space:nowrap;text-overflow:ellipsis;;padding:1px;margin:1px;bord=
+er: 1pt solid =
+#dcdcdc;color:windowtext;background-color:window;overflow:hidden;text-a=
+lign:left;word-wrap:normal;} =
+		.xdRichTextBox{display:inline-block;;padding:1px;margin:1px;border: =
+1pt solid =
+#dcdcdc;color:windowtext;background-color:window;overflow-x:hidden;word=
+-wrap:break-word;text-overflow:ellipsis;text-align:left;font-weight:norma=
+l;font-style:normal;text-decoration:none;vertical-align:baseline;} =
+		.xdDTPicker{;display:inline;margin:1px;margin-bottom: 2px;border: =
+1pt solid =
+#dcdcdc;color:windowtext;background-color:window;overflow:hidden;text-i=
+ndent:0} =
+		.xdDTText{height:100%;width:100%;margin-right:22px;overflow:hidden;pa=
+dding:0px;white-space:nowrap;;border:0px;width:78px;} =
+		.xdDTButton{margin-left:-21px;height:18px;width:20px;behavior: =
+url(#default#DTPicker);} 		.xdRepeatingTable TD {VERTICAL-ALIGN: =
+top;}@media print{ .xdDTButton {display:none;} .xdDTButtonRTL =
+{display:none;} .hiddenButton{display:none;} =
+.optionalPlaceholder{display:none;} }</style><style =
+tableEditor=3D"TableStyleRulesID">TABLE.xdLayout TD {
+	BORDER-TOP: =
+medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; =
+BORDER-LEFT: medium none
+}
+TABLE.msoUcTable TD {
+	BORDER-TOP: 1pt =
+solid; BORDER-RIGHT: 1pt solid; BORDER-BOTTOM: 1pt solid; BORDER-LEFT: =
+1pt solid
+}
+TABLE {
+	BEHAVIOR: url =
+(#default#urn::tables/NDTable)
+}
+</style><style =
+languageStyle=3D"languageStyle">.xdoc {
+	FONT-FAMILY: SimSun; =
+FONT-SIZE: 10pt
+}
+TABLE {
+	FONT-FAMILY: SimSun; FONT-SIZE: =
+10pt
+}
+SELECT {
+	FONT-FAMILY: SimSun; FONT-SIZE: =
+10pt
+}
+.optionalPlaceholder {
+	FONT-STYLE: normal; PADDING-LEFT: =
+3px; FONT-FAMILY: SimSun; COLOR: #333333; FONT-SIZE: xx-small; =
+FONT-WEIGHT: normal; TEXT-DECORATION: none; BEHAVIOR: =
+url(#default#xOptional)
+;cursor:pointer;cursor:hand;}
+.langFont =
+{
+	FONT-FAMILY: SimSun
+}
+.defaultInDocUI {
+	FONT-FAMILY: SimSun; =
+FONT-SIZE: xx-small
+}
+.optionalPlaceholder {
+	PADDING-RIGHT: =
+20px
+}
+ .xdTextBox {
+	FONT-FAMILY: SimSun; FONT-SIZE: 10pt
+} =
+.xdRichTextBox {
+	FONT-FAMILY: SimSun; FONT-SIZE: 10pt
+} .xdDTText =
+{
+	FONT-FAMILY: SimSun; FONT-SIZE: 10pt
+}</style><style =
+themeStyle=3D"urn:office.microsoft.com:themeBlue">.xdoc =
+{
+	BACKGROUND-COLOR: white; COLOR: black
+}
+TABLE {
+	BORDER-BOTTOM: =
+medium none; BORDER-LEFT: medium none; BORDER-COLLAPSE: collapse; =
+BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+TD =
+{
+	BORDER-BOTTOM-COLOR: #517dbf; BORDER-TOP-COLOR: #517dbf; =
+BORDER-RIGHT-COLOR: #517dbf; BORDER-LEFT-COLOR: #517dbf
+}
+TH =
+{
+	BORDER-BOTTOM-COLOR: #517dbf; BACKGROUND-COLOR: #cbd8eb; =
+BORDER-TOP-COLOR: #517dbf; COLOR: black; BORDER-RIGHT-COLOR: #517dbf; =
+BORDER-LEFT-COLOR: #517dbf
+}
+.xdTableHeader {
+	BACKGROUND-COLOR: =
+#ebf0f9; COLOR: black
+}
+P {
+	MARGIN-TOP: 0px
+}
+H1 {
+	MARGIN-TOP: =
+0px; MARGIN-BOTTOM: 0px; COLOR: #1e3c7b
+}
+H2 {
+	MARGIN-TOP: 0px; =
+MARGIN-BOTTOM: 0px; COLOR: #1e3c7b
+}
+H3 {
+	MARGIN-TOP: 0px; =
+MARGIN-BOTTOM: 0px; COLOR: #1e3c7b
+}
+H4 {
+	MARGIN-TOP: 0px; =
+MARGIN-BOTTOM: 0px; COLOR: #1e3c7b
+}
+H5 {
+	MARGIN-TOP: 0px; =
+MARGIN-BOTTOM: 0px; COLOR: #517dbf
+}
+H6 {
+	MARGIN-TOP: 0px; =
+MARGIN-BOTTOM: 0px; COLOR: #ebf0f9
+}
+.primaryVeryDark =
+{
+	BACKGROUND-COLOR: #1e3c7b; COLOR: #ebf0f9
+}
+.primaryDark =
+{
+	BACKGROUND-COLOR: #517dbf; COLOR: white
+}
+.primaryMedium =
+{
+	BACKGROUND-COLOR: #cbd8eb; COLOR: black
+}
+.primaryLight =
+{
+	BACKGROUND-COLOR: #ebf0f9; COLOR: black
+}
+.accentDark =
+{
+	BACKGROUND-COLOR: #517dbf; COLOR: white
+}
+.accentLight =
+{
+	BACKGROUND-COLOR: #ebf0f9; COLOR: black
+}
+</style></div><div =
+id=3D"xdoc_view" style=3D"width:542px;"><div style=3D"COLOR: #000000; =
+BACKGROUND-COLOR: #ffffff" id=3D"_0_my:myFields"><div =
+align=3D"center"><strong><font =
+size=3D"3"></font></strong>=C2=A0</div><div align=3D"left"><table =
+class=3D"xdLayout" style=3D"WORD-WRAP: break-word; BORDER-TOP: medium =
+none; BORDER-RIGHT: medium none; WIDTH: 1162px; BORDER-COLLAPSE: =
+collapse; TABLE-LAYOUT: fixed; BORDER-BOTTOM: medium none; =
+BORDER-LEFT: medium none" borderColor=3D"buttontext" =
+border=3D"0"><colgroup><col style=3D"WIDTH: =
+1162px"></col></colgroup><tbody vAlign=3D"top"><tr =
+style=3D"MIN-HEIGHT: 4px"><td style=3D"BORDER-TOP: #000000 1pt; =
+BORDER-RIGHT: #000000 1pt; BORDER-BOTTOM: #000000 1pt; BORDER-LEFT: =
+#000000 1pt"><div align=3D"center"><strong><font =
+size=3D"7">=E9=87=87=E8=B4=AD=E6=A3=80=E9=AA=8C=E5=85=A5=E5=BA=93=E5=8D=95=
+</font></strong></div><div align=3D"center"><strong><font =
+size=3D"7"></font></strong>=C2=A0</div></td></tr><tr =
+style=3D"MIN-HEIGHT: 4px"><td style=3D"BORDER-TOP: #000000 1pt; =
+BORDER-RIGHT: #000000 1pt; BORDER-BOTTOM: #000000 1pt; BORDER-LEFT: =
+#000000 1pt"><div><font =
+face=3D"=E5=AE=8B=E4=BD=93"><strong>=E9=A1=B9=E7=9B=AE=E7=BC=96=E5=8F=B7=
+=EF=BC=9A</strong><span title=3D"" class=3D"xdTextBox" hideFocus=3D"1" =
+tabIndex=3D"0" xd:CtrlId=3D"CTRL1" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:xiangmuhao" style=3D"HEIGHT: 35px; WIDTH: 133px; =
+FONT-WEIGHT: bold;FONT-FAMILY:=E5=AE=8B=E4=BD=93;" =
+id=3D"_0_0_my:xiangmuhao" server_control=3D"no" schema_type=3D"string" =
+schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">153</span><strong>=E4=BA=A7=E5=93=81=E5=90=8D=
+=E7=A7=B0=EF=BC=9A</strong><span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"0" xd:CtrlId=3D"CTRL2" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:changpingming" =
+style=3D"HEIGHT: 35px; WIDTH: 210px; FONT-WEIGHT: =
+bold;FONT-FAMILY:=E5=AE=8B=E4=BD=93;" id=3D"_0_1_my:changpingming" =
+server_control=3D"no" schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" contentEditable=3D"false">THINKPAD =
+X10</span><strong>=E4=BA=A7=E5=93=81=E5=9E=8B=E5=8F=B7=EF=BC=9A</strong=
+><span title=3D"" class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL3" xd:xctname=3D"PlainText" xd:binding=3D"my:xinghao" =
+style=3D"HEIGHT: 35px; WIDTH: 204px; FONT-WEIGHT: =
+bold;FONT-FAMILY:=E5=AE=8B=E4=BD=93;" id=3D"_0_2_my:xinghao" =
+server_control=3D"no" schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">X1-</span><strong>=E4=BA=A7=E5=93=81=E6=95=B0=
+=E9=87=8F=EF=BC=9A</strong><span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"0" xd:CtrlId=3D"CTRL4" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:shuliang" style=3D"HEIGHT: =
+35px; WIDTH: 59px; FONT-WEIGHT: bold;FONT-FAMILY:=E5=AE=8B=E4=BD=93;" =
+id=3D"_0_3_my:shuliang" server_control=3D"yes" schema_type=3D"string" =
+schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">10</span><strong>=E5=8D=95=E4=BD=8D=EF=BC=9A<=
+/strong><span title=3D"" class=3D"xdTextBox" hideFocus=3D"1" =
+tabIndex=3D"0" xd:CtrlId=3D"CTRL5" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:danwei" style=3D"HEIGHT: 35px; WIDTH: 44px; =
+FONT-WEIGHT: bold;FONT-FAMILY:=E5=AE=8B=E4=BD=93;" =
+id=3D"_0_4_my:danwei" server_control=3D"no" schema_type=3D"string" =
+schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></font></div></td></tr><tr =
+style=3D"MIN-HEIGHT: 73px"><td style=3D"BORDER-TOP: #000000 1pt; =
+BORDER-RIGHT: #000000 1pt solid; BORDER-BOTTOM: #000000 1pt solid; =
+BORDER-LEFT: #000000 1pt solid"><div><table title=3D"" =
+class=3D"xdRepeatingTable msoUcTable" style=3D"BORDER-TOP-STYLE: none; =
+WORD-WRAP: break-word; BORDER-LEFT-STYLE: none; WIDTH: 1153px; =
+BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; BORDER-BOTTOM-STYLE: =
+none; BORDER-RIGHT-STYLE: none" border=3D"1" =
+xd:CtrlId=3D"CTRL6"><colgroup><col style=3D"WIDTH: 69px"></col><col =
+style=3D"WIDTH: 145px"></col><col style=3D"WIDTH: 180px"></col><col =
+style=3D"WIDTH: 149px"></col><col style=3D"WIDTH: 32px"></col><col =
+style=3D"WIDTH: 36px"></col><col style=3D"WIDTH: 43px"></col><col =
+style=3D"WIDTH: 46px"></col><col style=3D"WIDTH: 84px"></col><col =
+style=3D"WIDTH: 111px"></col><col style=3D"WIDTH: 105px"></col><col =
+style=3D"WIDTH: 61px"></col><col style=3D"WIDTH: 84px"></col><col =
+style=3D"WIDTH: 8px"></col></colgroup><tbody =
+class=3D"xdTableHeader"><tr style=3D"MIN-HEIGHT: =
+13px"><td><div><strong></strong>=C2=A0</div><div><strong>=E7=89=A9=E8=B5=84=
+=E4=BB=A3=E7=A0=81</strong></div></td><td><div><strong>=C2=A0=C2=A0=C2=A0=
+=E3=80=80</strong></div><div><strong>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+ =
+=E7=89=A9=E6=96=99=E5=90=8D=E7=A7=B0</strong></div></td><td><div><strong>=
+=E3=80=80=E3=80=80=E3=80=80=E3=80=80=E3=80=80</strong></div><div><strong>=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 =
+=E3=80=80=E5=9E=8B=E3=80=80=E5=8F=B7</strong></div></td><td><div><stron=
+g>=E3=80=80=E3=80=80=E3=80=80</strong></div><div><strong>=C2=A0=C2=A0=C2=A0=
+=E5=B0=81=E8=A3=85/=E8=A7=84=E6=A0=BC</strong></div></td><td><div><strong=
+></strong>=C2=A0</div><div><strong>=E5=8D=95=E4=BD=8D</strong></div></td>=
+<td><div><strong></strong>=C2=A0</div><div><strong>=E5=8F=B0=E8=80=97</st=
+rong></div></td><td><div><strong>=E5=A4=87=E4=BB=BD=E6=95=B0=E9=87=8F</st=
+rong></div></td><td><div><strong>=E6=80=BB=E6=95=B0=E9=87=8F</strong></di=
+v></td><td><div =
+align=3D"center"><strong>=E4=BF=AE=E6=94=B9=E8=AE=B0=E5=BD=95</strong><=
+/div></td><td><div><strong>=E3=80=80</strong></div><div><strong>=E5=8E=82=
+=E5=AE=B6/=E7=AD=89=E7=BA=A7</strong></div></td><td><div><strong></strong=
+>=C2=A0</div><div><strong>=E9=87=87=E8=B4=AD/=E8=87=AA=E5=88=B6</strong><=
+/div></td><td><div><strong></strong>=C2=A0</div><div><strong>=E5=BA=93=E5=AD=98=
+=E9=87=8F</strong></div></td><td><div><strong></strong>=C2=A0</div><div><=
+strong>=E9=9C=80=E8=B4=AD=E9=87=8F</strong></div></td><td><strong><font =
+style=3D"BACKGROUND-COLOR: #ffffff" =
+size=3D"7"></font></strong><div><strong></strong>=C2=A0</div></td></tr>=
+</tbody><tbody xd:xctname=3D"RepeatingTable"><tr style=3D"MIN-HEIGHT: =
+31px" id=3D"_0_5_0_my:group2"><td><span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"-1" xd:CtrlId=3D"CTRL7" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:xuhao" =
+xd:disableEditing=3D"yes" style=3D"FONT-SIZE: x-small; HEIGHT: 30px; =
+WIDTH: 100%; WHITE-SPACE: nowrap" readonly=3D"true" =
+id=3D"_0_5_0_0_my:xuhao" server_control=3D"yes" schema_type=3D"string" =
+schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" logic_tags=3D"R" =
+rows=3D"1" default_rows=3D"1" contentEditable=3D"false">A0002          =
+     </span></td><td><span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"-1" xd:CtrlId=3D"CTRL9" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:field8" =
+xd:disableEditing=3D"yes" style=3D"HEIGHT: 30px; WIDTH: 100%; =
+WHITE-SPACE: nowrap" readonly=3D"true" id=3D"_0_5_0_1_my:field8" =
+server_control=3D"no" schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=E7=AC=94=E8=AE=B0=E6=9C=AC=E7=94=B5=E8=84=91=
+                                                                         =
+                 </span></td><td><span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"-1" xd:CtrlId=3D"CTRL10" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:field9" =
+xd:disableEditing=3D"yes" style=3D"HEIGHT: 30px; WIDTH: 100%; =
+WHITE-SPACE: nowrap" readonly=3D"true" id=3D"_0_5_0_2_my:field9" =
+server_control=3D"no" schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=E8=81=94=E6=83=B3</span></td><td><span =
+title=3D"" class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL11" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field10" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_0_3_my:field10" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" contentEditable=3D"false">xx</span></td><td><span =
+title=3D"" class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL12" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field11" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_0_4_my:field11" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" contentEditable=3D"false">=E5=8F=B0        =
+</span></td><td><span title=3D"" class=3D"xdTextBox" hideFocus=3D"1" =
+tabIndex=3D"0" xd:CtrlId=3D"CTRL13" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field12" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_0_5_my:field12" server_control=3D"yes" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></td><td><div><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL54" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field31" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_0_11_my:field31" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></div></td><td><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL14" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field13" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_0_6_my:field13" server_control=3D"yes" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">0</span></td><td><div><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL62" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field32" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_0_13_my:field32" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></div></td><td><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL15" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field14" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_0_7_my:field14" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=E8=81=94=E6=83=B3</span></td><td></td><td><s=
+pan title=3D"" class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL18" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field17" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_0_8_my:field17" server_control=3D"yes" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" contentEditable=3D"false">0</span></td><td><span =
+title=3D"" class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL19" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field18" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_0_9_my:field18" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">0</span></td><td><div><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL61" xd:xctname=3D"PlainText" xd:binding=3D"my:MainID" =
+style=3D"WIDTH: 100%" id=3D"_0_5_0_12_my:MainID" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></div></td></tr><tr =
+style=3D"MIN-HEIGHT: 31px" id=3D"_0_5_1_my:group2"><td><span =
+title=3D"" class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"-1" =
+xd:CtrlId=3D"CTRL7" xd:xctname=3D"PlainText" xd:binding=3D"my:xuhao" =
+xd:disableEditing=3D"yes" style=3D"FONT-SIZE: x-small; HEIGHT: 30px; =
+WIDTH: 100%; WHITE-SPACE: nowrap" readonly=3D"true" =
+id=3D"_0_5_1_0_my:xuhao" server_control=3D"yes" schema_type=3D"string" =
+schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" logic_tags=3D"R" =
+rows=3D"1" default_rows=3D"1" contentEditable=3D"false">NB001          =
+     </span></td><td><span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"-1" xd:CtrlId=3D"CTRL9" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:field8" =
+xd:disableEditing=3D"yes" style=3D"HEIGHT: 30px; WIDTH: 100%; =
+WHITE-SPACE: nowrap" readonly=3D"true" id=3D"_0_5_1_1_my:field8" =
+server_control=3D"no" schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" contentEditable=3D"false">ThinkPad T61 8889CG5      =
+                                                                       =
+   </span></td><td><span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"-1" xd:CtrlId=3D"CTRL10" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:field9" =
+xd:disableEditing=3D"yes" style=3D"HEIGHT: 30px; WIDTH: 100%; =
+WHITE-SPACE: nowrap" readonly=3D"true" id=3D"_0_5_1_2_my:field9" =
+server_control=3D"no" schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></td><td><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL11" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field10" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_1_3_my:field10" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=E5=A4=84=E7=90=86=E5=99=A8:Intel Core2 =
+Duo(Merom) =
+T7250(2.0G)/=E5=86=85=E5=AD=98=E5=AE=B9=E9=87=8F:1024M/=E7=A1=AC=E7=9B=98=
+=E5=AE=B9=E9=87=8F:120G/=E5=85=89=E9=A9=B1=E7=B1=BB=E5=9E=8B:=E5=86=85=E7=BD=AE=
+,Combo/=E5=B1=8F=E5=B9=95=E5=B0=BA=E5=AF=B8:14.1=E5=AF=B8/=E6=98=BE=E7=A4=BA=
+=E5=B1=8F=E7=B1=BB=E5=9E=8B:XGA/=E6=98=BE=E7=A4=BA=E8=8A=AF=E7=89=87:=E7=8B=AC=
+=E7=AB=8B,NVIDIA Quadro NVS 140M =
+/=E9=87=8D=E9=87=8F:=E7=BA=A62.4Kg/=E6=93=8D=E4=BD=9C=E7=B3=BB=E7=BB=9F=
+:Windows XP Professional</span></td><td><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL12" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field11" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_1_4_my:field11" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" contentEditable=3D"false">=E5=8F=B0        =
+</span></td><td><span title=3D"" class=3D"xdTextBox" hideFocus=3D"1" =
+tabIndex=3D"0" xd:CtrlId=3D"CTRL13" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field12" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_1_5_my:field12" server_control=3D"yes" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></td><td><div><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL54" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field31" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_1_11_my:field31" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></div></td><td><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL14" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field13" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_1_6_my:field13" server_control=3D"yes" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">0</span></td><td><div><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL62" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field32" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_1_13_my:field32" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></div></td><td><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL15" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field14" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_1_7_my:field14" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></td><td></td><td><span =
+title=3D"" class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL18" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field17" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_1_8_my:field17" server_control=3D"yes" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" contentEditable=3D"false">0</span></td><td><span =
+title=3D"" class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL19" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:field18" style=3D"HEIGHT: 30px; WIDTH: 100%" =
+id=3D"_0_5_1_9_my:field18" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">0</span></td><td><div><span title=3D"" =
+class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL61" xd:xctname=3D"PlainText" xd:binding=3D"my:MainID" =
+style=3D"WIDTH: 100%" id=3D"_0_5_1_12_my:MainID" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></div></td></tr></tbody></table>=
+</div><div>=E7=94=B3=E8=AF=B7=E4=BA=BA=E7=AD=BE=E5=90=8D=EF=BC=9A<span =
+title=3D"" class=3D"xdTextBox xdBehavior_Formatting" hideFocus=3D"1" =
+contentEditable=3D"false" tabIndex=3D"0" xd:CtrlId=3D"CTRL33" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:no" xd:boundProp=3D"xd:num" =
+xd:datafmt=3D"&quot;number&quot;,&quot;numDigits:0;negativeOrder:1;&quo=
+t;" style=3D"HEIGHT: 17px; WIDTH: 1px" id=3D"_0_9_my:no" =
+server_control=3D"yes" schema_type=3D"integer" =
+schema_nillable=3D"true" xd:num=3D"2" rows=3D"1" =
+default_rows=3D"1">2</span><span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"0" xd:CtrlId=3D"CTRL35" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:shengqingrenqianming" =
+style=3D"HEIGHT: 30px; WIDTH: 117px" =
+id=3D"_0_10_my:shengqingrenqianming" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">JackZhong</span>=E3=80=80=E3=80=80=E6=97=A5=E6=9C=9F=
+=EF=BC=9A <span title=3D"" class=3D"xdTextBox" hideFocus=3D"1" =
+tabIndex=3D"0" xd:CtrlId=3D"CTRL55" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:riqi1" style=3D"HEIGHT: 30px; WIDTH: 129px" =
+id=3D"_0_24_my:riqi1" server_control=3D"no" schema_type=3D"string" =
+schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">2020/12/09</span>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 <span =
+style=3D"font-family:Verdana"><font face=3D"Wingdings" =
+style=3D"direction:ltr;font-size:medium;font-family:Wingdings">=C2=A8</=
+font></span>=E3=80=80<strong><font =
+color=3D"#ff0000">=E7=94=B3=E8=AF=B7=E4=BA=BA=E6=98=AF=E5=90=A6=E4=B8=BA=
+=E5=89=AF=E6=80=BB</font></strong></div></td></tr><tr =
+style=3D"MIN-HEIGHT: 119px"><td style=3D"BORDER-TOP: #000000 1pt =
+solid; BORDER-RIGHT: #000000 1pt solid; BORDER-BOTTOM: #000000 1pt =
+solid; BORDER-LEFT: #000000 1pt solid"><div><font =
+face=3D"=E5=AE=8B=E4=BD=93">=E9=83=A8=E9=97=A8=E7=BB=8F=E7=90=86=E6=84=8F=
+=E8=A7=81=EF=BC=9A<span style=3D"font-family:Verdana"><font =
+face=3D"Wingdings" =
+style=3D"direction:ltr;font-size:medium;font-family:Wingdings">=C2=A8</=
+font></span>=E5=90=8C=E6=84=8F=E3=80=80=E3=80=80<span =
+style=3D"font-family:Verdana"><font face=3D"Wingdings" =
+style=3D"direction:ltr;font-size:medium;font-family:Wingdings">=C2=A8</=
+font></span> =E4=B8=8D=E5=90=8C=E6=84=8F</font></div><div><span =
+title=3D"" class=3D"xdRichTextBox" hideFocus=3D"1" =
+contentEditable=3D"false" tabIndex=3D"0" xd:CtrlId=3D"CTRL40" =
+xd:xctname=3D"RichText" xd:binding=3D"my:bumenjinliyijian" =
+style=3D"HEIGHT: 40px; WIDTH: 549px; WHITE-SPACE: normal;OVERFLOW-Y: =
+visible;" id=3D"_0_14_my:bumenjinliyijian" server_control=3D"no" =
+schema_type=3D"any" schema_nillable=3D"true" =
+xd:datafmt=3D"&quot;any&quot;,&quot;&quot;" rows=3D"3" =
+default_rows=3D"3">=C2=A0</span>=E3=80=80=E9=83=A8=E9=97=A8=E7=BB=8F=E7=90=86=
+=E7=AD=BE=E5=90=8D=EF=BC=9A<span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"0" xd:CtrlId=3D"CTRL41" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:bumenjinliqianming" =
+style=3D"HEIGHT: 31px; WIDTH: 101px" =
+id=3D"_0_15_my:bumenjinliqianming" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span>=E3=80=80=E6=97=A5=E6=9C=9F=EF=BC=9A=
+ <span title=3D"" class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL56" xd:xctname=3D"PlainText" xd:binding=3D"my:riqi2" =
+style=3D"HEIGHT: 30px; WIDTH: 144px" id=3D"_0_25_my:riqi2" =
+server_control=3D"no" schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></div><div>=E5=B7=A5=E8=89=BA=E5=B8=88=
+=E6=A0=87=E5=AE=A1=E5=8F=8A=E6=A0=A1=E5=AF=B9=EF=BC=9A<span =
+style=3D"font-family:Verdana"><font face=3D"Wingdings" =
+style=3D"direction:ltr;font-size:medium;font-family:Wingdings">=C2=A8</=
+font></span>=E5=90=8C=E6=84=8F=C2=A0=C2=A0 =C2=A0<span =
+style=3D"font-family:Verdana"><font face=3D"Wingdings" =
+style=3D"direction:ltr;font-size:medium;font-family:Wingdings">=C2=A8</=
+font></span> =E4=B8=8D=E5=90=8C=E6=84=8F</div><div><span title=3D"" =
+class=3D"xdRichTextBox" hideFocus=3D"1" contentEditable=3D"false" =
+tabIndex=3D"0" xd:CtrlId=3D"CTRL65" xd:xctname=3D"RichText" =
+xd:binding=3D"my:gongyishiyijian" style=3D"HEIGHT: 34px; WIDTH: 541px; =
+WHITE-SPACE: normal;OVERFLOW-Y: visible;" =
+id=3D"_0_31_my:gongyishiyijian" server_control=3D"no" =
+schema_type=3D"any" schema_nillable=3D"true" =
+xd:datafmt=3D"&quot;any&quot;,&quot;&quot;" rows=3D"3" =
+default_rows=3D"3">=C2=A0</span>=C2=A0=C2=A0=C2=A0=E5=B7=A5=E8=89=BA=E5=B8=88=
+=E7=AD=BE=E5=90=8D=EF=BC=9A <span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"0" xd:CtrlId=3D"CTRL66" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:gongyishiqianming" =
+style=3D"HEIGHT: 31px; WIDTH: 98px" id=3D"_0_32_my:gongyishiqianming" =
+server_control=3D"no" schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" contentEditable=3D"false">=C2=A0</span>=C2=A0 =
+=E6=97=A5=E6=9C=9F=EF=BC=9A<span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"0" xd:CtrlId=3D"CTRL67" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:riqi4" style=3D"HEIGHT: =
+31px; WIDTH: 150px" id=3D"_0_33_my:riqi4" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></div><div>=E9=A1=B9=E7=9B=AE=E8=B4=9F=
+=E8=B4=A3=E4=BA=BA=E5=AE=A1=E6=A0=B8=EF=BC=9A<span =
+style=3D"font-family:Verdana"><font face=3D"Wingdings" =
+style=3D"direction:ltr;font-size:medium;font-family:Wingdings">=C2=A8</=
+font></span> =E5=90=8C=E6=84=8F=C2=A0=C2=A0 =C2=A0<span =
+style=3D"font-family:Verdana"><font face=3D"Wingdings" =
+style=3D"direction:ltr;font-size:medium;font-family:Wingdings">=C2=A8</=
+font></span> =E4=B8=8D=E5=90=8C=E6=84=8F</div><div><span title=3D"" =
+class=3D"xdRichTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL70" xd:xctname=3D"RichText" xd:binding=3D"my:field40" =
+style=3D"HEIGHT: 27px; WIDTH: 539px;OVERFLOW-Y: visible;" =
+id=3D"_0_36_my:field40" server_control=3D"no" schema_type=3D"any" =
+schema_nillable=3D"true" xd:datafmt=3D"&quot;any&quot;,&quot;&quot;" =
+rows=3D"3" default_rows=3D"3" =
+contentEditable=3D"false">=C2=A0</span>=C2=A0=C2=A0 =
+=E9=A1=B9=E7=9B=AE=E8=B4=9F=E8=B4=A3=E4=BA=BA=E7=AD=BE=E5=90=8D=EF=BC=9A=
+<span title=3D"" class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL71" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:zongshiqianming" style=3D"HEIGHT: 31px; WIDTH: 92px" =
+id=3D"_0_37_my:zongshiqianming" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" contentEditable=3D"false">=C2=A0</span>=C2=A0 =
+=E6=97=A5=E6=9C=9F=EF=BC=9A<span title=3D"" class=3D"xdTextBox" =
+hideFocus=3D"1" tabIndex=3D"0" xd:CtrlId=3D"CTRL72" =
+xd:xctname=3D"PlainText" xd:binding=3D"my:riqi5" style=3D"WIDTH: =
+130px" id=3D"_0_38_my:riqi5" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></div><div>=E6=8A=80=E6=9C=AF=E6=80=BB=
+=E7=9B=91=E6=84=8F=E8=A7=81=EF=BC=9A=E3=80=80<span =
+style=3D"font-family:Verdana"><font face=3D"Wingdings" =
+style=3D"direction:ltr;font-size:medium;font-family:Wingdings">=C2=A8</=
+font></span> =E5=90=8C=E6=84=8F=E3=80=80<span =
+style=3D"font-family:Verdana"><font face=3D"Wingdings" =
+style=3D"direction:ltr;font-size:medium;font-family:Wingdings">=C2=A8</=
+font></span> =E4=B8=8D=E5=90=8C=E6=84=8F</div><div><span title=3D"" =
+class=3D"xdRichTextBox" hideFocus=3D"1" contentEditable=3D"false" =
+tabIndex=3D"0" xd:CtrlId=3D"CTRL45" xd:xctname=3D"RichText" =
+xd:binding=3D"my:fuzongyijian" style=3D"HEIGHT: 32px; WIDTH: 542px; =
+WHITE-SPACE: normal;OVERFLOW-Y: visible;" id=3D"_0_18_my:fuzongyijian" =
+server_control=3D"no" schema_type=3D"any" schema_nillable=3D"true" =
+xd:datafmt=3D"&quot;any&quot;,&quot;&quot;" rows=3D"3" =
+default_rows=3D"3">=C2=A0</span>=C2=A0 =
+=E6=8A=80=E6=9C=AF=E6=80=BB=E7=9B=91=E7=AD=BE=E5=90=8D=EF=BC=9A<span =
+title=3D"" class=3D"xdTextBox" hideFocus=3D"1" tabIndex=3D"0" =
+xd:CtrlId=3D"CTRL46" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:fuzongqianming" style=3D"HEIGHT: 31px; WIDTH: 120px" =
+id=3D"_0_19_my:fuzongqianming" server_control=3D"no" =
+schema_type=3D"string" schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span>=E3=80=80=E3=80=80=E6=97=A5=E6=9C=9F=
+=EF=BC=9A <span title=3D"" class=3D"xdTextBox" hideFocus=3D"1" =
+tabIndex=3D"0" xd:CtrlId=3D"CTRL57" xd:xctname=3D"PlainText" =
+xd:binding=3D"my:riqi3" style=3D"HEIGHT: 30px; WIDTH: 156px" =
+id=3D"_0_26_my:riqi3" server_control=3D"no" schema_type=3D"string" =
+schema_nillable=3D"false" =
+xd:datafmt=3D"&quot;string&quot;,&quot;&quot;" rows=3D"1" =
+default_rows=3D"1" =
+contentEditable=3D"false">=C2=A0</span></div></td></tr></tbody></table>=
+</div></div></div><div id=3D"xdoc_form" style=3D"display:none;"><div =
+id=3D"xdoc_unauth" style=3D"display:none;"></div><input =
+type=3D"hidden" id=3D"xdoc_param_action" name=3D"xdoc_param_action" =
+value=3D"xdoc.aspx" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_param_xsn_uri" name=3D"xdoc_param_xsn_uri" =
+value=3D"C:\Users\JackZ\Desktop\130424=E6=95=B4=E6=9C=BA=E8=A3=85=E9=85=8D=
+=E6=B8=85=E5=8D=95=E9=87=87=E8=B4=AD=E6=A3=80=E9=AA=8C=E5=85=A5=E5=BA=93=E5=8D=95=
+.xsn" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_command" name=3D"xdoc_param_command" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_rebuild_command" =
+name=3D"xdoc_param_rebuild_command" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_xml_to_edit_name" =
+name=3D"xdoc_param_xml_to_edit_name" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_xml_to_edit_action" =
+name=3D"xdoc_param_xml_to_edit_action" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_xtextlist_item" =
+name=3D"xdoc_param_xtextlist_item" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_context_id_array" =
+name=3D"xdoc_param_context_id_array" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_update_id" =
+name=3D"xdoc_param_update_id" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_param_update_format" name=3D"xdoc_param_update_format" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_xml_value_formatted" =
+name=3D"xdoc_param_xml_value_formatted" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_auxdom" name=3D"xdoc_param_auxdom" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_button" name=3D"xdoc_param_button" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_button_source" =
+name=3D"xdoc_param_button_source" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_param_form_id" name=3D"xdoc_param_form_id" =
+value=3D"6bf11720-34ba-41d2-9117-bc6fb937d38a" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_ajax" name=3D"xdoc_param_ajax" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_readonly" =
+name=3D"xdoc_param_readonly" value=3D"False" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_param_old_value" name=3D"xdoc_param_old_value" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_view_id" name=3D"xdoc_param_view_id" =
+value=3D"0" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_pi_mso-infoPathSolution" =
+name=3D"xdoc_pi_mso-infoPathSolution" =
+value=3D"name=3D&quot;urn:schemas-microsoft-com:office:infopath:130424d=
+j5-5E7-0-UCE:-myXSD-2013-04-24T03-32-51&quot; =
+href=3D&quot;C:\Users\JackZ\Desktop\130424=E6=95=B4=E6=9C=BA=E8=A3=85=E9=85=8D=
+=E6=B8=85=E5=8D=95=E9=87=87=E8=B4=AD=E6=A3=80=E9=AA=8C=E5=85=A5=E5=BA=93=E5=8D=95=
+.xsn&quot; solutionVersion=3D&quot;1.0.0.55&quot; =
+productVersion=3D&quot;12.0.0&quot; PIVersion=3D&quot;1.0.0.0&quot; " =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_pi_mso-application" =
+name=3D"xdoc_pi_mso-application" =
+value=3D"progid=3D&quot;InfoPath.Document&quot; =
+versionProgid=3D&quot;InfoPath.Document.2&quot;" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_my:myFields" name=3D"xdoc_0_my:myFields" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_my:myFields@xmlns:xsi" =
+name=3D"xdoc_0_my:myFields@xmlns:xsi" =
+value=3D"http://www.w3.org/2001/XMLSchema-instance" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_my:myFields@xmlns:xd" =
+name=3D"xdoc_0_my:myFields@xmlns:xd" =
+value=3D"http://schemas.microsoft.com/office/infopath/2003" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_my:myFields@xmlns:my" =
+name=3D"xdoc_0_my:myFields@xmlns:my" =
+value=3D"http://schemas.microsoft.com/office/infopath/2003/myXSD/2013-0=
+4-24T03:32:51" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_my:myFields@xmlns:xhtml" =
+name=3D"xdoc_0_my:myFields@xmlns:xhtml" =
+value=3D"http://www.w3.org/1999/xhtml" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_my:myFields@MSPathId" =
+name=3D"xdoc_0_my:myFields@MSPathId" value=3D"_0_my:myFields" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_0_my:xiangmuhao" =
+name=3D"xdoc_0_0_my:xiangmuhao" value=3D"153" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_0_my:xiangmuhao@MSPathId" =
+name=3D"xdoc_0_0_my:xiangmuhao@MSPathId" value=3D"_0_0_my:xiangmuhao" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_1_my:changpingming" =
+name=3D"xdoc_0_1_my:changpingming" value=3D"THINKPAD X10" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_1_my:changpingming@MSPathId" =
+name=3D"xdoc_0_1_my:changpingming@MSPathId" =
+value=3D"_0_1_my:changpingming" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_2_my:xinghao" name=3D"xdoc_0_2_my:xinghao" value=3D"X1-" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_2_my:xinghao@MSPathId" =
+name=3D"xdoc_0_2_my:xinghao@MSPathId" value=3D"_0_2_my:xinghao" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_3_my:shuliang" =
+name=3D"xdoc_0_3_my:shuliang" value=3D"10" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_3_my:shuliang@MSPathId" =
+name=3D"xdoc_0_3_my:shuliang@MSPathId" value=3D"_0_3_my:shuliang" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_4_my:danwei" name=3D"xdoc_0_4_my:danwei" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_4_my:danwei@MSPathId" =
+name=3D"xdoc_0_4_my:danwei@MSPathId" value=3D"_0_4_my:danwei" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_my:group1" name=3D"xdoc_0_5_my:group1" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_my:group1@MSPathId" =
+name=3D"xdoc_0_5_my:group1@MSPathId" value=3D"_0_5_my:group1" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_my:group2" =
+name=3D"xdoc_0_5_0_my:group2" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_my:group2@MSPathId" =
+name=3D"xdoc_0_5_0_my:group2@MSPathId" value=3D"_0_5_0_my:group2" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_0_my:xuhao" =
+name=3D"xdoc_0_5_0_0_my:xuhao" value=3D"A0002               " =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_0_my:xuhao@MSPathId" =
+name=3D"xdoc_0_5_0_0_my:xuhao@MSPathId" value=3D"_0_5_0_0_my:xuhao" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_1_my:field8" =
+name=3D"xdoc_0_5_0_1_my:field8" =
+value=3D"=E7=AC=94=E8=AE=B0=E6=9C=AC=E7=94=B5=E8=84=91                 =
+                                                                       =
+  " contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_1_my:field8@MSPathId" =
+name=3D"xdoc_0_5_0_1_my:field8@MSPathId" value=3D"_0_5_0_1_my:field8" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_2_my:field9" =
+name=3D"xdoc_0_5_0_2_my:field9" value=3D"=E8=81=94=E6=83=B3" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_2_my:field9@MSPathId" =
+name=3D"xdoc_0_5_0_2_my:field9@MSPathId" value=3D"_0_5_0_2_my:field9" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_3_my:field10" =
+name=3D"xdoc_0_5_0_3_my:field10" value=3D"xx" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_3_my:field10@MSPathId" =
+name=3D"xdoc_0_5_0_3_my:field10@MSPathId" =
+value=3D"_0_5_0_3_my:field10" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_4_my:field11" name=3D"xdoc_0_5_0_4_my:field11" =
+value=3D"=E5=8F=B0        " contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_4_my:field11@MSPathId" =
+name=3D"xdoc_0_5_0_4_my:field11@MSPathId" =
+value=3D"_0_5_0_4_my:field11" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_5_my:field12" name=3D"xdoc_0_5_0_5_my:field12" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_5_my:field12@MSPathId" =
+name=3D"xdoc_0_5_0_5_my:field12@MSPathId" =
+value=3D"_0_5_0_5_my:field12" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_6_my:field13" name=3D"xdoc_0_5_0_6_my:field13" =
+value=3D"0" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_6_my:field13@MSPathId" =
+name=3D"xdoc_0_5_0_6_my:field13@MSPathId" =
+value=3D"_0_5_0_6_my:field13" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_7_my:field14" name=3D"xdoc_0_5_0_7_my:field14" =
+value=3D"=E8=81=94=E6=83=B3" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_7_my:field14@MSPathId" =
+name=3D"xdoc_0_5_0_7_my:field14@MSPathId" =
+value=3D"_0_5_0_7_my:field14" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_8_my:field17" name=3D"xdoc_0_5_0_8_my:field17" =
+value=3D"0" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_8_my:field17@MSPathId" =
+name=3D"xdoc_0_5_0_8_my:field17@MSPathId" =
+value=3D"_0_5_0_8_my:field17" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_9_my:field18" name=3D"xdoc_0_5_0_9_my:field18" =
+value=3D"0" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_9_my:field18@MSPathId" =
+name=3D"xdoc_0_5_0_9_my:field18@MSPathId" =
+value=3D"_0_5_0_9_my:field18" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_10_my:field29" name=3D"xdoc_0_5_0_10_my:field29" =
+value=3D"=E9=87=87=E8=B4=AD=E4=BB=B6" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_10_my:field29@MSPathId" =
+name=3D"xdoc_0_5_0_10_my:field29@MSPathId" =
+value=3D"_0_5_0_10_my:field29" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_11_my:field31" name=3D"xdoc_0_5_0_11_my:field31" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_11_my:field31@MSPathId" =
+name=3D"xdoc_0_5_0_11_my:field31@MSPathId" =
+value=3D"_0_5_0_11_my:field31" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_12_my:MainID" name=3D"xdoc_0_5_0_12_my:MainID" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_12_my:MainID@MSPathId" =
+name=3D"xdoc_0_5_0_12_my:MainID@MSPathId" =
+value=3D"_0_5_0_12_my:MainID" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_0_13_my:field32" name=3D"xdoc_0_5_0_13_my:field32" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_0_13_my:field32@MSPathId" =
+name=3D"xdoc_0_5_0_13_my:field32@MSPathId" =
+value=3D"_0_5_0_13_my:field32" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_my:group2" name=3D"xdoc_0_5_1_my:group2" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_my:group2@MSPathId" =
+name=3D"xdoc_0_5_1_my:group2@MSPathId" value=3D"_0_5_1_my:group2" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_0_my:xuhao" =
+name=3D"xdoc_0_5_1_0_my:xuhao" value=3D"NB001               " =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_0_my:xuhao@MSPathId" =
+name=3D"xdoc_0_5_1_0_my:xuhao@MSPathId" value=3D"_0_5_1_0_my:xuhao" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_1_my:field8" =
+name=3D"xdoc_0_5_1_1_my:field8" value=3D"ThinkPad T61 8889CG5          =
+                                                                      =
+" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_1_my:field8@MSPathId" =
+name=3D"xdoc_0_5_1_1_my:field8@MSPathId" value=3D"_0_5_1_1_my:field8" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_2_my:field9" =
+name=3D"xdoc_0_5_1_2_my:field9" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_2_my:field9@MSPathId" =
+name=3D"xdoc_0_5_1_2_my:field9@MSPathId" value=3D"_0_5_1_2_my:field9" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_3_my:field10" =
+name=3D"xdoc_0_5_1_3_my:field10" =
+value=3D"=E5=A4=84=E7=90=86=E5=99=A8:Intel Core2 Duo(Merom) =
+T7250(2.0G)/=E5=86=85=E5=AD=98=E5=AE=B9=E9=87=8F:1024M/=E7=A1=AC=E7=9B=98=
+=E5=AE=B9=E9=87=8F:120G/=E5=85=89=E9=A9=B1=E7=B1=BB=E5=9E=8B:=E5=86=85=E7=BD=AE=
+,Combo/=E5=B1=8F=E5=B9=95=E5=B0=BA=E5=AF=B8:14.1=E5=AF=B8/=E6=98=BE=E7=A4=BA=
+=E5=B1=8F=E7=B1=BB=E5=9E=8B:XGA/=E6=98=BE=E7=A4=BA=E8=8A=AF=E7=89=87:=E7=8B=AC=
+=E7=AB=8B,NVIDIA Quadro NVS 140M =
+/=E9=87=8D=E9=87=8F:=E7=BA=A62.4Kg/=E6=93=8D=E4=BD=9C=E7=B3=BB=E7=BB=9F=
+:Windows XP Professional" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_3_my:field10@MSPathId" =
+name=3D"xdoc_0_5_1_3_my:field10@MSPathId" =
+value=3D"_0_5_1_3_my:field10" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_4_my:field11" name=3D"xdoc_0_5_1_4_my:field11" =
+value=3D"=E5=8F=B0        " contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_4_my:field11@MSPathId" =
+name=3D"xdoc_0_5_1_4_my:field11@MSPathId" =
+value=3D"_0_5_1_4_my:field11" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_5_my:field12" name=3D"xdoc_0_5_1_5_my:field12" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_5_my:field12@MSPathId" =
+name=3D"xdoc_0_5_1_5_my:field12@MSPathId" =
+value=3D"_0_5_1_5_my:field12" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_6_my:field13" name=3D"xdoc_0_5_1_6_my:field13" =
+value=3D"0" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_6_my:field13@MSPathId" =
+name=3D"xdoc_0_5_1_6_my:field13@MSPathId" =
+value=3D"_0_5_1_6_my:field13" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_7_my:field14" name=3D"xdoc_0_5_1_7_my:field14" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_7_my:field14@MSPathId" =
+name=3D"xdoc_0_5_1_7_my:field14@MSPathId" =
+value=3D"_0_5_1_7_my:field14" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_8_my:field17" name=3D"xdoc_0_5_1_8_my:field17" =
+value=3D"0" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_8_my:field17@MSPathId" =
+name=3D"xdoc_0_5_1_8_my:field17@MSPathId" =
+value=3D"_0_5_1_8_my:field17" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_9_my:field18" name=3D"xdoc_0_5_1_9_my:field18" =
+value=3D"0" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_9_my:field18@MSPathId" =
+name=3D"xdoc_0_5_1_9_my:field18@MSPathId" =
+value=3D"_0_5_1_9_my:field18" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_10_my:field29" name=3D"xdoc_0_5_1_10_my:field29" =
+value=3D"=E9=87=87=E8=B4=AD=E4=BB=B6" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_10_my:field29@MSPathId" =
+name=3D"xdoc_0_5_1_10_my:field29@MSPathId" =
+value=3D"_0_5_1_10_my:field29" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_11_my:field31" name=3D"xdoc_0_5_1_11_my:field31" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_11_my:field31@MSPathId" =
+name=3D"xdoc_0_5_1_11_my:field31@MSPathId" =
+value=3D"_0_5_1_11_my:field31" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_12_my:MainID" name=3D"xdoc_0_5_1_12_my:MainID" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_12_my:MainID@MSPathId" =
+name=3D"xdoc_0_5_1_12_my:MainID@MSPathId" =
+value=3D"_0_5_1_12_my:MainID" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_5_1_13_my:field32" name=3D"xdoc_0_5_1_13_my:field32" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_5_1_13_my:field32@MSPathId" =
+name=3D"xdoc_0_5_1_13_my:field32@MSPathId" =
+value=3D"_0_5_1_13_my:field32" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_6_my:group5" name=3D"xdoc_0_6_my:group5" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_6_my:group5@MSPathId" =
+name=3D"xdoc_0_6_my:group5@MSPathId" value=3D"_0_6_my:group5" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_6_0_my:group6" =
+name=3D"xdoc_0_6_0_my:group6" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_6_0_my:group6@MSPathId" =
+name=3D"xdoc_0_6_0_my:group6@MSPathId" value=3D"_0_6_0_my:group6" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_6_0_0_my:field22" =
+name=3D"xdoc_0_6_0_0_my:field22" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_6_0_0_my:field22@MSPathId" =
+name=3D"xdoc_0_6_0_0_my:field22@MSPathId" =
+value=3D"_0_6_0_0_my:field22" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_6_0_1_my:field23" name=3D"xdoc_0_6_0_1_my:field23" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_6_0_1_my:field23@MSPathId" =
+name=3D"xdoc_0_6_0_1_my:field23@MSPathId" =
+value=3D"_0_6_0_1_my:field23" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_6_0_2_my:field24" name=3D"xdoc_0_6_0_2_my:field24" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_6_0_2_my:field24@MSPathId" =
+name=3D"xdoc_0_6_0_2_my:field24@MSPathId" =
+value=3D"_0_6_0_2_my:field24" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_7_my:group7" name=3D"xdoc_0_7_my:group7" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_7_my:group7@MSPathId" =
+name=3D"xdoc_0_7_my:group7@MSPathId" value=3D"_0_7_my:group7" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_7_0_my:group8" =
+name=3D"xdoc_0_7_0_my:group8" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_7_0_my:group8@MSPathId" =
+name=3D"xdoc_0_7_0_my:group8@MSPathId" value=3D"_0_7_0_my:group8" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_7_0_0_my:field25" =
+name=3D"xdoc_0_7_0_0_my:field25" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_7_0_0_my:field25@MSPathId" =
+name=3D"xdoc_0_7_0_0_my:field25@MSPathId" =
+value=3D"_0_7_0_0_my:field25" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_7_0_1_my:field26" name=3D"xdoc_0_7_0_1_my:field26" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_7_0_1_my:field26@MSPathId" =
+name=3D"xdoc_0_7_0_1_my:field26@MSPathId" =
+value=3D"_0_7_0_1_my:field26" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_8_my:group9" name=3D"xdoc_0_8_my:group9" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_8_my:group9@MSPathId" =
+name=3D"xdoc_0_8_my:group9@MSPathId" value=3D"_0_8_my:group9" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_8_0_my:group10" =
+name=3D"xdoc_0_8_0_my:group10" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_8_0_my:group10@MSPathId" =
+name=3D"xdoc_0_8_0_my:group10@MSPathId" value=3D"_0_8_0_my:group10" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_8_0_0_my:field27" =
+name=3D"xdoc_0_8_0_0_my:field27" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_8_0_0_my:field27@MSPathId" =
+name=3D"xdoc_0_8_0_0_my:field27@MSPathId" =
+value=3D"_0_8_0_0_my:field27" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_8_0_1_my:field28" name=3D"xdoc_0_8_0_1_my:field28" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_8_0_1_my:field28@MSPathId" =
+name=3D"xdoc_0_8_0_1_my:field28@MSPathId" =
+value=3D"_0_8_0_1_my:field28" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_9_my:no" name=3D"xdoc_0_9_my:no" value=3D"2" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_9_my:no@MSPathId" =
+name=3D"xdoc_0_9_my:no@MSPathId" value=3D"_0_9_my:no" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_10_my:shengqingrenqianming" =
+name=3D"xdoc_0_10_my:shengqingrenqianming" value=3D"JackZhong" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_10_my:shengqingrenqianming@MSPathId" =
+name=3D"xdoc_0_10_my:shengqingrenqianming@MSPathId" =
+value=3D"_0_10_my:shengqingrenqianming" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_11_my:shifouweifuzong" =
+name=3D"xdoc_0_11_my:shifouweifuzong" value=3D"false" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_11_my:shifouweifuzong@MSPathId" =
+name=3D"xdoc_0_11_my:shifouweifuzong@MSPathId" =
+value=3D"_0_11_my:shifouweifuzong" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_12_my:tongyi1" name=3D"xdoc_0_12_my:tongyi1" =
+value=3D"false" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_12_my:tongyi1@MSPathId" =
+name=3D"xdoc_0_12_my:tongyi1@MSPathId" value=3D"_0_12_my:tongyi1" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_13_my:butongyi1" =
+name=3D"xdoc_0_13_my:butongyi1" value=3D"false" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_13_my:butongyi1@MSPathId" =
+name=3D"xdoc_0_13_my:butongyi1@MSPathId" value=3D"_0_13_my:butongyi1" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_14_my:bumenjinliyijian" =
+name=3D"xdoc_0_14_my:bumenjinliyijian" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_14_my:bumenjinliyijian@MSPathId" =
+name=3D"xdoc_0_14_my:bumenjinliyijian@MSPathId" =
+value=3D"_0_14_my:bumenjinliyijian" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_15_my:bumenjinliqianming" =
+name=3D"xdoc_0_15_my:bumenjinliqianming" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_15_my:bumenjinliqianming@MSPathId" =
+name=3D"xdoc_0_15_my:bumenjinliqianming@MSPathId" =
+value=3D"_0_15_my:bumenjinliqianming" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_16_my:tongyi2" name=3D"xdoc_0_16_my:tongyi2" =
+value=3D"false" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_16_my:tongyi2@MSPathId" =
+name=3D"xdoc_0_16_my:tongyi2@MSPathId" value=3D"_0_16_my:tongyi2" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_17_my:butongyi2" =
+name=3D"xdoc_0_17_my:butongyi2" value=3D"false" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_17_my:butongyi2@MSPathId" =
+name=3D"xdoc_0_17_my:butongyi2@MSPathId" value=3D"_0_17_my:butongyi2" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_18_my:fuzongyijian" =
+name=3D"xdoc_0_18_my:fuzongyijian" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_18_my:fuzongyijian@MSPathId" =
+name=3D"xdoc_0_18_my:fuzongyijian@MSPathId" =
+value=3D"_0_18_my:fuzongyijian" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_19_my:fuzongqianming" =
+name=3D"xdoc_0_19_my:fuzongqianming" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_19_my:fuzongqianming@MSPathId" =
+name=3D"xdoc_0_19_my:fuzongqianming@MSPathId" =
+value=3D"_0_19_my:fuzongqianming" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_20_my:buxuyao" name=3D"xdoc_0_20_my:buxuyao" =
+value=3D"false" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_20_my:buxuyao@MSPathId" =
+name=3D"xdoc_0_20_my:buxuyao@MSPathId" value=3D"_0_20_my:buxuyao" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_21_my:xuyao" name=3D"xdoc_0_21_my:xuyao" =
+value=3D"false" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_21_my:xuyao@MSPathId" =
+name=3D"xdoc_0_21_my:xuyao@MSPathId" value=3D"_0_21_my:xuyao" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_22_my:weiquanbudaowei" =
+name=3D"xdoc_0_22_my:weiquanbudaowei" value=3D"false" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_22_my:weiquanbudaowei@MSPathId" =
+name=3D"xdoc_0_22_my:weiquanbudaowei@MSPathId" =
+value=3D"_0_22_my:weiquanbudaowei" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_23_my:yiquanbudaowei" =
+name=3D"xdoc_0_23_my:yiquanbudaowei" value=3D"false" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_23_my:yiquanbudaowei@MSPathId" =
+name=3D"xdoc_0_23_my:yiquanbudaowei@MSPathId" =
+value=3D"_0_23_my:yiquanbudaowei" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_24_my:riqi1" name=3D"xdoc_0_24_my:riqi1" =
+value=3D"2020/12/09" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_24_my:riqi1@MSPathId" =
+name=3D"xdoc_0_24_my:riqi1@MSPathId" value=3D"_0_24_my:riqi1" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_25_my:riqi2" name=3D"xdoc_0_25_my:riqi2" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_25_my:riqi2@MSPathId" =
+name=3D"xdoc_0_25_my:riqi2@MSPathId" value=3D"_0_25_my:riqi2" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_26_my:riqi3" name=3D"xdoc_0_26_my:riqi3" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_26_my:riqi3@MSPathId" =
+name=3D"xdoc_0_26_my:riqi3@MSPathId" value=3D"_0_26_my:riqi3" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_27_my:ID" name=3D"xdoc_0_27_my:ID" =
+value=3D"" contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_27_my:ID@MSPathId" =
+name=3D"xdoc_0_27_my:ID@MSPathId" value=3D"_0_27_my:ID" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_28_my:WorkFlowWLName" =
+name=3D"xdoc_0_28_my:WorkFlowWLName" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_28_my:WorkFlowWLName@MSPathId" =
+name=3D"xdoc_0_28_my:WorkFlowWLName@MSPathId" =
+value=3D"_0_28_my:WorkFlowWLName" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_29_my:tongyi3" name=3D"xdoc_0_29_my:tongyi3" =
+value=3D"false" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_29_my:tongyi3@MSPathId" =
+name=3D"xdoc_0_29_my:tongyi3@MSPathId" value=3D"_0_29_my:tongyi3" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_30_my:butongyi3" =
+name=3D"xdoc_0_30_my:butongyi3" value=3D"false" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_30_my:butongyi3@MSPathId" =
+name=3D"xdoc_0_30_my:butongyi3@MSPathId" value=3D"_0_30_my:butongyi3" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_31_my:gongyishiyijian" =
+name=3D"xdoc_0_31_my:gongyishiyijian" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_31_my:gongyishiyijian@MSPathId" =
+name=3D"xdoc_0_31_my:gongyishiyijian@MSPathId" =
+value=3D"_0_31_my:gongyishiyijian" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_32_my:gongyishiqianming" =
+name=3D"xdoc_0_32_my:gongyishiqianming" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_32_my:gongyishiqianming@MSPathId" =
+name=3D"xdoc_0_32_my:gongyishiqianming@MSPathId" =
+value=3D"_0_32_my:gongyishiqianming" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_33_my:riqi4" name=3D"xdoc_0_33_my:riqi4" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_33_my:riqi4@MSPathId" =
+name=3D"xdoc_0_33_my:riqi4@MSPathId" value=3D"_0_33_my:riqi4" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_34_my:tongyi4" =
+name=3D"xdoc_0_34_my:tongyi4" value=3D"false" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_34_my:tongyi4@MSPathId" =
+name=3D"xdoc_0_34_my:tongyi4@MSPathId" value=3D"_0_34_my:tongyi4" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_35_my:butongyi4" =
+name=3D"xdoc_0_35_my:butongyi4" value=3D"false" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_35_my:butongyi4@MSPathId" =
+name=3D"xdoc_0_35_my:butongyi4@MSPathId" value=3D"_0_35_my:butongyi4" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_36_my:field40" =
+name=3D"xdoc_0_36_my:field40" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_36_my:field40@MSPathId" =
+name=3D"xdoc_0_36_my:field40@MSPathId" value=3D"_0_36_my:field40" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_37_my:zongshiqianming" =
+name=3D"xdoc_0_37_my:zongshiqianming" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_37_my:zongshiqianming@MSPathId" =
+name=3D"xdoc_0_37_my:zongshiqianming@MSPathId" =
+value=3D"_0_37_my:zongshiqianming" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_0_38_my:riqi5" name=3D"xdoc_0_38_my:riqi5" value=3D"" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_0_38_my:riqi5@MSPathId" =
+name=3D"xdoc_0_38_my:riqi5@MSPathId" value=3D"_0_38_my:riqi5" =
+contentEditable=3D"false" editable=3D"false"></input><input =
+type=3D"hidden" id=3D"xdoc_param_master_detial" =
+name=3D"xdoc_param_master_detial" value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input><input type=3D"hidden" =
+id=3D"xdoc_param_ajax_bracket" name=3D"xdoc_param_ajax_bracket" =
+value=3D"" contentEditable=3D"false" =
+editable=3D"false"></input></div><div id=3D"xdoc_data" =
+style=3D"display:none;"><div id=3D"xdoc_data_xd_prefix" =
+style=3D"display:none;">xd:</div><div =
+id=3D"xdoc_data_short_date_pattern" =
+style=3D"display:none;">yyyy/M/d</div><div =
+id=3D"xdoc_data_long_date_pattern" =
+style=3D"display:none;">yyyy'=E5=B9=B4'M'=E6=9C=88'd'=E6=97=A5'</div><d=
+iv id=3D"xdoc_data_year_month_pattern" =
+style=3D"display:none;">yyyy'=E5=B9=B4'M'=E6=9C=88'</div><div =
+id=3D"xdoc_data_list_id_array" style=3D"display:none;"></div><div =
+id=3D"xdoc_data_nobreak_id_array" =
+style=3D"display:none;">_0_5_0_2_my:field9;_0_5_1_2_my:field9;_0_5_0_0_=
+my:xuhao;_0_5_1_0_my:xuhao;_0_5_0_1_my:field8;_0_5_1_1_my:field8</div><di=
+v id=3D"xdoc_data_root_element_id" =
+style=3D"display:none;">_0_my:myFields</div><div =
+id=3D"xdoc_data_error" style=3D"display:none;"></div><div =
+id=3D"xdoc_data_menu" style=3D"display:none;" html=3D"&lt;div =
+id=3D&quot;xdoc_menu&quot; =
+oncontextmenu=3D&quot;TakeTopInfoPath_DisableContextMenu(event);&quot;&gt;&l=
+t;table id=3D&quot;xdoc.contextmenu.group0&quot; =
+style=3D&quot;Font-FAMILY:'Tahoma','Verdana','Arail'; FONT-SIZE: =
+9pt;padding:1px 1px 1px 1px;BORDER:1px solid #8A867A; DISPLAY: none; =
+Z-INDEX: 99; LEFT: 100px;POSITION: absolute; TOP: 100px; =
+BACKGROUND-COLOR: #FFFFFF;white-space:nowrap;&quot; =
+xdoc_menu=3D&quot;yes&quot; cellspacing=3D&quot;0&quot; =
+cellpadding=3D&quot;0&quot;&gt;&lt;tr&gt;&lt;td =
+colspan=3D&quot;3&quot; /&gt;&lt;/tr&gt;&lt;tr =
+id=3D&quot;0.menu0&quot; =
+onclick=3D&quot;TakeTopInfoPath_OnMenuClick(event,this);&quot; =
+onmouseover=3D&quot;TakeTopInfoPath_MenuOver(event,this);&quot; =
+onmouseout=3D&quot;TakeTopInfoPath_MenuOut(event,this);&quot; =
+type=3D&quot;item&quot; xmlToEdit=3D&quot;group2_7&quot; =
+component=3D&quot;xCollection&quot; action=3D&quot;insertBefore&quot; =
+style=3D&quot;border:1px solid #FFFFFF;padding:1px 1px 1px =
+1px;DISPLAY: block; CURSOR: default;white-space:nowrap;&quot; =
+xdoc_menu=3D&quot;yes&quot;&gt;&lt;td id=3D&quot;0.check0&quot; =
+style=3D&quot;width:18px;&quot; xdoc_menu=3D&quot;yes&quot; =
+/&gt;&lt;td id=3D&quot;0.text0&quot; =
+style=3D&quot;width:220px;Font-FAMILY:'Tahoma','Verdana','Arail'; =
+FONT-SIZE: 9pt;&quot; =
+xdoc_menu=3D&quot;yes&quot;&gt;=E5=9C=A8=E5=89=8D=E9=9D=A2=E6=8F=92=E5=85=A5=
+ group2&lt;/td&gt;&lt;td id=3D&quot;0.arrow0&quot; =
+style=3D&quot;width:18px;&quot; align=3D&quot;right&quot; =
+xdoc_menu=3D&quot;yes&quot; /&gt;&lt;/tr&gt;&lt;tr =
+id=3D&quot;1.menu0&quot; =
+onclick=3D&quot;TakeTopInfoPath_OnMenuClick(event,this);&quot; =
+onmouseover=3D&quot;TakeTopInfoPath_MenuOver(event,this);&quot; =
+onmouseout=3D&quot;TakeTopInfoPath_MenuOut(event,this);&quot; =
+type=3D&quot;item&quot; xmlToEdit=3D&quot;group2_7&quot; =
+component=3D&quot;xCollection&quot; action=3D&quot;insertAfter&quot; =
+style=3D&quot;border:1px solid #FFFFFF;padding:1px 1px 1px =
+1px;DISPLAY: block; CURSOR: default;white-space:nowrap;&quot; =
+xdoc_menu=3D&quot;yes&quot;&gt;&lt;td id=3D&quot;1.check0&quot; =
+style=3D&quot;width:18px;&quot; xdoc_menu=3D&quot;yes&quot; =
+/&gt;&lt;td id=3D&quot;1.text0&quot; =
+style=3D&quot;width:220px;Font-FAMILY:'Tahoma','Verdana','Arail'; =
+FONT-SIZE: 9pt;&quot; =
+xdoc_menu=3D&quot;yes&quot;&gt;=E5=9C=A8=E5=90=8E=E9=9D=A2=E6=8F=92=E5=85=A5=
+ group2&lt;/td&gt;&lt;td id=3D&quot;1.arrow0&quot; =
+style=3D&quot;width:18px;&quot; align=3D&quot;right&quot; =
+xdoc_menu=3D&quot;yes&quot; /&gt;&lt;/tr&gt;&lt;tr =
+id=3D&quot;2.menu0&quot; =
+onclick=3D&quot;TakeTopInfoPath_OnMenuClick(event,this);&quot; =
+onmouseover=3D&quot;TakeTopInfoPath_MenuOver(event,this);&quot; =
+onmouseout=3D&quot;TakeTopInfoPath_MenuOut(event,this);&quot; =
+type=3D&quot;item&quot; xmlToEdit=3D&quot;group2_7&quot; =
+component=3D&quot;xCollection&quot; action=3D&quot;remove&quot; =
+style=3D&quot;border:1px solid #FFFFFF;padding:1px 1px 1px =
+1px;DISPLAY: block; CURSOR: default;white-space:nowrap;&quot; =
+xdoc_menu=3D&quot;yes&quot;&gt;&lt;td id=3D&quot;2.check0&quot; =
+style=3D&quot;width:18px;&quot; xdoc_menu=3D&quot;yes&quot; =
+/&gt;&lt;td id=3D&quot;2.text0&quot; =
+style=3D&quot;width:220px;Font-FAMILY:'Tahoma','Verdana','Arail'; =
+FONT-SIZE: 9pt;&quot; =
+xdoc_menu=3D&quot;yes&quot;&gt;=E5=88=A0=E9=99=A4 =
+group2&lt;/td&gt;&lt;td id=3D&quot;2.arrow0&quot; =
+style=3D&quot;width:18px;&quot; align=3D&quot;right&quot; =
+xdoc_menu=3D&quot;yes&quot; /&gt;&lt;/tr&gt;&lt;tr =
+id=3D&quot;3.menu0&quot; =
+onclick=3D&quot;TakeTopInfoPath_OnMenuClick(event,this);&quot; =
+onmouseover=3D&quot;TakeTopInfoPath_MenuOver(event,this);&quot; =
+onmouseout=3D&quot;TakeTopInfoPath_MenuOut(event,this);&quot; =
+type=3D&quot;item&quot; xmlToEdit=3D&quot;group2_7&quot; =
+component=3D&quot;xCollection&quot; action=3D&quot;insert&quot; =
+style=3D&quot;border:1px solid #FFFFFF;padding:1px 1px 1px =
+1px;DISPLAY: block; CURSOR: default;white-space:nowrap;&quot; =
+xdoc_menu=3D&quot;yes&quot;&gt;&lt;td id=3D&quot;3.check0&quot; =
+style=3D&quot;width:18px;&quot; xdoc_menu=3D&quot;yes&quot; =
+/&gt;&lt;td id=3D&quot;3.text0&quot; =
+style=3D&quot;width:220px;Font-FAMILY:'Tahoma','Verdana','Arail'; =
+FONT-SIZE: 9pt;&quot; =
+xdoc_menu=3D&quot;yes&quot;&gt;=E6=8F=92=E5=85=A5 =
+group2&lt;/td&gt;&lt;td id=3D&quot;3.arrow0&quot; =
+style=3D&quot;width:18px;&quot; align=3D&quot;right&quot; =
+xdoc_menu=3D&quot;yes&quot; /&gt;&lt;/tr&gt;&lt;tr =
+id=3D&quot;4.menu0&quot; action=3D&quot;none&quot;&gt;&lt;td =
+style=3D&quot;background-image:url('images/msInfopath_separator_left.gi=
+f');height:7px;width:18px;&quot; /&gt;&lt;td =
+style=3D&quot;background-image:url('images/msInfopath_separator_middle.=
+gif');height:7px;width:220px;&quot; /&gt;&lt;td =
+style=3D&quot;background-image:url('images/msInfopath_separator_middle.=
+gif');height:7px;width:18px;&quot; /&gt;&lt;/tr&gt;&lt;tr =
+id=3D&quot;5.menu0&quot; =
+onclick=3D&quot;TakeTopInfoPath_OnMenuClick(event,this);&quot; =
+onmouseover=3D&quot;TakeTopInfoPath_MenuOver(event,this);&quot; =
+onmouseout=3D&quot;TakeTopInfoPath_MenuOut(event,this);&quot; =
+type=3D&quot;item&quot; xmlToEdit=3D&quot;&quot; =
+component=3D&quot;&quot; action=3D&quot;printableVersion&quot; =
+style=3D&quot;border:1px solid #FFFFFF;padding:1px 1px 1px =
+1px;DISPLAY: block; CURSOR: default;white-space:nowrap;&quot; =
+xdoc_menu=3D&quot;yes&quot;&gt;&lt;td id=3D&quot;5.check0&quot; =
+style=3D&quot;width:18px;&quot; xdoc_menu=3D&quot;yes&quot; =
+/&gt;&lt;td id=3D&quot;5.text0&quot; =
+style=3D&quot;width:220px;Font-FAMILY:'Tahoma','Verdana','Arail'; =
+FONT-SIZE: 9pt;&quot; xdoc_menu=3D&quot;yes&quot;&gt;Printable =
+Version&lt;/td&gt;&lt;td id=3D&quot;5.arrow0&quot; =
+style=3D&quot;width:18px;&quot; align=3D&quot;right&quot; =
+xdoc_menu=3D&quot;yes&quot; /&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td =
+colspan=3D&quot;3&quot; =
+/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"></div><div =
+id=3D"xdoc_data_datepicker_id_array" =
+style=3D"display:none;"></div><div id=3D"xdoc_data_textarea_id_array" =
+style=3D"display:none;">_0_0_my:xiangmuhao;_0_1_my:changpingming;_0_2_m=
+y:xinghao;_0_3_my:shuliang;_0_4_my:danwei;_0_5_0_0_my:xuhao;_0_5_0_1_my:f=
+ield8;_0_5_0_2_my:field9;_0_5_0_3_my:field10;_0_5_0_4_my:field11;_0_5_0_5=
+_my:field12;_0_5_0_11_my:field31;_0_5_0_6_my:field13;_0_5_0_13_my:field32=
+;_0_5_0_7_my:field14;_0_5_0_8_my:field17;_0_5_0_9_my:field18;_0_5_0_12_my=
+:MainID;_0_5_1_0_my:xuhao;_0_5_1_1_my:field8;_0_5_1_2_my:field9;_0_5_1_3_=
+my:field10;_0_5_1_4_my:field11;_0_5_1_5_my:field12;_0_5_1_11_my:field31;_=
+0_5_1_6_my:field13;_0_5_1_13_my:field32;_0_5_1_7_my:field14;_0_5_1_8_my:f=
+ield17;_0_5_1_9_my:field18;_0_5_1_12_my:MainID;_0_9_my:no;_0_10_my:shengq=
+ingrenqianming;_0_24_my:riqi1;_0_14_my:bumenjinliyijian;_0_15_my:bumenjin=
+liqianming;_0_25_my:riqi2;_0_31_my:gongyishiyijian;_0_32_my:gongyishiqian=
+ming;_0_33_my:riqi4;_0_36_my:field40;_0_37_my:zongshiqianming;_0_38_my:ri=
+qi5;_0_18_my:fuzongyijian;_0_19_my:fuzongqianming;_0_26_my:riqi3</div><di=
+v id=3D"group2_7_container" =
+style=3D"display:none;">_0_my:myFields</div><div id=3D"group2_7_item" =
+style=3D"display:none;">_0_5_0_my:group2;_0_5_1_my:group2</div><div =
+id=3D"xdoc_data_xmltoedit_name_array" =
+style=3D"display:none;">group2_7</div><div =
+id=3D"xdoc_data_max_length_list" style=3D"display:none;"></div><div =
+id=3D"xdoc_data_num_separator_type" =
+style=3D"display:none;">1</div></div><script =
+id=3D"xdoc_function"><!--######--></script><script =
+id=3D"xdoc_prescript">TakeTopInfoPath_WebContext =3D '';TakeTopInfoPath_UseAjax =
+=3D 'sync';TakeTopInfoPath_SelectFileMessage =3D '[Please select a file =
+...]';</script><script =
+id=3D"xdoc_script"></script></div></body></html>

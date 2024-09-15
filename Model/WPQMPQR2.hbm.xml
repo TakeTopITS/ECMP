@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMPQR2, ProjectMgt.Model" table="T_WPQMPQR2">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="AppInsConclusion" type ="String" />
+		<property name ="AppInsEvaResults" type ="String" />
+		<property name ="TensileTestReportNo" type ="String" />
+		<property name ="TenSpeWidth" type ="String" />
+		<property name ="TenSpeThickness" type ="String" />
+		<property name ="TenSpeArea" type ="String" />
+		<property name ="TenSpeBreLoad" type ="String" />
+		<property name ="TenSpeSheStrength" type ="String" />
+		<property name ="TenSpePartChara" type ="String" />
+		<property name ="BendTestReportNo" type ="String" />
+		<property name ="BendSpeType" type ="String" />
+		<property name ="BendSpeThickness" type ="String" />
+		<property name ="BendSpeDiameter" type ="String" />
+		<property name ="BendSpeAngle" type ="String" />
+		<property name ="BendSpeResults" type ="String" />
+		<property name ="ImpactTestReportNo" type ="String" />
+		<property name ="ImpactSampSize" type ="String" />
+		<property name ="ImpactSampType" type ="String" />
+		<property name ="ImpactSampPosition" type ="String" />
+		<property name ="ImpactSampTemperature" type ="String" />
+		<property name ="ImpactSampFunction" type ="String" />
+		<property name ="ImpactSampExpAmount" type ="String" />
+		<property name ="ImpactSampRemark" type ="String" />
+		<property name ="OtherTestName" type ="String" />
+		<property name ="OtherTestReportNo" type ="String" />
+		<property name ="OtherTestSize" type ="String" />
+		<property name ="OtherExpRemark" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

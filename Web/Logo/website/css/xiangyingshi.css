@@ -1,0 +1,44 @@
+@charset "utf-8";
+@media screen and (max-device-width: 970px){
+	#dowebok .section1_inner{
+		padding-top:30px;
+	}
+	#dowebok .section1_inner,#dowebok .section2_inner,#dowebok .section5_inner,#dowebok .section6_inner,#dowebok .section7_inner,#dowebok .section8_inner,#dowebok .section12_inner,#dowebok .section11_inner,#dowebok .section9_inner,#dowebok .section10_inner,#dowebok .section13_inner,#dowebok .section14_inner,#dowebok .section15_inner{
+		width:100%;
+		padding-top:30px;}
+	#dowebok .txt1 h3,#dowebok .txt4 h3,#dowebok .txt5 h3,#dowebok .txt6 h3,#dowebok .txt7 h3,#dowebok .txt8 h3,#dowebok .txt9 h3,#dowebok .txt10 h3,#dowebok .txt11 h3,#dowebok .txt12 h3,#dowebok .txt13 h3,#dowebok .txt14 h3,#dowebok .txt15 h3,#dowebok .txt2 h3{
+		font-size:38px;
+		padding-bottom:22px;
+	}
+	#dowebok .p1_1 p,#dowebok .p1_2 p,#dowebok .p1_3 p,#dowebok .p1_2 a,#dowebok .p1_3 a,#dowebok .p4_1 p,#dowebok .p5_1 p{
+		font-size:40px;
+		line-height:50px;
+	}
+/*	#dowebok .p1_1 p{
+		width:960px;
+	}*/
+	#dowebok .beijing1{
+	/*	background:url(../images/buildings.png) no-repeat center bottom;*/
+	}
+	.img2{
+		background:url(../images/ECMPCloud-1.png) no-repeat center;
+		width:100%;
+		height:700px;
+		}
+	.txt4 h3{
+		padding-top:40px;
+		}
+     .txt1 h3{
+		 margin-top:20px;
+	 }
+.banner{
+	min-width:100%;
+	position:relative;
+	margin:0 auto;
+	overflow:hidden;
+	z-index:1;
+}
+.banner_inner{
+	width:100%;
+}
+}

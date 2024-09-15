@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSEAccidentInvestigation, ProjectMgt.Model" table="T_HSEAccidentInvestigation">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="AccidentDescriptionCode" column="AccidentDescriptionCode" type="String">
+		</property>
+		<property name="AccidentDescriptionName" column="AccidentDescriptionName" type="String">
+		</property>
+		<property name="AccidentAddr" column="AccidentAddr" type="String">
+		</property>
+		<property name="HappenDate" column="HappenDate" type="DateTime">
+		</property>
+		<property name="AccidentType" column="AccidentType" type="String">
+		</property>
+		<property name="DepartCode" column="DepartCode" type="String">
+		</property>
+		<property name="Currency" column="Currency" type="String">
+		</property>
+		<property name="ExchangeRate" column="ExchangeRate" type="Decimal">
+		</property>
+		<property name="PropertyDamage" column="PropertyDamage" type="Decimal">
+		</property>
+		<property name="DeathNum" column="DeathNum" type="int">
+		</property>
+		<property name="SeriousInjury" column="SeriousInjury" type="int">
+		</property>
+		<property name="MinorInjury" column="MinorInjury" type="int">
+		</property>
+		<property name="InfluenceHarm" column="InfluenceHarm" type="String">
+		</property>
+		<property name="CauseResponsibility" column="CauseResponsibility" type="String">
+		</property>
+		<property name="EngineeringSolutions" column="EngineeringSolutions" type="String">
+		</property>
+		<property name="TakeMeasures" column="TakeMeasures" type="String">
+		</property>
+		<property name="LessonText" column="LessonText" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

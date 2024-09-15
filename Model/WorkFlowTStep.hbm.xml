@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.WorkFlowTStep, ProjectMgt.Model" table="T_WorkFlowTStep">
+
+		<id name="StepID" column="StepID" type="int">
+
+			<generator class="identity" />
+		</id>
+
+		<property name ="SortNumber" type ="int" />
+
+		<property name ="TemName"  type ="String" />
+
+		<property name ="StepName" type="String" />
+
+		<property name ="LimitedOperator" type ="int" />
+
+		<property name ="LimitedTime" type ="int" />
+
+		<property name ="NextSortNumber" type="int" />
+
+		<property name ="NextStepMust" type ="String" />
+
+		<property name ="SelfReview" type ="String" />
+
+		<property name ="DepartRelated" type ="String" />
+
+		<property name ="DepartRelatedLevelNumber" type ="int" />
+
+		<property name ="OperatorSelect" type ="String" />
+
+		<property name ="IsPriorStepSelect" type ="String" />
+
+		<property name ="AllowSelfPass" type ="String" />
+
+		<property name ="AllowPriorOperatorPass" type ="String" />
+
+		<property name ="PartTimeReview" type ="String" />
+
+		<property name ="ProjectRelated" type ="String" />
+
+		<property name ="SendSMS" type ="String" />
+
+		<property name ="SendEMail" type ="String" />
+
+		<property name ="GUID" type ="String" />
+
+		<property name ="FinishPercent" type ="Decimal" />
+
+		<property name ="AllowCurrentStepAddApprover" type ="String" />
+
+		<property name ="AllowNextStepAddApprover" type ="String" />
+
+		<property name ="OverTimeAutoAgree" type="String" />
+		
+		<property name ="OverTimeHourNumber" type ="int" />
+
+	</class>
+</hibernate-mapping>

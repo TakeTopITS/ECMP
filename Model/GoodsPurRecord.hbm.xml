@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GoodsPurRecord, ProjectMgt.Model" table="T_GoodsPurRecord">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="POID" type ="int" />
+
+    <property name ="GoodsCode" type ="String" />
+
+    <property name ="GoodsName" type ="String" />
+
+    <property name ="Number" type ="Decimal" />
+
+    <property name ="BomVerID" type ="int" />
+
+    <property name ="CheckInNumber" type ="Decimal" />
+
+    <property name ="SupplyNumber" type ="Decimal" />
+
+    <property name ="ReturnNumber" type ="Decimal" />
+
+    <property name ="Unit" type ="String" />
+
+    <property name ="Type" type ="String" />
+
+    <property name ="Price" type ="Decimal" />
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="CurrencyType" type ="String" />
+
+    <property name ="ApplicantCode" type ="String" />
+
+    <property name ="ApplicantName" type ="String" />
+
+    <property name ="ModelNumber" type ="String" />
+
+    <property name ="Spec" type="String" />
+
+    <property name ="PurReason" type="String" />
+
+    <property name ="PurTime" type="DateTime" />
+
+    <property name ="TaxRate" type ="Decimal" />
+    <property name ="ClearingForm" type ="String" />
+
+    <property name ="TaxPrice" type ="Decimal" />
+    <property name ="TaxAmount" type ="Decimal" />
+
+    <property name ="SourceType" type ="String" />
+
+    <property name ="SourceID" type ="int" />
+
+    <property name ="Comment" type ="String" />
+
+    <property name ="Brand" type="String" />
+
+  </class>
+</hibernate-mapping>

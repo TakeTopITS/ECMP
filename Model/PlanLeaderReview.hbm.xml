@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.PlanLeaderReview, ProjectMgt.Model" table="T_Plan_LeaderReview">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PlanID" type ="int" />
+
+    <property name ="LeaderCode" type="String" />
+
+    <property name ="LeaderName" type ="String" />
+
+    <property name ="ReviewTime" type ="DateTime" />
+
+    <property name ="Review" type ="String" />
+
+    <property name ="Scoring" type ="Decimal" />
+  </class>
+</hibernate-mapping>

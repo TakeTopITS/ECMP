@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.CarInformation, ProjectMgt.Model" table="T_CarInformation">
+
+    <id name="CarCode" column="CarCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="CarName" type ="String" />
+    <property name ="CarBrand" type ="String" />
+    <property name ="CarType" type ="String" />
+    <property name ="CarColor" type ="String" />
+    <property name ="DWT" type ="Decimal" />
+    <property name ="SeatNumber" type ="int" />
+    <property name ="FuelConsumption" type ="Decimal" />
+    <property name ="InitialMileage" type ="Decimal" />
+    <property name ="EngineCode" type ="String" />
+    <property name ="FrameCode" type ="String" />
+    <property name ="Vendor" type ="String" />
+    <property name ="Price" type ="Decimal" />
+    <property name ="PurchaseTime" type ="DateTime" />
+    <property name ="BelongDepartCode" type ="String" />
+    <property name ="BelongDepartName" type ="String" />
+    <property name ="Status" type ="String" />
+  </class>
+</hibernate-mapping>

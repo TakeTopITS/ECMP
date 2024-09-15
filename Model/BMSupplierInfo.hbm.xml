@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMSupplierInfo, ProjectMgt.Model" table="T_BMSupplierInfo">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="Code" column="Code" type="String">
+		</property>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="PassWord" column="PassWord" type="String">
+		</property>
+		<property name="CompanyFor" column="CompanyFor" type="String">
+		</property>
+		<property name="CompanyType" column="CompanyType" type="String">
+		</property>
+		<property name="Address" column="Address" type="String">
+		</property>
+		<property name="PhoneNum" column="PhoneNum" type="String">
+		</property>
+		<property name="ZipCode" column="ZipCode" type="String">
+		</property>
+		<property name="Email" column="Email" type="String">
+		</property>
+		<property name="Fax" column="Fax" type="String">
+		</property>
+		<property name="WebUrl" column="WebUrl" type="String">
+		</property>
+		<property name="SupplyScope" column="SupplyScope" type="String">
+		</property>
+		<property name="Bank" column="Bank" type="String">
+		</property>
+		<property name="BankNo" column="BankNo" type="String">
+		</property>
+		<property name="EinNo" column="EinNo" type="String">
+		</property>
+		<property name="Qualification" column="Qualification" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="Reviewer" column="Reviewer" type="String">
+		</property>
+		<property name="ReviewDate" column="ReviewDate" type="DateTime">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="EnterPer" column="EnterPer" type="String">
+		</property>
+		<property name="EnterDate" column="EnterDate" type="DateTime">
+		</property>
+		<property name="Point" column="Point" type="Decimal">
+		</property>
+		<property name="SubcontractProfessional" column="SubcontractProfessional" type="String">
+		</property>
+
+		<property name="LegalRepresentative" column="LegalRepresentative" type="String">
+		</property>
+		<property name="TechnicalTitles" column="TechnicalTitles" type="String">
+		</property>
+		<property name="LegalTel" column="LegalTel" type="String">
+		</property>
+		<property name="TechnicalDirector" column="TechnicalDirector" type="String">
+		</property>
+		<property name="TechnicalTitles_T" column="TechnicalTitles_T" type="String">
+		</property>
+		<property name="TechnicalTel" column="TechnicalTel" type="String">
+		</property>
+		<property name="SetUpTime" column="SetUpTime" type="DateTime">
+		</property>
+		<property name="EmployeesNum" column="EmployeesNum" type="int">
+		</property>
+		<property name="QualificationCertificate" column="QualificationCertificate" type="String">
+		</property>
+		<property name="BusinessLicense" column="BusinessLicense" type="String">
+		</property>
+		<property name="RegisteredCapital" column="RegisteredCapital" type="Decimal">
+		</property>
+		<property name="PMNumber" column="PMNumber" type="int">
+		</property>
+		<property name="STNumber" column="STNumber" type="int">
+		</property>
+		<property name="ITNumber" column="ITNumber" type="int">
+		</property>
+		<property name="PTNumber" column="PTNumber" type="int">
+		</property>
+		<property name="MNumber" column="MNumber" type="int">
+		</property>
+		<property name="RecommendedUnits" column="RecommendedUnits" type="String">
+		</property>
+		<property name="LastFinalistsNumber" column="LastFinalistsNumber" type="String">
+		</property>
+		<property name="IsLand" column="IsLand" type="String">
+		</property>
+		<property name="AccessoriesPath" column="AccessoriesPath" type="String">
+		</property>
+
+    <property name ="EnginerringSupplier" column="EnginerringSupplier" type="String" />
+    <property name ="InternationSupplier" column="InternationSupplier" type="String" />
+    <property name ="RetailSupplier" column="RetailSupplier" type="String" />
+    <property name ="StoreSupplier" column="StoreSupplier" type="String" />
+
+    <property name ="SupplierBigType" column="SupplierBigType" type="String" />
+    <property name ="SupplierSmallType" column="SupplierSmallType" type ="String" />
+  </class>
+</hibernate-mapping>

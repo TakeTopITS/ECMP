@@ -1,0 +1,224 @@
+/*ͨ����ʽ*/
+ul {
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a img {
+        border: none;
+    }
+
+div, ul, li, p, form {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+em {
+    font-style: normal;
+    font-weight: normal;
+}
+
+table {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+dt, dl, dd {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+tr {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+h3, h4 {
+    padding: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+}
+
+html {
+    background-image: url(../Logo/Main_Spirit.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+body {
+    font-size: 12px;
+    margin-top: 23px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.none {
+    display: none;
+}
+
+.nTabr {
+    width: 98%;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-bottom: 2px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #E1E1E1;
+}
+
+    .nTabr .TabTitle {
+        BACKGROUND-IMAGE: url(ImagesSkin/tablebj.gif);
+        BACKGROUND-REPEAT: repeat-x;
+        HEIGHT: 33px;
+        CLEAR: both;
+        OVERFLOW: hidden
+    }
+
+        .nTabr .TabTitle UL {
+            PADDING-BOTTOM: 0px;
+            BORDER-RIGHT-WIDTH: 0px;
+            MARGIN: 0px;
+            PADDING-LEFT: 0px;
+            PADDING-RIGHT: 0px;
+            BORDER-TOP-WIDTH: 0px;
+            BORDER-BOTTOM-WIDTH: 0px;
+            BORDER-LEFT-WIDTH: 0px;
+            PADDING-TOP: 0px
+        }
+
+        .nTabr .TabTitle LI {
+            TEXT-ALIGN: center;
+            PADDING-BOTTOM: 0px;
+            LIST-STYLE-TYPE: none;
+            MARGIN: 0px;
+            PADDING-LEFT: 0px;
+            WIDTH: 130px;
+            PADDING-RIGHT: 0px;
+            FLOAT: left;
+            HEIGHT: 24px; /* COLOR: #757575;*/
+            FONT-SIZE: 14px;
+            CURSOR: pointer;
+            PADDING-TOP: 7px
+        }
+
+        .nTabr .TabTitle .active {
+            /*BACKGROUND-IMAGE: url(ImagesSkin/tab1.jpg);*/ BACKGROUND-REPEAT: no-repeat;
+            MARGIN-LEFT: 4px;
+            FONT-WEIGHT: bold;
+            MARGIN-RIGHT: 0px;
+            color: #19A14F;
+            border-bottom: 2px solid #0079c2;
+            font-size: 18px;
+        }
+
+        .nTabr .TabTitle .normal {
+            /*	BACKGROUND-IMAGE: url(ImagesSkin/tab2.jpg); */ MARGIN: 0px 0px 0px 4px;
+            BACKGROUND-REPEAT: no-repeat;
+            CLEAR: right
+        }
+
+    .nTabr .TabContent {
+        PADDING-BOTTOM: 8px;
+        MARGIN: 0px auto;
+        PADDING-LEFT: 8px;
+        WIDTH: auto;
+        PADDING-RIGHT: 8px;
+        HEIGHT: auto;
+        PADDING-TOP: 8px;
+        border-right-width: 1px;
+        border-left-width: 1px;
+        /*	border-right-style: solid;
+	border-left-style: solid;*/
+        border-right-color: #E1E1E1;
+        border-left-color: #E1E1E1;
+    }
+
+
+        .nTabr .TabContent LI {
+            BACKGROUND-IMAGE: url(ImagesSkin/dot.gif);
+            TEXT-ALIGN: left;
+            PADDING-BOTTOM: 0px;
+            LINE-HEIGHT: 16px;
+            LIST-STYLE-TYPE: none;
+            TEXT-INDENT: 8px;
+            MARGIN: 0px 0px 0px 3px;
+            PADDING-LEFT: 0px;
+            PADDING-RIGHT: 0px;
+            BACKGROUND-REPEAT: no-repeat;
+            BACKGROUND-POSITION: left 6px;
+            COLOR: #ff0000;
+            FONT-SIZE: 12px;
+            PADDING-TOP: 0px
+        }
+
+        .nTabr .TabContent UL {
+            PADDING-BOTTOM: 0px;
+            LINE-HEIGHT: 20px;
+            PADDING-LEFT: 0px;
+            PADDING-RIGHT: 0px;
+            PADDING-TOP: 0px
+        }
+
+.itemBorder {
+    border: solid 1px #7FC4ED;
+    line-height: 24px;
+}
+
+.reny li {
+    float: left;
+    text-indent: 32px;
+    line-height: 23px;
+    height: 23px;
+    width: 113px;
+}
+
+    .reny li a {
+        padding-left: 22px;
+        background-image: url(ImagesSkin/user.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+.mob li {
+    float: left;
+    text-indent: 32px;
+    line-height: 23px;
+    height: 23px;
+    width: 170px;
+}
+
+    .mob li a {
+        padding-left: 22px;
+        background-image: url(ImagesSkin/mob.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+    }

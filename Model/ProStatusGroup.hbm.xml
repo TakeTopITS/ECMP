@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ProStatusGroup, ProjectMgt.Model" table="V_ProStatusGroup">
+
+    <id name="Status" column="Status" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="GroupCount" type ="int" />
+    <property name ="PMCode" type ="String" />
+  </class>
+</hibernate-mapping>

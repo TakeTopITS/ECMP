@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.Department, ProjectMgt.Model" table="T_Department">
+
+    <id name="DepartCode" column="DepartCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="DepartName" type ="String" />
+    <property name ="ParentCode" type ="String" />
+    <property name ="CreatorCode" type ="String" />
+    <property name ="Authority" type ="String" />
+    <property name ="ProductLineRelated" type ="String" />
+
+    <property name ="WorkAddress" type="String" />
+    <property name ="Longitude" type ="String" />
+    <property name ="Latitude" type ="String" />
+    <property name ="IsDefaultAddress" type ="String" />
+  </class>
+</hibernate-mapping>

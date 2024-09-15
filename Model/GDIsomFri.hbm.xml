@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDIsomFri, ProjectMgt.Model" table="T_GDIsomFri">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProjectCode" type ="String" />
+    <property name ="Isom_no" type ="String" />
+    <property name ="Fri1" type ="String" />
+    <property name ="Fri2" type ="String" />
+    <property name ="Fri3" type ="String" />
+    <property name ="Fri4" type ="String" />
+    <property name ="Fri5" type ="String" />
+    <property name ="Fri6" type ="String" />
+    <property name ="Fri7" type ="String" />
+    <property name ="Fri8" type ="String" />
+    <property name ="Fri9" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

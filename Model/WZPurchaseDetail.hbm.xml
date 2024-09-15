@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZPurchaseDetail, ProjectMgt.Model" table="T_WZPurchaseDetail">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PurchaseCode" type ="String" />
+    <property name ="PlanDetailID" type ="int" />
+    <property name ="SerialNumber" type ="String" />
+    <property name ="Tenders" type ="String" />
+    <property name ="ObjectCode" type ="String" />
+    <property name ="MajorType" type ="String" />
+    <property name ="PurchaseNumber" type ="Decimal" />
+    <property name ="ConvertNumber" type ="Decimal" />
+    <property name ="PlanMoney" type ="Decimal" />
+    <property name ="Factory" type ="String" />
+    <property name ="StandardCode" type ="String" />
+    <property name ="Remark" type ="String" />
+    <property name ="SupplierCode" type ="String" />
+    <property name ="ApplyMoney" type ="Decimal" />
+    <property name ="TotalMoney" type ="Decimal" />
+    <property name ="Progress" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="IsPrint" type ="int" />
+  </class>
+</hibernate-mapping>

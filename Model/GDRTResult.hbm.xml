@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDRTResult, ProjectMgt.Model" table="T_GDRTResult">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProjectCode" type ="String" />
+    <property name ="Isom_no" type ="String" />
+    <property name ="ReturnWelder1" type ="String" />
+
+    <property name ="ReturnWelder2" type ="String" />
+    <property name ="RTRecord1" type ="String" />
+    <property name ="RTRecord2" type ="String" />
+    <property name ="RTInspectionDate1" type ="String" />
+    <property name ="RTInspectionDate2" type ="String" />
+    <property name ="RF1" type ="String" />
+    <property name ="RF2" type ="String" />
+    <property name ="RTResult" type ="String" />
+    <property name ="RTRender" type ="String" />
+    <property name ="RTCovering" type ="String" />
+    <property name ="RTFilm" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

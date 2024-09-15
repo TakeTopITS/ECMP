@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.BookInformation, ProjectMgt.Model" table="T_BookInformation">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="BarCode" column="BarCode" type="String">
+		</property>
+		<property name="BookName" column="BookName" type="String">
+		</property>
+		<property name="ReferenceNo" column="ReferenceNo" type="String">
+		</property>
+		<property name="BookClassificationId" column="BookClassificationId" type="int">
+		</property>
+		<property name="BookClassificationName" column="BookClassificationName" type="String">
+		</property>
+		<property name="Location" column="Location" type="String">
+		</property>
+		<property name="BookPublishersId" column="BookPublishersId" type="int">
+		</property>
+		<property name="BookPublishersName" column="BookPublishersName" type="String">
+		</property>
+		<property name="Author" column="Author" type="String">
+		</property>
+		<property name="Translator" column="Translator" type="String">
+		</property>
+		<property name="BookNum" column="BookNum" type="int">
+		</property>
+		<property name="BookUseNum" column="BookUseNum" type="int">
+		</property>
+		<property name="Price" column="Price" type="Decimal">
+		</property>
+		<property name="PublicationDate" column="PublicationDate" type="DateTime">
+		</property>
+		<property name="PageNum" column="PageNum" type="int">
+		</property>
+		<property name="Version" column="Version" type="String">
+		</property>
+		<property name="UseNum" column="UseNum" type="int">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="Source" column="Source" type="String">
+		</property>
+		<property name="Donors" column="Donors" type="String">
+		</property>
+		<property name="Introduction" column="Introduction" type="String">
+		</property>
+		<property name="BookImage" column="BookImage" type="String">
+		</property>
+		<property name="CreateCode" column="CreateCode" type="String">
+		</property>
+		<property name="CreateName" column="CreateName" type="String">
+		</property>
+		<property name="CreateTime" column="CreateTime" type="DateTime">
+		</property>
+		<property name="DepartCode" column="DepartCode" type="String">
+		</property>
+		<property name="DepartName" column="DepartName" type="String">
+		</property>
+		<property name="ClassificationCode" column="ClassificationCode" type="String">
+		</property>
+		<property name="BookType" column="BookType" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

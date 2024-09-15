@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.Customer, ProjectMgt.Model" table="T_Customer">
+
+		<id name="CustomerCode" column="CustomerCode" type="String">
+
+			<generator class="assigned" />
+		</id>
+
+		<property name ="CustomerName" type ="String" />
+		<property name ="CustomerEnglishName" type="String" />
+		<property name ="Type" type="String" />
+		<property name ="SalesPerson" type="String" />
+		<property name ="ContactName" type ="String" />
+		<property name ="Discount" type="Decimal" />
+		<property name ="Country" type="String" />
+		<property name ="State" type="String" />
+		<property name ="City" type="String" />
+		<property name ="AreaAddress" type ="String" />
+		<property name ="ZP" type ="String" />
+		<property name ="Tel1" type="String" />
+		<property name ="Tel2" type="String" />
+		<property name ="Fax" type="String" />
+		<property name ="EmailAddress" type="String" />
+		<property name ="WebSite" type="String" />
+		<property name ="Bank" type="String" />
+		<property name ="BankAccount" type="String" />
+		<property name ="Currency" type ="String" />
+		<property name ="CreditRate" type="Decimal" />
+		<property name ="CreateDate" type="DateTime" />
+		<property name ="InvoiceAddress" type="String" />
+		<property name ="RegistrationAddressCN" type="String" />
+		<property name ="RegistrationAddressEN" type="String" />
+		<property name ="Comment" type="String" />
+		<property name ="CreatorCode" type="String" />
+		<property name ="CreatorName" type ="String" />
+		<property name ="BelongDepartCode" type ="String" />
+		<property name ="BelongDepartName" type ="String" />
+		<property name ="BelongAgencyCode" type ="String" />
+		<property name ="BelongAgencyName" type ="String" />
+		<property name ="ReviewStatus" type ="String" />
+
+		<property name ="SimpleName" type ="String" />
+		<property name ="WorkSiteURL" type ="String" />
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractRelatedInvoice, ProjectMgt.Model" table="T_ConstractRelatedInvoice">
+
+    <id name="ID" column="ID" type="int">
+      <generator class="identity" />
+    </id>
+
+    <property name ="ReceiveOpen" type ="String" />
+
+    <property name ="TaxType" type ="String" />
+
+    <property name ="ConstractCode" type ="String" />
+
+    <property name ="InvoiceCode" type ="String" />
+
+    <property name ="Amount" type ="Decimal" />
+
+    <property name ="TaxRate" type ="Decimal" />
+
+    <property name ="OpenDate" type="DateTime" />
+
+    <property name ="RelatedType" type="String" />
+
+    <property name ="RelatedID" type ="String" />
+  </class>
+</hibernate-mapping>

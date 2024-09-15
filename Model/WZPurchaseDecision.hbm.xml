@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZPurchaseDecision, ProjectMgt.Model" table="T_WZPurchaseDecision">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PurchaseCode" type ="String" />
+    <property name ="SupplierCode1" type ="String" />
+    <property name ="SupplierCode2" type ="String" />
+    <property name ="SupplierCode3" type ="String" />
+    <property name ="Decision" type ="String" />
+    <property name ="DecisionTime" type ="DateTime" />
+    <property name ="DecisionDesc" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>TakeTopInfoPath Service</title>
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+		<META HTTP-EQUIV="Expires" CONTENT="0">
+		<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=UTF-8">
+		<style> td{ font-size:11px; font-family:verdana; }
+	input{ font-size:11px; font-family:verdana; }
+	</style>
+		<script>
+		function doLoad()
+		{
+			var unauthArray = window.dialogArguments[1];
+			var unauthUI = '<table align=center height=100%><tr><td colspan=2>Please enter your credentials to connect to the following data source:</td></tr>';
+			for( var i = 0; i < unauthArray.length; i ++ )
+			{
+				var unauth = unauthArray[i];
+				unauthUI += '<tr><td colspan=2 nowrap=true>';
+				unauthUI += unauth.name + ': ' + unauth.realm + '[' + unauth.auth + ']';
+				unauthUI += '</td></tr>';
+				unauthUI += '<input type=\'hidden\' name=\'xdoc_param_unauth_name' + i + '\' value=\'' + unauth.name + '\'>';
+				unauthUI += '<input type=\'hidden\' name=\'xdoc_param_unauth_auth' + i + '\' value=\'' + unauth.auth + '\'>';
+				unauthUI += '<input type=\'hidden\' name=\'xdoc_param_unauth_realm' + i + '\' value=\'' + unauth.realm + '\'>';
+				unauthUI += '<tr><td width=\'50px\'>Username:</td><td><input style=\'width:390px\' type=\'text\' name=\'xdoc_param_unauth_username' + i + '\'></td></tr>';
+				unauthUI += '<tr><td width=\'50px\'>Password:</td><td><input style=\'width:390px\' type=\'password\' name=\'xdoc_param_unauth_password' + i + '\'></td></tr>';
+			}
+			unauthUI += '<tr><td colspan=2 align=right><input type=\'button\' value=\'    OK    \' onclick=\'reloadForm();\'>&nbsp;&nbsp;<input type=\'button\' value=\' Cancel \' onclick=\'cancelLoad();\'></td></tr>';
+			unauthUI += '</table>';
+			document.body.innerHTML = unauthUI;
+		}
+		function reloadForm()
+		{
+			var unauth = '';
+			for( var i = 0; true; i ++ )
+			{
+				var nameField = document.getElementById( 'xdoc_param_unauth_name' + i );
+				if( nameField != null )
+				{
+					unauth += '<input type=\'hidden\' name=\'xdoc_param_unauth_name' + i + '\' value=\'' + nameField.value + '\'>';
+					unauth += '<input type=\'hidden\' name=\'xdoc_param_unauth_auth' + i + '\' value=\'' + document.getElementById( 'xdoc_param_unauth_auth' + i ).value + '\'>';
+					unauth += '<input type=\'hidden\' name=\'xdoc_param_unauth_realm' + i + '\' value=\'' + document.getElementById( 'xdoc_param_unauth_realm' + i ).value + '\'>';
+					unauth += '<input type=\'hidden\' name=\'xdoc_param_unauth_username' + i + '\' value=\'' + document.getElementById( 'xdoc_param_unauth_username' + i ).value + '\'>';
+					unauth += '<input type=\'hidden\' name=\'xdoc_param_unauth_password' + i + '\' value=\'' + document.getElementById( 'xdoc_param_unauth_password' + i ).value + '\'>';
+				}
+				else
+				{
+					break;
+				}
+			}
+			window.dialogArguments[0].document.getElementById( 'xdoc_unauth' ).innerHTML = unauth;
+			window.returnValue = 1;
+			window.close();
+		}
+		function cancelLoad(){
+			window.returnValue = 0;
+			window.close();
+		}
+		</script>
+	</head>
+	<body onload='doLoad();' style='BACKGROUND-COLOR:buttonface'>
+	</body>
+</html>

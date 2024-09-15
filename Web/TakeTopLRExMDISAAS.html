@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0;
+           /* overflow-x: auto;
+            overflow-y: hidden;*/
+        }
+    </style>
+
+    <script type="text/javascript" src="js/allAHandler.js"></script>
+    <script type="text/javascript" src="js/layer/layer/layer.js"></script>
+
+    <script language="javascript" type="text/javascript">
+
+        window.onload = function () {
+
+            this.document.title = window.frames["topFrame"].document.title;
+        }
+
+    </script>
+
+</head>
+<body scroll="no">
+  
+    <iframe id="topFrame" name="topFrame" src='TakeTopLRExInnerMDISAAS.aspx' style="height: 100%; width: 100%; border-width: 0px;"></iframe>
+
+</body>
+</html>

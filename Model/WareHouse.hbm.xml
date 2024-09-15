@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.WareHouse, ProjectMgt.Model" table="T_WareHouse">
+
+		<id name="WHName" column="WHName" type="String">
+
+			<generator class="assigned" />
+		</id>
+
+		<property name ="SortNumber" type ="int" />
+
+		<property name ="BelongDepartCode" type ="String" />
+		<property name ="BelongDepartName" type ="String" />
+		<property name ="ParentWH" type ="String" />
+		<property name ="CapitalMethod" type="String" />
+	</class>
+</hibernate-mapping>

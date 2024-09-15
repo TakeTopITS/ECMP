@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+    </style>
+
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            document.getElementById('movie').src = getUrlParam("MP4Name");
+            $('#movie').get(0).play();
+
+        });
+
+        //取得链接传入参数的值
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+
+            if (r != null)
+                return unescape(r[2]);
+            return null;
+        }
+
+    </script>
+
+</head>
+<body>
+    <div id="DIV_CompanyBriefVideo" name="DIV_CompanyBriefVideo" style="width:100%;">
+
+        <div style="text-align: center;width:100%;height:800px;">
+            <video id="movie" controls="controls" height="99%" src="" width="99%">您的浏览器不支持 video 标签，建议下载浏览器 <a href='https://www.taketopits.com/download/tools/chromesetup.exe'>Chrome</a> 安装使用！</video>
+        </div>
+
+    </div>
+</body>
+</html>

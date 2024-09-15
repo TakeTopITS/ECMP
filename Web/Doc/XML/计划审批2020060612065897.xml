@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ItemMainPlan>
+    <PlanVerID>8</PlanVerID>
+    <PlanVerName>TEST20160225</PlanVerName>
+    <BelongDepartCode>10108</BelongDepartCode>
+    <BelongDepartName>总裁办</BelongDepartName>
+    <Status>UNFinished</Status>
+    <CreateTime>2016-02-25T14:32:33+08:00</CreateTime>
+    <CreatorCode>C7094</CreatorCode>
+    <CreatorName>员工C7094</CreatorName>
+    <PlanType>PROJECT   </PlanType>
+    <ID>10</ID>
+  </T_ItemMainPlan>
+</NewDataSet>

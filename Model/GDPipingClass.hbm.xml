@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDPipingClass, ProjectMgt.Model" table="T_GDPipingClass">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="LevelClass" type ="String" />
+    <property name ="LineLevel" type ="String" />
+    <property name ="MediumCode" type ="String" />
+    <property name ="SinceNumber" type ="String" />
+    <property name ="PNo" type ="String" />
+    <property name ="RT" type ="String" />
+    <property name ="Docking" type ="String" />
+    <property name ="Branch" type ="String" />
+    <property name ="Splice" type ="String" />
+    <property name ="Attached" type ="String" />
+    <property name ="HotHandler" type ="String" />
+    <property name ="PMIMaterial" type ="String" />
+    <property name ="Material" type ="String" />
+    <property name ="WeldingMaterial" type ="String" />
+    <property name ="Remark" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

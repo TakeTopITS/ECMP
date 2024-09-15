@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ItemMainPlanDetail, ProjectMgt.Model" table="T_ItemMainPlanDetail">
+    <id name="ID" column="ID" type="int">
+      <generator class="identity" />
+    </id>
+
+    <property name ="PlanVerID" type ="int" />
+    <property name ="ItemCode" type ="String" />
+    <property name ="ItemName" type ="String" />
+    <property name ="Type" type ="String" />
+    <property name ="ModelNumber" type ="String" />
+    <property name ="Specification" type="String" />
+    <property name ="BomVerID" type ="int" />
+
+    <property name ="PlanNumber" type ="Decimal" />
+    <property name ="FinishedNumber" type ="Decimal" />
+    <property name ="UNFinishedNumber" type ="Decimal" />
+    <property name ="Unit" type="String" />
+
+    <property name ="PlanStartDate" type="DateTime" />
+    <property name ="DeliveryDate" type ="DateTime" />
+    <property name ="ModifyDate" type ="DateTime" />
+    <property name ="CreateDate" type ="DateTime" />
+
+    <property name ="SourceType" type ="String" />
+    <property name ="SourceRecordID" type ="int" />
+
+    <property name ="Brand" type="String" />
+
+  </class>
+</hibernate-mapping>

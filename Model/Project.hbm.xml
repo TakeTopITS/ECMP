@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.Project, ProjectMgt.Model" table="T_Project">
+
+    <id name="ProjectID" column="ProjectID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProjectCode" type ="String" />
+
+    <property name ="ProjectType" type ="String" />
+
+    <property name ="ProjectClass" type ="String" />
+
+    <property name ="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+
+    <property name ="ProjectName"  type ="String" />
+
+    <property name ="ProjectDetail" type ="String" />
+
+    <property name ="AcceptStandard" type ="String" />
+
+    <property name ="BeginDate" type ="DateTime" />
+
+    <property name ="EndDate" type ="DateTime" />
+
+    <property name ="PMCode"  type ="String" />
+
+    <property name ="PMName" type ="String" />
+
+    <property name ="CustomerPMName" type ="String" />
+
+    <property name ="MakeDate" type ="DateTime" />
+
+    <property name ="ProjectAmount" type ="Decimal" />
+
+    <property name ="Budget" type ="Decimal" />
+
+    <property name ="CurrencyType" type ="String" />
+
+    <property name ="ManHour" type="Decimal" />
+
+    <property name ="ManNumber" type ="Decimal" />
+
+    <property name ="ParentID" type="int" />
+
+    <property name ="FinishPercent" type ="Decimal" />
+
+    <property name ="Status" type ="String" />
+
+    <property name ="StatusValue" type ="String" />
+
+    <property name ="Priority" type ="String" />
+
+    <property name ="BelongDepartCode" type= "String"/>
+
+    <property name ="BelongDepartName" type ="String" />
+    
+  </class>
+</hibernate-mapping>

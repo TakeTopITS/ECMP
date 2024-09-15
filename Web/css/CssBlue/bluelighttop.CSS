@@ -1,0 +1,246 @@
+body {
+	margin: 0px;
+	font-size: 12px;
+}
+.right {
+	background-image: url(ImagesSkin/top_right.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.zi {
+	font-size: 12px;
+	color: #EEFAFD;
+}
+.huangzi {
+	font-size: 12px;
+	color: #FFFF00;
+}
+/*---------------------ԭImagesSkin--------------------------------*/
+
+ /*ͨ����ʽ*/
+
+*{margin:0;padding:0;word-wrap:break-word;}
+body{font:12px/1.75 "����", arial, sans-serif,'DejaVu Sans','Lucida Grande',Tahoma,'Hiragino Sans GB',STHeiti,SimSun,sans-serif;color:#444;}
+body{background:#D53E54 url(ImagesSkin/mainbkg.png) repeat-y center top;}
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a img{border:none;} 
+div,ul,li,p,form{padding: 0px; margin: 0px;list-style-type: none;}
+em{font-style: normal;font-weight: normal;}
+table {padding: 0px; margin: 0px;list-style-type: none;}
+dt,dl,dd {padding: 0px; margin: 0px;list-style-type: none;}
+form{margin:0px;padding:0px;}
+tr {padding: 0px; margin: 0px;list-style-type: none;}
+h3,h4{padding:0px; font-size:14px; font-weight:bold;}
+.clear {clear:both;height:0px; overflow:hidden;}
+
+
+td {
+	
+ /*margin: 0px;*/
+}
+
+
+
+
+/*--------------------------------�̰�ť---------------------------*/
+.inpuPiror {
+	background: url(ImagesSkin/up.gif) no-repeat;
+	margin: 0px;
+	height: 20px;
+	width: 14px;
+	text-align:center;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	/*font-size: 12px;*/
+	/*color: #29728D;*/	
+}
+
+/*--------------------------------�̰�ť---------------------------*/
+.inpuNext {
+	background: url(ImagesSkin/down.gif) no-repeat;
+	margin: 0px;
+	height: 20px;
+	width: 14px;
+	text-align:center;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	/*font-size: 12px;*/
+	/*color: #29728D;*/	
+}
+
+
+.linkbutton
+{
+   white-space:nowrap;
+}
+
+*html .nav {
+	MARGIN-RIGHT: auto;
+	MARGIN-LEFT: 0px;
+	HEIGHT: 23px;
+	width: 1009px;
+	float: left;
+	margin-top: 7px;
+	overflow: hidden;
+}
+.nav {
+	MARGIN-RIGHT: auto;
+	MARGIN-LEFT: 0px;
+	HEIGHT: 23px;
+	width: 1009px;
+	float: left;
+	margin-top: 4px;
+	overflow: hidden;
+}
+.nav LI {
+	FLOAT: left;
+	WIDTH: 100px;
+	HEIGHT: 23px;
+	background-image: url(ImagesSkin/top_xian.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.nav LI A {
+	DISPLAY: block;
+	WIDTH: 100px;
+	HEIGHT: 23px;
+	TEXT-ALIGN: center;
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: 22px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.nav LI A:hover {
+	DISPLAY: block;
+	WIDTH: 100px;
+	HEIGHT: 23px;
+	TEXT-ALIGN: center;
+	background-image: url(ImagesSkin/dh_on.png);
+	background-repeat: no-repeat;
+	color: #000000;
+	text-decoration: none;
+	line-height: 23px;
+	background-position: center;
+}
+
+.leftnav {
+	MARGIN-TOP: 2px; WIDTH: 513px; DISPLAY: block; FLOAT: right; HEIGHT: 27px; CLEAR: both; OVERFLOW: hidden
+}
+.leftnav UL {
+	LIST-STYLE-TYPE: none; DISPLAY: block; FLOAT: right; HEIGHT: 27px; MARGIN-RIGHT: 0px
+}
+.leftnav UL LI {
+	FLOAT: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.leftnav UL LI A {
+	BACKGROUND-IMAGE: url(ImagesSkin/off.jpg);
+	TEXT-ALIGN: center;
+	LINE-HEIGHT: 27px;
+	WIDTH: 94px;
+	DISPLAY: block;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-POSITION: center bottom;
+	HEIGHT: 27px;
+	COLOR: #006699;
+	TEXT-DECORATION: none;
+	font-size: 14px;
+	font-weight: normal;
+}
+.leftnav UL LI A:hover {
+	BACKGROUND-IMAGE: url(ImagesSkin/on.jpg);
+	LINE-HEIGHT: 27px;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-POSITION: center bottom;
+	HEIGHT: 27px;
+	COLOR: #003366;
+	TEXT-DECORATION: none;
+	PADDING-TOP: 2px;
+	width: 94px;
+}
+.leftnav UL LI.thisclass A {
+	BACKGROUND-IMAGE: url(ImagesSkin/on.jpg); LINE-HEIGHT: 27px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center bottom; HEIGHT: 27px; COLOR: #003366; TEXT-DECORATION: none; PADDING-TOP: 0px;font-weight: bold;
+}
+.leftnav UL LI.thisclass A:hover {
+	BACKGROUND-IMAGE: url(ImagesSkin/on.jpg);
+	LINE-HEIGHT: 27px;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-POSITION: center bottom;
+	HEIGHT: 27px;
+	COLOR: #003366;
+	TEXT-DECORATION: none;
+	PADDING-TOP: 0px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.leftnav UL LI.navleft {
+	WIDTH: 22px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right bottom; HEIGHT: 27px
+}
+/*�����*/
+.leftnavl {
+	MARGIN-TOP: 2px; WIDTH: 100%; DISPLAY: block; FLOAT: left; HEIGHT: 27px; CLEAR: both; OVERFLOW: hidden
+}
+.leftnavl UL {
+	LIST-STYLE-TYPE: none; DISPLAY: block; FLOAT: left; HEIGHT: 27px; MARGIN-RIGHT: 0px
+}
+.leftnavl UL LI {
+	FLOAT: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.leftnavl UL LI A {
+	BACKGROUND-IMAGE: url(ImagesSkin/off.jpg);
+	TEXT-ALIGN: center;
+	LINE-HEIGHT: 27px;
+	WIDTH: 94px;
+	DISPLAY: block;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-POSITION: center bottom;
+	HEIGHT: 27px;
+	COLOR: #006699;
+	TEXT-DECORATION: none;
+	font-size: 14px;
+	font-weight: normal;
+}
+.leftnavl UL LI A:hover {
+	BACKGROUND-IMAGE: url(ImagesSkin/on.jpg);
+	LINE-HEIGHT: 27px;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-POSITION: center bottom;
+	HEIGHT: 27px;
+	COLOR: #003366;
+	TEXT-DECORATION: none;
+	PADDING-TOP: 2px;
+	width: 94px;
+}
+.leftnavl UL LI.thisclass A {
+	BACKGROUND-IMAGE: url(ImagesSkin/on.jpg); LINE-HEIGHT: 27px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center bottom; HEIGHT: 27px; COLOR: #003366; TEXT-DECORATION: none; PADDING-TOP: 0px;font-weight: bold;
+}
+.leftnavl UL LI.thisclass A:hover {
+	BACKGROUND-IMAGE: url(ImagesSkin/on.jpg);
+	LINE-HEIGHT: 27px;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-POSITION: center bottom;
+	HEIGHT: 27px;
+	COLOR: #003366;
+	TEXT-DECORATION: none;
+	PADDING-TOP: 0px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.leftnavl UL LI.navleft {
+	WIDTH: 22px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right bottom; HEIGHT: 27px
+}
+#topTD{
+}
+td{
+}

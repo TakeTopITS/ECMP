@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.QMQualityInspectionSheet, ProjectMgt.Model" table="T_QMQualityInspectionSheet">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="PurchasingContractCode" column="PurchasingContractCode" type="String">
+		</property>
+		<property name="PurchasingContractName" column="PurchasingContractName" type="String">
+		</property>
+		<property name="AcceptDate" column="AcceptDate" type="DateTime">
+		</property>
+		<property name="Supplier" column="Supplier" type="String">
+		</property>
+		<property name="InspectionResults" column="InspectionResults" type="String">
+		</property>
+		<property name="Type" column="Type" type="String">
+		</property>
+		<property name="DealResults" column="DealResults" type="String">
+		</property>
+		<property name="CreateTime" column="CreateTime" type="DateTime">
+		</property>
+		<property name="CreatePer" column="CreatePer" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

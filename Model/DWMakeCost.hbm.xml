@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.DWMakeCost, ProjectMgt.Model" table="T_DWMakeCost">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="MakeType" type ="String" />
+    <property name ="Cost" type ="Decimal" />
+    <property name ="TonCost" type ="Decimal" />
+    <property name ="YearMonth" type ="String" />
+  </class>
+</hibernate-mapping>

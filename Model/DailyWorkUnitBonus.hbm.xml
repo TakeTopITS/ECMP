@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.DailyWorkUnitBonus, ProjectMgt.Model" table="T_DailyWorkUnitBonus">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="EveryCharPrice" type ="Decimal" />
+
+    <property name ="CharUpper"  type ="int" />
+
+    <property name ="EveryDocPrice" type ="Decimal" />
+
+    <property name ="DocUpper" type ="int" />
+  </class>
+</hibernate-mapping>

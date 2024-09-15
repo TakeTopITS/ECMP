@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDPressure, ProjectMgt.Model" table="T_GDPressure">
+
+    <id name="PressureCode" column="PressureCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="OrderNumber" type ="String" />
+    <property name ="PublicTime" type ="String" />
+    <property name ="PressureMedium" type ="String" />
+    <property name ="PressureTest" type ="String" />
+    <property name ="MainArea" type ="String" />
+    <property name ="PointArea" type ="String" />
+    <property name ="PressureUser" type ="String" />
+    <property name ="SystemCode" type ="String" />
+    <property name ="Medium" type ="String" />
+    <property name ="PipelineCheck" type ="String" />
+    <property name ="HistoryRecord" type ="String" />
+    <property name ="PressureTime" type ="String" />
+    <property name ="Remarks" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  <property name ="ProjectCode" type ="String" />
+  </class>
+</hibernate-mapping>

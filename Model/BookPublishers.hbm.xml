@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BookPublishers, ProjectMgt.Model" table="T_BookPublishers">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="ISBNNo" column="ISBNNo" type="String">
+		</property>
+		<property name="PublishersName" column="PublishersName" type="String">
+		</property>
+		<property name="PublishersAddress" column="PublishersAddress" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

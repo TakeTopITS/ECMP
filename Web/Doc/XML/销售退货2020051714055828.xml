@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_GoodsReturnOrder>
+    <SaleROID>35</SaleROID>
+    <DetailROID>35</DetailROID>
+    <ROID>35</ROID>
+    <ReturnName>RO2018090035</ReturnName>
+    <ReturnTime>2017-09-02T00:00:00+08:00</ReturnTime>
+    <OperatorCode>C7094               </OperatorCode>
+    <OperatorName>员工C7094</OperatorName>
+    <Applicant />
+    <Amount>1000.000</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <CustomerCode>KTOP                </CustomerCode>
+    <CustomerName>拓鼎                </CustomerName>
+    <Type>SALE      </Type>
+    <Status>新建      </Status>
+    <WareHouse />
+    <CarCode />
+    <Driver />
+  </T_GoodsReturnOrder>
+</NewDataSet>

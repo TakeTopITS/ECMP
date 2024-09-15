@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+body.subody{ background:#f5f5f5; overflow:scroll; overflow-x:hidden;}
+
+.clear{ height:0; clear:both; font-size:0; line-height:0; overflow:hidden; visibility:hidden;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{*+zoom:1;}
+
+div.f_head_news{position:absolute;/*top:40px;*/left:540px;width:130px; overflow:hidden; padding-left:20px;height:35px;background:url(../images/NewInfo.png) no-repeat 0 center;}
+	/*div.f_head_news li{ height:38px;}*/div.f_head_news li a{ line-height:16px; color:#fff;}
+div.f_max{ display:none;background:#fff;border-radius:0 0 5px 5px;left:-15px;opacity:0.9;position:absolute;top:33px;width:970px; padding:5px 15px 15px 15px;}
+	div.f_max .fm_info{float:left; width:50%;}div.f_max .fm_infos{float:left; width:100%;}
+	div.f_max .fm_info h1,div.f_max .fm_infos h1{font:18px/35px "microsoft yahei";color:#017afb; padding-left:15px;}	
+#navlist div.f_max .fm_info li{float:left; width:50%; height:25px; margin:0;}#navlist div.f_max .fm_infos li{float:left; width:25%; height:25px; margin:0;}
+		div.f_max .fm_info li img,div.f_max .fm_infos li img{float:left;}#navlist div.f_max .fm_info li a,#navlist div.f_max .fm_infos li a{float:left; display:block; height:25px; line-height:25px; padding-left:15px;font:12px/25px "simsun";}
+
+div.f_banner{ width:1280px; height:300px; overflow:hidden; margin:0 auto;}
+div.f_wrap{ width:1000px; margin:0 auto; background:#fff; margin-top:-120px; border-radius:5px; position:relative; z-index:1; padding-bottom:20px;}
+	div.f_wrap .fw_pos{background:url(../images/headerbg.jpg) left bottom repeat-x; padding-left:15px; font:12px/33px "simsun";height:33px;border-radius:5px 5px 0 0;}div.f_wrap .fw_pos a{ padding:0 5px; color:#e60012;}
+		div.f_wrap .fw_list{ background:#f2f2f2; padding:20px; width:900px; margin:5px auto;border-radius:10px;}
+		div.f_wrap p.fw_name{font:700 18px/40px "microsoft yahei"; color:#017afb; padding-left:30px;}
+		
+		div.lxwm_pic img{ float:right;}.fw_list .fw_lxwm{ padding-left:20px;}
+			.fw_list .fw_lxwm h2{font:14px/35px "simsun";color:#555;}
+				.fw_list .fw_lxwm p{font:12px/30px "simsun";color:#505050; padding-left:15px;}
+			
+		div.f_wrap .fw_list .fw_cpzx{ background:#fff;border-radius:8px;margin-bottom:15px;padding:10px;}div.f_wrap .fw_list .fw_cpzx h3{ margin-bottom:10px; background:#f9f9f9; border-radius:8px;}
+			div.f_wrap .fw_list .fw_cpzx h3 a{font:14px/30px "microsoft yahei"; color:#d63d52; padding-left:20px;}
+			div.f_wrap .fw_list .fw_cpzx p{font:12px/25px "microsoft yahei"; color:#888; text-indent:20px;}
+				div.f_wrap .fw_list .fw_cpzx p.links{ padding:5px 0; margin:5px 0; background:#f9f9f9; border-radius:8px;}div.f_wrap .fw_list .fw_cpzx p.links a{ display:inline-block; height:25px;font:12px/25px "simsun"; color:#017afb; padding:0 10px; border-radius:8px; text-indent:0; text-align:center;}div.f_wrap .fw_list .fw_cpzx p.links a:hover{ color:#d63d52;}
+				div.f_wrap .fw_list .fw_cpzx p.links_info{padding:5px 0; margin:5px 0; background:#f9f9f9; border-radius:8px;}div.f_wrap .fw_list .fw_cpzx p.links_info a{font:12px/25px "simsun"; color:#d63d52; padding:0 10px; text-indent:0; margin-right:5px; }div.f_wrap .fw_list .fw_cpzx p.links_info a:hover{text-decoration:underline;}
+				div.f_wrap .fw_list .fw_cpzx p.imgview{padding-left:50px;}div.f_wrap .fw_list .fw_cpzx p.imgview a{ float:left; margin-left:20px;}
+			div.f_wrap .fw_list .fw_cpzx img{ display:block; width:auto; margin:15px auto;}
+			
+			
+		div.f_wrap .fw_list .fw_jjfa{ background:#fff;border-radius:8px;margin-bottom:15px;padding:10px;}div.f_wrap .fw_list .fw_jjfa h3{ margin-bottom:10px; background:#f9f9f9; border-radius:8px;font:14px/30px "microsoft yahei";}
+		div.f_wrap .fw_list .fw_jjfa h3 a{font:14px/30px "microsoft yahei"; color:#d63d52; padding-left:20px;}
+		div.f_wrap .fw_list .fw_jjfa div img{ float:left; width:89px; height:115px; padding-left:15px;}
+			div.f_wrap .fw_list .fw_jjfa div.boxr{ float:left; width:85%;}
+				div.f_wrap .fw_list .fw_jjfa div.boxr p{ padding-left:15px;font:12px/30px "microsoft yahei";color:#505050;}
+		div.f_wrap .fw_list .fw_jjfa p.links_info{padding:5px 0; margin:5px 0; background:#f9f9f9; border-radius:8px;}div.f_wrap .fw_list .fw_jjfa p.links_info a{font:12px/25px "simsun"; color:#d63d52; padding:0 10px; text-indent:0; margin-right:5px; }div.f_wrap .fw_list .fw_jjfa p.links_info a:hover{text-decoration:underline;}
+		
+		div.f_wrap .fw_list .fw_zlxz{ background:#fff;border-radius:8px;margin-bottom:15px;padding:10px;}div.f_wrap .fw_list .fw_zlxz p{ padding-left:15px;font:12px/30px "microsoft yahei";color:#505050;}
+		div.f_wrap .fw_list .fw_zlxz ul.fwz_list{background:#f2f2f2;border-radius:8px; padding:15px 0;}div.f_wrap .fw_list .fw_zlxz ul.fwz_list li{ padding-left:15px;font:12px/30px "microsoft yahei";color:#505050;border-bottom: 2px solid #fff;}div.f_wrap .fw_list .fw_zlxz ul.fwz_list li.bor{border-bottom: 20px solid #fff;}
+		div.f_wrap .fw_list .fw_zlxz ul.fwz_list li a{ float:right; display:inline-block; padding-right:20px;font:12px/30px "microsoft yahei";color:#017afb; text-decoration:underline;}div.f_wrap .fw_list .fw_zlxz ul.fwz_list li a:hover{color:#e60012;}
+		
+		div.f_wrap .fw_list .fw_xwzx{ background:#fff;border-radius:8px;margin-bottom:15px;padding:10px;}
+			div.f_wrap .fw_list .fw_xwzx ul li{padding-left:15px;font:12px/30px "microsoft yahei";color:#505050;}
+			div.f_wrap .fw_list .fw_xwzx ul li a{ display:inline-block; padding-right:10px;font:12px/30px "microsoft yahei";color:#505050;}
+			div.f_wrap .fw_list .fw_xwzx ul li a:hover{color:#e60012;}
+				div.f_wrap .fw_list .fw_xwzx ul li em{ float:right; padding-right:20px; display:inline-block; color:#808080; font-style:normal;}
+			
+			
+		div.f_wrap .com_logo{margin:0 auto;padding:20px;width:900px;}
+			div.f_wrap .com_logo img{float:left;height:60px;margin-bottom:10px;padding-right:25px;width:200px;}
+	
+div.f_footer{ width:1000px; margin:0 auto; background:#e7e7e7; border-top:3px solid #017bfa; text-align:center;font:12px/35px "simsun"; color:#6a6a6a; height:35px;}div.f_footer a{color:#6a6a6a;}
+

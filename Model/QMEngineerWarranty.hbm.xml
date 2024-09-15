@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.QMEngineerWarranty, ProjectMgt.Model" table="T_QMEngineerWarranty">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="BrieflyDescribe" column="BrieflyDescribe" type="String">
+		</property>
+		<property name="NotificationDate" column="NotificationDate" type="DateTime">
+		</property>
+		<property name="WarrantyDate" column="WarrantyDate" type="DateTime">
+		</property>
+		<property name="PurchasingContractCode" column="PurchasingContractCode" type="String">
+		</property>
+		<property name="PurchasingContractName" column="PurchasingContractName" type="String">
+		</property>
+		<property name="CreateTime" column="CreateTime" type="DateTime">
+		</property>
+		<property name="CreatePer" column="CreatePer" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

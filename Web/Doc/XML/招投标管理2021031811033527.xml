@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_BMAnnInvitation>
+    <ID>13</ID>
+    <Name>卫浴设备销售与安装工程项目邀标</Name>
+    <EnterPer>员工C7094</EnterPer>
+    <EnterUnit>集团办公室</EnterUnit>
+    <EnterDate>2021-03-18T00:00:00+08:00</EnterDate>
+    <BidWay>邀请招标</BidWay>
+    <BidPlanID>12</BidPlanID>
+    <BidPlanName>卫浴设备销售与安装工程</BidPlanName>
+    <BidObjects>9,7,3</BidObjects>
+    <Remark>卫浴设备销售与安装工程项目邀标，请及时参加</Remark>
+    <EnterCode>C7094</EnterCode>
+    <PhoneList>020-38063662,12345678,1111111</PhoneList>
+    <PhoneRemark>卫浴设备销售与安装工程项目邀标，请及时参加</PhoneRemark>
+    <EmailRemark>卫浴设备销售与安装工程项目邀标，请及时参加</EmailRemark>
+    <ResRemark />
+  </T_BMAnnInvitation>
+</NewDataSet>

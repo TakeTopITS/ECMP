@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractReceivables, ProjectMgt.Model" table="T_ConstractReceivables">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="BillCode" type ="String" />
+    <property name ="ConstractCode" type ="String" />
+    <property name ="Account" type ="String" />
+    <property name ="ReceivablesAccount" type ="Decimal" />
+    <property name ="ReceivablesTime" type ="DateTime" />
+    <property name ="ReceiverAccount" type ="Decimal" />
+    <property name ="ReceiverTime" type ="DateTime" />
+    <property name ="UNReceiveAmount" type ="Decimal" />
+    <property name ="InvoiceAccount" type ="Decimal" />
+    <property name ="Payer" type ="String" />
+    <property name ="CurrencyType" type ="String" />
+    <property name ="OperatorCode" type ="String" />
+    <property name ="OperatorName" type ="String" />
+    <property name ="OperateTime" type ="DateTime" />
+    <property name ="PreDays" type ="int" />
+    <property name ="Status" type ="String" />
+    <property name ="Comment" type ="String" />
+
+    <property name ="RelatedType" type ="String" />
+    <property name ="RelatedID" type ="int" />
+    <property name ="RelatedRecordID" type ="int" />
+    <property name ="RelatedProjectID" type ="int" />
+    <property name ="RelatedPlanID" type = "int" />
+
+	  <property name ="ExchangeRate" type ="Decimal" />
+	  <property name ="AccountCode" type ="String" />
+    <property name ="IsSecrecy" type ="String" />
+  </class>
+</hibernate-mapping>

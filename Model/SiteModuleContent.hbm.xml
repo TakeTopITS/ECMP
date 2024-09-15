@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.SiteModuleContent, ProjectMgt.Model" table="T_SiteModuleContent">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Title" type ="String" />
+
+    <property name ="ModuleName" type ="String" />
+
+    <property name ="Content" type ="StringClob" />
+
+    <property name ="PublisherCode" type ="String" />
+
+    <property name ="PublisherName" type ="String" />
+
+    <property name ="PublishTime"  type ="DateTime" />
+
+    <property name ="LangCode" type ="String" />
+  </class>
+</hibernate-mapping>

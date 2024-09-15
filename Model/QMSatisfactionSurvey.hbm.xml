@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.QMSatisfactionSurvey, ProjectMgt.Model" table="T_QMSatisfactionSurvey">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="PurchasingContractCode" column="PurchasingContractCode" type="String">
+		</property>
+		<property name="PurchasingContractName" column="PurchasingContractName" type="String">
+		</property>
+		<property name="Supplier" column="Supplier" type="String">
+		</property>
+		<property name="SatisfactionDegree" column="SatisfactionDegree" type="String">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="EvaluationDate" column="EvaluationDate" type="DateTime">
+		</property>
+		<property name="CreateTime" column="CreateTime" type="DateTime">
+		</property>
+		<property name="CreatePer" column="CreatePer" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

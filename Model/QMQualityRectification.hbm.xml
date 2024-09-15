@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.QMQualityRectification, ProjectMgt.Model" table="T_QMQualityRectification">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="HeadUnit" column="HeadUnit" type="String">
+		</property>
+		<property name="ResponsibilityUnit" column="ResponsibilityUnit" type="String">
+		</property>
+		<property name="RectificationNoticeCode" column="RectificationNoticeCode" type="String">
+		</property>
+		<property name="RectificationNoticeName" column="RectificationNoticeName" type="String">
+		</property>
+		<property name="RectificationRemark" column="RectificationRemark" type="String">
+		</property>
+		<property name="CreateTime" column="CreateTime" type="DateTime">
+		</property>
+		<property name="CreatePer" column="CreatePer" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

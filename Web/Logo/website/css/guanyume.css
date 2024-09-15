@@ -1,0 +1,85 @@
+@charset "utf-8";
+.guanyu{
+	font-size:16px;
+	line-height:30px;
+	text-indent:2em;
+}
+.pic img{
+	width:640px;
+	height:430px;
+}
+
+<!--放大图片-->
+.fix {
+ *zoom: 1;
+}
+.fix:after {
+	display: block;
+	content: "clear";
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+body {
+	position: relative;
+}
+.one{
+	width:1000px;
+	position:relative;
+	margin:0 auto;
+}
+.box{
+	float:left;
+}
+.smallImg {
+	width: 200px;
+/*	height: 200px;*/
+}
+.bigImg {
+	padding: 50px;
+	/*display: block;*/
+	position: absolute;
+	top: 0;
+	left: 30%;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+	z-index:99;
+}
+.bigImg img {
+	height: 500px;
+}
+.bigImg span {
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	cursor: pointer;
+}
+.APP{
+	display:none;
+}
+img{
+	/*margin-left:-20px;*/
+}
+@media screen and (max-device-width: 970px){
+.guanyu{
+	font-size:30px;
+	line-height:50px;
+}
+.pic img{
+	width:950px;
+	height:650px;
+}
+.pc{
+	display:none;
+}
+.APP{
+	display:block;
+}
+.APP img{
+	width:100%;
+	/*margin-left:-50px;*/
+}
+}

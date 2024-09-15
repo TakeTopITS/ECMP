@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMSupplierCertification, ProjectMgt.Model" table="T_BMSupplierCertification">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="SupplierCode" column="SupplierCode" type="String">
+		</property>
+		<property name="CertificateNum" column="CertificateNum" type="String">
+		</property>
+		<property name="CertificateName" column="CertificateName" type="String">
+		</property>
+		<property name="ReleaseTime" column="ReleaseTime" type="DateTime">
+		</property>
+		<property name="LicenseAgency" column="LicenseAgency" type="String">
+		</property>
+		<property name="Attach" column="Attach" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

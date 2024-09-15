@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_CarApplyForm>
+    <id>4</id>
+    <departcode>101010104           </departcode>
+    <departname>经营开发部                                   </departname>
+    <applicantcode>032212              </applicantcode>
+    <applicantname>蔡锦伟                 </applicantname>
+    <applyreason>拿合同</applyreason>
+    <departtime>2021-10-26T11:00:00+08:00</departtime>
+    <backtime>2021-10-26T11:06:00+08:00</backtime>
+    <attendant />
+    <boardingsite>公司</boardingsite>
+    <destination>指挥部</destination>
+    <cartype>轿车                  </cartype>
+    <status>审批中       </status>
+    <makeusercode>032212              </makeusercode>
+    <maketime>2021-10-26T11:10:29.038831+08:00</maketime>
+  </T_CarApplyForm>
+</NewDataSet>

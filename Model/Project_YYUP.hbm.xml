@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.Project_YYUP, ProjectMgt.Model" table="T_Project_YYUP">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ProjectID" type ="int" />
+    <property name ="ContractCode" type ="String" />
+
+    <property name ="CustomerServiceCode" type ="String" />
+    <property name ="CustomerName" type ="String" />
+    <property name ="EncryptionKey" type ="String" />
+    <property name ="ProjectSupervision" type ="String" />
+    <property name ="ProjectSize" type ="String" />
+    <property name ="SubordinateIndustry" type ="String" />
+
+    <property name ="SubordinateIndustryChild" type ="String" />
+
+    <property name ="ProductLine" type ="String" />
+    <property name ="NumberSites" type ="String" />
+    <property name ="Cycle" type ="String" />
+    <property name ="OutsourcingInformation" type ="String" />
+    <property name ="SignBillTime" type ="String" />
+    <property name ="OfferStandard" type ="String" />
+    <property name ="CustomMainProducts" type ="String" />
+    <property name ="ProgressStatus" type ="String" />
+
+    <property name ="IsSample" type ="String" />
+    <property name ="IsPrototype" type ="String" />
+    <property name ="IsStrategy" type ="String" />
+    <property name ="IsKey" type ="String" />
+    <property name ="SalesProperty" type ="String" />
+
+  <property name ="ModuleIDs" type ="String" />
+  <property name ="ModuleNames" type ="String" />
+
+    <property name ="DataBaseName" type ="String" />
+    <property name ="DataBaseSystemName" type ="String" />
+    <property name ="DataBaseHardwareName" type ="String" />
+    <property name ="ApplicationSystemName" type ="String" />
+    <property name ="ApplicationHardwareName" type ="String" />
+    <property name ="NetworkName" type ="String" />
+
+  <property name ="PlanID" type ="int" />
+
+    <property name ="CustomerAddress" type ="String" />
+
+    <property name ="VersionName" type ="String" />
+
+  <property name ="CustomerServicePass" type ="String" />
+
+  <property name ="TemProjectID" type ="int" />
+  </class>
+</hibernate-mapping>

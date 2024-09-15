@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.BMBidAddendum, ProjectMgt.Model" table="T_BMBidAddendum">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="BidPlanID" column="BidPlanID" type="int">
+		</property>
+		<property name="BidPlanName" column="BidPlanName" type="String">
+		</property>
+		<property name="Addendumer" column="Addendumer" type="String">
+		</property>
+		<property name="AddendumContent" column="AddendumContent" type="String">
+		</property>
+		<property name="AddendumDate" column="AddendumDate" type="DateTime">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

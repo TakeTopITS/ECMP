@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.KPITemplateForDepartPosition, ProjectMgt.Model" table="T_KPITemplateForDepartPosition">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="SortNumber" type ="int" />
+
+    <property name ="DepartCode" type ="string" />
+
+    <property name ="Position" type ="String" />
+
+    <property name ="KPIType" type ="String" />
+
+    <property name ="KPI" type ="String" />
+
+    <property name ="Definition" type ="String" />
+
+    <property name ="KPIFunction" type ="String" />
+
+    <property name ="Formula" type ="String" />
+
+    <property name ="SqlCode" type ="String" />
+
+    <property name ="UnitSqlPoint" type ="Decimal" />
+
+    <property name="Source" type ="String" />
+
+    <property name ="Weight" type ="Decimal" />
+  </class>
+</hibernate-mapping>

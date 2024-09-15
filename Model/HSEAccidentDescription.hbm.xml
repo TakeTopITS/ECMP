@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSEAccidentDescription, ProjectMgt.Model" table="T_HSEAccidentDescription">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="ProjectId" column="ProjectId" type="int">
+		</property>
+		<property name="ProjectName" column="ProjectName" type="String">
+		</property>
+		<property name="SceneLeader" column="SceneLeader" type="String">
+		</property>
+		<property name="AccidentDate" column="AccidentDate" type="DateTime">
+		</property>
+		<property name="AccidentAddr" column="AccidentAddr" type="String">
+		</property>
+		<property name="AccidentType" column="AccidentType" type="String">
+		</property>
+		<property name="DepartCode" column="DepartCode" type="String">
+		</property>
+		<property name="DeathNum" column="DeathNum" type="int">
+		</property>
+		<property name="SeriousInjury" column="SeriousInjury" type="int">
+		</property>
+		<property name="MinorInjury" column="MinorInjury" type="int">
+		</property>
+		<property name="AccidentAfter" column="AccidentAfter" type="String">
+		</property>
+		<property name="AccidentScope" column="AccidentScope" type="String">
+		</property>
+		<property name="AccidentBecause" column="AccidentBecause" type="String">
+		</property>
+		<property name="Measures" column="Measures" type="String">
+		</property>
+		<property name="Others" column="Others" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

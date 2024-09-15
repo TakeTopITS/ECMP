@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <AutoLocalizeReportOnRun>True</AutoLocalizeReportOnRun>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <TAKETOPDBConnect Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>TAKETOPDBConnect</Alias>
+        <ConnectionStringEncrypted>42yJYNdf2fVDTbyY6nzn68Ja54rnaNPd8VqsfGc9rWrj8pdI3kzDhfMI/YBLcSV/nm7bAmVXC/1pXN2A6hjhRvfcdS1hDdPIaWGl9HGIZWPbVonCYlf77eFbIZxjRPa783j5TEVtAZHCE3ncyCViXt98c+NiaLL5akTVyXp0NV7VRs8pyVm7vGhEgYnpGeMD0RjZSMNVk91vEykIZnxlY8hqz0hhUbt9aV+E7GFAI3uN</ConnectionStringEncrypted>
+        <Name>TAKETOPDBConnect</Name>
+      </TAKETOPDBConnect>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <t_project Ref="3" type="Stimulsoft.Report.Dictionary.StiPostgreSQLSource" isKey="true">
+        <Alias>t_project</Alias>
+        <Columns isList="true" count="43">
+          <value>acceptstandard,System.String</value>
+          <value>begindate,System.String</value>
+          <value>belongdepartcode,System.String</value>
+          <value>belongdepartname,System.String</value>
+          <value>budget,System.Int64</value>
+          <value>confirmedbysupper,System.String</value>
+          <value>currencytype,System.String</value>
+          <value>customername,System.String</value>
+          <value>customerpmcode,System.String</value>
+          <value>customerpmname,System.String</value>
+          <value>customerprojectcode,System.String</value>
+          <value>danjia1,System.Int64</value>
+          <value>danjia2,System.Int64</value>
+          <value>dianlan,System.String</value>
+          <value>dianyadengji,System.String</value>
+          <value>enddate,System.String</value>
+          <value>finishpercent,System.Int64</value>
+          <value>jiakong,System.String</value>
+          <value>jiantu,System.String</value>
+          <value>makedate,System.String</value>
+          <value>manhour,System.Int64</value>
+          <value>mannumber,System.Int64</value>
+          <value>parentid,System.Int64</value>
+          <value>pingpai,System.String</value>
+          <value>pmcode,System.String</value>
+          <value>pmname,System.String</value>
+          <value>priority,System.String</value>
+          <value>productname,System.String</value>
+          <value>projectaddress,System.String</value>
+          <value>projectamount,System.Int64</value>
+          <value>projectclass,System.String</value>
+          <value>projectcode,System.String</value>
+          <value>projectdetail,System.String</value>
+          <value>projectid,System.Int64</value>
+          <value>projectname,System.String</value>
+          <value>projecttype,System.String</value>
+          <value>secondprojectname,System.String</value>
+          <value>status,System.String</value>
+          <value>statusvalue,System.String</value>
+          <value>usercode,System.String</value>
+          <value>username,System.String</value>
+          <value>wutan,System.String</value>
+          <value>yewulaiyuan,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>0f31b57d73364fcf87e0d673404b9e4f</Key>
+        <Name>t_project</Name>
+        <NameInSource>连接2</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from t_project</SqlCommand>
+      </t_project>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="1">
+    <Item3 Ref="4" type="Stimulsoft.Report.StiGlobalizationContainer" isKey="true">
+      <CultureName>zh</CultureName>
+      <Items isList="true" count="0" />
+    </Item3>
+  </GlobalizationStrings>
+  <Key>d1f31dcbfdbf42eb92903c1eb1341c8e</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <页眉1 Ref="6" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,1.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <文本1 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,0.4,9.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,20</Font>
+              <Guid>65e6d5f1bb564a18bd2a707bf88e134a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>文本1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>研发效率分析图</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </文本1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>页眉1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </页眉1>
+        <PageFooterBand1 Ref="8" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,26.9,19,0.8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageFooterBand1>
+        <HeaderBand1 Ref="9" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3,19,0.8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </HeaderBand1>
+        <DataBand1 Ref="10" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,4.6,19,0.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text1 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,0.2,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>ad0717d3f1474699a78fa519e1bcfc55</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="10" />
+              <Text>{T_Project.ProjectCode}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text1>
+            <Text2 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>1bff5c6fe0c844a8aef11ed36949104b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="5" />
+              <Parent isRef="10" />
+              <Text>{T_Project.ProductName}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>DataSource1</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <ReportSummaryBand1 Ref="13" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.2,19,5.6</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </ReportSummaryBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>cd75d051897547e8b426b798a15d64e5</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <RefreshTime>10</RefreshTime>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>12/31/2015 5:09:52 AM</ReportChanged>
+  <ReportCreated>9/11/2012 4:01:31 PM</ReportCreated>
+  <ReportGuid>f633c7c2f5944f148904ef34832d6a53</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2020.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ConstractSales, ProjectMgt.Model" table="T_ConstractSales">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="ConstractCode" type ="String" />
+
+    <property name ="SalesName" type ="String" />
+
+    <property name ="Duty" type ="String" />
+
+    <property name ="Commission" type ="Decimal" />
+
+    <property name ="CommissionStatus" type ="String" />
+
+    <property name ="GiveTime" type="DateTime" />
+
+    <property name ="Comment" type ="String" />
+  </class>
+</hibernate-mapping>

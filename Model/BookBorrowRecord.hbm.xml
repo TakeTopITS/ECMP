@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.BookBorrowRecord, ProjectMgt.Model" table="T_BookBorrowRecord">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="BookInfoId" column="BookInfoId" type="int">
+		</property>
+		<property name="BarCode" column="BarCode" type="String">
+		</property>
+		<property name="BookName" column="BookName" type="String">
+		</property>
+		<property name="ReferenceNo" column="ReferenceNo" type="String">
+		</property>
+		<property name="BookClassificationId" column="BookClassificationId" type="int">
+		</property>
+		<property name="BookClassificationName" column="BookClassificationName" type="String">
+		</property>
+		<property name="BookPublishersId" column="BookPublishersId" type="int">
+		</property>
+		<property name="BookPublishersName" column="BookPublishersName" type="String">
+		</property>
+		<property name="BookUseNum" column="BookUseNum" type="int">
+		</property>
+		<property name="Version" column="Version" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="BorrowCode" column="BorrowCode" type="String">
+		</property>
+		<property name="BorrowName" column="BorrowName" type="String">
+		</property>
+		<property name="BorrowDate" column="BorrowDate" type="DateTime">
+		</property>
+		<property name="BackDate" column="BackDate" type="DateTime">
+		</property>
+		<property name="ReaderTypeId" column="ReaderTypeId" type="int">
+		</property>
+		<property name="ReaderTypeName" column="ReaderTypeName" type="String">
+		</property>
+		<property name="CertificateId" column="CertificateId" type="int">
+		</property>
+		<property name="CertificateName" column="CertificateName" type="String">
+		</property>
+		<property name="CertificateNo" column="CertificateNo" type="String">
+		</property>
+		<property name="Remark" column="Remark" type="String">
+		</property>
+		<property name="RealBackDate" column="RealBackDate" type="DateTime">
+		</property>
+		<property name="BookRent" column="BookRent" type="Decimal">
+		</property>
+	</class>
+</hibernate-mapping>

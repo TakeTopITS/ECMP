@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.Approve, ProjectMgt.Model" table="T_ApproveFlow">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="Type" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+
+    <property name ="RelatedName" type="String" />
+
+    <property name ="StepID" type ="int" />
+
+    <property name ="UserCode" type ="String" />
+
+    <property name ="UserName" type ="String" />
+
+    <property name ="Operation" type ="String" />
+
+    <property name ="Content" type ="String" />
+
+    <property name ="AssignTime" type ="DateTime" />
+
+    <property name ="ApproveTime" type="DateTime" />
+
+    <property name ="ReceiverCode" type="String" />
+
+    <property name ="ReceiverName" type="String" />
+
+    <property name ="PriorID" type="int" />
+
+    <property name ="RouteNumber" type ="int" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.Item, ProjectMgt.Model" table="T_Item">
+
+		<id name="ItemCode" column="ItemCode" type="String">
+
+			<generator class="assigned" />
+		</id>
+
+		<property name ="ItemName" type ="String" />
+		<property name ="Type" type ="String" />
+		<property name ="BigType" type ="string" />
+		<property name ="SmallType" type ="String" />
+		<property name ="Unit" type ="String" />
+		<property name ="ModelNumber" type ="String" />
+		<property name ="Specification" type="String" />
+		<property name ="PULeadTime" type ="Decimal" />
+		<property name ="MFLeadTime" type ="Decimal" />
+		<property name ="PurchasePrice" type ="Decimal" />
+		<property name ="SalePrice" type ="Decimal" />
+		<property name ="CurrencyType" type ="String" />
+		<property name ="HRCost" type ="Decimal" />
+		<property name ="MTCost" type ="Decimal" />
+		<property name ="MFCost" type ="Decimal" />
+		<property name ="SafetyStock" type ="Decimal" />
+		<property name ="LossRate" type ="Decimal" />
+		<property name ="RegistrationNumber" type="String" />
+		<property name ="PackingType" type="String" />
+		<property name ="DefaultProcess" type ="String" />
+		<property name ="WarrantyPeriod" type ="int" />
+		<property name ="PhotoURL" type ="String" />
+		<property name ="RelatedType" type ="String" />
+		<property name ="RelatedID" type="int" />
+		<property name ="Brand" type="String" />
+	</class>
+</hibernate-mapping>

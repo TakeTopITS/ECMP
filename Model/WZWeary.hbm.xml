@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZWeary, ProjectMgt.Model" table="T_WZWeary">
+
+    <id name="WearyCode" column="WearyCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="StoreRoom" type ="String" />
+    <property name ="PlanTime" type ="DateTime" />
+    <property name ="WearyTotalMoney" type ="Decimal" />
+    <property name ="RowNumber" type ="int" />
+    <property name ="WearyBalance" type ="Decimal" />
+    <property name ="OverNumber" type ="int" />
+    <property name ="Remark" type ="String" />
+    <property name ="Process" type ="String" />
+    <property name ="MainLeader" type ="String" />
+    <property name ="Marker" type ="String" />
+    <property name ="TotalYear" type ="int" />
+  </class>
+</hibernate-mapping>

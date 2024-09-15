@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_BMAnnInvitation>
+    <ID>13</ID>
+    <Name>浦江资源建设项目招标邀请书</Name>
+    <EnterPer>员工C7094</EnterPer>
+    <EnterUnit>集团办公室</EnterUnit>
+    <EnterDate>2021-03-12T00:00:00+08:00</EnterDate>
+    <BidWay>邀请招标</BidWay>
+    <BidPlanID>14</BidPlanID>
+    <BidPlanName>浦江资源建设项目招标方案</BidPlanName>
+    <BidObjects>9,7,4</BidObjects>
+    <Remark>邀请贵司参与浦江资源建设项目投标</Remark>
+    <EnterCode>C7094</EnterCode>
+    <PhoneList>020-38063662,12345678,0202020202</PhoneList>
+    <PhoneRemark>邀请贵司参与浦江资源建设项目投标</PhoneRemark>
+    <EmailRemark>邀请贵司参与浦江资源建设项目投标</EmailRemark>
+    <ResRemark>一周之内</ResRemark>
+  </T_BMAnnInvitation>
+</NewDataSet>

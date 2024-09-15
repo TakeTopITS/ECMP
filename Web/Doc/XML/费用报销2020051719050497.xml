@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ExpenseClaim>
+    <ECID>22</ECID>
+    <ExpenseName>项目479 潜水器材激光焊接设备研发项目 费用报销申请</ExpenseName>
+    <Purpose />
+    <Amount>1000.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <ApplyTime>2020-05-17T19:12:55+08:00</ApplyTime>
+    <Status>审批中    </Status>
+    <RelatedType>项目                </RelatedType>
+    <RelatedID>479</RelatedID>
+  </T_ExpenseClaim>
+</NewDataSet>

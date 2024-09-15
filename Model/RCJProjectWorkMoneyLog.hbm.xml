@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.RCJProjectWorkMoneyLog, ProjectMgt.Model" table="T_RCJProjectWorkMoneyLog">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="native" />
+    </id>
+    <property name ="WorkConfirmID" type ="int" />
+    <property name ="ProjectID" type ="int" />
+    <property name ="ItemNo" type ="int" />
+    <property name ="ItemType" type ="int" />
+    <property name ="WorkMonth"  type ="int" />
+    <property name ="WorkYear"  type ="int" />
+    <property name ="MoneyNum" type ="double" />
+    <property name ="ChangedByWho" type ="String" />
+    <property name ="ChangedTime" type ="String" />
+    <property name ="ChangedMemo" type ="String" />
+  </class>
+</hibernate-mapping>

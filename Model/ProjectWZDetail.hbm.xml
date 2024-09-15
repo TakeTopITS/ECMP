@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+	<class name="ProjectMgt.Model.ProjectWZDetail, ProjectMgt.Model" table="T_ProjectWZDetail">
+		<id name="ProjectID" column="ProjectID" type="int">
+			<generator class="assigned" />
+		</id>
+		<property name ="AuthorizedProcurement" type ="String" />
+		<property name ="ABudgetFor" type ="Decimal" />
+		<property name ="SincePurchaseBudget" type ="Decimal" />
+		<property name ="ConstructionUnit" type ="String" />
+		<property name ="SupervisionUnit" type ="String" />
+    <property name ="Leader" type ="String" />
+    <property name ="FeeManage" type ="String" />
+    <property name ="MaterialPerson" type ="String" />
+    <property name ="IsMark" type ="int" />
+	</class>
+</hibernate-mapping>

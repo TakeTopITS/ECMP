@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.GDWPSCode, ProjectMgt.Model" table="T_GDWPSCode">
+
+    <id name="WPSNo" column="WPSNo" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="Description" type ="String" />
+    <property name ="Remarks" type ="String" />
+    <property name ="IsMark" type ="int" />
+    <property name ="UserCode" type ="String" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ExpenseClaim>
+    <DetailECID>21</DetailECID>
+    <ECID>21</ECID>
+    <ExpenseName>DSASDFASDFSAF</ExpenseName>
+    <Purpose>模压阿斯蒂芬</Purpose>
+    <Amount>232323.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <ApplyTime>2020-05-17T14:48:20+08:00</ApplyTime>
+    <Status>审批中    </Status>
+    <RelatedType>其它                </RelatedType>
+    <RelatedID>0</RelatedID>
+  </T_ExpenseClaim>
+</NewDataSet>

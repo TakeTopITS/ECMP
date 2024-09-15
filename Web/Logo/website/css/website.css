@@ -1,0 +1,151 @@
+@charset "utf-8";
+@media screen and (max-device-width: 970px){
+	.box #list #smalllist .bigbox h3{
+		font-size:30px;
+	}
+	.box #list #smalllist .bigbox p{
+		font-size:26px;
+}
+    .box #list #smalllist .bigbox a{
+		font-size:26px;
+	}
+.title1{
+	font-size:20px;
+	background:#e6e7e7 no-repeat;
+}
+.bigbox{
+	margin:0 5px 15px;
+}
+}
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style:outside none none;
+}
+
+.banner{
+	background:url(../images/banner.jpg) center;
+	background-repeat:no-repeat;
+	width:100%;
+	height:460px;
+}
+.floatpart1{
+	background:url(../images/8choices-1.png) no-repeat;
+	width:178px;
+	height:109px;
+	position:absolute;
+	left:45%;
+	margin-top:-35px;
+}
+.darknoise{
+	background:url(../images/darknoise.png) no-repeat center top;
+	width:100%;
+	height:775px;
+	clear:both;
+	margin-top:74px;
+}
+.concent{
+	padding-top:60px;
+	font-family:"微软雅黑";
+}
+.floatpart{
+	background:url(../images/8choices.png) no-repeat center top;
+	width:178px;
+	height:109px;
+	position:absolute;
+	left:45%;
+	margin-top:-60px;
+}
+.title{
+	border:#8E8B8C solid 1px;
+	color:#000;
+	font-size:36px;
+	padding:20px 10px;
+	text-align:center;
+	z-index:1;
+	width:450px;
+	font-family:"微软雅黑";
+	margin:0 auto -10px;
+}
+.title1{
+	font-size:14px;
+	color:#505050;
+	text-align:center;
+	z-index:2;
+	background:#e6e7e7 no-repeat;
+	width:260px;
+	position:relative;
+	margin:0 auto;
+	margin-top:-10px;
+	font-family:"微软雅黑";
+}
+.box ul{
+	width:928px;
+	margin:20px auto 0;
+}
+.box ul li{
+	width:222px;
+	height:278px;
+	background:#fff;
+	position:relative;
+	text-align:center;
+	float:left;
+	margin:0 5px 10px;
+	overflow:hidden;
+}
+a{
+	cursor:pointer;
+	text-decoration:none;
+	color:#000;
+}
+a:link{
+	color:inherit;
+	text-decoration:none
+}
+
+.img{
+	margin:25px 0 30px;
+	vertical-align:middle;
+}
+.img img{
+	width:140px;
+	height:140px;
+}
+.box ul li h3{
+	font-size:18px;
+	font-weight:normal;
+	line-height:18px;
+	margin:0;
+	padding:0;
+}
+.box ul li p{
+	font-size:12px;
+	color:#c5c5c5;
+	margin:15px 0 0;
+	padding:0;
+}
+.box ul li a{
+	font-size:18px;
+}
+.pointer{
+	width:222px;
+	height:98px;
+	background:#FF665E;
+    top:278px;
+	position:absolute;
+	color:#fff;
+}
+.pointer p.pointer_one{
+	color:#fff;
+	font-size:16px;
+	margin-top:10px;
+}
+.pointer p.pointer_two{
+	color:#fff;
+	font-size:16px;
+}
+.goumai{
+	 font-size:20px;
+ }

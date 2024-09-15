@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSEEnvirFactorSurDetail, ProjectMgt.Model" table="T_HSEEnvirFactorSurDetail">
+		<id name ="ID" column="ID" type ="int">
+			<generator class="identity" />
+		</id>
+		<property name="EnvirFactorSurveyCode" column="EnvirFactorSurveyCode" type="String">
+		</property>
+		<property name="EnvirFactorSurveyName" column="EnvirFactorSurveyName" type="String">
+		</property>
+		<property name="FactorCode" column="FactorCode" type="String">
+		</property>
+		<property name="FactorName" column="FactorName" type="String">
+		</property>
+		<property name="EvaluationResult" column="EvaluationResult" type="String">
+		</property>
+		<property name="SignificantDegree" column="SignificantDegree" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

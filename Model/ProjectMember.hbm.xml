@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.ProjectMember, ProjectMgt.Model" table="t_projectmember">
+
+    <id name="UserCode" column="UserCode" type="String">
+
+      <generator class="assigned" />
+    </id>
+
+    <property name ="UserName" type ="String" />
+    <property name ="Gender" type ="String" />
+    <property name ="Age" type ="int" />
+    <property name ="Password" type ="String" />
+    <property name ="RefUserCode" type ="String" />
+    <property name ="SortNumber" type ="int" />
+
+    <property name ="Duty"  type ="String" />
+    <property name ="JobTitle" type ="String" />
+
+    <property name ="OfficePhone" type ="String" />
+    <property name ="MobilePhone" type ="String" />
+    <property name ="EMail" type ="String" />
+    <property name ="WorkScope" type ="String" />
+    <property name ="JoinDate" type ="DateTime" />
+    <property name ="DepartCode" type ="String" />
+    <property name ="DepartName" type ="String" />
+    <property name ="ChildDepartment" type ="String" />
+    <property name ="CreatorCode" type ="String" />
+    <property name ="Status" type ="String" />
+
+    <property name ="EnglishName" type ="String" />
+    <property name ="Nationality" type ="String" />
+    <property name ="NativePlace" type ="String" />
+    <property name ="HuKou" type ="String" />
+    <property name ="Residency" type ="String" />
+    <property name ="Address" type ="String" />
+    <property name ="BirthDay" type ="DateTime" />
+    <property name ="LunarBirthDay" type ="DateTime" />
+    <property name ="MaritalStatus" type ="String" />
+    <property name ="Degree" type ="String" />
+    <property name ="Major" type ="String" />
+    <property name ="GraduateSchool" type ="String" />
+    <property name ="IDCard" type ="String" />
+    <property name ="BloodType" type ="String" />
+    <property name ="Height" type ="int" />
+    <property name ="LangCode" type="String" />
+    <property name ="Language" type ="String" />
+    <property name ="UrgencyPerson" type ="String" />
+    <property name ="UrgencyCall" type ="String" />
+    <property name ="PhotoURL" type ="String" />
+    <property name ="SignPictureURL" type ="String" />
+    <property name ="SignPictureURL2" type ="String" />
+    <property name ="SignPictureURL3" type ="String" />
+    <property name ="Introducer" type ="String" />
+    <property name ="IntroducerDepartment" type ="String" />
+    <property name ="IntroducerRelation" type ="String" />
+    <property name ="Comment" type ="String" />
+
+    <property name ="UserType" type="String" />
+
+    <property name ="UserRTXCode" type ="String" />
+
+    <property name ="WorkType" type ="String" />
+
+    <property name ="PasswordShal" type ="String" />
+
+    <property name ="MDIStyle" type ="String" />
+
+    <property name ="AllowDevice" type ="String" />
+
+    <property name ="ContractEndTime" type ="String" />
+    <property name ="ContractDocument" type ="String" />
+    <property name ="ContractDocumentURL" type ="String" />
+
+    <property name ="HourlySalary" type ="Decimal" />
+    <property name ="MonthlySalary" type ="Decimal" />
+
+    <property name ="CssDirectory" type ="String" />
+  </class>
+</hibernate-mapping>

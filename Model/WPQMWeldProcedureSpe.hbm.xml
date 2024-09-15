@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.WPQMWeldProcedureSpe, ProjectMgt.Model" table="T_WPQMWeldProcedureSpe">
+		<id name="ID" column="ID" type="int">
+			<generator class="identity" />
+		</id>
+		<property name ="WeldProCode" type ="String" />
+		<property name ="WeldingType" type ="String" />
+		<property name ="WeldedJointDiagram" type ="String" />
+		<property name ="WeldingProcess" type ="String" />
+		<property name ="FigureNumber" type ="String" />
+		<property name ="JointNumber" type ="String" />
+		<property name ="HolderWeldProject" type ="String" />
+		<property name ="WeldMetalThickness" type ="String" />
+		<property name ="WeldingPosition" type ="String" />
+		<property name ="WeldingTechnology" type ="String" />
+		<property name ="PreheatingTemperature" type ="String" />
+		<property name ="LayerTemperature" type ="String" />
+		<property name ="AfterWeldingClass" type ="String" />
+		<property name ="AfterHot" type ="String" />
+		<property name ="TunElecDiameter" type ="String" />
+		<property name ="NozzleDiameter" type ="String" />
+		<property name ="PulseFrequency" type ="String" />
+		<property name ="PulseWidth" type ="String" />
+		<property name ="GasComposition" type ="String" />
+		<property name ="GasFlowFront" type ="String" />
+		<property name ="GasFlowReverse" type ="String" />
+		<property name ="Layer" type ="String" />
+		<property name ="Polarity" type ="String" />
+		<property name ="WeldingCurrent" type ="String" />
+		<property name ="ArcVoltage" type ="String" />
+		<property name ="WeldingSpeed" type ="String" />
+		<property name ="LineEnergy" type ="String" />
+		<property name ="EnterCode" type ="String" />
+	</class>
+</hibernate-mapping>

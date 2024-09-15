@@ -1,0 +1,170 @@
+
+#leftpage{width:670px;
+		 border:1px #A6D8FB solid;
+		 float:left;
+		 padding:5px 10px;
+		 line-height:20px;
+		 }
+#midpage{width:25px;
+            height:500px;
+			float:left;
+			border:0px;
+			padding:0px;
+			margin:0px;
+			background-image:url(../Images/foosun_mid.jpg);
+			background-repeat:no-repeat;
+			}
+			
+#midpicpage{width:25px;
+            height:500px;
+			float:left;
+			border:0px;
+			padding:0px;
+			margin:0px;
+			background-image:url(../Images/foosun_mid.jpg);
+			background-repeat:no-repeat;
+			}
+
+#rightpage{width:250px;
+        height:auto;
+		float:left;
+		border:1px #A6D8FB solid;
+		}
+		
+/*右边栏目列表标题*/			
+.rlisttitle{font-size:14px;
+            font-weight:bold;
+			padding:10px 10px 5px 8px;
+		 }		
+.listtitlea{height:29px;
+       background-image:url(../Images/bg.jpg);
+	   background-repeat:repeat-x;
+	   border-bottom:1px #A6D8FB solid;
+	   line-height:29px;
+	   }		
+.listtitleb{height:29px;
+       background-image:url(../Images/bg.jpg);
+	   background-repeat:repeat-x;
+	   border-top:1px #A6D8FB solid;
+	   border-bottom:1px #A6D8FB solid;
+	   line-height:29px;
+	   }
+   
+.rlistbox{
+	width:250px;
+	list-style-type:none;
+	line-height:20px;
+	margin-left:1em;*margin-left:0px;_margin-left:0em;
+	padding:5px 10px 5px 0px;*padding:5px 10px 5px 0px;_padding:5px 0px 5px 0px;
+		  }
+.rlistbox ul {
+			  margin:0px;}
+.rlistbox ul li{}
+					
+/*列表页*/
+.newslist{
+		 width:670px;
+		 border:1px #A6D8FB solid;
+		 float:left;
+		 padding:5px 10px;
+		 line-height:20px;
+		 background:url(../Images/bg.jpg) 1px 1px repeat-x;
+}
+.newslist dl{
+	width:670px;
+	margin:10px auto 0px;
+	display:block;
+	border-bottom:1px dotted #DDD;
+}
+.newslist dl dt{
+	width:670px;
+	margin:0px auto 0px;
+}	
+.newslist dl dt a{
+	line-height:27px;
+	font-size:14px;
+	font-weight:bold;
+	margin-left:20px;
+	letter-spacing:1px;
+}
+.newslist dl dd{
+	width:624px;
+	margin:0px auto 0px;
+}
+.newslist dl dd.preview{
+	line-height:19px;
+	text-indent:14px;
+}
+.newslist dl dd.info{
+	line-height:31px;
+}
+.newslist dl dd.info span{
+	color:#F60;
+	margin-right:20px;
+}
+.newslist dl dd.info a{
+	position:relative;
+	margin:-30px 5px 0px 0px;
+}
+
+/*资讯:内容页*/
+.newsview{
+	width:691px;
+	border:1px #A6D8FB solid;
+	float:left;
+	background-color: #F7FCFF;
+}
+
+/*内容页:标题*/
+.newsview .newstitle{
+	width:691px;
+	height:35px;*height:45px;_height:35px;
+	line-height:15px;
+}
+.newsview .newstitle h1{
+	font-size:25px;
+	margin-top:15px;
+	text-align:center;
+}
+
+/*内容页:相关信息*/
+.newsview .info{
+	width:691px;
+	height:27px;
+	line-height:27px;
+	border-top:1px solid #EEE;
+	border-bottom:1px solid #EEE;
+	text-align:center;
+
+}
+.newsview .info strong{
+	color:#666;
+	margin-left:20px;
+}
+
+/*新闻内容*/
+.newsview .content{
+	width:670px;
+	overflow:hidden;
+	margin:10px 10px;
+	color:#000;
+	font-size:14px;
+	line-height:25px;
+}
+
+/*新闻评论*/
+.commentinfo{
+
+	height:20px;
+	padding-top:10px;
+	padding-left:10px;
+	border-top:1px solid #ADD5F5;
+	border-bottom:1px solid #ADD5F5;
+	text-align:left;
+	background:url(../Images/bg.jpg) 1px 1px repeat-x;
+	font-weight:bold;
+
+}
+.comment {
+		 padding:25px;
+		 }

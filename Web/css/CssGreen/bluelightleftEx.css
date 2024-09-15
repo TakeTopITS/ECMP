@@ -1,0 +1,348 @@
+﻿/* CSS Document */
+#leftMiddleFrameID {
+    background-color: #2a2e34;
+}
+/* 收缩展开效果 */
+.text {
+    line-height: 37px;
+    padding: 0 1px;
+    color: #666;
+    display: none;
+}
+
+.box span {
+    padding-left: 1px;
+    height: 50px;
+    display: inline-block;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    line-height: 50px;
+    color: white;
+}
+
+    .box span img { /*display:none;*/
+        vertical-align: middle;
+    }
+
+.box {
+    position: relative;
+    /*border-bottom: 2px solid #e7e7e7;*/
+    cursor: pointer;
+    width: 100%;
+    line-height: 50px;
+    background-repeat: no-repeat;
+    background-position: -10px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.box1 {
+    position: relative;
+    border-bottom: 1px solid #0e3860;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: #002b66 -10px 0px no-repeat;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.box:hover {
+    background: #19a14f;
+}
+
+
+.content {
+    padding-left: 5px;
+    text-align: left;
+    background: #77b584;
+    line-height: 37px;
+    margin: 0;
+}
+
+    .content span {
+        background: url(ImagesSkin/jiant-white.gif) 0 23px no-repeat;
+        padding-left: 8px;
+    }
+
+ul li {
+    padding-left: 15px;
+    border-bottom: 1px dotted #ddd;
+    list-style: none;
+    line-height: 37px;
+}
+
+.titlecj {
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 37px;
+}
+
+.titleSpan {
+    font-size: 12px;
+    text-decoration: none;
+    position: relative;
+}
+
+.plusSpan {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.minusSpan {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.spanHover {
+    height: 37px;
+    text-align: left;
+    background-repeat: no-repeat;
+    color: #022c56;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 37px;
+    background-position: left;
+}
+
+.testBold {
+    font-weight: bold;
+}
+
+#topNav {
+    z-index: -2;
+    overflow: visible;
+}
+
+#divBody {
+    z-index: 3;
+    overflow: visible;
+}
+
+#leftArrowNav {
+    z-index: 1000;
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    width: 18px;
+    _position: absolute; /* for IE6 */
+}
+
+
+#bottomNav {
+    z-index: 999;
+    background: #0e553b;
+    /* border-top: 1px solid #d6dae2;*/
+    height: 45px;
+    line-height: 45px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    _position: absolute; /* for IE6 */
+    _top: expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight); /* for IE6 */
+    overflow: visible;
+}
+
+#toolNav {
+    z-index: -3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    _position: absolute; /* for IE6 */
+    _top: expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight); /* for IE6 */
+    overflow: visible;
+}
+
+/*颜色选择器*/
+#box {
+    position: relative;
+    width: 100%;
+    background-color: #0e553b;
+}
+
+#square_one {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: fixed;
+    bottom: 12px;
+    left: 11px;
+    z-index: 1000;
+}
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑",Verdana,Arial;
+}
+
+
+
+
+
+
+
+a:visited {
+    background: url(ImagesSkin/MouseVisited.gif);
+}
+
+a:hover, button:hover, input[type="submit"]:hover {
+    BACKGROUND-REPEAT: no-repeat;
+    BACKGROUND-POSITION: center bottom;
+    COLOR: #003366;
+    TEXT-DECORATION: none;
+    PADDING-TOP: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+a:active, button:active, input[type="submit"]:active {
+    background: url(ImagesSkin/MouseActive.gif);
+}
+/*-------------------------原ImagesSkin---------------*/
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+
+body {
+    margin: 0px;
+    background-image: #fff;
+    background-repeat: repeat-y;
+    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #0e553b;
+}
+
+img {
+    border: none;
+}
+
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+    a:link {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        font-family: "microsoft yahei";
+    }
+
+    a:hover {
+        background-repeat: no-repeat;
+        text-decoration: none;
+    }
+
+    a:active {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:visited {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+.menuall {
+    text-align: right;
+    width: 149;
+}
+
+    .menuall div {
+        margin: 0px 0 5px 0px;
+        text-align: left;
+    }
+
+.zi {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 25px;
+}
+
+
+.title12 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.title14 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #003366;
+}
+
+
+/*--------------------------------短按钮---------------------------*/
+.inpuIM {
+    background-image: url(ImagesSkin/IMBackground.jpg);
+    margin: 0px;
+    height: 24px;
+    width: 74px;
+    text-align: left;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    font-size: 12px;
+    color: #29728D;
+}
+
+/*--------------------------------短按钮---------------------------*/
+.personSpace {
+    background: url(ImagesSkin/PersonSpace.png) no-repeat;
+    margin: 0px;
+    height: 20px;
+    width: 30px;
+    text-align: center;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    /*font-size: 12px;*/
+    /*color: #29728D;*/
+}
+/*--------------------------------20131127---------------------------*/
+
+div.leftSet {
+    background: url(ImagesSkin/leftSetbg.gif) 0 0 no-repeat;
+    height: 72px;
+    line-height: 72px;
+    background-color: #d74634;
+}
+
+.tabs-header, .tabs-tool {
+    background-color: #0e553b; /*皮肤*/
+}
+
+#yanse::-webkit-scrollbar {
+    background-color: #0e553b;
+}
+
+#yanse::-webkit-scrollbar-thumb {
+    background-color: #16825b;
+    border-radius: 10px;
+}
+
+#yanse {
+    scrollbar-track-color: #0e553b;
+    scrollbar-face-color: #16825b;
+}

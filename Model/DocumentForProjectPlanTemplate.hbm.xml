@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.DocumentForProjectPlanTemplate, ProjectMgt.Model" table="T_DocumentForProjectPlanTemplate">
+
+    <id name="DocID" column="DocID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="RelatedType" type ="String" />
+
+    <property name ="DocTypeID" type ="int" />
+
+    <property name ="DocType" type ="String" />
+
+    <property name ="RelatedID" type ="int" />
+
+    <property name ="RelatedName" type ="String" />
+
+    <property name ="DocName" type ="String" />
+
+    <property name ="Description" type ="String" />
+
+    <property name ="Address"  type ="String" />
+
+    <property name ="Author" type ="String" />
+
+    <property name ="UploadManCode" type ="String" />
+
+    <property name ="UploadManName" type="String" />
+
+    <property name ="UploadTime" type ="DateTime" />
+
+    <property name ="DepartCode" type ="String" />
+
+    <property name ="DepartName" type ="String" />
+
+    <property name ="Visible" type ="String" />
+
+    <property name ="Status" type ="String" />
+  </class>
+</hibernate-mapping>

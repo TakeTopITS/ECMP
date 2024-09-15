@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="ProjectMgt.Model.HSEEnvironmentalFactors, ProjectMgt.Model" table="T_HSEEnvironmentalFactors">
+		<id name ="Code" column="Code" type ="String">
+			<generator class="assigned" />
+		</id>
+		<property name="Name" column="Name" type="String">
+		</property>
+		<property name="Process" column="Process" type="String">
+		</property>
+		<property name="Activity" column="Activity" type="String">
+		</property>
+		<property name="Tenses" column="Tenses" type="String">
+		</property>
+		<property name="Status" column="Status" type="String">
+		</property>
+		<property name="FactorType" column="FactorType" type="String">
+		</property>
+		<property name="EnvirImpact" column="EnvirImpact" type="String">
+		</property>
+		<property name="CopeStrategy" column="CopeStrategy" type="String">
+		</property>
+		<property name="LawRegulationReq" column="LawRegulationReq" type="String">
+		</property>
+		<property name="TermFeatureReq" column="TermFeatureReq" type="String">
+		</property>
+		<property name="EnterCode" column="EnterCode" type="String">
+		</property>
+	</class>
+</hibernate-mapping>

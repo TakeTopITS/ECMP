@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="ProjectMgt.Model.WZPurchaseOfferRecord, ProjectMgt.Model" table="T_WZPurchaseOfferRecord">
+
+    <id name="ID" column="ID" type="int">
+
+      <generator class="identity" />
+    </id>
+
+    <property name ="PurchaseCode" type ="String" />
+    <property name ="PlanDetailID" type ="int" />
+    <property name ="PurchaseDetailID" type ="int" />
+    <property name ="SupplierCode" type ="String" />
+    <property name ="Tenders" type ="String" />
+    <property name ="SerialNumber" type ="String" />
+    <property name ="ObjectCode" type ="String" />
+    <property name ="ObjectName" type ="String" />
+    <property name ="Model" type ="String" />
+    <property name ="Criterion" type ="String" />
+    <property name ="Grade" type ="String" />
+    <property name ="Unit" type ="int" />
+    <property name ="PurchaseNumber" type ="Decimal" />
+    <property name ="ApplyMoney" type ="Decimal" />
+    <property name ="TotalMoney" type ="Decimal" />
+    <property name ="ReplaceCode" type ="String" />
+    <property name ="ScalingResult" type ="String" />
+    <property name ="Progress" type ="String" />
+  </class>
+</hibernate-mapping>
