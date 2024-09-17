@@ -20,6 +20,5 @@
             get { return password; }
             set { password = value; }
         }
-
     }
 }

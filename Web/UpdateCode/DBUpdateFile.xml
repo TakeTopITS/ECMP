@@ -4260,4 +4260,8 @@ Insert Into T_ProModule(UserCode,ModuleName,ModuleType,UserType,ModuleDefinition
     <ID>3565</ID>
     <SQLText>Update T_NewsType Set NewsScope = 'ALL';</SQLText>
   </DataBaseUpgradeFile>
+  <DataBaseUpgradeFile>
+    <ID>3566</ID>
+    <SQLText>SELECT setval('t_msgpushlog_id_seq', (SELECT MAX(id) FROM t_msgpushlog)+1);</SQLText>
+  </DataBaseUpgradeFile>
 </DataBaseUpgradeFiles>

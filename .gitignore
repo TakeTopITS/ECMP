@@ -368,3 +368,5 @@ FodyWeavers.xsd
 /Web/TTSuperSystemModuleSet.aspx.cs.exclude
 /Web/TTDatabaseUpgrade.aspx.exclude
 /Web/TTDatabaseUpgrade.aspx.cs.exclude
+/Web/TTDatabaseUpgrade.aspx
+/Web/TTDatabaseUpgrade.aspx.cs
