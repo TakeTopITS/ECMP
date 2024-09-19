@@ -26,9 +26,6 @@ using System.Web.UI.WebControls;
 using System.Xml;
 
 using TakeTopCore;
-//using AjaxControlToolkit.HTMLEditor.ToolbarButton;
-//using NPOI.SS.Formula.Functions;
-//using static System.Net.WebRequestMethods;
 
 using ZXing;
 using ZXing.QrCode;
