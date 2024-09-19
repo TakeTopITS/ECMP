@@ -14,7 +14,6 @@ using System.Web;
 public static class PDFHandler
 {
     //加水印
-
     public static void AddWatermark(string inputFile, string outputFile, string watermarkText)
     {
         using (var reader = new PdfReader(inputFile))
