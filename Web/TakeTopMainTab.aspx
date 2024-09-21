@@ -83,9 +83,11 @@
                     if (tabs.length > 0) {
                         var iframe = $(currentTab).find("iframe").get(0);
 
-                        //if (iframe.src.indexOf("TTWLManage") > 0) {
-                        //    iframe.src = iframe.src;
-                        //}
+                        if (iframe.src.indexOf("TakeTopPersonalSpace") > 0) {
+
+                            //alert(window.parent.document.getElementById("rightFrame").rows);
+                            //window.parent.document.getElementById("rightFrame").rows = '0,*';
+                        }
 
                         //if (iframe.src.indexOf("TakeTopPersonalSpace") != -1) {
 
