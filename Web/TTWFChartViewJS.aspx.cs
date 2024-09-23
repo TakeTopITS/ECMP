@@ -57,6 +57,7 @@ public partial class TTWFChartViewJS : System.Web.UI.Page
 
         this.Title = Resources.lang.GongZuoLiu + ": " + strTemName + Resources.lang.LiuChengTu;
 
+
         if (Page.IsPostBack == false)
         {
             TB_CopyRight.Text = System.Configuration.ConfigurationManager.AppSettings["CopyRight"];
