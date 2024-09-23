@@ -13,6 +13,7 @@ namespace ProjectMgt.BLL
             dal.AddAdmin(admin);
         }
 
+
         public void UpdateAdmin(Admin admin, string UserCode)
         {
             AdminDAL dal = new AdminDAL();

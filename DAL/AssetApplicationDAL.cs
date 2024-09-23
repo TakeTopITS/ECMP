@@ -13,6 +13,7 @@ namespace ProjectMgt.DAL
             control = EntityControl.CreateEntityControl("ProjectMgt.Model");
         }
 
+
         public void AddAssetApplication(AssetApplication assetApplication)
         {
             control.AddEntity(assetApplication);
