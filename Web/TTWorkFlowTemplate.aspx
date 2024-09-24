@@ -20,7 +20,27 @@
     <script type="text/javascript" language="javascript">
         $(function () {
             if (top.location != self.location) { } else { CloseWebPage(); }
+
+            autoheight();
         });
+
+
+        function autoheight() { //函数：获取尺寸
+            //获取浏览器窗口高度
+            var winHeight = 0;
+            if (window.innerHeight)
+                winHeight = window.innerHeight;
+            else if ((document.body) && (document.body.clientHeight))
+                winHeight = document.body.clientHeight;
+
+            if (document.documentElement && document.documentElement.clientHeight)
+                winHeight = document.documentElement.clientHeight;
+
+            document.getElementById("divTreeView").style.height = (winHeight - 40) + "px";
+        }
+
+        window.onresize = autoheight; //浏览器窗口发生变化时同时变化DIV高度
+
     </script>
 </head>
 <body>
@@ -59,14 +79,15 @@
                             </tr>
                             <tr>
                                 <td width="200px" style="padding: 0px 5px 5px 5px; border-right: solid 1px #D8D8D8" valign="top">
-
-                                    <asp:TreeView ID="TreeView2" runat="server" NodeWrap="True" OnSelectedNodeChanged="TreeView2_SelectedNodeChanged"
-                                        ShowLines="True" Font-Size="10pt" Font-Bold="False" Font-Names="宋体" Style="width: 195px; height: 100%;">
-                                        <RootNodeStyle CssClass="rootNode" />
-                                        <NodeStyle CssClass="treeNode" />
-                                        <LeafNodeStyle CssClass="leafNode" />
-                                        <SelectedNodeStyle CssClass="selectNode" ForeColor="Red" />
-                                    </asp:TreeView>
+                                    <div id="divTreeView" style="height: 800px; width: 100%; overflow-y: auto;">
+                                        <asp:TreeView ID="TreeView2" runat="server" NodeWrap="True" OnSelectedNodeChanged="TreeView2_SelectedNodeChanged"
+                                            ShowLines="True" Font-Size="10pt" Font-Bold="False" Font-Names="宋体" Style="width: 195px; height: 100%;">
+                                            <RootNodeStyle CssClass="rootNode" />
+                                            <NodeStyle CssClass="treeNode" />
+                                            <LeafNodeStyle CssClass="leafNode" />
+                                            <SelectedNodeStyle CssClass="selectNode" ForeColor="Red" />
+                                        </asp:TreeView>
+                                    </div>
 
                                 </td>
                                 <td style="padding: 0px 5px 5px 5px;" valign="top">
