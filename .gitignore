@@ -370,3 +370,5 @@ FodyWeavers.xsd
 /Web/TTDatabaseUpgrade.aspx.cs.exclude
 /Web/TTDatabaseUpgrade.aspx
 /Web/TTDatabaseUpgrade.aspx.cs
+/Web/TakeTopWebServerNews.aspx
+/Web/TakeTopWebServerNews.aspx.cs
