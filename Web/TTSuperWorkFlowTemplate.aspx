@@ -40,7 +40,7 @@
                     <div id="AboveDiv">
                         <table id="AboveTable" cellpadding="0" width="100%" cellspacing="0" class="bian">
                             <tr>
-                                <td height="31" class="page_topbj">
+                                <td colspan="2" height="31" class="page_topbj">
                                     <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td width="150px" align="left">
@@ -64,6 +64,17 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td width="200px"  style="padding: 0px 5px 5px 5px; border-right: solid 1px #D8D8D8" valign="top">
+
+                                    <asp:TreeView ID="TreeView2" runat="server" NodeWrap="True" OnSelectedNodeChanged="TreeView2_SelectedNodeChanged"
+                                        ShowLines="True" Font-Size="10pt" Font-Bold="False" Font-Names="宋体" Style="width: 195px; height: 100%;">
+                                        <RootNodeStyle CssClass="rootNode" />
+                                        <NodeStyle CssClass="treeNode" />
+                                        <LeafNodeStyle CssClass="leafNode" />
+                                        <SelectedNodeStyle CssClass="selectNode" ForeColor="Red" />
+                                    </asp:TreeView>
+
+                                </td>
                                 <td style="padding: 0px 5px 5px 5px;" valign="top">
                                     <table width="100%" cellpadding="0" cellspacing="0">
                                         <tr>
@@ -75,42 +86,13 @@
                                                                 <asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,QingShuRuGongZuoLiuMuBanMing%>"></asp:Label></span>：<asp:TextBox ID="TB_WorkFlow" runat="server"
                                                                     Font-Size="10pt" Width="220px"></asp:TextBox><span style="font-size: 11pt"><asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,LeiXing%>"></asp:Label></span><asp:DropDownList
                                                                         ID="DL_WLType" runat="server" DataTextField="Type" DataValueField="Type"
-                                                                        AutoPostBack="true" OnSelectedIndexChanged="DL_WLType_SelectedIndexChanged">
+                                                                        AutoPostBack="false">
                                                                     </asp:DropDownList>
                                                             <asp:Button ID="BT_CreateWorkFlow" runat="server" Font-Size="10pt" OnClick="BT_CreateWorkFlow_Click"
                                                                 CssClass="inpuLong" Text="<%$ Resources:lang,ChuangJianGongZuoLiuMuBan%>" /><span style="font-size: 11pt"> </span>
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td style="text-align: left" class="formItemBgStyle">
-                                                            <cc1:TabContainer CssClass="ajax_tab_menu" ID="TabContainer2" runat="server" ActiveTabIndex="0" Width="100%">
-                                                                <cc1:TabPanel ID="TabPanel3" runat="server" HeaderText="在用的模板">
-                                                                    <HeaderTemplate>
-                                                                        <asp:Label ID="Label56" runat="server" Text="<%$ Resources:lang,ZaiYongDeMoBan%>"></asp:Label>
-                                                                    </HeaderTemplate>
-                                                                    <ContentTemplate>
-                                                                        <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">
-                                                                            <ItemTemplate>
-                                                                                <asp:Button ID="BT_WorkFlowName" runat="server" CssClass="inpuLongRepeat" Text='<%# DataBinder.Eval(Container.DataItem,"TemName") %>' />
-                                                                            </ItemTemplate>
-                                                                        </asp:Repeater>
-                                                                    </ContentTemplate>
-                                                                </cc1:TabPanel>
-                                                                <cc1:TabPanel ID="TabPanel4" runat="server" HeaderText="隐藏的模板">
-                                                                    <HeaderTemplate>
-                                                                        <asp:Label ID="Label57" runat="server" Text="<%$ Resources:lang,YingChangDeMoBan%>"></asp:Label>
-                                                                    </HeaderTemplate>
-                                                                    <ContentTemplate>
-                                                                        <asp:Repeater ID="Repeater2" runat="server" OnItemCommand="Repeater2_ItemCommand">
-                                                                            <ItemTemplate>
-                                                                                <asp:Button ID="BT_WorkFlowName" runat="server" CssClass="inpuLong" tyle="margin:1px 0;" Text='<%# DataBinder.Eval(Container.DataItem,"TemName") %>' />
-                                                                            </ItemTemplate>
-                                                                        </asp:Repeater>
-                                                                    </ContentTemplate>
-                                                                </cc1:TabPanel>
-                                                            </cc1:TabContainer>
-                                                        </td>
-                                                    </tr>
+
                                                     <tr>
                                                         <td align="left" class="formItemBgStyle">
                                                             <table style="border: 1px dotted grey;">
@@ -308,10 +290,6 @@
                                             </td>
                                         </tr>
                                     </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td valign="top" align="left">
                                     <table cellpadding="0" cellspacing="0" width="90%">
                                         <tr>
                                             <td style="text-align: left; padding: 5px 0px 5px 0px;">
@@ -460,9 +438,9 @@
                                         </tr>
 
                                     </table>
-                                    <br />
                                 </td>
                             </tr>
+                          
                         </table>
 
                     </div>

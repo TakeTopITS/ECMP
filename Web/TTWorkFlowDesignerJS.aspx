@@ -25,10 +25,6 @@
             text-align: center;
         }
 
-        /*#OboveForm {
-            min-width: 2750px;
-            width: expression (document.body.clientWidth <= 2750? "2750px" : "auto" ));
-        }*/
     </style>
 
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
@@ -57,6 +53,7 @@
 
         window.onresize = autoheight; //浏览器窗口发生变化时同时变化DIV高度
 
+
     </script>
 </head>
 <body>
@@ -65,18 +62,20 @@
             <asp:Label ID="LB_Sql" runat="server"></asp:Label>
             <table style="height: 100%; width: 100%;">
                 <tr>
-                    <td style="width: 60%; height: 100%; vertical-align:top;">
-                        <iframe id="_WFDesignerFrame" src="WFDesigner/TTTakeTopWFDesignerJSWorker.aspx?IdentifyString=<%=Request.QueryString["IdentifyString"].ToString()%>" style="width: 100%; "></iframe>
+                    <td id="td1" style="width: 60%; height: 100%; vertical-align: top;">
+                        <iframe id="_WFDesignerFrame" src="WFDesigner/TTTakeTopWFDesignerJSWorker.aspx?IdentifyString=<%=Request.QueryString["IdentifyString"].ToString()%>" style="width: 100%;"></iframe>
                     </td>
-                    <td style="width: 40%; height: 100%;vertical-align:top;">
-                        <iframe id="_WFSetAreaFrame" src="TTWFTemplateView.aspx?DesignType=JS&IdentifyString=<%=Request.QueryString["IdentifyString"].ToString()%>" style="width: 100%; "></iframe>
+                  
+                    <td style="width: 40%; height: 100%; vertical-align: top;">
+                        <iframe id="_WFSetAreaFrame" src="TTWFTemplateView.aspx?DesignType=JS&IdentifyString=<%=Request.QueryString["IdentifyString"].ToString()%>" style="width: 100%;"></iframe>
                     </td>
                 </tr>
-                <tr style ="display :none;">
+
+                <tr style="display: none;">
                     <td colspan="2">
                         <asp:TextBox ID="TB_CopyRight" runat="server" Style="visibility: hidden"></asp:TextBox>
                         <asp:TextBox ID="TB_WFIdentifyString" runat="server" Style="visibility: hidden"></asp:TextBox>
-                        <asp:TextBox ID="TB_WFXML" runat="server" ></asp:TextBox>
+                        <asp:TextBox ID="TB_WFXML" runat="server"></asp:TextBox>
                         <asp:TextBox ID="TB_WFName" runat="server" Style="width: 50px; visibility: hidden;"></asp:TextBox>
 
                         <asp:TextBox ID="TB_WFChartString1" runat="server" Style="visibility: hidden"></asp:TextBox>
@@ -90,4 +89,5 @@
         </div>
     </form>
 </body>
-<script type="text/javascript" language="javascript">var cssDirectory = '<%=Session["CssDirectory"] %>'; var oLink = document.getElementById('mainCss'); oLink.href = 'css/' + cssDirectory + '/' + 'bluelightmain.css';</script></html>
+<script type="text/javascript" language="javascript">var cssDirectory = '<%=Session["CssDirectory"] %>'; var oLink = document.getElementById('mainCss'); oLink.href = 'css/' + cssDirectory + '/' + 'bluelightmain.css';</script>
+</html>
