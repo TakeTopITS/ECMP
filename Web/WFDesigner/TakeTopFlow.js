@@ -1,3 +1,6 @@
+document.write("<script language=javascript src='../js/layer/layer/layer.js'></script>");
+document.write("<script language=javascript src='../js/popwindow.js'></script>");
+
 (function (b) {
 
     var srcUrl = getUrlParam('IdentifyString');
@@ -247,11 +250,39 @@
             n,
             f,
             x,
-            v;
+            v, sub_text;
         t = C.rect(E.attr.x, E.attr.y, E.attr.width, E.attr.height, E.attr.r).hide().attr(E.attr);
         e = C.image(a.config.basePath + E.img.src, E.attr.x + E.img.width / 2, E.attr.y + (E.attr.height - E.img.height) / 2, E.img.width, E.img.height).hide();
         n = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y + a.config.lineHeight / 2, E.name.text).hide().attr(E.name);
         f = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y + (E.attr.height - a.config.lineHeight) / 2 + a.config.lineHeight, E.text.text).hide().attr(E.text);
+        if (E.type == 'task') {
+            //获取子流程数量
+            $.ajax({
+                type: "POST",
+                url: "../Handler/getWorkflowTemplateStepChildNumber.ashx",
+                data: "GUID=" + E.props.guid.value,
+                success: function (data) {
+                    var subNum = parseInt(data);
+                    if (subNum > 0) {
+                        sub_text = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y, subNum).hide().attr({ 'font-weight': 'bold', 'cursor': 'pointer', 'fill': 'red' });
+                        B();
+                        sub_text.click(function () {
+
+                            //打开窗体
+                            url = './TTWorkFlowTemplateChildTemplateList.aspx?GUID=' + E.props.guid.value;
+                            title = 'Child Workflow Template';
+                            parent.popShowByURLForFixedSize(url, title, 600, 300, window.location, window.location);
+                        });
+                    }
+
+                },
+                error: function () {
+
+                    console.error('获取子流程数量失败');
+                }
+
+            });
+        }
         t.drag(function (r, o) {
             A(r, o)
         },
@@ -474,18 +505,18 @@
                 }
                 w();
                 var o = b(C).data("mod");
-               switch (o) {
+                switch (o) {
                     case "path":
                         var r = b(C).data("currNode");
-						b(C).trigger("click", u);
-						b(C).data("currNode", u);
+                        b(C).trigger("click", u);
+                        b(C).data("currNode", u);
                         if (r && r.getId() != g && r.getId().substring(0, 4) == "rect") {
                             b(C).trigger("addpath", [r, u])
                         }
                         break
-					default:						
-						b(C).trigger("click", u);
-						b(C).data("currNode", u);
+                    default:
+                        b(C).trigger("click", u);
+                        b(C).data("currNode", u);
                 }
                 return false
             });
@@ -538,7 +569,7 @@
                 case "image":
                     e.attr({
                         x:
-                        F + (G - E.img.width) / 2,
+                            F + (G - E.img.width) / 2,
                         y: r + (o - E.img.height) / 2
                     }).show();
                     break;
@@ -546,15 +577,22 @@
                     t.show();
                     f.attr({
                         x:
-                        F + G / 2,
+                            F + G / 2,
                         y: r + o / 2
                     }).show();
+                    if (sub_text) {
+                        sub_text.attr({
+                            x:
+                                F + G - 10,
+                            y: r + 8
+                        }).show();
+                    }
                     break;
                 case "image&text":
                     t.show();
                     n.attr({
                         x:
-                        F + E.img.width + (G - E.img.width) / 2,
+                            F + E.img.width + (G - E.img.width) / 2,
                         y: r + a.config.lineHeight / 2
                     }).show();
                     f.attr({
@@ -648,10 +686,10 @@
             }
         };
         B();
-		//是否选中当前形状控件
-		if(E.isSelect){
-			b(t.node).click();
-		}
+        //是否选中当前形状控件
+        if (E.isSelect) {
+            b(t.node).click();
+        }
     };
     a.path = function (q, n, u, e) {
         var v = this,
@@ -1108,10 +1146,10 @@
                 t.attr(o.arrow)
             }
         }
-		//是否选中当前路径控件
-		if(B.isSelect){
-			b(t.node).click();
-		}
+        //是否选中当前路径控件
+        if (B.isSelect) {
+            b(t.node).click();
+        }
     };
     a.props = function (h, f) {
         var j = this,
@@ -1142,10 +1180,10 @@
                     url = url.replace("@RectText", rect.props.text.value);
 
                     openToTargetFrame(url);
-					
-					
-					//设置属性框在形状控件右方 
-					c.css("left",o.getBBox().x+o.getBBox().width+10+"px");
+
+
+                    //设置属性框在形状控件右方 
+                    c.css("left", o.getBBox().x + o.getBBox().width + 10 + "px");
                     if ((o.getBBox().y - 170) < 0) {
                         c.css("top", "5px")
                     }
@@ -1153,41 +1191,41 @@
                         c.css("top", o.getBBox().y - 170 + "px")
                     }
                 }
-				else if(["start","end","state","fork","join","end-cancel","end-error"].indexOf(rect.type)>=0){
-					//设置属性框在形状控件右方 
-					c.css("left",o.getBBox().x+o.getBBox().width+10+"px");
+                else if (["start", "end", "state", "fork", "join", "end-cancel", "end-error"].indexOf(rect.type) >= 0) {
+                    //设置属性框在形状控件右方 
+                    c.css("left", o.getBBox().x + o.getBBox().width + 10 + "px");
                     if ((o.getBBox().y - 170) < 0) {
                         c.css("top", "5px")
                     }
                     else {
                         c.css("top", o.getBBox().y - 170 + "px")
                     }
-				}
+                }
                 else {
                     var url = a.config.blankUrl.replace("@IdentifyString", a.config.identifyString);
 
                     openToTargetFrame(url);
-					
-					//设置属性框在右上角 
-					c.css("left","1080px");
-					c.css("top","10px")
-                }		
-				
+
+                    //设置属性框在右上角 
+                    c.css("left", "1080px");
+                    c.css("top", "10px")
+                }
+
             }
             else {
                 var url = a.config.blankUrl.replace("@IdentifyString", a.config.identifyString);
 
                 openToTargetFrame(url);
-				//设置属性框在右上角  
-				c.css("left","1080px");
-				c.css("top","10px");
-						
-				c.hide();
+                //设置属性框在右上角  
+                c.css("left", "1080px");
+                c.css("top", "10px");
+
+                c.hide();
 
                 return;
             }
             if (i && i.getId() == o.getId()) {
-				c.show();
+                c.show();
                 return
             }
             i = o;
@@ -1198,7 +1236,7 @@
                 }
             });
             e.empty();
-			c.show();		
+            c.show();
             for (var l in m) {
                 e.append("<tr><th width='90'>" + m[l].label + '</th><td><div id="p' + l + '" class="editor"></div></td></tr>');
                 if (m[l].editor) {
@@ -1210,7 +1248,7 @@
 
             //选择“连线”菜单，就不显示属性框，方便连线操作
             if (document.getElementById("path").className == "node selectable selected") {
-             
+
                 document.getElementById("TakeTopFlow_props").style.display = "none";
             }
 
@@ -1266,7 +1304,7 @@
 
                     }
                     b(y).removeData("currNode")
-					b("#TakeTopFlow_props").hide();
+                    b("#TakeTopFlow_props").hide();
 
                 }
 
@@ -1317,11 +1355,11 @@
                     a.config.tools.states[c].props.guid.value = guid();
                 }
                 var i = new a.rect(b.extend(true, {},
-                    a.config.tools.states[c], k,{isSelect:true}), y);
+                    a.config.tools.states[c], k, { isSelect: true }), y);
                 q[i.getId()] = i
             });
         var f = function (i, k, j) {
-            var c = new a.path({isSelect:true},
+            var c = new a.path({ isSelect: true },
                 y, k, j);
             g[c.getId()] = c
         };
@@ -1469,27 +1507,27 @@
 function LoadWFChart() {
 
     var varPageName = getPageName();
-  
+
     if (varPageName.indexOf("TTTakeTopWFDesignerJSWorker.aspx") >= 0) {
 
         $('#TakeTopFlow')
             .TakeTopFlow(
-            {
-                basePath: "",
-                restore: eval("(" + parent.window.document.getElementById("TB_WFXML").value + ")"),
+                {
+                    basePath: "",
+                    restore: eval("(" + parent.window.document.getElementById("TB_WFXML").value + ")"),
 
-                tools: {
-                    save: {
-                        onclick: function (data) {
+                    tools: {
+                        save: {
+                            onclick: function (data) {
 
-                            parent.window.document.getElementById("TB_WFXML").value = data;
-                            //alert(data);
+                                parent.window.document.getElementById("TB_WFXML").value = data;
+                                //alert(data);
 
-                            parent.window.document.getElementById("BT_SaveWFDefinition").click();
+                                parent.window.document.getElementById("BT_SaveWFDefinition").click();
+                            }
                         }
                     }
-                }
-            });
+                });
     }
 }
 

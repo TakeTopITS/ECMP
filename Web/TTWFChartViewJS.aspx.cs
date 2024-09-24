@@ -46,13 +46,13 @@ public partial class TTWFChartViewJS : System.Web.UI.Page
             strTemName = Request.QueryString["TemName"];
         }
 
-        strIdentifyString =  ShareClass.GetWLTemplateIdentifyString(strTemName);
+        strIdentifyString = ShareClass.GetWLTemplateIdentifyString(strTemName);
 
-        _WFDesignerFrame.Src = "WFDesigner/TTTakeTopWFChartViewJS.aspx?IdentifyString=" + strIdentifyString;
+        _WFDesignerFrame.Src = "WFDesigner/TTTakeTopWFChartViewJS.aspx?IdentifyString=" + strIdentifyString + "&WLID=" + strWLID;
 
         strHQL = "Select TemName,WFDefinition From T_WorkFlowTemplate Where TemName = " + "'" + strTemName + "'";
         DataSet ds = ShareClass.GetDataSetFromSql(strHQL, "T_WorkFlowTemplate");
-     
+
         strWFDefinition = ds.Tables[0].Rows[0][1].ToString().Trim();
 
         this.Title = Resources.lang.GongZuoLiu + ": " + strTemName + Resources.lang.LiuChengTu;
@@ -110,7 +110,7 @@ public partial class TTWFChartViewJS : System.Web.UI.Page
                         {
                             //strNewStepName = strStepName + "【" + Resources.lang.TongGuo + "】";
 
-                            strNewStepName = strStepName ;
+                            strNewStepName = strStepName;
                             strNewGUIDStep = strGUIDStep.Replace(strStepName, strNewStepName);
                             strNewGUIDStep = strNewGUIDStep.Replace("attr:{", "attr:{fill:'green',");
                             strNewGUIDStep = strNewGUIDStep.Replace("text:{", "text:{fill:'yellow',");

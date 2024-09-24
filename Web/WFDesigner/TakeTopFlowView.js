@@ -1,4 +1,9 @@
+document.write("<script language=javascript src='../js/layer/layer/layer.js'></script>");
+document.write("<script language=javascript src='../js/popwindow.js'></script>");
+
 (function (b) {
+
+    var srcWLID = getUrlParam('WLID');
 
     var srcUrl = getUrlParam('IdentifyString');
     if (srcUrl == null | srcUrl.length != 16) {
@@ -241,20 +246,40 @@
             n,
             f,
             x,
-            v;
+            v, sub_text;
         t = C.rect(E.attr.x, E.attr.y, E.attr.width, E.attr.height, E.attr.r).hide().attr(E.attr);
         e = C.image(a.config.basePath + E.img.src, E.attr.x + E.img.width / 2, E.attr.y + (E.attr.height - E.img.height) / 2, E.img.width, E.img.height).hide();
         n = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y + a.config.lineHeight / 2, E.name.text).hide().attr(E.name);
         f = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y + (E.attr.height - a.config.lineHeight) / 2 + a.config.lineHeight, E.text.text).hide().attr(E.text);
-        t.drag(function (r, o) {
-            A(r, o)
-        },
-            function () {
-                z()
-            },
-            function () {
-                l()
+        if (E.type == 'task') {
+            //获取子流程数量
+            $.ajax({
+                type: "POST",
+                url: "../Handler/getWorkflowStepChildNumber.ashx",
+                data: "GUID=" + E.props.guid.value + "&WLID=" + srcWLID,
+                success: function (data) {
+                   /* var subNum = parseInt(data);*/
+                    var subNum = data;
+                    if (subNum) {
+                        sub_text = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y, subNum).hide().attr({ 'font-weight': 'bold', 'cursor': 'pointer','fill':'red' });
+                        B();
+                        sub_text.click(function () {
+
+                            //打开窗体
+                            url = './TTWFChartChildViewList.aspx?GUID=' + E.props.guid.value + "&WLID=" + srcWLID;
+                            title = 'Child Workflows List';
+                            parent.popShowByURLForFixedSize(url, title, 600, 300, window.location, window.location);
+                        });
+                    }
+
+                },
+                error: function () {
+
+                    console.error('获取子流程数量失败');
+                }
+
             });
+        }
         e.drag(function (r, o) {
             A(r, o)
         },
@@ -531,7 +556,7 @@
                 case "image":
                     e.attr({
                         x:
-                        F + (G - E.img.width) / 2,
+                            F + (G - E.img.width) / 2,
                         y: r + (o - E.img.height) / 2
                     }).show();
                     break;
@@ -539,15 +564,22 @@
                     t.show();
                     f.attr({
                         x:
-                        F + G / 2,
+                            F + G / 2,
                         y: r + o / 2
                     }).show();
+                    if (sub_text) {
+                        sub_text.attr({
+                            x:
+                                F + G - 10,
+                            y: r + 8
+                        }).show();
+                    }
                     break;
                 case "image&text":
                     t.show();
                     n.attr({
                         x:
-                        F + E.img.width + (G - E.img.width) / 2,
+                            F + E.img.width + (G - E.img.width) / 2,
                         y: r + a.config.lineHeight / 2
                     }).show();
                     f.attr({
