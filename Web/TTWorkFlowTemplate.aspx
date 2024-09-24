@@ -217,7 +217,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td align="left">
-                                                                        <asp:HyperLink ID="HL_WorkFlowDesigner" runat="server" Enabled="false">---&gt;<asp:Label ID="Label8" runat="server" Text="<%$ Resources:lang,SheJiChigongZuoLiuMoBan%>"></asp:Label></asp:HyperLink>
+                                                                        <asp:HyperLink ID="HL_WorkFlowDesigner" runat="server" Enabled="false">---&gt;<asp:Label ID="LB_DesignWorkflowTemplate" runat="server" Text="<%$ Resources:lang,SheJiChigongZuoLiuMoBan%>"></asp:Label></asp:HyperLink>
                                                                         <br />
                                                                         <br />
                                                                     </td>
