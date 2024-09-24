@@ -84,8 +84,9 @@
                                                         <td style="text-align: left" class="formItemBgStyle">
                                                             <span style="font-size: 11pt">
                                                                 <asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,QingShuRuGongZuoLiuMuBanMing%>"></asp:Label></span>：<asp:TextBox ID="TB_WorkFlow" runat="server"
-                                                                    Font-Size="10pt" Width="220px"></asp:TextBox><span style="font-size: 11pt"><asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,LeiXing%>"></asp:Label></span><asp:DropDownList
-                                                                        ID="DL_WLType" runat="server" DataTextField="Type" DataValueField="Type"
+                                                                    Font-Size="10pt" Width="220px"></asp:TextBox><span style="font-size: 11pt"><asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,LeiXing%>"></asp:Label></span>
+                                                                  <asp:DropDownList
+                                                                        ID="DL_WLType" runat="server" DataTextField="HomeName" DataValueField="Type"
                                                                         AutoPostBack="false">
                                                                     </asp:DropDownList>
                                                             <asp:Button ID="BT_CreateWorkFlow" runat="server" Font-Size="10pt" OnClick="BT_CreateWorkFlow_Click"
