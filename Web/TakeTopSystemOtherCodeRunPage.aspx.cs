@@ -24,6 +24,8 @@ public partial class TakeTopSystemOtherCodeRunPage : System.Web.UI.Page
 
         if (Page.IsPostBack == false)
         {
+            Session["SystemName"] = System.Configuration.ConfigurationManager.AppSettings["SystemName"];
+
             AsyncWork();
         }
     }
