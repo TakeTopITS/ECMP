@@ -267,7 +267,7 @@ document.write("<script language=javascript src='../js/popwindow.js'></script>")
 
                             //打开窗体
                             url = './TTWFChartChildViewList.aspx?GUID=' + E.props.guid.value + "&WLID=" + srcWLID;
-                            title = 'Child Workflows List';
+                            title = 'Child Workflow List';
                             parent.popShowByURLForFixedSize(url, title, 600, 300, window.location, window.location);
                         });
                     }
