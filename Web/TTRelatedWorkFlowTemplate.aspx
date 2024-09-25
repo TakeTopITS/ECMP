@@ -141,11 +141,17 @@
                                                                             <tr>
                                                                                 <td colspan="8">
                                                                                     <br />
-                                                                                    <asp:HyperLink ID="HL_WorkFlowDesigner" runat="server" Enabled="false">---&gt;<asp:Label ID="LB_DesignWorkflowTemplate" runat="server" Text="<%$ Resources:lang,SheJiChigongZuoLiuMoBan%>"></asp:Label></asp:HyperLink>
-                                                                                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                                                                                    <asp:Button ID="BT_DeleteWFTemplate" runat="server" Enabled="false" CssClass="inpu"
-                                                                                        Text="<%$ Resources:lang,ShanChuMuBan%>" OnClick="BT_DeleteWFTemplate_Click" OnClientClick="return confirm(getDeleteMsgByLangCode())" />
-
+                                                                                    <table>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <asp:HyperLink ID="HL_WorkFlowDesigner" runat="server" Enabled="false">---&gt;<asp:Label ID="LB_DesignWorkflowTemplate" runat="server" Text="<%$ Resources:lang,SheJiChigongZuoLiuMoBan%>"></asp:Label></asp:HyperLink></td>
+                                                                                            <td width="200px">&nbsp;</td>
+                                                                                            <td>
+                                                                                                <asp:Button ID="BT_DeleteWFTemplate" runat="server" CssClass="inpu" Enabled="false"
+                                                                                                    OnClick="BT_DeleteWFTemplate_Click" OnClientClick="return confirm(getDeleteMsgByLangCode())" Text="<%$ Resources:lang,ShanChuMuBan%>" /></td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <br />
                                                                                     <br />
                                                                                     <br />
                                                                                 </td>
