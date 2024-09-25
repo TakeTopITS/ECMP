@@ -262,9 +262,10 @@ document.write("<script language=javascript src='../js/popwindow.js'></script>")
                 url: "../Handler/getWorkflowTemplateStepChildNumber.ashx",
                 data: "GUID=" + E.props.guid.value,
                 success: function (data) {
-                    var subNum = parseInt(data);
-                    if (subNum > 0) {
-                        sub_text = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y, subNum).hide().attr({ 'font-weight': 'bold', 'cursor': 'pointer', 'fill': 'red' });
+                 /*   var subNum = parseInt(data);*/
+                    var subNum = data;
+                    if (subNum) {
+                        sub_text = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y, 'Child:   '+ subNum).hide().attr({ 'font-weight': 'bold', 'cursor': 'pointer', 'fill': 'red' });
                         B();
                         sub_text.click(function () {
 

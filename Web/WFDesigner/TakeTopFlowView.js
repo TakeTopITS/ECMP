@@ -261,7 +261,7 @@ document.write("<script language=javascript src='../js/popwindow.js'></script>")
                    /* var subNum = parseInt(data);*/
                     var subNum = data;
                     if (subNum) {
-                        sub_text = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y, subNum).hide().attr({ 'font-weight': 'bold', 'cursor': 'pointer','fill':'red' });
+                        sub_text = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y, 'Child:   ' + subNum).hide().attr({ 'font-weight': 'bold', 'cursor': 'pointer','fill':'red' });
                         B();
                         sub_text.click(function () {
 
