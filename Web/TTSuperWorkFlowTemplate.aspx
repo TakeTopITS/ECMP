@@ -107,7 +107,7 @@
                                                                 ID="DL_WLType" runat="server" DataTextField="HomeName" DataValueField="Type"
                                                                 AutoPostBack="false">
                                                             </asp:DropDownList>
-                                                            <asp:Button ID="BT_CreateWorkFlow" runat="server" Font-Size="10pt" OnClick="BT_CreateWorkFlow_Click"
+                                                            <asp:Button ID="BT_CreateWorkFlowTemplate" runat="server" Font-Size="10pt" OnClick="BT_CreateWorkFlowTemplate_Click"
                                                                 CssClass="inpuLong" Text="<%$ Resources:lang,ChuangJianGongZuoLiuMuBan%>" /><span style="font-size: 11pt"> </span>
                                                         </td>
                                                     </tr>

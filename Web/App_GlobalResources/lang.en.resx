@@ -27616,4 +27616,7 @@ The progress of the task affects the schedule to be confirmed</value>
   <data name="DianJiDaKaiTaoHuangYeMian" xml:space="preserve">
     <value>Click to open the navigation page</value>
   </data>
+  <data name="SheJi" xml:space="preserve">
+    <value>Design</value>
+  </data>
 </root>
