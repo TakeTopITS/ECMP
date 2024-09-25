@@ -79,7 +79,7 @@
                                                                     DataTextField="Type" DataValueField="Type" AutoPostBack="true"
                                                                     Height="20px" OnSelectedIndexChanged="DL_WLType_SelectedIndexChanged">
                                                                 </asp:DropDownList>
-                                                            <asp:Button ID="BT_CreateWorkFlow" runat="server" Font-Size="10pt" OnClick="BT_CreateWorkFlow_Click"
+                                                            <asp:Button ID="BT_CreateWorkFlowTemplate" runat="server" Font-Size="10pt" OnClick="BT_CreateWorkFlowTemplate_Click"
                                                                 CssClass="inpuLong" Text="<%$ Resources:lang,ChuangJianGongZuoLiuMuBan%>" /><span style="font-size: 11pt"> </span>
                                                         </td>
                                                     </tr>
@@ -142,6 +142,10 @@
                                                                                 <td colspan="8">
                                                                                     <br />
                                                                                     <asp:HyperLink ID="HL_WorkFlowDesigner" runat="server" Enabled="false">---&gt;<asp:Label ID="LB_DesignWorkflowTemplate" runat="server" Text="<%$ Resources:lang,SheJiChigongZuoLiuMoBan%>"></asp:Label></asp:HyperLink>
+                                                                                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                                    <asp:Button ID="BT_DeleteWFTemplate" runat="server" Enabled="false" CssClass="inpu"
+                                                                                        Text="<%$ Resources:lang,ShanChuMuBan%>" OnClick="BT_DeleteWFTemplate_Click" OnClientClick="return confirm(getDeleteMsgByLangCode())" />
+
                                                                                     <br />
                                                                                     <br />
                                                                                 </td>
@@ -184,13 +188,7 @@
                                                                                     </asp:DropDownList>
                                                                                 </td>
                                                                             </tr>
-                                                                            <tr>
-                                                                                <td align="left" colspan="2">
-                                                                                    <br />
-                                                                                    <asp:Button ID="BT_DeleteWFTemplate" runat="server" Enabled="false" CssClass="inpu"
-                                                                                        Text="<%$ Resources:lang,ShanChuMuBan%>" OnClick="BT_DeleteWFTemplate_Click" OnClientClick="return confirm(getDeleteMsgByLangCode())" />
-                                                                                </td>
-                                                                            </tr>
+
                                                                             <tr>
                                                                                 <td align="left" colspan="2">
                                                                                     <table>
