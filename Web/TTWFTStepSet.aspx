@@ -26,6 +26,8 @@
 
             if (top.location != self.location) { } else { CloseWebPage(); }
 
+            parent.window.document.getElementById("divImgWaiting").style.display = "none";
+
         });
 
         function AdjustDivHeight() {

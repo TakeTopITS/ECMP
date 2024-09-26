@@ -14,6 +14,10 @@
 
             if (top.location != self.location) { } else { CloseWebPage(); }
 
+            parent.window.document.getElementById("nodeDesign").style.width = "60%";
+            parent.window.document.getElementById("divImgWaiting").style.display = "none";
+
+
         });
 
     </script>

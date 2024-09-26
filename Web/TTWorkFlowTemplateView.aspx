@@ -10,10 +10,11 @@
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/allAHandler.js"></script>
     <script type="text/javascript" language="javascript">
-        $(function () { if (top.location != self.location) { } else { CloseWebPage(); }
+        $(function () {
 
+            if (top.location != self.location) { } else { CloseWebPage(); }
 
-
+           
         });
 
     </script>

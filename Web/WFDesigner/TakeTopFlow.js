@@ -262,10 +262,10 @@ document.write("<script language=javascript src='../js/popwindow.js'></script>")
                 url: "../Handler/getWorkflowTemplateStepChildNumber.ashx",
                 data: "GUID=" + E.props.guid.value,
                 success: function (data) {
-                 /*   var subNum = parseInt(data);*/
+                    /*   var subNum = parseInt(data);*/
                     var subNum = data;
                     if (subNum) {
-                        sub_text = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y, 'Child:   '+ subNum).hide().attr({ 'font-weight': 'bold', 'cursor': 'pointer', 'fill': 'red' });
+                        sub_text = C.text(E.attr.x + E.img.width + (E.attr.width - E.img.width) / 2, E.attr.y, 'Child:   ' + subNum).hide().attr({ 'font-weight': 'bold', 'cursor': 'pointer', 'fill': 'red' });
                         B();
                         sub_text.click(function () {
 
@@ -1191,6 +1191,8 @@ document.write("<script language=javascript src='../js/popwindow.js'></script>")
                     else {
                         c.css("top", o.getBBox().y - 170 + "px")
                     }
+
+                    parent.window.document.getElementById("divImgWaiting").style.display = "block";
                 }
                 else if (["start", "end", "state", "fork", "join", "end-cancel", "end-error"].indexOf(rect.type) >= 0) {
                     //设置属性框在形状控件右方 
@@ -1201,6 +1203,8 @@ document.write("<script language=javascript src='../js/popwindow.js'></script>")
                     else {
                         c.css("top", o.getBBox().y - 170 + "px")
                     }
+
+                    parent.window.document.getElementById("divImgWaiting").style.display = "none";
                 }
                 else {
                     var url = a.config.blankUrl.replace("@IdentifyString", a.config.identifyString);
@@ -1210,8 +1214,11 @@ document.write("<script language=javascript src='../js/popwindow.js'></script>")
                     //设置属性框在右上角 
                     c.css("left", "1080px");
                     c.css("top", "10px")
+
+                    parent.window.document.getElementById("divImgWaiting").style.display = "none";
                 }
 
+               
             }
             else {
                 var url = a.config.blankUrl.replace("@IdentifyString", a.config.identifyString);
@@ -1252,6 +1259,23 @@ document.write("<script language=javascript src='../js/popwindow.js'></script>")
 
                 document.getElementById("TakeTopFlow_props").style.display = "none";
             }
+
+            //选择“结点定义”菜单，就不显示属性框，方便连线操作
+            if (document.getElementById("nodeDefinition").className == "node selectable selected") {
+
+                propsLeft = parseInt(document.getElementById("TakeTopFlow_props").style.left);
+                widthPercent = ((propsLeft + 350) / 2300) * 100 + "%";
+
+                parent.window.document.getElementById("nodeDesign").style.width = widthPercent;
+
+            }
+            else {
+
+                parent.window.document.getElementById("nodeDesign").style.width = "60%";
+            }
+
+            
+
 
         };
         b(g).bind("showprops", d)

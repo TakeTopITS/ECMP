@@ -6,7 +6,7 @@
     <title>TakeTopWF.Designer</title>
     <style type="text/css">
         #AboveDiv {
-            min-width: 2400px;
+            min-width: 2300px;
             width: expression (document.body.clientWidth <= 2300? "2300px" : "auto" ));
         }
 
@@ -25,6 +25,15 @@
             text-align: center;
         }
 
+        .divWaitingIcon {
+            position: fixed; /* 使图标固定在视口中 */
+            top: 200px; /* 距离顶部10像素 */
+            /*transform: translateX(-50%);*/ /* 水平位置校正 */
+            z-index: 1000; /* 确保图标在最顶层 */
+           /* box-shadow: 0px 0px 10px 10px #888888;*/
+            padding-left:150px;
+            text-align:center;
+        }
     </style>
 
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
@@ -53,7 +62,6 @@
 
         window.onresize = autoheight; //浏览器窗口发生变化时同时变化DIV高度
 
-
     </script>
 </head>
 <body>
@@ -62,11 +70,14 @@
             <asp:Label ID="LB_Sql" runat="server"></asp:Label>
             <table style="height: 100%; width: 100%;">
                 <tr>
-                    <td id="td1" style="width: 60%; height: 100%; vertical-align: top;">
+                    <td id="nodeDesign" style="width: 60%; height: 100%; vertical-align: top;">
                         <iframe id="_WFDesignerFrame" src="WFDesigner/TTTakeTopWFDesignerJSWorker.aspx?IdentifyString=<%=Request.QueryString["IdentifyString"].ToString()%>" style="width: 100%;"></iframe>
                     </td>
-                  
-                    <td style="width: 40%; height: 100%; vertical-align: top;">
+
+                    <td id="nodeDefinition" style="height: 100%; vertical-align: top;">
+                        <div id="divImgWaiting" class="divWaitingIcon" style="display: none;" >
+                            <img  src="Images/Processing.gif" alt="Loading,please wait..." />
+                        </div>
                         <iframe id="_WFSetAreaFrame" src="TTWFTemplateView.aspx?DesignType=JS&IdentifyString=<%=Request.QueryString["IdentifyString"].ToString()%>" style="width: 100%;"></iframe>
                     </td>
                 </tr>

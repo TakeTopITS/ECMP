@@ -121,11 +121,16 @@
             document.getElementById("TakeTopFlow_props").style.display = "none";
         }
 
+        function resizeDesignAreaWidth() {
+
+            parent.window.document.getElementById("nodeDesign").style.width = "60%";
+        }
+
     </script>
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
     <form id="form1" runat="server">
-        <div id="TakeTopFlow_tools"
+        <div id="TakeTopFlow_tools" onclick ="resizeDesignAreaWidth()"
             style="position: absolute; top: 10; left: 10; background-color: #fff; width: 100px; cursor: default; padding: 3px;"
             class="ui-widget-content">
             <div id="TakeTopFlow_tools_handle" style="text-align: center;"
@@ -145,6 +150,7 @@
             <div class="node selectable" id="path" onclick="hideTakeTopProps()">
                 <img src="img/16/flow_sequence.png" />&nbsp;&nbsp;连线(Line)
             </div>
+
             <div>
                 <hr />
             </div>
@@ -176,6 +182,12 @@
             <div>
                 <hr />
             </div>
+            <div class="node selectable" id="nodeDefinition">
+                <img src="img/16/nodeDefinition.png" />&nbsp;&nbsp;步骤定义(StepDefinition)
+            </div>
+            <div>
+                <hr />
+            </div>
             <div class="node print" id="TakeTopFlow_print" onclick="printDiv(document.getElementById('TakeTopFlow'))">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打印(Print)
             </div>
@@ -200,4 +212,5 @@
 
     </form>
 </body>
+
 </html>
