@@ -1230,6 +1230,8 @@ document.write("<script language=javascript src='../js/popwindow.js'></script>")
 
                 c.hide();
 
+                parent.window.document.getElementById("divImgWaiting").style.display = "block";
+
                 return;
             }
             if (i && i.getId() == o.getId()) {
