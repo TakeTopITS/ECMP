@@ -165,7 +165,7 @@
 
                                                             <li>下载链接：<asp:HyperLink ID="HL_SourceCodeDownload" runat="server" Text="源码下载" Visible="false"></asp:HyperLink>
                                                                 <br />
-                                                                文件解压密码请联系泰顶客服（电话：021-51085119）
+                                                                要协助请联系泰顶客服（电话：021-51085119）
                                                            
                                                                 </br>
                                                                      <p style="text-align: left;">
