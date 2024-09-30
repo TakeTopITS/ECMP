@@ -427,10 +427,7 @@ public static class ShareClass
                 LogClass.WriteLogFile("Error page: " + "\n" + err.Message.ToString() + "\n" + err.StackTrace);
             }
         }
-
-
     }
-
 
     //初始化用户模组
     public static void InitialUserModules(string strSampleUserCode, string strCurrentUserCode)
@@ -574,117 +571,7 @@ public static class ShareClass
         ShareClass.AddSpaceLineToFile("TakeTopPersonalSpaceSAAS.aspx", "<%--***--%>");
     }
 
-    //生成部门串（根据权限和部门超级用户）
-    public static string InitialDepartmentStringByAuthoritySuperUser(String strUserCode, string strSystemVersionType)
-    {
-        string strHQL;
-
-        DataSet ds1, ds2;
-
-        int i, j;
-
-        string strDepartCode, strDepartName;
-        string strSuperUserRelatedDepartCode;
-        string strDepartString = "";
-
-
-        if (strSystemVersionType != "GROUP" & strSystemVersionType != "ENTERPRISE")
-        {
-            strHQL = "Select DepartCode From T_Department ";
-        }
-        else
-        {
-            strHQL = " Select DepartCode From T_DepartRelatedSuperUser Where UserCode = " + "'" + strUserCode + "'";
-        }
-        strHQL += " Order By DepartCode ASC";
-
-        ds1 = ShareClass.GetDataSetFromSql(strHQL, "T_DepartRelatedSuperUser");
-
-        if (ds1.Tables[0].Rows.Count > 0)
-        {
-            for (j = 0; j < ds1.Tables[0].Rows.Count; j++)
-            {
-                strSuperUserRelatedDepartCode = ds1.Tables[0].Rows[j][0].ToString();
-
-                strHQL = "Select DepartCode,DepartName From T_Department Where DepartCode = " + "'" + strSuperUserRelatedDepartCode + "'";
-                strHQL += " and ((Authority = '所有')";
-                strHQL += " or ((Authority = '部分') ";
-                strHQL += " and (DepartCode in (select DepartCode from T_DepartmentUser where UserCode =" + "'" + strUserCode + "'" + "))))";
-                strHQL += " Order By DepartCode ASC";
-                ds2 = ShareClass.GetDataSetFromSql(strHQL, "T_Department");
-
-                for (i = 0; i < ds2.Tables[0].Rows.Count; i++)
-                {
-                    strDepartCode = ds2.Tables[0].Rows[i][0].ToString();
-                    strDepartName = ds2.Tables[0].Rows[i][1].ToString();
-
-                    if (strDepartString.IndexOf("'" + strDepartCode + "'" + ",") < 0)
-                    {
-                        strDepartString += "'" + strDepartCode + "'" + ",";
-
-                        strDepartString += DepartmentStringByAuthoritySuperUser(strDepartCode, strUserCode);
-                    }
-                }
-            }
-
-            try
-            {
-                strDepartString = strDepartString.Substring(0, strDepartString.Length - 1);
-            }
-            catch
-            {
-            }
-        }
-
-        if (strDepartString == "")
-        {
-            strDepartString = "''";
-        }
-
-        strDepartString = "(" + strDepartString + ")";
-
-        return strDepartString;
-    }
-
-    public static string DepartmentStringByAuthoritySuperUser(string strParentCode, string strUserCode)
-    {
-        string strHQL;
-
-        DataSet ds1, ds2;
-
-        string strDepartCode, strDepartName;
-        string strDepartString = "";
-
-        strHQL = "Select DepartCode,DepartName From T_Department Where ParentCode = " + "'" + strParentCode + "'";
-        strHQL += " and ((Authority = '所有')";
-        strHQL += " or ((Authority = '部分') ";
-        strHQL += " and (DepartCode in (select DepartCode from T_DepartmentUser where UserCode =" + "'" + strUserCode + "'" + "))))";
-        strHQL += " Order By DepartCode ASC";
-
-        ds1 = ShareClass.GetDataSetFromSql(strHQL, "T_Department");
-
-        for (int i = 0; i < ds1.Tables[0].Rows.Count; i++)
-        {
-            strDepartCode = ds1.Tables[0].Rows[i][0].ToString();
-            strDepartName = ds1.Tables[0].Rows[i][1].ToString();
-
-            if (strDepartString.IndexOf("'" + strDepartCode + "'" + ",") < 0)
-            {
-                strDepartString += "'" + strDepartCode + "'" + ",";
-
-                strHQL = "Select DepartCode,DepartName From T_Department Where ParentCode = " + "'" + strDepartCode + "'";
-                ds2 = ShareClass.GetDataSetFromSql(strHQL, "T_Department");
-
-                if (ds2.Tables[0].Rows.Count > 0)
-                {
-                    strDepartString += DepartmentStringByAuthoritySuperUser(strDepartCode, strUserCode);
-                }
-            }
-        }
-
-        return strDepartString;
-    }
-
+  
 
 
     //初始化实体类，以加快后续的操作速度

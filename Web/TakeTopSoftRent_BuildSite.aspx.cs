@@ -129,7 +129,7 @@ public partial class TakeTopSoftRent_BuildSite : System.Web.UI.Page
                 string strSiteDBRestoreFile = ds.Tables[0].Rows[0]["SiteDBRestoreFile"].ToString().Trim();
                 string strSiteDBSetupDirectory = ds.Tables[0].Rows[0]["SiteDBSetupDirectory"].ToString().Trim();
                 string strSiteDBLoginUserID = ds.Tables[0].Rows[0]["SiteDBLoginUserID"].ToString().Trim();
-                string strSiteDBUserLoginPassword = genernalPassword();
+                string strSiteDBUserLoginPassword = ShareClass.genernalPassword();
 
                 if (UrlIsExist(strSiteAppURL))
                 {
@@ -278,45 +278,6 @@ public partial class TakeTopSoftRent_BuildSite : System.Web.UI.Page
         Regex regex = new Regex("^[a-zA-Z]+$");
         return regex.IsMatch(str);
     }
-
-
-
-    //密码生成器
-    public static string genernalPassword()
-    {
-        string chars = "0123456789ABCDEFGHIJKLMNOPQSTUVWXYZabcdefghijklmnpqrstuvwxyz@*";
-        Random randrom = new Random(getNewSeed());
-
-        string str = "";
-        for (int j = 0; j < 50; j++)
-        {
-            str = "";
-            for (int i = 0; i < 8; i++)
-            {
-                str += chars[randrom.Next(chars.Length)];//randrom.Next(int i)返回一个小于所指定最大值的非负随机数
-            }
-            //不符合正则，重新生成
-            if (!Regex.IsMatch(str, @"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"))
-            {
-                continue;
-            }
-            else
-            {
-                break;
-            }
-        }
-
-        return str;
-    }
-
-    public static int getNewSeed()
-    {
-        byte[] rndBytes = new byte[4];
-        System.Security.Cryptography.RNGCryptoServiceProvider rng = new System.Security.Cryptography.RNGCryptoServiceProvider();
-        rng.GetBytes(rndBytes);
-        return BitConverter.ToInt32(rndBytes, 0);
-    }
-
 
     //获取文件夹下最新生成的文件
     public string GetLatestTimefile(string filePath)
