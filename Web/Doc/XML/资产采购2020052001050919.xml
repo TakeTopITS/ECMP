@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_BusinessFormDataTable>
+    <ID>133</ID>
+    <Type>配件                </Type>
+    <AssetName>通用919发动机</AssetName>
+    <Number>4.00</Number>
+    <Unit>台        </Unit>
+    <Spec>919,18吨</Spec>
+    <PurReason />
+    <Price>10000000.00</Price>
+    <PurTime>2020-05-19T15:40:42+08:00</PurTime>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <Supplier />
+    <SupplierPhone xml:space="preserve">               </SupplierPhone>
+    <Status>新建      </Status>
+    <POID>46</POID>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <AssetCode>FDJ001              </AssetCode>
+    <ModelNumber />
+    <Amount>40000000.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+  </T_BusinessFormDataTable>
+  <T_BusinessFormDataTable>
+    <ID>134</ID>
+    <Type>配件                </Type>
+    <AssetName>919机身</AssetName>
+    <Number>5.00</Number>
+    <Unit>台        </Unit>
+    <Spec>919</Spec>
+    <PurReason />
+    <Price>10000000.00</Price>
+    <PurTime>2020-05-20T01:31:09+08:00</PurTime>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <Supplier />
+    <SupplierPhone xml:space="preserve">               </SupplierPhone>
+    <Status>新建      </Status>
+    <POID>46</POID>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <AssetCode>JS001               </AssetCode>
+    <ModelNumber />
+    <Amount>50000000.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+  </T_BusinessFormDataTable>
+</NewDataSet>

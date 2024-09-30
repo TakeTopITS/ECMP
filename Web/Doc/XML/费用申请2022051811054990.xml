@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ExpenseApplyWL>
+    <id>122</id>
+    <relatedtype>项目                  </relatedtype>
+    <relatedid>153</relatedid>
+    <expensename>差旅费</expensename>
+    <purpose>差旅费</purpose>
+    <amount>3000.00</amount>
+    <paybacktime>2009-09-23T00:00:00+08:00</paybacktime>
+    <applicantcode>C7094               </applicantcode>
+    <applicantname>员工C7094             </applicantname>
+    <applytime>2017-03-12T12:20:17+08:00</applytime>
+    <status>处理中       </status>
+    <currencytype>人民币</currencytype>
+    <accountcode>3</accountcode>
+    <account>通讯费</account>
+    <workflowwlname>办公费用申请流程</workflowwlname>
+  </T_ExpenseApplyWL>
+</NewDataSet>

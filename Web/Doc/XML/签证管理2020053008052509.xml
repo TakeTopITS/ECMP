@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ConstractPayableVisa>
+    <DetailVisaID>6</DetailVisaID>
+    <ID>6</ID>
+    <ProjectID>153</ProjectID>
+    <ConstractPayableID>53</ConstractPayableID>
+    <VisaName>工艺调整</VisaName>
+    <VisaSignMan>钟经理</VisaSignMan>
+    <VisaAmount>20000.00</VisaAmount>
+    <Comment>工艺调整</Comment>
+    <Status>审批中    </Status>
+    <VisaSignTime>2019-03-10T00:00:00+08:00</VisaSignTime>
+    <CurrencyType>人民币              </CurrencyType>
+    <OperatorCode>C7094               </OperatorCode>
+    <RelatedImpact>这个签证会产生20000费用成本</RelatedImpact>
+    <RelatedResult>允许这个签证生效</RelatedResult>
+  </T_ConstractPayableVisa>
+</NewDataSet>

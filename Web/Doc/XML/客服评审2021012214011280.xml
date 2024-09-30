@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_CustomerQuestion>
+    <ID>207</ID>
+    <Company>速8</Company>
+    <ContactPerson>张三</ContactPerson>
+    <PhoneNumber>88888888</PhoneNumber>
+    <EMail />
+    <Address />
+    <PostCode xml:space="preserve">          </PostCode>
+    <Type>购买咨询问题                                      </Type>
+    <Question>1111</Question>
+    <SummitTime>2017-04-08T17:11:03+08:00</SummitTime>
+    <Status>新建      </Status>
+    <AnswerTime>2017-04-08T00:00:00+08:00</AnswerTime>
+    <RecorderCode>C7094               </RecorderCode>
+    <OperatorCode>C7094               </OperatorCode>
+    <OperatorStatus xml:space="preserve">          </OperatorStatus>
+    <OperatorName>员工C7094 </OperatorName>
+    <FromWebSite xml:space="preserve">                                                                                                                                                                                                        </FromWebSite>
+    <IsImportant>NO        </IsImportant>
+    <BusinessName>TEST</BusinessName>
+    <ExpectedTime>2017-04-07T00:00:00+08:00</ExpectedTime>
+    <CustomerName>TESST</CustomerName>
+    <CustomerManager>TEST</CustomerManager>
+    <ExpectedEarnings>1111.00</ExpectedEarnings>
+    <Possibility>50</Possibility>
+    <BusinessSource>TEST</BusinessSource>
+    <SucessKeyReason>TEST</SucessKeyReason>
+    <FailedKeyReason>TEST</FailedKeyReason>
+    <AgencyName>TEST</AgencyName>
+    <BusinessStatus xml:space="preserve">                    </BusinessStatus>
+    <Stage>实施                                                                                                </Stage>
+    <CustomerStage>挑选                                                                                                </CustomerStage>
+  </T_CustomerQuestion>
+</NewDataSet>

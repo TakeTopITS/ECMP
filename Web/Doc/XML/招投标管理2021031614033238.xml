@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_BMAnnInvitation>
+    <ID>12</ID>
+    <Name>泰顶大厦建设项目招标邀请函</Name>
+    <EnterPer>员工C7094</EnterPer>
+    <EnterUnit>IT管理部</EnterUnit>
+    <EnterDate>2018-03-11T00:00:00+08:00</EnterDate>
+    <BidWay>邀请招标</BidWay>
+    <BidPlanID>11</BidPlanID>
+    <BidPlanName>泰顶大厦建设方案</BidPlanName>
+    <BidObjects>9,7,4</BidObjects>
+    <Remark>泰顶大厦建设项目招标邀请函</Remark>
+    <EnterCode>C7094</EnterCode>
+    <PhoneList>020-38063662,12345678,0202020202</PhoneList>
+    <PhoneRemark>泰顶大厦建设项目招标邀请函</PhoneRemark>
+    <EmailRemark />
+    <ResRemark>泰顶大厦建设项目招标邀请函</ResRemark>
+  </T_BMAnnInvitation>
+</NewDataSet>

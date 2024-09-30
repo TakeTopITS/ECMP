@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_LeaveApplyForm>
+    <ID>22</ID>
+    <UserName>员工C7094</UserName>
+    <DepartCode>10128</DepartCode>
+    <DepartName>IT管理部</DepartName>
+    <Duty>门卫</Duty>
+    <LeaveType>事假</LeaveType>
+    <ApplyBecause>TEST</ApplyBecause>
+    <StartTime>2017-01-24T12:19:00+08:00</StartTime>
+    <EndTime>2017-01-24T12:19:00+08:00</EndTime>
+    <Status>审批中</Status>
+    <Creator>C7094</Creator>
+    <CreateTime>2017-01-24T00:00:00+08:00</CreateTime>
+    <HourNum>0.00</HourNum>
+    <DayNum>0.00</DayNum>
+  </T_LeaveApplyForm>
+</NewDataSet>

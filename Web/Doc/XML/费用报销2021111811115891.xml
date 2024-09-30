@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ExpenseClaim>
+    <detailecid>7</detailecid>
+    <ecid>7</ecid>
+    <expensename>项目7 顺丰速运华南（广州）航空快件运转中心项目 费用报销申请</expensename>
+    <purpose />
+    <amount>10000.00</amount>
+    <currencytype>人民币</currencytype>
+    <applicantcode>200012128           </applicantcode>
+    <applicantname>黄锦洪                 </applicantname>
+    <applytime>2021-11-18T11:42:44.792714+08:00</applytime>
+    <status>审批中       </status>
+    <relatedtype>项目                  </relatedtype>
+    <relatedid>7</relatedid>
+  </T_ExpenseClaim>
+</NewDataSet>

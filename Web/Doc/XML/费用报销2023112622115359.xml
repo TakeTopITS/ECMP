@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ExpenseClaim>
+    <detailecid>11</detailecid>
+    <ecid>11</ecid>
+    <expensename>招待费报销</expensename>
+    <purpose>DFASDF</purpose>
+    <amount>842.00</amount>
+    <currencytype>人民币</currencytype>
+    <applicantcode>C7094               </applicantcode>
+    <applicantname>员工C7094             </applicantname>
+    <applytime>2018-11-08T10:02:22+08:00</applytime>
+    <status>处理中       </status>
+    <relatedtype>项目                  </relatedtype>
+    <relatedid>1</relatedid>
+  </T_ExpenseClaim>
+</NewDataSet>

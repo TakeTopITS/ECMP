@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_AssetApplication>
+    <DetailAAID>23</DetailAAID>
+    <AAID>23</AAID>
+    <AAName>ESDAFSDF</AAName>
+    <Type>台式机              </Type>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094</ApplicantName>
+    <ApplyTime>2017-03-13T00:00:00+08:00</ApplyTime>
+    <FinishTime>2017-03-13T00:00:00+08:00</FinishTime>
+    <ApplyReason>SDFASDF</ApplyReason>
+    <Status>审批中    </Status>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+  </T_AssetApplication>
+</NewDataSet>

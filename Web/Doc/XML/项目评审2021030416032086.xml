@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_Project>
+    <ProjectID>1517</ProjectID>
+    <UserCode>C7094               </UserCode>
+    <UserName>员工C7094           </UserName>
+    <ProjectName>中共东莞市委统战部                                                                                                                                                                                      </ProjectName>
+    <ProjectDetail>说明</ProjectDetail>
+    <AcceptStandard>标准</AcceptStandard>
+    <BeginDate>2021-03-04T00:00:00+08:00</BeginDate>
+    <EndDate>2021-03-04T00:00:00+08:00</EndDate>
+    <PMCode>C7403               </PMCode>
+    <PMName>员工C7403           </PMName>
+    <MakeDate>2021-03-04T16:20:59+08:00</MakeDate>
+    <Status>计划      </Status>
+    <ParentID>1</ParentID>
+    <Budget>0.00</Budget>
+    <FinishPercent>0</FinishPercent>
+    <ManHour>28.00</ManHour>
+    <ManNumber>1.00</ManNumber>
+    <ProjectType>综合整理类          </ProjectType>
+    <ProjectAmount>17035.00</ProjectAmount>
+    <CustomerPMName>JASON</CustomerPMName>
+    <StatusValue>进行中    </StatusValue>
+    <ProjectClass>常规项目  </ProjectClass>
+    <ProjectCode>003</ProjectCode>
+    <CurrencyType>人民币</CurrencyType>
+    <Priority>COMMON    </Priority>
+    <DianYadengJi />
+    <JiaKong />
+    <DianLan />
+    <WuTan />
+    <DanJia1>0.00</DanJia1>
+    <DanJia2>0.00</DanJia2>
+    <ProjectAddress />
+    <CustomerName />
+    <YeWuLaiYuan />
+    <CustomerProjectCode />
+    <PingPai />
+    <JianTu />
+    <ProductName />
+    <SecondProjectName />
+    <ConfirmedBySupper>YES</ConfirmedBySupper>
+    <BelongDepartCode>10108               </BelongDepartCode>
+    <BelongDepartName>总裁办</BelongDepartName>
+  </T_Project>
+</NewDataSet>

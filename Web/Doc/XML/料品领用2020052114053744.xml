@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_GoodsCheckOutNoticeOrder>
+    <DetailCOOID>6</DetailCOOID>
+    <COOID>6</COOID>
+    <COOName>test20151110</COOName>
+    <Type>SALE                </Type>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094</ApplicantName>
+    <ApplyTime>2015-11-10T00:00:00+08:00</ApplyTime>
+    <FinishTime>2015-11-10T00:00:00+08:00</FinishTime>
+    <ApplyReason>333333333333333333333333</ApplyReason>
+    <Status>审批中    </Status>
+    <RelatedType>Project   </RelatedType>
+    <RelatedID>424</RelatedID>
+    <Amount>400.000</Amount>
+    <CurrencyType>人民币</CurrencyType>
+  </T_GoodsCheckOutNoticeOrder>
+</NewDataSet>

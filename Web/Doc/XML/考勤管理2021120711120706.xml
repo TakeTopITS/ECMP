@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_LeaveApplyForm>
+    <ID>2</ID>
+    <UserName>员工C7094</UserName>
+    <DepartCode>10128</DepartCode>
+    <DepartName>IT管理部</DepartName>
+    <Duty>总监</Duty>
+    <LeaveType>病假</LeaveType>
+    <ApplyBecause>感冒发烧</ApplyBecause>
+    <StartTime>2020-06-09T09:17:00+08:00</StartTime>
+    <EndTime>2020-06-09T22:17:00+08:00</EndTime>
+    <Status>审批中</Status>
+    <Creator>C7094</Creator>
+    <CreateTime>2020-06-07T00:00:00+08:00</CreateTime>
+    <HourNum>7.22</HourNum>
+    <DayNum>0.90</DayNum>
+  </T_LeaveApplyForm>
+</NewDataSet>

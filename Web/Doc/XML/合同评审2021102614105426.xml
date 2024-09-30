@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_Constract>
+    <constractid>4</constractid>
+    <constractcode>202363</constractcode>
+    <constractname>白云三期支出合同</constractname>
+    <type>施工类合同               </type>
+    <signdate>2021-10-26T00:00:00+08:00</signdate>
+    <amount>1000000.000</amount>
+    <currency>人民币</currency>
+    <departcode>101010104           </departcode>
+    <departname>经营开发部</departname>
+    <startdate>2021-10-26T00:00:00+08:00</startdate>
+    <enddate>2021-10-26T00:00:00+08:00</enddate>
+    <status>评审中       </status>
+    <maincontent>合同正文</maincontent>
+    <exception>..</exception>
+    <parta />
+    <partaoperator />
+    <partb />
+    <partboperator />
+    <recordtime>2021-10-26T14:57:31.655722+08:00</recordtime>
+    <recordercode>ADMIN               </recordercode>
+    <recordername>管理员</recordername>
+    <constractclass>支出类                 </constractclass>
+    <reandpaytype />
+    <relatedcustomercode xml:space="preserve">                    </relatedcustomercode>
+    <relatedvendorcode xml:space="preserve">                    </relatedvendorcode>
+    <parentcode />
+    <archivetime xml:space="preserve">                    </archivetime>
+    <taxrate>0.00</taxrate>
+    <taxamount>0.00</taxamount>
+    <aftertaxtotalamount>0.00</aftertaxtotalamount>
+  </T_Constract>
+</NewDataSet>

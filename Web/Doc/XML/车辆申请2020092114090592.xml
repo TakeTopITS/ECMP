@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_CarApplyForm>
+    <ID>47</ID>
+    <DepartCode>101                 </DepartCode>
+    <DepartName>集团办公室                              </DepartName>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <ApplyReason>送客户</ApplyReason>
+    <DepartTime>2016-07-21T16:35:00+08:00</DepartTime>
+    <BackTime>2016-07-21T17:35:00+08:00</BackTime>
+    <Attendant>王五</Attendant>
+    <BoardingSite>曜和广场</BoardingSite>
+    <Destination>火车站</Destination>
+    <CarType>轿车                </CarType>
+    <Status>审批中    </Status>
+    <MakeUserCode>C7094               </MakeUserCode>
+    <MakeTime>2016-07-18T14:18:57+08:00</MakeTime>
+  </T_CarApplyForm>
+</NewDataSet>

@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <_x0020_V_BMPurchaseApplication>
+    <ID>12</ID>
+    <BMACode>202103002</BMACode>
+    <Name>浦江资源项目</Name>
+    <Application>员工C7094</Application>
+    <ApplicationDate>2021-03-18T00:00:00+08:00</ApplicationDate>
+    <Remark>给水排水工程</Remark>
+    <EnterCode>C7094</EnterCode>
+    <DepartName>集团办公室</DepartName>
+    <EngineeringAddress>浦江镇</EngineeringAddress>
+    <EngineeringNumber>1.000</EngineeringNumber>
+    <EngineeringUnitName>个        </EngineeringUnitName>
+    <PlanStartTime>2021-03-18T00:00:00+08:00</PlanStartTime>
+    <TotalDuration>60.00</TotalDuration>
+    <DeviceNumber>1000.00</DeviceNumber>
+    <DeviceUnitName>台        </DeviceUnitName>
+    <SiteCondition>平整已装修</SiteCondition>
+    <ManHour>10.000</ManHour>
+    <OtherComment>无</OtherComment>
+    <ExpectedAmount>100000000.00</ExpectedAmount>
+    <Status>计划      </Status>
+    <SupplierCode>TT003</SupplierCode>
+    <SupplierName>华三系统集成公司</SupplierName>
+    <ProjectID>502</ProjectID>
+  </_x0020_V_BMPurchaseApplication>
+</NewDataSet>

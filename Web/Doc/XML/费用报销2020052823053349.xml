@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_BusinessFormDataTable>
+    <ID>47</ID>
+    <ECID>24</ECID>
+    <AccountCode>1122</AccountCode>
+    <Account>应收帐款</Account>
+    <Description />
+    <Amount>10000.00</Amount>
+    <UserCode>C7094               </UserCode>
+    <UserName>员工C7094           </UserName>
+    <RegisterDate>2020-05-18T00:00:00+08:00</RegisterDate>
+    <RelatedType>其它      </RelatedType>
+    <RelatedID>24</RelatedID>
+    <RelatedExpenseID>0</RelatedExpenseID>
+  </T_BusinessFormDataTable>
+</NewDataSet>

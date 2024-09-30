@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ExpenseApplyWL>
+    <ID>100</ID>
+    <RelatedType>其它                </RelatedType>
+    <RelatedID>0</RelatedID>
+    <ExpenseName />
+    <Purpose />
+    <Amount>0.00</Amount>
+    <PayBackTime>2014-05-11T00:00:00+08:00</PayBackTime>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <ApplyTime>2014-05-11T12:02:57+08:00</ApplyTime>
+    <Status>审批中    </Status>
+    <CurrencyType>人民币</CurrencyType>
+    <AccountCode>7</AccountCode>
+    <Account>现金                </Account>
+  </T_ExpenseApplyWL>
+</NewDataSet>

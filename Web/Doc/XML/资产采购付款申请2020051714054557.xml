@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <V_SupplierAssetPaymentApplicant>
+    <DetailAOID>1</DetailAOID>
+    <AOID>1</AOID>
+    <AssetAOName>PA2017100001</AssetAOName>
+    <ProjectName>卫浴设备销售与安装工程</ProjectName>
+    <PartA>联想</PartA>
+    <PartAContactInformation>ASDF        ,ASDFASFD</PartAContactInformation>
+    <PaymentMethod>支票</PaymentMethod>
+    <Attachment>TEST比价表,                                                                                                                                                                                             </Attachment>
+    <ContractPayCondition>TEST</ContractPayCondition>
+    <CurrentTotalPaymentAmount>7340.00</CurrentTotalPaymentAmount>
+    <CurrencyType>人民币</CurrencyType>
+    <AleadyTotalInvoice>1.00</AleadyTotalInvoice>
+    <ShouldTotalInvoice>1.00</ShouldTotalInvoice>
+    <CompanyName>联想</CompanyName>
+    <ProjectID>153</ProjectID>
+    <BankName>TEST</BankName>
+    <BankCode>TEST</BankCode>
+    <UserCode>C7094</UserCode>
+    <UserName>员工C7094</UserName>
+    <CreateTime>2017-10-16T00:00:00+08:00</CreateTime>
+    <Status>审批中</Status>
+  </V_SupplierAssetPaymentApplicant>
+</NewDataSet>

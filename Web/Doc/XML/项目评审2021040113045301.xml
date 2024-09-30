@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_Project>
+    <ProjectID>1523</ProjectID>
+    <UserCode>C7094               </UserCode>
+    <UserName>员工C7094           </UserName>
+    <ProjectName>bebebus新品开发流程                                                                                                                                                                                     </ProjectName>
+    <ProjectDetail>20210401-今日工作</ProjectDetail>
+    <AcceptStandard>20210401-今日工作</AcceptStandard>
+    <BeginDate>2021-04-01T00:00:00+08:00</BeginDate>
+    <EndDate>2021-05-01T00:00:00+08:00</EndDate>
+    <PMCode>C7094               </PMCode>
+    <PMName>员工C7094           </PMName>
+    <MakeDate>2021-04-01T12:42:55+08:00</MakeDate>
+    <Status>新建      </Status>
+    <ParentID>1517</ParentID>
+    <Budget>0.00</Budget>
+    <FinishPercent>0</FinishPercent>
+    <ManHour>0.00</ManHour>
+    <ManNumber>0.00</ManNumber>
+    <ProjectType>工程项目            </ProjectType>
+    <ProjectAmount>0.00</ProjectAmount>
+    <CustomerPMName>XXX</CustomerPMName>
+    <StatusValue>进行中    </StatusValue>
+    <ProjectClass>常规项目  </ProjectClass>
+    <ProjectCode>20210401</ProjectCode>
+    <CurrencyType>人民币</CurrencyType>
+    <Priority>COMMON    </Priority>
+    <DianYadengJi />
+    <JiaKong />
+    <DianLan />
+    <WuTan />
+    <DanJia1>0.00</DanJia1>
+    <DanJia2>0.00</DanJia2>
+    <ProjectAddress />
+    <CustomerName />
+    <YeWuLaiYuan />
+    <CustomerProjectCode />
+    <PingPai />
+    <JianTu />
+    <ProductName />
+    <SecondProjectName />
+    <ConfirmedBySupper>YES</ConfirmedBySupper>
+    <BelongDepartCode>10108               </BelongDepartCode>
+    <BelongDepartName>总裁办</BelongDepartName>
+  </T_Project>
+</NewDataSet>

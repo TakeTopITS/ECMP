@@ -1,0 +1,118 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_BusinessFormDataTable>
+    <ID>135</ID>
+    <Type>配件                </Type>
+    <AssetName>C919商用飞机</AssetName>
+    <Number>2.00</Number>
+    <Unit>台        </Unit>
+    <Spec>单通道190座</Spec>
+    <PurReason />
+    <Price>2000000000.00</Price>
+    <PurTime>2020-05-20T11:50:14+08:00</PurTime>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <Supplier />
+    <SupplierPhone xml:space="preserve">               </SupplierPhone>
+    <Status>新建      </Status>
+    <POID>44</POID>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <AssetCode>FJ0001              </AssetCode>
+    <ModelNumber />
+    <Amount>4000000000.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+  </T_BusinessFormDataTable>
+  <T_BusinessFormDataTable>
+    <ID>136</ID>
+    <Type>配件                </Type>
+    <AssetName>919机轮</AssetName>
+    <Number>2.00</Number>
+    <Unit>台        </Unit>
+    <Spec>919</Spec>
+    <PurReason />
+    <Price>10000000.00</Price>
+    <PurTime>2020-05-20T14:11:06+08:00</PurTime>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <Supplier />
+    <SupplierPhone xml:space="preserve">               </SupplierPhone>
+    <Status>新建      </Status>
+    <POID>44</POID>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <AssetCode>JR001               </AssetCode>
+    <ModelNumber />
+    <Amount>20000000.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+  </T_BusinessFormDataTable>
+  <T_BusinessFormDataTable>
+    <ID>137</ID>
+    <Type>笔记本              </Type>
+    <AssetName>HP笔记本01</AssetName>
+    <Number>2.00</Number>
+    <Unit>台        </Unit>
+    <Spec>HD:500G</Spec>
+    <PurReason />
+    <Price>5000.00</Price>
+    <PurTime>2020-05-20T14:12:19+08:00</PurTime>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <Supplier />
+    <SupplierPhone xml:space="preserve">               </SupplierPhone>
+    <Status>新建      </Status>
+    <POID>44</POID>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <AssetCode>PC00001             </AssetCode>
+    <ModelNumber />
+    <Amount>10000.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+  </T_BusinessFormDataTable>
+  <T_BusinessFormDataTable>
+    <ID>138</ID>
+    <Type>配件                </Type>
+    <AssetName>C919机翼</AssetName>
+    <Number>2.00</Number>
+    <Unit>台        </Unit>
+    <Spec>919,35米</Spec>
+    <PurReason />
+    <Price>10000000.00</Price>
+    <PurTime>2020-05-20T14:40:50+08:00</PurTime>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <Supplier />
+    <SupplierPhone xml:space="preserve">               </SupplierPhone>
+    <Status>新建      </Status>
+    <POID>44</POID>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <AssetCode>JY001               </AssetCode>
+    <ModelNumber />
+    <Amount>20000000.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+  </T_BusinessFormDataTable>
+  <T_BusinessFormDataTable>
+    <ID>140</ID>
+    <Type>耗材                </Type>
+    <AssetName>宜家沙发</AssetName>
+    <Number>3.00</Number>
+    <Unit>台        </Unit>
+    <Spec>4人位</Spec>
+    <PurReason />
+    <Price>1800.00</Price>
+    <PurTime>2020-05-20T14:56:50+08:00</PurTime>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <Supplier />
+    <SupplierPhone xml:space="preserve">               </SupplierPhone>
+    <Status>新建      </Status>
+    <POID>44</POID>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <AssetCode>TEST001             </AssetCode>
+    <ModelNumber />
+    <Amount>5400.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+  </T_BusinessFormDataTable>
+</NewDataSet>

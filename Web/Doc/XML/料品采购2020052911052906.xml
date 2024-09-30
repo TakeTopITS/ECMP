@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_BusinessFormDataTable>
+    <ID>94</ID>
+    <Type>电子元件            </Type>
+    <GoodsName>中央控制主机</GoodsName>
+    <Number>100.000</Number>
+    <Unit>台        </Unit>
+    <Spec>CR-PGMIII（含III-SOFT848)</Spec>
+    <PurReason />
+    <Price>1000.0000</Price>
+    <PurTime>2020-05-29T11:15:29+08:00</PurTime>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <POID>54</POID>
+    <GoodsCode>18001               </GoodsCode>
+    <ModelNumber>CREATOR</ModelNumber>
+    <CheckInNumber>0.000</CheckInNumber>
+    <Amount>100000.000</Amount>
+    <TaxPrice>2000.000</TaxPrice>
+    <TaxAmount>200000.000</TaxAmount>
+    <ClearingForm>月结                                    </ClearingForm>
+    <TaxRate>1.00</TaxRate>
+    <SourceType>Other               </SourceType>
+    <SourceID>0</SourceID>
+    <SupplyNumber>0.000</SupplyNumber>
+    <Comment />
+    <ReturnNumber>0.000</ReturnNumber>
+    <Manufacturer />
+    <ProcessRoute />
+    <BomVerID>0</BomVerID>
+    <brand />
+  </T_BusinessFormDataTable>
+</NewDataSet>

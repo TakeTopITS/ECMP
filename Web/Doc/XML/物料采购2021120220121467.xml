@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_GoodsPurchaseOrder>
+    <detailpoid>34</detailpoid>
+    <poid>34</poid>
+    <gponame>PO202111034</gponame>
+    <purmancode>C7094               </purmancode>
+    <purmanname>员工C7094             </purmanname>
+    <purtime>2021-11-15T00:00:00+08:00</purtime>
+    <arrivaltime>2021-11-15T00:00:00+08:00</arrivaltime>
+    <amount>0.000</amount>
+    <comment />
+    <status>处理中       </status>
+    <operatorcode>C7094               </operatorcode>
+    <operatorname>员工C7094</operatorname>
+    <relatedtype>Project             </relatedtype>
+    <relatedid>153</relatedid>
+    <currencytype>人民币</currencytype>
+    <supplier>华为</supplier>
+    <supplierphone>ASDFASFD       </supplierphone>
+    <supplierfax>DFAF           </supplierfax>
+    <suppliercontacts>ASDF</suppliercontacts>
+    <clearingform />
+    <soid>0</soid>
+    <packwarehouse />
+    <carcode />
+    <driver />
+    <businesstype>计划                  </businesstype>
+    <businesscode>8045                </businesscode>
+  </T_GoodsPurchaseOrder>
+</NewDataSet>

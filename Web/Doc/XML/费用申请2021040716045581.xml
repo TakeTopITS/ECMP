@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ExpenseApplyWL>
+    <ID>150</ID>
+    <RelatedType>项目                </RelatedType>
+    <RelatedID>504</RelatedID>
+    <ExpenseName>项目504 合同: MB001 模板工程 项目 费用申请</ExpenseName>
+    <Purpose>申请流程，检测楼房</Purpose>
+    <Amount>500.00</Amount>
+    <PayBackTime>2021-04-07T00:00:00+08:00</PayBackTime>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <ApplyTime>2021-04-07T16:31:47+08:00</ApplyTime>
+    <Status>审批中    </Status>
+    <CurrencyType>人民币</CurrencyType>
+    <AccountCode>34</AccountCode>
+    <Account>人工费</Account>
+    <WorkFlowWLName>办公费用申请流程</WorkFlowWLName>
+  </T_ExpenseApplyWL>
+</NewDataSet>

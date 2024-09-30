@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ExpenseClaim>
+    <ECID>17</ECID>
+    <ExpenseName>DFASDFSADF</ExpenseName>
+    <Purpose>SADFASFD</Purpose>
+    <Amount>234.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <ApplyTime>2020-02-26T19:57:24+08:00</ApplyTime>
+    <Status>审批中    </Status>
+    <RelatedType>其它                </RelatedType>
+    <RelatedID>0</RelatedID>
+  </T_ExpenseClaim>
+</NewDataSet>

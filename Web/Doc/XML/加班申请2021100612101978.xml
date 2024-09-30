@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_OvertimeApplyForm>
+    <id>3</id>
+    <username>员工C7094</username>
+    <departcode>101</departcode>
+    <departname>集团办公室</departname>
+    <duty>经理</duty>
+    <overtimetype>节假日加班</overtimetype>
+    <applybecause>修理</applybecause>
+    <starttime>2021-06-01T10:10:00+08:00</starttime>
+    <endtime>2021-06-01T18:10:00+08:00</endtime>
+    <status>审批中</status>
+    <creator>C7094</creator>
+    <createtime>2021-04-30T00:00:00+08:00</createtime>
+    <hournum>6.00</hournum>
+    <daynum>0.75</daynum>
+    <overtimecheckintime>2021-06-01 10:10:00.000</overtimecheckintime>
+    <overtimecheckouttime>2021-06-01 18:10:00.000</overtimecheckouttime>
+  </T_OvertimeApplyForm>
+</NewDataSet>

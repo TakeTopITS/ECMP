@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_AssetPurchaseOrder>
+    <ID>148</ID>
+    <RelatedType>其它                </RelatedType>
+    <RelatedID>0</RelatedID>
+    <ExpenseName>TEST</ExpenseName>
+    <Purpose>ASDFSDF</Purpose>
+    <Amount>444.00</Amount>
+    <PayBackTime>2021-03-12T00:00:00+08:00</PayBackTime>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <ApplyTime>2020-05-16T14:53:21+08:00</ApplyTime>
+    <Status>审批中    </Status>
+    <CurrencyType>瑞士法郎</CurrencyType>
+    <AccountCode>1</AccountCode>
+    <Account>交通费</Account>
+    <WorkFlowWLName>办公费用申请流程</WorkFlowWLName>
+  </T_AssetPurchaseOrder>
+</NewDataSet>

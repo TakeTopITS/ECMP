@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_Project>
+    <ProjectID>153</ProjectID>
+    <UserCode>C7094               </UserCode>
+    <UserName>员工C7094           </UserName>
+    <ProjectName>晶盛工业控制自动化项目                                                                                                                                                                                  </ProjectName>
+    <ProjectDetail>卡姿兰</ProjectDetail>
+    <AcceptStandard>&lt;p&gt;泰顶汽车营销战略咨询项目 ? ? ? ? ? ? ? ? ? ? ? ?&lt;/p&gt;</AcceptStandard>
+    <BeginDate>2008-05-19T00:00:00+08:00</BeginDate>
+    <EndDate>2018-08-31T00:00:00+08:00</EndDate>
+    <PMCode>C7094               </PMCode>
+    <PMName>员工C7094           </PMName>
+    <MakeDate>2021-05-09T07:06:24+08:00</MakeDate>
+    <Status>活动      </Status>
+    <ParentID>1</ParentID>
+    <Budget>1000000.00</Budget>
+    <FinishPercent>46</FinishPercent>
+    <ManHour>200.00</ManHour>
+    <ManNumber>20.00</ManNumber>
+    <ProjectType>工程项目            </ProjectType>
+    <ProjectAmount>560000000.00</ProjectAmount>
+    <CustomerPMCode xml:space="preserve">          </CustomerPMCode>
+    <CustomerPMName>JASON</CustomerPMName>
+    <StatusValue>通过      </StatusValue>
+    <ProjectClass>模板项目  </ProjectClass>
+    <ProjectCode>G20190001</ProjectCode>
+    <CurrencyType>瑞士法郎</CurrencyType>
+    <Priority>COMMON    </Priority>
+    <DianYadengJi>1200</DianYadengJi>
+    <JiaKong>5</JiaKong>
+    <DianLan>6</DianLan>
+    <WuTan>7</WuTan>
+    <DanJia1>10.00</DanJia1>
+    <DanJia2>10.00</DanJia2>
+    <ProjectAddress>TEST</ProjectAddress>
+    <CustomerName>TEST</CustomerName>
+    <YeWuLaiYuan>TEST</YeWuLaiYuan>
+    <CustomerProjectCode>TEST</CustomerProjectCode>
+    <PingPai>卡姿兰</PingPai>
+    <JianTu />
+    <ProductName>眼影</ProductName>
+    <SecondProjectName>TESTTESTTEST</SecondProjectName>
+    <ConfirmedBySupper>YES</ConfirmedBySupper>
+    <BelongDepartCode>10145               </BelongDepartCode>
+    <BelongDepartName>工程技术中心</BelongDepartName>
+  </T_Project>
+</NewDataSet>

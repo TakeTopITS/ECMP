@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_GoodsPurchaseOrder>
+    <DetailPOID>1188</DetailPOID>
+    <POID>1188</POID>
+    <GPOName>PO2021041188</GPOName>
+    <PurManCode>C7094               </PurManCode>
+    <PurManName>员工C7094           </PurManName>
+    <PurTime>2021-04-26T00:00:00+08:00</PurTime>
+    <ArrivalTime>2021-04-26T00:00:00+08:00</ArrivalTime>
+    <Amount>9998.000</Amount>
+    <Comment />
+    <Status>审批中    </Status>
+    <OperatorCode>C7094               </OperatorCode>
+    <OperatorName>员工C7094</OperatorName>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <CurrencyType>人民币</CurrencyType>
+    <Supplier>永兴科技有限公司</Supplier>
+    <SupplierPhone>12345678       </SupplierPhone>
+    <SupplierFax>123456         </SupplierFax>
+    <SupplierContacts>小龙</SupplierContacts>
+    <ClearingForm>转账</ClearingForm>
+    <SOID>0</SOID>
+    <PackWareHouse />
+    <CarCode />
+    <Driver />
+  </T_GoodsPurchaseOrder>
+</NewDataSet>

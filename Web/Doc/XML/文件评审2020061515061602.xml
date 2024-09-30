@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_Document>
+    <DocID>1839</DocID>
+    <RelatedType>任务                </RelatedType>
+    <DocTypeID>6</DocTypeID>
+    <DocType>技术方案                                                                                            </DocType>
+    <RelatedID>981</RelatedID>
+    <DocName>KPI是否需要与工资挂钩.doc</DocName>
+    <Address>Doc\202006\C7094\Doc\KPI是否需要与工资挂钩2020061515060058.doc</Address>
+    <Author>员工C7094</Author>
+    <DepartCode>10128</DepartCode>
+    <DepartName>IT管理部</DepartName>
+    <UploadManCode>C7094               </UploadManCode>
+    <UploadManName>员工C7094           </UploadManName>
+    <UploadTime>2020-06-15T15:38:00+08:00</UploadTime>
+    <Visible>2100和2200工厂合并工作组</Visible>
+    <Status>活动      </Status>
+    <RelatedName />
+  </T_Document>
+</NewDataSet>

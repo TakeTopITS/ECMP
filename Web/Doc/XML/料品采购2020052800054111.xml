@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_GoodsPurchaseOrder>
+    <DetailPOID>25</DetailPOID>
+    <POID>25</POID>
+    <GPOName>PO201807025</GPOName>
+    <PurManCode>C7094               </PurManCode>
+    <PurManName>员工C7094           </PurManName>
+    <PurTime>2018-07-15T00:00:00+08:00</PurTime>
+    <ArrivalTime>2018-07-15T00:00:00+08:00</ArrivalTime>
+    <Amount>4000.000</Amount>
+    <Comment />
+    <Status>审批中    </Status>
+    <OperatorCode>C7094               </OperatorCode>
+    <OperatorName>员工C7094</OperatorName>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <CurrencyType>人民币</CurrencyType>
+    <Supplier>中油二建</Supplier>
+    <SupplierPhone>020-38063662   </SupplierPhone>
+    <SupplierFax>020-38678076   </SupplierFax>
+    <SupplierContacts>020-38678076</SupplierContacts>
+    <ClearingForm />
+    <SOID>0</SOID>
+    <PackWareHouse />
+    <CarCode />
+    <Driver />
+  </T_GoodsPurchaseOrder>
+</NewDataSet>

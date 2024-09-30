@@ -1,0 +1,349 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_Constract>
+    <constractid>2</constractid>
+    <constractcode>HT0002</constractcode>
+    <constractname>晶微工业控制自动化项目合同</constractname>
+    <type>购销合同                </type>
+    <signdate>2019-05-11T00:00:00+08:00</signdate>
+    <amount>20000.000</amount>
+    <currency>人民币</currency>
+    <departcode>10128               </departcode>
+    <departname>IT管理部</departname>
+    <startdate>2019-05-11T00:00:00+08:00</startdate>
+    <enddate>2019-05-11T00:00:00+08:00</enddate>
+    <status>评审中       </status>
+    <maincontent>&lt;p align="center" style="text-align:center"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p style="margin-right:21.0pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;依照《中华人民共和国合同法》的有关规定，经甲乙双方协商一致，就下列软件销售和实施服务事项签订本合同，以兹信守&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;第一条　合同标的及合同总价&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;table class="Table" style="border-collapse:collapse; border:solid windowtext 1.0pt"&gt;
+	&lt;tbody&gt;
+		&lt;tr style="height:27.0pt"&gt;
+			&lt;td colspan="2" style="width:175.5pt; border:solid windowtext 1.0pt" width="234"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:27.0pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;品名&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td rowspan="2" style="width:2.0cm; border:solid windowtext 1.0pt; border-left:none" width="76"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:27.0pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;数量&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td rowspan="2" style="width:42.55pt; border:solid windowtext 1.0pt; border-left:none" width="57"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:27.0pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;单位&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td rowspan="2" style="width:63.8pt; border:solid windowtext 1.0pt; border-left:none" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:27.0pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;单价（元）&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td rowspan="2" style="width:63.75pt; border:solid windowtext 1.0pt; border-left:none" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:27.0pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;总价（元）&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td rowspan="2" style="width:76.5pt; border:solid windowtext 1.0pt; border-left:none" width="102"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:27.0pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;备注&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr style="height:19.5pt"&gt;
+			&lt;td colspan="2" style="width:175.5pt; border:solid windowtext 1.0pt; border-top:none" width="234"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:19.5pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;【&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family:宋体"&gt;泰顶拓鼎&lt;/span&gt;***&lt;span style="font-family:宋体"&gt;平台&lt;/span&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;】**版&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr style="height:21.95pt"&gt;
+			&lt;td rowspan="3" style="width:49.95pt; border:solid windowtext 1.0pt; border-top:none" width="67"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;软件授权费&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:125.55pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="167"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;功能模块授权费&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:2.0cm; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="76"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span lang="EN-US" style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;1 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:42.55pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="57"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;套&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:63.8pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:63.75pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td rowspan="6" style="width:76.5pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="102"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;含一年的免费&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;维护（自项目验收之日起）&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr style="height:21.95pt"&gt;
+			&lt;td style="width:125.55pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="167"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;电脑端用户数授权费&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:2.0cm; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="76"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:42.55pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="57"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;个&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:63.8pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:63.75pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr style="height:21.95pt"&gt;
+			&lt;td style="width:125.55pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="167"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;微信端APP用户数授权费&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:2.0cm; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="76"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:42.55pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="57"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;个&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:63.8pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:63.75pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr style="height:21.95pt"&gt;
+			&lt;td rowspan="2" style="width:49.95pt; border:solid windowtext 1.0pt; border-top:none" width="67"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;服务费&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:125.55pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="167"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;实施服务费&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:2.0cm; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="76"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:42.55pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="57"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;人天&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:63.8pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:63.75pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr style="height:21.95pt"&gt;
+			&lt;td style="width:125.55pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="167"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;定制开发费&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:2.0cm; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="76"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:42.55pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="57"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;人天&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:63.8pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:63.75pt; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt" width="85"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr style="height:21.95pt"&gt;
+			&lt;td colspan="6" style="width:402.3pt; border:solid windowtext 1.0pt; border-top:none" width="536"&gt;
+			&lt;p align="center" style="text-align:center; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:21.95pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;合同总额：&lt;/span&gt;&lt;/span&gt;&lt;b&gt;&lt;u&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;b&gt;&lt;u&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;（&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;b&gt;&lt;u&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;￥&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;b&gt;&lt;u&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;）&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;span style="line-height:150%"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;注：合同总价为合同后的优惠价，已包含货物的价款，包装运输及发票，以及自项目验收之日起的一年的免费维护费。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;第二条　双方的权利和义务&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="font-family:宋体"&gt;乙方&lt;/span&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;保证软件的可用性和合法性，并有义务协助甲方网络管理人员一起安装调试本软件，软件能达到的技术功能标准以乙方提供的测试版软件能达到的技术功能为标准，包含模块范围以双方确认的报价单（作为合同附件）所列模块为准。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="font-family:宋体"&gt;乙方为甲方提供&lt;/span&gt;&lt;b&gt;&lt;u&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;b&gt;&lt;u&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;人天&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;span style="font-family:宋体"&gt;（自合同签订之日起，按甲方签字确认的累计天数计算）现场顾问咨询和实施服务，协助指导甲方实施【泰顶&lt;/span&gt;***&lt;span style="font-family:宋体"&gt;平台】，甲方要配合乙方的指导和建议，乙方也要分析实施过程中的风险并通知甲方项目经理进行规避和应对。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;乙方为甲方提供&lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 人天&lt;/u&gt;&lt;/b&gt;的&lt;u&gt;《&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 》&lt;/u&gt;模块定制开发服务，开发范围和要满足的功能以甲方提供的&lt;u&gt;《&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 》&lt;/u&gt;（本合同附件，编号：&lt;/span&gt;&lt;/span&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/u&gt;&lt;span style="font-size:9.0pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;）&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;描述的需求为准。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p style="margin-left:39.3pt"&gt;&lt;span style="line-height:150%"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style="font-family:宋体"&gt;对于甲方提出的其它功能较复杂，工作量大的个性化定制开发要求，甲乙双方本着互惠互利的原则另行协商费用金额（以本合同补充条款方式描述）。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ol start="4"&gt;
+	&lt;li&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="font-family:宋体"&gt;甲方要求乙方提供乙方城市之外的异地现场顾问服务时，要提前三天通知乙方，以便乙方提前安排时间和作好相关准备，乙方尽量满足甲方在甲方要求的时间和地点内提供服务，如乙方在甲方要求的时间内因其它原因无法提供异地服务时，和甲方协商，可以以远程协助或其它方式提供服务。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="font-family:宋体"&gt;乙方为甲方提供乙方城市之外的异地现场顾问服务所产生的交通费、餐饮费、住宿费由甲方承担，并在发生时间的当周周末之前给予报销。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="font-family:宋体"&gt;甲方未经乙方同意不得修改或对软件进行解密或反编译、进行非法复制销售等。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="font-family:宋体"&gt;甲方仅取得第一条规定的软件相应用户数的使用权，只限本公司使用，不得进行转让或销售给第三方。甲方可以要求增加新的用户数，新增用户数单价以本合同规定的用户数单价为准，即电脑端每用户单价为&lt;/span&gt;&lt;span style="line-height:150%"&gt; &lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;/span&gt;&lt;b&gt;&lt;u&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;（&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;b&gt;&lt;u&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;￥&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;b&gt;&lt;u&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;）&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;，&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="font-family:宋体"&gt;手机&lt;/span&gt;APP&lt;span style="font-family:宋体"&gt;端每用户单价为&lt;/span&gt;&lt;span style="line-height:150%"&gt; &lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;/span&gt;&lt;b&gt;&lt;u&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;（&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;b&gt;&lt;u&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;￥&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;b&gt;&lt;u&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;）&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;，&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&amp;nbsp; &lt;/b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;新增用户数&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family:宋体"&gt;以本合同补充条款方式描述&lt;/span&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;备案。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="font-family:宋体"&gt;乙方&lt;/span&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;在项目验收之日起，提供一年的免费服务，包括免费电话咨询、免费动态更新服务，免费服务期过后，&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family:宋体"&gt;乙方&lt;/span&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;将按最新的软件授权费（本合同软件授权费加上以后增加的软件授权费）的&lt;/span&gt;&lt;/span&gt;&lt;b&gt;&lt;u&gt;&lt;span lang="EN-US" style="line-height:150%"&gt;15%&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;每年收取年服务费，收取年服务费后向用户提供此缴费年内的动态更新和维护服务。甲方缴纳年服务费的时间为该服务年开始的前一个月的第&lt;/span&gt;&lt;/span&gt;&lt;span lang="EN-US" style="line-height:150%"&gt;25&lt;/span&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;日之前。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="font-family:宋体"&gt;所有定制开发的成果归【泰顶&lt;/span&gt;***&lt;span style="font-family:宋体"&gt;平台】原软件版权所有者所有，甲方仅取得本合同规定范围内的软件使用权。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p style="margin-left:21.0pt"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="line-height:150%"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;第三条&amp;nbsp; 价款和支付方式&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li align="left" style="text-align:left"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;合同签订后，甲方&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family:宋体"&gt;七天之内（自合同签订之日起）向乙方支付软件授权费的&lt;/span&gt;100%&lt;span style="font-family:宋体"&gt;，&lt;/span&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;计人民币 &lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;整（￥&amp;nbsp;&amp;nbsp;&amp;nbsp; ）&lt;/u&gt;，&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family:宋体"&gt;实施服务费的&lt;/span&gt;&lt;span lang="EN-US" style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;50%&lt;/span&gt;&lt;/span&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;，计人民币 &lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;整（￥&amp;nbsp;&amp;nbsp;&amp;nbsp; ）&lt;/u&gt;，&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family:宋体"&gt;定制开发费的&lt;/span&gt;&lt;span lang="EN-US" style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;50%&lt;/span&gt;&lt;/span&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;，计人民币 &lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;整（￥&amp;nbsp;&amp;nbsp;&amp;nbsp; ）&lt;/u&gt;&lt;/b&gt;, 合计人民币 &lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;整（￥&amp;nbsp;&amp;nbsp;&amp;nbsp; ）&lt;/u&gt;。&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li align="left" style="text-align:left"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;乙方按实施计划进行实施顾问咨询服务完成后，由甲方签字确认即项目验收合格之日，甲方向乙方再支付实施服务费的30%，&lt;/span&gt;&lt;/span&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;计人民币&lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 整（￥&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; ）&lt;/u&gt;&lt;/b&gt;，定制开发费的30%，计人民币&lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 整（￥&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; ）&lt;/u&gt;&lt;/b&gt;，合计人民币 &lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;整（￥&amp;nbsp;&amp;nbsp;&amp;nbsp; ）&lt;/u&gt;。&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li align="left" style="text-align:left"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;自乙方为甲方完成合同规定的并经甲方确认的人天数时进行项目验收，自项目验收合格之日起的30天内向乙方支付合同款的余额，即实施服务费的余款20%,计人民币&lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 整（￥&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; ）&lt;/u&gt;，&lt;/b&gt;定制开发费的余款20%,计人民币&lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 整（￥&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; ）&lt;/u&gt;&lt;/b&gt;，合计人民币 &lt;b&gt;&lt;u&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;整（￥&amp;nbsp;&amp;nbsp;&amp;nbsp; ）&lt;/u&gt;。&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li align="left" style="text-align:left"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 39.3pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;甲方可通过转账或支票方式支付给乙方中国银行股份有限公司上海市浦东大道支行，开户名：&lt;b&gt;拓鼎信息科技(上海)有限公司&lt;/b&gt;&amp;nbsp;&amp;nbsp; 公司账号：&lt;b&gt;437762573952&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p style="margin-left:6.0pt"&gt;&lt;span style="font-family:宋体"&gt;第四条&lt;/span&gt;&amp;nbsp;&amp;nbsp; &lt;span style="font-family:宋体"&gt;侵权和保证&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style="margin-left:6.0pt"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p style="margin-left:6.0pt"&gt;1&lt;span style="font-family:宋体"&gt;、&lt;/span&gt; &lt;span style="font-family:宋体"&gt;乙方保证其有权授予在本合同中所授予的许可。如果在执行合同过程中一旦发生第三方指控侵权时，则由乙方负责与第三方交涉，并承担由此引起的一切法律和经济上的责任。如果在诉讼或仲裁中被判为构成侵权，程序的使用被禁止，乙方可以自行承担费用承担以下任何一项&lt;/span&gt;:&lt;/p&gt;
+
+&lt;p style="margin-left:6.0pt"&gt;A&lt;span style="font-family:宋体"&gt;．替换或修改程序，使之不再构成侵权，并在实质上用同样的质量进行同样的服务&lt;/span&gt;;&lt;/p&gt;
+
+&lt;p style="margin-left:6.0pt"&gt;B&lt;span style="font-family:宋体"&gt;．在程序退乙方之后退还甲方使用费，但要从中扣除使用，损坏和陈旧的折旧费。&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style="margin-left:6.0pt"&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style="font-family:宋体"&gt;乙方在采取上述措施后，不能免除其承担的其他赔偿责任。但乙方对基于以下其中一项的任何版权侵权所提出的请求不负责任。&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style="margin-left:6.0pt"&gt;A&lt;span style="font-family:宋体"&gt;．甲方自行修改程序，或程序没有在指定的工作环境中使用&lt;/span&gt;;&lt;/p&gt;
+
+&lt;p style="margin-left:6.0pt"&gt;B&lt;span style="font-family:宋体"&gt;．在&lt;/span&gt; &lt;b&gt;&lt;u&gt;&lt;span style="font-family:宋体"&gt;微软&lt;/span&gt;WINDOWS&lt;/u&gt;&lt;/b&gt; &lt;span style="font-family:宋体"&gt;系统之外的系统安装程序。&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style="margin-left:6.0pt"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p class="MsoSalutation"&gt;2&lt;span style="font-family:宋体"&gt;、&lt;/span&gt; &lt;span style="font-family:宋体"&gt;乙方保证程序在规定的操作环境中的使用能够符合合同第二条的指标要求，乙方不保证任何程序的不中断或无差错运行，乙方保证在合同规定的免费和收费维护期内维护，更换并重新安装程序中任何有瑕疵的部份。&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-family:宋体"&gt;第五条&lt;/span&gt;&amp;nbsp; &lt;span style="font-family:宋体"&gt;税费&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;1&lt;span style="font-family:宋体"&gt;、&lt;/span&gt; &lt;span style="font-family:宋体"&gt;凡与本合同有关的或在执行本合同时，根据有效的税法由中华人民共和国政府向甲方征收的一切税应由甲方支付。&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;2&lt;span style="font-family:宋体"&gt;、&lt;/span&gt; &lt;span style="font-family:宋体"&gt;凡与本合同有关的或在执行本合同时，根据有效的税法由中华人民共和国政府向乙方征收的一切税应由乙方支付。&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-family:宋体"&gt;第六条&lt;/span&gt;&amp;nbsp; &lt;span style="font-family:宋体"&gt;合同的终止&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li style="list-style-type:none"&gt;
+	&lt;ol&gt;
+		&lt;li align="left" style="text-align:left"&gt;&lt;span style="tab-stops:list 33.0pt"&gt;&lt;span style="font-family:宋体"&gt;如果任何一方违反合同条款，在给予了书面通知和合理的时间予以纠正，而仍不改正的，另一方有权终止合同。&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+		&lt;li align="left" style="text-align:left"&gt;&lt;span style="tab-stops:list 33.0pt"&gt;&lt;span style="font-family:宋体"&gt;如果合同终止后，合同中的条款按其性质仍应有效的，乙方和甲方仍应遵守。&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+		&lt;li align="left" style="text-align:left"&gt;&lt;span style="tab-stops:list 33.0pt"&gt;&lt;span style="font-family:宋体"&gt;如协议期内甲方要求终止本协议，应提前半月通知乙方，乙方同时终止甲方的【泰顶&lt;/span&gt;***&lt;span style="font-family:宋体"&gt;平台】使用权，在终止协议前，要结清乙方未结的报酬和费用，但乙方已收款项不予退还！&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;/ol&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p align="left" style="text-align:left"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-family:宋体"&gt;第七条&lt;/span&gt;&amp;nbsp; &lt;span style="font-family:宋体"&gt;不可抗力&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li style="list-style-type:none"&gt;
+	&lt;ol&gt;
+		&lt;li align="left" style="text-align:left"&gt;&lt;span style="tab-stops:list 32.25pt"&gt;&lt;span style="font-family:宋体"&gt;合同双方中任何一方，由于战争或严重的水灾。火灾，台风和地震等自然灾害，以及双方同意的可作为不可抗力的其他事故而影响合同执行时，则延长履行合同的期限，延长的期限相当于事故所影响的时间。&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+		&lt;li align="left" style="text-align:left"&gt;&lt;span style="tab-stops:list 32.25pt"&gt;&lt;span style="font-family:宋体"&gt;受不可抗力影响的一方应尽快将发生不可抗力事故的情况电传或电报通知对方，并于十四天内以航空挂号信件将有权证明的机构出具的证明文件提交给另一方进行确认。&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+		&lt;li align="left" style="text-align:left"&gt;&lt;span style="tab-stops:list 32.25pt"&gt;&lt;span style="font-family:宋体"&gt;如果不可抗力事故的影响延续到一百天以上时，合同双方应通过友好协商解决合同的执行问题。&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;/ol&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p align="left" style="margin-left:32.25pt; text-align:left"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="font-family:宋体"&gt;第八条&lt;/span&gt;&amp;nbsp;&amp;nbsp; &lt;span style="font-family:宋体"&gt;争议的解决&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li style="list-style-type:none"&gt;
+	&lt;ol&gt;
+		&lt;li align="left" style="text-align:left"&gt;&lt;span style="tab-stops:list 39.0pt"&gt;&lt;span style="font-family:宋体"&gt;因执行本合同所发生的或与本合同有关的一切争议，双方应通过友好协商解决。&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+		&lt;li align="left" style="text-align:left"&gt;&lt;span style="tab-stops:list 39.0pt"&gt;&lt;span style="font-family:宋体"&gt;如双方通过协商不能达成合同时，则应提交乙方所在地上海市经济贸易仲裁委员会进行仲裁，按照申请仲裁时该会现行有效的仲裁规则进行仲裁。仲裁裁决是终局的，对双方均有约束力。&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+		&lt;li align="left" style="text-align:left"&gt;&lt;span style="tab-stops:list 39.0pt"&gt;&lt;span style="font-family:宋体"&gt;争议的解决应适用中华人民共和国法律。&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+		&lt;li align="left" style="text-align:left"&gt;&lt;span style="tab-stops:list 39.0pt"&gt;&lt;span style="font-family:宋体"&gt;在争议的处理过程中，除正在进行仲裁的部分外，合同的其他部分将继续执行&lt;/span&gt;;&lt;/span&gt;&lt;/li&gt;
+	&lt;/ol&gt;
+	&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p style="margin-left:21.0pt"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style="line-height:150%"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;第九条&amp;nbsp; 合同生效及其他&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 18.0pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;合同自双方法定人或者其授权的代理人签字盖章之日起生效；&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span style="line-height:150%"&gt;&lt;span style="tab-stops:list 18.0pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;本合同一式两份，甲乙双方各执一份，传真件具同等效力；&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p style="margin-left:18.0pt"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;table align="left" class="Table" style="width:473.4pt; border-collapse:collapse; margin-left:6.75pt; margin-right:6.75pt; border:undefined" width="631"&gt;
+	&lt;tbody&gt;
+		&lt;tr style="height:28.8pt"&gt;
+			&lt;td style="width:254.25pt" width="339"&gt;
+			&lt;p style="margin-top:3.0pt; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:28.8pt"&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;甲方：&lt;/span&gt;&lt;/span&gt;&lt;/b&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:219.15pt" width="292"&gt;
+			&lt;p style="margin-bottom:7.8pt; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:28.8pt"&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;乙方： &lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;拓鼎信息科技(上海)有限公司&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr style="height:39.1pt"&gt;
+			&lt;td style="width:254.25pt" width="339"&gt;
+			&lt;p style="margin-bottom:15.6pt; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+
+			&lt;p style="margin-bottom:15.6pt; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:39.1pt"&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;代表签字盖章：&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:219.15pt" width="292"&gt;
+			&lt;p style="margin-bottom:15.6pt; padding:0cm 5.4pt 0cm 5.4pt"&gt;&amp;nbsp;&lt;/p&gt;
+
+			&lt;p style="margin-bottom:15.6pt; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:39.1pt"&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;代表签字盖章：&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr style="height:7.4pt"&gt;
+			&lt;td style="width:254.25pt" width="339"&gt;
+			&lt;p style="padding: 0cm 5.4pt;"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:7.4pt"&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;公司地址：&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;上海市闵行区元江路525号6号楼406室&lt;/span&gt;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:219.15pt" width="292"&gt;
+			&lt;p align="left" style="margin-bottom:7.8pt; text-align:left; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:7.4pt"&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;公司地址： &lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;上海市闵行区元江路525号6号楼406室&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr style="height:7.65pt"&gt;
+			&lt;td style="width:254.25pt" width="339"&gt;
+			&lt;p style="margin-bottom:7.8pt; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:7.65pt"&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;电话：&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:219.15pt" width="292"&gt;
+			&lt;p style="margin-bottom:7.8pt; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;span style="height:7.65pt"&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;电话：&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;span lang="EN-US" style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;021-51085119&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="width:254.25pt" width="339"&gt;
+			&lt;p style="margin-bottom:7.8pt; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;日期：&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style="width:219.15pt" width="292"&gt;
+			&lt;p style="margin-bottom:7.8pt; padding:0cm 5.4pt 0cm 5.4pt"&gt;&lt;span style="line-height:150%"&gt;&lt;b&gt;&lt;span style="line-height:150%"&gt;&lt;span style="font-family:宋体"&gt;日期：&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</maincontent>
+    <exception>无</exception>
+    <parta>赣东市</parta>
+    <partaoperator>李主任</partaoperator>
+    <partb>泰拓公司</partb>
+    <partboperator>钟经理</partboperator>
+    <recordtime>2010-05-11T00:26:43+08:00</recordtime>
+    <recordercode>C7094               </recordercode>
+    <recordername>员工C7094</recordername>
+    <constractclass>销售类                 </constractclass>
+    <reandpaytype>转账</reandpaytype>
+    <relatedcustomercode xml:space="preserve">                    </relatedcustomercode>
+    <relatedvendorcode xml:space="preserve">                    </relatedvendorcode>
+    <parentcode />
+    <archivetime xml:space="preserve">                    </archivetime>
+    <mianji>0.0000</mianji>
+    <taxrate>0.00</taxrate>
+    <taxamount>0.00</taxamount>
+    <aftertaxtotalamount>0.00</aftertaxtotalamount>
+  </T_Constract>
+</NewDataSet>

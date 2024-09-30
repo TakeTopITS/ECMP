@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_Project>
+    <ProjectID>508</ProjectID>
+    <UserCode>C7094               </UserCode>
+    <UserName>员工C7094           </UserName>
+    <ProjectName>合同: OPTSJ001 奥普特视觉检测设备 项目                                                                                                                                                                  </ProjectName>
+    <ProjectDetail>依据合同制定内容进行实施。</ProjectDetail>
+    <AcceptStandard>依据合同制定内容进行验收。</AcceptStandard>
+    <BeginDate>2021-06-05T00:00:00+08:00</BeginDate>
+    <EndDate>2021-06-30T00:00:00+08:00</EndDate>
+    <PMCode>C7094               </PMCode>
+    <PMName>员工C7094           </PMName>
+    <MakeDate>2021-06-05T10:03:28+08:00</MakeDate>
+    <Status>新建      </Status>
+    <ParentID>1</ParentID>
+    <Budget>200000.00</Budget>
+    <FinishPercent>0</FinishPercent>
+    <ManHour>30.00</ManHour>
+    <ManNumber>2.00</ManNumber>
+    <ProjectType>系统集成            </ProjectType>
+    <ProjectAmount>200000.00</ProjectAmount>
+    <CustomerPMName>小龙</CustomerPMName>
+    <StatusValue>进行中    </StatusValue>
+    <ProjectClass>常规项目  </ProjectClass>
+    <ProjectCode>PJXTJC20210605508</ProjectCode>
+    <CurrencyType>人民币</CurrencyType>
+    <Priority>COMMON    </Priority>
+    <DianYadengJi />
+    <JiaKong />
+    <DianLan />
+    <WuTan />
+    <DanJia1>0.00</DanJia1>
+    <DanJia2>0.00</DanJia2>
+    <ProjectAddress />
+    <CustomerName />
+    <YeWuLaiYuan />
+    <CustomerProjectCode />
+    <PingPai />
+    <JianTu />
+    <ProductName />
+    <SecondProjectName />
+    <ConfirmedBySupper>YES</ConfirmedBySupper>
+    <BelongDepartCode>102                 </BelongDepartCode>
+    <BelongDepartName>OPT科技股份有限公司</BelongDepartName>
+  </T_Project>
+</NewDataSet>

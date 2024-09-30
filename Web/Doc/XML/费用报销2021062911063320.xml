@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_ExpenseClaim>
+    <DetailECID>31</DetailECID>
+    <ECID>31</ECID>
+    <ExpenseName>项目507 弱电工程项目 费用报销申请</ExpenseName>
+    <Purpose>缴纳投标保证金</Purpose>
+    <Amount>10000.00</Amount>
+    <CurrencyType>人民币</CurrencyType>
+    <ApplicantCode>C7094               </ApplicantCode>
+    <ApplicantName>员工C7094           </ApplicantName>
+    <ApplyTime>2021-06-29T11:02:25+08:00</ApplyTime>
+    <Status>审批中    </Status>
+    <RelatedType>项目                </RelatedType>
+    <RelatedID>507</RelatedID>
+  </T_ExpenseClaim>
+</NewDataSet>

@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <T_BusinessFormDataTable>
+    <ID>51</ID>
+    <AAID>40</AAID>
+    <AssetCode>PC094               </AssetCode>
+    <AssetName>电脑</AssetName>
+    <Spec>C2.4G/512M/80GB /CD/17" CRT</Spec>
+    <Number>8.00</Number>
+    <Unit>台        </Unit>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <ModelNumber>TEST</ModelNumber>
+    <Manufacturer>TEST</Manufacturer>
+    <IP xml:space="preserve">                    </IP>
+  </T_BusinessFormDataTable>
+  <T_BusinessFormDataTable>
+    <ID>54</ID>
+    <AAID>40</AAID>
+    <AssetCode>0001                </AssetCode>
+    <AssetName>笔记本电脑</AssetName>
+    <Spec>11</Spec>
+    <Number>3.00</Number>
+    <Unit>台        </Unit>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <ModelNumber>联想</ModelNumber>
+    <Manufacturer>联想</Manufacturer>
+    <IP xml:space="preserve">                    </IP>
+  </T_BusinessFormDataTable>
+  <T_BusinessFormDataTable>
+    <ID>55</ID>
+    <AAID>40</AAID>
+    <AssetCode>PC094               </AssetCode>
+    <AssetName>电脑</AssetName>
+    <Spec>C2.4G/512M/80GB /CD/17" CRT</Spec>
+    <Number>8.00</Number>
+    <Unit>台        </Unit>
+    <RelatedType>Other               </RelatedType>
+    <RelatedID>0</RelatedID>
+    <ModelNumber>TEST</ModelNumber>
+    <Manufacturer>TEST</Manufacturer>
+    <IP xml:space="preserve">                    </IP>
+  </T_BusinessFormDataTable>
+</NewDataSet>
