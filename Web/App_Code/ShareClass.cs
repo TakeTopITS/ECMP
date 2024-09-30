@@ -59,7 +59,7 @@ public static class ShareClass
         //
     }
 
-    public static string SystemVersionID = "V2024.9.25";
+    public static string SystemVersionID = "V2024.9.30";
 
     public static string SystemLatestLoginUser = "";
     public static string SystemDBer = "";
@@ -1148,6 +1148,51 @@ public static class ShareClass
         FileInfo info = new FileInfo(dirPath);
 
         return info.Length;
+    }
+
+    //生成数据库只读用户ID，一般于报表设计者
+    public static string getDBReadOnlyUserID()
+    {
+        string[] strConnectStringList;
+
+        strConnectStringList = HttpContext.Current.Request.Url.AbsolutePath.Split("/".ToCharArray());
+        return (strConnectStringList[1].Replace(".aspx", "") + "DBReadOnlyUser").ToLower();
+    }
+
+    //密码生成器
+    public static string genernalPassword()
+    {
+        string chars = "0123456789ABCDEFGHIJKLMNOPQSTUVWXYZabcdefghijklmnpqrstuvwxyz@*";
+        Random randrom = new Random(getNewSeed());
+
+        string str = "";
+        for (int j = 0; j < 50; j++)
+        {
+            str = "";
+            for (int i = 0; i < 8; i++)
+            {
+                str += chars[randrom.Next(chars.Length)];//randrom.Next(int i)返回一个小于所指定最大值的非负随机数
+            }
+            //不符合正则，重新生成
+            if (!Regex.IsMatch(str, @"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"))
+            {
+                continue;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        return str;
+    }
+
+    public static int getNewSeed()
+    {
+        byte[] rndBytes = new byte[4];
+        System.Security.Cryptography.RNGCryptoServiceProvider rng = new System.Security.Cryptography.RNGCryptoServiceProvider();
+        rng.GetBytes(rndBytes);
+        return BitConverter.ToInt32(rndBytes, 0);
     }
 
     #endregion 用户登录机制

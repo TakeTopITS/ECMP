@@ -12,6 +12,7 @@ using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using System.Web;
 using System.ServiceModel.Channels;
+using System.Activities.Statements;
 
 public partial class TakeTopSystemOtherCodeRunPage : System.Web.UI.Page
 {
@@ -83,6 +84,34 @@ public partial class TakeTopSystemOtherCodeRunPage : System.Web.UI.Page
         {
             //禁用实施阶段的基础数据删除功能
             UpdateIsCanClearBaseData(strUserCode, strUserName);
+        }
+
+        //设置数据库只读用户的只读密码，一般于报表设计者
+        setDBUserIDPasswordForDBOnlyReadUser();
+    }
+
+    //设置数据库只读用户的只读密码，一般于报表设计者
+    protected static void setDBUserIDPasswordForDBOnlyReadUser()
+    {
+        string strHQL1, strHQL2;
+        string strDBReadOnlyUserID, strDBReadOnlyUserPassword;
+
+        strDBReadOnlyUserID = ShareClass.getDBReadOnlyUserID();
+        strDBReadOnlyUserPassword = ShareClass.genernalPassword();
+
+        try
+        {
+            strHQL1 = "Select Password From T_DBReadOnlyUserInfor";
+            DataSet ds = ShareClass.GetDataSetFromSql(strHQL1, "T_DBReadOnlyUserInfor");
+            if (ds.Tables[0].Rows.Count == 0)
+            {
+                strHQL2 = string.Format("Insert Into T_DBReadOnlyUserInfor(DBUserID,Password) values('{0}','{1}')", strDBReadOnlyUserID, strDBReadOnlyUserPassword);
+                ShareClass.RunSqlCommand(strHQL2);
+            }
+        }
+        catch( Exception err)
+        {
+            LogClass.WriteLogFile(err.Message.ToString());
         }
     }
 
