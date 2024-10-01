@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <TAKETOPDBConnect Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>TAKETOPDBConnect</Alias>
+        <ConnectionStringEncrypted>1EDBSEQKAZn5FTncTixpJ9F4l69nXIuB6Rvt2HpMrWfDRpvrxRiR3WtJfYT5hKRj3FLFK0VXw53tE9n0Y3Tg+956+w3dbcuFaU/tdGJc4GviZFOtYVTzmX1anBh1TKIKxDbLAko=</ConnectionStringEncrypted>
+        <Name>TAKETOPDBConnect</Name>
+      </TAKETOPDBConnect>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <DataSource1 Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>DataSource1</Alias>
+        <Columns isList="true" count="2">
+          <value>ProjectType,System.String</value>
+          <value>ProjectBudget,System.Decimal</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>8507b8a0b39141f5b280dae1369ffe86</Key>
+        <Name>DataSource1</Name>
+        <NameInSource>TAKETOPDBConnect</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>Select ProjectType,Sum(Budget) as ProjectBudget From T_Project Group By ProjectType</SqlCommand>
+      </DataSource1>
+      <DataSource2 Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>DataSource2</Alias>
+        <Columns isList="true" count="2">
+          <value>ProjectID,System.Int32</value>
+          <value>ProjectName,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>f6e9505152354a4a87132514e13dde42</Key>
+        <Name>DataSource2</Name>
+        <NameInSource>TAKETOPDBConnect</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>Select ProjectID,ProjectName From T_Project Order By ProjectID DESC</SqlCommand>
+      </DataSource2>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>ae634d5ad57846ff8f9f32651feb002a</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <面板1 Ref="6" type="Panel" isKey="true">
+          <Brush>Transparent</Brush>
+          <CanBreak>True</CanBreak>
+          <CanGrow>True</CanGrow>
+          <ClientRectangle>0.2,9.2,18.4,17</ClientRectangle>
+          <Components isList="true" count="1">
+            <数据区1 Ref="7" type="DataBand" isKey="true">
+              <Brush>Transparent</Brush>
+              <BusinessObjectGuid isNull="true" />
+              <CanBreak>True</CanBreak>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>0,0.4,18.4,0.8</ClientRectangle>
+              <Components isList="true" count="4">
+                <文本1 Ref="8" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>1.6,0.2,1.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Guid>34dc724838464652afadc0080ccc0d12</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>文本1</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="7" />
+                  <Text>ProjectID</Text>
+                  <TextBrush>Black</TextBrush>
+                </文本1>
+                <文本2 Ref="9" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>3.2,0.2,2,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Guid>15aaa04c2cbd4e6a9749b322f87b0a46</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>文本2</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="7" />
+                  <Text>{DataSource2.ProjectID}</Text>
+                  <TextBrush>Black</TextBrush>
+                </文本2>
+                <文本3 Ref="10" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>7,0.2,4.8,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Guid>318b1c173c5d456dbc0d95be865dfa39</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>文本3</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="7" />
+                  <Text>ProjectName</Text>
+                  <TextBrush>Black</TextBrush>
+                </文本3>
+                <文本4 Ref="11" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>11.8,0.2,4.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Guid>01866afc05244cd49280cffc03971f29</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>文本4</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="7" />
+                  <Text>{DataSource2.ProjectName}</Text>
+                  <TextBrush>Black</TextBrush>
+                </文本4>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <DataSourceName>DataSource2</DataSourceName>
+              <Filters isList="true" count="0" />
+              <Name>数据区1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Sort isList="true" count="0" />
+            </数据区1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <GrowToHeight>True</GrowToHeight>
+          <Name>面板1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </面板1>
+        <文本5 Ref="12" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.2,0.4,12.8,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,18,Bold</Font>
+          <Guid>2615da3a574b4a9facdc1396e80516fe</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>文本5</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Text>Project Budget Chart Group By ProjectType</Text>
+          <TextBrush>Black</TextBrush>
+        </文本5>
+        <图表1 Ref="13" type="Stimulsoft.Report.Chart.StiChart" isKey="true">
+          <Area Ref="14" type="Stimulsoft.Report.Chart.StiPieArea" isKey="true">
+            <BorderColor>95, 72, 29</BorderColor>
+            <Brush>GradientBrush,[255:255:255],[255:255:219],90</Brush>
+            <Chart isRef="13" />
+          </Area>
+          <Brush>[255:255:255]</Brush>
+          <ClientRectangle>1.6,2,15.2,5.7</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <CustomStyleName />
+          <Filters isList="true" count="0" />
+          <GrowToHeight>True</GrowToHeight>
+          <Legend Ref="15" type="Stimulsoft.Report.Chart.StiLegend" isKey="true">
+            <BorderColor>145, 122, 79</BorderColor>
+            <Brush>GradientBrush,[255:255:255],[255:242:199],90</Brush>
+            <Chart isRef="13" />
+            <Font>Arial,8</Font>
+            <LabelsColor>95, 72, 29</LabelsColor>
+            <MarkerSize>10, 10</MarkerSize>
+            <ShowShadow>False</ShowShadow>
+            <TitleColor>95, 72, 29</TitleColor>
+            <TitleFont>Arial,14,Bold</TitleFont>
+          </Legend>
+          <Name>图表1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <PrintOn>OnlyFirstPage</PrintOn>
+          <Series isList="true" count="1">
+            <Item13 Ref="16" type="Stimulsoft.Report.Chart.StiPieSeries" isKey="true">
+              <ArgumentDataColumn>DataSource1.ProjectType</ArgumentDataColumn>
+              <BorderColor>94, 17, 0</BorderColor>
+              <Brush>GlareBrush,[144:67:3],[194:117:53],0,0.5,1</Brush>
+              <Chart isRef="13" />
+              <Conditions isList="true" count="0" />
+              <Filters isList="true" count="0" />
+              <SeriesLabels Ref="17" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+                <BorderColor>95, 72, 29</BorderColor>
+                <Brush>Wheat</Brush>
+                <Chart isRef="13" />
+                <Font>Arial,7</Font>
+                <LabelColor>95, 72, 29</LabelColor>
+                <MarkerSize>8, 6</MarkerSize>
+                <ValueTypeSeparator>-</ValueTypeSeparator>
+                <Width>0</Width>
+              </SeriesLabels>
+              <ShowShadow>False</ShowShadow>
+              <Title>序列 1</Title>
+              <TopN Ref="18" type="Stimulsoft.Report.Chart.StiSeriesTopN" isKey="true" />
+              <ValueDataColumn>DataSource1.ProjectBudget</ValueDataColumn>
+            </Item13>
+          </Series>
+          <SeriesLabels Ref="19" type="Stimulsoft.Report.Chart.StiCenterAxisLabels" isKey="true">
+            <BorderColor>95, 72, 29</BorderColor>
+            <Brush>Wheat</Brush>
+            <Chart isRef="13" />
+            <Font>Arial,7</Font>
+            <LabelColor>95, 72, 29</LabelColor>
+            <MarkerSize>8, 6</MarkerSize>
+            <ValueTypeSeparator>-</ValueTypeSeparator>
+            <Width>0</Width>
+          </SeriesLabels>
+          <SeriesLabelsConditions isList="true" count="0" />
+          <Sort isList="true" count="0" />
+          <Strips isList="true" count="0" />
+          <Style Ref="20" type="Stimulsoft.Report.Chart.StiStyle01" isKey="true">
+            <Conditions isList="true" count="0" />
+            <Name />
+          </Style>
+          <Table Ref="21" type="Stimulsoft.Report.Chart.StiChartTable" isKey="true">
+            <DataCells Ref="22" type="Stimulsoft.Report.Chart.StiChartTableDataCells" isKey="true">
+              <Font>Arial,8</Font>
+              <ShrinkFontToFit>False</ShrinkFontToFit>
+              <TextColor>95, 72, 29</TextColor>
+            </DataCells>
+            <GridLineColor>145, 122, 79</GridLineColor>
+            <Header Ref="23" type="Stimulsoft.Report.Chart.StiChartTableHeader" isKey="true">
+              <Brush>White</Brush>
+              <Font>Arial,8</Font>
+              <TextColor>DarkGray</TextColor>
+            </Header>
+          </Table>
+          <Title Ref="24" type="Stimulsoft.Report.Chart.StiChartTitle" isKey="true">
+            <Brush>[95:72:29]</Brush>
+            <Font>Tahoma,12</Font>
+          </Title>
+        </图表1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <ExcelSheet>TEST</ExcelSheet>
+      <Guid>b81c6b80ba1842e780288163eb00fb39</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>2/18/2012 10:52:29 PM</ReportChanged>
+  <ReportCreated>2/18/2012 10:52:29 PM</ReportCreated>
+  <ReportGuid>b104e64a66bf4ebb9f70ea96b5a8453d</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2020.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
