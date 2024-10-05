@@ -39,7 +39,7 @@ a:hover {
 
 
 .page_topbj {
-    background-color: #77b584; /*2*/
+    background-color: #77b584; 2
     cursor: move;
     color: black;
     border-radius: 12px 0px 0px 0px;
@@ -47,15 +47,15 @@ a:hover {
 }
 
     .page_topbj a {
-        color: black; /*2*/
+        color: black; 2
         text-decoration: none;
         cursor: pointer;
         font-size: 14px;
     }
 
         .page_topbj a:hover {
-            color: black; /*2*/
-            /*            text-decoration: underline;*/
+            color: black; 2
+                        text-decoration: underline;
         }
 
 .main_topbj {
