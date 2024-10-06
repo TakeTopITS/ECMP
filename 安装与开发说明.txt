@@ -1,6 +1,6 @@
 1、安装数据库软件PostGreSql（ 自己在网上下载最新版，管理员postgres密码设为：zxckkllzly    ），并用Database目录下的数据库恢复文件 TakeTopAppDBBackup.bak 恢复名为 taketopdecmpdb 的数据库！
 
-注：不需要源码的，可在泰顶拓鼎网站（ https://www.taketopits.com ) 上下载一键安装版本
+注：也可在泰顶拓鼎网站（ https://www.taketopits.com ) 上下载一键安装版本
 
 2、双击运行TakeTopServer目录下的TakeTopServer.exe文件，打开泰顶WEB服务器，再点击【启动WEB服务】按钮,打开平台登录页面！
 
