@@ -217,7 +217,17 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td align="left">
-                                                                        <asp:HyperLink ID="HL_WorkFlowDesigner" runat="server" Enabled="false">---&gt;<asp:Label ID="LB_DesignWorkflowTemplate" runat="server" Text="<%$ Resources:lang,SheJiChigongZuoLiuMoBan%>"></asp:Label></asp:HyperLink>
+                                                                        <br />
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <asp:HyperLink ID="HL_WorkFlowDesigner" runat="server" Enabled="false">---&gt;<asp:Label ID="LB_DesignWorkflowTemplate" runat="server" Text="<%$ Resources:lang,SheJiChigongZuoLiuMoBan%>"></asp:Label></asp:HyperLink></td>
+                                                                                <td width="200px">&nbsp;</td>
+                                                                                <td>
+                                                                                    <asp:Button ID="BT_DeleteWFTemplate" runat="server" CssClass="inpu" Enabled="false"
+                                                                                        OnClick="BT_DeleteWFTemplate_Click" OnClientClick="return confirm(getDeleteMsgByLangCode())" Text="<%$ Resources:lang,ShanChuMuBan%>" /></td>
+                                                                            </tr>
+                                                                        </table>
                                                                         <br />
                                                                         <br />
                                                                     </td>
