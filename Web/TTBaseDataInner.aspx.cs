@@ -77,6 +77,10 @@ public partial class TTBaseDataInner : System.Web.UI.Page
         {
             BT_ProjectStatusDelete.Enabled = false;
         }
+        else
+        {
+            BT_ProjectStatusDelete.Enabled = true;
+        }
     }
 
     protected void DataGrid20_ItemCommand(object sender, DataGridCommandEventArgs e)
