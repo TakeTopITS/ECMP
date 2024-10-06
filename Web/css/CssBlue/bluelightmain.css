@@ -19,7 +19,9 @@ body {
     background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#D53E54), color-stop(100%,#057BF9));
     border-radius: 8px 8px 0px 0px;
 }
+
 .sabd{background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#D53E54), color-stop(100%,#057BF9));}
+
 .SpaceLine {
     height: 20px;
     background-color: #EFF2F7;
