@@ -47,10 +47,9 @@
                         <br />
                         <br />
 
-                        3、	在登录界面第一行输入你的站点URL，第二行输入你的登录帐号，第三行输入密码，如下图：
+                        3、	在登录界面第一行输入你的公司简称（问系统管理员），第二行输入你的登录帐号，第三行输入密码，如下图：
                         <br />
-                        <br />
-                        <img src="ImagesSkin/TakeTopXMBURL.png" />
+                       
                         <br />
                         <img src="ImagesSkin/TakeTopAPPLoginWXGZHForSAAS.jpg" />
                         <br />
