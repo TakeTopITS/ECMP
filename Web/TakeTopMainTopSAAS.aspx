@@ -212,7 +212,7 @@
 
     </script>
 </head>
-<body class="sabd">
+<body>
     <center>
         <form id="form1" runat="server">
             <asp:ScriptManager ID="ScriptManager1" runat="server" />

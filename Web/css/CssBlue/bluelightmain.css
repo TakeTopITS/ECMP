@@ -20,8 +20,8 @@ body {
     border-radius: 8px 8px 0px 0px;
 }
 
-.sabd{background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#D53E54), color-stop(100%,#057BF9));}
-
+/*.sabd{background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#D53E54), color-stop(100%,#057BF9));}
+*/
 .SpaceLine {
     height: 20px;
     background-color: #EFF2F7;
@@ -42,9 +42,9 @@ a:hover {
 
 
 .nav {
-  /*  min-width: 1180px;
+    /*  min-width: 1180px;
     width: expression (document.body.clientWidth <= 1180? "1180px" : "auto" ));*/
-    width:100%;
+    width: 100%;
     text-align: left;
     height: 43px;
     background: linear-gradient(90deg, #D53E54 0%, #057BF9 100%);
@@ -53,40 +53,40 @@ a:hover {
 
 
 .page_topbj {
-    background: linear-gradient(90deg, #D53E54 0%, #057BF9 100%); 2
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#D53E54), color-stop(100%,#057BF9));
+    background: linear-gradient(90deg, #D53E54 0%, #057BF9 100%);
+    2 background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#D53E54), color-stop(100%,#057BF9));
     cursor: move;
     color: white;
     border-radius: 12px 0px 0px 0px;
 }
 
     .page_topbj a {
-        color: black; 2
-        text-decoration: none;
+        color: black;
+        2 text-decoration: none;
         cursor: pointer;
         font-size: 14px;
     }
 
         .page_topbj a:hover {
-            color: black; 2
-                        text-decoration: underline;
+            color: black;
+            2 text-decoration: underline;
         }
 
 .main_topbj {
     color: white;
 }
 
-    .page_topbj a {
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-        font-size: 14px;
-    }
+.page_topbj a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
 
-        .page_topbj a:hover {
-            color: #018efb;
-            /*            text-decoration: underline;*/
-        }
+    .page_topbj a:hover {
+        color: #018efb;
+        /*            text-decoration: underline;*/
+    }
 
 td {
     vertical-align: top;
@@ -154,8 +154,6 @@ button:visited, input[type="submit"]:visited {
     width: expression (document.body.clientWidth <= 1160? "1160px": "auto"));
     height: 45px;
     margin: 1px 1px 1px 1px;
-
-    
 }
 /*--------------------------------页面总边框---------------------------*/
 .bian {
@@ -1394,14 +1392,12 @@ html {
 
 /* CSS样式 */
 .ajax_tab_menu .ajax__tab_header /*整体按钮底样式*/ {
-
     height: 28px;
     font-size: 12px;
     background: url("ImagesSkin/Tab_Option_bg.gif") repeat-x bottom;
 }
 
 .ajax_tab_menu .ajax__tab_body /*资料区*/ {
-
     font-size: 12px;
     border-top: 0;
     border-top: 1px solid #D6DAE2;

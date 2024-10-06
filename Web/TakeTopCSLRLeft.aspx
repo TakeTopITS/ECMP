@@ -17,294 +17,294 @@
         jQuery.noConflict();
 
         var varLeftBarExtend = '<%=Session["LeftBarExtend"].ToString() %>'.trim();
-     
-       // 收缩展开效果
-       jQuery(document).ready(function () {
 
-           jQuery("span.minusSpan").show();
-           jQuery("span.plusSpan").show();
+        // 收缩展开效果
+        jQuery(document).ready(function () {
 
-           if (varLeftBarExtend === "YES") {
+            jQuery("span.minusSpan").show();
+            jQuery("span.plusSpan").show();
 
-               window.parent.document.getElementById("TakeTopLRMDI").cols = '180,*';
-               window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
-           }
+            if (varLeftBarExtend === "YES") {
 
-           $('body').height($(window).height() - 30);
+                window.parent.document.getElementById("TakeTopLRMDI").cols = '180,*';
+                window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
+            }
 
-       });
+            $('body').height($(window).height() - 30);
 
+        });
 
-       var i = 0;
-       var j = 0;
 
+        var i = 0;
+        var j = 0;
 
-       var decreaseTimer;
-       var creaseTimer;
 
-       var userAgentInfo = navigator.userAgent;
+        var decreaseTimer;
+        var creaseTimer;
 
-       function ChangeMenu(way) {
+        var userAgentInfo = navigator.userAgent;
 
-           if (way == 1) {
+        function ChangeMenu(way) {
 
-               if (window.parent.document.getElementById("TakeTopLRMDI").cols === '45,*') {
+            if (way == 1) {
 
-                   window.parent.document.getElementById("TakeTopLRMDI").cols = '250,*';
+                if (window.parent.document.getElementById("TakeTopLRMDI").cols === '45,*') {
 
-                   window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
+                    window.parent.document.getElementById("TakeTopLRMDI").cols = '250,*';
 
-               } else {
+                    window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
 
+                } else {
 
-                   window.parent.document.getElementById("TakeTopLRMDI").cols = '45,*';
 
-                   window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "no");
-               }
-           }
+                    window.parent.document.getElementById("TakeTopLRMDI").cols = '45,*';
 
-           if (way == 3) {
+                    window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "no");
+                }
+            }
 
-               window.parent.document.getElementById("TakeTopLRMDI").cols = '250,*';
+            if (way == 3) {
 
-               window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
-           }
+                window.parent.document.getElementById("TakeTopLRMDI").cols = '250,*';
 
-           if (way == 4) {
+                window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
+            }
 
+            if (way == 4) {
 
-               if (this.document.getElementById("HF_IsExtend").value === "NO") {
 
-                   if (varLeftBarExtend === "NO") {
+                if (this.document.getElementById("HF_IsExtend").value === "NO") {
 
-                       window.parent.document.getElementById("TakeTopLRMDI").cols = '45,*';
-                       window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "no");
-                   }
-                   else {
+                    if (varLeftBarExtend === "NO") {
 
-                       window.parent.document.getElementById("TakeTopLRMDI").cols = '180,*';
-                       window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
-                   }
+                        window.parent.document.getElementById("TakeTopLRMDI").cols = '45,*';
+                        window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "no");
+                    }
+                    else {
 
-               }
-               else {
+                        window.parent.document.getElementById("TakeTopLRMDI").cols = '180,*';
+                        window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
+                    }
 
-                   if (varLeftBarExtend === "NO") {
+                }
+                else {
 
-                       window.parent.document.getElementById("TakeTopLRMDI").cols = '45,*';
-                       window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "no");
-                   }
-                   else {
+                    if (varLeftBarExtend === "NO") {
 
-                       window.parent.document.getElementById("TakeTopLRMDI").cols = '180,*';
-                       window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
-                   }
+                        window.parent.document.getElementById("TakeTopLRMDI").cols = '45,*';
+                        window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "no");
+                    }
+                    else {
 
-               }
+                        window.parent.document.getElementById("TakeTopLRMDI").cols = '180,*';
+                        window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
+                    }
 
-           }
+                }
 
-       }
+            }
 
-       //设置左边栏元素的值
-       function setExtendValue(extendStatus) {
+        }
 
-           this.document.getElementById("HF_IsExtend").value = extendStatus;
-           varLeftBarExtend = extendStatus;
+        //设置左边栏元素的值
+        function setExtendValue(extendStatus) {
 
-          // alert(this.document.getElementById("HF_IsExtend").value);
+            this.document.getElementById("HF_IsExtend").value = extendStatus;
+            varLeftBarExtend = extendStatus;
 
-       }
+            // alert(this.document.getElementById("HF_IsExtend").value);
 
+        }
 
-       function doNothing() {
 
-           ChangeMenu(1);
+        function doNothing() {
 
-           window.event.returnValue = false;
+            ChangeMenu(1);
 
-           return false;
-       }
+            window.event.returnValue = false;
 
+            return false;
+        }
 
-       function decreaseLeftWidth() {
-           i = i - 10;
-           if (i >= 45) {
-               window.parent.document.getElementById("TakeTopLRMDI").cols = i.toString() + ",*";
-           }
-       }
-       function creaseLeftWidth() {
-           j = j + 10;
-           if (j <= 250) {
-               window.parent.document.getElementById("TakeTopLRMDI").cols = j.toString() + ",*";
-           }
-       }
 
-       function CreateTab(title, url, obj) {
+        function decreaseLeftWidth() {
+            i = i - 10;
+            if (i >= 45) {
+                window.parent.document.getElementById("TakeTopLRMDI").cols = i.toString() + ",*";
+            }
+        }
+        function creaseLeftWidth() {
+            j = j + 10;
+            if (j <= 250) {
+                window.parent.document.getElementById("TakeTopLRMDI").cols = j.toString() + ",*";
+            }
+        }
 
-           /*  parent.frames["rightTopFrame"].reloadPage(url);*/
+        function CreateTab(title, url, obj) {
 
-           scrollHeight = document.documentElement.scrollTop + document.body.scrollTop;
+            /*  parent.frames["rightTopFrame"].reloadPage(url);*/
 
-           jQuery("#divload").show();
+            scrollHeight = document.documentElement.scrollTop + document.body.scrollTop;
 
-           if (url.indexOf('TakeTopPersonalSpace') == -1) {
+            jQuery("#divload").show();
 
-               window.parent.document.getElementById("rightFrame").rows = '40,*';
-           }
-           else {
+            if (url.indexOf('TakeTopPersonalSpace') == -1) {
 
-               window.parent.document.getElementById("rightFrame").rows = '0,*';
-           }
+                window.parent.document.getElementById("rightFrame").rows = '40,*';
+            }
+            else {
 
-           parent.frames["rightTabFrame"].addTab(title, url, "new");
+                window.parent.document.getElementById("rightFrame").rows = '0,*';
+            }
 
-           jQuery(obj).parent().parent().parent().parent().parent().find("span").css("color", "");
-           jQuery(obj).parent().find("span").css("color", "red");
+            parent.frames["rightTabFrame"].addTab(title, url, "new");
 
+            jQuery(obj).parent().parent().parent().parent().parent().find("span").css("color", "");
+            jQuery(obj).parent().find("span").css("color", "red");
 
-           jQuery(obj).parent().parent().parent().parent().parent().parent().parent().find("span").removeClass("testBold");
-           jQuery(obj).parent().parent().parent().parent().find("span[name='parent1']").addClass("testBold");
 
-           setTimeout("CloseDiv()", 500);
+            jQuery(obj).parent().parent().parent().parent().parent().parent().parent().find("span").removeClass("testBold");
+            jQuery(obj).parent().parent().parent().parent().find("span[name='parent1']").addClass("testBold");
 
-           return false;
-       }
+            setTimeout("CloseDiv()", 500);
 
+            return false;
+        }
 
-       function CreateTabModule(title, url, obj) {
 
-           /*      parent.frames["rightTopFrame"].reloadPage(url);*/
+        function CreateTabModule(title, url, obj) {
 
-           jQuery("#divload").show();
+            /*      parent.frames["rightTopFrame"].reloadPage(url);*/
 
-           if (url.indexOf('TakeTopPersonalSpace') == -1 ) {
+            jQuery("#divload").show();
 
-               window.parent.document.getElementById("rightFrame").rows = '40,*';
-           }
-           else {
+            if (url.indexOf('TakeTopPersonalSpace') == -1) {
 
-               window.parent.document.getElementById("rightFrame").rows = '0,*';
-           }
+                window.parent.document.getElementById("rightFrame").rows = '40,*';
+            }
+            else {
 
-           parent.frames["rightTabFrame"].addTab(title, url, "new");
+                window.parent.document.getElementById("rightFrame").rows = '0,*';
+            }
 
-           jQuery(obj).parent().parent().parent().parent().parent().parent().parent().find("span").removeClass("testBold");
-           jQuery(obj).addClass("testBold");
+            parent.frames["rightTabFrame"].addTab(title, url, "new");
 
-           jQuery(obj).parent().parent().parent().parent().find("span").css("color", "");
+            jQuery(obj).parent().parent().parent().parent().parent().parent().parent().find("span").removeClass("testBold");
+            jQuery(obj).addClass("testBold");
 
-           var clickStyle = jQuery(obj).parent().find(".plusSpan").css("display");
-           if (clickStyle == "none") {
+            jQuery(obj).parent().parent().parent().parent().find("span").css("color", "");
 
-           } else {
+            var clickStyle = jQuery(obj).parent().find(".plusSpan").css("display");
+            if (clickStyle == "none") {
 
-               jQuery(obj).parent().find(".minusSpan").show();
-               jQuery(obj).parent().find(".plusSpan").hide();
-               jQuery(obj).parent().next(".text").slideToggle("slow");
-           }
+            } else {
 
-           jQuery(obj).parent().parent().find(".minusSpan").show();
-           jQuery(obj).parent().parent().find(".plusSpan").hide();
-           jQuery(obj).parent().parent().next(".text").slideToggle("slow");
+                jQuery(obj).parent().find(".minusSpan").show();
+                jQuery(obj).parent().find(".plusSpan").hide();
+                jQuery(obj).parent().next(".text").slideToggle("slow");
+            }
 
-           setTimeout("CloseDiv()", 500);
-       }
+            jQuery(obj).parent().parent().find(".minusSpan").show();
+            jQuery(obj).parent().parent().find(".plusSpan").hide();
+            jQuery(obj).parent().parent().next(".text").slideToggle("slow");
 
-       function CloseDiv() {
-           jQuery("#divload").hide();
-       }
+            setTimeout("CloseDiv()", 500);
+        }
 
-       function OnMouseOverEvent(obj) {
-           jQuery(obj).addClass("spanHover");
-       }
+        function CloseDiv() {
+            jQuery("#divload").hide();
+        }
 
-       function OnMouseOutEvent(obj) {
-           jQuery(obj).removeClass("spanHover");
-       }
+        function OnMouseOverEvent(obj) {
+            jQuery(obj).addClass("spanHover");
+        }
 
+        function OnMouseOutEvent(obj) {
+            jQuery(obj).removeClass("spanHover");
+        }
 
-       function OnPlusEvent(obj) {
-           var clickStyle = jQuery(obj).parent().find(".plusSpan").css("display");
-           if (clickStyle == "none") {
 
-               jQuery(obj).parent().find(".minusSpan").show();
-               jQuery(obj).parent().find(".plusSpan").show();
-               jQuery(obj).parent().next(".text").hide();
+        function OnPlusEvent(obj) {
+            var clickStyle = jQuery(obj).parent().find(".plusSpan").css("display");
+            if (clickStyle == "none") {
 
+                jQuery(obj).parent().find(".minusSpan").show();
+                jQuery(obj).parent().find(".plusSpan").show();
+                jQuery(obj).parent().next(".text").hide();
 
-           } else {
-               jQuery(obj).parent().find(".minusSpan").show();
-               jQuery(obj).parent().find(".plusSpan").show();
-               jQuery(obj).parent().next(".text").slideToggle("slow");
-           }
-       }
 
-       function OnMinusEvent(obj) {
-           var clickStyle = jQuery(obj).parent().find(".minusSpan").css("display");
-           if (clickStyle == "none") {
+            } else {
+                jQuery(obj).parent().find(".minusSpan").show();
+                jQuery(obj).parent().find(".plusSpan").show();
+                jQuery(obj).parent().next(".text").slideToggle("slow");
+            }
+        }
 
-               jQuery(obj).parent().find(".minusSpan").show();
-               jQuery(obj).parent().find(".plusSpan").show();
-               jQuery(obj).parent().next(".text").slideToggle("slow");
+        function OnMinusEvent(obj) {
+            var clickStyle = jQuery(obj).parent().find(".minusSpan").css("display");
+            if (clickStyle == "none") {
 
-           } else {
-               jQuery(obj).parent().find(".minusSpan").show();
-               jQuery(obj).parent().find(".plusSpan").show();
-               jQuery(obj).parent().next(".text").hide();
-           }
-       }
+                jQuery(obj).parent().find(".minusSpan").show();
+                jQuery(obj).parent().find(".plusSpan").show();
+                jQuery(obj).parent().next(".text").slideToggle("slow");
 
-       function OnDoubleClickModule(obj) {
-           var clickStyle = jQuery(obj).parent().find(".plus").css("display");
-           if (clickStyle == "none") {
-               jQuery(obj).parent().find(".minusSpan").show();
-               jQuery(obj).parent().find(".plusSpan").show();
-               jQuery(obj).parent().next(".text").hide();
-           }
-       }
+            } else {
+                jQuery(obj).parent().find(".minusSpan").show();
+                jQuery(obj).parent().find(".plusSpan").show();
+                jQuery(obj).parent().next(".text").hide();
+            }
+        }
 
+        function OnDoubleClickModule(obj) {
+            var clickStyle = jQuery(obj).parent().find(".plus").css("display");
+            if (clickStyle == "none") {
+                jQuery(obj).parent().find(".minusSpan").show();
+                jQuery(obj).parent().find(".plusSpan").show();
+                jQuery(obj).parent().next(".text").hide();
+            }
+        }
 
 
-       function opdg(id, htmlText) {
 
-           var dg = new J.dialog({ id: id, title: '信息提示', width: 250, height: 300, cancelBtn: false, html: htmlText, autoPos: false, fixed: false, left: 'right', top: 'bottom' });
+        function opdg(id, htmlText) {
 
-           dg.ShowDialog();
-       }
+            var dg = new J.dialog({ id: id, title: '信息提示', width: 250, height: 300, cancelBtn: false, html: htmlText, autoPos: false, fixed: false, left: 'right', top: 'bottom' });
 
-       function opim(id, htmlText) {
+            dg.ShowDialog();
+        }
 
-           var dg = new J.dialog({ id: id, title: 'TakeTopIM', width: 455, height: 570, btnBar: false, cancelBtn: false, page: htmlText, autoPos: { left: 'left', top: 'top' }, fixed: false, left: 'left', top: 'top', rang: true });
+        function opim(id, htmlText) {
 
-           dg.ShowDialog();
-       }
+            var dg = new J.dialog({ id: id, title: 'TakeTopIM', width: 455, height: 570, btnBar: false, cancelBtn: false, page: htmlText, autoPos: { left: 'left', top: 'top' }, fixed: false, left: 'left', top: 'top', rang: true });
 
-       function getObject(objectId) {
-           if (document.getElementById && document.getElementById(objectId)) {
-               // W3C DOM
-               return document.getElementById(objectId);
-           }
-           else if (document.all && document.all(objectId)) {
-               // MSIE 4 DOM
-               return document.all(objectId);
-           }
-           else if (document.layers && document.layers[objectId]) {
-               // NN 4 DOM.. note: this won't find nested layers
-               return document.layers[objectId];
-           }
-           else {
-               return false;
-           }
-       }
+            dg.ShowDialog();
+        }
 
-       function showHide(objname) {
-           var obj = getObject(objname);
-           if (obj.style.display == "none") {
-               obj.style.display = "block";
-           } else {
-               obj.style.display = "none";
-           }
+        function getObject(objectId) {
+            if (document.getElementById && document.getElementById(objectId)) {
+                // W3C DOM
+                return document.getElementById(objectId);
+            }
+            else if (document.all && document.all(objectId)) {
+                // MSIE 4 DOM
+                return document.all(objectId);
+            }
+            else if (document.layers && document.layers[objectId]) {
+                // NN 4 DOM.. note: this won't find nested layers
+                return document.layers[objectId];
+            }
+            else {
+                return false;
+            }
+        }
+
+        function showHide(objname) {
+            var obj = getObject(objname);
+            if (obj.style.display == "none") {
+                obj.style.display = "block";
+            } else {
+                obj.style.display = "none";
+            }
         }
 
         function ReloadPage() {
@@ -315,7 +315,7 @@
     </script>
 
 </head>
-<body class="sabd" onmouseenter="javascript:ChangeMenu(3);" onmousemove="javascript:ChangeMenu(3);" onmouseover="javascript:ChangeMenu(3);" onmouseout="javascript:ChangeMenu(4);">
+<body onmouseenter="javascript:ChangeMenu(3);" onmousemove="javascript:ChangeMenu(3);" onmouseover="javascript:ChangeMenu(3);" onmouseout="javascript:ChangeMenu(4);">
     <form id="form1" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server" />
         <asp:Timer ID="Timer1" OnTick="Timer1_Tick" runat="server" Interval="1000" />

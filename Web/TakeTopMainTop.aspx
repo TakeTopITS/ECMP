@@ -94,7 +94,6 @@
             left: 50%;
             transform: translate(-50%, -50%); /* 让图标相对于其自身中心点定位 */
         }
-
     </style>
 
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
@@ -218,7 +217,7 @@
 
     </script>
 </head>
-<body class="sabd">
+<body>
     <center>
         <form id="form1" runat="server">
             <asp:ScriptManager ID="ScriptManager1" runat="server" />
@@ -254,8 +253,7 @@
                                                             <td width="20px" align="center" style="padding-top: 4px; padding-right: 10px;">
                                                                 <asp:Button ID="BT_PopMsg" runat="server" CssClass="inpu" OnClick="BT_PopMsg_Click" Text="M" Width="23px" Height="20px" />
                                                             </td>
-                                                            <td style="width: 10px;">
-                                                            </td>
+                                                            <td style="width: 10px;"></td>
                                                             <td align="center" style="padding-top: 0px; padding-bottom: 0px;">
                                                                 <a runat="server" class="titleSpan" href="javascript:top.frames[0].frames[2].parent.frames['rightTabFrame'].popShowByURL('TTUpdateUserInfor.aspx', 'UserInformation', 800, 600, window.location);">
                                                                     <div class="container">

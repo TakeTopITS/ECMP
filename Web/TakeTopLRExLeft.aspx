@@ -24,7 +24,7 @@
             jQuery("span.minusSpan").show();
             jQuery("span.plusSpan").show();
 
-           
+
             if (varLeftBarExtend === "YES") {
 
                 window.parent.document.getElementById("TakeTopLRMDI").cols = '180,*';
@@ -35,7 +35,7 @@
 
         });
 
-      
+
         var i = 0;
         var j = 0;
 
@@ -81,11 +81,11 @@
                         window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "no");
                     }
                     else {
-                       
+
                         window.parent.document.getElementById("TakeTopLRMDI").cols = '180,*';
                         window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
                     }
-                  
+
                 }
                 else {
 
@@ -99,9 +99,9 @@
                         window.parent.document.getElementById("TakeTopLRMDI").cols = '180,*';
                         window.parent.document.getElementById("leftMiddleFrameID").setAttribute("scrolling", "yes");
                     }
-                 
+
                 }
-                
+
             }
 
         }
@@ -112,7 +112,7 @@
             this.document.getElementById("HF_IsExtend").value = extendStatus;
             varLeftBarExtend = extendStatus;
 
-           //alert(this.document.getElementById("HF_IsExtend").value);
+            //alert(this.document.getElementById("HF_IsExtend").value);
 
         }
 
@@ -150,7 +150,7 @@
 
             if (url.indexOf('TakeTopPersonalSpace') == -1) {
 
-               
+
                 window.parent.document.getElementById("rightFrame").rows = '40,*';
             }
             else {
@@ -181,7 +181,7 @@
 
             if (url.indexOf('TakeTopPersonalSpace') == -1) {
 
-              
+
                 window.parent.document.getElementById("rightFrame").rows = '40,*';
             }
             else {
@@ -266,7 +266,7 @@
             }
         }
 
-     
+
 
         function opdg(id, htmlText) {
 
@@ -317,7 +317,7 @@
     </script>
 
 </head>
-<body class="sabd" onmouseenter="javascript:ChangeMenu(3);" onmousemove="javascript:ChangeMenu(3);" onmouseover="javascript:ChangeMenu(3);" onmouseout="javascript:ChangeMenu(4);">
+<body onmouseenter="javascript:ChangeMenu(3);" onmousemove="javascript:ChangeMenu(3);" onmouseover="javascript:ChangeMenu(3);" onmouseout="javascript:ChangeMenu(4);">
     <form id="form1" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server" />
         <asp:Timer ID="Timer1" OnTick="Timer1_Tick" runat="server" Interval="1000" />
