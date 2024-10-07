@@ -335,8 +335,8 @@
                                                                                                     <td class="formItemBgStyle"></td>
                                                                                                     <td class="formItemBgStyle" colspan="3">
                                                                                                         <asp:Button ID="BT_UpdateAssign" runat="server" CssClass="inpu" Enabled="False" OnClick="BT_UpdateAssign_Click"
-                                                                                                            Text="<%$ Resources:lang,BaoCun %>" /><asp:Button ID="BT_DeleteAssign" runat="server" CssClass="inpu" Enabled="False" OnClick="BT_DeleteAssign_Click" OnClientClick="return confirm(getDeleteMsgByLangCode())"
-                                                                                                                Text="<%$ Resources:lang,ShanChu %>" />&#160;&#160;&#160;
+                                                                                                            Text="<%$ Resources:lang,BaoCun %>" /> &nbsp;<asp:Button ID="BT_DeleteAssign" runat="server" CssClass="inpu" Enabled="False" OnClick="BT_DeleteAssign_Click" OnClientClick="return confirm(getDeleteMsgByLangCode())"
+                                                                                                                Text="<%$ Resources:lang,ShanChu %>" /> &nbsp;
                                                                                                         <asp:Button ID="BT_Assign" runat="server" CssClass="inpu" OnClick="BT_Assign_Click"
                                                                                                             Text="<%$ Resources:lang,FenPai %>" /></td>
                                                                                                 </tr>

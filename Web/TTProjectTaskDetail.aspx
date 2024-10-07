@@ -268,8 +268,8 @@
                                                                                                                 <tr>
                                                                                                                     <td>
                                                                                                                         <asp:Button ID="BT_Activity" runat="server" OnClick="BT_Activity_Click" Text="<%$ Resources:lang,BaoCun %>"
-                                                                                                                            CssClass="inpu" />&#160;<asp:Button ID="BT_Finish" runat="server" OnClick="BT_Finish_Click" Font-Bold="True"
-                                                                                                                                Text="<%$ Resources:lang,WanChengTiJiao %>" CssClass="inpu" />&#160;<asp:Button ID="BT_TBD" runat="server" OnClick="BT_TBD_Click" Text="<%$ Resources:lang,GuaQi %>" CssClass="inpu" />&#160;&#160;
+                                                                                                                            CssClass="inpu" />&nbsp;<asp:Button ID="BT_Finish" runat="server" OnClick="BT_Finish_Click" Font-Bold="True"
+                                                                                                                                Text="<%$ Resources:lang,WanChengTiJiao %>" CssClass="inpu" />&nbsp;<asp:Button ID="BT_TBD" runat="server" OnClick="BT_TBD_Click" Text="<%$ Resources:lang,GuaQi %>" CssClass="inpu" />&#160;&#160;
                                                                                                                         <asp:Button ID="BT_ConfirmEffectPlanProgress" runat="server" CssClass="inpu" Text="<%$ Resources:lang,QueRenJinDu %>" OnClick="BT_ConfirmEffectPlanProgress_Click" /></td>
                                                                                                                     <td style="padding-left: 20px;">
                                                                                                                         <asp:Button ID="BT_CloseTask" runat="server" Enabled="False" OnClick="BT_CloseTask_Click"
@@ -341,8 +341,8 @@
                                                                                                         <td class="formItemBgStyle" style="width: 10%;"></td>
                                                                                                         <td class="formItemBgStyle" colspan="3">
                                                                                                             <asp:Button ID="BT_UpdateAssign" runat="server" CssClass="inpu" Enabled="False" OnClick="BT_UpdateAssign_Click"
-                                                                                                                Text="<%$ Resources:lang,BaoCun %>" /><asp:Button ID="BT_DeleteAssign" runat="server" CssClass="inpu" Enabled="False" OnClick="BT_DeleteAssign_Click" OnClientClick="return confirm(getDeleteMsgByLangCode())"
-                                                                                                                    Text="<%$ Resources:lang,ShanChu %>" /><asp:Button ID="BT_Assign" runat="server" CssClass="inpu" OnClick="BT_Assign_Click"
+                                                                                                                Text="<%$ Resources:lang,BaoCun %>" /> &nbsp;<asp:Button ID="BT_DeleteAssign" runat="server" CssClass="inpu" Enabled="False" OnClick="BT_DeleteAssign_Click" OnClientClick="return confirm(getDeleteMsgByLangCode())"
+                                                                                                                    Text="<%$ Resources:lang,ShanChu %>" /> &nbsp;<asp:Button ID="BT_Assign" runat="server" CssClass="inpu" OnClick="BT_Assign_Click"
                                                                                                                         Text="<%$ Resources:lang,FenPaiRenWu %>" /></td>
                                                                                                     </tr>
                                                                                                     <tr>
