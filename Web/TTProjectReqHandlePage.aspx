@@ -216,7 +216,7 @@
                                                             <div id="Div_Handling" style="overflow-y: auto;">
                                                                 <asp:DataList ID="DataList_Handling" runat="server" Width="100%" CellPadding="0">
                                                                     <ItemTemplate>
-                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color: lightcoral;">
+                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color: lightblue;">
                                                                             <a href='TTReqDetail.aspx?ID=<%#DataBinder.Eval(Container.DataItem, "ID")%>' target="_blank">
                                                                                 <span style="color: lightgreen;">#<%#DataBinder.Eval(Container.DataItem, "ID")%> </span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
                                                                                 <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,FenPaiRen%>"></asp:Label>：<%#DataBinder.Eval(Container.DataItem, "AssignManName")%>
@@ -257,7 +257,7 @@
                                                             <div id="Div_FinishedUnAssigned" style="overflow-y: auto;">
                                                                 <asp:DataList ID="DataList_FinishedUnAssigned" runat="server" Width="100%" CellPadding="0">
                                                                     <ItemTemplate>
-                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color: orange;">
+                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px;border-color: lightblue;">
                                                                             <a href='TTReqDetail.aspx?ID=<%#DataBinder.Eval(Container.DataItem, "ID")%>' target="_blank">
                                                                                 <span style="color:lightgreen;">#<%#DataBinder.Eval(Container.DataItem, "ID")%></span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
                                                                                 <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,FenPaiRen%>"></asp:Label>：<%#DataBinder.Eval(Container.DataItem, "AssignManName")%>
@@ -298,7 +298,7 @@
                                                             <div id="Div_Assigned" style="overflow-y: auto;">
                                                                 <asp:DataList ID="DataList_Assigned" runat="server" Width="100%" CellPadding="0">
                                                                     <ItemTemplate>
-                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color: lightgreen;">
+                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color: lightblue;">
                                                                             <a href='TTReqDetail.aspx?ID=<%#DataBinder.Eval(Container.DataItem, "ID")%>' target="_blank">
                                                                                 <span style="color: lightgreen;">#<%#DataBinder.Eval(Container.DataItem, "ID")%></span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
                                                                                 <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,FenPaiRen%>"></asp:Label>：<%#DataBinder.Eval(Container.DataItem, "AssignManName")%>                                              

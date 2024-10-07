@@ -232,7 +232,7 @@
                                                                     <ItemTemplate>
                                                                         <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color:lightblue;">
                                                                             <a href='TTDefectDetail.aspx?ID=<%#DataBinder.Eval(Container.DataItem, "ID")%>' target="_blank">
-                                                                                <span style="color: lightcoral;">#<%#DataBinder.Eval(Container.DataItem, "ID")%> </span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
+                                                                                <span style="color: lightgreen;">#<%#DataBinder.Eval(Container.DataItem, "ID")%> </span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
                                                                                 <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,FenPaiRen%>"></asp:Label>：<%#DataBinder.Eval(Container.DataItem, "AssignManName")%>
                                                                             </a>
                                                                         </div>
@@ -273,7 +273,7 @@
                                                                     <ItemTemplate>
                                                                         <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color:lightblue;">
                                                                             <a href='TTDefectDetail.aspx?ID=<%#DataBinder.Eval(Container.DataItem, "ID")%>' target="_blank">
-                                                                                <span style="color: orange;">#<%#DataBinder.Eval(Container.DataItem, "ID")%></span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
+                                                                                <span style="color: lightgreen;">#<%#DataBinder.Eval(Container.DataItem, "ID")%></span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
                                                                                 <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,FenPaiRen%>"></asp:Label>：<%#DataBinder.Eval(Container.DataItem, "AssignManName")%>
                                                                             </a>
                                                                         </div>
