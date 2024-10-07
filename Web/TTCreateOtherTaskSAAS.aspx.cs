@@ -773,7 +773,8 @@ public partial class TTCreateOtherTaskSAAS : System.Web.UI.Page
         taskAssignRecord.Status = "待处理";
 
         taskAssignRecord.FinishedNumber = 0;
-        taskAssignRecord.UnitName = ""; taskAssignRecord.MoveTime = DateTime.Now;
+        taskAssignRecord.UnitName = ""; 
+        taskAssignRecord.MoveTime = DateTime.Now;
 
         try
         {
