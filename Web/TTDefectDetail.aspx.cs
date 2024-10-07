@@ -285,6 +285,9 @@ public partial class TTDefectDetail : System.Web.UI.Page
         {
             defectAssignRecordBLL.AddDefectAssignRecord(defectAssignRecord);
 
+            //更改前缺陷分派记录状态
+            updateDefectAssignRecordStatus(intPriorID, "已分派");
+
             LoadAssignRecord(strID);
             LoadChildRecord(strID);
 
@@ -304,6 +307,16 @@ public partial class TTDefectDetail : System.Web.UI.Page
             ScriptManager.RegisterStartupScript(this.UpdatePanel1, this.GetType(), "click", "alert('" + Resources.lang.ZZFPSBJC + "')", true);
         }
     }
+
+    //更改缺陷分派记录状态
+    protected void updateDefectAssignRecordStatus(int intAssignID,string strStatus)
+    {
+        string strHQL;
+
+        strHQL = string.Format(@"Update T_DefectAssignRecord Set Status = '{0}' Where ID = {1}",strStatus,intAssignID);
+        ShareClass.RunSqlCommand(strHQL);
+    }
+
 
     //BusinessForm,启动关联的业务表单
     protected void BT_StartupBusinessForm_Click(object sender, EventArgs e)

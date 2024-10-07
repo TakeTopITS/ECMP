@@ -68,8 +68,6 @@ public partial class TTReqHandlePage : System.Web.UI.Page
         ShareClass.RunSqlCommand(strHQL);
 
         LoadReqAssignRecord(strUserCode);
-
-        //Response.Redirect("TTTReqHandlePage.aspx");
     }
 
     protected void LoadReqAssignRecord(string strUserCode)
@@ -78,7 +76,7 @@ public partial class TTReqHandlePage : System.Web.UI.Page
         DataSet ds;
 
         strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-        strHQL += " and reqAssignRecord.Status in ('计划','受理','待处理') and reqAssignRecord.ID not in (select reqAssignRecord.PriorID from T_ReqAssignRecord as reqAssignRecord) ";
+        strHQL += " and reqAssignRecord.Status in ('计划','受理','待处理') ";
         strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
         strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
@@ -87,7 +85,7 @@ public partial class TTReqHandlePage : System.Web.UI.Page
         SetReqRecordColor(ds, DataList_ToBeHandled,"待处理");
 
         strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-        strHQL += " and reqAssignRecord.Status in ('处理中','处理中') and reqAssignRecord.ID not in (select reqAssignRecord.PriorID from T_ReqAssignRecord as reqAssignRecord) ";
+        strHQL += " and reqAssignRecord.Status in ('处理中','处理中') ";
         strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
         strHQL += " Order by reqAssignRecord.ID DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
@@ -96,7 +94,7 @@ public partial class TTReqHandlePage : System.Web.UI.Page
         SetReqRecordColor(ds, DataList_Handling, "处理中");
 
         strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-        strHQL += " and (reqAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成','已分派') and reqAssignRecord.ID not in (select reqAssignRecord.PriorID from T_ReqAssignRecord as reqAssignRecord))";
+        strHQL += " and reqAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
         strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
         strHQL += " Order by reqAssignRecord.ID DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
@@ -105,7 +103,7 @@ public partial class TTReqHandlePage : System.Web.UI.Page
         SetReqRecordColor(ds, DataList_FinishedUnAssigned, "已完成");
 
         strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-        strHQL += " and (reqAssignRecord.ID in (select reqAssignRecord.PriorID from T_ReqAssignRecord as reqAssignRecord) or status = '已分派') ";
+        strHQL += " and reqAssignRecord.status = '已分派'";
         strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
         strHQL += " Order by reqAssignRecord.ID DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");

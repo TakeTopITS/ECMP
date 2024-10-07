@@ -78,7 +78,7 @@ public partial class TTDefectHandlePage : System.Web.UI.Page
         DataSet ds;
 
         strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-        strHQL += " and defectAssignRecord.Status in ('计划','受理','待处理') and defectAssignRecord.ID not in (select defectAssignRecord.PriorID from T_DefectAssignRecord as defectAssignRecord) ";
+        strHQL += " and defectAssignRecord.Status in ('计划','受理','待处理')";
         strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
         strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
@@ -87,7 +87,7 @@ public partial class TTDefectHandlePage : System.Web.UI.Page
         SetDefectRecordColor(ds, DataList_ToBeHandled, "待处理");
 
         strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-        strHQL += " and defectAssignRecord.Status in ('处理中','处理中') and defectAssignRecord.ID not in (select defectAssignRecord.PriorID from T_DefectAssignRecord as defectAssignRecord) ";
+        strHQL += " and defectAssignRecord.Status in ('处理中','处理中')";
         strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
         strHQL += " Order by defectAssignRecord.ID DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
@@ -96,7 +96,7 @@ public partial class TTDefectHandlePage : System.Web.UI.Page
         SetDefectRecordColor(ds, DataList_Handling, "处理中");
 
         strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-        strHQL += " and (defectAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成','已分派') and defectAssignRecord.ID not in (select defectAssignRecord.PriorID from T_DefectAssignRecord as defectAssignRecord))";
+        strHQL += " and defectAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
         strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
         strHQL += " Order by defectAssignRecord.ID DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
@@ -105,7 +105,7 @@ public partial class TTDefectHandlePage : System.Web.UI.Page
         SetDefectRecordColor(ds, DataList_FinishedUnAssigned, "已完成");
 
         strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-        strHQL += " and defectAssignRecord.ID in (select defectAssignRecord.PriorID from T_DefectAssignRecord as defectAssignRecord) ";
+        strHQL += " and defectAssignRecord.Status = '已分派'";
         strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
         strHQL += " Order by defectAssignRecord.ID DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");

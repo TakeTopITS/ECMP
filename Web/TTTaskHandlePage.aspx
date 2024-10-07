@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="TTTaskHandlePage.aspx.cs" Inherits="TTTaskHandlePage" %>
 
-
 <%@ Register Assembly="NickLee.Web.UI" Namespace="NickLee.Web.UI" TagPrefix="NickLee" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc2" %>
@@ -62,6 +61,7 @@
                         $(this).css("border", "0px");
                     },
                     drop: function (event, ui) {
+
                         var $draggerDiv = $(ui.draggable[0]);
                         $draggerDiv.closest("table").parent().css("overflow-y", "auto");
                         $cloneTr = $draggerDiv.parent().parent().clone();
@@ -77,6 +77,7 @@
                         $(this).css("border", "0px");
 
                         $("#BT_UpdateStatus").click();
+
                     }
                 });
             });
@@ -116,7 +117,7 @@
                     <div id="AboveDiv">
                         <table id="AboveTable" cellpadding="0" width="100%" cellspacing="0" class="bian">
                             <tr>
-                                <td height="31" class="page_topbj" >
+                                <td height="31" class="page_topbj">
                                     <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td align="left">
@@ -134,7 +135,7 @@
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td align="right" style="padding-top: 5px; display:none;">
+                                            <td align="right" style="padding-top: 5px; display: none;">
                                                 <asp:Button ID="BT_CreateTask" runat="server" CssClass="inpu" Text="<%$ Resources:lang,ChuangJianRenWu%>" OnClick="BT_CreateTask_Click" />
                                             </td>
                                         </tr>
@@ -149,12 +150,10 @@
                                                 <asp:Label ID="Label8" runat="server" Text="<%$ Resources:lang,ZhenChuLiDeRenWu%>"></asp:Label>
                                             </HeaderTemplate>
                                             <ContentTemplate>
-                                             
                                                 <table cellpadding="0" cellspacing="0" width="100%">
                                                     <tr>
-                                                        <td align="left" class="formItemBgStyle" width="23%" >
-                                                            <table background="ImagesSkin/main_n_bj.jpg" border="0" cellpadding="0" cellspacing="0"
-                                                                width="100%">
+                                                        <td align="left" class="formItemBgStyle" width="23%">
+                                                            <table background="ImagesSkin/main_n_bj.jpg" border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                 <tr>
                                                                     <td width="7">
                                                                         <img src="ImagesSkin/main_n_l.jpg" width="7" height="26" /></td>
@@ -168,7 +167,7 @@
                                                                                                 <td>
                                                                                                     <asp:Label ID="Label9" runat="server" Text="<%$ Resources:lang,DaiChuLiDD %>"></asp:Label>
                                                                                                 </td>
-                                                                                                <td style="padding-left:10px;">
+                                                                                                <td style="padding-left: 10px;">
                                                                                                     <asp:HyperLink ID="HL_CreateTask" runat="server"> <span style ="font-size:xx-large;color:red;"> +</span> </asp:HyperLink>
                                                                                                 </td>
                                                                                             </tr>
@@ -183,17 +182,17 @@
                                                                         </table>
                                                                     </td>
                                                                     <td align="right" width="6">
-                                                                        <img src="ImagesSkin/main_n_r.jpg" width="6" alt="" height="26" /></td>
+                                                                        <img src="ImagesSkin/main_n_r.jpg" width="6" alt="" height="26" />
+                                                                    </td>
                                                                 </tr>
                                                             </table>
-                                                             <div id="Div_ToBeHandled" style="overflow-y: auto;">
+                                                            <div id="Div_ToBeHandled" style="overflow-y: auto;">
                                                                 <asp:DataList ID="DataList_ToBeHandled" runat="server" Width="100%" CellPadding="0">
                                                                     <ItemTemplate>
-                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border:dotted; border-radius: 3px 4px; border-color:lightblue;">
+                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color: lightblue;">
 
                                                                             <a href='TTTaskDetail.aspx?ID=<%#DataBinder.Eval(Container.DataItem, "ID")%>' target="_blank">
-                                                                                <span style="color:lightgreen;">
-                                                                                   #<%#DataBinder.Eval(Container.DataItem, "ID")%></span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
+                                                                                <span style="color: lightgreen;">#<%#DataBinder.Eval(Container.DataItem, "ID")%></span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
                                                                                 <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,FenPaiRen%>"></asp:Label>：<%#DataBinder.Eval(Container.DataItem, "AssignManName")%>
 
                                                                             </a>
@@ -205,7 +204,7 @@
                                                                 </asp:DataList>
                                                             </div>
                                                         </td>
-                                                         <td width="10px"></td>
+                                                        <td width="10px"></td>
                                                         <td align="left" class="formItemBgStyle" width="23%">
                                                             <table background="ImagesSkin/main_n_bj.jpg" border="0" cellpadding="0" cellspacing="0"
                                                                 width="100%">
@@ -227,18 +226,18 @@
                                                                         </table>
                                                                     </td>
                                                                     <td align="right" width="6">
-                                                                        <img src="ImagesSkin/main_n_r.jpg" width="6" alt="" height="26" /></td>
+                                                                        <img src="ImagesSkin/main_n_r.jpg" width="6" alt="" height="26" />
+                                                                    </td>
                                                                 </tr>
                                                             </table>
                                                             <div id="Div_Handling" style="overflow-y: auto;">
                                                                 <asp:DataList ID="DataList_Handling" runat="server" Width="100%" CellPadding="0">
                                                                     <ItemTemplate>
-                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border:dotted; border-radius: 3px 4px; border-color:lightblue;">
+                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color: lightblue;">
                                                                             <a href='TTTaskDetail.aspx?ID=<%#DataBinder.Eval(Container.DataItem, "ID")%>' target="_blank">
-                                                                                <span style="color:lightgreen;">
-                                                                                    #<%#DataBinder.Eval(Container.DataItem, "ID")%> </span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
+                                                                                <span style="color: lightgreen;">#<%#DataBinder.Eval(Container.DataItem, "ID")%> </span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
                                                                                 <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,FenPaiRen%>"></asp:Label>：<%#DataBinder.Eval(Container.DataItem, "AssignManName")%>
-                                                                                 </a>
+                                                                            </a>
                                                                         </div>
                                                                         <div style="background-color: white; height: 5px;">
                                                                             &nbsp;
@@ -269,18 +268,18 @@
                                                                         </table>
                                                                     </td>
                                                                     <td align="right" width="6">
-                                                                        <img src="ImagesSkin/main_n_r.jpg" width="6" alt="" height="26" /></td>
+                                                                        <img src="ImagesSkin/main_n_r.jpg" width="6" alt="" height="26" />
+                                                                    </td>
                                                                 </tr>
                                                             </table>
                                                             <div id="Div_FinishedUnAssigned" style="overflow-y: auto;">
                                                                 <asp:DataList ID="DataList_FinishedUnAssigned" runat="server" Width="100%" CellPadding="0">
                                                                     <ItemTemplate>
-                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color:lightblue;">
+                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color: lightblue;">
                                                                             <a href='TTTaskDetail.aspx?ID=<%#DataBinder.Eval(Container.DataItem, "ID")%>' target="_blank">
-                                                                               <span style="color:lightgreen;">
-                                                                                    #<%#DataBinder.Eval(Container.DataItem, "ID")%></span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
+                                                                                <span style="color: lightgreen;">#<%#DataBinder.Eval(Container.DataItem, "ID")%></span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
                                                                                 <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,FenPaiRen%>"></asp:Label>：<%#DataBinder.Eval(Container.DataItem, "AssignManName")%>
-                                                                                </a>
+                                                                            </a>
                                                                         </div>
                                                                         <div style="background-color: white; height: 5px;">
                                                                             &nbsp;
@@ -299,9 +298,11 @@
                                                                     <td>
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                             <tr>
-                                                                                <td align="center" width="100%"><strong>
-                                                                                    <asp:Label ID="Label5" runat="server" Text="<%$ Resources:lang,YuFenPai %>"></asp:Label>
-                                                                                </strong></td>
+                                                                                <td align="center" width="100%">
+                                                                                    <strong>
+                                                                                        <asp:Label ID="Label5" runat="server" Text="<%$ Resources:lang,YuFenPai %>"></asp:Label>
+                                                                                    </strong>
+                                                                                </td>
                                                                             </tr>
                                                                             <tr style="display: none;">
                                                                                 <td align="center" width="100%">
@@ -317,10 +318,9 @@
                                                             <div id="Div_Assigned" style="overflow-y: auto;">
                                                                 <asp:DataList ID="DataList_Assigned" runat="server" Width="100%" CellPadding="0">
                                                                     <ItemTemplate>
-                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border:dotted; border-radius: 3px 4px; border-color:lightblue;">
+                                                                        <div id="div_task" class="bian" style="border-collapse: collapse; width: 97%; border: dotted; border-radius: 3px 4px; border-color: lightblue;">
                                                                             <a href='TTTaskDetail.aspx?ID=<%#DataBinder.Eval(Container.DataItem, "ID")%>' target="_blank">
-                                                                                <span style="color:lightgreen;">
-                                                                                    #<%#DataBinder.Eval(Container.DataItem, "ID")%></span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
+                                                                                <span style="color: lightgreen;">#<%#DataBinder.Eval(Container.DataItem, "ID")%></span>&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="<%$ Resources:lang,MingCheng%>"></asp:Label>： <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
                                                                                 <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,FenPaiRen%>"></asp:Label>：<%#DataBinder.Eval(Container.DataItem, "AssignManName")%>
                                                                             </a>
                                                                         </div>
@@ -334,7 +334,7 @@
                                                     </tr>
                                                 </table>
                                                 <br />
-                                           
+
                                             </ContentTemplate>
                                         </cc2:TabPanel>
                                         <cc2:TabPanel ID="TabPanel3" runat="server" HeaderText="我建立的任务：">
@@ -384,7 +384,8 @@
                                                                         </table>
                                                                     </td>
                                                                     <td width="6" align="right">
-                                                                        <img src="ImagesSkin/main_n_r.jpg" width="6" alt="" height="26" /></td>
+                                                                        <img src="ImagesSkin/main_n_r.jpg" width="6" alt="" height="26" />
+                                                                    </td>
                                                                 </tr>
                                                             </table>
                                                             <asp:DataGrid ID="DataGrid4" runat="server" AllowPaging="True" AutoGenerateColumns="False"
@@ -457,7 +458,8 @@
                                                                 <SelectedItemStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
                                                                 <PagerStyle HorizontalAlign="Center" Mode="NumericPages" NextPageText="" PrevPageText="" CssClass="notTab" />
                                                                 <ItemStyle CssClass="itemStyle" />
-                                                            </asp:DataGrid><asp:Label ID="LB_Sql4" runat="server" Visible="False"></asp:Label><asp:Label ID="LB_TotalNumber4" runat="server"></asp:Label></td>
+                                                            </asp:DataGrid><asp:Label ID="LB_Sql4" runat="server" Visible="False"></asp:Label><asp:Label ID="LB_TotalNumber4" runat="server"></asp:Label>
+                                                        </td>
                                                     </tr>
                                                 </table>
                                                 <br />

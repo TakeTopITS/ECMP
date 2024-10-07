@@ -66,7 +66,7 @@ public partial class TTProjectReqHandlePage : System.Web.UI.Page
         if (strProjectID != "0")
         {
             strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and reqAssignRecord.Status in ('计划','受理','待处理') and reqAssignRecord.ID not in (select reqAssignRecord.PriorID from ReqAssignRecord as reqAssignRecord) ";
+            strHQL += " and reqAssignRecord.Status in ('计划','受理','待处理')";
             strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
             strHQL += " Order by reqAssignRecord.MoveTime DESC";
@@ -77,7 +77,7 @@ public partial class TTProjectReqHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_ToBeHandled, "待处理");
 
             strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and reqAssignRecord.Status in ('处理中','处理中') and reqAssignRecord.ID not in (select reqAssignRecord.PriorID from ReqAssignRecord as reqAssignRecord) ";
+            strHQL += " and reqAssignRecord.Status in ('处理中','处理中')";
             strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
             strHQL += " Order by reqAssignRecord.ID DESC";
@@ -88,7 +88,7 @@ public partial class TTProjectReqHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_Handling, "处理中");
 
             strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and (reqAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成','已分派') and reqAssignRecord.ID not in (select reqAssignRecord.PriorID from ReqAssignRecord as reqAssignRecord))";
+            strHQL += " and (reqAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
             strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
             strHQL += " Order by reqAssignRecord.ID DESC";
@@ -99,7 +99,7 @@ public partial class TTProjectReqHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_FinishedUnAssigned, "已完成");
 
             strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and reqAssignRecord.ID in (select reqAssignRecord.PriorID from ReqAssignRecord as reqAssignRecord) ";
+            strHQL += " and  reqAssignRecord.status = '已分派'";
             strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
             strHQL += " Order by reqAssignRecord.ID DESC";
@@ -112,7 +112,7 @@ public partial class TTProjectReqHandlePage : System.Web.UI.Page
         else
         {
             strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and reqAssignRecord.Status in ('计划','受理','待处理') and reqAssignRecord.ID not in (select reqAssignRecord.PriorID from ReqAssignRecord as reqAssignRecord) ";
+            strHQL += " and reqAssignRecord.Status in ('计划','受理','待处理')";
             strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by reqAssignRecord.MoveTime DESC";
@@ -123,7 +123,7 @@ public partial class TTProjectReqHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_ToBeHandled, "待处理");
 
             strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and reqAssignRecord.Status in ('处理中','处理中') and reqAssignRecord.ID not in (select reqAssignRecord.PriorID from ReqAssignRecord as reqAssignRecord) ";
+            strHQL += " and reqAssignRecord.Status in ('处理中','处理中')";
             strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by reqAssignRecord.ID DESC";
@@ -135,7 +135,7 @@ public partial class TTProjectReqHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_Handling, "处理中");
 
             strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and (reqAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成','已分派') and reqAssignRecord.ID not in (select reqAssignRecord.PriorID from ReqAssignRecord as reqAssignRecord))";
+            strHQL += " and reqAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
             strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by reqAssignRecord.ID DESC";
@@ -147,7 +147,7 @@ public partial class TTProjectReqHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_FinishedUnAssigned, "已完成");
 
             strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and reqAssignRecord.ID in (select reqAssignRecord.PriorID from ReqAssignRecord as reqAssignRecord) ";
+            strHQL += " and reqAssignRecord.Status = '已分派'";
             strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by reqAssignRecord.ID DESC";

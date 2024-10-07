@@ -73,7 +73,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
         if (strProjectID != "0")
         {
             strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and defectAssignRecord.Status in ('计划','受理','待处理') and defectAssignRecord.ID not in (select defectAssignRecord.PriorID from DefectAssignRecord as defectAssignRecord) ";
+            strHQL += " and defectAssignRecord.Status in ('计划','受理','待处理')";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
             strHQL += " Order by defectAssignRecord.MoveTime DESC";
@@ -84,7 +84,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_ToBeHandled, "待处理");
 
             strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and defectAssignRecord.Status in ('处理中','处理中') and defectAssignRecord.ID not in (select defectAssignRecord.PriorID from DefectAssignRecord as defectAssignRecord) ";
+            strHQL += " and defectAssignRecord.Status in ('处理中','处理中')";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
             strHQL += " Order by defectAssignRecord.ID DESC";
@@ -95,7 +95,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_Handling, "已处理");
 
             strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and (defectAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成','已分派') and defectAssignRecord.ID not in (select defectAssignRecord.PriorID from DefectAssignRecord as defectAssignRecord))";
+            strHQL += " and defectAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
             strHQL += " Order by defectAssignRecord.ID DESC";
@@ -106,7 +106,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_FinishedUnAssigned, "已完成");
 
             strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and defectAssignRecord.ID in (select defectAssignRecord.PriorID from DefectAssignRecord as defectAssignRecord) ";
+            strHQL += " and defectAssignRecord.Status = '已分派'";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
             strHQL += " Order by defectAssignRecord.ID DESC";
@@ -119,7 +119,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
         else
         {
             strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and defectAssignRecord.Status in ('计划','受理','待处理') and defectAssignRecord.ID not in (select defectAssignRecord.PriorID from DefectAssignRecord as defectAssignRecord) ";
+            strHQL += " and defectAssignRecord.Status in ('计划','受理','待处理')";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by defectAssignRecord.MoveTime DESC";
@@ -130,7 +130,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_ToBeHandled, "待处理");
 
             strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and defectAssignRecord.Status in ('处理中','处理中') and defectAssignRecord.ID not in (select defectAssignRecord.PriorID from DefectAssignRecord as defectAssignRecord) ";
+            strHQL += " and defectAssignRecord.Status in ('处理中','处理中')";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by defectAssignRecord.ID DESC";
@@ -141,7 +141,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_Handling, "已处理");
 
             strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and (defectAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成','已分派') and defectAssignRecord.ID not in (select defectAssignRecord.PriorID from DefectAssignRecord as defectAssignRecord))";
+            strHQL += " and defectAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by defectAssignRecord.ID DESC";
@@ -152,7 +152,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             SetReqRecordColor(lst, DataList_FinishedUnAssigned, "已完成");
 
             strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and defectAssignRecord.ID in (select defectAssignRecord.PriorID from DefectAssignRecord as defectAssignRecord) ";
+            strHQL += " and defectAssignRecord.Status = '已分派'";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by defectAssignRecord.ID DESC";

@@ -76,7 +76,7 @@ public partial class TTProjectTaskHandlePage : System.Web.UI.Page
         if (strProjectID != "0")
         {
             strHQL = "Select * from T_TaskAssignRecord as taskAssignRecord where taskAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and taskAssignRecord.Status in ('计划','受理','待处理') and taskAssignRecord.ID not in (select taskAssignRecord.PriorID from T_TaskAssignRecord as taskAssignRecord) ";
+            strHQL += " and taskAssignRecord.Status in ('计划','受理','待处理')";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.Status <> '关闭')";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.ProjectID in (select project.ProjectID from T_Project as project where project.ProjectID = " + strProjectID + " and project.Status not in ('新建','隐藏','删除','归档')))";
             strHQL += " Order by taskAssignRecord.MoveTime DESC limit 40";
@@ -86,7 +86,7 @@ public partial class TTProjectTaskHandlePage : System.Web.UI.Page
             SetTaskRecordColorForDataList(ds, DataList_ToBeHandled, "待处理");
 
             strHQL = "Select * from T_TaskAssignRecord as taskAssignRecord where taskAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and taskAssignRecord.Status in ('处理中','处理中') and taskAssignRecord.ID not in (select taskAssignRecord.PriorID from T_TaskAssignRecord as taskAssignRecord) ";
+            strHQL += " and taskAssignRecord.Status in ('处理中','处理中') ";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.Status <> '关闭')";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.ProjectID in (select project.ProjectID from T_Project as project where project.ProjectID = " + strProjectID + " and project.Status not in ('新建','隐藏','删除','归档')))";
             strHQL += " Order by taskAssignRecord.MoveTime DESC limit 40";
@@ -96,7 +96,7 @@ public partial class TTProjectTaskHandlePage : System.Web.UI.Page
             SetTaskRecordColorForDataList(ds, DataList_Handling, "处理中");
 
             strHQL = "Select * from T_TaskAssignRecord as taskAssignRecord where taskAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and taskAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成','已分派') and taskAssignRecord.ID not in (select taskAssignRecord.PriorID from T_TaskAssignRecord as taskAssignRecord) ";
+            strHQL += " and taskAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成') ";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask  where projectTask.Status <> '关闭')";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.ProjectID in (select project.ProjectID from T_Project as project where project.ProjectID = " + strProjectID + " and project.Status not in ('新建','隐藏','删除','归档')))";
             strHQL += " Order by taskAssignRecord.MoveTime DESC limit 40";
@@ -107,7 +107,8 @@ public partial class TTProjectTaskHandlePage : System.Web.UI.Page
 
 
             strHQL = "Select * from T_TaskAssignRecord as taskAssignRecord where taskAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and taskAssignRecord.ID in (select taskAssignRecord.PriorID from T_TaskAssignRecord as taskAssignRecord)";
+            //strHQL += " and (taskAssignRecord.ID in (select taskAssignRecord.PriorID from T_TaskAssignRecord as taskAssignRecord) and  taskAssignRecord.Status in ('拒绝','挂起','取消','计划','受理','待处理','处理中','处理中','完成','已完成','已分派'))";
+            strHQL += " and  taskAssignRecord.Status = '已分派'";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.Status <> '关闭')";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.ProjectID in (select project.ProjectID from T_Project as project where project.ProjectID = " + strProjectID + " and project.Status not in ('新建','隐藏','删除','归档')))";
             strHQL += " Order by taskAssignRecord.MoveTime DESC limit 40";
@@ -119,7 +120,7 @@ public partial class TTProjectTaskHandlePage : System.Web.UI.Page
         else
         {
             strHQL = "Select * from T_TaskAssignRecord as taskAssignRecord where taskAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and taskAssignRecord.Status in ('计划','受理','待处理') and taskAssignRecord.ID not in (select taskAssignRecord.PriorID from T_TaskAssignRecord as taskAssignRecord) ";
+            strHQL += " and taskAssignRecord.Status in ('计划','受理','待处理') ";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.Status <> '关闭')";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.ProjectID in (select project.ProjectID from T_Project as project where project.ProjectID <> 1 and project.Status not in ('新建','隐藏','删除','归档')))";
             strHQL += " Order by taskAssignRecord.MoveTime DESC limit 40";
@@ -129,7 +130,7 @@ public partial class TTProjectTaskHandlePage : System.Web.UI.Page
             SetTaskRecordColorForDataList(ds, DataList_ToBeHandled,"待处理");
 
             strHQL = "Select * from T_TaskAssignRecord as taskAssignRecord where taskAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and taskAssignRecord.Status in ('处理中','处理中') and taskAssignRecord.ID not in (select taskAssignRecord.PriorID from T_TaskAssignRecord as taskAssignRecord) ";
+            strHQL += " and taskAssignRecord.Status in ('处理中','处理中') ";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.Status <> '关闭')";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.ProjectID in (select project.ProjectID from T_Project as project where project.ProjectID <> 1 and project.Status not in ('新建','隐藏','删除','归档')))";
             strHQL += " Order by taskAssignRecord.MoveTime DESC limit 40";
@@ -139,7 +140,7 @@ public partial class TTProjectTaskHandlePage : System.Web.UI.Page
             SetTaskRecordColorForDataList(ds, DataList_Handling,"已处理");
 
             strHQL = "Select * from T_TaskAssignRecord as taskAssignRecord where taskAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and taskAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成','已分派') and taskAssignRecord.ID not in (select taskAssignRecord.PriorID from T_TaskAssignRecord as taskAssignRecord) ";
+            strHQL += " and taskAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成') ";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask  where projectTask.Status <> '关闭')";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.ProjectID in (select project.ProjectID from T_Project as project where project.ProjectID <> 1 and project.Status not in ('新建','隐藏','删除','归档')))";
             strHQL += " Order by taskAssignRecord.MoveTime DESC limit 40";
@@ -150,12 +151,11 @@ public partial class TTProjectTaskHandlePage : System.Web.UI.Page
 
 
             strHQL = "Select * from T_TaskAssignRecord as taskAssignRecord where taskAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and taskAssignRecord.ID in (select taskAssignRecord.PriorID from T_TaskAssignRecord as taskAssignRecord) ";
+            //strHQL += " and (taskAssignRecord.ID in (select taskAssignRecord.PriorID from T_TaskAssignRecord as taskAssignRecord) and  taskAssignRecord.Status in ('拒绝','挂起','取消','计划','受理','待处理','处理中','处理中','完成','已完成','已分派'))";
+            strHQL += " and taskAssignRecord.Status = '已分派'";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.Status <> '关闭')";
             strHQL += " and taskAssignRecord.TaskID in (select projectTask.TaskID from T_ProjectTask as projectTask where projectTask.ProjectID in (select project.ProjectID from T_Project as project where project.ProjectID <> 1 and project.Status not in ('新建','隐藏','删除','归档')))";
             strHQL += " Order by taskAssignRecord.MoveTime DESC limit 40";
-
-
             ds = ShareClass.GetDataSetFromSql(strHQL, "T_TaskAssignRecord");
             DataList_Assigned.DataSource = ds;
             DataList_Assigned.DataBind();
