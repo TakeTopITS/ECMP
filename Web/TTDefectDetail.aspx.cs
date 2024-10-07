@@ -313,7 +313,7 @@ public partial class TTDefectDetail : System.Web.UI.Page
     {
         string strHQL;
 
-        strHQL = string.Format(@"Update T_DefectAssignRecord Set Status = '{0}' Where ID = {1}",strStatus,intAssignID);
+        strHQL = string.Format(@"Update T_DefectAssignRecord Set Status = '{0}',MoveTime = now()   Where ID = {1}", strStatus,intAssignID);
         ShareClass.RunSqlCommand(strHQL);
     }
 

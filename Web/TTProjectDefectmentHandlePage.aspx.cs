@@ -68,99 +68,82 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
     protected void LoadDefectAssignRecord(string strUserCode)
     {
         string strHQL;
-        IList lst;
 
         if (strProjectID != "0")
         {
-            strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and defectAssignRecord.Status in ('计划','受理','待处理')";
-            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
-            strHQL += " Order by defectAssignRecord.MoveTime DESC";
-            DefectAssignRecordBLL defectAssignRecordBLL = new DefectAssignRecordBLL();
-            lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
-            DataList_ToBeHandled.DataSource = lst;
+            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from T_RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
+            strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
+            DataSet ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
+            DataList_ToBeHandled.DataSource = ds;
             DataList_ToBeHandled.DataBind();
-            SetReqRecordColor(lst, DataList_ToBeHandled, "待处理");
 
-            strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and defectAssignRecord.Status in ('处理中','处理中')";
-            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
+            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from T_RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
             strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
-            defectAssignRecordBLL = new DefectAssignRecordBLL();
-            lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
-            DataList_Handling.DataSource = lst;
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
+            DataList_Handling.DataSource = ds;
             DataList_Handling.DataBind();
-            SetReqRecordColor(lst, DataList_Handling, "已处理");
 
-            strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and defectAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
-            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
+            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from T_RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
             strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
-            defectAssignRecordBLL = new DefectAssignRecordBLL();
-            lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
-            DataList_FinishedUnAssigned.DataSource = lst;
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
+            DataList_FinishedUnAssigned.DataSource = ds;
             DataList_FinishedUnAssigned.DataBind();
-            SetReqRecordColor(lst, DataList_FinishedUnAssigned, "已完成");
 
-            strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and defectAssignRecord.Status = '已分派'";
-            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
+            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from T_RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
             strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
-            defectAssignRecordBLL = new DefectAssignRecordBLL();
-            lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
-            DataList_Assigned.DataSource = lst;
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
+            DataList_Assigned.DataSource = ds;
             DataList_Assigned.DataBind();
-            SetReqRecordColor(lst, DataList_Assigned, "已分派");
         }
         else
         {
-            strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and defectAssignRecord.Status in ('计划','受理','待处理')";
-            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
-            strHQL += " Order by defectAssignRecord.MoveTime DESC";
-            DefectAssignRecordBLL defectAssignRecordBLL = new DefectAssignRecordBLL();
-            lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
-            DataList_ToBeHandled.DataSource = lst;
+            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from T_RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from T_Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
+            strHQL += " Order by defectAssignRecord.MoveTime  DESC limit 40";
+            DataSet ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
+            DataList_ToBeHandled.DataSource = ds;
             DataList_ToBeHandled.DataBind();
-            SetReqRecordColor(lst, DataList_ToBeHandled, "待处理");
 
-            strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and defectAssignRecord.Status in ('处理中','处理中')";
-            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
-            strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
-            defectAssignRecordBLL = new DefectAssignRecordBLL();
-            lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
-            DataList_Handling.DataSource = lst;
+            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from T_RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from T_Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
+            strHQL += " Order by defectAssignRecord.MoveTime  DESC limit 40";
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
+            DataList_Handling.DataSource = ds;
             DataList_Handling.DataBind();
-            SetReqRecordColor(lst, DataList_Handling, "已处理");
 
-            strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and defectAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
-            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
-            strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
-            defectAssignRecordBLL = new DefectAssignRecordBLL();
-            lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
-            DataList_FinishedUnAssigned.DataSource = lst;
+            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from T_RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from T_Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
+            strHQL += " Order by defectAssignRecord.MoveTime  DESC limit 40";
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
+            DataList_FinishedUnAssigned.DataSource = ds;
             DataList_FinishedUnAssigned.DataBind();
-            SetReqRecordColor(lst, DataList_FinishedUnAssigned, "已完成");
 
-            strHQL = "from DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and defectAssignRecord.Status = '已分派'";
-            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
-            strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
-            defectAssignRecordBLL = new DefectAssignRecordBLL();
-            lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
-            DataList_Assigned.DataSource = lst;
+            strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from T_RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from T_Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
+            strHQL += " Order by defectAssignRecord.MoveTime  DESC limit 40";
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
+            DataList_Assigned.DataSource = ds;
             DataList_Assigned.DataBind();
-            SetReqRecordColor(lst, DataList_Assigned, "已分派");
         }
     }
 

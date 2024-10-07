@@ -65,96 +65,79 @@ public partial class TTProjectReqHandlePage : System.Web.UI.Page
 
         if (strProjectID != "0")
         {
-            strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and reqAssignRecord.Status in ('计划','受理','待处理')";
-            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
+            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from T_RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
             strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
-            ReqAssignRecordBLL reqAssignRecordBLL = new ReqAssignRecordBLL();
-            lst = reqAssignRecordBLL.GetAllReqAssignRecords(strHQL);
-            DataList_ToBeHandled.DataSource = lst;
+            DataSet ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
+            DataList_ToBeHandled.DataSource = ds;
             DataList_ToBeHandled.DataBind();
-            SetReqRecordColor(lst, DataList_ToBeHandled, "待处理");
 
-            strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and reqAssignRecord.Status in ('处理中','处理中')";
-            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
+            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from T_RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
             strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
-            reqAssignRecordBLL = new ReqAssignRecordBLL();
-            lst = reqAssignRecordBLL.GetAllReqAssignRecords(strHQL);
-            DataList_Handling.DataSource = lst;
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
+            DataList_Handling.DataSource = ds;
             DataList_Handling.DataBind();
-            SetReqRecordColor(lst, DataList_Handling, "处理中");
 
-            strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and (reqAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
-            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
+            strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL += " and reqAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
+            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from T_RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
             strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
-            reqAssignRecordBLL = new ReqAssignRecordBLL();
-            lst = reqAssignRecordBLL.GetAllReqAssignRecords(strHQL);
-            DataList_FinishedUnAssigned.DataSource = lst;
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
+            DataList_FinishedUnAssigned.DataSource = ds;
             DataList_FinishedUnAssigned.DataBind();
-            SetReqRecordColor(lst, DataList_FinishedUnAssigned, "已完成");
 
-            strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
-            strHQL += " and  reqAssignRecord.status = '已分派'";
-            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
+            strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL += " and reqAssignRecord.status = '已分派'";
+            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from T_RelatedReq as relatedReq where relatedReq.ProjectID = " + strProjectID + ")";
             strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
-            reqAssignRecordBLL = new ReqAssignRecordBLL();
-            lst = reqAssignRecordBLL.GetAllReqAssignRecords(strHQL);
-            DataList_Assigned.DataSource = lst;
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
+            DataList_Assigned.DataSource = ds;
             DataList_Assigned.DataBind();
-            SetReqRecordColor(lst, DataList_Assigned, "已分派");
         }
         else
         {
-            strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and reqAssignRecord.Status in ('计划','受理','待处理')";
-            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
+            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from T_RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from T_Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
-            ReqAssignRecordBLL reqAssignRecordBLL = new ReqAssignRecordBLL();
-            lst = reqAssignRecordBLL.GetAllReqAssignRecords(strHQL);
-            DataList_ToBeHandled.DataSource = lst;
+            DataSet ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
+            DataList_ToBeHandled.DataSource = ds;
             DataList_ToBeHandled.DataBind();
-            SetReqRecordColor(lst, DataList_ToBeHandled, "待处理");
 
-            strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select *from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and reqAssignRecord.Status in ('处理中','处理中')";
-            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
+            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from T_RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from T_Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
-            reqAssignRecordBLL = new ReqAssignRecordBLL();
-            lst = reqAssignRecordBLL.GetAllReqAssignRecords(strHQL);
-            DataList_Handling.DataSource = lst;
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
+            DataList_Handling.DataSource = ds;
             DataList_Handling.DataBind();
-            SetReqRecordColor(lst, DataList_Handling, "处理中");
 
-            strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and reqAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
-            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
+            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from T_RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from T_Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
-
-            reqAssignRecordBLL = new ReqAssignRecordBLL();
-            lst = reqAssignRecordBLL.GetAllReqAssignRecords(strHQL);
-            DataList_FinishedUnAssigned.DataSource = lst;
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
+            DataList_FinishedUnAssigned.DataSource = ds;
             DataList_FinishedUnAssigned.DataBind();
-            SetReqRecordColor(lst, DataList_FinishedUnAssigned, "已完成");
 
-            strHQL = "from ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
+            strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
             strHQL += " and reqAssignRecord.Status = '已分派'";
-            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
-            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
+            strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
+            strHQL += " and reqAssignRecord.ReqID in (select relatedReq.ReqID from T_RelatedReq as relatedReq where relatedReq.ProjectID not in (select project.ProjectID from T_Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
             strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
-            reqAssignRecordBLL = new ReqAssignRecordBLL();
-            lst = reqAssignRecordBLL.GetAllReqAssignRecords(strHQL);
-            DataList_Assigned.DataSource = lst;
+            ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
+            DataList_Assigned.DataSource = ds;
             DataList_Assigned.DataBind();
-            SetReqRecordColor(lst, DataList_Assigned, "已分派");
         }
     }
 
