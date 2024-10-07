@@ -87,7 +87,7 @@ public partial class TTReqHandlePage : System.Web.UI.Page
         strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
         strHQL += " and reqAssignRecord.Status in ('处理中','处理中') ";
         strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
-        strHQL += " Order by reqAssignRecord.ID DESC limit 40";
+        strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
         DataList_Handling.DataSource = ds;
         DataList_Handling.DataBind();
@@ -96,7 +96,7 @@ public partial class TTReqHandlePage : System.Web.UI.Page
         strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
         strHQL += " and reqAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
         strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
-        strHQL += " Order by reqAssignRecord.ID DESC limit 40";
+        strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
         DataList_FinishedUnAssigned.DataSource = ds;
         DataList_FinishedUnAssigned.DataBind();
@@ -105,7 +105,7 @@ public partial class TTReqHandlePage : System.Web.UI.Page
         strHQL = "Select * from T_ReqAssignRecord as reqAssignRecord where reqAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
         strHQL += " and reqAssignRecord.status = '已分派'";
         strHQL += " and reqAssignRecord.ReqID in (select requirement.ReqID from T_Requirement as requirement where requirement.Status not in ('关闭','隐藏','删除','归档'))";
-        strHQL += " Order by reqAssignRecord.ID DESC limit 40";
+        strHQL += " Order by reqAssignRecord.MoveTime DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_ReqAssignRecord");
         DataList_Assigned.DataSource = ds;
         DataList_Assigned.DataBind();

@@ -89,7 +89,7 @@ public partial class TTDefectHandlePage : System.Web.UI.Page
         strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
         strHQL += " and defectAssignRecord.Status in ('处理中','处理中')";
         strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
-        strHQL += " Order by defectAssignRecord.ID DESC limit 40";
+        strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
         DataList_Handling.DataSource = ds;
         DataList_Handling.DataBind();
@@ -98,7 +98,7 @@ public partial class TTDefectHandlePage : System.Web.UI.Page
         strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
         strHQL += " and defectAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
         strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
-        strHQL += " Order by defectAssignRecord.ID DESC limit 40";
+        strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
         DataList_FinishedUnAssigned.DataSource = ds;
         DataList_FinishedUnAssigned.DataBind();
@@ -107,7 +107,7 @@ public partial class TTDefectHandlePage : System.Web.UI.Page
         strHQL = "Select * from T_DefectAssignRecord as defectAssignRecord where defectAssignRecord.OperatorCode = " + "'" + strUserCode + "'";
         strHQL += " and defectAssignRecord.Status = '已分派'";
         strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from T_Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
-        strHQL += " Order by defectAssignRecord.ID DESC limit 40";
+        strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
         ds = ShareClass.GetDataSetFromSql(strHQL, "T_DefectAssignRecord");
         DataList_Assigned.DataSource = ds;
         DataList_Assigned.DataBind();

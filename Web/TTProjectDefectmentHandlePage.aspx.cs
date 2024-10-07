@@ -87,7 +87,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             strHQL += " and defectAssignRecord.Status in ('处理中','处理中')";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
-            strHQL += " Order by defectAssignRecord.ID DESC";
+            strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
             defectAssignRecordBLL = new DefectAssignRecordBLL();
             lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
             DataList_Handling.DataSource = lst;
@@ -98,7 +98,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             strHQL += " and defectAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
-            strHQL += " Order by defectAssignRecord.ID DESC";
+            strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
             defectAssignRecordBLL = new DefectAssignRecordBLL();
             lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
             DataList_FinishedUnAssigned.DataSource = lst;
@@ -109,7 +109,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             strHQL += " and defectAssignRecord.Status = '已分派'";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID = " + strProjectID + ")";
-            strHQL += " Order by defectAssignRecord.ID DESC";
+            strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
             defectAssignRecordBLL = new DefectAssignRecordBLL();
             lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
             DataList_Assigned.DataSource = lst;
@@ -133,7 +133,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             strHQL += " and defectAssignRecord.Status in ('处理中','处理中')";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
-            strHQL += " Order by defectAssignRecord.ID DESC";
+            strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
             defectAssignRecordBLL = new DefectAssignRecordBLL();
             lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
             DataList_Handling.DataSource = lst;
@@ -144,7 +144,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             strHQL += " and defectAssignRecord.Status in ('拒绝','挂起','取消','完成','已完成')";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
-            strHQL += " Order by defectAssignRecord.ID DESC";
+            strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
             defectAssignRecordBLL = new DefectAssignRecordBLL();
             lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
             DataList_FinishedUnAssigned.DataSource = lst;
@@ -155,7 +155,7 @@ public partial class TTProjectDefectmentHandlePage : System.Web.UI.Page
             strHQL += " and defectAssignRecord.Status = '已分派'";
             strHQL += " and defectAssignRecord.DefectID in (select defectment.DefectID from Defectment as defectment where defectment.Status not in ('关闭','隐藏','删除','归档'))";
             strHQL += " and defectAssignRecord.DefectID in (select relatedDefect.DefectID from RelatedDefect as relatedDefect where relatedDefect.ProjectID not in (select project.ProjectID from Project as project where project.Status in ('新建','评审','隐藏','删除','归档')))";
-            strHQL += " Order by defectAssignRecord.ID DESC";
+            strHQL += " Order by defectAssignRecord.MoveTime DESC limit 40";
             defectAssignRecordBLL = new DefectAssignRecordBLL();
             lst = defectAssignRecordBLL.GetAllDefectAssignRecords(strHQL);
             DataList_Assigned.DataSource = lst;
