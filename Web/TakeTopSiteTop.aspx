@@ -206,9 +206,9 @@
                                     </a>
                                 </td>
                                 <td style="width: 2px;"></td>
-                                <td style="width: 35px; text-align: left;">
+                                <td style="width: 50px; text-align: left;">
                                     <a onmousedown="OnMouseDownEventForWholePage(this)" href="javascript:adClick('TakeTopSiteContainer.aspx?ModuleName=下载&HomeModuleName=下载', 'TakeTopSiteLeft.aspx?ModuleName=下载&HomeModuleName=下载')">
-                                        <asp:Label ID="Label5" runat="server" Text="<%$ Resources:lang,XiaZai%>"></asp:Label>
+                                        <asp:Label ID="Label5" runat="server" Text="源代码"></asp:Label>
                                     </a>
                                 </td>
                             </tr>

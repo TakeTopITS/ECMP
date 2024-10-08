@@ -28,6 +28,8 @@
 </head>
 <frameset id="TakeTopLRMDI" cols="45,*" rows="*" frameborder="no" border="0" framespacing="0">
 
+
+
     <frameset rows="45,*" name="leftFrame" id="leftFrame" frameborder="no" border="0" framespacing="0">
         <frame src='TakeTopLRTop.aspx?UserCode=<%=strUserCode%>&Flag=<%=Session["SkinFlag"].ToString()%>' id="leftTopFrameID" name="lefTopFrame" scrolling="no" noresize />
         <frame src='TakeTopLRExLeft.aspx?UserCode=<%=strUserCode%>&Flag=<%=Session["SkinFlag"].ToString()%>' id="leftMiddleFrameID" name="leftMiddleFrame" scrolling="no" noresize />

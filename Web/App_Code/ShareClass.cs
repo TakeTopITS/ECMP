@@ -59,7 +59,7 @@ public static class ShareClass
         //
     }
 
-    public static string SystemVersionID = "V2024.9.30";
+    public static string SystemVersionID = "V2024.10.8";
 
     public static string SystemLatestLoginUser = "";
     public static string SystemDBer = "";
@@ -570,9 +570,6 @@ public static class ShareClass
         ShareClass.AddSpaceLineToFile("TakeTopPersonalSpaceForOuterUser.aspx", "<%--***--%>");
         ShareClass.AddSpaceLineToFile("TakeTopPersonalSpaceSAAS.aspx", "<%--***--%>");
     }
-
-  
-
 
     //初始化实体类，以加快后续的操作速度
     public static void InitialNhibernateEntryClass()
