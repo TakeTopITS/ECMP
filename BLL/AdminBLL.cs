@@ -1,6 +1,5 @@
 ﻿using ProjectMgt.DAL;
 using ProjectMgt.Model;
-
 using System.Collections;
 
 namespace ProjectMgt.BLL
