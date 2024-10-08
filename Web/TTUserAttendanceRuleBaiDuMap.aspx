@@ -79,14 +79,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="left" style="padding: 2px 8px 8px 5px; overflow: hidden;" onmouseenter="javascript:displayScroll();" onmousemove="javascript:displayScroll();" onmouseover="javascript:displayScroll();" onmouseout="javascript:hideScroll();">
+                            <td align="left" style="padding: 0px; overflow: hidden;" onmouseenter="javascript:displayScroll();" onmousemove="javascript:displayScroll();" onmouseover="javascript:displayScroll();" onmouseout="javascript:hideScroll();">
                                 <div id="map" style="width:100%;height:850px;"></div>
                             </td>
                         </tr>
                     </table>
                 </div>
 
-                <img id="imgDemo" src="Images/bg.jpg" alt="imgkk" style="width: 200px; height: 200px;" />
+                <img id="imgDemo" src="Images/bg.jpg" alt="imgkk" style="width: 200px; height: 0px;" />
 
             </ContentTemplate>
         </asp:UpdatePanel>
