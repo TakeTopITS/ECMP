@@ -161,23 +161,26 @@
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                             <tr>
                                                                                 <td align="center" width="100%">
-                                                                                    <strong>
-                                                                                        <table>
-                                                                                            <tr>
-                                                                                                <td>
+                                                                                    <table>
+                                                                                        <tr>
+                                                                                            <td align="center" style="text-align: center; padding-top: 4px;">
+                                                                                                <strong>
                                                                                                     <asp:Label ID="Label9" runat="server" Text="<%$ Resources:lang,DaiChuLiDD %>"></asp:Label>
-                                                                                                </td>
-                                                                                                <td style="padding-left: 10px;">
+                                                                                                </strong>
+                                                                                            </td>
+                                                                                            <td style="padding-left: 10px; padding-top: 1px;">
+                                                                                                <strong>
                                                                                                     <asp:HyperLink ID="HL_CreateTask" runat="server"> <span style ="font-size:xx-large;color:red;"> +</span> </asp:HyperLink>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </table>
-                                                                                    </strong>
+                                                                                                </strong>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr style="display: none;">
                                                                                 <td align="center" width="100%">
                                                                                     <asp:Label ID="LB_TaskRecordStatus_ToBeHandled" runat="server" CssClass="StatusCss" Text="待处理"></asp:Label>
+                                                                                </td>
                                                                             </tr>
                                                                         </table>
                                                                     </td>
@@ -215,9 +218,11 @@
                                                                     <td>
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                             <tr>
-                                                                                <td align="center" width="100%"><strong>
-                                                                                    <asp:Label ID="Label7" runat="server" Text="<%$ Resources:lang,ChuLiZhongDD %>"></asp:Label>
-                                                                                </strong></td>
+                                                                                <td align="center" width="100%" style="width: 100%; text-align: center; padding-top: 4px;">
+                                                                                    <strong>
+                                                                                        <asp:Label ID="Label7" runat="server" Text="<%$ Resources:lang,ChuLiZhongDD %>"></asp:Label>
+                                                                                    </strong>
+                                                                                </td>
                                                                             </tr>
                                                                             <tr style="display: none;">
                                                                                 <td align="center" width="100%">
@@ -259,9 +264,11 @@
                                                                     <td>
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                             <tr>
-                                                                                <td align="center" width="100%"><strong>
-                                                                                    <asp:Label ID="Label6" runat="server" Text="<%$ Resources:lang,YuWanChengDaiFenPai %>"></asp:Label>
-                                                                                </strong></td>
+                                                                                <td align="center" width="100%" style="width: 100%; text-align: center; padding-top: 4px;">
+                                                                                    <strong>
+                                                                                        <asp:Label ID="Label6" runat="server" Text="<%$ Resources:lang,YuWanChengDaiFenPai %>"></asp:Label>
+                                                                                    </strong>
+                                                                                </td>
                                                                             </tr>
                                                                             <tr style="display: none;">
                                                                                 <td align="center" width="100%">
@@ -282,7 +289,8 @@
                                                                             <a href='TTTaskDetail.aspx?ID=<%#DataBinder.Eval(Container.DataItem, "ID")%>' target="_blank">
                                                                                 <span style="color: red;">#<%#DataBinder.Eval(Container.DataItem, "ID")%></span>&nbsp;&nbsp; <%#DataBinder.Eval(Container.DataItem, "Operation")%><br />
                                                                                 <span style="font-size: smaller">
-                                                                                    <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,FenPaiRen%>"></asp:Label>：<%#DataBinder.Eval(Container.DataItem, "AssignManName")%> </span>
+                                                                                    <asp:Label ID="Label3" runat="server" Text="<%$ Resources:lang,FenPaiRen%>"></asp:Label>：<%#DataBinder.Eval(Container.DataItem, "AssignManName")%> 
+                                                                                </span>
 
                                                                             </a>
                                                                         </div>
@@ -303,7 +311,7 @@
                                                                     <td>
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                                             <tr>
-                                                                                <td align="center" width="100%">
+                                                                                <td align="center" width="100%" style="width: 100%; text-align: center; padding-top: 4px;">
                                                                                     <strong>
                                                                                         <asp:Label ID="Label5" runat="server" Text="<%$ Resources:lang,YuFenPai %>"></asp:Label>
                                                                                     </strong>
