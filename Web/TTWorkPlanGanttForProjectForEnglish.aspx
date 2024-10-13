@@ -140,8 +140,8 @@
     </script>
 
     <!--Ext lib and UX components-->
-    <script src="ext-min/ext-all-debug.js" type="text/javascript"></script>
-    <script src="ext-gantt/gnt-all-debug.js" type="text/javascript" charset="gbk"></script>
+    <script src="ext-min/TakeTopExtAllDebug.js" type="text/javascript"></script>
+    <script src="ext-gantt/TakeTopGntAllDebug.js" type="text/javascript" charset="gbk"></script>
 
     <script type='text/javascript'>
         //为了支持多个项目，pid为某个项目的项目编号
@@ -156,15 +156,15 @@
     </script>
 
     <script src="ext-min/locale/ext-lang-en.js" id="ExtLangID" type="text/javascript"></script>
-    <script src="ext-gantt/gnt-lang-EN.js" id="GntLangID" type="text/javascript"></script>
+    <script src="ext-gantt/TakeTopGntLangEN.js" id="GntLangID" type="text/javascript"></script>
     <script type="text/javascript" src="ext-gantt/TakeTopGanttPanelForEnglish.js"></script>
 
     <!--更换皮肤所需要的css文件 -->
     <link rel="stylesheet" href="css/project.css" type="text/css" />
 
     <!--应用程序的代码 -->
-    <script type="text/javascript" src="ext-gantt/aspnet.js"></script>
-    <script type="text/javascript" src="ext-gantt/advancedForEnglish.js"></script>
+    <script type="text/javascript" src="ext-gantt/TakeTopAspNet.js"></script>
+    <script type="text/javascript" src="ext-gantt/TakeTopAdvancedForEnglish.js"></script>
 
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/allAHandler.js"></script>
